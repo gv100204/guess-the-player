@@ -47,6 +47,13 @@ const BASE_URL = "https://v3.football.api-sports.io";
 const RATE_LIMIT_DELAY_MS = Number(process.env.SYNC_RATE_LIMIT_DELAY_MS ?? 1200); // ~50 richieste/minuto, prudente per il piano free; azzerabile nei test
 const OUTPUT_DIR = "output"; // cartella con i file pronti per l'hosting statico
 const BUILD_VERSION = new Date().toISOString().slice(0, 10); // es. "2026-09-18"
+
+// Molti piani (incluso il Free) limitano le stagioni accessibili e lo dicono
+// nel messaggio di errore ("... try from 2022 to 2024"). Lo scopriamo alla
+// prima richiesta negata e lo riusiamo per tutti i giocatori successivi,
+// così non sprechiamo quota su anni che sappiamo già essere negati.
+let planSeasonRange = null; // { min, max } oppure null se non ancora scoperto
+function resetPlanSeasonRangeForTests() { planSeasonRange = null; }
 const SEASON_RANGE = { from: 1994, to: 2025 }; // intervallo di stagioni da controllare per ogni giocatore
 
 // Elenco dei giocatori da sincronizzare: basta il nome, lo script trova l'id.
@@ -152,13 +159,28 @@ async function fetchCareer(playerId, birthYear) {
   // moltissime PRIMA di trovare i suoi anni veri, e lo script si fermerebbe
   // prima di arrivarci. Meglio restringere l'intervallo con un dato certo
   // (la data di nascita) che con un'euristica sul numero di stagioni vuote.
-  const fromYear = birthYear ? Math.max(SEASON_RANGE.from, birthYear + 15) : SEASON_RANGE.from;
+  let fromYear = birthYear ? Math.max(SEASON_RANGE.from, birthYear + 15) : SEASON_RANGE.from;
+  let toYear = SEASON_RANGE.to;
+  if (planSeasonRange) {
+    fromYear = Math.max(fromYear, planSeasonRange.min);
+    toYear = Math.min(toYear, planSeasonRange.max);
+  }
 
-  for (let year = fromYear; year <= SEASON_RANGE.to; year++) {
+  for (let year = fromYear; year <= toYear; year++) {
     let seasonData;
     try {
       seasonData = await apiGet("/players", { id: playerId, season: year });
     } catch (err) {
+      const rangeMatch = err.message.match(/try from (\d+) to (\d+)/);
+      if (rangeMatch && !planSeasonRange) {
+        planSeasonRange = { min: Number(rangeMatch[1]), max: Number(rangeMatch[2]) };
+        console.warn(
+          `    Il piano API-Football limita le stagioni a ${planSeasonRange.min}-${planSeasonRange.max}: aggiorno l'intervallo e continuo da lì (niente più chiamate sprecate su anni fuori range).`
+        );
+        toYear = Math.min(toYear, planSeasonRange.max);
+        if (year < planSeasonRange.min) { year = planSeasonRange.min - 1; continue; }
+        if (year > planSeasonRange.max) break;
+      }
       console.warn(`    stagione ${year}: errore (${err.message}), salto`);
       continue;
     }
@@ -368,4 +390,4 @@ if (isMainModule) {
   });
 }
 
-export { slugify, fetchCareer, fetchTrophies, writeOutputFiles, findPlayerId, LEAGUE_NAME_TO_ID };
+export { slugify, fetchCareer, fetchTrophies, writeOutputFiles, findPlayerId, LEAGUE_NAME_TO_ID, resetPlanSeasonRangeForTests };

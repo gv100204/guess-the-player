@@ -26,7 +26,8 @@ import {
   slugify,
   fetchCareer,
   fetchTrophies,
-  writeOutputFiles
+  writeOutputFiles,
+  resetPlanSeasonRangeForTests
 } from "./sync-players-data.mjs";
 
 let failures = 0;
@@ -160,6 +161,66 @@ async function main() {
     const career = await fetchCareer(999);
     assert.equal(career.length, 1, "solo lo stint mappato deve comparire");
     assert.equal(career[0].club, "Juventus");
+  });
+
+  await test("un piano con stagioni limitate viene scoperto e rispettato, senza sprecare altre chiamate (bug reale trovato in produzione)", async () => {
+    resetPlanSeasonRangeForTests();
+    let callCount = 0;
+    global.fetch = async (url) => {
+      callCount++;
+      const yearMatch = String(url).match(/season=(\d+)/);
+      const year = Number(yearMatch[1]);
+      // Riproduce esattamente il messaggio visto nei log reali di API-Football
+      if (year < 2022 || year > 2024) {
+        return {
+          ok: true,
+          status: 200,
+          json: async () => ({
+            response: [],
+            errors: { plan: "Free plans do not have access to this season, try from 2022 to 2024." }
+          })
+        };
+      }
+      if (year === 2022) {
+        return jsonResponse(fakePlayersSeasonResponse({ team: "Al-Nassr", leagueName: "Saudi Pro League", apps: 20, goals: 15 }));
+      }
+      return jsonResponse([]);
+    };
+
+    // nato nel 1985: senza il fix, il loop partirebbe dal 2000 e sprecherebbe
+    // 22 chiamate (2000-2021) prima di arrivare al 2022 che funziona davvero
+    const career = await fetchCareer(999, 1985);
+
+    assert.equal(career.length, 1, "deve comunque trovare lo stint nel 2022, l'unico anno permesso con dati");
+    assert.equal(career[0].club, "Al-Nassr");
+    assert.ok(
+      callCount <= 5,
+      `una volta scoperto il limite del piano (al primo tentativo fuori range) non deve più tentare anni fuori 2022-2024: chiamate fatte = ${callCount}`
+    );
+  });
+
+  await test("il limite del piano scoperto su un giocatore si riusa per il giocatore successivo (nessuna chiamata sprecata)", async () => {
+    // planSeasonRange resta impostato dal test precedente: non lo resettiamo,
+    // esattamente come accadrebbe passando dal primo al secondo giocatore
+    // dentro lo stesso main()
+    let callCount = 0;
+    global.fetch = async (url) => {
+      callCount++;
+      const yearMatch = String(url).match(/season=(\d+)/);
+      const year = Number(yearMatch[1]);
+      if (year === 2023) {
+        return jsonResponse(fakePlayersSeasonResponse({ team: "Inter Miami", leagueName: "MLS", apps: 14, goals: 11 }));
+      }
+      return jsonResponse([]);
+    };
+    // nato nel 1987: senza riuso del limite scoperto, proverebbe 2002-2025 (24 chiamate)
+    const career = await fetchCareer(999, 1987);
+    assert.equal(career.length, 1);
+    assert.equal(career[0].club, "Inter Miami");
+    assert.ok(
+      callCount <= 3,
+      `deve interrogare solo 2022-2024 (limite già noto), non 2002-2025: chiamate fatte = ${callCount}`
+    );
   });
 
   console.log("\nfetchTrophies() - raggruppamento vittorie");
