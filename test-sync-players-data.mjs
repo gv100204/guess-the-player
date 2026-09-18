@@ -71,13 +71,12 @@ async function main() {
   });
 
   console.log("\nmatchLeague() - disambiguazione per nome + paese");
-  await test("distingue la Serie A italiana da quella brasiliana (bug reale: stesso nome, paese diverso)", () => {
-    const it = matchLeague("Serie A", "Italy");
-    const br = matchLeague("Serie A", "Brazil");
-    assert.ok(it && br, "entrambe devono essere trovate");
-    assert.notEqual(it.id, br.id, "devono risolversi a due campionati DIVERSI nel nostro catalogo");
+  await test("la Serie A italiana si risolve correttamente; un omonimo di un campionato non tracciato (Brasileirão, tolto per adesso) no", () => {
+    var it = matchLeague("Serie A", "Italy");
+    var br = matchLeague("Serie A", "Brazil");
+    assert.ok(it, "la Serie A italiana deve essere trovata");
     assert.equal(it.id, "seriea");
-    assert.equal(br.id, "brasileirao");
+    assert.equal(br, undefined, "il Brasileirão non è nel catalogo attuale: non deve risolversi, e soprattutto non deve confondersi con la Serie A italiana");
   });
   await test("un nome che non corrisponde a nessun campionato tracciato restituisce undefined", () => {
     assert.equal(matchLeague("Coppa Italia", "Italy"), undefined);
@@ -100,7 +99,7 @@ async function main() {
     assert.equal(career[0].league, "seriea");
   });
 
-  await test("una riga con nome giusto ma paese sbagliato viene scartata (non è quel campionato)", () => {
+  await test("una riga di un campionato non tracciato (Brasileirão) non finisce per errore nella Serie A italiana", () => {
     const players = newPlayersMap();
     const entry = {
       player: { id: 2, name: "Giocatore Brasiliano", nationality: "Brazil" },
@@ -108,8 +107,7 @@ async function main() {
     };
     mergePlayerEntry(players, entry, 2020);
     const career = finalizeCareer(players.get(2));
-    assert.equal(career.length, 1);
-    assert.equal(career[0].league, "brasileirao", "deve finire nel Brasileirão, non nella Serie A italiana");
+    assert.equal(career.length, 0, "il Brasileirão non è nel catalogo attuale: la riga va scartata, non confusa con la Serie A italiana");
   });
 
   await test("un portiere: 'goals' nello stint è gol subiti, non fatti", () => {
@@ -174,8 +172,8 @@ async function main() {
     assert.equal(callCount, 2, "non deve fare più chiamate di quelle nel budget");
   });
 
-  console.log("\nfetchTrophies() - raggruppamento vittorie");
-  await test("più vittorie nello stesso campionato si raggruppano con il conteggio", async () => {
+  console.log("\nfetchTrophies() - raggruppamento vittorie (dati puri, non più frasi in italiano)");
+  await test("più vittorie nello stesso campionato si raggruppano con conteggio e stagioni, senza costruire frasi", async () => {
     global.fetch = async () =>
       jsonResponse([
         { league: "Serie A", country: "Italy", season: "2018/2019", place: "Winner" },
@@ -184,8 +182,14 @@ async function main() {
         { league: "Coppa Italia", country: "Italy", season: "2020/2021", place: "Winner" }
       ]);
     const trophies = await fetchTrophies(999);
-    const seriea = trophies.find((t) => t.text.includes("Serie A"));
-    assert.match(seriea.text, /2 volte campione/);
+    const seriea = trophies.find((t) => t.comp === "seriea");
+    const coppa = trophies.find((t) => t.comp === "Coppa Italia"); // non nel catalogo LEAGUES_TO_SYNC: resta il nome grezzo
+    assert.ok(seriea, "deve esserci una riga per la Serie A");
+    assert.equal(seriea.count, 2, "due vittorie -> count 2, non una frase");
+    assert.deepEqual(seriea.seasons, ["2018/2019", "2019/2020"]);
+    assert.equal(typeof seriea.text, "undefined", "non deve più esserci un campo 'text' pre-scritto in italiano");
+    assert.ok(coppa, "deve esserci una riga per la Coppa Italia");
+    assert.equal(coppa.count, 1);
     assert.equal(trophies.length, 2, "il 2nd Place non deve generare una riga");
   });
 

@@ -82,13 +82,10 @@ const LEAGUES_TO_SYNC = [
   { id: "laliga", apiName: "La Liga", country: "Spain" },
   { id: "bundesliga", apiName: "Bundesliga", country: "Germany" },
   { id: "ligue1", apiName: "Ligue 1", country: "France" },
-  { id: "liga_pt", apiName: "Primeira Liga", country: "Portugal" },
-  { id: "mls", apiName: "Major League Soccer", country: "USA" },
-  { id: "superlig", apiName: "Super Lig", country: "Turkey" },
-  { id: "saudi", apiName: "Pro League", country: "Saudi-Arabia" },
-  { id: "qatar", apiName: "Qatar Stars League", country: "Qatar" },
-  { id: "brasileirao", apiName: "Serie A", country: "Brazil" },
-  { id: "ekstraklasa", apiName: "Ekstraklasa", country: "Poland" }
+  { id: "liga_pt", apiName: "Primeira Liga", country: "Portugal" }
+  // Tolti per adesso: MLS, Super Lig (Turchia), Saudi Pro League, Qatar
+  // Stars League, Brasileirão, Ekstraklasa (Polonia). Si possono
+  // rimettere in futuro semplicemente aggiungendo di nuovo la riga qui.
 ];
 
 const GK_POSITION = "Goalkeeper";
@@ -306,14 +303,18 @@ async function fetchTrophies(playerId) {
 
   return Object.values(grouped).map((g) => {
     // Le competizioni internazionali (Mondiali, Europei) arrivano con nomi
-    // di torneo che vanno rimappati a mano a "wc"/"intl" nel dataset finale.
+    // di torneo che non troviamo nel catalogo LEAGUES_TO_SYNC (che ha solo
+    // campionati domestici): in quel caso "comp" resta il nome grezzo
+    // dell'API, e andrà rimappato a mano a "wc"/"intl" se lo vuoi raggruppare
+    // come le altre competizioni internazionali nel gioco.
+    //
+    // NOTA IMPORTANTE: qui NON costruiamo più una frase già scritta in
+    // italiano ("5 volte campione di...") - salviamo solo i FATTI (quale
+    // competizione, quante volte, quali stagioni). La frase nella lingua
+    // giusta la costruisce il gioco al momento di mostrarla, non lo script.
     const matchedLeague = LEAGUES_TO_SYNC.find((l) => l.apiName === g.leagueName);
     const comp = matchedLeague ? matchedLeague.id : g.leagueName;
-    const text =
-      g.count > 1
-        ? `${g.count} volte campione di ${g.leagueName}`
-        : `1 titolo: ${g.leagueName} (${g.seasons[0]})`;
-    return { comp, text };
+    return { comp, count: g.count, seasons: g.seasons };
   });
 }
 
