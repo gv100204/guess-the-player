@@ -52,10 +52,11 @@ const RAW_PLAYERS_FILE = "raw-players.json"; // da committare, persiste tra i ru
 const PROGRESS_FILE = "sync-progress.json"; // da committare, persiste tra i run
 const BUILD_VERSION = new Date().toISOString().slice(0, 10); // es. "2026-09-18"
 
-// Finestra di stagioni da spazzolare. Di default è recente (10 anni) per
-// restare in un budget di chiamate ragionevole; puoi allargarla, ma più è
-// ampia più run (giorni) ci vorranno per completarla tutta.
-const SEASON_RANGE = { from: 2015, to: 2025 };
+// Finestra di stagioni da spazzolare. Con 6 campionati, tutta la finestra
+// 1995-2025 (31 stagioni) richiede circa 2 ore e mezza per un giro completo -
+// comodamente dentro sia il limite di 6 ore di GitHub Actions sia la quota
+// giornaliera. Se in futuro riaggiungi altri campionati, valuta se restringerla.
+const SEASON_RANGE = { from: 1995, to: 2025 };
 
 // Quante chiamate usare al massimo IN QUESTO run, prima di fermarsi e salvare
 // il progresso. Tienilo un po' sotto la quota giornaliera reale del tuo
