@@ -29,6 +29,19 @@ on:
   schedule:
     - cron: "0 4 * * *" # ogni giorno alle 04:00 UTC - con un roster grande, riprendere ogni giorno consuma la quota (e completa lo storico) molto più in fretta di una volta a settimana
   workflow_dispatch: # bottone "Run workflow" manuale su GitHub
+    inputs:
+      leagues:
+        description: 'Solo per test: id campionati separati da virgola (es. "seriea"). Vuoto = tutti quelli configurati.'
+        required: false
+        default: ""
+      seasonFrom:
+        description: "Solo per test: prima stagione da spazzolare (es. 2015). Vuoto = quella configurata nello script."
+        required: false
+        default: ""
+      seasonTo:
+        description: "Solo per test: ultima stagione da spazzolare (es. 2016). Vuoto = quella configurata nello script."
+        required: false
+        default: ""
 
 jobs:
   sync:
@@ -45,6 +58,9 @@ jobs:
       - name: Scarica i dati aggiornati da API-Football
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          SYNC_LEAGUES: ${{ inputs.leagues }}
+          SYNC_SEASON_FROM: ${{ inputs.seasonFrom }}
+          SYNC_SEASON_TO: ${{ inputs.seasonTo }}
         run: node sync-players-data.mjs
 
       - name: Salva il progresso (raw-players.json, sync-progress.json) su main
@@ -52,8 +68,30 @@ jobs:
           git config user.name "sync-bot"
           git config user.email "sync-bot@users.noreply.github.com"
           git add raw-players.json sync-progress.json
-          git diff --staged --quiet || git commit -m "chore: aggiorna progresso sync [skip ci]"
-          git push
+          if git diff --staged --quiet; then
+            echo "Nessuna modifica da salvare in questo run."
+          else
+            git commit -m "chore: aggiorna progresso sync [skip ci]"
+            # Se qualcuno ha spinto altre modifiche su main mentre il sync girava
+            # (può durare a lungo), il push semplice verrebbe rifiutato. Qui
+            # aggiorniamo prima il nostro commit sopra l'ultima versione di main,
+            # e riproviamo il push un paio di volte in caso di corse ravvicinate.
+            for i in 1 2 3; do
+              git fetch origin main
+              if git rebase origin/main; then
+                if git push; then
+                  echo "Push riuscito."
+                  break
+                fi
+              else
+                echo "Rebase in conflitto: serve intervento manuale, i file di questo run restano solo nei log."
+                git rebase --abort || true
+                exit 1
+              fi
+              echo "Tentativo $i non riuscito, riprovo..."
+              sleep 5
+            done
+          fi
 
       - name: Pubblica ./output su GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

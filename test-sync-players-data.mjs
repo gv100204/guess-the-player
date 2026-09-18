@@ -31,6 +31,8 @@ import {
   buildFinalDataset,
   writeOutputFiles,
   resolveLeagueApiIds,
+  getActiveLeagues,
+  getSeasonRange,
   loadRawPlayers,
   saveRawPlayers,
   loadProgress,
@@ -68,6 +70,26 @@ async function main() {
   console.log("slugify()");
   await test("accenti e apostrofi diventano trattini", () => {
     assert.equal(slugify("N'Golo Kanté"), "n-golo-kante");
+  });
+
+  console.log("\ngetActiveLeagues() / getSeasonRange() - scope ridotto per i lanci di test");
+  await test("senza variabili d'ambiente, restituisce tutto il catalogo", () => {
+    delete process.env.SYNC_LEAGUES;
+    assert.equal(getActiveLeagues().length, LEAGUES_TO_SYNC.length);
+  });
+  await test("con SYNC_LEAGUES impostata, restringe ai soli campionati indicati", () => {
+    process.env.SYNC_LEAGUES = "seriea, laliga";
+    const active = getActiveLeagues();
+    assert.deepEqual(active.map((l) => l.id), ["seriea", "laliga"]);
+    delete process.env.SYNC_LEAGUES;
+  });
+  await test("con SYNC_SEASON_FROM/TO impostate, restringe la finestra di stagioni", () => {
+    process.env.SYNC_SEASON_FROM = "2015";
+    process.env.SYNC_SEASON_TO = "2016";
+    const range = getSeasonRange();
+    assert.deepEqual(range, { from: 2015, to: 2016 });
+    delete process.env.SYNC_SEASON_FROM;
+    delete process.env.SYNC_SEASON_TO;
   });
 
   console.log("\nmatchLeague() - disambiguazione per nome + paese");

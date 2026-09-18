@@ -91,6 +91,24 @@ const LEAGUES_TO_SYNC = [
 
 const GK_POSITION = "Goalkeeper";
 
+// Per i lanci di TEST: se imposti la variabile d'ambiente SYNC_LEAGUES (es.
+// "seriea" o "seriea,pl"), lo script lavora solo su quei campionati invece
+// che su tutto LEAGUES_TO_SYNC - comodo per verificare che tutto funzioni
+// spendendo pochissime chiamate, senza modificare il codice. Il workflow
+// GitHub passa questo valore dal form di "Run workflow" (vedi sync.yml).
+function getActiveLeagues() {
+  const filter = (process.env.SYNC_LEAGUES || "").split(",").map((s) => s.trim()).filter(Boolean);
+  if (filter.length === 0) return LEAGUES_TO_SYNC;
+  return LEAGUES_TO_SYNC.filter((l) => filter.includes(l.id));
+}
+
+// Stesso principio per la finestra di stagioni: SYNC_SEASON_FROM / _TO.
+function getSeasonRange() {
+  const from = process.env.SYNC_SEASON_FROM ? Number(process.env.SYNC_SEASON_FROM) : SEASON_RANGE.from;
+  const to = process.env.SYNC_SEASON_TO ? Number(process.env.SYNC_SEASON_TO) : SEASON_RANGE.to;
+  return { from, to };
+}
+
 // Molti piani (incluso il Free) limitano le stagioni accessibili e lo dicono
 // nel messaggio di errore ("... try from 2022 to 2024"). Lo scopriamo alla
 // prima richiesta negata e lo riusiamo per tutte le chiamate successive.
@@ -138,7 +156,7 @@ async function apiGet(path, params) {
 // ---------------------------------------------------------------------------
 
 async function resolveLeagueApiIds(budget) {
-  for (const league of LEAGUES_TO_SYNC) {
+  for (const league of getActiveLeagues()) {
     if (league.numericId) continue; // già risolto in un run precedente (persistito nel progress)
     if (budget.remaining <= 0) return;
     try {
@@ -458,11 +476,16 @@ async function main() {
   await resolveLeagueApiIds(budget);
 
   console.log("\nSpazzolo campionati e stagioni ancora da fare...");
+  var activeLeagues = getActiveLeagues();
+  var activeSeasons = getSeasonRange();
+  if (activeLeagues.length < LEAGUES_TO_SYNC.length || activeSeasons.from !== SEASON_RANGE.from || activeSeasons.to !== SEASON_RANGE.to) {
+    console.log(`  (run con scope ridotto per test: campionati [${activeLeagues.map((l) => l.id).join(", ")}], stagioni ${activeSeasons.from}-${activeSeasons.to})`);
+  }
   let stoppedForBudget = false;
   outer:
-  for (const league of LEAGUES_TO_SYNC) {
+  for (const league of activeLeagues) {
     if (!league.numericId) continue; // non risolto (campionato non trovato o budget finito prima)
-    for (let season = SEASON_RANGE.from; season <= SEASON_RANGE.to; season++) {
+    for (let season = activeSeasons.from; season <= activeSeasons.to; season++) {
       const key = `${league.id}:${season}`;
       if (progress.completed.has(key)) continue;
       if (budget.remaining <= 0) { stoppedForBudget = true; break outer; }
@@ -498,7 +521,7 @@ async function main() {
   const finalPlayers = buildFinalDataset(playersMap);
   await writeOutputFiles(finalPlayers);
 
-  const doneTotal = LEAGUES_TO_SYNC.length * (SEASON_RANGE.to - SEASON_RANGE.from + 1);
+  const doneTotal = activeLeagues.length * (activeSeasons.to - activeSeasons.from + 1);
   console.log(`\nChiamate usate in questo run: ${MAX_CALLS_PER_RUN - budget.remaining} di ${MAX_CALLS_PER_RUN}`);
   console.log(`Combinazioni campionato-stagione completate: ${progress.completed.size} di ${doneTotal}`);
   if (progress.completed.size >= doneTotal) {
@@ -529,6 +552,8 @@ export {
   buildFinalDataset,
   writeOutputFiles,
   resolveLeagueApiIds,
+  getActiveLeagues,
+  getSeasonRange,
   loadRawPlayers,
   saveRawPlayers,
   loadProgress,
