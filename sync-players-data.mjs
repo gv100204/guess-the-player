@@ -2,34 +2,40 @@
  * sync-players-data.mjs
  * ----------------------------------------------------------------------------
  * Script di sincronizzazione (da eseguire su un server / cron job, MAI sul
- * telefono): scarica da API-Football la carriera e il palmares dei giocatori
- * scelti e produce, dentro ./output/:
- *   - players-data.json   tutti i giocatori, file unico (comodo per debug)
- *   - <campionato>.json   uno shard per campionato (es. seriea.json,
- *                         premier-league.json...): contiene solo i giocatori
- *                         che hanno militato in quel campionato, ognuno con
- *                         la scheda COMPLETA (non solo la parte relativa a
- *                         quel campionato) - un giocatore passato per più
- *                         campionati compare, identico, in più shard
- *   - manifest.json       elenco degli shard con versione e conteggio: è il
- *                         file piccolo che l'app scarica sempre per sapere
- *                         quali shard esistono e se sono cambiati
+ * telefono): NON parte da una lista di nomi da cercare (fragile: omonimi,
+ * apostrofi, giocatori non trovati). Parte invece dai CAMPIONATI: per ogni
+ * campionato e stagione scelti, chiede ad API-Football "chi ha giocato qui",
+ * pagina per pagina - ogni giocatore arriva già con un ID certo dell'API,
+ * senza bisogno di indovinare chi sia.
+ *
+ * Produce, dentro ./output/:
+ *   - players-data.json   tutti i giocatori sopra la soglia minima, file unico
+ *   - <campionato>.json   uno shard per campionato (contiene la scheda
+ *                         COMPLETA di ogni giocatore, non solo la parte
+ *                         relativa a quel campionato)
+ *   - manifest.json       elenco degli shard con versione e conteggio
+ *
+ * E, nella cartella principale (da COMMITTARE, non solo da pubblicare):
+ *   - raw-players.json    tutti i dati grezzi accumulati finora (persistono
+ *                         tra un run e l'altro)
+ *   - sync-progress.json  quali coppie campionato/stagione sono già state
+ *                         spazzolate, per non ripartire da zero ogni volta
  *
  * Uso:
  *   API_FOOTBALL_KEY=xxxxx node sync-players-data.mjs
  *
  * Richiede Node 18+ (usa il fetch nativo). Nessuna dipendenza esterna.
  *
- * IMPORTANTE:
- * - Non è stato testato con una chiave reale (questo ambiente non ha accesso
- *   di rete): rivedi i nomi dei campi confrontandoli con la risposta vera
- *   della tua chiave prima di usarlo in produzione.
- * - Rispetta i limiti del tuo piano API-Football: questo script metterà una
- *   piccola pausa tra le chiamate (RATE_LIMIT_DELAY_MS) per non superarli.
- * - L'aggregazione carriera/palmares qui sotto è una versione di base (MVP):
- *   funziona bene per la maggior parte dei giocatori, ma casi particolari
- *   (prestiti, doppie annate nello stesso club, trasferimenti a stagione in
- *   corso) potrebbero richiedere una pulizia manuale del JSON finale.
+ * IMPORTANTE - gestione della quota:
+ * Con molti campionati/stagioni, un solo run NON basta a completare tutto:
+ * lo script si ferma da solo quando finisce il budget di chiamate di questo
+ * run (MAX_CALLS_PER_RUN) e salva il progresso, così il run successivo
+ * riprende esattamente da dove si era fermato, senza sprecare nulla.
+ *
+ * IMPORTANTE - non testato con una chiave reale (questo ambiente non ha
+ * accesso di rete): i nomi dei campi sono presi dalla documentazione e da
+ * risposte reali viste nei log di chi lo esegue, ma vanno sempre confrontati
+ * con l'output vero prima di fidarsi ciecamente.
  * ----------------------------------------------------------------------------
  */
 
@@ -40,82 +46,79 @@ import { fileURLToPath } from "node:url";
 // Configurazione
 // ---------------------------------------------------------------------------
 
-// nota: letta dentro apiGet() a ogni chiamata (non come const in cima al file)
-// così un test può impostare process.env.API_FOOTBALL_KEY dopo l'import.
-
 const BASE_URL = "https://v3.football.api-sports.io";
-const RATE_LIMIT_DELAY_MS = Number(process.env.SYNC_RATE_LIMIT_DELAY_MS ?? 1200); // ~50 richieste/minuto, prudente per il piano free; azzerabile nei test
 const OUTPUT_DIR = "output"; // cartella con i file pronti per l'hosting statico
+const RAW_PLAYERS_FILE = "raw-players.json"; // da committare, persiste tra i run
+const PROGRESS_FILE = "sync-progress.json"; // da committare, persiste tra i run
 const BUILD_VERSION = new Date().toISOString().slice(0, 10); // es. "2026-09-18"
+
+// Finestra di stagioni da spazzolare. Di default è recente (10 anni) per
+// restare in un budget di chiamate ragionevole; puoi allargarla, ma più è
+// ampia più run (giorni) ci vorranno per completarla tutta.
+const SEASON_RANGE = { from: 2015, to: 2025 };
+
+// Quante chiamate usare al massimo IN QUESTO run, prima di fermarsi e salvare
+// il progresso. Tienilo un po' sotto la quota giornaliera reale del tuo
+// piano, per lasciare margine ad altre chiamate (es. test o debug manuale).
+const MAX_CALLS_PER_RUN = Number(process.env.MAX_CALLS_PER_RUN ?? 7000);
+
+// Sotto questa soglia di presenze totali in carriera, un giocatore non vale
+// una chiamata dedicata ai trofei (probabilmente non ne ha comunque).
+const MIN_APPS_FOR_TROPHIES = 50;
+
+// Sotto questa soglia di presenze totali in carriera, un giocatore non entra
+// nel dataset finale del gioco (troppo marginale per essere un indizio utile).
+const MIN_APPS_TO_INCLUDE = 10;
+
+// I campionati da spazzolare. apiName + country servono a trovare l'ID
+// numerico vero del campionato (lo scopriamo dall'API, non lo indoviniamo -
+// serve perché più campionati nel mondo condividono lo stesso nome: la Serie
+// A italiana e il Brasileirão si chiamano ENTRAMBI "Serie A" nell'API. Senza
+// controllare anche il paese, un giocatore brasiliano finirebbe per errore
+// nel campionato italiano).
+const LEAGUES_TO_SYNC = [
+  { id: "seriea", apiName: "Serie A", country: "Italy" },
+  { id: "pl", apiName: "Premier League", country: "England" },
+  { id: "laliga", apiName: "La Liga", country: "Spain" },
+  { id: "bundesliga", apiName: "Bundesliga", country: "Germany" },
+  { id: "ligue1", apiName: "Ligue 1", country: "France" },
+  { id: "liga_pt", apiName: "Primeira Liga", country: "Portugal" },
+  { id: "mls", apiName: "Major League Soccer", country: "USA" },
+  { id: "superlig", apiName: "Super Lig", country: "Turkey" },
+  { id: "saudi", apiName: "Pro League", country: "Saudi-Arabia" },
+  { id: "qatar", apiName: "Qatar Stars League", country: "Qatar" },
+  { id: "brasileirao", apiName: "Serie A", country: "Brazil" },
+  { id: "ekstraklasa", apiName: "Ekstraklasa", country: "Poland" }
+];
+
+const GK_POSITION = "Goalkeeper";
 
 // Molti piani (incluso il Free) limitano le stagioni accessibili e lo dicono
 // nel messaggio di errore ("... try from 2022 to 2024"). Lo scopriamo alla
-// prima richiesta negata e lo riusiamo per tutti i giocatori successivi,
-// così non sprechiamo quota su anni che sappiamo già essere negati.
+// prima richiesta negata e lo riusiamo per tutte le chiamate successive.
 let planSeasonRange = null; // { min, max } oppure null se non ancora scoperto
 function resetPlanSeasonRangeForTests() { planSeasonRange = null; }
-const SEASON_RANGE = { from: 1994, to: 2025 }; // intervallo di stagioni da controllare per ogni giocatore
-
-// Elenco dei giocatori da sincronizzare: basta il nome, lo script trova l'id.
-// Aggiungi/rimuovi nomi qui per cambiare il roster del gioco.
-const PLAYERS_TO_SYNC = [
-  "Cristiano Ronaldo",
-  "Lionel Messi",
-  "Andrea Pirlo",
-  "Zinedine Zidane",
-  "Xavi Hernandez",
-  "Iker Casillas",
-  "Gianluigi Buffon",
-  "Paolo Maldini",
-  "Thierry Henry",
-  "Didier Drogba",
-  "Ronaldinho",
-  "N'Golo Kante",
-  "Xabi Alonso",
-  "Franck Ribery",
-  "Robert Lewandowski"
-];
-
-// Mappa "nome campionato in API-Football" -> "id campionato usato dal gioco".
-// Va tenuta aggiornata: se un giocatore ha militato in un campionato non
-// presente qui, quella stagione verrà scartata (loggato a schermo) finché
-// non aggiungi la riga corrispondente.
-const LEAGUE_NAME_TO_ID = {
-  "Serie A": "seriea",
-  "Premier League": "pl",
-  "La Liga": "laliga",
-  "Bundesliga": "bundesliga",
-  "Ligue 1": "ligue1",
-  "Primeira Liga": "liga_pt",
-  "MLS": "mls",
-  "Super Lig": "superlig",
-  "Saudi Pro League": "saudi",
-  "Qatar Stars League": "qatar",
-  "Serie A Brazil": "brasileirao",
-  "Ekstraklasa": "ekstraklasa"
-};
-
-// Ruoli goalkeeper come restituiti da API-Football (players.statistics[].games.position)
-const GK_POSITIONS = new Set(["Goalkeeper"]);
 
 // ---------------------------------------------------------------------------
-// Utility
+// Chiamate API di base
 // ---------------------------------------------------------------------------
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function apiGet(path, params) {
+/**
+ * Ritorna la risposta COMPLETA (response + paging), non solo i dati, perché
+ * lo sweep dei campionati ha bisogno dell'informazione di paginazione.
+ */
+async function apiGetFull(path, params) {
   const API_KEY = process.env.API_FOOTBALL_KEY;
   if (!API_KEY) {
     throw new Error("Variabile d'ambiente API_FOOTBALL_KEY non impostata.");
   }
   const url = new URL(BASE_URL + path);
   Object.entries(params || {}).forEach(([k, v]) => url.searchParams.set(k, v));
-  const res = await fetch(url, {
-    headers: { "x-apisports-key": API_KEY }
-  });
+  const res = await fetch(url, { headers: { "x-apisports-key": API_KEY } });
   if (!res.ok) {
     throw new Error(`Richiesta fallita (${res.status}) per ${url}`);
   }
@@ -123,110 +126,163 @@ async function apiGet(path, params) {
   if (json.errors && Object.keys(json.errors).length > 0) {
     throw new Error(`API-Football ha risposto con errori: ${JSON.stringify(json.errors)}`);
   }
-  await sleep(RATE_LIMIT_DELAY_MS);
+  await sleep(Number(process.env.SYNC_RATE_LIMIT_DELAY_MS ?? 1200));
+  return json;
+}
+
+async function apiGet(path, params) {
+  const json = await apiGetFull(path, params);
   return json.response;
 }
 
 // ---------------------------------------------------------------------------
-// Passo 1: trovare l'id del giocatore a partire dal nome
+// Risoluzione degli ID numerici dei campionati (scoperti, non indovinati)
 // ---------------------------------------------------------------------------
 
-async function findPlayerId(name) {
-  const results = await apiGet("/players/profiles", { search: name });
-  if (!results || results.length === 0) {
-    console.warn(`  ! Nessun risultato per "${name}", salto.`);
-    return null;
+async function resolveLeagueApiIds(budget) {
+  for (const league of LEAGUES_TO_SYNC) {
+    if (league.numericId) continue; // già risolto in un run precedente (persistito nel progress)
+    if (budget.remaining <= 0) return;
+    try {
+      const results = await apiGet("/leagues", { name: league.apiName, country: league.country });
+      budget.remaining--;
+      if (!results || results.length === 0) {
+        console.warn(`  ! Campionato non trovato: "${league.apiName}" (${league.country}) - verrà saltato`);
+        continue;
+      }
+      league.numericId = results[0].league.id;
+      console.log(`  -> ${league.apiName} (${league.country}) = id campionato ${league.numericId}`);
+    } catch (err) {
+      console.warn(`  ! Errore risolvendo "${league.apiName}" (${league.country}): ${err.message}`);
+    }
   }
-  // Se ci sono più omonimi, qui prendiamo il primo: controlla manualmente
-  // il JSON finale se il roster contiene giocatori con nomi comuni.
-  const player = results[0].player;
-  const birthYear = player.birth?.date ? Number(player.birth.date.slice(0, 4)) : null;
-  console.log(`  -> trovato id ${player.id} (${player.name}, nato ${player.birth?.date ?? "??"})`);
-  return { id: player.id, birthYear };
 }
 
 // ---------------------------------------------------------------------------
-// Passo 2: carriera (stagione per stagione -> aggregata per squadra)
+// Trova, tra i campionati configurati, quello che corrisponde a una riga di
+// statistiche restituita dall'API (per nome E paese: vedi il commento sulla
+// collisione Italia/Brasile "Serie A" più sopra).
 // ---------------------------------------------------------------------------
 
-async function fetchCareer(playerId, birthYear) {
-  const stints = []; // { years:[minYear,maxYear], club, league, apps, goals, isGK }
+function matchLeague(name, country) {
+  return LEAGUES_TO_SYNC.find((l) => l.apiName === name && l.country === country);
+}
 
-  // Partiamo dall'anno in cui il giocatore poteva ragionevolmente debuttare
-  // (nascita + 15 anni) invece che dall'inizio fisso di SEASON_RANGE: usare
-  // un'euristica "fermati dopo N stagioni vuote di fila" è pericoloso, perché
-  // per un giocatore che ha debuttato tardi le prime stagioni vuote sarebbero
-  // moltissime PRIMA di trovare i suoi anni veri, e lo script si fermerebbe
-  // prima di arrivarci. Meglio restringere l'intervallo con un dato certo
-  // (la data di nascita) che con un'euristica sul numero di stagioni vuote.
-  let fromYear = birthYear ? Math.max(SEASON_RANGE.from, birthYear + 15) : SEASON_RANGE.from;
-  let toYear = SEASON_RANGE.to;
-  if (planSeasonRange) {
-    fromYear = Math.max(fromYear, planSeasonRange.min);
-    toYear = Math.min(toYear, planSeasonRange.max);
+// ---------------------------------------------------------------------------
+// Fonde una riga di risposta di /players (un giocatore, con le sue statistiche
+// per quella stagione/campionato) dentro la mappa accumulata di tutti i
+// giocatori scoperti finora.
+// ---------------------------------------------------------------------------
+
+function mergePlayerEntry(playersMap, entry, season) {
+  const p = entry.player;
+  if (!p || !p.id) return;
+
+  let rec = playersMap.get(p.id);
+  if (!rec) {
+    rec = {
+      id: p.id,
+      name: p.name,
+      nationality: p.nationality || null,
+      isGK: false,
+      careerStints: new Map(), // chiave "club|campionato" -> { years:Set, club, league, apps, goals }
+      trophies: null,
+      trophiesFetched: false
+    };
+    playersMap.set(p.id, rec);
   }
 
-  for (let year = fromYear; year <= toYear; year++) {
-    let seasonData;
+  const statsList = entry.statistics || [];
+  statsList.forEach((s) => {
+    const leagueMeta = matchLeague(s.league?.name, s.league?.country);
+    if (!leagueMeta) return; // coppa, amichevole, nazionale, o campionato non tracciato: scartato di proposito
+
+    const apps = s.games?.appearences || 0;
+    if (apps === 0) return;
+
+    const isGK = s.games?.position === GK_POSITION;
+    if (isGK) rec.isGK = true;
+
+    const goals = s.goals?.total || 0;
+    const conceded = s.goals?.conceded || 0;
+    const club = s.team?.name || "Squadra sconosciuta";
+    const key = club + "|" + leagueMeta.id;
+
+    let stint = rec.careerStints.get(key);
+    if (!stint) {
+      stint = { years: new Set(), club, league: leagueMeta.id, apps: 0, goals: 0 };
+      rec.careerStints.set(key, stint);
+    }
+    stint.years.add(season);
+    stint.apps += apps;
+    stint.goals += isGK ? conceded : goals;
+  });
+}
+
+function totalApps(rec) {
+  let total = 0;
+  rec.careerStints.forEach((s) => { total += s.apps; });
+  return total;
+}
+
+function finalizeCareer(rec) {
+  return Array.from(rec.careerStints.values())
+    .map((s) => {
+      const years = Array.from(s.years).sort((a, b) => a - b);
+      const minY = years[0];
+      const maxY = years[years.length - 1];
+      return {
+        years: minY === maxY ? String(minY) : `${minY}–${maxY + 1}`,
+        club: s.club,
+        league: s.league,
+        apps: s.apps,
+        goals: s.goals
+      };
+    })
+    .sort((a, b) => Number(a.years.slice(0, 4)) - Number(b.years.slice(0, 4)));
+}
+
+// ---------------------------------------------------------------------------
+// Spazzola un campionato/stagione, pagina per pagina, fondendo ogni giocatore
+// trovato nella mappa accumulata. Si ferma (senza completare) se il budget
+// di chiamate del run finisce a metà: la coppia campionato/stagione NON
+// viene segnata come completata, quindi il run successivo la rifà da capo
+// (semplificazione voluta: niente ripresa a metà pagina, solo a metà stagione).
+// ---------------------------------------------------------------------------
+
+async function sweepLeagueSeason(league, season, playersMap, budget) {
+  let page = 1;
+  let totalPages = 1;
+
+  do {
+    if (budget.remaining <= 0) return { completed: false };
+
+    let json;
     try {
-      seasonData = await apiGet("/players", { id: playerId, season: year });
+      json = await apiGetFull("/players", { league: league.numericId, season, page });
     } catch (err) {
       const rangeMatch = err.message.match(/try from (\d+) to (\d+)/);
-      if (rangeMatch && !planSeasonRange) {
+      if (rangeMatch) {
         planSeasonRange = { min: Number(rangeMatch[1]), max: Number(rangeMatch[2]) };
-        console.warn(
-          `    Il piano API-Football limita le stagioni a ${planSeasonRange.min}-${planSeasonRange.max}: aggiorno l'intervallo e continuo da lì (niente più chiamate sprecate su anni fuori range).`
-        );
-        toYear = Math.min(toYear, planSeasonRange.max);
-        if (year < planSeasonRange.min) { year = planSeasonRange.min - 1; continue; }
-        if (year > planSeasonRange.max) break;
+        console.warn(`  Il piano limita le stagioni a ${planSeasonRange.min}-${planSeasonRange.max}: salto questa stagione.`);
+        return { completed: true, skipped: true };
       }
-      console.warn(`    stagione ${year}: errore (${err.message}), salto`);
-      continue;
+      console.warn(`  Errore su ${league.id} ${season} pagina ${page}: ${err.message}`);
+      return { completed: false };
     }
+    budget.remaining--;
 
-    if (!seasonData || seasonData.length === 0) continue;
+    (json.response || []).forEach((entry) => mergePlayerEntry(playersMap, entry, season));
+    totalPages = json.paging?.total || 1;
+    page++;
+  } while (page <= totalPages);
 
-    const statsList = seasonData[0].statistics || [];
-    statsList.forEach((s) => {
-      const leagueName = s.league?.name;
-      const leagueId = LEAGUE_NAME_TO_ID[leagueName];
-      if (!leagueId) {
-        // Campionato non mappato: lo segnaliamo ma non blocchiamo il resto.
-        console.warn(`    (${year}) campionato non mappato: "${leagueName}" - riga scartata`);
-        return;
-      }
-      const club = s.team?.name;
-      const apps = s.games?.appearences || 0;
-      const goals = s.goals?.total || 0;
-      const conceded = s.goals?.conceded || 0;
-      const isGK = GK_POSITIONS.has(s.games?.position);
-      if (apps === 0) return; // stagione senza presenze in quel campionato, ignora
-
-      let stint = stints.find((st) => st.club === club && st.league === leagueId);
-      if (!stint) {
-        stint = { minYear: year, maxYear: year, club, league: leagueId, apps: 0, goals: 0, isGK };
-        stints.push(stint);
-      }
-      stint.minYear = Math.min(stint.minYear, year);
-      stint.maxYear = Math.max(stint.maxYear, year);
-      stint.apps += apps;
-      stint.goals += isGK ? conceded : goals;
-    });
-  }
-
-  stints.sort((a, b) => a.minYear - b.minYear);
-  return stints.map((st) => ({
-    years: st.minYear === st.maxYear ? String(st.minYear) : `${st.minYear}–${st.maxYear + 1}`,
-    club: st.club,
-    league: st.league,
-    apps: st.apps,
-    goals: st.goals
-  }));
+  return { completed: true };
 }
 
 // ---------------------------------------------------------------------------
-// Passo 3: palmares
+// Palmares: solo per chi supera la soglia minima di presenze totali, e solo
+// se non già scaricato in un run precedente.
 // ---------------------------------------------------------------------------
 
 async function fetchTrophies(playerId) {
@@ -234,30 +290,25 @@ async function fetchTrophies(playerId) {
   try {
     raw = await apiGet("/trophies", { player: playerId });
   } catch (err) {
-    console.warn(`    trofei: errore (${err.message})`);
+    console.warn(`    trofei per id ${playerId}: errore (${err.message})`);
     return [];
   }
   if (!raw) return [];
 
-  // Raggruppiamo le vittorie ("Winner") per campionato/competizione.
   const wins = raw.filter((t) => /winner/i.test(t.place || ""));
   const grouped = {};
   wins.forEach((t) => {
-    const leagueName = t.league;
-    const leagueId = LEAGUE_NAME_TO_ID[leagueName] || null; // può restare null per Mondiali/Europei
-    const key = leagueName;
-    if (!grouped[key]) grouped[key] = { leagueId, leagueName, count: 0, seasons: [] };
+    const key = t.league;
+    if (!grouped[key]) grouped[key] = { leagueName: t.league, count: 0, seasons: [] };
     grouped[key].count += 1;
     grouped[key].seasons.push(t.season);
   });
 
   return Object.values(grouped).map((g) => {
-    // "comp" qui riusa lo stesso id di campionato quando esiste; per le
-    // competizioni internazionali (Mondiali, Europei) andrà mappato a mano
-    // con id "wc" / "intl" nel JSON finale, perché API-Football le elenca
-    // con nomi di torneo (es. "World Cup", "UEFA Euro") non presenti in
-    // LEAGUE_NAME_TO_ID.
-    const comp = g.leagueId || g.leagueName;
+    // Le competizioni internazionali (Mondiali, Europei) arrivano con nomi
+    // di torneo che vanno rimappati a mano a "wc"/"intl" nel dataset finale.
+    const matchedLeague = LEAGUES_TO_SYNC.find((l) => l.apiName === g.leagueName);
+    const comp = matchedLeague ? matchedLeague.id : g.leagueName;
     const text =
       g.count > 1
         ? `${g.count} volte campione di ${g.leagueName}`
@@ -267,48 +318,78 @@ async function fetchTrophies(playerId) {
 }
 
 // ---------------------------------------------------------------------------
-// Main
+// Persistenza tra un run e l'altro
 // ---------------------------------------------------------------------------
 
-async function main() {
-  const players = [];
-
-  for (const name of PLAYERS_TO_SYNC) {
-    console.log(`\nSincronizzo: ${name}`);
-    const found = await findPlayerId(name);
-    if (!found) continue;
-    const { id, birthYear } = found;
-
-    console.log("  scarico carriera...");
-    const career = await fetchCareer(id, birthYear);
-
-    console.log("  scarico palmares...");
-    const trophies = await fetchTrophies(id);
-
-    const isGK = career.length > 0 && career.some((c) => c.goals !== undefined) ? false : false;
-    // Nota: l'informazione isGK viene già usata internamente in fetchCareer
-    // per decidere se "goals" rappresenta gol fatti o subiti, ma non viene
-    // riportata a livello di stint qui sopra per restare fedeli al formato
-    // del gioco. Se ti serve, aggiungi isGK come proprietà separata per
-    // ciascuno stint prima di questo punto.
-
-    players.push({
-      id: slugify(name),
-      name,
-      nationality: null, // da compilare: non richiesto qui per restare nel budget di chiamate
-      isGK: false, // da correggere manualmente per i portieri (vedi commento sopra)
-      career,
-      trophies
-    });
+async function loadJsonIfExists(path, fallback) {
+  try {
+    return JSON.parse(await fs.readFile(path, "utf-8"));
+  } catch {
+    return fallback;
   }
-
-  await writeOutputFiles(players);
 }
 
-/**
- * Trasforma "N'Golo Kanté" in "n-golo-kante": id stabile e leggibile,
- * usato come nome file / chiave nel manifest e come riferimento tra shard.
- */
+async function loadRawPlayers() {
+  const raw = await loadJsonIfExists(RAW_PLAYERS_FILE, { players: [] });
+  const map = new Map();
+  raw.players.forEach((p) => {
+    const stints = new Map();
+    (p.careerStints || []).forEach((s) => {
+      stints.set(s.club + "|" + s.league, { years: new Set(s.years), club: s.club, league: s.league, apps: s.apps, goals: s.goals });
+    });
+    map.set(p.id, { ...p, careerStints: stints });
+  });
+  return map;
+}
+
+async function saveRawPlayers(playersMap) {
+  const players = Array.from(playersMap.values()).map((rec) => ({
+    id: rec.id,
+    name: rec.name,
+    nationality: rec.nationality,
+    isGK: rec.isGK,
+    trophies: rec.trophies,
+    trophiesFetched: rec.trophiesFetched,
+    careerStints: Array.from(rec.careerStints.values()).map((s) => ({
+      club: s.club,
+      league: s.league,
+      apps: s.apps,
+      goals: s.goals,
+      years: Array.from(s.years)
+    }))
+  }));
+  await fs.writeFile(RAW_PLAYERS_FILE, JSON.stringify({ version: BUILD_VERSION, players }, null, 2), "utf-8");
+}
+
+async function loadProgress() {
+  const raw = await loadJsonIfExists(PROGRESS_FILE, { completed: [] });
+  return { completed: new Set(raw.completed) };
+}
+
+async function saveProgress(progress) {
+  await fs.writeFile(PROGRESS_FILE, JSON.stringify({ completed: Array.from(progress.completed) }, null, 2), "utf-8");
+}
+
+// ---------------------------------------------------------------------------
+// Dataset finale per il gioco (filtrato, nella forma che il prototipo usa già)
+// ---------------------------------------------------------------------------
+
+function buildFinalDataset(playersMap) {
+  const result = [];
+  playersMap.forEach((rec) => {
+    if (totalApps(rec) < MIN_APPS_TO_INCLUDE) return;
+    result.push({
+      id: slugify(rec.name) + "-" + rec.id, // l'id numerico evita collisioni tra omonimi veri
+      name: rec.name,
+      nationality: rec.nationality,
+      isGK: rec.isGK,
+      career: finalizeCareer(rec),
+      trophies: rec.trophies || []
+    });
+  });
+  return result;
+}
+
 function slugify(name) {
   return name
     .toLowerCase()
@@ -317,28 +398,20 @@ function slugify(name) {
     .replace(/^-+|-+$/g, "");
 }
 
-/**
- * Scrive:
- * - output/players-data.json      -> tutti i giocatori, un file unico (comodo per debug)
- * - output/<league_id>.json       -> solo i giocatori che hanno militato in quel campionato,
- *                                    ognuno con la SCHEDA COMPLETA (carriera e palmares intere,
- *                                    non solo la parte relativa a quel campionato) - un giocatore
- *                                    passato per più campionati compare, identico, in più shard.
- * - output/manifest.json          -> elenco degli shard con versione e conteggio, è il file
- *                                    piccolo che l'app scarica sempre per sapere cosa scaricare.
- */
+// ---------------------------------------------------------------------------
+// Output per l'hosting statico (shard per campionato + manifest)
+// ---------------------------------------------------------------------------
+
 async function writeOutputFiles(players) {
   await fs.mkdir(OUTPUT_DIR, { recursive: true });
 
-  // file unico completo (debug / import manuale)
   await fs.writeFile(
     `${OUTPUT_DIR}/players-data.json`,
     JSON.stringify({ version: BUILD_VERSION, players }, null, 2),
     "utf-8"
   );
 
-  // shard per campionato
-  const shards = {}; // leagueId -> array di giocatori
+  const shards = {};
   players.forEach((p) => {
     const leaguesForPlayer = new Set(p.career.map((c) => c.league));
     leaguesForPlayer.forEach((leagueId) => {
@@ -348,7 +421,6 @@ async function writeOutputFiles(players) {
   });
 
   const manifest = { version: BUILD_VERSION, leagues: {} };
-
   for (const [leagueId, leaguePlayers] of Object.entries(shards)) {
     const fileName = `${leagueId}.json`;
     await fs.writeFile(
@@ -356,32 +428,76 @@ async function writeOutputFiles(players) {
       JSON.stringify({ version: BUILD_VERSION, players: leaguePlayers }, null, 2),
       "utf-8"
     );
-    manifest.leagues[leagueId] = {
-      file: fileName,
-      version: BUILD_VERSION,
-      count: leaguePlayers.length
-    };
+    manifest.leagues[leagueId] = { file: fileName, version: BUILD_VERSION, count: leaguePlayers.length };
   }
 
-  await fs.writeFile(
-    `${OUTPUT_DIR}/manifest.json`,
-    JSON.stringify(manifest, null, 2),
-    "utf-8"
-  );
+  await fs.writeFile(`${OUTPUT_DIR}/manifest.json`, JSON.stringify(manifest, null, 2), "utf-8");
 
-  console.log(`\nFatto. Scritti in ./${OUTPUT_DIR}/:`);
-  console.log(`  players-data.json (tutti i ${players.length} giocatori, file unico)`);
-  Object.entries(manifest.leagues).forEach(([leagueId, info]) => {
-    console.log(`  ${info.file} (${info.count} giocatori)`);
-  });
-  console.log("  manifest.json (elenco degli shard con versione)");
-  console.log("\nCarica il contenuto di questa cartella sul tuo hosting statico (stessa struttura, stessi nomi file).");
-  console.log("Controlla manualmente: nazionalità, isGK per i portieri, e i trofei internazionali (comp 'wc'/'intl').");
+  console.log(`\nScritti in ./${OUTPUT_DIR}/: players-data.json (${players.length} giocatori) + ${Object.keys(shards).length} shard + manifest.json`);
 }
 
-// Esegue main() solo se il file è lanciato direttamente (node sync-players-data.mjs),
-// non quando viene importato da un altro modulo (es. il file di test) - così importarlo
-// per testare la logica non scatena chiamate di rete vere né chiude il processo.
+// ---------------------------------------------------------------------------
+// Main
+// ---------------------------------------------------------------------------
+
+async function main() {
+  const budget = { remaining: MAX_CALLS_PER_RUN };
+
+  console.log("Carico progresso e dati grezzi salvati dai run precedenti...");
+  const playersMap = await loadRawPlayers();
+  const progress = await loadProgress();
+  console.log(`  giocatori già in archivio: ${playersMap.size}`);
+  console.log(`  combinazioni campionato/stagione già completate: ${progress.completed.size}`);
+
+  console.log("\nRisolvo gli ID numerici dei campionati...");
+  await resolveLeagueApiIds(budget);
+
+  console.log("\nSpazzolo campionati e stagioni ancora da fare...");
+  let stoppedForBudget = false;
+  outer:
+  for (const league of LEAGUES_TO_SYNC) {
+    if (!league.numericId) continue; // non risolto (campionato non trovato o budget finito prima)
+    for (let season = SEASON_RANGE.from; season <= SEASON_RANGE.to; season++) {
+      const key = `${league.id}:${season}`;
+      if (progress.completed.has(key)) continue;
+      if (budget.remaining <= 0) { stoppedForBudget = true; break outer; }
+
+      console.log(`  ${league.apiName} (${league.country}) ${season}...`);
+      const result = await sweepLeagueSeason(league, season, playersMap, budget);
+      if (result.completed) {
+        progress.completed.add(key);
+      } else {
+        stoppedForBudget = true;
+        break outer;
+      }
+    }
+  }
+
+  console.log("\nScarico il palmares per chi ha presenze sufficienti...");
+  for (const rec of playersMap.values()) {
+    if (budget.remaining <= 0) { stoppedForBudget = true; break; }
+    if (rec.trophiesFetched) continue;
+    if (totalApps(rec) < MIN_APPS_FOR_TROPHIES) continue;
+    rec.trophies = await fetchTrophies(rec.id);
+    rec.trophiesFetched = true;
+  }
+
+  await saveRawPlayers(playersMap);
+  await saveProgress(progress);
+
+  const finalPlayers = buildFinalDataset(playersMap);
+  await writeOutputFiles(finalPlayers);
+
+  const doneTotal = LEAGUES_TO_SYNC.length * (SEASON_RANGE.to - SEASON_RANGE.from + 1);
+  console.log(`\nChiamate usate in questo run: ${MAX_CALLS_PER_RUN - budget.remaining} di ${MAX_CALLS_PER_RUN}`);
+  console.log(`Combinazioni campionato-stagione completate: ${progress.completed.size} di ${doneTotal}`);
+  if (stoppedForBudget) {
+    console.log("Budget di questo run esaurito prima di finire tutto: il prossimo lancio riprende da dove si è fermato.");
+  } else {
+    console.log("Sincronizzazione completa per la finestra di stagioni configurata.");
+  }
+}
+
 const isMainModule = process.argv[1] === fileURLToPath(import.meta.url);
 if (isMainModule) {
   main().catch((err) => {
@@ -390,4 +506,21 @@ if (isMainModule) {
   });
 }
 
-export { slugify, fetchCareer, fetchTrophies, writeOutputFiles, findPlayerId, LEAGUE_NAME_TO_ID, resetPlanSeasonRangeForTests };
+export {
+  slugify,
+  matchLeague,
+  mergePlayerEntry,
+  finalizeCareer,
+  totalApps,
+  sweepLeagueSeason,
+  fetchTrophies,
+  buildFinalDataset,
+  writeOutputFiles,
+  resolveLeagueApiIds,
+  loadRawPlayers,
+  saveRawPlayers,
+  loadProgress,
+  saveProgress,
+  LEAGUES_TO_SYNC,
+  resetPlanSeasonRangeForTests
+};

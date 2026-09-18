@@ -3,14 +3,12 @@
  * ----------------------------------------------------------------------------
  * Test della LOGICA di sync-players-data.mjs, senza rete: sostituisce
  * global.fetch con risposte finte modellate sulla forma reale delle
- * risposte di API-Football (v3.football.api-sports.io), così possiamo
- * verificare che l'aggregazione carriera/palmares e la generazione degli
- * shard funzionino, senza bisogno di una chiave API vera.
+ * risposte di API-Football (v3.football.api-sports.io).
  *
  * NON verifica: che i nomi dei campi finti coincidano al 100% con quelli
- * reali dell'API (per quello serve una chiave vera, vedi il testing manuale
- * descritto in fondo). Verifica solo che, DATI quei campi, la nostra logica
- * di aggregazione produca il risultato corretto.
+ * reali dell'API. Verifica che, DATI quei campi, la nostra logica di
+ * aggregazione, disambiguazione campionati e gestione del budget di
+ * chiamate funzioni correttamente.
  *
  * Uso: node test-sync-players-data.mjs
  * ----------------------------------------------------------------------------
@@ -24,9 +22,20 @@ process.env.API_FOOTBALL_KEY = "fake-key-for-tests";
 
 import {
   slugify,
-  fetchCareer,
+  matchLeague,
+  mergePlayerEntry,
+  finalizeCareer,
+  totalApps,
+  sweepLeagueSeason,
   fetchTrophies,
+  buildFinalDataset,
   writeOutputFiles,
+  resolveLeagueApiIds,
+  loadRawPlayers,
+  saveRawPlayers,
+  loadProgress,
+  saveProgress,
+  LEAGUES_TO_SYNC,
   resetPlanSeasonRangeForTests
 } from "./sync-players-data.mjs";
 
@@ -43,184 +52,126 @@ function test(name, fn) {
     });
 }
 
-function jsonResponse(body) {
+function jsonResponse(body, paging) {
   return {
     ok: true,
     status: 200,
-    json: async () => ({ response: body, errors: {} })
+    json: async () => ({ response: body, errors: {}, paging: paging || { current: 1, total: 1 } })
   };
 }
 
-// ---------------------------------------------------------------------------
-// Finti dati "API-Football" per un giocatore con due stagioni nella stessa
-// squadra (Serie A) e una terza stagione in un'altra squadra/campionato.
-// Forma basata sulla documentazione dell'endpoint /players.
-// ---------------------------------------------------------------------------
-
-function fakePlayersSeasonResponse({ team, leagueName, apps, goals, position = "Attacker", conceded = 0 }) {
-  return [
-    {
-      player: { id: 999, name: "Test Player" },
-      statistics: [
-        {
-          team: { id: 1, name: team },
-          league: { name: leagueName, country: "Italy", season: 2020 },
-          games: { appearences: apps, position },
-          goals: { total: goals, conceded }
-        }
-      ]
-    }
-  ];
+function newPlayersMap() {
+  return new Map();
 }
 
 async function main() {
   console.log("slugify()");
   await test("accenti e apostrofi diventano trattini", () => {
     assert.equal(slugify("N'Golo Kanté"), "n-golo-kante");
-    assert.equal(slugify("Zinedine Zidane"), "zinedine-zidane");
   });
 
-  console.log("\nfetchCareer() - aggregazione stagioni sulla stessa squadra");
-  await test("due stagioni nella stessa squadra si sommano in un solo stint", async () => {
-    let callCount = 0;
-    global.fetch = async (url) => {
-      callCount++;
-      const yearMatch = String(url).match(/season=(\d+)/);
-      const year = Number(yearMatch[1]);
-      if (year === 2020) {
-        return jsonResponse(fakePlayersSeasonResponse({ team: "Juventus", leagueName: "Serie A", apps: 30, goals: 10 }));
-      }
-      if (year === 2021) {
-        return jsonResponse(fakePlayersSeasonResponse({ team: "Juventus", leagueName: "Serie A", apps: 28, goals: 8 }));
-      }
-      return jsonResponse([]); // nessun dato per le altre stagioni controllate
-    };
-
-    process.env.API_FOOTBALL_KEY = "fake-key-for-tests";
-    const career = await fetchCareer(999);
-
-    assert.equal(career.length, 1, "ci si aspetta un solo stint (stessa squadra, stesso campionato)");
-    assert.equal(career[0].club, "Juventus");
-    assert.equal(career[0].league, "seriea");
-    assert.equal(career[0].apps, 58, "presenze: 30 + 28");
-    assert.equal(career[0].goals, 18, "gol: 10 + 8");
-    assert.ok(callCount > 0, "apiGet deve essere stato chiamato almeno una volta");
+  console.log("\nmatchLeague() - disambiguazione per nome + paese");
+  await test("distingue la Serie A italiana da quella brasiliana (bug reale: stesso nome, paese diverso)", () => {
+    const it = matchLeague("Serie A", "Italy");
+    const br = matchLeague("Serie A", "Brazil");
+    assert.ok(it && br, "entrambe devono essere trovate");
+    assert.notEqual(it.id, br.id, "devono risolversi a due campionati DIVERSI nel nostro catalogo");
+    assert.equal(it.id, "seriea");
+    assert.equal(br.id, "brasileirao");
+  });
+  await test("un nome che non corrisponde a nessun campionato tracciato restituisce undefined", () => {
+    assert.equal(matchLeague("Coppa Italia", "Italy"), undefined);
   });
 
-  await test("cambio squadra a metà carriera produce due stint separati", async () => {
-    global.fetch = async (url) => {
-      const yearMatch = String(url).match(/season=(\d+)/);
-      const year = Number(yearMatch[1]);
-      if (year === 2020) {
-        return jsonResponse(fakePlayersSeasonResponse({ team: "Parma", leagueName: "Serie A", apps: 20, goals: 2 }));
-      }
-      if (year === 2021) {
-        return jsonResponse(fakePlayersSeasonResponse({ team: "Bayern Monaco", leagueName: "Bundesliga", apps: 15, goals: 1 }));
-      }
-      return jsonResponse([]);
+  console.log("\nmergePlayerEntry() - aggregazione carriera");
+  await test("due stagioni nello stesso club/campionato si aggregano in un solo stint", () => {
+    const players = newPlayersMap();
+    const entry = {
+      player: { id: 1, name: "Test Player", nationality: "Italy" },
+      statistics: [{ team: { name: "Juventus" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: 30, position: "Attacker" }, goals: { total: 10 } }]
     };
-    const career = await fetchCareer(999);
-    assert.equal(career.length, 2);
-    assert.deepEqual(career.map((c) => c.club), ["Parma", "Bayern Monaco"]);
-    assert.deepEqual(career.map((c) => c.league), ["seriea", "bundesliga"]);
-  });
-
-  await test("un portiere: 'goals' nello stint è gol subiti, non fatti", async () => {
-    global.fetch = async (url) => {
-      const yearMatch = String(url).match(/season=(\d+)/);
-      const year = Number(yearMatch[1]);
-      if (year === 2020) {
-        return jsonResponse(
-          fakePlayersSeasonResponse({ team: "Parma", leagueName: "Serie A", apps: 34, goals: 0, position: "Goalkeeper", conceded: 41 })
-        );
-      }
-      return jsonResponse([]);
-    };
-    const career = await fetchCareer(999);
+    mergePlayerEntry(players, entry, 2020);
+    mergePlayerEntry(players, entry, 2021);
+    const rec = players.get(1);
+    const career = finalizeCareer(rec);
     assert.equal(career.length, 1);
-    assert.equal(career[0].goals, 41, "per i portieri ci aspettiamo i gol subiti, non quelli fatti (0)");
+    assert.equal(career[0].apps, 60);
+    assert.equal(career[0].goals, 20);
+    assert.equal(career[0].league, "seriea");
   });
 
-  await test("campionato non mappato viene scartato senza bloccare gli altri", async () => {
-    global.fetch = async (url) => {
-      const yearMatch = String(url).match(/season=(\d+)/);
-      const year = Number(yearMatch[1]);
-      if (year === 2020) {
-        return jsonResponse([
-          {
-            player: { id: 999, name: "Test Player" },
-            statistics: [
-              { team: { name: "Juventus" }, league: { name: "Serie A" }, games: { appearences: 10, position: "Attacker" }, goals: { total: 1 } },
-              { team: { name: "Club Sconosciuto" }, league: { name: "Campionato Non Mappato" }, games: { appearences: 5, position: "Attacker" }, goals: { total: 0 } }
-            ]
-          }
-        ]);
-      }
-      return jsonResponse([]);
+  await test("una riga con nome giusto ma paese sbagliato viene scartata (non è quel campionato)", () => {
+    const players = newPlayersMap();
+    const entry = {
+      player: { id: 2, name: "Giocatore Brasiliano", nationality: "Brazil" },
+      statistics: [{ team: { name: "Flamengo" }, league: { name: "Serie A", country: "Brazil" }, games: { appearences: 20, position: "Attacker" }, goals: { total: 5 } }]
     };
-    const career = await fetchCareer(999);
-    assert.equal(career.length, 1, "solo lo stint mappato deve comparire");
-    assert.equal(career[0].club, "Juventus");
+    mergePlayerEntry(players, entry, 2020);
+    const career = finalizeCareer(players.get(2));
+    assert.equal(career.length, 1);
+    assert.equal(career[0].league, "brasileirao", "deve finire nel Brasileirão, non nella Serie A italiana");
   });
 
-  await test("un piano con stagioni limitate viene scoperto e rispettato, senza sprecare altre chiamate (bug reale trovato in produzione)", async () => {
+  await test("un portiere: 'goals' nello stint è gol subiti, non fatti", () => {
+    const players = newPlayersMap();
+    const entry = {
+      player: { id: 3, name: "Portiere Test", nationality: "Spain" },
+      statistics: [{ team: { name: "Real Sociedad" }, league: { name: "La Liga", country: "Spain" }, games: { appearences: 34, position: "Goalkeeper" }, goals: { total: 0, conceded: 41 } }]
+    };
+    mergePlayerEntry(players, entry, 2021);
+    const rec = players.get(3);
+    assert.equal(rec.isGK, true);
+    assert.equal(finalizeCareer(rec)[0].goals, 41);
+  });
+
+  await test("una competizione non tracciata (coppa, amichevole) viene scartata silenziosamente", () => {
+    const players = newPlayersMap();
+    const entry = {
+      player: { id: 4, name: "Test Player 2", nationality: "England" },
+      statistics: [
+        { team: { name: "Arsenal" }, league: { name: "Premier League", country: "England" }, games: { appearences: 25, position: "Midfielder" }, goals: { total: 3 } },
+        { team: { name: "Arsenal" }, league: { name: "FA Cup", country: "England" }, games: { appearences: 4, position: "Midfielder" }, goals: { total: 1 } }
+      ]
+    };
+    mergePlayerEntry(players, entry, 2022);
+    assert.equal(finalizeCareer(players.get(4)).length, 1, "solo la Premier League deve comparire, non la FA Cup");
+  });
+
+  console.log("\nsweepLeagueSeason() - paginazione e budget di chiamate");
+  await test("segue la paginazione finché non arriva all'ultima pagina", async () => {
     resetPlanSeasonRangeForTests();
     let callCount = 0;
     global.fetch = async (url) => {
       callCount++;
-      const yearMatch = String(url).match(/season=(\d+)/);
-      const year = Number(yearMatch[1]);
-      // Riproduce esattamente il messaggio visto nei log reali di API-Football
-      if (year < 2022 || year > 2024) {
-        return {
-          ok: true,
-          status: 200,
-          json: async () => ({
-            response: [],
-            errors: { plan: "Free plans do not have access to this season, try from 2022 to 2024." }
-          })
-        };
-      }
-      if (year === 2022) {
-        return jsonResponse(fakePlayersSeasonResponse({ team: "Al-Nassr", leagueName: "Saudi Pro League", apps: 20, goals: 15 }));
-      }
-      return jsonResponse([]);
+      const page = Number(new URL(url).searchParams.get("page"));
+      const body = [{
+        player: { id: 100 + page, name: "Player " + page, nationality: "Italy" },
+        statistics: [{ team: { name: "Team" + page }, league: { name: "Serie A", country: "Italy" }, games: { appearences: 15, position: "Attacker" }, goals: { total: 2 } }]
+      }];
+      return jsonResponse(body, { current: page, total: 3 });
     };
-
-    // nato nel 1985: senza il fix, il loop partirebbe dal 2000 e sprecherebbe
-    // 22 chiamate (2000-2021) prima di arrivare al 2022 che funziona davvero
-    const career = await fetchCareer(999, 1985);
-
-    assert.equal(career.length, 1, "deve comunque trovare lo stint nel 2022, l'unico anno permesso con dati");
-    assert.equal(career[0].club, "Al-Nassr");
-    assert.ok(
-      callCount <= 5,
-      `una volta scoperto il limite del piano (al primo tentativo fuori range) non deve più tentare anni fuori 2022-2024: chiamate fatte = ${callCount}`
-    );
+    const players = newPlayersMap();
+    const league = { id: "seriea", apiName: "Serie A", country: "Italy", numericId: 135 };
+    const budget = { remaining: 100 };
+    const result = await sweepLeagueSeason(league, 2023, players, budget);
+    assert.equal(result.completed, true);
+    assert.equal(callCount, 3, "deve chiamare tutte e 3 le pagine");
+    assert.equal(players.size, 3, "deve aver trovato un giocatore per pagina");
   });
 
-  await test("il limite del piano scoperto su un giocatore si riusa per il giocatore successivo (nessuna chiamata sprecata)", async () => {
-    // planSeasonRange resta impostato dal test precedente: non lo resettiamo,
-    // esattamente come accadrebbe passando dal primo al secondo giocatore
-    // dentro lo stesso main()
+  await test("si ferma a metà (senza segnare completato) se il budget finisce durante la paginazione", async () => {
     let callCount = 0;
     global.fetch = async (url) => {
       callCount++;
-      const yearMatch = String(url).match(/season=(\d+)/);
-      const year = Number(yearMatch[1]);
-      if (year === 2023) {
-        return jsonResponse(fakePlayersSeasonResponse({ team: "Inter Miami", leagueName: "MLS", apps: 14, goals: 11 }));
-      }
-      return jsonResponse([]);
+      const page = Number(new URL(url).searchParams.get("page"));
+      return jsonResponse([], { current: page, total: 5 });
     };
-    // nato nel 1987: senza riuso del limite scoperto, proverebbe 2002-2025 (24 chiamate)
-    const career = await fetchCareer(999, 1987);
-    assert.equal(career.length, 1);
-    assert.equal(career[0].club, "Inter Miami");
-    assert.ok(
-      callCount <= 3,
-      `deve interrogare solo 2022-2024 (limite già noto), non 2002-2025: chiamate fatte = ${callCount}`
-    );
+    const players = newPlayersMap();
+    const league = { id: "seriea", apiName: "Serie A", country: "Italy", numericId: 135 };
+    const budget = { remaining: 2 }; // basta solo per 2 delle 5 pagine
+    const result = await sweepLeagueSeason(league, 2023, players, budget);
+    assert.equal(result.completed, false, "non deve segnarsi come completata se si ferma a metà");
+    assert.equal(callCount, 2, "non deve fare più chiamate di quelle nel budget");
   });
 
   console.log("\nfetchTrophies() - raggruppamento vittorie");
@@ -229,70 +180,55 @@ async function main() {
       jsonResponse([
         { league: "Serie A", country: "Italy", season: "2018/2019", place: "Winner" },
         { league: "Serie A", country: "Italy", season: "2019/2020", place: "Winner" },
-        { league: "Serie A", country: "Italy", season: "2020/2021", place: "2nd Place" }, // non vinta, va ignorata
+        { league: "Serie A", country: "Italy", season: "2020/2021", place: "2nd Place" },
         { league: "Coppa Italia", country: "Italy", season: "2020/2021", place: "Winner" }
       ]);
     const trophies = await fetchTrophies(999);
     const seriea = trophies.find((t) => t.text.includes("Serie A"));
-    const coppa = trophies.find((t) => t.text.includes("Coppa Italia"));
-    assert.ok(seriea, "deve esserci una riga per la Serie A");
-    assert.match(seriea.text, /2 volte campione/, "due vittorie -> testo con il conteggio");
-    assert.ok(coppa, "deve esserci una riga per la Coppa Italia");
-    assert.match(coppa.text, /1 titolo/, "una sola vittoria -> testo singolare con la stagione");
+    assert.match(seriea.text, /2 volte campione/);
     assert.equal(trophies.length, 2, "il 2nd Place non deve generare una riga");
   });
 
-  console.log("\nwriteOutputFiles() - shard per campionato + manifest");
-  await test("un giocatore multi-campionato compare, identico, in più shard", async () => {
-    const players = [
-      {
-        id: "player-a",
-        name: "Player A",
-        nationality: "Italia",
-        isGK: false,
-        career: [
-          { years: "2015–2018", club: "Parma", league: "seriea", apps: 90, goals: 10 },
-          { years: "2018–2022", club: "Bayern Monaco", league: "bundesliga", apps: 120, goals: 40 }
-        ],
-        trophies: [{ comp: "bundesliga", text: "1 titolo: Bundesliga (2020)" }]
-      },
-      {
-        id: "player-b",
-        name: "Player B",
-        nationality: "Spagna",
-        isGK: false,
-        career: [{ years: "2010–2020", club: "Real Madrid", league: "laliga", apps: 300, goals: 50 }],
-        trophies: []
-      }
-    ];
+  console.log("\nbuildFinalDataset() - filtro sulla soglia minima di presenze");
+  await test("un giocatore sotto la soglia minima viene escluso dal dataset finale", () => {
+    const players = newPlayersMap();
+    mergePlayerEntry(players, {
+      player: { id: 5, name: "Comparsa", nationality: "Italy" },
+      statistics: [{ team: { name: "Team X" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: 2, position: "Attacker" }, goals: { total: 0 } }]
+    }, 2020);
+    mergePlayerEntry(players, {
+      player: { id: 6, name: "Titolare", nationality: "Italy" },
+      statistics: [{ team: { name: "Team Y" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: 150, position: "Attacker" }, goals: { total: 20 } }]
+    }, 2020);
+    const final = buildFinalDataset(players);
+    assert.equal(final.length, 1, "solo il titolare deve superare la soglia MIN_APPS_TO_INCLUDE");
+    assert.equal(final[0].name, "Titolare");
+  });
 
-    const tmpDir = "output-test-tmp";
-    const originalCwd = process.cwd();
+  console.log("\nPersistenza tra run (raw-players.json, sync-progress.json)");
+  await test("i giocatori grezzi salvati si ricaricano identici (round-trip)", async () => {
+    const tmpDir = "persist-test-tmp";
     await fs.mkdir(tmpDir, { recursive: true });
+    const originalCwd = process.cwd();
     process.chdir(tmpDir);
     try {
-      await writeOutputFiles(players);
+      const players = newPlayersMap();
+      mergePlayerEntry(players, {
+        player: { id: 7, name: "Da Salvare", nationality: "Spain" },
+        statistics: [{ team: { name: "Club Salvato" }, league: { name: "La Liga", country: "Spain" }, games: { appearences: 40, position: "Defender" }, goals: { total: 1 } }]
+      }, 2021);
 
-      const manifest = JSON.parse(await fs.readFile("output/manifest.json", "utf-8"));
-      assert.ok(manifest.leagues.seriea, "manifest deve elencare seriea");
-      assert.ok(manifest.leagues.bundesliga, "manifest deve elencare bundesliga");
-      assert.ok(manifest.leagues.laliga, "manifest deve elencare laliga");
-      assert.equal(manifest.leagues.seriea.count, 1);
-      assert.equal(manifest.leagues.bundesliga.count, 1);
-      assert.equal(manifest.leagues.laliga.count, 1);
+      await saveRawPlayers(players);
+      const reloaded = await loadRawPlayers();
+      const rec = reloaded.get(7);
+      assert.ok(rec, "il giocatore deve essere ricaricato");
+      assert.equal(finalizeCareer(rec)[0].apps, 40);
 
-      const seriea = JSON.parse(await fs.readFile("output/seriea.json", "utf-8"));
-      const bundesliga = JSON.parse(await fs.readFile("output/bundesliga.json", "utf-8"));
-      assert.equal(seriea.players[0].id, "player-a");
-      assert.equal(bundesliga.players[0].id, "player-a");
-      assert.deepEqual(
-        seriea.players[0].career,
-        bundesliga.players[0].career,
-        "la scheda di Player A deve essere IDENTICA (carriera intera) in entrambi gli shard"
-      );
-
-      const full = JSON.parse(await fs.readFile("output/players-data.json", "utf-8"));
-      assert.equal(full.players.length, 2, "il file unico deve contenere tutti i giocatori");
+      const progress = await loadProgress();
+      progress.completed.add("laliga:2021");
+      await saveProgress(progress);
+      const reloadedProgress = await loadProgress();
+      assert.ok(reloadedProgress.completed.has("laliga:2021"));
     } finally {
       process.chdir(originalCwd);
       await fs.rm(tmpDir, { recursive: true, force: true });

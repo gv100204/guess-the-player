@@ -1,10 +1,17 @@
 # Percorso nel repository: .github/workflows/sync.yml
 #
-# Gira una volta a settimana (e puoi anche lanciarlo a mano dalla scheda
-# "Actions" del repository, grazie a workflow_dispatch): esegue prima i test,
-# poi la sincronizzazione vera da API-Football, poi pubblica il contenuto di
-# ./output/ (players-data.json, i file per campionato, manifest.json) su
-# GitHub Pages - che a quel punto è l'hosting statico che l'app scarica.
+# Gira ogni giorno (e puoi anche lanciarlo a mano dalla scheda "Actions" del
+# repository, grazie a workflow_dispatch): esegue prima i test, poi spazzola
+# campionati e stagioni ancora da fare (riprendendo da dove si era fermato
+# l'ultima volta, grazie a raw-players.json e sync-progress.json che questo
+# workflow salva su main a ogni run), poi pubblica il contenuto di ./output/
+# (players-data.json, i file per campionato, manifest.json) su GitHub Pages -
+# che a quel punto è l'hosting statico che l'app scarica.
+#
+# Con un roster grande, la prima sincronizzazione completa può richiedere
+# diversi run (giorni): è normale, e il progresso non si perde tra un run e
+# l'altro. Controlla nei log la riga "Combinazioni campionato-stagione
+# completate: X di Y" per capire quanto manca.
 #
 # Prima di usarlo:
 # 1. Nel repository su GitHub: Settings > Secrets and variables > Actions >
@@ -20,7 +27,7 @@ name: Sync players data
 
 on:
   schedule:
-    - cron: "0 4 * * 1" # ogni lunedì alle 04:00 UTC
+    - cron: "0 4 * * *" # ogni giorno alle 04:00 UTC - con un roster grande, riprendere ogni giorno consuma la quota (e completa lo storico) molto più in fretta di una volta a settimana
   workflow_dispatch: # bottone "Run workflow" manuale su GitHub
 
 jobs:
@@ -39,6 +46,14 @@ jobs:
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
         run: node sync-players-data.mjs
+
+      - name: Salva il progresso (raw-players.json, sync-progress.json) su main
+        run: |
+          git config user.name "sync-bot"
+          git config user.email "sync-bot@users.noreply.github.com"
+          git add raw-players.json sync-progress.json
+          git diff --staged --quiet || git commit -m "chore: aggiorna progresso sync [skip ci]"
+          git push
 
       - name: Pubblica ./output su GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
