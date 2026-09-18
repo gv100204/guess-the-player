@@ -253,7 +253,7 @@ async function sweepLeagueSeason(league, season, playersMap, budget) {
   let totalPages = 1;
 
   do {
-    if (budget.remaining <= 0) return { completed: false };
+    if (budget.remaining <= 0) return { completed: false, reason: "budget" };
 
     let json;
     try {
@@ -263,10 +263,13 @@ async function sweepLeagueSeason(league, season, playersMap, budget) {
       if (rangeMatch) {
         planSeasonRange = { min: Number(rangeMatch[1]), max: Number(rangeMatch[2]) };
         console.warn(`  Il piano limita le stagioni a ${planSeasonRange.min}-${planSeasonRange.max}: salto questa stagione.`);
-        return { completed: true, skipped: true };
+        return { completed: true, reason: "planRange" };
       }
       console.warn(`  Errore su ${league.id} ${season} pagina ${page}: ${err.message}`);
-      return { completed: false };
+      // Un errore isolato (rete, risposta imprevista...) NON deve fermare il
+      // resto del run: si salta questa combinazione (riproverà un run futuro,
+      // dato che non viene segnata come completata) e si continua con le altre.
+      return { completed: false, reason: "error" };
     }
     budget.remaining--;
 
@@ -275,7 +278,7 @@ async function sweepLeagueSeason(league, season, playersMap, budget) {
     page++;
   } while (page <= totalPages);
 
-  return { completed: true };
+  return { completed: true, reason: "ok" };
 }
 
 // ---------------------------------------------------------------------------
@@ -468,10 +471,15 @@ async function main() {
       const result = await sweepLeagueSeason(league, season, playersMap, budget);
       if (result.completed) {
         progress.completed.add(key);
-      } else {
+      } else if (result.reason === "budget") {
+        // Budget davvero esaurito: qui ha senso fermare tutto il run, il
+        // prossimo riprenderà esattamente da questa combinazione.
         stoppedForBudget = true;
         break outer;
       }
+      // reason === "error": combinazione saltata (non segnata completata,
+      // quindi un run futuro la riprova), ma si continua con le altre - un
+      // singolo errore isolato non deve far perdere il resto del lavoro.
     }
   }
 
@@ -493,10 +501,12 @@ async function main() {
   const doneTotal = LEAGUES_TO_SYNC.length * (SEASON_RANGE.to - SEASON_RANGE.from + 1);
   console.log(`\nChiamate usate in questo run: ${MAX_CALLS_PER_RUN - budget.remaining} di ${MAX_CALLS_PER_RUN}`);
   console.log(`Combinazioni campionato-stagione completate: ${progress.completed.size} di ${doneTotal}`);
-  if (stoppedForBudget) {
+  if (progress.completed.size >= doneTotal) {
+    console.log("Sincronizzazione completa per la finestra di stagioni configurata.");
+  } else if (stoppedForBudget) {
     console.log("Budget di questo run esaurito prima di finire tutto: il prossimo lancio riprende da dove si è fermato.");
   } else {
-    console.log("Sincronizzazione completa per la finestra di stagioni configurata.");
+    console.log("Il run è terminato senza completare tutto (controlla gli avvisi sopra: quota API, campionati non risolti, o errori isolati). Il prossimo lancio riproverà le combinazioni non ancora segnate come completate.");
   }
 }
 

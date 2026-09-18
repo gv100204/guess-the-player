@@ -157,7 +157,7 @@ async function main() {
     assert.equal(players.size, 3, "deve aver trovato un giocatore per pagina");
   });
 
-  await test("si ferma a metà (senza segnare completato) se il budget finisce durante la paginazione", async () => {
+  await test("si ferma a metà (senza segnare completato) se il budget finisce durante la paginazione, con reason 'budget'", async () => {
     let callCount = 0;
     global.fetch = async (url) => {
       callCount++;
@@ -169,7 +169,18 @@ async function main() {
     const budget = { remaining: 2 }; // basta solo per 2 delle 5 pagine
     const result = await sweepLeagueSeason(league, 2023, players, budget);
     assert.equal(result.completed, false, "non deve segnarsi come completata se si ferma a metà");
+    assert.equal(result.reason, "budget", "il motivo deve essere 'budget', non un errore generico");
     assert.equal(callCount, 2, "non deve fare più chiamate di quelle nel budget");
+  });
+
+  await test("un errore isolato (non di budget, non di limite stagioni) restituisce reason 'error', non 'budget' (bug reale: fermava tutto il run per un solo errore)", async () => {
+    global.fetch = async () => { throw new Error("Connessione di rete interrotta"); };
+    const players = newPlayersMap();
+    const league = { id: "seriea", apiName: "Serie A", country: "Italy", numericId: 135 };
+    const budget = { remaining: 100 };
+    const result = await sweepLeagueSeason(league, 2023, players, budget);
+    assert.equal(result.completed, false);
+    assert.equal(result.reason, "error", "un errore isolato deve poter essere distinto da un budget esaurito, così chi chiama sa che può continuare con le altre combinazioni invece di fermare tutto");
   });
 
   console.log("\nfetchTrophies() - raggruppamento vittorie (dati puri, non più frasi in italiano)");
