@@ -1,0 +1,22 @@
+# Percorso nel repository: .github/workflows/test.yml
+#
+# Esegue i test della logica (senza rete, senza chiave API) a ogni push e a
+# ogni pull request. Se un cambiamento allo script rompe l'aggregazione
+# carriera/palmares, questo lo blocca prima che arrivi al sync vero.
+
+name: Test data logic
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: node test-sync-players-data.mjs

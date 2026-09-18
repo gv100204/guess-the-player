@@ -1,0 +1,47 @@
+# Percorso nel repository: .github/workflows/sync.yml
+#
+# Gira una volta a settimana (e puoi anche lanciarlo a mano dalla scheda
+# "Actions" del repository, grazie a workflow_dispatch): esegue prima i test,
+# poi la sincronizzazione vera da API-Football, poi pubblica il contenuto di
+# ./output/ (players-data.json, i file per campionato, manifest.json) su
+# GitHub Pages - che a quel punto è l'hosting statico che l'app scarica.
+#
+# Prima di usarlo:
+# 1. Nel repository su GitHub: Settings > Secrets and variables > Actions >
+#    "New repository secret" > nome API_FOOTBALL_KEY, valore la tua chiave.
+# 2. Settings > Pages > Source: "Deploy from a branch", branch "gh-pages".
+#    (la branch gh-pages viene creata automaticamente al primo run di questo
+#    workflow, non devi crearla a mano)
+# 3. Dopo il primo run, i file saranno su:
+#    https://<tuo-utente>.github.io/<nome-repo>/manifest.json
+#    https://<tuo-utente>.github.io/<nome-repo>/seriea.json  ... ecc.
+
+name: Sync players data
+
+on:
+  schedule:
+    - cron: "0 4 * * 1" # ogni lunedì alle 04:00 UTC
+  workflow_dispatch: # bottone "Run workflow" manuale su GitHub
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Esegue i test prima di tutto
+        run: node test-sync-players-data.mjs
+
+      - name: Scarica i dati aggiornati da API-Football
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: node sync-players-data.mjs
+
+      - name: Pubblica ./output su GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
