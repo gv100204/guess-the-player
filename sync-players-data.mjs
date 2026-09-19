@@ -201,6 +201,7 @@ function mergePlayerEntry(playersMap, entry, season) {
   // precedente si autocorregge al prossimo run, senza dover ripartire da zero.
   const fullName = [p.firstname, p.lastname].filter(Boolean).join(" ").trim();
   const bestName = fullName || p.name;
+  const birthYear = p.birth?.date ? Number(p.birth.date.slice(0, 4)) : null;
 
   let rec = playersMap.get(p.id);
   if (!rec) {
@@ -208,19 +209,24 @@ function mergePlayerEntry(playersMap, entry, season) {
       id: p.id,
       name: bestName,
       nationality: p.nationality || null,
+      birthYear,
       isGK: false,
       // Non aggreghiamo più qui per club+campionato: salviamo ogni stagione
       // come riga a sé. Il raggruppamento in tappe di carriera avviene solo
       // in finalizeCareer(), in ordine cronologico vero - così un prestito
       // (stessa squadra, ma con un'interruzione nel mezzo) risulta in tappe
       // separate invece di un unico blocco che nasconde l'interruzione.
-      seasonRecords: [], // { season, club, league, apps, goals }
+      seasonRecords: [], // { season, club, league, leagueRaw, country, apps, goals }
       trophies: null,
-      trophiesFetched: false
+      trophiesFetched: false,
+      // true solo dopo il recupero COMPLETO della carriera (tutte le stagioni,
+      // non solo i campionati che spazzoliamo) - fatto una volta sola, mai più.
+      careerBackfilled: false
     };
     playersMap.set(p.id, rec);
-  } else if (fullName) {
-    rec.name = fullName; // aggiorna anche un record già esistente, se ora abbiamo il nome per esteso
+  } else {
+    if (fullName) rec.name = fullName; // aggiorna anche un record già esistente, se ora abbiamo il nome per esteso
+    if (birthYear && !rec.birthYear) rec.birthYear = birthYear;
   }
 
   const statsList = entry.statistics || [];
@@ -238,7 +244,7 @@ function mergePlayerEntry(playersMap, entry, season) {
     const conceded = s.goals?.conceded || 0;
     const club = s.team?.name || "Squadra sconosciuta";
 
-    rec.seasonRecords.push({ season, club, league: leagueMeta.id, apps, goals: isGK ? conceded : goals });
+    rec.seasonRecords.push({ season, club, league: leagueMeta.id, leagueRaw: null, country: null, apps, goals: isGK ? conceded : goals });
   });
 }
 
@@ -250,10 +256,11 @@ function mergePlayerEntry(playersMap, entry, season) {
 function dedupedSeasonRecords(rec){
   const byKey = new Map();
   (rec.seasonRecords || []).forEach((r) => {
-    const key = r.season + "|" + r.club + "|" + r.league;
+    const compKey = r.league || (r.leagueRaw + "|" + r.country); // id interno se tracciato, altrimenti nome grezzo+paese
+    const key = r.season + "|" + r.club + "|" + compKey;
     let existing = byKey.get(key);
     if (!existing) {
-      existing = { season: r.season, club: r.club, league: r.league, apps: 0, goals: 0 };
+      existing = { season: r.season, club: r.club, league: r.league || null, leagueRaw: r.leagueRaw || null, country: r.country || null, apps: 0, goals: 0 };
       byKey.set(key, existing);
     }
     existing.apps += r.apps;
@@ -272,7 +279,8 @@ function finalizeCareer(rec) {
 
   records.forEach((r) => {
     const last = stints[stints.length - 1];
-    const isContinuation = last && last.club === r.club && last.league === r.league && r.season === last.maxYear + 1;
+    const sameComp = last && last.league === r.league && last.leagueRaw === r.leagueRaw && last.country === r.country;
+    const isContinuation = last && last.club === r.club && sameComp && r.season === last.maxYear + 1;
     if (isContinuation) {
       last.maxYear = r.season;
       last.apps += r.apps;
@@ -281,7 +289,7 @@ function finalizeCareer(rec) {
       // Squadra diversa, campionato diverso, O la stessa squadra ma con
       // un'interruzione nel mezzo (es. un prestito e poi il ritorno): in
       // ogni caso si apre una NUOVA tappa, non si allunga quella precedente.
-      stints.push({ club: r.club, league: r.league, minYear: r.season, maxYear: r.season, apps: r.apps, goals: r.goals });
+      stints.push({ club: r.club, league: r.league, leagueRaw: r.leagueRaw, country: r.country, minYear: r.season, maxYear: r.season, apps: r.apps, goals: r.goals });
     }
   });
 
@@ -289,6 +297,8 @@ function finalizeCareer(rec) {
     years: s.minYear === s.maxYear ? String(s.minYear) : `${s.minYear}–${s.maxYear + 1}`,
     club: s.club,
     league: s.league,
+    leagueRaw: s.leagueRaw,
+    country: s.country,
     apps: s.apps,
     goals: s.goals
   }));
@@ -339,6 +349,83 @@ async function sweepLeagueSeason(league, season, playersMap, budget) {
 // Palmares: solo per chi supera la soglia minima di presenze totali, e solo
 // se non già scaricato in un run precedente.
 // ---------------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------
+// Carriera COMPLETA (fuori dai campionati che spazzoliamo): solo per chi ha
+// già superato la soglia minima di presenze nella spazzolata normale, e solo
+// una volta per sempre (vedi careerBackfilled). Interroga l'API per ID del
+// giocatore, stagione per stagione - non più per campionato - quindi vede
+// TUTTO quello che ha giocato, non solo i 6 campionati tracciati.
+//
+// Non abbiamo un catalogo di tutti i campionati del mondo per distinguere un
+// vero campionato domestico da una coppa o dalla nazionale: usiamo un elenco
+// di parole chiave da ESCLUDERE invece che un elenco da includere. È una
+// euristica, non perfetta (un ipotetico campionato chiamato per davvero
+// "... Cup" verrebbe scartato per errore), ma ragionevole nella pratica.
+// ---------------------------------------------------------------------------
+
+const NON_LEAGUE_KEYWORDS = [
+  "cup", "copa", "coppa", "champions league", "europa league", "conference league",
+  "friendl", "world cup", "euro championship", "euro -", "qualif", "super cup",
+  "shield", "trophy", "community", "confederations", "nations league",
+  "intercontinental", "club world cup", "youth league", "playoff", "play-off", "play off"
+];
+function isLikelyDomesticLeague(name){
+  if (!name) return false;
+  const lower = name.toLowerCase();
+  return !NON_LEAGUE_KEYWORDS.some((kw) => lower.includes(kw));
+}
+
+// Se non conosciamo l'anno di nascita del giocatore, da che anno iniziamo a
+// cercare: un limite ragionevole per non sprecare chiamate su decenni in cui
+// quasi certamente non giocava ancora.
+const BACKFILL_FALLBACK_FROM_YEAR = 1990;
+
+async function fetchFullCareer(playerId, birthYear, budget) {
+  const fromYear = birthYear ? Math.max(BACKFILL_FALLBACK_FROM_YEAR, birthYear + 15) : BACKFILL_FALLBACK_FROM_YEAR;
+  const toYear = SEASON_RANGE.to;
+  const records = [];
+
+  for (let season = fromYear; season <= toYear; season++) {
+    if (budget.remaining <= 0) return { completed: false, records };
+
+    let json;
+    try {
+      json = await apiGetFull("/players", { id: playerId, season });
+    } catch (err) {
+      const rangeMatch = err.message.match(/try from (\d+) to (\d+)/);
+      if (rangeMatch) continue; // stagione fuori dal range permesso dal piano: salta, non è un errore vero
+      console.warn(`    carriera completa id ${playerId} stagione ${season}: errore (${err.message})`);
+      continue;
+    }
+    budget.remaining--;
+
+    const statsList = (json.response && json.response[0] && json.response[0].statistics) || [];
+    statsList.forEach((s) => {
+      const apps = s.games?.appearences || 0;
+      if (apps === 0) return;
+      if (!isLikelyDomesticLeague(s.league?.name)) return; // coppe, nazionale, amichevoli: fuori anche qui
+
+      const isGK = s.games?.position === GK_POSITION;
+      const goals = s.goals?.total || 0;
+      const conceded = s.goals?.conceded || 0;
+      const club = s.team?.name || "Squadra sconosciuta";
+      const matchedLeague = matchLeague(s.league?.name, s.league?.country);
+
+      records.push({
+        season,
+        club,
+        league: matchedLeague ? matchedLeague.id : null,
+        leagueRaw: matchedLeague ? null : (s.league?.name || null),
+        country: matchedLeague ? null : (s.league?.country || null),
+        apps,
+        goals: isGK ? conceded : goals
+      });
+    });
+  }
+
+  return { completed: true, records };
+}
 
 async function fetchTrophies(playerId) {
   let raw;
@@ -410,9 +497,11 @@ async function saveRawPlayers(playersMap) {
     id: rec.id,
     name: rec.name,
     nationality: rec.nationality,
+    birthYear: rec.birthYear || null,
     isGK: rec.isGK,
     trophies: rec.trophies,
     trophiesFetched: rec.trophiesFetched,
+    careerBackfilled: !!rec.careerBackfilled,
     seasonRecords: rec.seasonRecords
   }));
   await fs.writeFile(RAW_PLAYERS_FILE, JSON.stringify({ version: BUILD_VERSION, players }, null, 2), "utf-8");
@@ -470,7 +559,10 @@ async function writeOutputFiles(players) {
 
   const shards = {};
   players.forEach((p) => {
-    const leaguesForPlayer = new Set(p.career.map((c) => c.league));
+    // Solo le tappe nei campionati che tracciamo davvero determinano lo shard:
+    // una tappa "fuori catalogo" (league null, solo leagueRaw+country) non
+    // deve creare uno shard "null.json".
+    const leaguesForPlayer = new Set(p.career.filter((c) => c.league).map((c) => c.league));
     leaguesForPlayer.forEach((leagueId) => {
       if (!shards[leagueId]) shards[leagueId] = [];
       shards[leagueId].push(p);
@@ -540,6 +632,21 @@ async function main() {
     }
   }
 
+  console.log("\nRecupero la carriera COMPLETA (anche fuori dai nostri campionati) per chi supera la soglia...");
+  for (const rec of playersMap.values()) {
+    if (budget.remaining <= 0) { stoppedForBudget = true; break; }
+    if (rec.careerBackfilled) continue;
+    if (totalApps(rec) < MIN_APPS_TO_INCLUDE) continue;
+    const result = await fetchFullCareer(rec.id, rec.birthYear, budget);
+    if (result.completed) {
+      rec.seasonRecords = result.records; // sostituisce del tutto: il recupero completo include già i campionati tracciati
+      rec.careerBackfilled = true;
+    }
+    // se non completato (budget finito a metà), NON segniamo backfilled: il
+    // prossimo run riprova da capo per questo giocatore (nessun dato perso,
+    // restano i seasonRecords della spazzolata normale nel frattempo).
+  }
+
   console.log("\nScarico il palmares per chi ha presenze sufficienti...");
   for (const rec of playersMap.values()) {
     if (budget.remaining <= 0) { stoppedForBudget = true; break; }
@@ -578,10 +685,12 @@ if (isMainModule) {
 export {
   slugify,
   matchLeague,
+  isLikelyDomesticLeague,
   mergePlayerEntry,
   finalizeCareer,
   totalApps,
   sweepLeagueSeason,
+  fetchFullCareer,
   fetchTrophies,
   buildFinalDataset,
   writeOutputFiles,

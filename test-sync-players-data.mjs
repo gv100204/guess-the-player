@@ -23,10 +23,12 @@ process.env.API_FOOTBALL_KEY = "fake-key-for-tests";
 import {
   slugify,
   matchLeague,
+  isLikelyDomesticLeague,
   mergePlayerEntry,
   finalizeCareer,
   totalApps,
   sweepLeagueSeason,
+  fetchFullCareer,
   fetchTrophies,
   buildFinalDataset,
   writeOutputFiles,
@@ -331,6 +333,70 @@ async function main() {
     assert.equal(superCup.count, 3, "tre stagioni vere (2024, 2023, 2019): il duplicato senza stagione non deve portarlo a 4");
   });
 
+
+  console.log("\nisLikelyDomesticLeague() - euristica coppe/nazionali vs campionato vero");
+  await test("riconosce nomi di coppe e competizioni internazionali da escludere", () => {
+    assert.equal(isLikelyDomesticLeague("FA Cup"), false);
+    assert.equal(isLikelyDomesticLeague("Copa del Rey"), false);
+    assert.equal(isLikelyDomesticLeague("UEFA Champions League"), false);
+    assert.equal(isLikelyDomesticLeague("World Cup"), false);
+    assert.equal(isLikelyDomesticLeague("Friendlies"), false);
+    assert.equal(isLikelyDomesticLeague(null), false);
+  });
+  await test("riconosce nomi di campionati veri come da includere", () => {
+    assert.equal(isLikelyDomesticLeague("Primera División"), true);
+    assert.equal(isLikelyDomesticLeague("Süper Lig"), true);
+    assert.equal(isLikelyDomesticLeague("Serie A"), true);
+  });
+
+  console.log("\nfetchFullCareer() - recupero della carriera completa, fuori dai campionati tracciati");
+  await test("cattura anche un campionato estero non tracciato, con nome grezzo e paese (non lo scarta come farebbe la spazzolata normale)", async () => {
+    global.fetch = async (url) => {
+      const season = Number(new URL(url).searchParams.get("season"));
+      if (season === 2010) {
+        return jsonResponse([{
+          player: { id: 30, name: "Test Player" },
+          statistics: [{ team: { name: "Boca Juniors" }, league: { name: "Primera División", country: "Argentina" }, games: { appearences: 25, position: "Attacker" }, goals: { total: 8 } }]
+        }]);
+      }
+      return jsonResponse([]);
+    };
+    const budget = { remaining: 100 };
+    const result = await fetchFullCareer(30, 1990, budget); // birthYear 1990 -> parte dal 2005, arriva a copertura ampia
+    assert.equal(result.completed, true);
+    const argentina = result.records.find((r) => r.club === "Boca Juniors");
+    assert.ok(argentina, "deve trovare la tappa argentina, che la spazzolata per campionato non vedrebbe mai");
+    assert.equal(argentina.league, null, "non è nel nostro catalogo, quindi league resta null...");
+    assert.equal(argentina.leagueRaw, "Primera División");
+    assert.equal(argentina.country, "Argentina", "...ma il nome grezzo e il paese devono esserci, per poterlo mostrare comunque");
+  });
+  await test("scarta le righe di coppe/nazionali anche nel recupero completo", async () => {
+    global.fetch = async (url) => {
+      const season = Number(new URL(url).searchParams.get("season"));
+      if (season === 2015) {
+        return jsonResponse([{
+          player: { id: 31, name: "Test Player 2" },
+          statistics: [
+            { team: { name: "Real Madrid" }, league: { name: "La Liga", country: "Spain" }, games: { appearences: 30, position: "Attacker" }, goals: { total: 10 } },
+            { team: { name: "Real Madrid" }, league: { name: "Copa del Rey", country: "Spain" }, games: { appearences: 4, position: "Attacker" }, goals: { total: 1 } }
+          ]
+        }]);
+      }
+      return jsonResponse([]);
+    };
+    const budget = { remaining: 100 };
+    const result = await fetchFullCareer(31, 1995, budget);
+    assert.equal(result.records.length, 1, "solo la Liga deve comparire, non la Copa del Rey");
+    assert.equal(result.records[0].league, "laliga", "questa invece È nel nostro catalogo, quindi league deve avere l'id interno");
+  });
+  await test("si ferma (senza completare) se il budget finisce a metà del recupero", async () => {
+    let callCount = 0;
+    global.fetch = async () => { callCount++; return jsonResponse([]); };
+    const budget = { remaining: 3 };
+    const result = await fetchFullCareer(32, 2000, budget); // dal 2015 al 2025 farebbe 11 chiamate, ma il budget ne concede solo 3
+    assert.equal(result.completed, false);
+    assert.equal(callCount, 3);
+  });
 
   await test("un giocatore sotto la soglia minima viene escluso dal dataset finale", () => {
     const players = newPlayersMap();
