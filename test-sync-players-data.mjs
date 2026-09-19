@@ -180,6 +180,24 @@ async function main() {
     assert.equal(career[0].apps, 63);
   });
 
+  await test("un giocatore già arricchito con la carriera completa non viene più toccato dallo sweep (bug reale previsto dall'utente: rischiava di contare due volte la stessa stagione)", () => {
+    const players = newPlayersMap();
+    // simuliamo un giocatore già arricchito (come dopo fetchFullCareer)
+    players.set(40, {
+      id: 40, name: "Già Arricchito", nationality: "England", isGK: false,
+      seasonRecords: [{ season: 2015, club: "Arsenal", league: "pl", leagueRaw: null, country: null, apps: 30, goals: 5 }],
+      trophies: null, trophiesFetched: false, careerBackfilled: true
+    });
+    // lo sweep della Premier League lo ritrova nella stessa stagione
+    mergePlayerEntry(players, {
+      player: { id: 40, name: "Già Arricchito" },
+      statistics: [{ team: { name: "Arsenal" }, league: { name: "Premier League", country: "England" }, games: { appearences: 30, position: "Attacker" }, goals: { total: 5 } }]
+    }, 2015);
+    const career = finalizeCareer(players.get(40));
+    assert.equal(career.length, 1);
+    assert.equal(career[0].apps, 30, "deve restare 30, non 60: lo sweep non deve aggiungere righe a un giocatore già arricchito");
+  });
+
   await test("due stagioni nello stesso club/campionato si aggregano in un solo stint", () => {
     const players = newPlayersMap();
     const entry = {
@@ -334,6 +352,20 @@ async function main() {
   });
 
 
+  console.log("\nresolveLeagueApiIds() - risparmio con gli id già salvati");
+  await test("non richiama l'API per un campionato il cui id è già salvato nel progresso (bug reale: si ricalcolava a ogni run)", async () => {
+    process.env.SYNC_LEAGUES = "seriea";
+    let callCount = 0;
+    global.fetch = async () => { callCount++; return jsonResponse([]); };
+    const budget = { remaining: 100 };
+    const cachedIds = { seriea: 135 };
+    await resolveLeagueApiIds(budget, cachedIds);
+    assert.equal(callCount, 0, "non deve fare nessuna chiamata: l'id era già in cache");
+    const seriea = getActiveLeagues().find((l) => l.id === "seriea");
+    assert.equal(seriea.numericId, 135);
+    delete process.env.SYNC_LEAGUES;
+  });
+
   console.log("\nisLikelyDomesticLeague() - euristica coppe/nazionali vs campionato vero");
   await test("riconosce nomi di coppe e competizioni internazionali da escludere", () => {
     assert.equal(isLikelyDomesticLeague("FA Cup"), false);
@@ -398,6 +430,49 @@ async function main() {
     assert.equal(callCount, 3);
   });
 
+  await test("si ferma dopo alcune stagioni vuote consecutive UNA VOLTA TROVATI dati reali (probabile ritiro), invece di controllare fino alla fine", async () => {
+    let callCount = 0;
+    global.fetch = async (url) => {
+      callCount++;
+      const season = Number(new URL(url).searchParams.get("season"));
+      if (season === 2015) {
+        return jsonResponse([{
+          player: { id: 33, name: "Giocatore Ritirato" },
+          statistics: [{ team: { name: "Milan" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: 20, position: "Attacker" }, goals: { total: 3 } }]
+        }]);
+      }
+      return jsonResponse([{ player: { id: 33, name: "Giocatore Ritirato" }, statistics: [] }]); // ritirato dal 2016 in poi
+    };
+    const budget = { remaining: 100 };
+    // birthYear 2000 -> si parte proprio dal 2015 (2000+15): la prima stagione
+    // controllata ha già i dati veri, così isoliamo l'effetto dell'arresto
+    // anticipato senza mescolarlo alla fase "ancora non ha debuttato" (che è
+    // giusto che costi chiamate, non è quello che stiamo misurando qui).
+    // Senza l'arresto anticipato, andare dal 2015 al 2025 costerebbe 11 chiamate.
+    const result = await fetchFullCareer(33, 2000, budget);
+    assert.equal(result.completed, true);
+    assert.ok(callCount < 11, `deve fermarsi prima del 2025 (ha fatto ${callCount} chiamate, senza il fix sarebbero state 11)`);
+    assert.equal(result.records.length, 1, "la stagione vera trovata prima del ritiro deve comunque esserci");
+  });
+
+  await test("NON si ferma anticipatamente prima di aver trovato la prima stagione vera (stesso bug della vecchia euristica, da non ripetere)", async () => {
+    let callCount = 0;
+    global.fetch = async (url) => {
+      callCount++;
+      const season = Number(new URL(url).searchParams.get("season"));
+      // debutta tardi: le prime 5 stagioni controllate sono vuote, la sesta ha dati veri
+      if (season < 2020) return jsonResponse([{ player: { id: 34, name: "Debutto Tardivo" }, statistics: [] }]);
+      return jsonResponse([{
+        player: { id: 34, name: "Debutto Tardivo" },
+        statistics: [{ team: { name: "Torino" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: 15, position: "Attacker" }, goals: { total: 1 } }]
+      }]);
+    };
+    const budget = { remaining: 100 };
+    const result = await fetchFullCareer(34, 2000, budget); // parte dal 2015 (2000+15)
+    const found = result.records.find((r) => r.club === "Torino");
+    assert.ok(found, "deve arrivare comunque alla stagione vera del 2020, senza fermarsi prima per errore");
+  });
+
   await test("un giocatore sotto la soglia minima viene escluso dal dataset finale", () => {
     const players = newPlayersMap();
     mergePlayerEntry(players, {
@@ -434,9 +509,11 @@ async function main() {
 
       const progress = await loadProgress();
       progress.completed.add("laliga:2021");
+      progress.leagueIds.seriea = 135; // simula un id campionato già risolto in un run precedente
       await saveProgress(progress);
       const reloadedProgress = await loadProgress();
       assert.ok(reloadedProgress.completed.has("laliga:2021"));
+      assert.equal(reloadedProgress.leagueIds.seriea, 135, "anche gli id dei campionati devono persistere tra un run e l'altro (bug reale: si ricalcolavano ogni volta)");
     } finally {
       process.chdir(originalCwd);
       await fs.rm(tmpDir, { recursive: true, force: true });

@@ -155,9 +155,10 @@ async function apiGet(path, params) {
 // Risoluzione degli ID numerici dei campionati (scoperti, non indovinati)
 // ---------------------------------------------------------------------------
 
-async function resolveLeagueApiIds(budget) {
+async function resolveLeagueApiIds(budget, leagueIds) {
   for (const league of getActiveLeagues()) {
-    if (league.numericId) continue; // già risolto in un run precedente (persistito nel progress)
+    if (leagueIds && leagueIds[league.id]) { league.numericId = leagueIds[league.id]; continue; } // già risolto in un run precedente, salvato nel progresso
+    if (league.numericId) continue;
     if (budget.remaining <= 0) return;
     try {
       const results = await apiGet("/leagues", { name: league.apiName, country: league.country });
@@ -167,6 +168,7 @@ async function resolveLeagueApiIds(budget) {
         continue;
       }
       league.numericId = results[0].league.id;
+      if (leagueIds) leagueIds[league.id] = league.numericId;
       console.log(`  -> ${league.apiName} (${league.country}) = id campionato ${league.numericId}`);
     } catch (err) {
       console.warn(`  ! Errore risolvendo "${league.apiName}" (${league.country}): ${err.message}`);
@@ -228,6 +230,14 @@ function mergePlayerEntry(playersMap, entry, season) {
     if (fullName) rec.name = fullName; // aggiorna anche un record già esistente, se ora abbiamo il nome per esteso
     if (birthYear && !rec.birthYear) rec.birthYear = birthYear;
   }
+
+  // Un giocatore già arricchito con la carriera COMPLETA (fetchFullCareer)
+  // ha già tutte le sue stagioni, in qualunque campionato tracciato - anche
+  // quello che stiamo spazzolando ora. Aggiungere di nuovo le righe da qui
+  // rischierebbe di contare due volte la stessa stagione (dedupedSeasonRecords
+  // somma le righe con la stessa chiave). Il nome/anno di nascita sopra si
+  // aggiornano comunque; le statistiche no, sono già complete.
+  if (rec.careerBackfilled) return;
 
   const statsList = entry.statistics || [];
   statsList.forEach((s) => {
@@ -381,10 +391,26 @@ function isLikelyDomesticLeague(name){
 // quasi certamente non giocava ancora.
 const BACKFILL_FALLBACK_FROM_YEAR = 1990;
 
+// Nel recupero della carriera completa: dopo aver trovato dati reali, quante
+// stagioni consecutive vuote bastano per concludere che il giocatore si è
+// ritirato e fermarsi, invece di controllare comunque fino all'ultima
+// stagione configurata.
+const EARLY_STOP_AFTER_EMPTY_SEASONS = 3;
+
 async function fetchFullCareer(playerId, birthYear, budget) {
   const fromYear = birthYear ? Math.max(BACKFILL_FALLBACK_FROM_YEAR, birthYear + 15) : BACKFILL_FALLBACK_FROM_YEAR;
   const toYear = SEASON_RANGE.to;
   const records = [];
+
+  // Dopo aver TROVATO dati reali, se per alcune stagioni consecutive non ne
+  // troviamo più (andando avanti verso il presente), il giocatore si è
+  // quasi certamente ritirato: ci fermiamo, non serve controllare fino al
+  // 2025 per forza. ATTENZIONE: questo conteggio parte solo DOPO aver già
+  // trovato la prima stagione vera - mai prima, altrimenti si ripete lo
+  // stesso errore già preso con la vecchia euristica (fermarsi troppo presto
+  // per chi ha debuttato tardi, prima ancora di trovare i suoi anni veri).
+  let foundAnyData = false;
+  let consecutiveEmpty = 0;
 
   for (let season = fromYear; season <= toYear; season++) {
     if (budget.remaining <= 0) return { completed: false, records };
@@ -401,10 +427,12 @@ async function fetchFullCareer(playerId, birthYear, budget) {
     budget.remaining--;
 
     const statsList = (json.response && json.response[0] && json.response[0].statistics) || [];
+    let seasonHadApps = false;
     statsList.forEach((s) => {
       const apps = s.games?.appearences || 0;
       if (apps === 0) return;
       if (!isLikelyDomesticLeague(s.league?.name)) return; // coppe, nazionale, amichevoli: fuori anche qui
+      seasonHadApps = true;
 
       const isGK = s.games?.position === GK_POSITION;
       const goals = s.goals?.total || 0;
@@ -422,6 +450,14 @@ async function fetchFullCareer(playerId, birthYear, budget) {
         goals: isGK ? conceded : goals
       });
     });
+
+    if (seasonHadApps) {
+      foundAnyData = true;
+      consecutiveEmpty = 0;
+    } else if (foundAnyData) {
+      consecutiveEmpty++;
+      if (consecutiveEmpty >= EARLY_STOP_AFTER_EMPTY_SEASONS) break; // probabile ritiro: non serve controllare fino in fondo
+    }
   }
 
   return { completed: true, records };
@@ -508,12 +544,16 @@ async function saveRawPlayers(playersMap) {
 }
 
 async function loadProgress() {
-  const raw = await loadJsonIfExists(PROGRESS_FILE, { completed: [] });
-  return { completed: new Set(raw.completed) };
+  const raw = await loadJsonIfExists(PROGRESS_FILE, { completed: [], leagueIds: {} });
+  return { completed: new Set(raw.completed), leagueIds: raw.leagueIds || {} };
 }
 
 async function saveProgress(progress) {
-  await fs.writeFile(PROGRESS_FILE, JSON.stringify({ completed: Array.from(progress.completed) }, null, 2), "utf-8");
+  await fs.writeFile(
+    PROGRESS_FILE,
+    JSON.stringify({ completed: Array.from(progress.completed), leagueIds: progress.leagueIds || {} }, null, 2),
+    "utf-8"
+  );
 }
 
 // ---------------------------------------------------------------------------
@@ -599,7 +639,7 @@ async function main() {
   console.log(`  combinazioni campionato/stagione già completate: ${progress.completed.size}`);
 
   console.log("\nRisolvo gli ID numerici dei campionati...");
-  await resolveLeagueApiIds(budget);
+  await resolveLeagueApiIds(budget, progress.leagueIds);
 
   console.log("\nSpazzolo campionati e stagioni ancora da fare...");
   var activeLeagues = getActiveLeagues();
