@@ -353,7 +353,12 @@ async function fetchTrophies(playerId) {
   // Raggruppiamo per nome DELLA COMPETIZIONE + PAESE insieme, non solo per
   // nome: una "Super Cup" può esistere identica di nome in più paesi (Italia,
   // Spagna, Turchia...) - raggruppare solo per nome le confonderebbe tra loro.
-  const wins = raw.filter((t) => /winner/i.test(t.place || ""));
+  // Scartiamo le righe senza una stagione: nei dati reali si sono viste
+  // righe duplicate della STESSA vittoria, una con la stagione e una senza -
+  // contarle entrambe gonfia il conteggio (es. "2 volte" quando è successo
+  // una volta sola). Una riga senza stagione non è comunque mostrabile bene
+  // nel gioco, quindi scartarla non perde informazione utile.
+  const wins = raw.filter((t) => /winner/i.test(t.place || "") && t.season);
   const grouped = {};
   wins.forEach((t) => {
     const key = t.league + "|" + (t.country || "");

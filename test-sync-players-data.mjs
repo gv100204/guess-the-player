@@ -314,7 +314,24 @@ async function main() {
     assert.equal(es.count, 1);
   });
 
-  console.log("\nbuildFinalDataset() - filtro sulla soglia minima di presenze");
+  await test("una vittoria duplicata senza stagione (bug reale: gonfiava il conteggio, es. Francesco Acerbi) non viene contata due volte", async () => {
+    global.fetch = async () =>
+      jsonResponse([
+        { league: "Serie A", country: "Italy", season: "2023/2024", place: "Winner" },
+        { league: "Serie A", country: "Italy", season: null, place: "Winner" }, // doppione della riga sopra, senza stagione
+        { league: "Super Cup", country: "Italy", season: "2024", place: "Winner" },
+        { league: "Super Cup", country: "Italy", season: "2023", place: "Winner" },
+        { league: "Super Cup", country: "Italy", season: "2019", place: "Winner" },
+        { league: "Super Cup", country: "Italy", season: null, place: "Winner" } // doppione di una delle tre sopra
+      ]);
+    const trophies = await fetchTrophies(999);
+    const seriea = trophies.find((t) => t.comp === "seriea");
+    const superCup = trophies.find((t) => t.comp === "Super Cup");
+    assert.equal(seriea.count, 1, "una sola stagione vera (2023/2024): il duplicato senza stagione non deve contare");
+    assert.equal(superCup.count, 3, "tre stagioni vere (2024, 2023, 2019): il duplicato senza stagione non deve portarlo a 4");
+  });
+
+
   await test("un giocatore sotto la soglia minima viene escluso dal dataset finale", () => {
     const players = newPlayersMap();
     mergePlayerEntry(players, {
