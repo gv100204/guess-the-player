@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-19",
+  "version": "2026-09-19T04:55:34.227Z",
   "players": [
     {
       "id": "nikola-kalinic-57",
@@ -18,6 +18,7 @@
       "trophies": [
         {
           "comp": "Cup",
+          "country": "Croatia",
           "count": 2,
           "seasons": [
             "2022/2023",
@@ -26,6 +27,7 @@
         },
         {
           "comp": "UEFA Super Cup",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2018/2019"
@@ -98,6 +100,7 @@
       "trophies": [
         {
           "comp": "laliga",
+          "country": null,
           "count": 1,
           "seasons": [
             "2018/2019"
@@ -138,6 +141,7 @@
       "trophies": [
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2022/2023",
@@ -146,6 +150,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2022/2023",
@@ -154,6 +159,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 1,
           "seasons": [
             "2020/2021"
@@ -210,6 +216,7 @@
       "trophies": [
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2022/2023",
@@ -218,6 +225,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2022/2023",
@@ -226,6 +234,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 1,
           "seasons": [
             "2020/2021"
@@ -266,6 +275,7 @@
       "trophies": [
         {
           "comp": "Paulista A1",
+          "country": "Brazil",
           "count": 1,
           "seasons": [
             "2021"
@@ -273,6 +283,7 @@
         },
         {
           "comp": "CSL",
+          "country": "China-Pr",
           "count": 1,
           "seasons": [
             "2020"
@@ -280,6 +291,7 @@
         },
         {
           "comp": "Copa America",
+          "country": "South-America",
           "count": 1,
           "seasons": [
             "2019 Brazil"
@@ -287,6 +299,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Spain",
           "count": 1,
           "seasons": [
             "2014/2015"
@@ -294,6 +307,7 @@
         },
         {
           "comp": "laliga",
+          "country": null,
           "count": 1,
           "seasons": [
             "2013/2014"
@@ -301,6 +315,7 @@
         },
         {
           "comp": "Copa del Rey",
+          "country": "Spain",
           "count": 1,
           "seasons": [
             "2012/2013"
@@ -308,6 +323,7 @@
         },
         {
           "comp": "UEFA Super Cup",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2012/2013"
@@ -315,6 +331,7 @@
         },
         {
           "comp": "UEFA Europa League",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2011/2012"
@@ -322,13 +339,15 @@
         },
         {
           "comp": "Confederations Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2009 South Africa"
           ]
         },
         {
-          "comp": "seriea",
+          "comp": "Serie A",
+          "country": "Brazil",
           "count": 3,
           "seasons": [
             "2008",
@@ -338,6 +357,7 @@
         },
         {
           "comp": "Paranaense 1",
+          "country": "Brazil",
           "count": 1,
           "seasons": [
             "2004"
@@ -417,6 +437,7 @@
       "trophies": [
         {
           "comp": "Arab Club Champions Cup",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2023",
@@ -425,17 +446,17 @@
         },
         {
           "comp": "Super Cup",
-          "count": 5,
+          "country": "Italy",
+          "count": 3,
           "seasons": [
             "2023",
             "2022",
-            "2013/2014",
-            null,
             null
           ]
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 3,
           "seasons": [
             "2022/2023",
@@ -445,6 +466,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 2,
           "seasons": [
             "2020/2021",
@@ -453,10 +475,20 @@
         },
         {
           "comp": "HNL",
+          "country": "Croatia",
           "count": 3,
           "seasons": [
             "2013/2014",
             "2012/2013",
+            null
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Croatia",
+          "count": 2,
+          "seasons": [
+            "2013/2014",
             null
           ]
         }
@@ -486,6 +518,7 @@
       "trophies": [
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2012/2013"
@@ -500,10 +533,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Atalanta",
           "league": "seriea",
-          "apps": 14,
+          "apps": 1,
           "goals": 0
         },
         {
@@ -512,6 +545,13 @@
           "league": "seriea",
           "apps": 18,
           "goals": 2
+        },
+        {
+          "years": "2016",
+          "club": "Atalanta",
+          "league": "seriea",
+          "apps": 13,
+          "goals": 0
         }
       ],
       "trophies": []
@@ -549,18 +589,16 @@
       "trophies": [
         {
           "comp": "Super Cup",
-          "count": 6,
+          "country": "Netherlands",
+          "count": 2,
           "seasons": [
             "2025",
-            "2022",
-            "2015",
-            null,
-            null,
             null
           ]
         },
         {
           "comp": "Eredivisie",
+          "country": "Netherlands",
           "count": 2,
           "seasons": [
             "2024/2025",
@@ -568,7 +606,17 @@
           ]
         },
         {
+          "comp": "Super Cup",
+          "country": "Italy",
+          "count": 2,
+          "seasons": [
+            "2022",
+            null
+          ]
+        },
+        {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2021/2022",
@@ -577,6 +625,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 2,
           "seasons": [
             "2020/2021",
@@ -585,6 +634,7 @@
         },
         {
           "comp": "UEFA Champions League",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2019/2020",
@@ -593,6 +643,7 @@
         },
         {
           "comp": "DFB Pokal",
+          "country": "Germany",
           "count": 4,
           "seasons": [
             "2019/2020",
@@ -603,10 +654,20 @@
         },
         {
           "comp": "bundesliga",
+          "country": null,
           "count": 3,
           "seasons": [
             "2019/2020",
             "2011/2012",
+            null
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Germany",
+          "count": 2,
+          "seasons": [
+            "2015",
             null
           ]
         }
@@ -645,6 +706,7 @@
       "trophies": [
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2022",
@@ -653,6 +715,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2021/2022",
@@ -661,6 +724,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 2,
           "seasons": [
             "2020/2021",
@@ -669,6 +733,7 @@
         },
         {
           "comp": "Liga AUF",
+          "country": "Uruguay",
           "count": 2,
           "seasons": [
             "2011/2012",
@@ -694,6 +759,7 @@
       "trophies": [
         {
           "comp": "CAF Africa Cup of Nations",
+          "country": "Africa",
           "count": 2,
           "seasons": [
             "2022",
@@ -702,6 +768,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2012/2013",
@@ -710,6 +777,7 @@
         },
         {
           "comp": "laliga",
+          "country": null,
           "count": 2,
           "seasons": [
             "2010/2011",
@@ -718,6 +786,7 @@
         },
         {
           "comp": "UEFA Champions League",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2010/2011",
@@ -743,6 +812,7 @@
       "trophies": [
         {
           "comp": "Süper Lig",
+          "country": "Türkiye",
           "count": 4,
           "seasons": [
             "2024/2025",
@@ -753,6 +823,7 @@
         },
         {
           "comp": "Cup",
+          "country": "Türkiye",
           "count": 2,
           "seasons": [
             "2024/2025",
@@ -761,6 +832,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Türkiye",
           "count": 2,
           "seasons": [
             "2024",
@@ -769,6 +841,7 @@
         },
         {
           "comp": "Trophée des Champions",
+          "country": "France",
           "count": 3,
           "seasons": [
             "2022",
@@ -778,6 +851,7 @@
         },
         {
           "comp": "ligue1",
+          "country": null,
           "count": 3,
           "seasons": [
             "2021/2022",
@@ -787,6 +861,7 @@
         },
         {
           "comp": "Coupe de France",
+          "country": "France",
           "count": 3,
           "seasons": [
             "2020/2021",
@@ -813,6 +888,7 @@
       "trophies": [
         {
           "comp": "seriea",
+          "country": null,
           "count": 3,
           "seasons": [
             "2024/2025",
@@ -822,6 +898,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2019/2020",
@@ -847,6 +924,7 @@
       "trophies": [
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 7,
           "seasons": [
             "2020/2021",
@@ -860,6 +938,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 6,
           "seasons": [
             "2020/2021",
@@ -872,6 +951,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 11,
           "seasons": [
             "2019/2020",
@@ -889,6 +969,7 @@
         },
         {
           "comp": "ligue1",
+          "country": null,
           "count": 1,
           "seasons": [
             "2018/2019"
@@ -896,6 +977,7 @@
         },
         {
           "comp": "Trophée des Champions",
+          "country": "France",
           "count": 1,
           "seasons": [
             "2018/2019"
@@ -903,6 +985,7 @@
         },
         {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2006/2007"
@@ -910,6 +993,7 @@
         },
         {
           "comp": "FIFA World Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2006 Germany"
@@ -917,6 +1001,7 @@
         },
         {
           "comp": "UEFA Europa League",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "1998/1999",
@@ -949,6 +1034,7 @@
       "trophies": [
         {
           "comp": "CONMEBOL Copa America",
+          "country": "South America",
           "count": 3,
           "seasons": [
             "2024",
@@ -958,6 +1044,7 @@
         },
         {
           "comp": "FIFA World Cup",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2022",
@@ -966,6 +1053,7 @@
         },
         {
           "comp": "Trophée des Champions",
+          "country": "France",
           "count": 4,
           "seasons": [
             "2022",
@@ -976,6 +1064,7 @@
         },
         {
           "comp": "ligue1",
+          "country": null,
           "count": 4,
           "seasons": [
             "2021/2022",
@@ -986,6 +1075,7 @@
         },
         {
           "comp": "Coupe de France",
+          "country": "France",
           "count": 3,
           "seasons": [
             "2020/2021",
@@ -995,6 +1085,7 @@
         },
         {
           "comp": "Copa Argentina",
+          "country": "Argentina",
           "count": 2,
           "seasons": [
             "2011/2012",
@@ -1003,6 +1094,7 @@
         },
         {
           "comp": "Liga Profesional Argentina",
+          "country": "Argentina",
           "count": 2,
           "seasons": [
             "2011/2012",
@@ -1028,6 +1120,7 @@
       "trophies": [
         {
           "comp": "J.League World Challenge",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2025",
@@ -1036,6 +1129,7 @@
         },
         {
           "comp": "pl",
+          "country": null,
           "count": 3,
           "seasons": [
             "2024/2025",
@@ -1045,6 +1139,7 @@
         },
         {
           "comp": "League Cup",
+          "country": "England",
           "count": 3,
           "seasons": [
             "2023/2024",
@@ -1054,6 +1149,7 @@
         },
         {
           "comp": "Community Shield",
+          "country": "England",
           "count": 2,
           "seasons": [
             "2022",
@@ -1062,6 +1158,7 @@
         },
         {
           "comp": "FA Cup",
+          "country": "England",
           "count": 2,
           "seasons": [
             "2021/2022",
@@ -1070,6 +1167,7 @@
         },
         {
           "comp": "FIFA Intercontinental Cup",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2019",
@@ -1078,6 +1176,7 @@
         },
         {
           "comp": "UEFA Super Cup",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2019",
@@ -1086,6 +1185,7 @@
         },
         {
           "comp": "UEFA Champions League",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2018/2019",
@@ -1094,6 +1194,7 @@
         },
         {
           "comp": "Premier League Asia Trophy",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2017",
@@ -1102,6 +1203,7 @@
         },
         {
           "comp": "Super League",
+          "country": "Switzerland",
           "count": 2,
           "seasons": [
             "2012/2013",
@@ -1127,6 +1229,7 @@
       "trophies": [
         {
           "comp": "Trophée des Champions",
+          "country": "France",
           "count": 1,
           "seasons": [
             "2021/2022"
@@ -1134,6 +1237,7 @@
         },
         {
           "comp": "ligue1",
+          "country": null,
           "count": 1,
           "seasons": [
             "2020/2021"
@@ -1141,6 +1245,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2019/2020"
@@ -1148,6 +1253,7 @@
         },
         {
           "comp": "Super League 1",
+          "country": "Greece",
           "count": 1,
           "seasons": [
             "2009/2010"
@@ -1155,6 +1261,7 @@
         },
         {
           "comp": "Cup",
+          "country": "Greece",
           "count": 1,
           "seasons": [
             "2009/2010"
@@ -1179,6 +1286,7 @@
       "trophies": [
         {
           "comp": "UEFA Europa League",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2020/2021",
@@ -1187,16 +1295,16 @@
         },
         {
           "comp": "Super Cup",
-          "count": 4,
+          "country": "Italy",
+          "count": 2,
           "seasons": [
             "2014",
-            "2012",
-            null,
             null
           ]
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2013/2014",
@@ -1205,6 +1313,7 @@
         },
         {
           "comp": "UEFA European Championship",
+          "country": "Europe",
           "count": 3,
           "seasons": [
             "2012",
@@ -1213,7 +1322,17 @@
           ]
         },
         {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 2,
+          "seasons": [
+            "2012",
+            null
+          ]
+        },
+        {
           "comp": "laliga",
+          "country": null,
           "count": 2,
           "seasons": [
             "2011/2012",
@@ -1222,6 +1341,7 @@
         },
         {
           "comp": "Copa del Rey",
+          "country": "Spain",
           "count": 3,
           "seasons": [
             "2010/2011",
@@ -1231,6 +1351,7 @@
         },
         {
           "comp": "FIFA World Cup",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2010",
@@ -1272,6 +1393,7 @@
       "trophies": [
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2019/2020",
@@ -1280,6 +1402,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2014/2015"
@@ -1287,6 +1410,7 @@
         },
         {
           "comp": "Coupe de la Ligue",
+          "country": "France",
           "count": 1,
           "seasons": [
             "2012/2013"
@@ -1311,6 +1435,7 @@
       "trophies": [
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2019/2020",
@@ -1336,17 +1461,17 @@
       "trophies": [
         {
           "comp": "Super Cup",
-          "count": 5,
+          "country": "Saudi Arabia",
+          "count": 3,
           "seasons": [
             "2023/2024",
             "2023/2024",
-            "2014",
-            null,
             null
           ]
         },
         {
           "comp": "Saudi League",
+          "country": "Saudi Arabia",
           "count": 2,
           "seasons": [
             "2023/2024",
@@ -1355,6 +1480,7 @@
         },
         {
           "comp": "King's Cup",
+          "country": "Saudi Arabia",
           "count": 2,
           "seasons": [
             "2023/2024",
@@ -1363,6 +1489,7 @@
         },
         {
           "comp": "CAF Africa Cup of Nations",
+          "country": "Africa",
           "count": 2,
           "seasons": [
             "2022",
@@ -1371,6 +1498,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2019/2020",
@@ -1378,7 +1506,17 @@
           ]
         },
         {
+          "comp": "Super Cup",
+          "country": "Italy",
+          "count": 2,
+          "seasons": [
+            "2014",
+            null
+          ]
+        },
+        {
           "comp": "Cup",
+          "country": "Belgium",
           "count": 2,
           "seasons": [
             "2012/2013",
@@ -1457,6 +1595,7 @@
       "trophies": [
         {
           "comp": "UEFA Conference League",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2021/2022",
@@ -1481,7 +1620,8 @@
       ],
       "trophies": [
         {
-          "comp": "seriea",
+          "comp": "Serie A",
+          "country": "Brazil",
           "count": 2,
           "seasons": [
             "2024",
@@ -1490,6 +1630,7 @@
         },
         {
           "comp": "CONMEBOL Libertadores",
+          "country": "South America",
           "count": 2,
           "seasons": [
             "2024",
@@ -1498,6 +1639,7 @@
         },
         {
           "comp": "League Cup",
+          "country": "United Arab Emirates",
           "count": 2,
           "seasons": [
             "2023/2024",
@@ -1506,6 +1648,7 @@
         },
         {
           "comp": "Florida Cup",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2021",
@@ -1514,6 +1657,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2019/2020",
@@ -1522,6 +1666,7 @@
         },
         {
           "comp": "CONMEBOL Copa America",
+          "country": "South America",
           "count": 2,
           "seasons": [
             "2019",
@@ -1530,6 +1675,7 @@
         },
         {
           "comp": "Copa do Brasil",
+          "country": "Brazil",
           "count": 2,
           "seasons": [
             "2011",
@@ -1538,6 +1684,7 @@
         },
         {
           "comp": "FIFA U20 World Cup",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2011",
@@ -1546,6 +1693,7 @@
         },
         {
           "comp": "Serie B",
+          "country": "Brazil",
           "count": 2,
           "seasons": [
             "2009",
@@ -1578,6 +1726,7 @@
       "trophies": [
         {
           "comp": "seriea",
+          "country": null,
           "count": 2,
           "seasons": [
             "2022/2023",
@@ -1586,6 +1735,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2019/2020",
@@ -1611,6 +1761,7 @@
       "trophies": [
         {
           "comp": "Segunda División",
+          "country": "Spain",
           "count": 1,
           "seasons": [
             "2022/2023"
@@ -1618,6 +1769,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2019/2020",
@@ -1626,14 +1778,23 @@
         },
         {
           "comp": "Super Cup",
-          "count": 2,
+          "country": "Italy",
+          "count": 1,
           "seasons": [
-            "2014/2015",
+            "2014/2015"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
             "2012/2013"
           ]
         },
         {
           "comp": "laliga",
+          "country": null,
           "count": 1,
           "seasons": [
             "2011/2012"
@@ -1658,6 +1819,7 @@
       "trophies": [
         {
           "comp": "UEFA European Championship",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2021",
@@ -1666,6 +1828,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 3,
           "seasons": [
             "2019/2020",
@@ -1675,6 +1838,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2014",
@@ -1683,6 +1847,7 @@
         },
         {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2011/2012",
@@ -1708,6 +1873,7 @@
       "trophies": [
         {
           "comp": "Süper Lig",
+          "country": "Turkey",
           "count": 3,
           "seasons": [
             "2024/2025",
@@ -1717,6 +1883,7 @@
         },
         {
           "comp": "Cup",
+          "country": "Turkey",
           "count": 1,
           "seasons": [
             "2024/2025"
@@ -1724,15 +1891,15 @@
         },
         {
           "comp": "Super Cup",
-          "count": 3,
+          "country": "Turkey",
+          "count": 1,
           "seasons": [
-            "2023/2024",
-            "2014/2015",
-            "2012/2013"
+            "2023/2024"
           ]
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2019/2020",
@@ -1740,7 +1907,24 @@
           ]
         },
         {
+          "comp": "Super Cup",
+          "country": "Italy",
+          "count": 1,
+          "seasons": [
+            "2014/2015"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Holland",
+          "count": 1,
+          "seasons": [
+            "2012/2013"
+          ]
+        },
+        {
           "comp": "KNVB Beker",
+          "country": "Holland",
           "count": 1,
           "seasons": [
             "2011/2012"
@@ -1884,6 +2068,7 @@
       "trophies": [
         {
           "comp": "Trofeo Silvio Berlusconi",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2023"
@@ -1891,6 +2076,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 1,
           "seasons": [
             "2021/2022"
@@ -1898,6 +2084,7 @@
         },
         {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2006/2007"
@@ -1905,6 +2092,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2003/2004"
@@ -1945,6 +2133,7 @@
       "trophies": [
         {
           "comp": "League Cup",
+          "country": "United-Arab-Emirates",
           "count": 1,
           "seasons": [
             "2022/2023"
@@ -1952,6 +2141,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "United-Arab-Emirates",
           "count": 1,
           "seasons": [
             "2022/2023"
@@ -1959,6 +2149,7 @@
         },
         {
           "comp": "Presidents Cup",
+          "country": "United-Arab-Emirates",
           "count": 2,
           "seasons": [
             "2022/2023",
@@ -1967,6 +2158,7 @@
         },
         {
           "comp": "Super League 1",
+          "country": "Greece",
           "count": 3,
           "seasons": [
             "2021/2022",
@@ -1976,6 +2168,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2019/2020"
@@ -1983,6 +2176,7 @@
         },
         {
           "comp": "Cup",
+          "country": "Greece",
           "count": 2,
           "seasons": [
             "2012/2013",
@@ -2077,6 +2271,7 @@
       "trophies": [
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2007/2008",
@@ -2085,6 +2280,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2007/2008"
@@ -2092,6 +2288,7 @@
         },
         {
           "comp": "World Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2006 Germany"
@@ -2132,6 +2329,7 @@
       "trophies": [
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 3,
           "seasons": [
             "2023",
@@ -2141,6 +2339,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 3,
           "seasons": [
             "2022/2023",
@@ -2150,6 +2349,7 @@
         },
         {
           "comp": "pl",
+          "country": null,
           "count": 3,
           "seasons": [
             "2013/2014",
@@ -2159,6 +2359,7 @@
         },
         {
           "comp": "League Cup",
+          "country": "England",
           "count": 2,
           "seasons": [
             "2013/2014",
@@ -2167,6 +2368,7 @@
         },
         {
           "comp": "Community Shield",
+          "country": "England",
           "count": 2,
           "seasons": [
             "2012",
@@ -2175,6 +2377,7 @@
         },
         {
           "comp": "FA Cup",
+          "country": "England",
           "count": 2,
           "seasons": [
             "2010/2011",
@@ -2183,6 +2386,7 @@
         },
         {
           "comp": "bundesliga",
+          "country": null,
           "count": 2,
           "seasons": [
             "2008/2009",
@@ -2214,11 +2418,11 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "AS Roma",
           "league": "seriea",
-          "apps": 47,
-          "goals": 11
+          "apps": 15,
+          "goals": 3
         },
         {
           "years": "2015",
@@ -2226,11 +2430,19 @@
           "league": "seriea",
           "apps": 16,
           "goals": 1
+        },
+        {
+          "years": "2016",
+          "club": "AS Roma",
+          "league": "seriea",
+          "apps": 32,
+          "goals": 8
         }
       ],
       "trophies": [
         {
           "comp": "Copa del Rey",
+          "country": "Spain",
           "count": 1,
           "seasons": [
             "2009/2010"
@@ -2238,6 +2450,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Spain",
           "count": 1,
           "seasons": [
             "2007/2008"
@@ -2278,17 +2491,16 @@
       "trophies": [
         {
           "comp": "Super Cup",
-          "count": 5,
+          "country": "Spain",
+          "count": 2,
           "seasons": [
             "2025",
-            "2021",
-            "2019",
-            null,
             null
           ]
         },
         {
           "comp": "Trofeo Joan Gamper",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2025",
@@ -2297,6 +2509,7 @@
         },
         {
           "comp": "Copa del Rey",
+          "country": "Spain",
           "count": 2,
           "seasons": [
             "2024/2025",
@@ -2305,6 +2518,7 @@
         },
         {
           "comp": "laliga",
+          "country": null,
           "count": 2,
           "seasons": [
             "2024/2025",
@@ -2313,6 +2527,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 4,
           "seasons": [
             "2023/2024",
@@ -2322,7 +2537,18 @@
           ]
         },
         {
+          "comp": "Super Cup",
+          "country": "Italy",
+          "count": 3,
+          "seasons": [
+            "2021",
+            "2019",
+            null
+          ]
+        },
+        {
           "comp": "seriea",
+          "country": null,
           "count": 4,
           "seasons": [
             "2019/2020",
@@ -2333,6 +2559,7 @@
         },
         {
           "comp": "Premier League Asia Trophy",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2015",
@@ -2341,6 +2568,7 @@
         },
         {
           "comp": "Emirates Cup",
+          "country": "World",
           "count": 4,
           "seasons": [
             "2015",
@@ -2351,6 +2579,7 @@
         },
         {
           "comp": "FA Cup",
+          "country": "England",
           "count": 3,
           "seasons": [
             "2014/2015",
@@ -2360,6 +2589,7 @@
         },
         {
           "comp": "Community Shield",
+          "country": "England",
           "count": 2,
           "seasons": [
             "2014",
@@ -2385,6 +2615,7 @@
       "trophies": [
         {
           "comp": "seriea",
+          "country": null,
           "count": 8,
           "seasons": [
             "2018/2019",
@@ -2399,6 +2630,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 4,
           "seasons": [
             "2018/2019",
@@ -2409,6 +2641,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 4,
           "seasons": [
             "2017/2018",
@@ -2419,6 +2652,7 @@
         },
         {
           "comp": "bundesliga",
+          "country": null,
           "count": 1,
           "seasons": [
             "2008/2009"
@@ -2426,6 +2660,7 @@
         },
         {
           "comp": "World Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2006 Germany"
@@ -2450,6 +2685,7 @@
       "trophies": [
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 5,
           "seasons": [
             "2020/2021",
@@ -2461,6 +2697,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 7,
           "seasons": [
             "2020/2021",
@@ -2474,6 +2711,7 @@
         },
         {
           "comp": "UEFA European Championship",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2020"
@@ -2481,6 +2719,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 10,
           "seasons": [
             "2019/2020",
@@ -2578,6 +2817,7 @@
       "trophies": [
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 4,
           "seasons": [
             "2024",
@@ -2588,6 +2828,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 7,
           "seasons": [
             "2023/2024",
@@ -2601,6 +2842,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 5,
           "seasons": [
             "2020/2021",
@@ -2612,6 +2854,7 @@
         },
         {
           "comp": "League Cup",
+          "country": "England",
           "count": 2,
           "seasons": [
             "2014/2015",
@@ -2620,6 +2863,7 @@
         },
         {
           "comp": "pl",
+          "country": null,
           "count": 2,
           "seasons": [
             "2014/2015",
@@ -2645,16 +2889,17 @@
       "trophies": [
         {
           "comp": "Super Cup",
-          "count": 4,
+          "country": "Italy",
+          "count": 3,
           "seasons": [
             "2020/2021",
             "2018/2019",
-            "2015/2016",
-            "2012/2013"
+            "2015/2016"
           ]
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 5,
           "seasons": [
             "2019/2020",
@@ -2666,6 +2911,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 3,
           "seasons": [
             "2017/2018",
@@ -2675,6 +2921,7 @@
         },
         {
           "comp": "UEFA Super Cup",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2014/2015"
@@ -2682,6 +2929,7 @@
         },
         {
           "comp": "FIFA Club World Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2014 Morocco"
@@ -2689,6 +2937,7 @@
         },
         {
           "comp": "World Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2014 Brazil"
@@ -2696,6 +2945,7 @@
         },
         {
           "comp": "Copa del Rey",
+          "country": "Spain",
           "count": 2,
           "seasons": [
             "2013/2014",
@@ -2704,6 +2954,7 @@
         },
         {
           "comp": "UEFA Champions League",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2013/2014"
@@ -2711,13 +2962,23 @@
         },
         {
           "comp": "International Champions Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2013"
           ]
         },
         {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2012/2013"
+          ]
+        },
+        {
           "comp": "laliga",
+          "country": null,
           "count": 1,
           "seasons": [
             "2011/2012"
@@ -2725,6 +2986,7 @@
         },
         {
           "comp": "bundesliga",
+          "country": null,
           "count": 1,
           "seasons": [
             "2006/2007"
@@ -2756,6 +3018,7 @@
       "trophies": [
         {
           "comp": "Presidents Cup",
+          "country": "United-Arab-Emirates",
           "count": 2,
           "seasons": [
             "2022/2023",
@@ -2764,15 +3027,15 @@
         },
         {
           "comp": "Super Cup",
-          "count": 3,
+          "country": "United-Arab-Emirates",
+          "count": 1,
           "seasons": [
-            "2022/2023",
-            "2021/2022",
-            "2018/2019"
+            "2022/2023"
           ]
         },
         {
           "comp": "League Cup",
+          "country": "United-Arab-Emirates",
           "count": 1,
           "seasons": [
             "2022/2023"
@@ -2780,6 +3043,7 @@
         },
         {
           "comp": "Trofeo Joan Gamper",
+          "country": "World",
           "count": 3,
           "seasons": [
             "2022",
@@ -2788,7 +3052,16 @@
           ]
         },
         {
+          "comp": "Super Cup",
+          "country": "Turkey",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
           "comp": "Copa del Rey",
+          "country": "Spain",
           "count": 1,
           "seasons": [
             "2020/2021"
@@ -2796,6 +3069,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 4,
           "seasons": [
             "2019/2020",
@@ -2805,7 +3079,16 @@
           ]
         },
         {
+          "comp": "Super Cup",
+          "country": "Italy",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        },
+        {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2017/2018",
@@ -2814,6 +3097,7 @@
         },
         {
           "comp": "Ligue 2",
+          "country": "France",
           "count": 1,
           "seasons": [
             "2006/2007"
@@ -2838,6 +3122,7 @@
       "trophies": [
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 3,
           "seasons": [
             "2021",
@@ -2847,6 +3132,7 @@
         },
         {
           "comp": "UEFA European Championship",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2021",
@@ -2855,6 +3141,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 3,
           "seasons": [
             "2020/2021",
@@ -2864,6 +3151,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 4,
           "seasons": [
             "2019/2020",
@@ -2891,6 +3179,7 @@
       "trophies": [
         {
           "comp": "FIFA World Cup",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2022",
@@ -2899,6 +3188,7 @@
         },
         {
           "comp": "CONMEBOL/UEFA Finalissima",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2022",
@@ -2907,6 +3197,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 4,
           "seasons": [
             "2021",
@@ -2917,6 +3208,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 5,
           "seasons": [
             "2020/2021",
@@ -2928,6 +3220,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 6,
           "seasons": [
             "2019/2020",
@@ -2940,6 +3233,7 @@
         },
         {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2013/2014",
@@ -2965,6 +3259,7 @@
       "trophies": [
         {
           "comp": "seriea",
+          "country": null,
           "count": 4,
           "seasons": [
             "2018/2019",
@@ -2975,16 +3270,16 @@
         },
         {
           "comp": "Super Cup",
-          "count": 4,
+          "country": "Italy",
+          "count": 2,
           "seasons": [
             "2018/2019",
-            "2015/2016",
-            "2014/2015",
-            "2012/2013"
+            "2015/2016"
           ]
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 3,
           "seasons": [
             "2017/2018",
@@ -2993,7 +3288,16 @@
           ]
         },
         {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2014/2015"
+          ]
+        },
+        {
           "comp": "bundesliga",
+          "country": null,
           "count": 2,
           "seasons": [
             "2013/2014",
@@ -3002,6 +3306,7 @@
         },
         {
           "comp": "UEFA Super Cup",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2013/2014"
@@ -3009,6 +3314,7 @@
         },
         {
           "comp": "DFB Pokal",
+          "country": "Germany",
           "count": 2,
           "seasons": [
             "2013/2014",
@@ -3017,6 +3323,7 @@
         },
         {
           "comp": "FIFA Club World Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2013 Morocco"
@@ -3024,13 +3331,23 @@
         },
         {
           "comp": "Audi Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2013"
           ]
         },
         {
+          "comp": "Super Cup",
+          "country": "Germany",
+          "count": 1,
+          "seasons": [
+            "2012/2013"
+          ]
+        },
+        {
           "comp": "UEFA Champions League",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2012/2013"
@@ -3038,6 +3355,7 @@
         },
         {
           "comp": "1. HNL",
+          "country": "Croatia",
           "count": 3,
           "seasons": [
             "2009/2010",
@@ -3047,6 +3365,7 @@
         },
         {
           "comp": "Cup",
+          "country": "Croatia",
           "count": 2,
           "seasons": [
             "2008/2009",
@@ -3120,6 +3439,7 @@
       "trophies": [
         {
           "comp": "laliga",
+          "country": null,
           "count": 2,
           "seasons": [
             "2020/2021",
@@ -3128,6 +3448,7 @@
         },
         {
           "comp": "Copa del Rey",
+          "country": "Spain",
           "count": 2,
           "seasons": [
             "2018/2019",
@@ -3136,6 +3457,7 @@
         },
         {
           "comp": "FIFA U20 World Cup",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2013",
@@ -3216,6 +3538,7 @@
       "trophies": [
         {
           "comp": "seriea",
+          "country": null,
           "count": 7,
           "seasons": [
             "2017/2018",
@@ -3229,6 +3552,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 5,
           "seasons": [
             "2017/2018",
@@ -3240,6 +3564,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 4,
           "seasons": [
             "2015/2016",
@@ -3250,6 +3575,7 @@
         },
         {
           "comp": "Super League",
+          "country": "Switzerland",
           "count": 1,
           "seasons": [
             "2002/2003"
@@ -3281,6 +3607,7 @@
       "trophies": [
         {
           "comp": "Premier League Summer Series",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2025",
@@ -3289,6 +3616,7 @@
         },
         {
           "comp": "UEFA Nations League",
+          "country": "Europe",
           "count": 3,
           "seasons": [
             "2024/2026",
@@ -3298,6 +3626,7 @@
         },
         {
           "comp": "FA Cup",
+          "country": "England",
           "count": 2,
           "seasons": [
             "2023/2024",
@@ -3306,6 +3635,7 @@
         },
         {
           "comp": "League Cup",
+          "country": "England",
           "count": 2,
           "seasons": [
             "2022/2023",
@@ -3314,6 +3644,7 @@
         },
         {
           "comp": "Taça da Liga",
+          "country": "Portugal",
           "count": 3,
           "seasons": [
             "2018/2019",
@@ -3323,6 +3654,7 @@
         },
         {
           "comp": "Taça de Portugal",
+          "country": "Portugal",
           "count": 2,
           "seasons": [
             "2018/2019",
@@ -3348,6 +3680,7 @@
       "trophies": [
         {
           "comp": "MLS",
+          "country": "United-States",
           "count": 1,
           "seasons": [
             "2022"
@@ -3355,6 +3688,7 @@
         },
         {
           "comp": "Copa del Rey",
+          "country": "Spain",
           "count": 2,
           "seasons": [
             "2021/2022",
@@ -3363,6 +3697,7 @@
         },
         {
           "comp": "Trofeo Joan Gamper",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2016"
@@ -3370,6 +3705,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Spain",
           "count": 3,
           "seasons": [
             "2013/2014",
@@ -3379,6 +3715,7 @@
         },
         {
           "comp": "Copa Catalunya",
+          "country": "Spain",
           "count": 1,
           "seasons": [
             "2013/2014"
@@ -3386,6 +3723,7 @@
         },
         {
           "comp": "UEFA U21 Championship",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2013 Israel"
@@ -3393,6 +3731,7 @@
         },
         {
           "comp": "laliga",
+          "country": null,
           "count": 2,
           "seasons": [
             "2012/2013",
@@ -3401,6 +3740,7 @@
         },
         {
           "comp": "UEFA Super Cup",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2011/2012"
@@ -3408,6 +3748,7 @@
         },
         {
           "comp": "FIFA Intercontinental Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2011 Japan"
@@ -3415,6 +3756,7 @@
         },
         {
           "comp": "Audi Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2011"
@@ -3422,6 +3764,7 @@
         },
         {
           "comp": "UEFA Champions League",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2010/2011"
@@ -3485,6 +3828,7 @@
       "trophies": [
         {
           "comp": "UEFA Super Cup",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2025",
@@ -3493,6 +3837,7 @@
         },
         {
           "comp": "Trophée des Champions",
+          "country": "France",
           "count": 4,
           "seasons": [
             "2025",
@@ -3503,6 +3848,7 @@
         },
         {
           "comp": "UEFA Champions League",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2024/2025",
@@ -3511,6 +3857,7 @@
         },
         {
           "comp": "Coupe de France",
+          "country": "France",
           "count": 3,
           "seasons": [
             "2024/2025",
@@ -3520,6 +3867,7 @@
         },
         {
           "comp": "ligue1",
+          "country": null,
           "count": 5,
           "seasons": [
             "2024/2025",
@@ -3531,6 +3879,7 @@
         },
         {
           "comp": "UEFA European Championship",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2021",
@@ -3539,6 +3888,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2016",
@@ -3564,6 +3914,7 @@
       "trophies": [
         {
           "comp": "bundesliga",
+          "country": null,
           "count": 1,
           "seasons": [
             "2014/2015"
@@ -3571,6 +3922,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2013/2014"
@@ -3578,6 +3930,7 @@
         },
         {
           "comp": "UEFA European Championship",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2012 Poland/Ukraine",
@@ -3586,6 +3939,7 @@
         },
         {
           "comp": "League Cup",
+          "country": "England",
           "count": 1,
           "seasons": [
             "2011/2012"
@@ -3593,6 +3947,7 @@
         },
         {
           "comp": "FIFA World Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2010 South Africa"
@@ -3600,6 +3955,7 @@
         },
         {
           "comp": "UEFA European Championship Qualifiers",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2008 Austria/Switzer"
@@ -3607,6 +3963,7 @@
         },
         {
           "comp": "Community Shield",
+          "country": "England",
           "count": 1,
           "seasons": [
             "2006/2007"
@@ -3614,6 +3971,7 @@
         },
         {
           "comp": "FA Cup",
+          "country": "England",
           "count": 1,
           "seasons": [
             "2005/2006"
@@ -3621,6 +3979,7 @@
         },
         {
           "comp": "UEFA Super Cup",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2005/2006"
@@ -3645,6 +4004,7 @@
       "trophies": [
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2016/2017",
@@ -3653,6 +4013,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 1,
           "seasons": [
             "2010/2011"
@@ -3709,6 +4070,7 @@
       "trophies": [
         {
           "comp": "seriea",
+          "country": null,
           "count": 2,
           "seasons": [
             "2021/2022",
@@ -3717,6 +4079,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2016",
@@ -3790,6 +4153,7 @@
       "trophies": [
         {
           "comp": "First Division A",
+          "country": "Belgium",
           "count": 4,
           "seasons": [
             "2012/2013",
@@ -3800,6 +4164,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Belgium",
           "count": 4,
           "seasons": [
             "2012/2013",
@@ -3810,6 +4175,7 @@
         },
         {
           "comp": "Cup",
+          "country": "Belgium",
           "count": 1,
           "seasons": [
             "2007/2008"
@@ -3834,6 +4200,7 @@
       "trophies": [
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2016",
@@ -3842,6 +4209,7 @@
         },
         {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2010/2011",
@@ -3867,6 +4235,7 @@
       "trophies": [
         {
           "comp": "Scottish Cup",
+          "country": "Scotland",
           "count": 2,
           "seasons": [
             "2019/2020",
@@ -3938,6 +4307,7 @@
       "trophies": [
         {
           "comp": "UEFA/CONMEBOL Club Challenge",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2023"
@@ -3945,6 +4315,7 @@
         },
         {
           "comp": "UEFA Europa League",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2022/2023",
@@ -3953,6 +4324,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2016/2017"
@@ -3960,6 +4332,7 @@
         },
         {
           "comp": "UEFA U19 Championship",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2012 Estonia"
@@ -4000,6 +4373,7 @@
       "trophies": [
         {
           "comp": "Primera A",
+          "country": "Colombia",
           "count": 4,
           "seasons": [
             "2023",
@@ -4010,6 +4384,7 @@
         },
         {
           "comp": "UEFA Europa League",
+          "country": "Europe",
           "count": 4,
           "seasons": [
             "2020/2021",
@@ -4020,6 +4395,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2016",
@@ -4100,6 +4476,7 @@
       "trophies": [
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 4,
           "seasons": [
             "2024",
@@ -4110,6 +4487,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 2,
           "seasons": [
             "2023/2024",
@@ -4118,6 +4496,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 3,
           "seasons": [
             "2022/2023",
@@ -4127,6 +4506,7 @@
         },
         {
           "comp": "UEFA European Championship",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2021",
@@ -4152,6 +4532,7 @@
       "trophies": [
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2018/2019"
@@ -4159,6 +4540,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2017/2018"
@@ -4166,6 +4548,7 @@
         },
         {
           "comp": "Super Liga",
+          "country": "Serbia",
           "count": 1,
           "seasons": [
             "2006/2007"
@@ -4173,6 +4556,7 @@
         },
         {
           "comp": "Cup",
+          "country": "Serbia",
           "count": 1,
           "seasons": [
             "2006/2007"
@@ -4180,6 +4564,7 @@
         },
         {
           "comp": "Prva Liga",
+          "country": "Serbia-And-Montenegro",
           "count": 2,
           "seasons": [
             "2005/2006",
@@ -4237,6 +4622,7 @@
       "trophies": [
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2018/2019"
@@ -4244,6 +4630,7 @@
         },
         {
           "comp": "HNL",
+          "country": "Croatia",
           "count": 4,
           "seasons": [
             "2011/2012",
@@ -4254,6 +4641,7 @@
         },
         {
           "comp": "Cup",
+          "country": "Croatia",
           "count": 3,
           "seasons": [
             "2011/2012",
@@ -4270,11 +4658,11 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Lazio",
           "league": "seriea",
-          "apps": 31,
-          "goals": 2
+          "apps": 20,
+          "goals": 1
         },
         {
           "years": "2016",
@@ -4282,6 +4670,13 @@
           "league": "seriea",
           "apps": 13,
           "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Lazio",
+          "league": "seriea",
+          "apps": 11,
+          "goals": 1
         }
       ],
       "trophies": []
@@ -4319,6 +4714,7 @@
       "trophies": [
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2019/2020",
@@ -4327,6 +4723,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2018/2019",
@@ -4352,6 +4749,7 @@
       "trophies": [
         {
           "comp": "Saudi League",
+          "country": "Saudi Arabia",
           "count": 2,
           "seasons": [
             "2023/2024",
@@ -4360,6 +4758,7 @@
         },
         {
           "comp": "King's Cup",
+          "country": "Saudi Arabia",
           "count": 2,
           "seasons": [
             "2023/2024",
@@ -4368,18 +4767,27 @@
         },
         {
           "comp": "Super Cup",
-          "count": 6,
+          "country": "Saudi Arabia",
+          "count": 3,
           "seasons": [
             "2023/2024",
             "2023/2024",
+            null
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Italy",
+          "count": 3,
+          "seasons": [
             "2019",
             "2017",
-            null,
             null
           ]
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2018/2019",
@@ -4388,6 +4796,7 @@
         },
         {
           "comp": "FIFA U20 World Cup",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2015",
@@ -4396,6 +4805,7 @@
         },
         {
           "comp": "Cup",
+          "country": "Serbia",
           "count": 2,
           "seasons": [
             "2013/2014",
@@ -4404,6 +4814,7 @@
         },
         {
           "comp": "UEFA U19 Championship",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2012/2013",
@@ -4429,6 +4840,7 @@
       "trophies": [
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2019/2020",
@@ -4437,6 +4849,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2018/2019"
@@ -4468,19 +4881,16 @@
       "trophies": [
         {
           "comp": "Super Cup",
-          "count": 7,
+          "country": "Türkiye",
+          "count": 2,
           "seasons": [
             "2024",
-            "2019",
-            "2017",
-            "2014",
-            null,
-            null,
             null
           ]
         },
         {
           "comp": "UEFA European Championship",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2021",
@@ -4488,7 +4898,18 @@
           ]
         },
         {
+          "comp": "Super Cup",
+          "country": "Italy",
+          "count": 3,
+          "seasons": [
+            "2019",
+            "2017",
+            null
+          ]
+        },
+        {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2018/2019",
@@ -4496,7 +4917,17 @@
           ]
         },
         {
+          "comp": "Super Cup",
+          "country": "Germany",
+          "count": 2,
+          "seasons": [
+            "2014",
+            null
+          ]
+        },
+        {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2011/2012",
@@ -4554,6 +4985,7 @@
       "trophies": [
         {
           "comp": "CONMEBOL Copa America",
+          "country": "South America",
           "count": 3,
           "seasons": [
             "2016",
@@ -4594,6 +5026,7 @@
       "trophies": [
         {
           "comp": "Super Cup",
+          "country": "Turkey",
           "count": 1,
           "seasons": [
             "2021/2022"
@@ -4601,6 +5034,7 @@
         },
         {
           "comp": "Süper Lig",
+          "country": "Turkey",
           "count": 1,
           "seasons": [
             "2020/2021"
@@ -4608,14 +5042,23 @@
         },
         {
           "comp": "Cup",
-          "count": 2,
+          "country": "Turkey",
+          "count": 1,
           "seasons": [
-            "2020/2021",
-            "2008/2009"
+            "2020/2021"
           ]
         },
         {
           "comp": "Super Liga",
+          "country": "Serbia",
+          "count": 1,
+          "seasons": [
+            "2008/2009"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Serbia",
           "count": 1,
           "seasons": [
             "2008/2009"
@@ -4720,6 +5163,7 @@
       "trophies": [
         {
           "comp": "FIFA Intercontinental Cup",
+          "country": "World",
           "count": 4,
           "seasons": [
             "2024",
@@ -4730,6 +5174,7 @@
         },
         {
           "comp": "UEFA Super Cup",
+          "country": "Europe",
           "count": 4,
           "seasons": [
             "2024",
@@ -4740,6 +5185,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Spain",
           "count": 2,
           "seasons": [
             "2024",
@@ -4748,6 +5194,7 @@
         },
         {
           "comp": "UEFA Champions League",
+          "country": "Europe",
           "count": 3,
           "seasons": [
             "2023/2024",
@@ -4757,6 +5204,7 @@
         },
         {
           "comp": "laliga",
+          "country": null,
           "count": 2,
           "seasons": [
             "2023/2024",
@@ -4765,6 +5213,7 @@
         },
         {
           "comp": "Copa del Rey",
+          "country": "Spain",
           "count": 2,
           "seasons": [
             "2022/2023",
@@ -4773,6 +5222,7 @@
         },
         {
           "comp": "UEFA Europa League",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2018/2019",
@@ -4781,6 +5231,7 @@
         },
         {
           "comp": "FA Cup",
+          "country": "England",
           "count": 2,
           "seasons": [
             "2017/2018",
@@ -4806,6 +5257,7 @@
       "trophies": [
         {
           "comp": "UEFA Europa League",
+          "country": "Europe",
           "count": 3,
           "seasons": [
             "2023/2024",
@@ -4815,6 +5267,7 @@
         },
         {
           "comp": "FA Cup",
+          "country": "England",
           "count": 2,
           "seasons": [
             "2017/2018",
@@ -4840,6 +5293,7 @@
       "trophies": [
         {
           "comp": "Emirates Cup",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2024",
@@ -4848,6 +5302,7 @@
         },
         {
           "comp": "Community Shield",
+          "country": "England",
           "count": 1,
           "seasons": [
             "2023/2024"
@@ -4855,6 +5310,7 @@
         },
         {
           "comp": "MLS All-Star",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2023"
@@ -4862,6 +5318,7 @@
         },
         {
           "comp": "UEFA Super Cup",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2021/2022"
@@ -4869,6 +5326,7 @@
         },
         {
           "comp": "FIFA Intercontinental Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2021 UAE"
@@ -4876,6 +5334,7 @@
         },
         {
           "comp": "UEFA Champions League",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2020/2021"
@@ -4883,6 +5342,7 @@
         },
         {
           "comp": "UEFA European Championship",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2020"
@@ -4890,6 +5350,7 @@
         },
         {
           "comp": "UEFA Europa League",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2018/2019"
@@ -4897,6 +5358,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2014/2015"
@@ -4904,6 +5366,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2013/2014"
@@ -4935,6 +5398,7 @@
       "trophies": [
         {
           "comp": "Carolina Challenge Cup",
+          "country": "United-States",
           "count": 1,
           "seasons": [
             "2022"
@@ -4942,6 +5406,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 3,
           "seasons": [
             "2019/2020",
@@ -4951,6 +5416,7 @@
         },
         {
           "comp": "UEFA Europa League",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2018/2019"
@@ -4958,6 +5424,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 3,
           "seasons": [
             "2017/2018",
@@ -4967,15 +5434,24 @@
         },
         {
           "comp": "Super Cup",
-          "count": 3,
+          "country": "Italy",
+          "count": 1,
           "seasons": [
-            "2014/2015",
+            "2014/2015"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 2,
+          "seasons": [
             "2012/2013",
             "2008/2009"
           ]
         },
         {
           "comp": "laliga",
+          "country": null,
           "count": 3,
           "seasons": [
             "2011/2012",
@@ -4985,6 +5461,7 @@
         },
         {
           "comp": "Copa del Rey",
+          "country": "Spain",
           "count": 1,
           "seasons": [
             "2010/2011"
@@ -4999,10 +5476,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Napoli",
           "league": "seriea",
-          "apps": 25,
+          "apps": 20,
           "goals": 1
         },
         {
@@ -5011,6 +5488,13 @@
           "league": "seriea",
           "apps": 15,
           "goals": 3
+        },
+        {
+          "years": "2016",
+          "club": "Napoli",
+          "league": "seriea",
+          "apps": 5,
+          "goals": 0
         }
       ],
       "trophies": []
@@ -5032,16 +5516,25 @@
       "trophies": [
         {
           "comp": "Super Cup",
-          "count": 4,
+          "country": "Portugal",
+          "count": 2,
           "seasons": [
             "2020",
+            null
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Italy",
+          "count": 2,
+          "seasons": [
             "2017",
-            null,
             null
           ]
         },
         {
           "comp": "Olympics Men",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2016",
@@ -5050,6 +5543,7 @@
         },
         {
           "comp": "Paulista A1",
+          "country": "Brazil",
           "count": 3,
           "seasons": [
             "2012",
@@ -5059,6 +5553,7 @@
         },
         {
           "comp": "CONMEBOL Recopa",
+          "country": "South America",
           "count": 2,
           "seasons": [
             "2012",
@@ -5067,6 +5562,7 @@
         },
         {
           "comp": "CONMEBOL Libertadores",
+          "country": "South America",
           "count": 2,
           "seasons": [
             "2011",
@@ -5082,10 +5578,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Genoa",
           "league": "seriea",
-          "apps": 49,
+          "apps": 33,
           "goals": 3
         },
         {
@@ -5094,11 +5590,19 @@
           "league": "seriea",
           "apps": 13,
           "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Genoa",
+          "league": "seriea",
+          "apps": 16,
+          "goals": 0
         }
       ],
       "trophies": [
         {
           "comp": "Serie B",
+          "country": "Brazil",
           "count": 2,
           "seasons": [
             "2024",
@@ -5107,6 +5611,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2016/2017",
@@ -5115,6 +5620,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 2,
           "seasons": [
             "2016/2017",
@@ -5188,6 +5694,7 @@
       "trophies": [
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2014",
@@ -5196,6 +5703,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2013/2014",
@@ -5204,6 +5712,7 @@
         },
         {
           "comp": "Primera A",
+          "country": "Colombia",
           "count": 2,
           "seasons": [
             "2008",
@@ -5309,6 +5818,7 @@
       "trophies": [
         {
           "comp": "Copa Costa Rica",
+          "country": "Costa Rica",
           "count": 2,
           "seasons": [
             "2023",
@@ -5317,6 +5827,7 @@
         },
         {
           "comp": "Concacaf Central American Cup",
+          "country": "N/C America",
           "count": 2,
           "seasons": [
             "2023",
@@ -5397,6 +5908,7 @@
       "trophies": [
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2024/2025",
@@ -5502,6 +6014,7 @@
       "trophies": [
         {
           "comp": "CONMEBOL Sudamericana",
+          "country": "South-America",
           "count": 1,
           "seasons": [
             "2002"
@@ -5562,11 +6075,11 @@
           "goals": 0
         },
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Genoa",
           "league": "seriea",
-          "apps": 20,
-          "goals": 4
+          "apps": 13,
+          "goals": 3
         },
         {
           "years": "2016",
@@ -5574,6 +6087,13 @@
           "league": "seriea",
           "apps": 8,
           "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Genoa",
+          "league": "seriea",
+          "apps": 7,
+          "goals": 1
         }
       ],
       "trophies": []
@@ -5595,6 +6115,7 @@
       "trophies": [
         {
           "comp": "Super Cup",
+          "country": "Croatia",
           "count": 1,
           "seasons": [
             "2014/2015"
@@ -5602,6 +6123,7 @@
         },
         {
           "comp": "Cup",
+          "country": "Bosnia-Herzegovina",
           "count": 1,
           "seasons": [
             "2013/2014"
@@ -5681,6 +6203,7 @@
       "trophies": [
         {
           "comp": "Super Cup",
+          "country": "Turkey",
           "count": 1,
           "seasons": [
             "2022/2023"
@@ -5688,6 +6211,7 @@
         },
         {
           "comp": "Süper Lig",
+          "country": "Turkey",
           "count": 1,
           "seasons": [
             "2021/2022"
@@ -5695,6 +6219,7 @@
         },
         {
           "comp": "CONMEBOL Recopa",
+          "country": "South-America",
           "count": 1,
           "seasons": [
             "2012/2013"
@@ -5709,11 +6234,11 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Juventus",
           "league": "seriea",
-          "apps": 24,
-          "goals": 2
+          "apps": 14,
+          "goals": 1
         },
         {
           "years": "2015",
@@ -5721,6 +6246,13 @@
           "league": "seriea",
           "apps": 2,
           "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Juventus",
+          "league": "seriea",
+          "apps": 10,
+          "goals": 1
         }
       ],
       "trophies": []
@@ -5888,11 +6420,11 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Atalanta",
           "league": "seriea",
-          "apps": 24,
-          "goals": 6
+          "apps": 20,
+          "goals": 5
         },
         {
           "years": "2016",
@@ -5900,6 +6432,13 @@
           "league": "seriea",
           "apps": 12,
           "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Atalanta",
+          "league": "seriea",
+          "apps": 4,
+          "goals": 1
         }
       ],
       "trophies": []
@@ -5928,6 +6467,7 @@
       "trophies": [
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2016/2017"
@@ -5935,6 +6475,7 @@
         },
         {
           "comp": "Liga Profesional Argentina",
+          "country": "Argentina",
           "count": 1,
           "seasons": [
             "2008/2009 Apertura"
@@ -5942,6 +6483,7 @@
         },
         {
           "comp": "CONMEBOL Recopa",
+          "country": "South-America",
           "count": 1,
           "seasons": [
             "2008"
@@ -5949,6 +6491,7 @@
         },
         {
           "comp": "Community Shield",
+          "country": "England",
           "count": 1,
           "seasons": [
             "2006/2007"
@@ -5963,11 +6506,11 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Inter",
           "league": "seriea",
-          "apps": 47,
-          "goals": 9
+          "apps": 14,
+          "goals": 1
         },
         {
           "years": "2015",
@@ -5975,11 +6518,19 @@
           "league": "seriea",
           "apps": 19,
           "goals": 12
+        },
+        {
+          "years": "2016",
+          "club": "Inter",
+          "league": "seriea",
+          "apps": 33,
+          "goals": 8
         }
       ],
       "trophies": [
         {
           "comp": "Catarinense 1",
+          "country": "Brazil",
           "count": 2,
           "seasons": [
             "2024",
@@ -5988,6 +6539,7 @@
         },
         {
           "comp": "Recopa Catarinense",
+          "country": "Brazil",
           "count": 1,
           "seasons": [
             "2024"
@@ -5995,6 +6547,7 @@
         },
         {
           "comp": "Paulista A1",
+          "country": "Brazil",
           "count": 1,
           "seasons": [
             "2021"
@@ -6002,6 +6555,7 @@
         },
         {
           "comp": "Chinese Super League",
+          "country": "China-Pr",
           "count": 1,
           "seasons": [
             "2020"
@@ -6042,21 +6596,31 @@
       "trophies": [
         {
           "comp": "Super Cup",
-          "count": 2,
+          "country": "Turkey",
+          "count": 1,
           "seasons": [
-            "2022/2023",
-            "2014/2015"
+            "2022/2023"
           ]
         },
         {
           "comp": "Süper Lig",
+          "country": "Turkey",
           "count": 1,
           "seasons": [
             "2021/2022"
           ]
         },
         {
+          "comp": "Super Cup",
+          "country": "Italy",
+          "count": 1,
+          "seasons": [
+            "2014/2015"
+          ]
+        },
+        {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2013/2014",
@@ -6288,6 +6852,7 @@
       "trophies": [
         {
           "comp": "seriea",
+          "country": null,
           "count": 1,
           "seasons": [
             "2021/2022"
@@ -6295,6 +6860,7 @@
         },
         {
           "comp": "Emirates Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2019"
@@ -6302,6 +6868,7 @@
         },
         {
           "comp": "Liga I",
+          "country": "Romania",
           "count": 2,
           "seasons": [
             "2013/2014",
@@ -6310,6 +6877,7 @@
         },
         {
           "comp": "Supercupa",
+          "country": "Romania",
           "count": 1,
           "seasons": [
             "2013/2014"
@@ -6317,6 +6885,7 @@
         },
         {
           "comp": "Cupa României",
+          "country": "Romania",
           "count": 1,
           "seasons": [
             "2010/2011"
@@ -6377,10 +6946,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Bologna",
           "league": "seriea",
-          "apps": 36,
+          "apps": 30,
           "goals": 4
         },
         {
@@ -6388,6 +6957,13 @@
           "club": "Atalanta",
           "league": "seriea",
           "apps": 5,
+          "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Bologna",
+          "league": "seriea",
+          "apps": 6,
           "goals": 0
         }
       ],
@@ -6458,6 +7034,7 @@
       "trophies": [
         {
           "comp": "The NextGen Series",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2011/2012"
@@ -6528,6 +7105,7 @@
       "trophies": [
         {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2008/2009",
@@ -6536,6 +7114,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2003",
@@ -6561,6 +7140,7 @@
       "trophies": [
         {
           "comp": "UEFA Europa League",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2023/2024"
@@ -6568,6 +7148,7 @@
         },
         {
           "comp": "UEFA European Championship",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2020"
@@ -6575,6 +7156,7 @@
         },
         {
           "comp": "Goiano 1",
+          "country": "Brazil",
           "count": 1,
           "seasons": [
             "2012"
@@ -6582,6 +7164,7 @@
         },
         {
           "comp": "CONMEBOL Sudamericana",
+          "country": "South-America",
           "count": 1,
           "seasons": [
             "2012"
@@ -6622,6 +7205,7 @@
       "trophies": [
         {
           "comp": "UEFA/CONMEBOL Club Challenge",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2023",
@@ -6630,6 +7214,7 @@
         },
         {
           "comp": "UEFA Europa League",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2022/2023",
@@ -6638,6 +7223,7 @@
         },
         {
           "comp": "CONMEBOL/UEFA Finalissima",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2022",
@@ -6646,6 +7232,7 @@
         },
         {
           "comp": "FIFA World Cup",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2022",
@@ -6654,6 +7241,7 @@
         },
         {
           "comp": "CONMEBOL Copa America",
+          "country": "South America",
           "count": 2,
           "seasons": [
             "2021",
@@ -6662,6 +7250,7 @@
         },
         {
           "comp": "FIFA U20 World Cup",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2007",
@@ -6670,6 +7259,7 @@
         },
         {
           "comp": "CONMEBOL Sudamericana",
+          "country": "South America",
           "count": 2,
           "seasons": [
             "2007",
@@ -6695,6 +7285,7 @@
       "trophies": [
         {
           "comp": "Cup",
+          "country": "Slovenia",
           "count": 2,
           "seasons": [
             "2008/2009",
@@ -6727,6 +7318,7 @@
       "trophies": [
         {
           "comp": "Super Cup",
+          "country": "Cyprus",
           "count": 3,
           "seasons": [
             "2024",
@@ -6736,6 +7328,7 @@
         },
         {
           "comp": "1. Division",
+          "country": "Cyprus",
           "count": 2,
           "seasons": [
             "2023/2024",
@@ -6744,6 +7337,7 @@
         },
         {
           "comp": "UEFA Champions League",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2009/2010",
@@ -6775,10 +7369,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Sampdoria",
           "league": "seriea",
-          "apps": 25,
+          "apps": 5,
           "goals": 0
         },
         {
@@ -6786,6 +7380,13 @@
           "club": "Hellas Verona",
           "league": "seriea",
           "apps": 18,
+          "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Sampdoria",
+          "league": "seriea",
+          "apps": 20,
           "goals": 0
         }
       ],
@@ -6831,6 +7432,7 @@
       "trophies": [
         {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2013/2014",
@@ -6846,11 +7448,11 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Empoli",
           "league": "seriea",
-          "apps": 51,
-          "goals": 7
+          "apps": 33,
+          "goals": 5
         },
         {
           "years": "2016",
@@ -6858,11 +7460,19 @@
           "league": "seriea",
           "apps": 11,
           "goals": 2
+        },
+        {
+          "years": "2016",
+          "club": "Empoli",
+          "league": "seriea",
+          "apps": 18,
+          "goals": 2
         }
       ],
       "trophies": [
         {
           "comp": "TSYD Cup",
+          "country": "Turkey",
           "count": 1,
           "seasons": [
             "2024/2025"
@@ -6909,11 +7519,11 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Sampdoria",
           "league": "seriea",
-          "apps": 53,
-          "goals": 15
+          "apps": 16,
+          "goals": 3
         },
         {
           "years": "2015",
@@ -6921,11 +7531,19 @@
           "league": "seriea",
           "apps": 16,
           "goals": 5
+        },
+        {
+          "years": "2016",
+          "club": "Sampdoria",
+          "league": "seriea",
+          "apps": 37,
+          "goals": 12
         }
       ],
       "trophies": [
         {
           "comp": "seriea",
+          "country": null,
           "count": 3,
           "seasons": [
             "2013/2014",
@@ -6935,6 +7553,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2013/2014",
@@ -6976,6 +7595,7 @@
       "trophies": [
         {
           "comp": "Paranaense 1",
+          "country": "Brazil",
           "count": 1,
           "seasons": [
             "2005"
@@ -7039,6 +7659,7 @@
       "trophies": [
         {
           "comp": "Super League",
+          "country": "Switzerland",
           "count": 3,
           "seasons": [
             "2021/2022",
@@ -7048,6 +7669,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Turkey",
           "count": 2,
           "seasons": [
             "2016/2017",
@@ -7056,6 +7678,7 @@
         },
         {
           "comp": "Süper Lig",
+          "country": "Turkey",
           "count": 1,
           "seasons": [
             "2014/2015"
@@ -7063,6 +7686,7 @@
         },
         {
           "comp": "Cup",
+          "country": "Turkey",
           "count": 1,
           "seasons": [
             "2014/2015"
@@ -7070,6 +7694,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2013/2014",
@@ -7078,6 +7703,7 @@
         },
         {
           "comp": "Schweizer Pokal",
+          "country": "Switzerland",
           "count": 1,
           "seasons": [
             "2004/2005"
@@ -7140,10 +7766,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Sassuolo",
           "league": "seriea",
-          "apps": 27,
+          "apps": 26,
           "goals": 2
         },
         {
@@ -7152,11 +7778,19 @@
           "league": "seriea",
           "apps": 35,
           "goals": 13
+        },
+        {
+          "years": "2016",
+          "club": "Sassuolo",
+          "league": "seriea",
+          "apps": 1,
+          "goals": 0
         }
       ],
       "trophies": [
         {
           "comp": "Super Liga",
+          "country": "Serbia",
           "count": 1,
           "seasons": [
             "2020/2021"
@@ -7164,6 +7798,7 @@
         },
         {
           "comp": "Cup",
+          "country": "Serbia",
           "count": 1,
           "seasons": [
             "2020/2021"
@@ -7282,6 +7917,7 @@
       "trophies": [
         {
           "comp": "Copa del Rey",
+          "country": "Spain",
           "count": 1,
           "seasons": [
             "2007/2008"
@@ -7289,6 +7925,7 @@
         },
         {
           "comp": "UEFA Super Cup",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2004/2005"
@@ -7296,6 +7933,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2002/2003"
@@ -7303,6 +7941,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2000/2001"
@@ -7343,6 +7982,7 @@
       "trophies": [
         {
           "comp": "UEFA European Championship",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2021",
@@ -7351,6 +7991,7 @@
         },
         {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2013/2014",
@@ -7415,6 +8056,7 @@
       "trophies": [
         {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2010/2011"
@@ -7455,6 +8097,7 @@
       "trophies": [
         {
           "comp": "seriea",
+          "country": null,
           "count": 2,
           "seasons": [
             "2013/2014",
@@ -7463,6 +8106,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2013/2014"
@@ -7470,6 +8114,7 @@
         },
         {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2010/2011"
@@ -7542,6 +8187,7 @@
       "trophies": [
         {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 3,
           "seasons": [
             "2024/2025",
@@ -7551,6 +8197,7 @@
         },
         {
           "comp": "UEFA European Championship",
+          "country": "Europe",
           "count": 2,
           "seasons": [
             "2021",
@@ -7576,6 +8223,7 @@
       "trophies": [
         {
           "comp": "Superliga",
+          "country": "Denmark",
           "count": 2,
           "seasons": [
             "2022/2023",
@@ -7584,6 +8232,7 @@
         },
         {
           "comp": "DBU Pokalen",
+          "country": "Denmark",
           "count": 1,
           "seasons": [
             "2022/2023"
@@ -7615,6 +8264,7 @@
       "trophies": [
         {
           "comp": "seriea",
+          "country": null,
           "count": 3,
           "seasons": [
             "2014/2015",
@@ -7624,6 +8274,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2014/2015"
@@ -7631,6 +8282,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2013/2014",
@@ -7695,6 +8347,7 @@
       "trophies": [
         {
           "comp": "Coupe de France",
+          "country": "France",
           "count": 1,
           "seasons": [
             "2006/2007"
@@ -7810,11 +8463,11 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Genoa",
           "league": "seriea",
-          "apps": 34,
-          "goals": 17
+          "apps": 25,
+          "goals": 14
         },
         {
           "years": "2016",
@@ -7822,6 +8475,13 @@
           "league": "seriea",
           "apps": 6,
           "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Genoa",
+          "league": "seriea",
+          "apps": 9,
+          "goals": 3
         }
       ],
       "trophies": []
@@ -7843,6 +8503,7 @@
       "trophies": [
         {
           "comp": "Cup",
+          "country": "Belgium",
           "count": 1,
           "seasons": [
             "2007/2008"
@@ -7850,6 +8511,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Belgium",
           "count": 1,
           "seasons": [
             "2007/2008"
@@ -8039,6 +8701,7 @@
       "trophies": [
         {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2013/2014"
@@ -8046,6 +8709,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 1,
           "seasons": [
             "1997/1998"
@@ -8053,6 +8717,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "1997/1998"
@@ -8203,6 +8868,7 @@
       "trophies": [
         {
           "comp": "League Cup",
+          "country": "Finland",
           "count": 1,
           "seasons": [
             "2023"
@@ -8210,6 +8876,7 @@
         },
         {
           "comp": "Veikkausliiga",
+          "country": "Finland",
           "count": 1,
           "seasons": [
             "2022"
@@ -8217,6 +8884,7 @@
         },
         {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2019/2020"
@@ -8389,10 +9057,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Palermo",
           "league": "seriea",
-          "apps": 53,
+          "apps": 38,
           "goals": 4
         },
         {
@@ -8401,11 +9069,19 @@
           "league": "seriea",
           "apps": 14,
           "goals": 2
+        },
+        {
+          "years": "2016",
+          "club": "Palermo",
+          "league": "seriea",
+          "apps": 15,
+          "goals": 0
         }
       ],
       "trophies": [
         {
           "comp": "UEFA U21 Championship",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2015 Czech Republic"
@@ -8413,6 +9089,7 @@
         },
         {
           "comp": "Eredivisie",
+          "country": "Holland",
           "count": 1,
           "seasons": [
             "2014/2015"
@@ -8420,6 +9097,7 @@
         },
         {
           "comp": "Allsvenskan",
+          "country": "Sweden",
           "count": 1,
           "seasons": [
             "2012"
@@ -8538,6 +9216,7 @@
       "trophies": [
         {
           "comp": "U20 World Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2009 Egypt"
@@ -8568,10 +9247,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Udinese",
           "league": "seriea",
-          "apps": 39,
+          "apps": 11,
           "goals": 0
         },
         {
@@ -8579,6 +9258,13 @@
           "club": "Hellas Verona",
           "league": "seriea",
           "apps": 16,
+          "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Udinese",
+          "league": "seriea",
+          "apps": 28,
           "goals": 0
         }
       ],
@@ -8608,6 +9294,7 @@
       "trophies": [
         {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2014/2015",
@@ -8688,6 +9375,7 @@
       "trophies": [
         {
           "comp": "FA Cup",
+          "country": "England",
           "count": 1,
           "seasons": [
             "2013/2014"
@@ -8805,10 +9493,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Napoli",
           "league": "seriea",
-          "apps": 7,
+          "apps": 6,
           "goals": 0
         },
         {
@@ -8816,6 +9504,13 @@
           "club": "Torino",
           "league": "seriea",
           "apps": 24,
+          "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Napoli",
+          "league": "seriea",
+          "apps": 1,
           "goals": 0
         }
       ],
@@ -8828,10 +9523,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Bologna",
           "league": "seriea",
-          "apps": 23,
+          "apps": 18,
           "goals": 2
         },
         {
@@ -8840,6 +9535,13 @@
           "league": "seriea",
           "apps": 7,
           "goals": 4
+        },
+        {
+          "years": "2016",
+          "club": "Bologna",
+          "league": "seriea",
+          "apps": 5,
+          "goals": 0
         }
       ],
       "trophies": []
@@ -8977,10 +9679,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Udinese",
           "league": "seriea",
-          "apps": 31,
+          "apps": 11,
           "goals": 0
         },
         {
@@ -8989,6 +9691,13 @@
           "league": "seriea",
           "apps": 15,
           "goals": 2
+        },
+        {
+          "years": "2016",
+          "club": "Udinese",
+          "league": "seriea",
+          "apps": 20,
+          "goals": 0
         }
       ],
       "trophies": []
@@ -9071,10 +9780,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Chievo",
           "league": "seriea",
-          "apps": 31,
+          "apps": 10,
           "goals": 0
         },
         {
@@ -9082,6 +9791,13 @@
           "club": "Carpi",
           "league": "seriea",
           "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Chievo",
+          "league": "seriea",
+          "apps": 21,
           "goals": 0
         }
       ],
@@ -9206,11 +9922,11 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "AC Milan",
           "league": "seriea",
-          "apps": 59,
-          "goals": 4
+          "apps": 29,
+          "goals": 1
         },
         {
           "years": "2015",
@@ -9218,11 +9934,19 @@
           "league": "seriea",
           "apps": 1,
           "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "AC Milan",
+          "league": "seriea",
+          "apps": 30,
+          "goals": 3
         }
       ],
       "trophies": [
         {
           "comp": "1. liga",
+          "country": "Slovakia",
           "count": 4,
           "seasons": [
             "2024/2025",
@@ -9233,6 +9957,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2016",
@@ -9241,6 +9966,7 @@
         },
         {
           "comp": "Czech Liga",
+          "country": "Czechia",
           "count": 2,
           "seasons": [
             "2009/2010",
@@ -9256,11 +9982,11 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Genoa",
           "league": "seriea",
-          "apps": 49,
-          "goals": 6
+          "apps": 18,
+          "goals": 3
         },
         {
           "years": "2015",
@@ -9268,11 +9994,19 @@
           "league": "seriea",
           "apps": 10,
           "goals": 1
+        },
+        {
+          "years": "2016",
+          "club": "Genoa",
+          "league": "seriea",
+          "apps": 31,
+          "goals": 3
         }
       ],
       "trophies": [
         {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2007/2008"
@@ -9297,6 +10031,7 @@
       "trophies": [
         {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2014/2015"
@@ -9408,6 +10143,7 @@
       "trophies": [
         {
           "comp": "CONMEBOL Recopa",
+          "country": "South-America",
           "count": 3,
           "seasons": [
             "2006",
@@ -9417,6 +10153,7 @@
         },
         {
           "comp": "Liga Profesional Argentina",
+          "country": "Argentina",
           "count": 3,
           "seasons": [
             "2005/2006 Clausura",
@@ -9426,6 +10163,7 @@
         },
         {
           "comp": "CONMEBOL Sudamericana",
+          "country": "South-America",
           "count": 2,
           "seasons": [
             "2005",
@@ -9434,6 +10172,7 @@
         },
         {
           "comp": "CONMEBOL Libertadores",
+          "country": "South-America",
           "count": 1,
           "seasons": [
             "2003"
@@ -9441,6 +10180,7 @@
         },
         {
           "comp": "Inter Continental Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2003"
@@ -9481,6 +10221,7 @@
       "trophies": [
         {
           "comp": "Super Liga",
+          "country": "Serbia",
           "count": 2,
           "seasons": [
             "2024/2025",
@@ -9489,6 +10230,7 @@
         },
         {
           "comp": "Cup",
+          "country": "Serbia",
           "count": 2,
           "seasons": [
             "2024/2025",
@@ -9497,6 +10239,7 @@
         },
         {
           "comp": "Trofeo Silvio Berlusconi",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2023",
@@ -9505,6 +10248,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 2,
           "seasons": [
             "2021/2022",
@@ -9513,6 +10257,7 @@
         },
         {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2017/2018",
@@ -9521,6 +10266,7 @@
         },
         {
           "comp": "Kirin Cup",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2016",
@@ -9552,17 +10298,24 @@
       "isGK": true,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Atalanta",
           "league": "seriea",
-          "apps": 44,
-          "goals": 57
+          "apps": 36,
+          "goals": 43
         },
         {
           "years": "2016",
           "club": "Fiorentina",
           "league": "seriea",
           "apps": 2,
+          "goals": 14
+        },
+        {
+          "years": "2016",
+          "club": "Atalanta",
+          "league": "seriea",
+          "apps": 8,
           "goals": 14
         }
       ],
@@ -9775,6 +10528,7 @@
       "trophies": [
         {
           "comp": "Serie B",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2018/2019"
@@ -9782,6 +10536,7 @@
         },
         {
           "comp": "seriea",
+          "country": null,
           "count": 1,
           "seasons": [
             "2002/2003"
@@ -9789,6 +10544,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2002/2003"
@@ -9960,6 +10716,7 @@
       "trophies": [
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2012/2013"
@@ -9967,6 +10724,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2009/2010"
@@ -9974,6 +10732,7 @@
         },
         {
           "comp": "UEFA Champions League",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "1999/2000"
@@ -9981,6 +10740,7 @@
         },
         {
           "comp": "Inter Continental Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "1998"
@@ -10035,6 +10795,7 @@
       "trophies": [
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2007/2008"
@@ -10042,6 +10803,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 1,
           "seasons": [
             "2006/2007"
@@ -10256,6 +11018,7 @@
       "trophies": [
         {
           "comp": "Super Cup",
+          "country": "Bulgaria",
           "count": 2,
           "seasons": [
             "2025",
@@ -10264,6 +11027,7 @@
         },
         {
           "comp": "First League",
+          "country": "Bulgaria",
           "count": 3,
           "seasons": [
             "2024/2025",
@@ -10273,6 +11037,7 @@
         },
         {
           "comp": "Cup",
+          "country": "Bulgaria",
           "count": 2,
           "seasons": [
             "2024/2025",
@@ -10432,10 +11197,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Torino",
           "league": "seriea",
-          "apps": 25,
+          "apps": 21,
           "goals": 2
         },
         {
@@ -10443,6 +11208,13 @@
           "club": "Pescara",
           "league": "seriea",
           "apps": 10,
+          "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Torino",
+          "league": "seriea",
+          "apps": 4,
           "goals": 0
         }
       ],
@@ -10488,6 +11260,7 @@
       "trophies": [
         {
           "comp": "Cupa României",
+          "country": "Romania",
           "count": 2,
           "seasons": [
             "2024/2025",
@@ -10496,6 +11269,7 @@
         },
         {
           "comp": "King's Cup",
+          "country": "Saudi Arabia",
           "count": 2,
           "seasons": [
             "2021/2022",
@@ -10511,10 +11285,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Chievo",
           "league": "seriea",
-          "apps": 26,
+          "apps": 14,
           "goals": 1
         },
         {
@@ -10523,6 +11297,13 @@
           "league": "seriea",
           "apps": 14,
           "goals": 3
+        },
+        {
+          "years": "2016",
+          "club": "Chievo",
+          "league": "seriea",
+          "apps": 12,
+          "goals": 0
         }
       ],
       "trophies": []
@@ -10615,6 +11396,7 @@
       "trophies": [
         {
           "comp": "League Cup",
+          "country": "England",
           "count": 1,
           "seasons": [
             "2003/2004"
@@ -10693,10 +11475,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "AS Roma",
           "league": "seriea",
-          "apps": 17,
+          "apps": 12,
           "goals": 1
         },
         {
@@ -10705,6 +11487,13 @@
           "league": "seriea",
           "apps": 16,
           "goals": 1
+        },
+        {
+          "years": "2016",
+          "club": "AS Roma",
+          "league": "seriea",
+          "apps": 5,
+          "goals": 0
         }
       ],
       "trophies": []
@@ -10939,6 +11728,7 @@
       "trophies": [
         {
           "comp": "Schweizer Pokal",
+          "country": "Switzerland",
           "count": 2,
           "seasons": [
             "2018/2019",
@@ -10947,6 +11737,7 @@
         },
         {
           "comp": "Challenge League",
+          "country": "Switzerland",
           "count": 2,
           "seasons": [
             "2012/2013",
@@ -11114,6 +11905,7 @@
       "trophies": [
         {
           "comp": "Canadian Championship",
+          "country": "Canada",
           "count": 1,
           "seasons": [
             "2019"
@@ -11312,6 +12104,7 @@
       "trophies": [
         {
           "comp": "seriea",
+          "country": null,
           "count": 4,
           "seasons": [
             "2008/2009",
@@ -11322,6 +12115,7 @@
         },
         {
           "comp": "Super Cup",
+          "country": "Italy",
           "count": 3,
           "seasons": [
             "2008/2009",
@@ -11331,6 +12125,7 @@
         },
         {
           "comp": "Coppa Italia",
+          "country": "Italy",
           "count": 2,
           "seasons": [
             "2005/2006",
@@ -11339,6 +12134,7 @@
         },
         {
           "comp": "Liga Profesional Argentina",
+          "country": "Argentina",
           "count": 2,
           "seasons": [
             "2003/2004 Apertura",
@@ -11347,6 +12143,7 @@
         },
         {
           "comp": "CONMEBOL Libertadores",
+          "country": "South-America",
           "count": 3,
           "seasons": [
             "2003",
@@ -11356,6 +12153,7 @@
         },
         {
           "comp": "Inter Continental Cup",
+          "country": "World",
           "count": 2,
           "seasons": [
             "2003",
@@ -11459,6 +12257,7 @@
       "trophies": [
         {
           "comp": "seriea",
+          "country": null,
           "count": 1,
           "seasons": [
             "2011/2012"
@@ -11466,6 +12265,7 @@
         },
         {
           "comp": "UEFA Champions League",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2006/2007"
@@ -11671,6 +12471,7 @@
       "trophies": [
         {
           "comp": "CSL",
+          "country": "China-Pr",
           "count": 1,
           "seasons": [
             "2014"
@@ -11678,6 +12479,7 @@
         },
         {
           "comp": "UEFA Super Cup",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2007/2008"
@@ -11685,6 +12487,7 @@
         },
         {
           "comp": "FIFA Club World Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2007 Japan"
@@ -11692,6 +12495,7 @@
         },
         {
           "comp": "UEFA Champions League",
+          "country": "Europe",
           "count": 1,
           "seasons": [
             "2006/2007"
@@ -11699,6 +12503,7 @@
         },
         {
           "comp": "World Cup",
+          "country": "World",
           "count": 1,
           "seasons": [
             "2006 Germany"
@@ -11752,10 +12557,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2015",
           "club": "Atalanta",
           "league": "seriea",
-          "apps": 16,
+          "apps": 15,
           "goals": 1
         },
         {
@@ -11763,6 +12568,13 @@
           "club": "Pescara",
           "league": "seriea",
           "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Atalanta",
+          "league": "seriea",
+          "apps": 1,
           "goals": 0
         }
       ],
