@@ -50,7 +50,7 @@ const BASE_URL = "https://v3.football.api-sports.io";
 const OUTPUT_DIR = "output"; // cartella con i file pronti per l'hosting statico
 const RAW_PLAYERS_FILE = "raw-players.json"; // da committare, persiste tra i run
 const PROGRESS_FILE = "sync-progress.json"; // da committare, persiste tra i run
-const BUILD_VERSION = new Date().toISOString().slice(0, 10); // es. "2026-09-18"
+const BUILD_VERSION = new Date().toISOString(); // es. "2026-09-19T14:32:07.123Z" - include l'ora apposta: due run nello stesso giorno devono avere versioni diverse, altrimenti la cache del gioco non si accorge che i dati sono cambiati
 
 // Finestra di stagioni da spazzolare. Con 6 campionati, tutta la finestra
 // 1995-2025 (31 stagioni) richiede circa 2 ore e mezza per un giro completo -
@@ -209,7 +209,12 @@ function mergePlayerEntry(playersMap, entry, season) {
       name: bestName,
       nationality: p.nationality || null,
       isGK: false,
-      careerStints: new Map(), // chiave "club|campionato" -> { years:Set, club, league, apps, goals }
+      // Non aggreghiamo più qui per club+campionato: salviamo ogni stagione
+      // come riga a sé. Il raggruppamento in tappe di carriera avviene solo
+      // in finalizeCareer(), in ordine cronologico vero - così un prestito
+      // (stessa squadra, ma con un'interruzione nel mezzo) risulta in tappe
+      // separate invece di un unico blocco che nasconde l'interruzione.
+      seasonRecords: [], // { season, club, league, apps, goals }
       trophies: null,
       trophiesFetched: false
     };
@@ -232,40 +237,61 @@ function mergePlayerEntry(playersMap, entry, season) {
     const goals = s.goals?.total || 0;
     const conceded = s.goals?.conceded || 0;
     const club = s.team?.name || "Squadra sconosciuta";
-    const key = club + "|" + leagueMeta.id;
 
-    let stint = rec.careerStints.get(key);
-    if (!stint) {
-      stint = { years: new Set(), club, league: leagueMeta.id, apps: 0, goals: 0 };
-      rec.careerStints.set(key, stint);
-    }
-    stint.years.add(season);
-    stint.apps += apps;
-    stint.goals += isGK ? conceded : goals;
+    rec.seasonRecords.push({ season, club, league: leagueMeta.id, apps, goals: isGK ? conceded : goals });
   });
 }
 
+/**
+ * Unisce eventuali righe duplicate (stessa stagione+club+campionato arrivata
+ * più di una volta) e ordina per stagione: passo preliminare comune sia a
+ * totalApps() sia a finalizeCareer(), così restano sempre coerenti tra loro.
+ */
+function dedupedSeasonRecords(rec){
+  const byKey = new Map();
+  (rec.seasonRecords || []).forEach((r) => {
+    const key = r.season + "|" + r.club + "|" + r.league;
+    let existing = byKey.get(key);
+    if (!existing) {
+      existing = { season: r.season, club: r.club, league: r.league, apps: 0, goals: 0 };
+      byKey.set(key, existing);
+    }
+    existing.apps += r.apps;
+    existing.goals += r.goals;
+  });
+  return Array.from(byKey.values()).sort((a, b) => a.season - b.season);
+}
+
 function totalApps(rec) {
-  let total = 0;
-  rec.careerStints.forEach((s) => { total += s.apps; });
-  return total;
+  return dedupedSeasonRecords(rec).reduce((sum, r) => sum + r.apps, 0);
 }
 
 function finalizeCareer(rec) {
-  return Array.from(rec.careerStints.values())
-    .map((s) => {
-      const years = Array.from(s.years).sort((a, b) => a - b);
-      const minY = years[0];
-      const maxY = years[years.length - 1];
-      return {
-        years: minY === maxY ? String(minY) : `${minY}–${maxY + 1}`,
-        club: s.club,
-        league: s.league,
-        apps: s.apps,
-        goals: s.goals
-      };
-    })
-    .sort((a, b) => Number(a.years.slice(0, 4)) - Number(b.years.slice(0, 4)));
+  const records = dedupedSeasonRecords(rec);
+  const stints = [];
+
+  records.forEach((r) => {
+    const last = stints[stints.length - 1];
+    const isContinuation = last && last.club === r.club && last.league === r.league && r.season === last.maxYear + 1;
+    if (isContinuation) {
+      last.maxYear = r.season;
+      last.apps += r.apps;
+      last.goals += r.goals;
+    } else {
+      // Squadra diversa, campionato diverso, O la stessa squadra ma con
+      // un'interruzione nel mezzo (es. un prestito e poi il ritorno): in
+      // ogni caso si apre una NUOVA tappa, non si allunga quella precedente.
+      stints.push({ club: r.club, league: r.league, minYear: r.season, maxYear: r.season, apps: r.apps, goals: r.goals });
+    }
+  });
+
+  return stints.map((s) => ({
+    years: s.minYear === s.maxYear ? String(s.minYear) : `${s.minYear}–${s.maxYear + 1}`,
+    club: s.club,
+    league: s.league,
+    apps: s.apps,
+    goals: s.goals
+  }));
 }
 
 // ---------------------------------------------------------------------------
@@ -369,11 +395,7 @@ async function loadRawPlayers() {
   const raw = await loadJsonIfExists(RAW_PLAYERS_FILE, { players: [] });
   const map = new Map();
   raw.players.forEach((p) => {
-    const stints = new Map();
-    (p.careerStints || []).forEach((s) => {
-      stints.set(s.club + "|" + s.league, { years: new Set(s.years), club: s.club, league: s.league, apps: s.apps, goals: s.goals });
-    });
-    map.set(p.id, { ...p, careerStints: stints });
+    map.set(p.id, { ...p, seasonRecords: p.seasonRecords || [] });
   });
   return map;
 }
@@ -386,13 +408,7 @@ async function saveRawPlayers(playersMap) {
     isGK: rec.isGK,
     trophies: rec.trophies,
     trophiesFetched: rec.trophiesFetched,
-    careerStints: Array.from(rec.careerStints.values()).map((s) => ({
-      club: s.club,
-      league: s.league,
-      apps: s.apps,
-      goals: s.goals,
-      years: Array.from(s.years)
-    }))
+    seasonRecords: rec.seasonRecords
   }));
   await fs.writeFile(RAW_PLAYERS_FILE, JSON.stringify({ version: BUILD_VERSION, players }, null, 2), "utf-8");
 }

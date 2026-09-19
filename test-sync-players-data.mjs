@@ -141,6 +141,43 @@ async function main() {
     assert.equal(players.get(12).name, "Lionel Messi", "il nome esistente deve autocorreggersi, non restare abbreviato");
   });
 
+  await test("un prestito (stessa squadra, ma con un'interruzione nel mezzo) produce tappe separate, non un unico blocco che nasconde l'interruzione (bug reale segnalato dall'utente: Bologna 2015, Atalanta 2016, Bologna 2017 mostrato come 'Bologna 2015-2017')", () => {
+    const players = newPlayersMap();
+    const bologna = (season, apps, goals) => ({
+      player: { id: 20, name: "Test Player" },
+      statistics: [{ team: { name: "Bologna" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: apps, position: "Attacker" }, goals: { total: goals } }]
+    });
+    const atalanta = (season, apps, goals) => ({
+      player: { id: 20, name: "Test Player" },
+      statistics: [{ team: { name: "Atalanta" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: apps, position: "Attacker" }, goals: { total: goals } }]
+    });
+    mergePlayerEntry(players, bologna(2015, 20, 2), 2015);
+    mergePlayerEntry(players, atalanta(2016, 5, 0), 2016);
+    mergePlayerEntry(players, bologna(2017, 16, 2), 2017);
+
+    const career = finalizeCareer(players.get(20));
+    assert.equal(career.length, 3, "devono risultare TRE tappe distinte, non due (Bologna unito) o una sola");
+    assert.equal(career[0].club, "Bologna"); assert.equal(career[0].years, "2015");
+    assert.equal(career[1].club, "Atalanta"); assert.equal(career[1].years, "2016");
+    assert.equal(career[2].club, "Bologna"); assert.equal(career[2].years, "2017");
+    assert.notEqual(career[0].years, "2015–2018", "non deve fondere le due tappe al Bologna in un unico intervallo che nasconde il prestito");
+  });
+
+  await test("nessuna interruzione reale: stagioni consecutive nello stesso club restano un'unica tappa con l'intervallo giusto", () => {
+    const players = newPlayersMap();
+    const entryFor = (apps, goals) => ({
+      player: { id: 21, name: "Test Player 2" },
+      statistics: [{ team: { name: "Milan" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: apps, position: "Attacker" }, goals: { total: goals } }]
+    });
+    mergePlayerEntry(players, entryFor(20, 3), 2018);
+    mergePlayerEntry(players, entryFor(25, 5), 2019);
+    mergePlayerEntry(players, entryFor(18, 2), 2020);
+    const career = finalizeCareer(players.get(21));
+    assert.equal(career.length, 1);
+    assert.equal(career[0].years, "2018–2021");
+    assert.equal(career[0].apps, 63);
+  });
+
   await test("due stagioni nello stesso club/campionato si aggregano in un solo stint", () => {
     const players = newPlayersMap();
     const entry = {
