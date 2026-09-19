@@ -1,4 +1,10 @@
 {
-  "version": "2026-09-18",
-  "leagues": {}
+  "version": "2026-09-19",
+  "leagues": {
+    "seriea": {
+      "file": "seriea.json",
+      "version": "2026-09-19",
+      "count": 565
+    }
+  }
 }
