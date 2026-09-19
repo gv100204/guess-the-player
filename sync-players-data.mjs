@@ -324,29 +324,32 @@ async function fetchTrophies(playerId) {
   }
   if (!raw) return [];
 
+  // Raggruppiamo per nome DELLA COMPETIZIONE + PAESE insieme, non solo per
+  // nome: una "Super Cup" può esistere identica di nome in più paesi (Italia,
+  // Spagna, Turchia...) - raggruppare solo per nome le confonderebbe tra loro.
   const wins = raw.filter((t) => /winner/i.test(t.place || ""));
   const grouped = {};
   wins.forEach((t) => {
-    const key = t.league;
-    if (!grouped[key]) grouped[key] = { leagueName: t.league, count: 0, seasons: [] };
+    const key = t.league + "|" + (t.country || "");
+    if (!grouped[key]) grouped[key] = { leagueName: t.league, country: t.country || null, count: 0, seasons: [] };
     grouped[key].count += 1;
     grouped[key].seasons.push(t.season);
   });
 
   return Object.values(grouped).map((g) => {
-    // Le competizioni internazionali (Mondiali, Europei) arrivano con nomi
-    // di torneo che non troviamo nel catalogo LEAGUES_TO_SYNC (che ha solo
-    // campionati domestici): in quel caso "comp" resta il nome grezzo
-    // dell'API, e andrà rimappato a mano a "wc"/"intl" se lo vuoi raggruppare
-    // come le altre competizioni internazionali nel gioco.
+    // Stessa disambiguazione nome+paese già usata per la carriera (matchLeague):
+    // se è uno dei nostri campionati domestici tracciati, "comp" diventa il
+    // nostro id interno (es. "seriea"). Altrimenti (coppe, competizioni
+    // internazionali) "comp" resta il nome grezzo dell'API, ma il paese
+    // viene comunque salvato a parte: il gioco lo usa per non mostrare, per
+    // esempio, "Super Cup" senza sapere di quale paese si tratta.
     //
-    // NOTA IMPORTANTE: qui NON costruiamo più una frase già scritta in
-    // italiano ("5 volte campione di...") - salviamo solo i FATTI (quale
-    // competizione, quante volte, quali stagioni). La frase nella lingua
-    // giusta la costruisce il gioco al momento di mostrarla, non lo script.
-    const matchedLeague = LEAGUES_TO_SYNC.find((l) => l.apiName === g.leagueName);
+    // NOTA: qui NON costruiamo più una frase già scritta in italiano - solo
+    // i FATTI (competizione, paese, quante volte, quali stagioni). La frase
+    // nella lingua giusta la costruisce il gioco al momento di mostrarla.
+    const matchedLeague = matchLeague(g.leagueName, g.country);
     const comp = matchedLeague ? matchedLeague.id : g.leagueName;
-    return { comp, count: g.count, seasons: g.seasons };
+    return { comp, country: matchedLeague ? null : g.country, count: g.count, seasons: g.seasons };
   });
 }
 

@@ -257,9 +257,24 @@ async function main() {
     assert.equal(seriea.count, 2, "due vittorie -> count 2, non una frase");
     assert.deepEqual(seriea.seasons, ["2018/2019", "2019/2020"]);
     assert.equal(typeof seriea.text, "undefined", "non deve più esserci un campo 'text' pre-scritto in italiano");
+    assert.equal(seriea.country, null, "un campionato riconosciuto (seriea) non ha bisogno del paese per essere chiaro");
     assert.ok(coppa, "deve esserci una riga per la Coppa Italia");
-    assert.equal(coppa.count, 1);
-    assert.equal(trophies.length, 2, "il 2nd Place non deve generare una riga");
+    assert.equal(coppa.country, "Italy", "una competizione non riconosciuta deve portarsi dietro il paese, altrimenti resta ambigua");
+  });
+
+  await test("una 'Super Cup' vinta in due paesi diversi non si mescola in un'unica riga (bug reale segnalato dall'utente)", async () => {
+    global.fetch = async () =>
+      jsonResponse([
+        { league: "Super Cup", country: "Italy", season: "2020", place: "Winner" },
+        { league: "Super Cup", country: "Spain", season: "2021", place: "Winner" }
+      ]);
+    const trophies = await fetchTrophies(999);
+    assert.equal(trophies.length, 2, "devono restare due righe distinte, non una sola fusa insieme");
+    const it = trophies.find((t) => t.country === "Italy");
+    const es = trophies.find((t) => t.country === "Spain");
+    assert.ok(it && es, "una riga per l'Italia e una per la Spagna, ciascuna con il proprio paese");
+    assert.equal(it.count, 1);
+    assert.equal(es.count, 1);
   });
 
   console.log("\nbuildFinalDataset() - filtro sulla soglia minima di presenze");
