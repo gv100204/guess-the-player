@@ -194,11 +194,19 @@ function mergePlayerEntry(playersMap, entry, season) {
   const p = entry.player;
   if (!p || !p.id) return;
 
+  // Il campo "name" di API-Football è spesso abbreviato (es. "L. Messi"); il
+  // nome per esteso, quando disponibile, si ricostruisce da firstname +
+  // lastname. Ricalcolato a OGNI passaggio (non solo alla prima creazione)
+  // così un giocatore già salvato con il nome abbreviato in una sincronizzazione
+  // precedente si autocorregge al prossimo run, senza dover ripartire da zero.
+  const fullName = [p.firstname, p.lastname].filter(Boolean).join(" ").trim();
+  const bestName = fullName || p.name;
+
   let rec = playersMap.get(p.id);
   if (!rec) {
     rec = {
       id: p.id,
-      name: p.name,
+      name: bestName,
       nationality: p.nationality || null,
       isGK: false,
       careerStints: new Map(), // chiave "club|campionato" -> { years:Set, club, league, apps, goals }
@@ -206,6 +214,8 @@ function mergePlayerEntry(playersMap, entry, season) {
       trophiesFetched: false
     };
     playersMap.set(p.id, rec);
+  } else if (fullName) {
+    rec.name = fullName; // aggiorna anche un record già esistente, se ora abbiamo il nome per esteso
   }
 
   const statsList = entry.statistics || [];

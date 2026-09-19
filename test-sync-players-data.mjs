@@ -105,6 +105,42 @@ async function main() {
   });
 
   console.log("\nmergePlayerEntry() - aggregazione carriera");
+  await test("il nome per esteso si ricostruisce da firstname+lastname, non dalla forma abbreviata 'name' (bug reale: usciva 'L. Messi')", () => {
+    const players = newPlayersMap();
+    const entry = {
+      player: { id: 10, name: "L. Messi", firstname: "Lionel", lastname: "Messi", nationality: "Argentina" },
+      statistics: [{ team: { name: "Barcellona" }, league: { name: "La Liga", country: "Spain" }, games: { appearences: 30, position: "Attacker" }, goals: { total: 20 } }]
+    };
+    mergePlayerEntry(players, entry, 2020);
+    assert.equal(players.get(10).name, "Lionel Messi");
+  });
+
+  await test("senza firstname/lastname, ripiega sul campo 'name' così com'è", () => {
+    const players = newPlayersMap();
+    const entry = {
+      player: { id: 11, name: "Solo Nome", nationality: "Italy" },
+      statistics: [{ team: { name: "Team" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: 10, position: "Attacker" }, goals: { total: 1 } }]
+    };
+    mergePlayerEntry(players, entry, 2020);
+    assert.equal(players.get(11).name, "Solo Nome");
+  });
+
+  await test("un giocatore già salvato con nome abbreviato si autocorregge se un passaggio successivo porta il nome per esteso", () => {
+    const players = newPlayersMap();
+    // prima "passata": solo il nome abbreviato (come nei dati già salvati prima del fix)
+    mergePlayerEntry(players, {
+      player: { id: 12, name: "L. Messi", nationality: "Argentina" },
+      statistics: [{ team: { name: "Barcellona" }, league: { name: "La Liga", country: "Spain" }, games: { appearences: 10, position: "Attacker" }, goals: { total: 2 } }]
+    }, 2015);
+    assert.equal(players.get(12).name, "L. Messi");
+    // seconda "passata" (run successivo): stavolta arriva anche il nome per esteso
+    mergePlayerEntry(players, {
+      player: { id: 12, name: "L. Messi", firstname: "Lionel", lastname: "Messi", nationality: "Argentina" },
+      statistics: [{ team: { name: "Barcellona" }, league: { name: "La Liga", country: "Spain" }, games: { appearences: 20, position: "Attacker" }, goals: { total: 5 } }]
+    }, 2016);
+    assert.equal(players.get(12).name, "Lionel Messi", "il nome esistente deve autocorreggersi, non restare abbreviato");
+  });
+
   await test("due stagioni nello stesso club/campionato si aggregano in un solo stint", () => {
     const players = newPlayersMap();
     const entry = {
