@@ -2,8 +2,8 @@
   "version": "2026-09-19",
   "players": [
     {
-      "id": "n-kalinic-57",
-      "name": "N. Kalinić",
+      "id": "nikola-kalinic-57",
+      "name": "Nikola Kalinić",
       "nationality": "Croatia",
       "isGK": false,
       "career": [
@@ -34,8 +34,8 @@
       ]
     },
     {
-      "id": "alvaro-morata-59",
-      "name": "Álvaro Morata",
+      "id": "alvaro-borja-morata-martin-59",
+      "name": "Álvaro Borja Morata Martín",
       "nationality": "Spain",
       "isGK": false,
       "career": [
@@ -50,8 +50,8 @@
       "trophies": []
     },
     {
-      "id": "k-glik-97",
-      "name": "K. Glik",
+      "id": "kamil-jacek-glik-97",
+      "name": "Kamil Jacek Glik",
       "nationality": "Poland",
       "isGK": false,
       "career": [
@@ -66,8 +66,8 @@
       "trophies": []
     },
     {
-      "id": "s-jovetic-121",
-      "name": "S. Jovetić",
+      "id": "stevan-jovetic-121",
+      "name": "Stevan Jovetić",
       "nationality": "Montenegro",
       "isGK": false,
       "career": [
@@ -82,8 +82,8 @@
       "trophies": []
     },
     {
-      "id": "j-murillo-135",
-      "name": "J. Murillo",
+      "id": "jeison-fabian-murillo-ceron-135",
+      "name": "Jeison Fabián Murillo Cerón",
       "nationality": "Colombia",
       "isGK": false,
       "career": [
@@ -106,8 +106,8 @@
       ]
     },
     {
-      "id": "k-boateng-152",
-      "name": "K. Boateng",
+      "id": "kevin-prince-boateng-152",
+      "name": "Kevin-Prince Boateng",
       "nationality": "Ghana",
       "isGK": false,
       "career": [
@@ -122,8 +122,8 @@
       "trophies": []
     },
     {
-      "id": "s-handanovic-188",
-      "name": "S. Handanovič",
+      "id": "samir-handanovic-188",
+      "name": "Samir Handanovič",
       "nationality": "Slovenia",
       "isGK": true,
       "career": [
@@ -162,8 +162,8 @@
       ]
     },
     {
-      "id": "d-padelli-189",
-      "name": "D. Padelli",
+      "id": "daniele-padelli-189",
+      "name": "Daniele Padelli",
       "nationality": "Italy",
       "isGK": true,
       "career": [
@@ -178,8 +178,8 @@
       "trophies": []
     },
     {
-      "id": "k-asamoah-191",
-      "name": "K. Asamoah",
+      "id": "kwadwo-asamoah-191",
+      "name": "Kwadwo Asamoah",
       "nationality": "Ghana",
       "isGK": false,
       "career": [
@@ -194,8 +194,8 @@
       "trophies": []
     },
     {
-      "id": "d-d-apos-ambrosio-193",
-      "name": "D. D&apos;Ambrosio",
+      "id": "danilo-d-ambrosio-193",
+      "name": "Danilo D'Ambrosio",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -234,8 +234,8 @@
       ]
     },
     {
-      "id": "s-de-vrij-194",
-      "name": "S. de Vrij",
+      "id": "stefan-de-vrij-194",
+      "name": "Stefan de Vrij",
       "nationality": "Netherlands",
       "isGK": false,
       "career": [
@@ -250,8 +250,8 @@
       "trophies": []
     },
     {
-      "id": "miranda-195",
-      "name": "Miranda",
+      "id": "joao-miranda-de-souza-filho-195",
+      "name": "João Miranda de Souza Filho",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -346,8 +346,8 @@
       ]
     },
     {
-      "id": "a-ranocchia-197",
-      "name": "A. Ranocchia",
+      "id": "andrea-ranocchia-197",
+      "name": "Andrea Ranocchia",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -369,8 +369,8 @@
       "trophies": []
     },
     {
-      "id": "m-skriniar-198",
-      "name": "M. Škriniar",
+      "id": "milan-skriniar-198",
+      "name": "Milan Škriniar",
       "nationality": "Slovakia",
       "isGK": false,
       "career": [
@@ -401,8 +401,8 @@
       "trophies": []
     },
     {
-      "id": "m-brozovic-201",
-      "name": "M. Brozović",
+      "id": "marcelo-brozovic-201",
+      "name": "Marcelo Brozović",
       "nationality": "Croatia",
       "isGK": false,
       "career": [
@@ -463,8 +463,8 @@
       ]
     },
     {
-      "id": "a-candreva-202",
-      "name": "A. Candreva",
+      "id": "antonio-candreva-202",
+      "name": "Antonio Candreva",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -494,8 +494,8 @@
       ]
     },
     {
-      "id": "r-gagliardini-203",
-      "name": "R. Gagliardini",
+      "id": "roberto-gagliardini-203",
+      "name": "Roberto Gagliardini",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -517,8 +517,8 @@
       "trophies": []
     },
     {
-      "id": "r-nainggolan-205",
-      "name": "R. Nainggolan",
+      "id": "radja-nainggolan-205",
+      "name": "Radja Nainggolan",
       "nationality": "Belgium",
       "isGK": false,
       "career": [
@@ -533,8 +533,8 @@
       "trophies": []
     },
     {
-      "id": "i-perisic-207",
-      "name": "I. Perišić",
+      "id": "ivan-perisic-207",
+      "name": "Ivan Perišić",
       "nationality": "Croatia",
       "isGK": false,
       "career": [
@@ -613,8 +613,8 @@
       ]
     },
     {
-      "id": "borja-valero-210",
-      "name": "Borja Valero",
+      "id": "borja-valero-iglesias-210",
+      "name": "Borja Valero Iglesias",
       "nationality": "Spain",
       "isGK": false,
       "career": [
@@ -629,8 +629,8 @@
       "trophies": []
     },
     {
-      "id": "m-vecino-211",
-      "name": "M. Vecino",
+      "id": "matias-vecino-falero-211",
+      "name": "Matías Vecino Falero",
       "nationality": "Uruguay",
       "isGK": false,
       "career": [
@@ -678,8 +678,8 @@
       ]
     },
     {
-      "id": "k-balde-213",
-      "name": "K. Baldé",
+      "id": "keita-balde-diao-213",
+      "name": "Keita Baldé Diao",
       "nationality": "Senegal",
       "isGK": false,
       "career": [
@@ -727,8 +727,8 @@
       ]
     },
     {
-      "id": "m-icardi-216",
-      "name": "M. Icardi",
+      "id": "mauro-emanuel-icardi-rivero-216",
+      "name": "Mauro Emanuel Icardi Rivero",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -797,8 +797,8 @@
       ]
     },
     {
-      "id": "m-politano-219",
-      "name": "M. Politano",
+      "id": "matteo-politano-219",
+      "name": "Matteo Politano",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -831,8 +831,8 @@
       ]
     },
     {
-      "id": "g-buffon-254",
-      "name": "G. Buffon",
+      "id": "gianluigi-buffon-254",
+      "name": "Gianluigi Buffon",
       "nationality": "Italy",
       "isGK": true,
       "career": [
@@ -926,8 +926,8 @@
       ]
     },
     {
-      "id": "l-paredes-271",
-      "name": "L. Paredes",
+      "id": "leandro-daniel-paredes-271",
+      "name": "Leandro Daniel Paredes",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -1012,8 +1012,8 @@
       ]
     },
     {
-      "id": "mohamed-salah-306",
-      "name": "Mohamed Salah",
+      "id": "mohamed-salah-hamed-mahrous-ghaly-306",
+      "name": "Mohamed Salah Hamed Mahrous Ghaly",
       "nationality": "Egypt",
       "isGK": false,
       "career": [
@@ -1111,8 +1111,8 @@
       ]
     },
     {
-      "id": "o-karnezis-311",
-      "name": "O. Karnezis",
+      "id": "orestis-spyridon-karnezis-311",
+      "name": "Orestis Spyridon Karnezis",
       "nationality": "Greece",
       "isGK": true,
       "career": [
@@ -1163,8 +1163,8 @@
       ]
     },
     {
-      "id": "raul-albiol-314",
-      "name": "Raúl Albiol",
+      "id": "raul-albiol-i-tortajada-314",
+      "name": "Raúl Albiol i Tortajada",
       "nationality": "Spain",
       "isGK": false,
       "career": [
@@ -1240,8 +1240,8 @@
       ]
     },
     {
-      "id": "v-chiriches-315",
-      "name": "V. Chiricheș",
+      "id": "vlad-iulian-chiriches-315",
+      "name": "Vlad Iulian Chiricheș",
       "nationality": "Romania",
       "isGK": false,
       "career": [
@@ -1256,8 +1256,8 @@
       "trophies": []
     },
     {
-      "id": "f-ghoulam-316",
-      "name": "F. Ghoulam",
+      "id": "faouzi-ghoulam-316",
+      "name": "Faouzi Ghoulam",
       "nationality": "Algeria",
       "isGK": false,
       "career": [
@@ -1295,8 +1295,8 @@
       ]
     },
     {
-      "id": "e-hysaj-317",
-      "name": "E. Hysaj",
+      "id": "elseid-hysaj-317",
+      "name": "Elseid Hysaj",
       "nationality": "Albania",
       "isGK": false,
       "career": [
@@ -1320,8 +1320,8 @@
       ]
     },
     {
-      "id": "k-koulibaly-318",
-      "name": "K. Koulibaly",
+      "id": "kalidou-koulibaly-318",
+      "name": "Kalidou Koulibaly",
       "nationality": "Senegal",
       "isGK": false,
       "career": [
@@ -1388,8 +1388,8 @@
       ]
     },
     {
-      "id": "n-maksimovic-320",
-      "name": "N. Maksimović",
+      "id": "nikola-maksimovic-320",
+      "name": "Nikola Maksimović",
       "nationality": "Serbia",
       "isGK": false,
       "career": [
@@ -1411,8 +1411,8 @@
       "trophies": []
     },
     {
-      "id": "mario-rui-322",
-      "name": "Mário Rui",
+      "id": "mario-rui-silva-duarte-322",
+      "name": "Mário Rui Silva Duarte",
       "nationality": "Portugal",
       "isGK": false,
       "career": [
@@ -1434,8 +1434,8 @@
       "trophies": []
     },
     {
-      "id": "a-diawara-324",
-      "name": "A. Diawara",
+      "id": "amadou-diawara-324",
+      "name": "Amadou Diawara",
       "nationality": "Guinea",
       "isGK": false,
       "career": [
@@ -1466,8 +1466,8 @@
       ]
     },
     {
-      "id": "allan-326",
-      "name": "Allan",
+      "id": "allan-marques-loureiro-326",
+      "name": "Allan Marques Loureiro",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -1555,8 +1555,8 @@
       ]
     },
     {
-      "id": "p-zielinski-329",
-      "name": "P. Zieliński",
+      "id": "piotr-sebastian-zielinski-329",
+      "name": "Piotr Sebastian Zieliński",
       "nationality": "Poland",
       "isGK": false,
       "career": [
@@ -1595,8 +1595,8 @@
       ]
     },
     {
-      "id": "jose-callejon-330",
-      "name": "José Callejón",
+      "id": "jose-maria-callejon-bueno-330",
+      "name": "José María Callejón Bueno",
       "nationality": "Spain",
       "isGK": false,
       "career": [
@@ -1642,8 +1642,8 @@
       ]
     },
     {
-      "id": "l-insigne-331",
-      "name": "L. Insigne",
+      "id": "lorenzo-insigne-331",
+      "name": "Lorenzo Insigne",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -1692,8 +1692,8 @@
       ]
     },
     {
-      "id": "d-mertens-332",
-      "name": "D. Mertens",
+      "id": "dries-mertens-332",
+      "name": "Dries Mertens",
       "nationality": "Belgium",
       "isGK": false,
       "career": [
@@ -1749,8 +1749,8 @@
       ]
     },
     {
-      "id": "s-verdi-334",
-      "name": "S. Verdi",
+      "id": "simone-verdi-334",
+      "name": "Simone Verdi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -1772,8 +1772,8 @@
       "trophies": []
     },
     {
-      "id": "alex-telles-378",
-      "name": "Alex Telles",
+      "id": "alex-nicolao-telles-378",
+      "name": "Alex Nicolao Telles",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -1788,8 +1788,8 @@
       "trophies": []
     },
     {
-      "id": "y-nagatomo-440",
-      "name": "Y. Nagatomo",
+      "id": "yuto-nagatomo-440",
+      "name": "Yuto Nagatomo",
       "nationality": "Japan",
       "isGK": false,
       "career": [
@@ -1804,8 +1804,8 @@
       "trophies": []
     },
     {
-      "id": "u-cosic-591",
-      "name": "U. Ćosić",
+      "id": "uros-cosic-591",
+      "name": "Uroš Ćosić",
       "nationality": "Serbia",
       "isGK": false,
       "career": [
@@ -1820,8 +1820,8 @@
       "trophies": []
     },
     {
-      "id": "m-oikonomou-595",
-      "name": "M. Oikonomou",
+      "id": "marios-oikonomou-595",
+      "name": "Marios Oikonomou",
       "nationality": "Greece",
       "isGK": false,
       "career": [
@@ -1836,8 +1836,8 @@
       "trophies": []
     },
     {
-      "id": "n-krsticic-605",
-      "name": "N. Krstičić",
+      "id": "nenad-krsticic-605",
+      "name": "Nenad Krstičić",
       "nationality": "Serbia",
       "isGK": false,
       "career": [
@@ -1852,8 +1852,8 @@
       "trophies": []
     },
     {
-      "id": "m-livaja-611",
-      "name": "M. Livaja",
+      "id": "marko-livaja-611",
+      "name": "Marko Livaja",
       "nationality": "Croatia",
       "isGK": false,
       "career": [
@@ -1868,8 +1868,8 @@
       "trophies": []
     },
     {
-      "id": "a-mirante-765",
-      "name": "A. Mirante",
+      "id": "antonio-mirante-765",
+      "name": "Antonio Mirante",
       "nationality": "Italy",
       "isGK": true,
       "career": [
@@ -1913,8 +1913,8 @@
       ]
     },
     {
-      "id": "a-florenzi-769",
-      "name": "A. Florenzi",
+      "id": "alessandro-florenzi-769",
+      "name": "Alessandro Florenzi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -1929,8 +1929,8 @@
       "trophies": []
     },
     {
-      "id": "k-manolas-772",
-      "name": "K. Manolas",
+      "id": "konstantinos-manolas-772",
+      "name": "Konstantinos Manolas",
       "nationality": "Greece",
       "isGK": false,
       "career": [
@@ -1992,8 +1992,8 @@
       ]
     },
     {
-      "id": "juan-jesus-774",
-      "name": "Juan Jesus",
+      "id": "juan-guilherme-nunes-jesus-774",
+      "name": "Juan Guilherme Nunes Jesus",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -2015,8 +2015,8 @@
       "trophies": []
     },
     {
-      "id": "d-santon-775",
-      "name": "D. Santon",
+      "id": "davide-santon-775",
+      "name": "Davide Santon",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -2031,8 +2031,8 @@
       "trophies": []
     },
     {
-      "id": "b-cristante-778",
-      "name": "B. Cristante",
+      "id": "bryan-cristante-778",
+      "name": "Bryan Cristante",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -2061,8 +2061,8 @@
       "trophies": []
     },
     {
-      "id": "d-de-rossi-779",
-      "name": "D. De Rossi",
+      "id": "daniele-de-rossi-779",
+      "name": "Daniele De Rossi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -2100,8 +2100,8 @@
       ]
     },
     {
-      "id": "l-pellegrini-782",
-      "name": "L. Pellegrini",
+      "id": "lorenzo-pellegrini-782",
+      "name": "Lorenzo Pellegrini",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -2116,8 +2116,8 @@
       "trophies": []
     },
     {
-      "id": "e-dzeko-790",
-      "name": "E. Džeko",
+      "id": "edin-dzeko-790",
+      "name": "Edin Džeko",
       "nationality": "Bosnia and Herzegovina",
       "isGK": false,
       "career": [
@@ -2192,8 +2192,8 @@
       ]
     },
     {
-      "id": "s-el-shaarawy-791",
-      "name": "S. El Shaarawy",
+      "id": "stephan-kareem-el-shaarawy-791",
+      "name": "Stephan Kareem El Shaarawy",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -2246,8 +2246,8 @@
       ]
     },
     {
-      "id": "m-perin-849",
-      "name": "M. Perin",
+      "id": "mattia-perin-849",
+      "name": "Mattia Perin",
       "nationality": "Italy",
       "isGK": true,
       "career": [
@@ -2262,8 +2262,8 @@
       "trophies": []
     },
     {
-      "id": "w-szczesny-851",
-      "name": "W. Szczęsny",
+      "id": "wojciech-tomasz-szczesny-851",
+      "name": "Wojciech Tomasz Szczęsny",
       "nationality": "Poland",
       "isGK": true,
       "career": [
@@ -2434,8 +2434,8 @@
       ]
     },
     {
-      "id": "l-bonucci-853",
-      "name": "L. Bonucci",
+      "id": "leonardo-bonucci-853",
+      "name": "Leonardo Bonucci",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -2498,8 +2498,8 @@
       ]
     },
     {
-      "id": "g-chiellini-856",
-      "name": "G. Chiellini",
+      "id": "giorgio-chiellini-856",
+      "name": "Giorgio Chiellini",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -2514,8 +2514,8 @@
       "trophies": []
     },
     {
-      "id": "m-de-sciglio-858",
-      "name": "M. De Sciglio",
+      "id": "mattia-de-sciglio-858",
+      "name": "Mattia De Sciglio",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -2530,8 +2530,8 @@
       "trophies": []
     },
     {
-      "id": "alex-sandro-860",
-      "name": "Alex Sandro",
+      "id": "alex-sandro-lobo-silva-860",
+      "name": "Alex Sandro Lobo Silva",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -2546,8 +2546,8 @@
       "trophies": []
     },
     {
-      "id": "d-rugani-861",
-      "name": "D. Rugani",
+      "id": "daniele-rugani-861",
+      "name": "Daniele Rugani",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -2562,8 +2562,8 @@
       "trophies": []
     },
     {
-      "id": "j-cuadrado-866",
-      "name": "J. Cuadrado",
+      "id": "juan-guillermo-cuadrado-bello-866",
+      "name": "Juan Guillermo Cuadrado Bello",
       "nationality": "Colombia",
       "isGK": false,
       "career": [
@@ -2629,8 +2629,8 @@
       ]
     },
     {
-      "id": "s-khedira-868",
-      "name": "S. Khedira",
+      "id": "sami-khedira-868",
+      "name": "Sami Khedira",
       "nationality": "Germany",
       "isGK": false,
       "career": [
@@ -2733,8 +2733,8 @@
       ]
     },
     {
-      "id": "m-pjanic-872",
-      "name": "M. Pjanić",
+      "id": "miralem-pjanic-872",
+      "name": "Miralem Pjanić",
       "nationality": "Bosnia and Herzegovina",
       "isGK": false,
       "career": [
@@ -2822,8 +2822,8 @@
       ]
     },
     {
-      "id": "f-bernardeschi-873",
-      "name": "F. Bernardeschi",
+      "id": "federico-bernardeschi-873",
+      "name": "Federico Bernardeschi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -2875,8 +2875,8 @@
       ]
     },
     {
-      "id": "p-dybala-875",
-      "name": "P. Dybala",
+      "id": "paulo-exequiel-dybala-875",
+      "name": "Paulo Exequiel Dybala",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -2949,8 +2949,8 @@
       ]
     },
     {
-      "id": "m-mandzukic-878",
-      "name": "M. Mandžukić",
+      "id": "mario-mandzukic-878",
+      "name": "Mario Mandžukić",
       "nationality": "Croatia",
       "isGK": false,
       "career": [
@@ -3056,8 +3056,8 @@
       ]
     },
     {
-      "id": "p-pogba-904",
-      "name": "P. Pogba",
+      "id": "paul-labile-pogba-904",
+      "name": "Paul Labile Pogba",
       "nationality": "France",
       "isGK": false,
       "career": [
@@ -3072,8 +3072,8 @@
       "trophies": []
     },
     {
-      "id": "neto-912",
-      "name": "Neto",
+      "id": "norberto-murara-neto-912",
+      "name": "Norberto Murara Neto",
       "nationality": "Brazil",
       "isGK": true,
       "career": [
@@ -3088,8 +3088,8 @@
       "trophies": []
     },
     {
-      "id": "f-roncaglia-922",
-      "name": "F. Roncaglia",
+      "id": "facundo-sebastian-roncaglia-922",
+      "name": "Facundo Sebastián Roncaglia",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -3104,8 +3104,8 @@
       "trophies": []
     },
     {
-      "id": "g-kondogbia-926",
-      "name": "G. Kondogbia",
+      "id": "geoffrey-edwin-kondogbia-926",
+      "name": "Geoffrey Edwin Kondogbia",
       "nationality": "Central African Republic",
       "isGK": false,
       "career": [
@@ -3145,8 +3145,8 @@
       ]
     },
     {
-      "id": "o-ntcham-1130",
-      "name": "O. Ntcham",
+      "id": "jules-olivier-ntcham-1130",
+      "name": "Jules Olivier Ntcham",
       "nationality": "Cameroon",
       "isGK": false,
       "career": [
@@ -3161,8 +3161,8 @@
       "trophies": []
     },
     {
-      "id": "c-marchisio-1214",
-      "name": "C. Marchisio",
+      "id": "claudio-marchisio-1214",
+      "name": "Claudio Marchisio",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -3177,8 +3177,8 @@
       "trophies": []
     },
     {
-      "id": "m-isla-1344",
-      "name": "M. Isla",
+      "id": "mauricio-anibal-isla-isla-1344",
+      "name": "Mauricio Aníbal Isla Isla",
       "nationality": "Chile",
       "isGK": false,
       "career": [
@@ -3200,8 +3200,8 @@
       "trophies": []
     },
     {
-      "id": "s-lichtsteiner-1444",
-      "name": "S. Lichtsteiner",
+      "id": "stephan-lichtsteiner-1444",
+      "name": "Stephan Lichtsteiner",
       "nationality": "Switzerland",
       "isGK": false,
       "career": [
@@ -3258,8 +3258,8 @@
       ]
     },
     {
-      "id": "bruno-fernandes-1485",
-      "name": "Bruno Fernandes",
+      "id": "bruno-miguel-borges-fernandes-1485",
+      "name": "Bruno Miguel Borges Fernandes",
       "nationality": "Portugal",
       "isGK": false,
       "career": [
@@ -3332,8 +3332,8 @@
       ]
     },
     {
-      "id": "cristian-tello-1586",
-      "name": "Cristian Tello",
+      "id": "cristian-tello-herrera-1586",
+      "name": "Cristian Tello Herrera",
       "nationality": "Spain",
       "isGK": false,
       "career": [
@@ -3430,8 +3430,8 @@
       ]
     },
     {
-      "id": "v-torosidis-1599",
-      "name": "V. Torosidis",
+      "id": "vassilis-torosidis-1599",
+      "name": "Vassilis Torosidis",
       "nationality": "Greece",
       "isGK": false,
       "career": [
@@ -3453,8 +3453,8 @@
       "trophies": []
     },
     {
-      "id": "l-christodoulopoulos-1606",
-      "name": "L. Christodoulopoulos",
+      "id": "lazaros-christodoulopoulos-1606",
+      "name": "Lazaros Christodoulopoulos",
       "nationality": "Greece",
       "isGK": false,
       "career": [
@@ -3469,8 +3469,8 @@
       "trophies": []
     },
     {
-      "id": "g-donnarumma-1622",
-      "name": "G. Donnarumma",
+      "id": "gianluigi-donnarumma-1622",
+      "name": "Gianluigi Donnarumma",
       "nationality": "Italy",
       "isGK": true,
       "career": [
@@ -3548,8 +3548,8 @@
       ]
     },
     {
-      "id": "pepe-reina-1624",
-      "name": "Pepe Reina",
+      "id": "jose-manuel-reina-paez-1624",
+      "name": "José Manuel Reina Páez",
       "nationality": "Spain",
       "isGK": true,
       "career": [
@@ -3629,8 +3629,8 @@
       ]
     },
     {
-      "id": "i-abate-1626",
-      "name": "I. Abate",
+      "id": "ignazio-abate-1626",
+      "name": "Ignazio Abate",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -3661,8 +3661,8 @@
       ]
     },
     {
-      "id": "d-calabria-1627",
-      "name": "D. Calabria",
+      "id": "davide-calabria-1627",
+      "name": "Davide Calabria",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -3677,8 +3677,8 @@
       "trophies": []
     },
     {
-      "id": "a-conti-1629",
-      "name": "A. Conti",
+      "id": "andrea-conti-1629",
+      "name": "Andrea Conti",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -3693,8 +3693,8 @@
       "trophies": []
     },
     {
-      "id": "a-romagnoli-1632",
-      "name": "A. Romagnoli",
+      "id": "alessio-romagnoli-1632",
+      "name": "Alessio Romagnoli",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -3726,8 +3726,8 @@
       ]
     },
     {
-      "id": "i-strinic-1633",
-      "name": "I. Strinić",
+      "id": "ivan-strinic-1633",
+      "name": "Ivan Strinić",
       "nationality": "Croatia",
       "isGK": false,
       "career": [
@@ -3742,8 +3742,8 @@
       "trophies": []
     },
     {
-      "id": "c-zapata-1634",
-      "name": "C. Zapata",
+      "id": "cristian-eduardo-zapata-valencia-1634",
+      "name": "Cristián Eduardo Zapata Valencia",
       "nationality": "Colombia",
       "isGK": false,
       "career": [
@@ -3758,8 +3758,8 @@
       "trophies": []
     },
     {
-      "id": "a-bertolacci-1636",
-      "name": "A. Bertolacci",
+      "id": "andrea-bertolacci-1636",
+      "name": "Andrea Bertolacci",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -3774,8 +3774,8 @@
       "trophies": []
     },
     {
-      "id": "l-biglia-1637",
-      "name": "L. Biglia",
+      "id": "lucas-rodrigo-biglia-1637",
+      "name": "Lucas Rodrigo Biglia",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -3818,8 +3818,8 @@
       ]
     },
     {
-      "id": "g-bonaventura-1638",
-      "name": "G. Bonaventura",
+      "id": "giacomo-bonaventura-1638",
+      "name": "Giacomo Bonaventura",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -3851,8 +3851,8 @@
       ]
     },
     {
-      "id": "d-laxalt-1643",
-      "name": "D. Laxalt",
+      "id": "diego-sebastian-laxalt-suarez-1643",
+      "name": "Diego Sebastián Laxalt Suárez",
       "nationality": "Uruguay",
       "isGK": false,
       "career": [
@@ -3876,8 +3876,8 @@
       ]
     },
     {
-      "id": "j-mauri-1644",
-      "name": "J. Mauri",
+      "id": "jose-agustin-mauri-1644",
+      "name": "José Agustín Mauri",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -3915,8 +3915,8 @@
       "trophies": []
     },
     {
-      "id": "suso-1650",
-      "name": "Suso",
+      "id": "jesus-joaquin-fernandez-saenz-de-la-torre-1650",
+      "name": "Jesús Joaquín Fernández Sáenz de la Torre",
       "nationality": "Spain",
       "isGK": false,
       "career": [
@@ -3984,8 +3984,8 @@
       "trophies": []
     },
     {
-      "id": "c-bacca-1706",
-      "name": "C. Bacca",
+      "id": "carlos-arturo-bacca-ahumada-1706",
+      "name": "Carlos Arturo Bacca Ahumada",
       "nationality": "Colombia",
       "isGK": false,
       "career": [
@@ -4029,8 +4029,8 @@
       ]
     },
     {
-      "id": "fernando-1787",
-      "name": "Fernando",
+      "id": "fernando-lucas-martins-1787",
+      "name": "Fernando Lucas Martins",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -4045,8 +4045,8 @@
       "trophies": []
     },
     {
-      "id": "luiz-adriano-1793",
-      "name": "Luiz Adriano",
+      "id": "luiz-adriano-de-souza-da-silva-1793",
+      "name": "Luiz Adriano de Souza da Silva",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -4061,8 +4061,8 @@
       "trophies": []
     },
     {
-      "id": "j-de-guzman-1815",
-      "name": "J. de Guzmán",
+      "id": "jonathan-alexander-de-guzman-1815",
+      "name": "Jonathan Alexander de Guzmán",
       "nationality": "Netherlands",
       "isGK": false,
       "career": [
@@ -4084,8 +4084,8 @@
       "trophies": []
     },
     {
-      "id": "f-acerbi-1836",
-      "name": "F. Acerbi",
+      "id": "francesco-acerbi-1836",
+      "name": "Francesco Acerbi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -4189,8 +4189,8 @@
       ]
     },
     {
-      "id": "patric-1841",
-      "name": "Patric",
+      "id": "patricio-gabarron-gil-1841",
+      "name": "Patricio Gabarrón Gil",
       "nationality": "Spain",
       "isGK": false,
       "career": [
@@ -4205,8 +4205,8 @@
       "trophies": []
     },
     {
-      "id": "s-radu-1846",
-      "name": "Ş. Radu",
+      "id": "stefan-daniel-radu-1846",
+      "name": "Ştefan Daniel Radu",
       "nationality": "Romania",
       "isGK": false,
       "career": [
@@ -4221,8 +4221,8 @@
       "trophies": []
     },
     {
-      "id": "m-badelj-1850",
-      "name": "M. Badelj",
+      "id": "milan-badelj-1850",
+      "name": "Milan Badelj",
       "nationality": "Croatia",
       "isGK": false,
       "career": [
@@ -4264,8 +4264,8 @@
       ]
     },
     {
-      "id": "d-cataldi-1852",
-      "name": "D. Cataldi",
+      "id": "danilo-cataldi-1852",
+      "name": "Danilo Cataldi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -4287,8 +4287,8 @@
       "trophies": []
     },
     {
-      "id": "j-correa-1854",
-      "name": "J. Correa",
+      "id": "carlos-joaquin-correa-1854",
+      "name": "Carlos Joaquín Correa",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -4303,8 +4303,8 @@
       "trophies": []
     },
     {
-      "id": "s-lulic-1855",
-      "name": "S. Lulić",
+      "id": "senad-lulic-1855",
+      "name": "Senad Lulić",
       "nationality": "Bosnia and Herzegovina",
       "isGK": false,
       "career": [
@@ -4336,8 +4336,8 @@
       ]
     },
     {
-      "id": "s-milinkovic-savic-1856",
-      "name": "S. Milinković-Savić",
+      "id": "sergej-milinkovic-savic-1856",
+      "name": "Sergej Milinković-Savić",
       "nationality": "Serbia",
       "isGK": false,
       "career": [
@@ -4413,8 +4413,8 @@
       ]
     },
     {
-      "id": "m-parolo-1857",
-      "name": "M. Parolo",
+      "id": "marco-parolo-1857",
+      "name": "Marco Parolo",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -4445,8 +4445,8 @@
       ]
     },
     {
-      "id": "c-immobile-1863",
-      "name": "C. Immobile",
+      "id": "ciro-immobile-1863",
+      "name": "Ciro Immobile",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -4506,8 +4506,8 @@
       ]
     },
     {
-      "id": "k-strootman-1916",
-      "name": "K. Strootman",
+      "id": "kevin-johannes-willem-strootman-1916",
+      "name": "Kevin Johannes Willem Strootman",
       "nationality": "Netherlands",
       "isGK": false,
       "career": [
@@ -4522,8 +4522,8 @@
       "trophies": []
     },
     {
-      "id": "m-balotelli-1917",
-      "name": "M. Balotelli",
+      "id": "mario-barwuah-balotelli-1917",
+      "name": "Mario Barwuah Balotelli",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -4538,8 +4538,8 @@
       "trophies": []
     },
     {
-      "id": "g-medel-1982",
-      "name": "G. Medel",
+      "id": "gary-alexis-medel-soto-1982",
+      "name": "Gary Alexis Medel Soto",
       "nationality": "Chile",
       "isGK": false,
       "career": [
@@ -4564,8 +4564,8 @@
       ]
     },
     {
-      "id": "a-ljajic-2002",
-      "name": "A. Ljajić",
+      "id": "adem-bojan-ljajic-2002",
+      "name": "Adem Bojan Ljajić",
       "nationality": "Serbia",
       "isGK": false,
       "career": [
@@ -4624,8 +4624,8 @@
       ]
     },
     {
-      "id": "f-vazquez-2057",
-      "name": "F. Vázquez",
+      "id": "franco-damian-vazquez-2057",
+      "name": "Franco Damián Vázquez",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -4640,8 +4640,8 @@
       "trophies": []
     },
     {
-      "id": "p-m-apos-poku-2117",
-      "name": "P. M&apos;Poku",
+      "id": "paul-jose-m-poku-ebunge-2117",
+      "name": "Paul-José M'Poku Ebunge",
       "nationality": "Congo DR",
       "isGK": false,
       "career": [
@@ -4656,8 +4656,8 @@
       "trophies": []
     },
     {
-      "id": "m-niang-2216",
-      "name": "M. Niang",
+      "id": "m-baye-babacar-niang-2216",
+      "name": "M'Baye Babacar Niang",
       "nationality": "Senegal",
       "isGK": false,
       "career": [
@@ -4672,8 +4672,8 @@
       "trophies": []
     },
     {
-      "id": "marcos-alonso-2278",
-      "name": "Marcos Alonso",
+      "id": "marcos-alonso-mendoza-2278",
+      "name": "Marcos Alonso Mendoza",
       "nationality": "Spain",
       "isGK": false,
       "career": [
@@ -4688,8 +4688,8 @@
       "trophies": []
     },
     {
-      "id": "emerson-2284",
-      "name": "Emerson",
+      "id": "emerson-palmieri-dos-santos-2284",
+      "name": "Emerson Palmieri dos Santos",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -4704,8 +4704,8 @@
       "trophies": []
     },
     {
-      "id": "a-rudiger-2285",
-      "name": "A. Rüdiger",
+      "id": "antonio-rudiger-2285",
+      "name": "Antonio Rüdiger",
       "nationality": "Germany",
       "isGK": false,
       "career": [
@@ -4790,8 +4790,8 @@
       ]
     },
     {
-      "id": "d-zappacosta-2286",
-      "name": "D. Zappacosta",
+      "id": "davide-zappacosta-2286",
+      "name": "Davide Zappacosta",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -4824,8 +4824,8 @@
       ]
     },
     {
-      "id": "jorginho-2289",
-      "name": "Jorginho",
+      "id": "jorge-luiz-frello-filho-2289",
+      "name": "Jorge Luiz Frello Filho",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -4912,8 +4912,8 @@
       ]
     },
     {
-      "id": "g-higuain-2297",
-      "name": "G. Higuaín",
+      "id": "gonzalo-gerardo-higuain-2297",
+      "name": "Gonzalo Gerardo Higuaín",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -4993,8 +4993,8 @@
       ]
     },
     {
-      "id": "o-el-kaddouri-2371",
-      "name": "O. El Kaddouri",
+      "id": "omar-el-kaddouri-2371",
+      "name": "Omar El Kaddouri",
       "nationality": "Morocco",
       "isGK": false,
       "career": [
@@ -5016,8 +5016,8 @@
       "trophies": []
     },
     {
-      "id": "felipe-anderson-2412",
-      "name": "Felipe Anderson",
+      "id": "felipe-anderson-pereira-gomes-2412",
+      "name": "Felipe Anderson Pereira Gomes",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -5076,8 +5076,8 @@
       ]
     },
     {
-      "id": "t-rincon-2452",
-      "name": "T. Rincón",
+      "id": "tomas-eduardo-rincon-hernandez-2452",
+      "name": "Tomás Eduardo Rincón Hernández",
       "nationality": "Venezuela",
       "isGK": false,
       "career": [
@@ -5124,8 +5124,8 @@
       ]
     },
     {
-      "id": "josef-martinez-2460",
-      "name": "Josef Martínez",
+      "id": "josef-alexander-martinez-mencia-2460",
+      "name": "Josef Alexander Martínez Mencia",
       "nationality": "Venezuela",
       "isGK": false,
       "career": [
@@ -5140,8 +5140,8 @@
       "trophies": []
     },
     {
-      "id": "r-pereyra-2475",
-      "name": "R. Pereyra",
+      "id": "roberto-maximiliano-pereyra-2475",
+      "name": "Roberto Maximiliano Pereyra",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -5156,8 +5156,8 @@
       "trophies": []
     },
     {
-      "id": "l-muriel-2493",
-      "name": "L. Muriel",
+      "id": "luis-fernando-muriel-fruto-2493",
+      "name": "Luis Fernando Muriel Fruto",
       "nationality": "Colombia",
       "isGK": false,
       "career": [
@@ -5172,8 +5172,8 @@
       "trophies": []
     },
     {
-      "id": "d-zapata-2495",
-      "name": "D. Zapata",
+      "id": "duvan-esteban-zapata-banguero-2495",
+      "name": "Duván Esteban Zapata Banguero",
       "nationality": "Colombia",
       "isGK": false,
       "career": [
@@ -5213,8 +5213,8 @@
       ]
     },
     {
-      "id": "i-piris-2503",
-      "name": "I. Piris",
+      "id": "ivan-rodrigo-piris-leguizamon-2503",
+      "name": "Iván Rodrigo Piris Leguizamón",
       "nationality": "Paraguay",
       "isGK": false,
       "career": [
@@ -5229,8 +5229,8 @@
       "trophies": []
     },
     {
-      "id": "e-pulgar-2560",
-      "name": "E. Pulgar",
+      "id": "erick-antonio-pulgar-farfan-2560",
+      "name": "Erick Antonio Pulgar Farfán",
       "nationality": "Chile",
       "isGK": false,
       "career": [
@@ -5245,8 +5245,8 @@
       "trophies": []
     },
     {
-      "id": "l-digne-2724",
-      "name": "L. Digne",
+      "id": "lucas-digne-2724",
+      "name": "Lucas Digne",
       "nationality": "France",
       "isGK": false,
       "career": [
@@ -5261,8 +5261,8 @@
       "trophies": []
     },
     {
-      "id": "r-freuler-2807",
-      "name": "R. Freuler",
+      "id": "remo-marco-freuler-2807",
+      "name": "Remo Marco Freuler",
       "nationality": "Switzerland",
       "isGK": false,
       "career": [
@@ -5277,8 +5277,8 @@
       "trophies": []
     },
     {
-      "id": "d-lazovic-2822",
-      "name": "D. Lazović",
+      "id": "darko-lazovic-2822",
+      "name": "Darko Lazović",
       "nationality": "Serbia",
       "isGK": false,
       "career": [
@@ -5293,8 +5293,8 @@
       "trophies": []
     },
     {
-      "id": "g-gonzalez-2833",
-      "name": "G. González",
+      "id": "giancarlo-gonzalez-castro-2833",
+      "name": "Giancarlo González Castro",
       "nationality": "Costa Rica",
       "isGK": false,
       "career": [
@@ -5326,8 +5326,8 @@
       ]
     },
     {
-      "id": "f-helander-2854",
-      "name": "F. Helander",
+      "id": "filip-viktor-helander-2854",
+      "name": "Filip Viktor Helander",
       "nationality": "Sweden",
       "isGK": false,
       "career": [
@@ -5349,8 +5349,8 @@
       "trophies": []
     },
     {
-      "id": "e-krafth-2855",
-      "name": "E. Krafth",
+      "id": "emil-henry-kristoffer-krafth-2855",
+      "name": "Emil Henry Kristoffer Krafth",
       "nationality": "Sweden",
       "isGK": false,
       "career": [
@@ -5365,8 +5365,8 @@
       "trophies": []
     },
     {
-      "id": "r-quaison-2866",
-      "name": "R. Quaison",
+      "id": "robin-kwamina-quaison-2866",
+      "name": "Robin Kwamina Quaison",
       "nationality": "Sweden",
       "isGK": false,
       "career": [
@@ -5381,8 +5381,8 @@
       "trophies": []
     },
     {
-      "id": "skorupski-2998",
-      "name": "Ł. Skorupski",
+      "id": "ukasz-skorupski-2998",
+      "name": "Łukasz Skorupski",
       "nationality": "Poland",
       "isGK": true,
       "career": [
@@ -5406,8 +5406,8 @@
       ]
     },
     {
-      "id": "t-cionek-3005",
-      "name": "T. Cionek",
+      "id": "thiago-rangel-cionek-3005",
+      "name": "Thiago Rangel Cionek",
       "nationality": "Poland",
       "isGK": false,
       "career": [
@@ -5422,8 +5422,8 @@
       "trophies": []
     },
     {
-      "id": "j-b-aszczykowski-3006",
-      "name": "J. Błaszczykowski",
+      "id": "jakub-b-aszczykowski-3006",
+      "name": "Jakub Błaszczykowski",
       "nationality": "Poland",
       "isGK": false,
       "career": [
@@ -5454,8 +5454,8 @@
       "trophies": []
     },
     {
-      "id": "m-zarate-5983",
-      "name": "M. Zárate",
+      "id": "mauro-matias-zarate-riga-5983",
+      "name": "Mauro Matías Zárate Riga",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -5470,8 +5470,8 @@
       "trophies": []
     },
     {
-      "id": "g-silva-6084",
-      "name": "G. Silva",
+      "id": "gaston-alexis-silva-perdomo-6084",
+      "name": "Gastón Alexis Silva Perdomo",
       "nationality": "Uruguay",
       "isGK": false,
       "career": [
@@ -5486,8 +5486,8 @@
       "trophies": []
     },
     {
-      "id": "g-rodriguez-6607",
-      "name": "G. Rodríguez",
+      "id": "gonzalo-javier-rodriguez-6607",
+      "name": "Gonzalo Javier Rodríguez",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -5510,8 +5510,8 @@
       ]
     },
     {
-      "id": "a-costa-6682",
-      "name": "A. Costa",
+      "id": "alberto-facundo-costa-6682",
+      "name": "Alberto Facundo Costa",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -5549,8 +5549,8 @@
       "trophies": []
     },
     {
-      "id": "s-gakpe-8685",
-      "name": "S. Gakpé",
+      "id": "serge-gakpe-8685",
+      "name": "Serge Gakpé",
       "nationality": "Togo",
       "isGK": false,
       "career": [
@@ -5579,8 +5579,8 @@
       "trophies": []
     },
     {
-      "id": "m-jajalo-9010",
-      "name": "M. Jajalo",
+      "id": "mato-jajalo-9010",
+      "name": "Mato Jajalo",
       "nationality": "Bosnia and Herzegovina",
       "isGK": false,
       "career": [
@@ -5642,8 +5642,8 @@
       "trophies": []
     },
     {
-      "id": "felipe-melo-9929",
-      "name": "Felipe Melo",
+      "id": "felipe-melo-de-carvalho-9929",
+      "name": "Felipe Melo de Carvalho",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -5658,8 +5658,8 @@
       "trophies": []
     },
     {
-      "id": "bruno-peres-9948",
-      "name": "Bruno Peres",
+      "id": "bruno-da-silva-peres-9948",
+      "name": "Bruno da Silva Peres",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -5703,8 +5703,8 @@
       ]
     },
     {
-      "id": "hernanes-9959",
-      "name": "Hernanes",
+      "id": "anderson-hernanes-de-carvalho-andrade-9959",
+      "name": "Anderson Hernanes de Carvalho Andrade",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -5726,8 +5726,8 @@
       "trophies": []
     },
     {
-      "id": "dodo-10087",
-      "name": "Dodô",
+      "id": "jose-rodolfo-pires-ribeiro-10087",
+      "name": "José Rodolfo Pires Ribeiro",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -5758,8 +5758,8 @@
       "trophies": []
     },
     {
-      "id": "gilberto-10305",
-      "name": "Gilberto",
+      "id": "gilberto-moraes-junior-10305",
+      "name": "Gilberto Moraes Júnior",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -5781,8 +5781,8 @@
       "trophies": []
     },
     {
-      "id": "edenilson-10387",
-      "name": "Edenílson",
+      "id": "edenilson-andrade-dos-santos-10387",
+      "name": "Edenílson Andrade dos Santos",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -5844,7 +5844,7 @@
     },
     {
       "id": "aleksandar-tonev-11096",
-      "name": "Aleksandăr Tonev",
+      "name": "Aleksandar Tonev",
       "nationality": "Bulgaria",
       "isGK": false,
       "career": [
@@ -5882,8 +5882,8 @@
       "trophies": []
     },
     {
-      "id": "m-pinilla-11556",
-      "name": "M. Pinilla",
+      "id": "mauricio-ricardo-pinilla-ferreira-11556",
+      "name": "Mauricio Ricardo Pinilla Ferreira",
       "nationality": "Chile",
       "isGK": false,
       "career": [
@@ -5905,8 +5905,8 @@
       "trophies": []
     },
     {
-      "id": "g-paletta-12774",
-      "name": "G. Paletta",
+      "id": "gabriel-alejandro-paletta-12774",
+      "name": "Gabriel Alejandro Paletta",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -5957,8 +5957,8 @@
       ]
     },
     {
-      "id": "eder-12795",
-      "name": "Éder",
+      "id": "eder-citadin-martins-12795",
+      "name": "Éder Citadin Martins",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -6010,8 +6010,8 @@
       ]
     },
     {
-      "id": "f-guarin-12965",
-      "name": "F. Guarín",
+      "id": "fredy-alejandro-guarin-vasquez-12965",
+      "name": "Fredy Alejandro Guarín Vásquez",
       "nationality": "Colombia",
       "isGK": false,
       "career": [
@@ -6026,8 +6026,8 @@
       "trophies": []
     },
     {
-      "id": "m-hamsik-12994",
-      "name": "M. Hamšík",
+      "id": "marek-hamsik-12994",
+      "name": "Marek Hamšík",
       "nationality": "Slovakia",
       "isGK": false,
       "career": [
@@ -6066,8 +6066,8 @@
       ]
     },
     {
-      "id": "c-carbonero-13396",
-      "name": "C. Carbonero",
+      "id": "carlos-mario-carbonero-mancilla-13396",
+      "name": "Carlos Mario Carbonero Mancilla",
       "nationality": "Colombia",
       "isGK": false,
       "career": [
@@ -6105,8 +6105,8 @@
       "trophies": []
     },
     {
-      "id": "j-posavec-14326",
-      "name": "J. Posavec",
+      "id": "josip-posavec-14326",
+      "name": "Josip Posavec",
       "nationality": "Croatia",
       "isGK": true,
       "career": [
@@ -6121,8 +6121,8 @@
       "trophies": []
     },
     {
-      "id": "n-balogh-15299",
-      "name": "N. Balogh",
+      "id": "norbert-sandor-balogh-15299",
+      "name": "Norbert Sándor Balogh",
       "nationality": "Hungary",
       "isGK": false,
       "career": [
@@ -6137,8 +6137,8 @@
       "trophies": []
     },
     {
-      "id": "r-aguirre-16482",
-      "name": "R. Aguirre",
+      "id": "rodrigo-sebastian-aguirre-soto-16482",
+      "name": "Rodrigo Sebastián Aguirre Soto",
       "nationality": "Uruguay",
       "isGK": false,
       "career": [
@@ -6153,8 +6153,8 @@
       "trophies": []
     },
     {
-      "id": "a-masina-18799",
-      "name": "A. Masina",
+      "id": "adam-masina-18799",
+      "name": "Adam Masina",
       "nationality": "Morocco",
       "isGK": false,
       "career": [
@@ -6169,8 +6169,8 @@
       "trophies": []
     },
     {
-      "id": "m-lemina-18947",
-      "name": "M. Lemina",
+      "id": "mario-rene-junior-lemina-18947",
+      "name": "Mario René Junior Lemina",
       "nationality": "Gabon",
       "isGK": false,
       "career": [
@@ -6201,8 +6201,8 @@
       "trophies": []
     },
     {
-      "id": "m-wague-19295",
-      "name": "M. Wagué",
+      "id": "molla-wague-19295",
+      "name": "Molla Wagué",
       "nationality": "Mali",
       "isGK": false,
       "career": [
@@ -6217,8 +6217,8 @@
       "trophies": []
     },
     {
-      "id": "a-lazaar-19376",
-      "name": "A. Lazaar",
+      "id": "achraf-lazaar-19376",
+      "name": "Achraf Lazaar",
       "nationality": "Morocco",
       "isGK": false,
       "career": [
@@ -6233,8 +6233,8 @@
       "trophies": []
     },
     {
-      "id": "p-wszo-ek-19591",
-      "name": "P. Wszołek",
+      "id": "pawe-marek-wszo-ek-19591",
+      "name": "Paweł Marek Wszołek",
       "nationality": "Poland",
       "isGK": false,
       "career": [
@@ -6256,8 +6256,8 @@
       "trophies": []
     },
     {
-      "id": "s-souprayen-20855",
-      "name": "S. Souprayen",
+      "id": "samuel-souprayen-20855",
+      "name": "Samuel Souprayen",
       "nationality": "France",
       "isGK": false,
       "career": [
@@ -6272,8 +6272,8 @@
       "trophies": []
     },
     {
-      "id": "c-tatarusanu-21081",
-      "name": "C. Tătărușanu",
+      "id": "anton-ciprian-tatarusanu-21081",
+      "name": "Anton Ciprian Tătărușanu",
       "nationality": "Romania",
       "isGK": true,
       "career": [
@@ -6325,8 +6325,8 @@
       ]
     },
     {
-      "id": "gabriel-silva-22084",
-      "name": "Gabriel Silva",
+      "id": "gabriel-moises-antunes-da-silva-22084",
+      "name": "Gabriel Moisés Antunes da Silva",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -6355,8 +6355,8 @@
       "trophies": []
     },
     {
-      "id": "n-moisander-25317",
-      "name": "N. Moisander",
+      "id": "niklas-kristian-moisander-25317",
+      "name": "Niklas Kristian Moisander",
       "nationality": "Finland",
       "isGK": false,
       "career": [
@@ -6371,8 +6371,8 @@
       "trophies": []
     },
     {
-      "id": "a-mounier-26752",
-      "name": "A. Mounier",
+      "id": "anthony-mounier-26752",
+      "name": "Anthony Mounier",
       "nationality": "France",
       "isGK": false,
       "career": [
@@ -6410,8 +6410,8 @@
       "trophies": []
     },
     {
-      "id": "c-biraghi-30396",
-      "name": "C. Biraghi",
+      "id": "cristiano-biraghi-30396",
+      "name": "Cristiano Biraghi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -6426,8 +6426,8 @@
       "trophies": []
     },
     {
-      "id": "v-laurini-30400",
-      "name": "V. Laurini",
+      "id": "vincent-alain-laurini-30400",
+      "name": "Vincent Alain Laurini",
       "nationality": "France",
       "isGK": false,
       "career": [
@@ -6442,8 +6442,8 @@
       "trophies": []
     },
     {
-      "id": "m-benassi-30403",
-      "name": "M. Benassi",
+      "id": "marco-benassi-30403",
+      "name": "Marco Benassi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -6466,8 +6466,8 @@
       ]
     },
     {
-      "id": "e-berisha-30416",
-      "name": "E. Berisha",
+      "id": "etrit-berisha-30416",
+      "name": "Etrit Berisha",
       "nationality": "Albania",
       "isGK": true,
       "career": [
@@ -6489,8 +6489,8 @@
       "trophies": []
     },
     {
-      "id": "p-gollini-30418",
-      "name": "P. Gollini",
+      "id": "pierluigi-gollini-30418",
+      "name": "Pierluigi Gollini",
       "nationality": "Italy",
       "isGK": true,
       "career": [
@@ -6512,8 +6512,8 @@
       "trophies": []
     },
     {
-      "id": "a-masiello-30426",
-      "name": "A. Masiello",
+      "id": "andrea-masiello-30426",
+      "name": "Andrea Masiello",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -6545,8 +6545,8 @@
       ]
     },
     {
-      "id": "r-toloi-30429",
-      "name": "R. Tolói",
+      "id": "rafael-toloi-30429",
+      "name": "Rafael Tolói",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -6590,8 +6590,8 @@
       ]
     },
     {
-      "id": "m-de-roon-30432",
-      "name": "M. de Roon",
+      "id": "marten-elco-de-roon-30432",
+      "name": "Marten Elco de Roon",
       "nationality": "Netherlands",
       "isGK": false,
       "career": [
@@ -6606,8 +6606,8 @@
       "trophies": []
     },
     {
-      "id": "p-gomez-30433",
-      "name": "P. Gómez",
+      "id": "alejandro-dario-gomez-villaverde-30433",
+      "name": "Alejandro Darío Gómez Villaverde",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -6679,8 +6679,8 @@
       ]
     },
     {
-      "id": "j-ilicic-30434",
-      "name": "J. Iličić",
+      "id": "josip-ilicic-30434",
+      "name": "Josip Iličić",
       "nationality": "Slovenia",
       "isGK": false,
       "career": [
@@ -6704,8 +6704,8 @@
       ]
     },
     {
-      "id": "v-belec-30442",
-      "name": "V. Belec",
+      "id": "vid-belec-30442",
+      "name": "Vid Belec",
       "nationality": "Slovenia",
       "isGK": true,
       "career": [
@@ -6753,8 +6753,8 @@
       ]
     },
     {
-      "id": "a-ferrari-30446",
-      "name": "A. Ferrari",
+      "id": "alex-ferrari-30446",
+      "name": "Alex Ferrari",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -6769,8 +6769,8 @@
       "trophies": []
     },
     {
-      "id": "j-sala-30448",
-      "name": "J. Sala",
+      "id": "jacopo-sala-30448",
+      "name": "Jacopo Sala",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -6792,8 +6792,8 @@
       "trophies": []
     },
     {
-      "id": "l-tonelli-30450",
-      "name": "L. Tonelli",
+      "id": "lorenzo-tonelli-30450",
+      "name": "Lorenzo Tonelli",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -6815,8 +6815,8 @@
       "trophies": []
     },
     {
-      "id": "e-barreto-30452",
-      "name": "É. Barreto",
+      "id": "edgar-osvaldo-barreto-caceres-30452",
+      "name": "Édgar Osvaldo Barreto Cáceres",
       "nationality": "Paraguay",
       "isGK": false,
       "career": [
@@ -6840,8 +6840,8 @@
       ]
     },
     {
-      "id": "r-saponara-30456",
-      "name": "R. Saponara",
+      "id": "riccardo-saponara-30456",
+      "name": "Riccardo Saponara",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -6871,8 +6871,8 @@
       ]
     },
     {
-      "id": "g-defrel-30461",
-      "name": "G. Defrel",
+      "id": "gregoire-andre-defrel-30461",
+      "name": "Grégoire André Defrel",
       "nationality": "France",
       "isGK": false,
       "career": [
@@ -6887,8 +6887,8 @@
       "trophies": []
     },
     {
-      "id": "m-gabbiadini-30462",
-      "name": "M. Gabbiadini",
+      "id": "manolo-gabbiadini-30462",
+      "name": "Manolo Gabbiadini",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -6903,8 +6903,8 @@
       "trophies": []
     },
     {
-      "id": "f-quagliarella-30463",
-      "name": "F. Quagliarella",
+      "id": "fabio-quagliarella-30463",
+      "name": "Fabio Quagliarella",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -6944,8 +6944,8 @@
       ]
     },
     {
-      "id": "angelo-da-costa-30466",
-      "name": "Angelo da Costa",
+      "id": "angelo-esmael-da-costa-junior-30466",
+      "name": "Angelo Esmael da Costa Júnior",
       "nationality": "Brazil",
       "isGK": true,
       "career": [
@@ -6984,8 +6984,8 @@
       ]
     },
     {
-      "id": "i-mbaye-30473",
-      "name": "I. Mbaye",
+      "id": "ibrahima-mbaye-30473",
+      "name": "Ibrahima Mbaye",
       "nationality": "Senegal",
       "isGK": false,
       "career": [
@@ -7000,8 +7000,8 @@
       "trophies": []
     },
     {
-      "id": "g-donsah-30477",
-      "name": "G. Donsah",
+      "id": "godfred-donsah-30477",
+      "name": "Godfred Donsah",
       "nationality": "Ghana",
       "isGK": false,
       "career": [
@@ -7016,8 +7016,8 @@
       "trophies": []
     },
     {
-      "id": "b-dzemaili-30478",
-      "name": "B. Džemaili",
+      "id": "blerim-dzemaili-30478",
+      "name": "Blerim Džemaili",
       "nationality": "Switzerland",
       "isGK": false,
       "career": [
@@ -7086,8 +7086,8 @@
       ]
     },
     {
-      "id": "a-poli-30482",
-      "name": "A. Poli",
+      "id": "andrea-poli-30482",
+      "name": "Andrea Poli",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7102,8 +7102,8 @@
       "trophies": []
     },
     {
-      "id": "r-soriano-30483",
-      "name": "R. Soriano",
+      "id": "roberto-soriano-30483",
+      "name": "Roberto Soriano",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7118,8 +7118,8 @@
       "trophies": []
     },
     {
-      "id": "m-destro-30486",
-      "name": "M. Destro",
+      "id": "mattia-destro-30486",
+      "name": "Mattia Destro",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7134,8 +7134,8 @@
       "trophies": []
     },
     {
-      "id": "d-falcinelli-30487",
-      "name": "D. Falcinelli",
+      "id": "diego-falcinelli-30487",
+      "name": "Diego Falcinelli",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7172,8 +7172,8 @@
       ]
     },
     {
-      "id": "r-palacio-30489",
-      "name": "R. Palacio",
+      "id": "rodrigo-sebastian-palacio-alcalde-30489",
+      "name": "Rodrigo Sebastián Palacio Alcalde",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -7188,8 +7188,8 @@
       "trophies": []
     },
     {
-      "id": "n-sansone-30490",
-      "name": "N. Sansone",
+      "id": "nicola-domenico-sansone-30490",
+      "name": "Nicola Domenico Sansone",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7204,8 +7204,8 @@
       "trophies": []
     },
     {
-      "id": "c-ansaldi-30496",
-      "name": "C. Ansaldi",
+      "id": "cristian-daniel-ansaldi-30496",
+      "name": "Cristian Daniel Ansaldi",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -7227,8 +7227,8 @@
       "trophies": []
     },
     {
-      "id": "l-de-silvestri-30498",
-      "name": "L. De Silvestri",
+      "id": "lorenzo-de-silvestri-30498",
+      "name": "Lorenzo De Silvestri",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7250,8 +7250,8 @@
       "trophies": []
     },
     {
-      "id": "a-izzo-30501",
-      "name": "A. Izzo",
+      "id": "armando-izzo-30501",
+      "name": "Armando Izzo",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7311,8 +7311,8 @@
       ]
     },
     {
-      "id": "d-baselli-30506",
-      "name": "D. Baselli",
+      "id": "daniele-baselli-30506",
+      "name": "Daniele Baselli",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7327,8 +7327,8 @@
       "trophies": []
     },
     {
-      "id": "a-belotti-30509",
-      "name": "A. Belotti",
+      "id": "andrea-belotti-30509",
+      "name": "Andrea Belotti",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7360,8 +7360,8 @@
       ]
     },
     {
-      "id": "iago-falque-30512",
-      "name": "Iago Falqué",
+      "id": "iago-falque-silva-30512",
+      "name": "Iago Falqué Silva",
       "nationality": "Spain",
       "isGK": false,
       "career": [
@@ -7383,8 +7383,8 @@
       "trophies": []
     },
     {
-      "id": "s-zaza-30515",
-      "name": "S. Zaza",
+      "id": "simone-zaza-30515",
+      "name": "Simone Zaza",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7399,8 +7399,8 @@
       "trophies": []
     },
     {
-      "id": "a-consigli-30516",
-      "name": "A. Consigli",
+      "id": "andrea-consigli-30516",
+      "name": "Andrea Consigli",
       "nationality": "Italy",
       "isGK": true,
       "career": [
@@ -7423,8 +7423,8 @@
       ]
     },
     {
-      "id": "c-adjapong-30520",
-      "name": "C. Adjapong",
+      "id": "claud-adjapong-30520",
+      "name": "Claud Adjapong",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7478,8 +7478,8 @@
       ]
     },
     {
-      "id": "a-duncan-30532",
-      "name": "A. Duncan",
+      "id": "joseph-alfred-duncan-30532",
+      "name": "Joseph Alfred Duncan",
       "nationality": "Ghana",
       "isGK": false,
       "career": [
@@ -7494,8 +7494,8 @@
       "trophies": []
     },
     {
-      "id": "m-locatelli-30533",
-      "name": "M. Locatelli",
+      "id": "manuel-locatelli-30533",
+      "name": "Manuel Locatelli",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7526,8 +7526,8 @@
       "trophies": []
     },
     {
-      "id": "d-berardi-30537",
-      "name": "D. Berardi",
+      "id": "domenico-berardi-30537",
+      "name": "Domenico Berardi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7560,8 +7560,8 @@
       ]
     },
     {
-      "id": "k-babacar-30540",
-      "name": "K. Babacar",
+      "id": "khouma-el-hadji-babacar-30540",
+      "name": "Khouma El Hadji Babacar",
       "nationality": "Senegal",
       "isGK": false,
       "career": [
@@ -7592,8 +7592,8 @@
       ]
     },
     {
-      "id": "a-matri-30541",
-      "name": "A. Matri",
+      "id": "alessandro-matri-30541",
+      "name": "Alessandro Matri",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7640,8 +7640,8 @@
       ]
     },
     {
-      "id": "rafael-30547",
-      "name": "Rafael",
+      "id": "rafael-de-andrade-bittencourt-pinheir-30547",
+      "name": "Rafael de Andrade Bittencourt Pinheir",
       "nationality": "Brazil",
       "isGK": true,
       "career": [
@@ -7663,8 +7663,8 @@
       "trophies": []
     },
     {
-      "id": "f-cacciatore-30548",
-      "name": "F. Cacciatore",
+      "id": "fabrizio-cacciatore-30548",
+      "name": "Fabrizio Cacciatore",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7679,8 +7679,8 @@
       "trophies": []
     },
     {
-      "id": "v-birsa-30559",
-      "name": "V. Birsa",
+      "id": "valter-birsa-30559",
+      "name": "Valter Birsa",
       "nationality": "Slovenia",
       "isGK": false,
       "career": [
@@ -7703,8 +7703,8 @@
       ]
     },
     {
-      "id": "l-cigarini-30560",
-      "name": "L. Cigarini",
+      "id": "luca-cigarini-30560",
+      "name": "Luca Cigarini",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7726,8 +7726,8 @@
       "trophies": []
     },
     {
-      "id": "a-ionita-30564",
-      "name": "A. Ioniţă",
+      "id": "artur-ionita-30564",
+      "name": "Artur Ioniţă",
       "nationality": "Moldova",
       "isGK": false,
       "career": [
@@ -7749,8 +7749,8 @@
       "trophies": []
     },
     {
-      "id": "l-castro-30567",
-      "name": "L. Castro",
+      "id": "lucas-nahuel-castro-30567",
+      "name": "Lucas Nahuel Castro",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -7765,8 +7765,8 @@
       "trophies": []
     },
     {
-      "id": "s-padoin-30569",
-      "name": "S. Padoin",
+      "id": "simone-padoin-30569",
+      "name": "Simone Padoin",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7788,8 +7788,8 @@
       "trophies": []
     },
     {
-      "id": "a-cerri-30570",
-      "name": "A. Cerri",
+      "id": "alberto-cerri-30570",
+      "name": "Alberto Cerri",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7804,8 +7804,8 @@
       "trophies": []
     },
     {
-      "id": "l-pavoletti-30573",
-      "name": "L. Pavoletti",
+      "id": "leonardo-pavoletti-30573",
+      "name": "Leonardo Pavoletti",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7858,8 +7858,8 @@
       ]
     },
     {
-      "id": "m-mancosu-30607",
-      "name": "M. Mancosu",
+      "id": "matteo-mancosu-30607",
+      "name": "Matteo Mancosu",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7897,8 +7897,8 @@
       "trophies": []
     },
     {
-      "id": "l-antei-30614",
-      "name": "L. Antei",
+      "id": "luca-antei-30614",
+      "name": "Luca Antei",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7913,8 +7913,8 @@
       "trophies": []
     },
     {
-      "id": "a-costa-30616",
-      "name": "A. Costa",
+      "id": "andrea-costa-30616",
+      "name": "Andrea Costa",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7929,8 +7929,8 @@
       "trophies": []
     },
     {
-      "id": "g-letizia-30620",
-      "name": "G. Letizia",
+      "id": "gaetano-letizia-30620",
+      "name": "Gaetano Letizia",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7961,8 +7961,8 @@
       "trophies": []
     },
     {
-      "id": "l-crisetig-30625",
-      "name": "L. Crisetig",
+      "id": "lorenzo-crisetig-30625",
+      "name": "Lorenzo Crisetig",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -7984,8 +7984,8 @@
       "trophies": []
     },
     {
-      "id": "a-tello-30628",
-      "name": "A. Tello",
+      "id": "andres-felipe-tello-munoz-30628",
+      "name": "Andrés Felipe Tello Muñoz",
       "nationality": "Colombia",
       "isGK": false,
       "career": [
@@ -8000,8 +8000,8 @@
       "trophies": []
     },
     {
-      "id": "r-gucher-30719",
-      "name": "R. Gucher",
+      "id": "robert-franz-gucher-30719",
+      "name": "Robert Franz Gucher",
       "nationality": "Austria",
       "isGK": false,
       "career": [
@@ -8016,8 +8016,8 @@
       "trophies": []
     },
     {
-      "id": "s-sorrentino-30734",
-      "name": "S. Sorrentino",
+      "id": "stefano-sorrentino-30734",
+      "name": "Stefano Sorrentino",
       "nationality": "Italy",
       "isGK": true,
       "career": [
@@ -8061,8 +8061,8 @@
       ]
     },
     {
-      "id": "f-barba-30737",
-      "name": "F. Barba",
+      "id": "federico-barba-30737",
+      "name": "Federico Barba",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8077,8 +8077,8 @@
       "trophies": []
     },
     {
-      "id": "b-cesar-30738",
-      "name": "B. Cesar",
+      "id": "bostjan-cesar-30738",
+      "name": "Boštjan Cesar",
       "nationality": "Slovenia",
       "isGK": false,
       "career": [
@@ -8093,8 +8093,8 @@
       "trophies": []
     },
     {
-      "id": "n-frey-30739",
-      "name": "N. Frey",
+      "id": "nicolas-sebastian-frey-30739",
+      "name": "Nicolas Sebastian Frey",
       "nationality": "France",
       "isGK": false,
       "career": [
@@ -8132,8 +8132,8 @@
       "trophies": []
     },
     {
-      "id": "n-tomovic-30745",
-      "name": "N. Tomović",
+      "id": "nenad-tomovic-30745",
+      "name": "Nenad Tomović",
       "nationality": "Serbia",
       "isGK": false,
       "career": [
@@ -8148,8 +8148,8 @@
       "trophies": []
     },
     {
-      "id": "a-diousse-30748",
-      "name": "A. Dioussé",
+      "id": "assane-diousse-el-hadji-30748",
+      "name": "Assane Dioussé El Hadji",
       "nationality": "Senegal",
       "isGK": false,
       "career": [
@@ -8187,8 +8187,8 @@
       "trophies": []
     },
     {
-      "id": "p-hetemaj-30750",
-      "name": "P. Hetemaj",
+      "id": "perparim-hetemaj-30750",
+      "name": "Përparim Hetemaj",
       "nationality": "Finland",
       "isGK": false,
       "career": [
@@ -8225,8 +8225,8 @@
       ]
     },
     {
-      "id": "n-rigoni-30754",
-      "name": "N. Rigoni",
+      "id": "nicola-rigoni-30754",
+      "name": "Nicola Rigoni",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8257,8 +8257,8 @@
       "trophies": []
     },
     {
-      "id": "s-pellissier-30759",
-      "name": "S. Pellissier",
+      "id": "sergio-pellissier-30759",
+      "name": "Sergio Pellissier",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8273,8 +8273,8 @@
       "trophies": []
     },
     {
-      "id": "m-pucciarelli-30760",
-      "name": "M. Pucciarelli",
+      "id": "manuel-pucciarelli-30760",
+      "name": "Manuel Pucciarelli",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8305,8 +8305,8 @@
       "trophies": []
     },
     {
-      "id": "f-marchetti-30764",
-      "name": "F. Marchetti",
+      "id": "federico-marchetti-30764",
+      "name": "Federico Marchetti",
       "nationality": "Italy",
       "isGK": true,
       "career": [
@@ -8321,8 +8321,8 @@
       "trophies": []
     },
     {
-      "id": "pedro-pereira-30768",
-      "name": "Pedro Pereira",
+      "id": "pedro-miguel-almeida-lopes-pereira-30768",
+      "name": "Pedro Miguel Almeida Lopes Pereira",
       "nationality": "Portugal",
       "isGK": false,
       "career": [
@@ -8337,8 +8337,8 @@
       "trophies": []
     },
     {
-      "id": "g-pezzella-30775",
-      "name": "G. Pezzella",
+      "id": "giuseppe-pezzella-30775",
+      "name": "Giuseppe Pezzella",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8353,8 +8353,8 @@
       "trophies": []
     },
     {
-      "id": "e-zukanovic-30777",
-      "name": "E. Zukanović",
+      "id": "ervin-zukanovic-30777",
+      "name": "Ervin Zukanović",
       "nationality": "Bosnia and Herzegovina",
       "isGK": false,
       "career": [
@@ -8428,8 +8428,8 @@
       ]
     },
     {
-      "id": "i-radovanovic-30782",
-      "name": "I. Radovanović",
+      "id": "ivan-radovanovic-30782",
+      "name": "Ivan Radovanović",
       "nationality": "Serbia",
       "isGK": false,
       "career": [
@@ -8444,8 +8444,8 @@
       "trophies": []
     },
     {
-      "id": "s-sturaro-30786",
-      "name": "S. Sturaro",
+      "id": "stefano-sturaro-30786",
+      "name": "Stefano Sturaro",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8460,8 +8460,8 @@
       "trophies": []
     },
     {
-      "id": "g-pandev-30791",
-      "name": "G. Pandev",
+      "id": "goran-pandev-30791",
+      "name": "Goran Pandev",
       "nationality": "North Macedonia",
       "isGK": false,
       "career": [
@@ -8476,8 +8476,8 @@
       "trophies": []
     },
     {
-      "id": "samir-30795",
-      "name": "Samir",
+      "id": "samir-caetano-de-souza-santos-30795",
+      "name": "Samir Caetano de Souza Santos",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -8499,8 +8499,8 @@
       "trophies": []
     },
     {
-      "id": "s-de-maio-30796",
-      "name": "S. De Maio",
+      "id": "sebastien-de-maio-30796",
+      "name": "Sebastien De Maio",
       "nationality": "France",
       "isGK": false,
       "career": [
@@ -8546,8 +8546,8 @@
       ]
     },
     {
-      "id": "m-d-apos-alessandro-30806",
-      "name": "M. D&apos;Alessandro",
+      "id": "marco-d-alessandro-30806",
+      "name": "Marco D'Alessandro",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8562,8 +8562,8 @@
       "trophies": []
     },
     {
-      "id": "e-hallfre-sson-30808",
-      "name": "E. Hallfreðsson",
+      "id": "emil-hallfre-sson-30808",
+      "name": "Emil Hallfreðsson",
       "nationality": "Iceland",
       "isGK": false,
       "career": [
@@ -8585,8 +8585,8 @@
       "trophies": []
     },
     {
-      "id": "k-lasagna-30815",
-      "name": "K. Lasagna",
+      "id": "kevin-lasagna-30815",
+      "name": "Kevin Lasagna",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8617,8 +8617,8 @@
       ]
     },
     {
-      "id": "e-lamanna-30820",
-      "name": "E. Lamanna",
+      "id": "eugenio-lamanna-30820",
+      "name": "Eugenio Lamanna",
       "nationality": "Italy",
       "isGK": true,
       "career": [
@@ -8633,8 +8633,8 @@
       "trophies": []
     },
     {
-      "id": "r-crivello-30825",
-      "name": "R. Crivello",
+      "id": "roberto-crivello-30825",
+      "name": "Roberto Crivello",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8649,8 +8649,8 @@
       "trophies": []
     },
     {
-      "id": "m-crimi-30832",
-      "name": "M. Crimi",
+      "id": "marco-crimi-30832",
+      "name": "Marco Crimi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8672,8 +8672,8 @@
       "trophies": []
     },
     {
-      "id": "e-viviano-30852",
-      "name": "E. Viviano",
+      "id": "emiliano-viviano-30852",
+      "name": "Emiliano Viviano",
       "nationality": "Italy",
       "isGK": true,
       "career": [
@@ -8696,8 +8696,8 @@
       ]
     },
     {
-      "id": "felipe-30856",
-      "name": "Felipe",
+      "id": "felipe-dias-da-silva-dal-belo-30856",
+      "name": "Felipe Dias da Silva dal Belo",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -8712,8 +8712,8 @@
       "trophies": []
     },
     {
-      "id": "m-fares-30859",
-      "name": "M. Fares",
+      "id": "mohamed-salim-fares-30859",
+      "name": "Mohamed Salim Fares",
       "nationality": "Algeria",
       "isGK": false,
       "career": [
@@ -8728,8 +8728,8 @@
       "trophies": []
     },
     {
-      "id": "v-regini-30860",
-      "name": "V. Regini",
+      "id": "vasco-regini-30860",
+      "name": "Vasco Regini",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8751,8 +8751,8 @@
       "trophies": []
     },
     {
-      "id": "j-kurtic-30865",
-      "name": "J. Kurtič",
+      "id": "jasmin-kurtic-30865",
+      "name": "Jasmin Kurtič",
       "nationality": "Slovenia",
       "isGK": false,
       "career": [
@@ -8783,8 +8783,8 @@
       "trophies": []
     },
     {
-      "id": "a-murgia-30868",
-      "name": "A. Murgia",
+      "id": "alessandro-murgia-30868",
+      "name": "Alessandro Murgia",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8799,8 +8799,8 @@
       "trophies": []
     },
     {
-      "id": "m-valdifiori-30874",
-      "name": "M. Valdifiori",
+      "id": "mirko-valdifiori-30874",
+      "name": "Mirko Valdifiori",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8822,8 +8822,8 @@
       "trophies": []
     },
     {
-      "id": "s-floccari-30877",
-      "name": "S. Floccari",
+      "id": "sergio-floccari-30877",
+      "name": "Sergio Floccari",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8845,8 +8845,8 @@
       "trophies": []
     },
     {
-      "id": "a-paloschi-30878",
-      "name": "A. Paloschi",
+      "id": "alberto-paloschi-30878",
+      "name": "Alberto Paloschi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8884,8 +8884,8 @@
       "trophies": []
     },
     {
-      "id": "f-lodi-30901",
-      "name": "F. Lodi",
+      "id": "francesco-lodi-30901",
+      "name": "Francesco Lodi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8900,8 +8900,8 @@
       "trophies": []
     },
     {
-      "id": "m-bianchetti-30919",
-      "name": "M. Bianchetti",
+      "id": "matteo-bianchetti-30919",
+      "name": "Matteo Bianchetti",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8916,8 +8916,8 @@
       "trophies": []
     },
     {
-      "id": "a-di-gaudio-30929",
-      "name": "A. Di Gaudio",
+      "id": "antonio-di-gaudio-30929",
+      "name": "Antonio Di Gaudio",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8932,8 +8932,8 @@
       "trophies": []
     },
     {
-      "id": "k-laribi-30933",
-      "name": "K. Laribi",
+      "id": "karim-laribi-30933",
+      "name": "Karim Laribi",
       "nationality": "Tunisia",
       "isGK": false,
       "career": [
@@ -8948,8 +8948,8 @@
       "trophies": []
     },
     {
-      "id": "l-marrone-30934",
-      "name": "L. Marrone",
+      "id": "luca-marrone-30934",
+      "name": "Luca Marrone",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -8971,8 +8971,8 @@
       "trophies": []
     },
     {
-      "id": "ryder-matos-30940",
-      "name": "Ryder Matos",
+      "id": "ryder-matos-santos-pinto-30940",
+      "name": "Ryder Matos Santos Pinto",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -9010,8 +9010,8 @@
       "trophies": []
     },
     {
-      "id": "m-albertazzi-30949",
-      "name": "M. Albertazzi",
+      "id": "michelangelo-albertazzi-30949",
+      "name": "Michelangelo Albertazzi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9026,8 +9026,8 @@
       "trophies": []
     },
     {
-      "id": "d-dainelli-30952",
-      "name": "D. Dainelli",
+      "id": "dario-dainelli-30952",
+      "name": "Dario Dainelli",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9042,8 +9042,8 @@
       "trophies": []
     },
     {
-      "id": "a-diamanti-30968",
-      "name": "A. Diamanti",
+      "id": "alessandro-diamanti-30968",
+      "name": "Alessandro Diamanti",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9065,8 +9065,8 @@
       "trophies": []
     },
     {
-      "id": "n-spolli-30985",
-      "name": "N. Spolli",
+      "id": "nicolas-federico-spolli-30985",
+      "name": "Nicolás Federico Spolli",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -9104,8 +9104,8 @@
       "trophies": []
     },
     {
-      "id": "f-dimarco-31010",
-      "name": "F. Dimarco",
+      "id": "federico-dimarco-31010",
+      "name": "Federico Dimarco",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9120,8 +9120,8 @@
       "trophies": []
     },
     {
-      "id": "r-gagliolo-31011",
-      "name": "R. Gagliolo",
+      "id": "riccardo-gagliolo-31011",
+      "name": "Riccardo Gagliolo",
       "nationality": "Sweden",
       "isGK": false,
       "career": [
@@ -9136,8 +9136,8 @@
       "trophies": []
     },
     {
-      "id": "m-gazzola-31012",
-      "name": "M. Gazzola",
+      "id": "marcello-gazzola-31012",
+      "name": "Marcello Gazzola",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9152,8 +9152,8 @@
       "trophies": []
     },
     {
-      "id": "m-gobbi-31013",
-      "name": "M. Gobbi",
+      "id": "massimo-gobbi-31013",
+      "name": "Massimo Gobbi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9168,8 +9168,8 @@
       "trophies": []
     },
     {
-      "id": "j-biabiany-31018",
-      "name": "J. Biabiany",
+      "id": "jonathan-ludovic-biabiany-31018",
+      "name": "Jonathan Ludovic Biabiany",
       "nationality": "France",
       "isGK": false,
       "career": [
@@ -9184,8 +9184,8 @@
       "trophies": []
     },
     {
-      "id": "a-grassi-31021",
-      "name": "A. Grassi",
+      "id": "alberto-grassi-31021",
+      "name": "Alberto Grassi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9200,8 +9200,8 @@
       "trophies": []
     },
     {
-      "id": "j-kucka-31023",
-      "name": "J. Kucka",
+      "id": "juraj-kucka-31023",
+      "name": "Juraj Kucka",
       "nationality": "Slovakia",
       "isGK": false,
       "career": [
@@ -9281,8 +9281,8 @@
       ]
     },
     {
-      "id": "r-inglese-31031",
-      "name": "R. Inglese",
+      "id": "roberto-inglese-31031",
+      "name": "Roberto Inglese",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9305,8 +9305,8 @@
       ]
     },
     {
-      "id": "y-gervinho-31032",
-      "name": "Y. Gervinho",
+      "id": "gervais-lombe-yao-kouassi-31032",
+      "name": "Gervais Lombe Yao Kouassi",
       "nationality": "Côte d'Ivoire",
       "isGK": false,
       "career": [
@@ -9321,8 +9321,8 @@
       "trophies": []
     },
     {
-      "id": "l-siligardi-31034",
-      "name": "L. Siligardi",
+      "id": "luca-siligardi-31034",
+      "name": "Luca Siligardi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9353,8 +9353,8 @@
       "trophies": []
     },
     {
-      "id": "d-maietta-31044",
-      "name": "D. Maietta",
+      "id": "domenico-maietta-31044",
+      "name": "Domenico Maietta",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9369,8 +9369,8 @@
       "trophies": []
     },
     {
-      "id": "m-pasqual-31046",
-      "name": "M. Pasqual",
+      "id": "manuel-pasqual-31046",
+      "name": "Manuel Pasqual",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9449,8 +9449,8 @@
       ]
     },
     {
-      "id": "m-brighi-31052",
-      "name": "M. Brighi",
+      "id": "matteo-brighi-31052",
+      "name": "Matteo Brighi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9465,8 +9465,8 @@
       "trophies": []
     },
     {
-      "id": "r-krunic-31054",
-      "name": "R. Krunić",
+      "id": "rade-krunic-31054",
+      "name": "Rade Krunić",
       "nationality": "Bosnia and Herzegovina",
       "isGK": false,
       "career": [
@@ -9546,8 +9546,8 @@
       "trophies": []
     },
     {
-      "id": "m-sportiello-31069",
-      "name": "M. Sportiello",
+      "id": "marco-sportiello-31069",
+      "name": "Marco Sportiello",
       "nationality": "Italy",
       "isGK": true,
       "career": [
@@ -9569,8 +9569,8 @@
       "trophies": []
     },
     {
-      "id": "e-goldaniga-31073",
-      "name": "E. Goldaniga",
+      "id": "edoardo-goldaniga-31073",
+      "name": "Edoardo Goldaniga",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9601,8 +9601,8 @@
       "trophies": []
     },
     {
-      "id": "r-chibsah-31082",
-      "name": "R. Chibsah",
+      "id": "yusif-rahman-chibsah-31082",
+      "name": "Yusif Rahman Chibsah",
       "nationality": "Ghana",
       "isGK": false,
       "career": [
@@ -9617,8 +9617,8 @@
       "trophies": []
     },
     {
-      "id": "m-gori-31085",
-      "name": "M. Gori",
+      "id": "mirko-gori-31085",
+      "name": "Mirko Gori",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9633,8 +9633,8 @@
       "trophies": []
     },
     {
-      "id": "r-maiello-31086",
-      "name": "R. Maiello",
+      "id": "raffaele-maiello-31086",
+      "name": "Raffaele Maiello",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9649,8 +9649,8 @@
       "trophies": []
     },
     {
-      "id": "l-paganini-31087",
-      "name": "L. Paganini",
+      "id": "luca-rudolf-paganini-31087",
+      "name": "Luca Rudolf Paganini",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9681,8 +9681,8 @@
       "trophies": []
     },
     {
-      "id": "f-viviani-31090",
-      "name": "F. Viviani",
+      "id": "federico-viviani-31090",
+      "name": "Federico Viviani",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9704,8 +9704,8 @@
       "trophies": []
     },
     {
-      "id": "d-ciofani-31092",
-      "name": "D. Ciofani",
+      "id": "daniel-ciofani-31092",
+      "name": "Daniel Ciofani",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9720,8 +9720,8 @@
       "trophies": []
     },
     {
-      "id": "f-dionisi-31093",
-      "name": "F. Dionisi",
+      "id": "federico-dionisi-31093",
+      "name": "Federico Dionisi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9736,8 +9736,8 @@
       "trophies": []
     },
     {
-      "id": "m-trotta-31095",
-      "name": "M. Trotta",
+      "id": "marcello-trotta-31095",
+      "name": "Marcello Trotta",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9797,8 +9797,8 @@
       ]
     },
     {
-      "id": "s-romagnoli-31136",
-      "name": "S. Romagnoli",
+      "id": "simone-romagnoli-31136",
+      "name": "Simone Romagnoli",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9813,8 +9813,8 @@
       "trophies": []
     },
     {
-      "id": "n-ninkovic-31175",
-      "name": "N. Ninković",
+      "id": "nikola-ninkovic-31175",
+      "name": "Nikola Ninković",
       "nationality": "Serbia",
       "isGK": false,
       "career": [
@@ -9875,8 +9875,8 @@
       "trophies": []
     },
     {
-      "id": "m-diakite-31255",
-      "name": "M. Diakité",
+      "id": "modibo-diakite-31255",
+      "name": "Modibo Diakité",
       "nationality": "France",
       "isGK": false,
       "career": [
@@ -9898,8 +9898,8 @@
       "trophies": []
     },
     {
-      "id": "l-bittante-31324",
-      "name": "L. Bittante",
+      "id": "luca-bittante-31324",
+      "name": "Luca Bittante",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -9937,8 +9937,8 @@
       "trophies": []
     },
     {
-      "id": "a-bizzarri-31382",
-      "name": "A. Bizzarri",
+      "id": "albano-benjamin-bizzarri-31382",
+      "name": "Albano Benjamín Bizzarri",
       "nationality": "Argentina",
       "isGK": true,
       "career": [
@@ -9989,8 +9989,8 @@
       ]
     },
     {
-      "id": "n-gyomber-31389",
-      "name": "N. Gyömbér",
+      "id": "norbert-gyomber-31389",
+      "name": "Norbert Gyömbér",
       "nationality": "Slovakia",
       "isGK": false,
       "career": [
@@ -10012,8 +10012,8 @@
       "trophies": []
     },
     {
-      "id": "a-rosi-31392",
-      "name": "A. Rosi",
+      "id": "aleandro-rosi-31392",
+      "name": "Aleandro Rosi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -10050,8 +10050,8 @@
       ]
     },
     {
-      "id": "r-bianco-31394",
-      "name": "R. Bianco",
+      "id": "raffaele-bianco-31394",
+      "name": "Raffaele Bianco",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -10066,8 +10066,8 @@
       "trophies": []
     },
     {
-      "id": "u-sadiq-31406",
-      "name": "U. Sadiq",
+      "id": "umar-sadiq-mesbah-31406",
+      "name": "Umar Sadiq Mesbah",
       "nationality": "Nigeria",
       "isGK": false,
       "career": [
@@ -10121,8 +10121,8 @@
       "trophies": []
     },
     {
-      "id": "m-morganella-31420",
-      "name": "M. Morganella",
+      "id": "michel-morganella-31420",
+      "name": "Michel Morganella",
       "nationality": "Switzerland",
       "isGK": false,
       "career": [
@@ -10137,8 +10137,8 @@
       "trophies": []
     },
     {
-      "id": "l-lollo-31429",
-      "name": "L. Lollo",
+      "id": "lorenzo-lollo-31429",
+      "name": "Lorenzo Lollo",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -10153,8 +10153,8 @@
       "trophies": []
     },
     {
-      "id": "j-mbakogu-31439",
-      "name": "J. Mbakogu",
+      "id": "jerry-uche-mbakogu-31439",
+      "name": "Jerry Uche Mbakogu",
       "nationality": "Nigeria",
       "isGK": false,
       "career": [
@@ -10169,8 +10169,8 @@
       "trophies": []
     },
     {
-      "id": "m-ciofani-31479",
-      "name": "M. Ciofani",
+      "id": "matteo-ciofani-31479",
+      "name": "Matteo Ciofani",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -10185,8 +10185,8 @@
       "trophies": []
     },
     {
-      "id": "g-brugman-31489",
-      "name": "G. Brugman",
+      "id": "gaston-brugman-duarte-31489",
+      "name": "Gastón Brugman Duarte",
       "nationality": "Uruguay",
       "isGK": false,
       "career": [
@@ -10208,8 +10208,8 @@
       "trophies": []
     },
     {
-      "id": "g-monachello-31505",
-      "name": "G. Monachello",
+      "id": "gaetano-monachello-31505",
+      "name": "Gaetano Monachello",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -10224,8 +10224,8 @@
       "trophies": []
     },
     {
-      "id": "a-rispoli-31549",
-      "name": "A. Rispoli",
+      "id": "andrea-rispoli-31549",
+      "name": "Andrea Rispoli",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -10240,8 +10240,8 @@
       "trophies": []
     },
     {
-      "id": "i-chochev-31552",
-      "name": "I. Chochev",
+      "id": "ivaylo-lyudmilov-chochev-31552",
+      "name": "Ivaylo Lyudmilov Chochev",
       "nationality": "Bulgaria",
       "isGK": false,
       "career": [
@@ -10282,8 +10282,8 @@
       ]
     },
     {
-      "id": "a-trajkovski-31563",
-      "name": "A. Trajkovski",
+      "id": "aleksandar-trajkovski-31563",
+      "name": "Aleksandar Trajkovski",
       "nationality": "North Macedonia",
       "isGK": false,
       "career": [
@@ -10298,8 +10298,8 @@
       "trophies": []
     },
     {
-      "id": "d-croce-31617",
-      "name": "D. Croce",
+      "id": "daniele-croce-31617",
+      "name": "Daniele Croce",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -10314,8 +10314,8 @@
       "trophies": []
     },
     {
-      "id": "d-soddimo-31622",
-      "name": "D. Soddimo",
+      "id": "danilo-soddimo-31622",
+      "name": "Danilo Soddimo",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -10330,8 +10330,8 @@
       "trophies": []
     },
     {
-      "id": "s-longo-31626",
-      "name": "S. Longo",
+      "id": "samuele-longo-31626",
+      "name": "Samuele Longo",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -10346,8 +10346,8 @@
       "trophies": []
     },
     {
-      "id": "n-leali-31631",
-      "name": "N. Leali",
+      "id": "nicola-leali-31631",
+      "name": "Nicola Leali",
       "nationality": "Italy",
       "isGK": true,
       "career": [
@@ -10362,8 +10362,8 @@
       "trophies": []
     },
     {
-      "id": "m-zambelli-31645",
-      "name": "M. Zambelli",
+      "id": "marco-zambelli-31645",
+      "name": "Marco Zambelli",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -10394,8 +10394,8 @@
       "trophies": []
     },
     {
-      "id": "o-kragl-31652",
-      "name": "O. Kragl",
+      "id": "oliver-kragl-31652",
+      "name": "Oliver Kragl",
       "nationality": "Germany",
       "isGK": false,
       "career": [
@@ -10449,8 +10449,8 @@
       "trophies": []
     },
     {
-      "id": "r-fiamozzi-31724",
-      "name": "R. Fiamozzi",
+      "id": "riccardo-fiamozzi-31724",
+      "name": "Riccardo Fiamozzi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -10465,8 +10465,8 @@
       "trophies": []
     },
     {
-      "id": "p-tachtsidis-31741",
-      "name": "P. Tachtsidis",
+      "id": "panagiotis-tachtsidis-31741",
+      "name": "Panagiotis Tachtsidis",
       "nationality": "Greece",
       "isGK": false,
       "career": [
@@ -10505,8 +10505,8 @@
       ]
     },
     {
-      "id": "a-floro-flores-31802",
-      "name": "A. Floro Flores",
+      "id": "antonio-floro-flores-31802",
+      "name": "Antonio Floro Flores",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -10551,8 +10551,8 @@
       "trophies": []
     },
     {
-      "id": "r-vitiello-32010",
-      "name": "R. Vitiello",
+      "id": "roberto-vitiello-32010",
+      "name": "Roberto Vitiello",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -10567,8 +10567,8 @@
       "trophies": []
     },
     {
-      "id": "m-carlini-32021",
-      "name": "M. Carlini",
+      "id": "massimiliano-carlini-32021",
+      "name": "Massimiliano Carlini",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -10583,8 +10583,8 @@
       "trophies": []
     },
     {
-      "id": "a-piu-32052",
-      "name": "A. Piu",
+      "id": "alessandro-piu-32052",
+      "name": "Alessandro Piu",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -10623,8 +10623,8 @@
       ]
     },
     {
-      "id": "j-gomez-taleb-32227",
-      "name": "J. Gómez Taleb",
+      "id": "juan-ignacio-gomez-taleb-32227",
+      "name": "Juan Ignacio Gómez Taleb",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -10639,8 +10639,8 @@
       "trophies": []
     },
     {
-      "id": "mauricio-35142",
-      "name": "Maurício",
+      "id": "mauricio-dos-santos-nascimento-35142",
+      "name": "Maurício dos Santos Nascimento",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -10655,8 +10655,8 @@
       "trophies": []
     },
     {
-      "id": "j-menez-35605",
-      "name": "J. Ménez",
+      "id": "jeremy-menez-35605",
+      "name": "Jérémy Ménez",
       "nationality": "France",
       "isGK": false,
       "career": [
@@ -10671,8 +10671,8 @@
       "trophies": []
     },
     {
-      "id": "r-alvarez-35842",
-      "name": "R. Álvarez",
+      "id": "ricardo-gabriel-alvarez-35842",
+      "name": "Ricardo Gabriel Álvarez",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -10687,8 +10687,8 @@
       "trophies": []
     },
     {
-      "id": "j-iturbe-35928",
-      "name": "J. Iturbe",
+      "id": "juan-manuel-iturbe-arevalo-35928",
+      "name": "Juan Manuel Iturbe Arévalo",
       "nationality": "Paraguay",
       "isGK": false,
       "career": [
@@ -10726,8 +10726,8 @@
       "trophies": []
     },
     {
-      "id": "r-kishna-37942",
-      "name": "R. Kishna",
+      "id": "ricardo-dennie-kishna-37942",
+      "name": "Ricardo Dennie Kishna",
       "nationality": "Netherlands",
       "isGK": false,
       "career": [
@@ -10742,8 +10742,8 @@
       "trophies": []
     },
     {
-      "id": "g-denis-39888",
-      "name": "G. Denis",
+      "id": "german-gustavo-denis-39888",
+      "name": "Germán Gustavo Denis",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -10758,8 +10758,8 @@
       "trophies": []
     },
     {
-      "id": "a-russo-43237",
-      "name": "A. Russo",
+      "id": "adriano-russo-43237",
+      "name": "Adriano Russo",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -10774,8 +10774,8 @@
       "trophies": []
     },
     {
-      "id": "s-gentiletti-46705",
-      "name": "S. Gentiletti",
+      "id": "santiago-juan-gentiletti-selak-46705",
+      "name": "Santiago Juan Gentiletti Selak",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -10797,8 +10797,8 @@
       "trophies": []
     },
     {
-      "id": "r-manaj-46725",
-      "name": "R. Manaj",
+      "id": "rey-aldo-manaj-46725",
+      "name": "Rey Aldo Manaj",
       "nationality": "Albania",
       "isGK": false,
       "career": [
@@ -10820,8 +10820,8 @@
       "trophies": []
     },
     {
-      "id": "i-cofie-46886",
-      "name": "I. Cofie",
+      "id": "isaac-cofie-46886",
+      "name": "Isaac Cofie",
       "nationality": "Ghana",
       "isGK": false,
       "career": [
@@ -10843,8 +10843,8 @@
       "trophies": []
     },
     {
-      "id": "u-ur-evic-46901",
-      "name": "U. Đurđević",
+      "id": "uros-ur-evic-46901",
+      "name": "Uroš Đurđević",
       "nationality": "Montenegro",
       "isGK": false,
       "career": [
@@ -10875,8 +10875,8 @@
       "trophies": []
     },
     {
-      "id": "david-lopez-47334",
-      "name": "David López",
+      "id": "david-lopez-silva-47334",
+      "name": "David López Silva",
       "nationality": "Spain",
       "isGK": false,
       "career": [
@@ -10891,8 +10891,8 @@
       "trophies": []
     },
     {
-      "id": "e-munoz-47406",
-      "name": "E. Muñoz",
+      "id": "ezequiel-matias-munoz-47406",
+      "name": "Ezequiel Matías Muñoz",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -10907,8 +10907,8 @@
       "trophies": []
     },
     {
-      "id": "w-hoedt-47430",
-      "name": "W. Hoedt",
+      "id": "wesley-theodorus-hoedt-47430",
+      "name": "Wesley Theodorus Hoedt",
       "nationality": "Netherlands",
       "isGK": false,
       "career": [
@@ -10923,8 +10923,8 @@
       "trophies": []
     },
     {
-      "id": "s-widmer-48378",
-      "name": "S. Widmer",
+      "id": "silvan-dominic-widmer-48378",
+      "name": "Silvan Dominic Widmer",
       "nationality": "Switzerland",
       "isGK": false,
       "career": [
@@ -10956,8 +10956,8 @@
       ]
     },
     {
-      "id": "z-kuzmanovic-48385",
-      "name": "Z. Kuzmanović",
+      "id": "zdravko-kuzmanovic-48385",
+      "name": "Zdravko Kuzmanović",
       "nationality": "Serbia",
       "isGK": false,
       "career": [
@@ -10972,8 +10972,8 @@
       "trophies": []
     },
     {
-      "id": "a-ajeti-48566",
-      "name": "A. Ajeti",
+      "id": "arlind-afrim-ajeti-48566",
+      "name": "Arlind Afrim Ajeti",
       "nationality": "Albania",
       "isGK": false,
       "career": [
@@ -11011,8 +11011,8 @@
       "trophies": []
     },
     {
-      "id": "o-onazi-49884",
-      "name": "O. Onazi",
+      "id": "ogenyi-eddy-onazi-49884",
+      "name": "Ogenyi Eddy Onazi",
       "nationality": "Nigeria",
       "isGK": false,
       "career": [
@@ -11027,8 +11027,8 @@
       "trophies": []
     },
     {
-      "id": "j-obi-49938",
-      "name": "J. Obi",
+      "id": "joel-chukwuma-obi-49938",
+      "name": "Joel Chukwuma Obi",
       "nationality": "Nigeria",
       "isGK": false,
       "career": [
@@ -11043,8 +11043,8 @@
       "trophies": []
     },
     {
-      "id": "s-perica-50075",
-      "name": "S. Perica",
+      "id": "stipe-perica-50075",
+      "name": "Stipe Perica",
       "nationality": "Croatia",
       "isGK": false,
       "career": [
@@ -11098,8 +11098,8 @@
       "trophies": []
     },
     {
-      "id": "s-taider-50795",
-      "name": "S. Taïder",
+      "id": "saphir-sliti-taider-50795",
+      "name": "Saphir Sliti Taïder",
       "nationality": "Algeria",
       "isGK": false,
       "career": [
@@ -11122,8 +11122,8 @@
       ]
     },
     {
-      "id": "m-moralez-50859",
-      "name": "M. Moralez",
+      "id": "maximiliano-nicolas-moralez-50859",
+      "name": "Maximiliano Nicolás Moralez",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -11138,8 +11138,8 @@
       "trophies": []
     },
     {
-      "id": "a-struna-51085",
-      "name": "A. Struna",
+      "id": "aljaz-struna-51085",
+      "name": "Aljaž Struna",
       "nationality": "Slovenia",
       "isGK": false,
       "career": [
@@ -11154,8 +11154,8 @@
       "trophies": []
     },
     {
-      "id": "ali-adnan-51277",
-      "name": "Ali Adnan",
+      "id": "ali-adnan-kadhim-al-tameemi-51277",
+      "name": "Ali Adnan Kadhim Al Tameemi",
       "nationality": "Iraq",
       "isGK": false,
       "career": [
@@ -11170,8 +11170,8 @@
       "trophies": []
     },
     {
-      "id": "d-ivan-56682",
-      "name": "D. Ivan",
+      "id": "david-ivan-56682",
+      "name": "Dávid Ivan",
       "nationality": "Slovakia",
       "isGK": false,
       "career": [
@@ -11209,8 +11209,8 @@
       "trophies": []
     },
     {
-      "id": "m-buchel-70351",
-      "name": "M. Büchel",
+      "id": "marcel-buchel-70351",
+      "name": "Marcel Büchel",
       "nationality": "Liechtenstein",
       "isGK": false,
       "career": [
@@ -11257,8 +11257,8 @@
       "trophies": []
     },
     {
-      "id": "g-vives-90370",
-      "name": "G. Vives",
+      "id": "giuseppe-vives-90370",
+      "name": "Giuseppe Vives",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -11273,8 +11273,8 @@
       "trophies": []
     },
     {
-      "id": "p-kone-91225",
-      "name": "P. Kone",
+      "id": "panagiotis-giorgios-kone-91225",
+      "name": "Panagiotis Giorgios Kone",
       "nationality": "Greece",
       "isGK": false,
       "career": [
@@ -11296,8 +11296,8 @@
       "trophies": []
     },
     {
-      "id": "n-burdisso-91308",
-      "name": "N. Burdisso",
+      "id": "nicolas-andres-burdisso-91308",
+      "name": "Nicolás Andrés Burdisso",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -11413,8 +11413,8 @@
       "trophies": []
     },
     {
-      "id": "p-cannavaro-91316",
-      "name": "P. Cannavaro",
+      "id": "paolo-cannavaro-91316",
+      "name": "Paolo Cannavaro",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -11490,8 +11490,8 @@
       "trophies": []
     },
     {
-      "id": "g-pinzi-91349",
-      "name": "G. Pinzi",
+      "id": "giampiero-pinzi-91349",
+      "name": "Giampiero Pinzi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -11561,8 +11561,8 @@
       "trophies": []
     },
     {
-      "id": "c-raimondi-91384",
-      "name": "C. Raimondi",
+      "id": "cristian-raimondi-91384",
+      "name": "Cristian Raimondi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -11625,8 +11625,8 @@
       "trophies": []
     },
     {
-      "id": "b-drame-91404",
-      "name": "B. Dramé",
+      "id": "boukary-drame-91404",
+      "name": "Boukary Dramé",
       "nationality": "Senegal",
       "isGK": false,
       "career": [
@@ -11707,8 +11707,8 @@
       ]
     },
     {
-      "id": "g-rossi-91429",
-      "name": "G. Rossi",
+      "id": "giuseppe-rossi-91429",
+      "name": "Giuseppe Rossi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -11723,8 +11723,8 @@
       "trophies": []
     },
     {
-      "id": "d-mesbah-91446",
-      "name": "D. Mesbah",
+      "id": "djamel-eddine-mesbah-91446",
+      "name": "Djamel Eddine Mesbah",
       "nationality": "Algeria",
       "isGK": false,
       "career": [
@@ -11792,8 +11792,8 @@
       "trophies": []
     },
     {
-      "id": "a-frara-91485",
-      "name": "A. Frara",
+      "id": "alessandro-frara-91485",
+      "name": "Alessandro Frara",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -11856,8 +11856,8 @@
       "trophies": []
     },
     {
-      "id": "m-iturra-95590",
-      "name": "M. Iturra",
+      "id": "manuel-rolando-iturra-urrutia-95590",
+      "name": "Manuel Rolando Iturra Urrutia",
       "nationality": "Chile",
       "isGK": false,
       "career": [
@@ -11873,7 +11873,7 @@
     },
     {
       "id": "seydou-keita-96798",
-      "name": "Seydou Keita",
+      "name": "Seydou Kéita",
       "nationality": "Mali",
       "isGK": false,
       "career": [
@@ -11888,8 +11888,8 @@
       "trophies": []
     },
     {
-      "id": "alex-113672",
-      "name": "Alex",
+      "id": "alex-rodrigo-dias-da-costa-113672",
+      "name": "Alex Rodrigo Dias da Costa",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -12000,8 +12000,8 @@
       "trophies": []
     },
     {
-      "id": "joao-mario-206",
-      "name": "João Mário",
+      "id": "joao-mario-naval-da-costa-eduardo-206",
+      "name": "João Mário Naval da Costa Eduardo",
       "nationality": "Portugal",
       "isGK": false,
       "career": [
@@ -12016,8 +12016,8 @@
       "trophies": []
     },
     {
-      "id": "dani-alves-256",
-      "name": "Dani Alves",
+      "id": "daniel-alves-da-silva-256",
+      "name": "Daniel Alves da Silva",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -12032,8 +12032,8 @@
       "trophies": []
     },
     {
-      "id": "a-milik-333",
-      "name": "A. Milik",
+      "id": "arkadiusz-krystian-milik-333",
+      "name": "Arkadiusz Krystian Milik",
       "nationality": "Poland",
       "isGK": false,
       "career": [
@@ -12048,8 +12048,8 @@
       "trophies": []
     },
     {
-      "id": "l-boye-608",
-      "name": "L. Boyé",
+      "id": "lucas-ariel-boye-608",
+      "name": "Lucas Ariel Boyé",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -12064,8 +12064,8 @@
       "trophies": []
     },
     {
-      "id": "f-fazio-768",
-      "name": "F. Fazio",
+      "id": "federico-julian-fazio-768",
+      "name": "Federico Julián Fazio",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -12080,8 +12080,8 @@
       "trophies": []
     },
     {
-      "id": "p-schick-794",
-      "name": "P. Schick",
+      "id": "patrik-schick-794",
+      "name": "Patrik Schick",
       "nationality": "Czechia",
       "isGK": false,
       "career": [
@@ -12096,8 +12096,8 @@
       "trophies": []
     },
     {
-      "id": "l-spinazzola-862",
-      "name": "L. Spinazzola",
+      "id": "leonardo-spinazzola-862",
+      "name": "Leonardo Spinazzola",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -12112,8 +12112,8 @@
       "trophies": []
     },
     {
-      "id": "b-petkovic-1331",
-      "name": "B. Petković",
+      "id": "bruno-petkovic-1331",
+      "name": "Bruno Petković",
       "nationality": "Croatia",
       "isGK": false,
       "career": [
@@ -12128,8 +12128,8 @@
       "trophies": []
     },
     {
-      "id": "s-kums-1425",
-      "name": "S. Kums",
+      "id": "sven-kums-1425",
+      "name": "Sven Kums",
       "nationality": "Belgium",
       "isGK": false,
       "career": [
@@ -12144,8 +12144,8 @@
       "trophies": []
     },
     {
-      "id": "l-torreira-1462",
-      "name": "L. Torreira",
+      "id": "lucas-sebastian-torreira-di-pascua-1462",
+      "name": "Lucas Sebastián Torreira di Pascua",
       "nationality": "Uruguay",
       "isGK": false,
       "career": [
@@ -12160,8 +12160,8 @@
       "trophies": []
     },
     {
-      "id": "m-caldara-1628",
-      "name": "M. Caldara",
+      "id": "mattia-caldara-1628",
+      "name": "Mattia Caldara",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -12176,8 +12176,8 @@
       "trophies": []
     },
     {
-      "id": "f-kessie-1642",
-      "name": "F. Kessié",
+      "id": "franck-yannick-kessie-1642",
+      "name": "Franck Yannick Kessié",
       "nationality": "Côte d'Ivoire",
       "isGK": false,
       "career": [
@@ -12192,8 +12192,8 @@
       "trophies": []
     },
     {
-      "id": "t-strakosha-1835",
-      "name": "T. Strakosha",
+      "id": "thomas-strakosha-1835",
+      "name": "Thomas Strakosha",
       "nationality": "Albania",
       "isGK": true,
       "career": [
@@ -12208,8 +12208,8 @@
       "trophies": []
     },
     {
-      "id": "wallace-1840",
-      "name": "Wallace",
+      "id": "wallace-fortuna-dos-santos-1840",
+      "name": "Wallace Fortuna dos Santos",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -12224,8 +12224,8 @@
       "trophies": []
     },
     {
-      "id": "j-lukaku-1843",
-      "name": "J. Lukaku",
+      "id": "jordan-zacharie-lukaku-menama-mokelenge-1843",
+      "name": "Jordan Zacharie Lukaku Menama Mokelenge",
       "nationality": "Belgium",
       "isGK": false,
       "career": [
@@ -12256,8 +12256,8 @@
       "trophies": []
     },
     {
-      "id": "l-ocampos-1911",
-      "name": "L. Ocampos",
+      "id": "lucas-ariel-ocampos-1911",
+      "name": "Lucas Ariel Ocampos",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -12279,8 +12279,8 @@
       "trophies": []
     },
     {
-      "id": "e-banega-2050",
-      "name": "É. Banega",
+      "id": "ever-maximiliano-david-banega-2050",
+      "name": "Éver Maximiliano David Banega",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -12295,8 +12295,8 @@
       "trophies": []
     },
     {
-      "id": "m-rog-2055",
-      "name": "M. Rog",
+      "id": "marko-rog-2055",
+      "name": "Marko Rog",
       "nationality": "Croatia",
       "isGK": false,
       "career": [
@@ -12311,8 +12311,8 @@
       "trophies": []
     },
     {
-      "id": "s-bastien-2109",
-      "name": "S. Bastien",
+      "id": "samuel-christopher-bastien-binda-2109",
+      "name": "Samuel Christopher Bastien Binda",
       "nationality": "Congo DR",
       "isGK": false,
       "career": [
@@ -12327,8 +12327,8 @@
       "trophies": []
     },
     {
-      "id": "r-de-paul-2472",
-      "name": "R. De Paul",
+      "id": "rodrigo-javier-de-paul-2472",
+      "name": "Rodrigo Javier De Paul",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -12343,8 +12343,8 @@
       "trophies": []
     },
     {
-      "id": "g-gomez-2502",
-      "name": "G. Gómez",
+      "id": "gustavo-raul-gomez-portillo-2502",
+      "name": "Gustavo Raúl Gómez Portillo",
       "nationality": "Paraguay",
       "isGK": false,
       "career": [
@@ -12359,8 +12359,8 @@
       "trophies": []
     },
     {
-      "id": "m-benatia-2708",
-      "name": "M. Benatia",
+      "id": "medhi-amine-el-mouttaqi-benatia-2708",
+      "name": "Medhi Amine El Mouttaqi Benatia",
       "nationality": "Morocco",
       "isGK": false,
       "career": [
@@ -12375,8 +12375,8 @@
       "trophies": []
     },
     {
-      "id": "m-pasalic-2763",
-      "name": "M. Pašalić",
+      "id": "mario-pasalic-2763",
+      "name": "Mario Pašalić",
       "nationality": "Croatia",
       "isGK": false,
       "career": [
@@ -12391,8 +12391,8 @@
       "trophies": []
     },
     {
-      "id": "s-lukic-2823",
-      "name": "S. Lukić",
+      "id": "sasa-lukic-2823",
+      "name": "Saša Lukić",
       "nationality": "Serbia",
       "isGK": false,
       "career": [
@@ -12407,8 +12407,8 @@
       "trophies": []
     },
     {
-      "id": "c-salcedo-2877",
-      "name": "C. Salcedo",
+      "id": "carlos-joel-salcedo-hernandez-2877",
+      "name": "Carlos Joel Salcedo Hernández",
       "nationality": "Mexico",
       "isGK": false,
       "career": [
@@ -12423,8 +12423,8 @@
       "trophies": []
     },
     {
-      "id": "d-praet-2925",
-      "name": "D. Praet",
+      "id": "dennis-pierre-jacques-albert-praet-2925",
+      "name": "Dennis Pierre Jacques Albert Praet",
       "nationality": "Belgium",
       "isGK": false,
       "career": [
@@ -12439,8 +12439,8 @@
       "trophies": []
     },
     {
-      "id": "b-bereszynski-3000",
-      "name": "B. Bereszyński",
+      "id": "bartosz-bereszynski-3000",
+      "name": "Bartosz Bereszyński",
       "nationality": "Poland",
       "isGK": false,
       "career": [
@@ -12455,8 +12455,8 @@
       "trophies": []
     },
     {
-      "id": "k-linetty-3009",
-      "name": "K. Linetty",
+      "id": "karol-linetty-3009",
+      "name": "Karol Linetty",
       "nationality": "Poland",
       "isGK": false,
       "career": [
@@ -12471,8 +12471,8 @@
       "trophies": []
     },
     {
-      "id": "carlos-embalo-3446",
-      "name": "Carlos Embaló",
+      "id": "carlos-apna-embalo-3446",
+      "name": "Carlos Apna Embaló",
       "nationality": "Guinea-Bissau",
       "isGK": false,
       "career": [
@@ -12487,8 +12487,8 @@
       "trophies": []
     },
     {
-      "id": "l-orban-5907",
-      "name": "L. Orbán",
+      "id": "lucas-alfonso-orban-alegre-5907",
+      "name": "Lucas Alfonso Orbán Alegre",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -12503,8 +12503,8 @@
       "trophies": []
     },
     {
-      "id": "g-angella-8552",
-      "name": "G. Angella",
+      "id": "gabriele-angella-8552",
+      "name": "Gabriele Angella",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -12519,8 +12519,8 @@
       "trophies": []
     },
     {
-      "id": "bruno-henrique-9921",
-      "name": "Bruno Henrique",
+      "id": "bruno-henrique-corsini-9921",
+      "name": "Bruno Henrique Corsini",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -12535,8 +12535,8 @@
       "trophies": []
     },
     {
-      "id": "m-acosty-14292",
-      "name": "M. Acosty",
+      "id": "boadu-maxwell-acosty-14292",
+      "name": "Boadu Maxwell Acosty",
       "nationality": "Ghana",
       "isGK": false,
       "career": [
@@ -12551,8 +12551,8 @@
       "trophies": []
     },
     {
-      "id": "deulofeu-18809",
-      "name": "Deulofeu",
+      "id": "gerard-deulofeu-lazaro-18809",
+      "name": "Gerard Deulofeu Lázaro",
       "nationality": "Spain",
       "isGK": false,
       "career": [
@@ -12567,8 +12567,8 @@
       "trophies": []
     },
     {
-      "id": "c-sanchez-18827",
-      "name": "C. Sánchez",
+      "id": "carlos-alberto-sanchez-moreno-18827",
+      "name": "Carlos Alberto Sánchez Moreno",
       "nationality": "Colombia",
       "isGK": false,
       "career": [
@@ -12583,8 +12583,8 @@
       "trophies": []
     },
     {
-      "id": "a-barreca-18890",
-      "name": "A. Barreca",
+      "id": "antonio-barreca-18890",
+      "name": "Antonio Barreca",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -12599,8 +12599,8 @@
       "trophies": []
     },
     {
-      "id": "j-hart-18908",
-      "name": "J. Hart",
+      "id": "charles-joseph-john-hart-18908",
+      "name": "Charles Joseph John Hart",
       "nationality": "England",
       "isGK": true,
       "career": [
@@ -12615,8 +12615,8 @@
       "trophies": []
     },
     {
-      "id": "r-sallai-26252",
-      "name": "R. Sallai",
+      "id": "roland-sallai-26252",
+      "name": "Roland Sallai",
       "nationality": "Hungary",
       "isGK": false,
       "career": [
@@ -12631,8 +12631,8 @@
       "trophies": []
     },
     {
-      "id": "f-ceccherini-30397",
-      "name": "F. Ceccherini",
+      "id": "federico-ceccherini-30397",
+      "name": "Federico Ceccherini",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -12647,8 +12647,8 @@
       "trophies": []
     },
     {
-      "id": "f-chiesa-30410",
-      "name": "F. Chiesa",
+      "id": "federico-chiesa-30410",
+      "name": "Federico Chiesa",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -12663,8 +12663,8 @@
       "trophies": []
     },
     {
-      "id": "m-pjaca-30413",
-      "name": "M. Pjaca",
+      "id": "marko-pjaca-30413",
+      "name": "Marko Pjaca",
       "nationality": "Croatia",
       "isGK": false,
       "career": [
@@ -12679,8 +12679,8 @@
       "trophies": []
     },
     {
-      "id": "g-simeone-30414",
-      "name": "G. Simeone",
+      "id": "giovanni-pablo-simeone-baldini-30414",
+      "name": "Giovanni Pablo Simeone Baldini",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -12695,8 +12695,8 @@
       "trophies": []
     },
     {
-      "id": "n-murru-30447",
-      "name": "N. Murru",
+      "id": "nicola-murru-30447",
+      "name": "Nicola Murru",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -12711,8 +12711,8 @@
       "trophies": []
     },
     {
-      "id": "j-jankto-30453",
-      "name": "J. Jankto",
+      "id": "jakub-jankto-30453",
+      "name": "Jakub Jankto",
       "nationality": "Czech Republic",
       "isGK": false,
       "career": [
@@ -12727,8 +12727,8 @@
       "trophies": []
     },
     {
-      "id": "g-caprari-30460",
-      "name": "G. Caprari",
+      "id": "gianluca-caprari-30460",
+      "name": "Gianluca Caprari",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -12743,8 +12743,8 @@
       "trophies": []
     },
     {
-      "id": "m-sau-30464",
-      "name": "M. Sau",
+      "id": "marco-sau-30464",
+      "name": "Marco Sau",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -12759,8 +12759,8 @@
       "trophies": []
     },
     {
-      "id": "ladislav-krejci-i-30480",
-      "name": "Ladislav Krejčí I",
+      "id": "ladislav-krejci-30480",
+      "name": "Ladislav Krejčí",
       "nationality": "Czechia",
       "isGK": false,
       "career": [
@@ -12775,8 +12775,8 @@
       "trophies": []
     },
     {
-      "id": "a-nagy-30481",
-      "name": "Á. Nagy",
+      "id": "adam-nagy-30481",
+      "name": "Ádám Nagy",
       "nationality": "Hungary",
       "isGK": false,
       "career": [
@@ -12791,8 +12791,8 @@
       "trophies": []
     },
     {
-      "id": "g-ferrari-30523",
-      "name": "G. Ferrari",
+      "id": "gian-marco-ferrari-30523",
+      "name": "Gian Marco Ferrari",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -12807,8 +12807,8 @@
       "trophies": []
     },
     {
-      "id": "pol-lirola-30525",
-      "name": "Pol Lirola",
+      "id": "pol-mikel-lirola-kosok-30525",
+      "name": "Pol Mikel Lirola Kosok",
       "nationality": "Spain",
       "isGK": false,
       "career": [
@@ -12823,8 +12823,8 @@
       "trophies": []
     },
     {
-      "id": "s-sensi-30535",
-      "name": "S. Sensi",
+      "id": "stefano-sensi-30535",
+      "name": "Stefano Sensi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -12839,8 +12839,8 @@
       "trophies": []
     },
     {
-      "id": "f-uricic-30536",
-      "name": "F. Đuričić",
+      "id": "filip-uricic-30536",
+      "name": "Filip Đuričić",
       "nationality": "Serbia",
       "isGK": false,
       "career": [
@@ -12855,8 +12855,8 @@
       "trophies": []
     },
     {
-      "id": "f-di-francesco-30539",
-      "name": "F. Di Francesco",
+      "id": "federico-di-francesco-30539",
+      "name": "Federico Di Francesco",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -12871,8 +12871,8 @@
       "trophies": []
     },
     {
-      "id": "l-ceppitelli-30549",
-      "name": "L. Ceppitelli",
+      "id": "luca-ceppitelli-30549",
+      "name": "Luca Ceppitelli",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -12887,8 +12887,8 @@
       "trophies": []
     },
     {
-      "id": "f-pisacane-30555",
-      "name": "F. Pisacane",
+      "id": "fabio-pisacane-30555",
+      "name": "Fabio Pisacane",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -12903,8 +12903,8 @@
       "trophies": []
     },
     {
-      "id": "n-barella-30558",
-      "name": "N. Barella",
+      "id": "nicolo-barella-30558",
+      "name": "Nicolò Barella",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -12919,8 +12919,8 @@
       "trophies": []
     },
     {
-      "id": "j-galvao-30562",
-      "name": "J. Galvão",
+      "id": "joao-pedro-geraldino-dos-santos-galvao-30562",
+      "name": "João Pedro Geraldino dos Santos Galvão",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -12935,8 +12935,8 @@
       "trophies": []
     },
     {
-      "id": "f-ricci-30638",
-      "name": "F. Ricci",
+      "id": "federico-ricci-30638",
+      "name": "Federico Ricci",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -12951,8 +12951,8 @@
       "trophies": []
     },
     {
-      "id": "l-mazzitelli-30780",
-      "name": "L. Mazzitelli",
+      "id": "luca-mazzitelli-30780",
+      "name": "Luca Mazzitelli",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -12967,8 +12967,8 @@
       "trophies": []
     },
     {
-      "id": "miguel-veloso-30781",
-      "name": "Miguel Veloso",
+      "id": "miguel-luis-pinto-veloso-30781",
+      "name": "Miguel Luís Pinto Veloso",
       "nationality": "Portugal",
       "isGK": false,
       "career": [
@@ -12983,8 +12983,8 @@
       "trophies": []
     },
     {
-      "id": "g-lapadula-30790",
-      "name": "G. Lapadula",
+      "id": "gianluca-lapadula-vargas-30790",
+      "name": "Gianluca Lapadula Vargas",
       "nationality": "Peru",
       "isGK": false,
       "career": [
@@ -12999,8 +12999,8 @@
       "trophies": []
     },
     {
-      "id": "s-fofana-30807",
-      "name": "S. Fofana",
+      "id": "seko-mohamed-fofana-30807",
+      "name": "Seko Mohamed Fofana",
       "nationality": "Côte d'Ivoire",
       "isGK": false,
       "career": [
@@ -13015,8 +13015,8 @@
       "trophies": []
     },
     {
-      "id": "a-petagna-30879",
-      "name": "A. Petagna",
+      "id": "andrea-petagna-30879",
+      "name": "Andrea Petagna",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13031,8 +13031,8 @@
       "trophies": []
     },
     {
-      "id": "a-crescenzi-30920",
-      "name": "A. Crescenzi",
+      "id": "alessandro-crescenzi-30920",
+      "name": "Alessandro Crescenzi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13047,8 +13047,8 @@
       "trophies": []
     },
     {
-      "id": "g-munari-30935",
-      "name": "G. Munari",
+      "id": "gianni-munari-30935",
+      "name": "Gianni Munari",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13063,8 +13063,8 @@
       "trophies": []
     },
     {
-      "id": "n-giannetti-30970",
-      "name": "N. Giannetti",
+      "id": "niccolo-giannetti-30970",
+      "name": "Niccolò Giannetti",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13079,8 +13079,8 @@
       "trophies": []
     },
     {
-      "id": "a-cordaz-30974",
-      "name": "A. Cordaz",
+      "id": "alex-cordaz-30974",
+      "name": "Alex Cordaz",
       "nationality": "Italy",
       "isGK": true,
       "career": [
@@ -13111,8 +13111,8 @@
       "trophies": []
     },
     {
-      "id": "m-sampirisi-30984",
-      "name": "M. Sampirisi",
+      "id": "mario-sampirisi-30984",
+      "name": "Mario Sampirisi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13127,8 +13127,8 @@
       "trophies": []
     },
     {
-      "id": "a-barberis-30989",
-      "name": "A. Barberis",
+      "id": "andrea-barberis-30989",
+      "name": "Andrea Barberis",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13143,8 +13143,8 @@
       "trophies": []
     },
     {
-      "id": "a-nalini-30995",
-      "name": "A. Nalini",
+      "id": "andrea-nalini-30995",
+      "name": "Andrea Nalini",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13159,8 +13159,8 @@
       "trophies": []
     },
     {
-      "id": "m-rohden-30996",
-      "name": "M. Rohdén",
+      "id": "marcus-christer-rohden-30996",
+      "name": "Marcus Christer Rohdén",
       "nationality": "Sweden",
       "isGK": false,
       "career": [
@@ -13175,8 +13175,8 @@
       "trophies": []
     },
     {
-      "id": "s-nwankwo-31003",
-      "name": "S. Nwankwo",
+      "id": "simeon-tochukwu-nwankwo-31003",
+      "name": "Simeon Tochukwu Nwankwo",
       "nationality": "Nigeria",
       "isGK": false,
       "career": [
@@ -13207,8 +13207,8 @@
       "trophies": []
     },
     {
-      "id": "f-veseli-31050",
-      "name": "F. Veseli",
+      "id": "frederic-veseli-31050",
+      "name": "Frédéric Veseli",
       "nationality": "Albania",
       "isGK": false,
       "career": [
@@ -13223,8 +13223,8 @@
       "trophies": []
     },
     {
-      "id": "l-capezzi-31053",
-      "name": "L. Capezzi",
+      "id": "leonardo-capezzi-31053",
+      "name": "Leonardo Capezzi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13239,8 +13239,8 @@
       "trophies": []
     },
     {
-      "id": "diego-farias-31061",
-      "name": "Diego Farias",
+      "id": "diego-da-silva-farias-31061",
+      "name": "Diego da Silva Farias",
       "nationality": "Brazil",
       "isGK": false,
       "career": [
@@ -13255,8 +13255,8 @@
       "trophies": []
     },
     {
-      "id": "m-capuano-31072",
-      "name": "M. Capuano",
+      "id": "marco-capuano-31072",
+      "name": "Marco Capuano",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13271,8 +13271,8 @@
       "trophies": []
     },
     {
-      "id": "b-salamon-31076",
-      "name": "B. Salamon",
+      "id": "bartosz-salamon-31076",
+      "name": "Bartosz Salamon",
       "nationality": "Poland",
       "isGK": false,
       "career": [
@@ -13287,8 +13287,8 @@
       "trophies": []
     },
     {
-      "id": "f-zampano-31079",
-      "name": "F. Zampano",
+      "id": "francesco-filippo-zampano-31079",
+      "name": "Francesco Filippo Zampano",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13303,8 +13303,8 @@
       "trophies": []
     },
     {
-      "id": "b-martella-31134",
-      "name": "B. Martella",
+      "id": "bruno-martella-31134",
+      "name": "Bruno Martella",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13319,8 +13319,8 @@
       "trophies": []
     },
     {
-      "id": "d-dessena-31141",
-      "name": "D. Dessena",
+      "id": "daniele-dessena-31141",
+      "name": "Daniele Dessena",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13335,8 +13335,8 @@
       "trophies": []
     },
     {
-      "id": "g-marilungo-31276",
-      "name": "G. Marilungo",
+      "id": "guido-marilungo-31276",
+      "name": "Guido Marilungo",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13351,8 +13351,8 @@
       "trophies": []
     },
     {
-      "id": "m-fornasier-31359",
-      "name": "M. Fornasier",
+      "id": "michele-fornasier-31359",
+      "name": "Michele Fornasier",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13367,8 +13367,8 @@
       "trophies": []
     },
     {
-      "id": "c-lombardi-31377",
-      "name": "C. Lombardi",
+      "id": "cristiano-lombardi-31377",
+      "name": "Cristiano Lombardi",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13383,8 +13383,8 @@
       "trophies": []
     },
     {
-      "id": "v-verre-31403",
-      "name": "V. Verre",
+      "id": "valerio-verre-31403",
+      "name": "Valerio Verre",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13399,8 +13399,8 @@
       "trophies": []
     },
     {
-      "id": "f-melchiorri-31405",
-      "name": "F. Melchiorri",
+      "id": "federico-melchiorri-31405",
+      "name": "Federico Melchiorri",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13415,8 +13415,8 @@
       "trophies": []
     },
     {
-      "id": "r-palladino-31469",
-      "name": "R. Palladino",
+      "id": "raffaele-palladino-31469",
+      "name": "Raffaele Palladino",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13438,8 +13438,8 @@
       "trophies": []
     },
     {
-      "id": "h-campagnaro-31478",
-      "name": "H. Campagnaro",
+      "id": "hugo-armando-campagnaro-31478",
+      "name": "Hugo Armando Campagnaro",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -13486,8 +13486,8 @@
       "trophies": []
     },
     {
-      "id": "h-aleesami-31541",
-      "name": "H. Aleesami",
+      "id": "haitam-aleesami-31541",
+      "name": "Haitam Aleesami",
       "nationality": "Norway",
       "isGK": false,
       "career": [
@@ -13502,8 +13502,8 @@
       "trophies": []
     },
     {
-      "id": "g-bellusci-31542",
-      "name": "G. Bellusci",
+      "id": "giuseppe-bellusci-31542",
+      "name": "Giuseppe Bellusci",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13534,8 +13534,8 @@
       "trophies": []
     },
     {
-      "id": "i-nestorovski-31561",
-      "name": "I. Nestorovski",
+      "id": "ilija-nestorovski-31561",
+      "name": "Ilija Nestorovski",
       "nationality": "North Macedonia",
       "isGK": false,
       "career": [
@@ -13566,8 +13566,8 @@
       "trophies": []
     },
     {
-      "id": "p-iemmello-31660",
-      "name": "P. Iemmello",
+      "id": "pietro-iemmello-31660",
+      "name": "Pietro Iemmello",
       "nationality": "Italy",
       "isGK": false,
       "career": [
@@ -13598,8 +13598,8 @@
       "trophies": []
     },
     {
-      "id": "l-vangioni-35543",
-      "name": "L. Vangioni",
+      "id": "leonel-jesus-vangioni-35543",
+      "name": "Leonel Jesús Vangioni",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -13646,8 +13646,8 @@
       "trophies": []
     },
     {
-      "id": "a-budimir-46746",
-      "name": "A. Budimir",
+      "id": "ante-budimir-46746",
+      "name": "Ante Budimir",
       "nationality": "Croatia",
       "isGK": false,
       "career": [
@@ -13662,8 +13662,8 @@
       "trophies": []
     },
     {
-      "id": "s-cristoforo-47260",
-      "name": "S. Cristóforo",
+      "id": "sebastian-carlos-cristoforo-pepe-47260",
+      "name": "Sebastián Carlos Cristóforo Pepe",
       "nationality": "Uruguay",
       "isGK": false,
       "career": [
@@ -13678,8 +13678,8 @@
       "trophies": []
     },
     {
-      "id": "j-sosa-49887",
-      "name": "J. Sosa",
+      "id": "jose-ernesto-sosa-49887",
+      "name": "José Ernesto Sosa",
       "nationality": "Argentina",
       "isGK": false,
       "career": [
@@ -13694,8 +13694,8 @@
       "trophies": []
     },
     {
-      "id": "m-thiam-50464",
-      "name": "M. Thiam",
+      "id": "mame-baba-thiam-50464",
+      "name": "Mame Baba Thiam",
       "nationality": "Senegal",
       "isGK": false,
       "career": [
@@ -13710,8 +13710,8 @@
       "trophies": []
     },
     {
-      "id": "a-mitrita-50867",
-      "name": "A. Mitriță",
+      "id": "alexandru-ionut-mitrita-50867",
+      "name": "Alexandru Ionuț Mitriță",
       "nationality": "Romania",
       "isGK": false,
       "career": [
@@ -13726,8 +13726,8 @@
       "trophies": []
     },
     {
-      "id": "m-olivera-70757",
-      "name": "M. Olivera",
+      "id": "maximiliano-martin-olivera-de-andrea-70757",
+      "name": "Maximiliano Martín Olivera de Andrea",
       "nationality": "Uruguay",
       "isGK": false,
       "career": [
@@ -13742,8 +13742,8 @@
       "trophies": []
     },
     {
-      "id": "a-ragusa-91301",
-      "name": "A. Ragusa",
+      "id": "antonino-ragusa-91301",
+      "name": "Antonino Ragusa",
       "nationality": "Italy",
       "isGK": false,
       "career": [
