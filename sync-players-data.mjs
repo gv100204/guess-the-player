@@ -127,7 +127,7 @@ function sleep(ms) {
  * Ritorna la risposta COMPLETA (response + paging), non solo i dati, perché
  * lo sweep dei campionati ha bisogno dell'informazione di paginazione.
  */
-async function apiGetFull(path, params) {
+async function apiGetFull(path, params, budget) {
   const API_KEY = process.env.API_FOOTBALL_KEY;
   if (!API_KEY) {
     throw new Error("Variabile d'ambiente API_FOOTBALL_KEY non impostata.");
@@ -140,14 +140,31 @@ async function apiGetFull(path, params) {
   }
   const json = await res.json();
   if (json.errors && Object.keys(json.errors).length > 0) {
-    throw new Error(`API-Football ha risposto con errori: ${JSON.stringify(json.errors)}`);
+    const message = JSON.stringify(json.errors);
+    // La quota giornaliera esaurita è un caso a parte da qualunque altro
+    // errore: UNA VOLTA che succede, OGNI chiamata successiva fallirà
+    // identica - continuare a riprovare stagione per stagione, giocatore per
+    // giocatore, sprecherebbe ore (bug reale: un run è arrivato a 2h15m
+    // stampando solo questo errore, migliaia di volte, e nel frattempo
+    // segnava giocatori come "completati" senza aver recuperato nulla).
+    // Appena la vediamo, azzeriamo il budget condiviso: ogni ciclo del
+    // programma controlla già "budget.remaining <= 0" all'inizio di ogni
+    // giro, quindi si ferma al prossimo controllo, non dopo ore.
+    const isQuotaExceeded = /request limit for the day/i.test(message);
+    const err = new Error(`API-Football ha risposto con errori: ${message}`);
+    err.isQuotaExceeded = isQuotaExceeded;
+    if (isQuotaExceeded && budget) {
+      budget.remaining = 0;
+      budget.quotaExceeded = true;
+    }
+    throw err;
   }
   await sleep(Number(process.env.SYNC_RATE_LIMIT_DELAY_MS ?? 1200));
   return json;
 }
 
-async function apiGet(path, params) {
-  const json = await apiGetFull(path, params);
+async function apiGet(path, params, budget) {
+  const json = await apiGetFull(path, params, budget);
   return json.response;
 }
 
@@ -161,7 +178,7 @@ async function resolveLeagueApiIds(budget, leagueIds) {
     if (league.numericId) continue;
     if (budget.remaining <= 0) return;
     try {
-      const results = await apiGet("/leagues", { name: league.apiName, country: league.country });
+      const results = await apiGet("/leagues", { name: league.apiName, country: league.country }, budget);
       budget.remaining--;
       if (!results || results.length === 0) {
         console.warn(`  ! Campionato non trovato: "${league.apiName}" (${league.country}) - verrà saltato`);
@@ -172,6 +189,7 @@ async function resolveLeagueApiIds(budget, leagueIds) {
       console.log(`  -> ${league.apiName} (${league.country}) = id campionato ${league.numericId}`);
     } catch (err) {
       console.warn(`  ! Errore risolvendo "${league.apiName}" (${league.country}): ${err.message}`);
+      if (err.isQuotaExceeded) return; // quota esaurita: inutile provare gli altri campionati
     }
   }
 }
@@ -331,7 +349,7 @@ async function sweepLeagueSeason(league, season, playersMap, budget) {
 
     let json;
     try {
-      json = await apiGetFull("/players", { league: league.numericId, season, page });
+      json = await apiGetFull("/players", { league: league.numericId, season, page }, budget);
     } catch (err) {
       const rangeMatch = err.message.match(/try from (\d+) to (\d+)/);
       if (rangeMatch) {
@@ -340,6 +358,7 @@ async function sweepLeagueSeason(league, season, playersMap, budget) {
         return { completed: true, reason: "planRange" };
       }
       console.warn(`  Errore su ${league.id} ${season} pagina ${page}: ${err.message}`);
+      if (err.isQuotaExceeded) return { completed: false, reason: "budget" }; // quota esaurita: come budget a zero, ferma tutto
       // Un errore isolato (rete, risposta imprevista...) NON deve fermare il
       // resto del run: si salta questa combinazione (riproverà un run futuro,
       // dato che non viene segnata come completata) e si continua con le altre.
@@ -417,11 +436,12 @@ async function fetchFullCareer(playerId, birthYear, budget) {
 
     let json;
     try {
-      json = await apiGetFull("/players", { id: playerId, season });
+      json = await apiGetFull("/players", { id: playerId, season }, budget);
     } catch (err) {
       const rangeMatch = err.message.match(/try from (\d+) to (\d+)/);
       if (rangeMatch) continue; // stagione fuori dal range permesso dal piano: salta, non è un errore vero
       console.warn(`    carriera completa id ${playerId} stagione ${season}: errore (${err.message})`);
+      if (err.isQuotaExceeded) return { completed: false, records }; // quota esaurita: fermarsi QUI, non su tutte le stagioni rimaste
       continue;
     }
     budget.remaining--;
@@ -463,10 +483,11 @@ async function fetchFullCareer(playerId, birthYear, budget) {
   return { completed: true, records };
 }
 
-async function fetchTrophies(playerId) {
+async function fetchTrophies(playerId, budget) {
   let raw;
   try {
-    raw = await apiGet("/trophies", { player: playerId });
+    raw = await apiGet("/trophies", { player: playerId }, budget);
+    if (budget) budget.remaining--; // mancava: il conteggio "chiamate usate" era sottostimato
   } catch (err) {
     console.warn(`    trofei per id ${playerId}: errore (${err.message})`);
     return [];
@@ -692,7 +713,7 @@ async function main() {
     if (budget.remaining <= 0) { stoppedForBudget = true; break; }
     if (rec.trophiesFetched) continue;
     if (totalApps(rec) < MIN_APPS_FOR_TROPHIES) continue;
-    rec.trophies = await fetchTrophies(rec.id);
+    rec.trophies = await fetchTrophies(rec.id, budget);
     rec.trophiesFetched = true;
   }
 
