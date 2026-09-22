@@ -395,12 +395,22 @@ async function sweepLeagueSeason(league, season, playersMap, budget) {
 
 const NON_LEAGUE_KEYWORDS = [
   "cup", "copa", "coppa", "champions league", "europa league", "conference league",
-  "friendl", "world cup", "euro championship", "euro -", "qualif", "super cup",
+  "friendl", "world cup", "euro championship", "european championship", "euro -", "qualif", "super cup",
   "shield", "trophy", "community", "confederations", "nations league",
-  "intercontinental", "club world cup", "youth league", "playoff", "play-off", "play off"
+  "intercontinental", "club world cup", "youth league", "playoff", "play-off", "play off",
+  "africa cup", "copa américa", "copa america", "asian cup", "gold cup", "olympic"
 ];
-function isLikelyDomesticLeague(name){
+// Le nazionali (comprese quelle giovanili: U17, U19, U21...) hanno come
+// "squadra" il nome del paese seguito dalla categoria d'età - non un vero
+// club - quindi non sono riconoscibili dal solo nome del campionato (es.
+// "UEFA U17 Championship" non somiglia a nessuna delle parole scartate sopra).
+// Bug reale: senza questo controllo, le presenze in under-17/19/21 finivano
+// mescolate nella carriera come se fossero un club vero.
+const YOUTH_OR_NATIONAL_TEAM_PATTERN = /\bu-?(1[5-9]|2[0-3])\b/i;
+
+function isLikelyDomesticLeague(name, teamName){
   if (!name) return false;
+  if (teamName && YOUTH_OR_NATIONAL_TEAM_PATTERN.test(teamName)) return false;
   const lower = name.toLowerCase();
   return !NON_LEAGUE_KEYWORDS.some((kw) => lower.includes(kw));
 }
@@ -451,7 +461,7 @@ async function fetchFullCareer(playerId, birthYear, budget) {
     statsList.forEach((s) => {
       const apps = s.games?.appearences || 0;
       if (apps === 0) return;
-      if (!isLikelyDomesticLeague(s.league?.name)) return; // coppe, nazionale, amichevoli: fuori anche qui
+      if (!isLikelyDomesticLeague(s.league?.name, s.team?.name)) return; // coppe, nazionale (anche giovanile), amichevoli: fuori anche qui
       seasonHadApps = true;
 
       const isGK = s.games?.position === GK_POSITION;

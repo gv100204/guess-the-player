@@ -380,8 +380,36 @@ async function main() {
     assert.equal(isLikelyDomesticLeague("Süper Lig"), true);
     assert.equal(isLikelyDomesticLeague("Serie A"), true);
   });
+  await test("scarta le nazionali (anche giovanili) in base al nome della squadra, non del campionato (bug reale segnalato dall'utente: 'UEFA U17 Championship' passava perché non somiglia a nessuna coppa)", () => {
+    assert.equal(isLikelyDomesticLeague("UEFA U17 Championship", "Slovenia U17"), false);
+    assert.equal(isLikelyDomesticLeague("UEFA U19 Championship", "Slovenia U19"), false);
+    assert.equal(isLikelyDomesticLeague("UEFA U21 Championship", "Slovenia U21"), false);
+    assert.equal(isLikelyDomesticLeague("1. SNL", "Maribor"), true, "un vero club non deve essere scartato per errore");
+  });
+  await test("riconosce anche i nomi per esteso delle nazionali maggiori che le sole parole chiave non coprivano ('European Championship', non 'Euro Championship')", () => {
+    assert.equal(isLikelyDomesticLeague("UEFA European Championship"), false);
+  });
 
   console.log("\nfetchFullCareer() - recupero della carriera completa, fuori dai campionati tracciati");
+  await test("scarta le presenze in nazionale giovanile anche dentro il recupero completo (bug reale: comparivano mescolate nella carriera come se fossero un club)", async () => {
+    global.fetch = async (url) => {
+      const season = Number(new URL(url).searchParams.get("season"));
+      if (season === 2011) {
+        return jsonResponse([{
+          player: { id: 35, name: "Test Player" },
+          statistics: [
+            { team: { name: "Maribor" }, league: { name: "1. SNL", country: "Slovenia" }, games: { appearences: 1, position: "Attacker" }, goals: { total: 0 } },
+            { team: { name: "Slovenia U17" }, league: { name: "UEFA U17 Championship", country: "World" }, games: { appearences: 3, position: "Attacker" }, goals: { total: 0 } }
+          ]
+        }]);
+      }
+      return jsonResponse([]);
+    };
+    const budget = { remaining: 100 };
+    const result = await fetchFullCareer(35, 1994, budget);
+    assert.equal(result.records.length, 1, "solo il club vero deve comparire, non la nazionale U17");
+    assert.equal(result.records[0].club, "Maribor");
+  });
   await test("cattura anche un campionato estero non tracciato, con nome grezzo e paese (non lo scarta come farebbe la spazzolata normale)", async () => {
     global.fetch = async (url) => {
       const season = Number(new URL(url).searchParams.get("season"));
@@ -393,6 +421,7 @@ async function main() {
       }
       return jsonResponse([]);
     };
+
     const budget = { remaining: 100 };
     const result = await fetchFullCareer(30, 1990, budget); // birthYear 1990 -> parte dal 2005, arriva a copertura ampia
     assert.equal(result.completed, true);
