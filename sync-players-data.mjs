@@ -605,6 +605,7 @@ function buildFinalDataset(playersMap) {
       nationality: rec.nationality,
       isGK: rec.isGK,
       career: finalizeCareer(rec),
+      careerComplete: !!rec.careerBackfilled, // false = carriera solo dai campionati tracciati, non ancora arricchita per intero
       trophies: rec.trophies || []
     });
   });
