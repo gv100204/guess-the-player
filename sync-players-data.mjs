@@ -61,7 +61,7 @@ const SEASON_RANGE = { from: 1995, to: 2025 };
 // Quante chiamate usare al massimo IN QUESTO run, prima di fermarsi e salvare
 // il progresso. Tienilo un po' sotto la quota giornaliera reale del tuo
 // piano, per lasciare margine ad altre chiamate (es. test o debug manuale).
-const MAX_CALLS_PER_RUN = Number(process.env.MAX_CALLS_PER_RUN ?? 7000);
+const MAX_CALLS_PER_RUN = Number(process.env.MAX_CALLS_PER_RUN ?? 7300);
 
 // Sotto questa soglia di presenze totali in carriera, un giocatore non vale
 // una chiamata dedicata ai trofei (probabilmente non ne ha comunque).
@@ -69,7 +69,7 @@ const MIN_APPS_FOR_TROPHIES = 50;
 
 // Sotto questa soglia di presenze totali in carriera, un giocatore non entra
 // nel dataset finale del gioco (troppo marginale per essere un indizio utile).
-const MIN_APPS_TO_INCLUDE = 10;
+const MIN_APPS_TO_INCLUDE = 20;
 
 // I campionati da spazzolare. apiName + country servono a trovare l'ID
 // numerico vero del campionato (lo scopriamo dall'API, non lo indoviniamo -
@@ -418,7 +418,11 @@ function isLikelyDomesticLeague(name, teamName){
 // Se non conosciamo l'anno di nascita del giocatore, da che anno iniziamo a
 // cercare: un limite ragionevole per non sprecare chiamate su decenni in cui
 // quasi certamente non giocava ancora.
-const BACKFILL_FALLBACK_FROM_YEAR = 1990;
+// 2001: confermato sui dati reali che prima di questo anno il piano API non
+// restituisce quasi mai nulla di utile (20 righe su oltre 61.000 in tutto
+// l'archivio, in 3 stagioni). Risparmia chiamate quasi sempre a vuoto sui
+// giocatori più anziani, senza perdere dati che comunque non arriverebbero.
+const BACKFILL_FALLBACK_FROM_YEAR = 2001;
 
 // Nel recupero della carriera completa: dopo aver trovato dati reali, quante
 // stagioni consecutive vuote bastano per concludere che il giocatore si è
