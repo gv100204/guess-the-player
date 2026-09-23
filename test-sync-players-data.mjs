@@ -165,6 +165,27 @@ async function main() {
     assert.notEqual(career[0].years, "2015–2018", "non deve fondere le due tappe al Bologna in un unico intervallo che nasconde il prestito");
   });
 
+  await test("stesso club ma competizione tracciata diversa (es. retrocessione in Serie B, non tracciata, poi promozione) SI fonde in un'unica tappa - a differenza del prestito, qui il club 'di mezzo' è sempre lo stesso, quindi non c'è nulla da nascondere", () => {
+    const players = newPlayersMap();
+    const bolognaSerieA = (apps, goals) => ({
+      player: { id: 21, name: "Test Player Retrocesso" },
+      statistics: [{ team: { name: "Bologna" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: apps, position: "Attacker" }, goals: { total: goals } }]
+    });
+    mergePlayerEntry(players, bolognaSerieA(30, 3), 2015);
+    // la stagione in Serie B non passa dallo sweep (non è un campionato
+    // tracciato): simuliamo l'arrivo di quella riga come farebbe il
+    // recupero completo, con league=null e leagueRaw valorizzato.
+    const rec = players.get(21);
+    rec.seasonRecords.push({ season: 2016, club: "Bologna", league: null, leagueRaw: "Serie B", country: "Italy", apps: 15, goals: 5 });
+    mergePlayerEntry(players, bolognaSerieA(28, 4), 2017);
+
+    const career = finalizeCareer(players.get(21));
+    assert.equal(career.length, 1, "deve risultare UNA sola tappa: è sempre stato al Bologna, cambia solo il livello");
+    assert.equal(career[0].years, "2015–2018");
+    assert.equal(career[0].apps, 30 + 15 + 28, "le presenze si sommano comunque, a prescindere dal livello");
+    assert.equal(career[0].league, "seriea", "mostra il campionato della stagione con più presenze (2015, 30 presenze in Serie A batte le 15 della Serie B in mezzo)");
+  });
+
   await test("nessuna interruzione reale: stagioni consecutive nello stesso club restano un'unica tappa con l'intervallo giusto", () => {
     const players = newPlayersMap();
     const entryFor = (apps, goals) => ({
@@ -374,6 +395,8 @@ async function main() {
     assert.equal(isLikelyDomesticLeague("World Cup"), false);
     assert.equal(isLikelyDomesticLeague("Friendlies"), false);
     assert.equal(isLikelyDomesticLeague(null), false);
+    assert.equal(isLikelyDomesticLeague("Coupe de France"), false, "bug reale segnalato dall'utente: lo spelling francese di 'coppa' non era mai stato escluso, passava sempre");
+    assert.equal(isLikelyDomesticLeague("Coupe de la Ligue"), false, "stesso bug, altra coppa francese");
   });
   await test("riconosce nomi di campionati veri come da includere", () => {
     assert.equal(isLikelyDomesticLeague("Primera División"), true);
@@ -391,7 +414,7 @@ async function main() {
     assert.equal(isLikelyDomesticLeague("Some Obscure Invitational Tournament", "Brazil"), false, "nessuna parola chiave lo coprirebbe: deve scattare dal nome squadra");
     assert.equal(isLikelyDomesticLeague("Serie A", "Independiente"), true, "un vero club non deve essere scartato");
     assert.equal(isLikelyDomesticLeague("Serie A", "America de Cali"), true, "un club che CONTIENE il nome di un paese ma non coincide con esso non va scartato: usiamo corrispondenza esatta, non una sottostringa");
-    assert.equal(isLikelyDomesticLeague("Coupe de France", "Monaco"), true, "bug reale trovato testando clean-raw-data.mjs: il Monaco è sia un paese sia un club vero (AS Monaco, Ligue 1) - non è nemmeno membro FIFA, quindi non c'è nessuna vera nazionale del Monaco da perdere escludendolo dall'elenco");
+    assert.equal(isLikelyDomesticLeague("Ligue 1", "Monaco"), true, "bug reale trovato testando clean-raw-data.mjs: il Monaco è sia un paese sia un club vero (AS Monaco, Ligue 1) - non è nemmeno membro FIFA, quindi non c'è nessuna vera nazionale del Monaco da perdere escludendolo dall'elenco");
   });
   await test("scarta le competizioni trovate scandagliando i dati reali con audit-raw-data.mjs (non ipotizzate a tavolino)", () => {
     assert.equal(isLikelyDomesticLeague("Campionato Primavera - 1"), false, "squadre giovanili di club: l'utente ha chiesto di escluderle, solo prima squadra");

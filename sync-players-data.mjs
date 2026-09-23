@@ -307,17 +307,33 @@ function finalizeCareer(rec) {
 
   records.forEach((r) => {
     const last = stints[stints.length - 1];
-    const sameComp = last && last.league === r.league && last.leagueRaw === r.leagueRaw && last.country === r.country;
-    const isContinuation = last && last.club === r.club && sameComp && r.season === last.maxYear + 1;
+    // Basta che sia lo STESSO CLUB in stagioni consecutive per continuare la
+    // stessa tappa, anche se il campionato/competizione tracciata cambia
+    // (es. retrocessione e poi promozione: Bologna in Serie A, poi Bologna
+    // in Serie B - non tracciata di suo - poi di nuovo Bologna in Serie A:
+    // è comunque un'unica permanenza al Bologna, non tre). Un prestito vero
+    // resta separato lo stesso, perché il club "di mezzo" è diverso
+    // (Atalanta, non Bologna) e quindi rompe comunque la continuità.
+    const isContinuation = last && last.club === r.club && r.season === last.maxYear + 1;
     if (isContinuation) {
       last.maxYear = r.season;
       last.apps += r.apps;
       last.goals += r.goals;
+      // Per mostrare un solo campionato/livello nella tappa fusa, teniamo
+      // quello della stagione con più presenze - il più rappresentativo
+      // del tempo passato lì, non necessariamente l'ultimo o il primo.
+      if (r.apps > last.repApps) {
+        last.repApps = r.apps;
+        last.league = r.league;
+        last.leagueRaw = r.leagueRaw;
+        last.country = r.country;
+      }
     } else {
-      // Squadra diversa, campionato diverso, O la stessa squadra ma con
-      // un'interruzione nel mezzo (es. un prestito e poi il ritorno): in
-      // ogni caso si apre una NUOVA tappa, non si allunga quella precedente.
-      stints.push({ club: r.club, league: r.league, leagueRaw: r.leagueRaw, country: r.country, minYear: r.season, maxYear: r.season, apps: r.apps, goals: r.goals });
+      // Squadra diversa, O la stessa squadra ma con un'interruzione nel
+      // mezzo (es. un prestito e poi il ritorno, con un ALTRO club in
+      // mezzo): in ogni caso si apre una NUOVA tappa, non si allunga
+      // quella precedente.
+      stints.push({ club: r.club, league: r.league, leagueRaw: r.leagueRaw, country: r.country, minYear: r.season, maxYear: r.season, apps: r.apps, goals: r.goals, repApps: r.apps });
     }
   });
 
@@ -394,7 +410,7 @@ async function sweepLeagueSeason(league, season, playersMap, budget) {
 // ---------------------------------------------------------------------------
 
 const NON_LEAGUE_KEYWORDS = [
-  "cup", "copa", "coppa", "champions league", "europa league", "conference league",
+  "cup", "copa", "coppa", "coupe", "champions league", "europa league", "conference league",
   "friendl", "world cup", "euro championship", "european championship", "euro -", "qualif", "super cup",
   "shield", "trophy", "community", "confederations", "nations league",
   "intercontinental", "club world cup", "youth league", "playoff", "play-off", "play off",
