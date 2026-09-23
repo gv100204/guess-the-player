@@ -124,7 +124,7 @@ async function main() {
 
   const dir = path.dirname(inputPath);
   const outPath = path.join(dir, "raw-players.cleaned.json");
-  await fs.writeFile(outPath, JSON.stringify(raw), "utf-8");
+  await fs.writeFile(outPath, JSON.stringify(raw, null, 2), "utf-8");
   console.log();
   console.log(`Scritto: ${outPath}`);
   console.log("L'originale NON è stato toccato. Controlla il nuovo file, poi se va bene");
