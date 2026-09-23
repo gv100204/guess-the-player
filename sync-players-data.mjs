@@ -41,6 +41,7 @@
 
 import fs from "node:fs/promises";
 import { fileURLToPath } from "node:url";
+import { execSync } from "node:child_process";
 
 // ---------------------------------------------------------------------------
 // Configurazione
@@ -61,7 +62,15 @@ const SEASON_RANGE = { from: 1995, to: 2025 };
 // Quante chiamate usare al massimo IN QUESTO run, prima di fermarsi e salvare
 // il progresso. Tienilo un po' sotto la quota giornaliera reale del tuo
 // piano, per lasciare margine ad altre chiamate (es. test o debug manuale).
-const MAX_CALLS_PER_RUN = Number(process.env.MAX_CALLS_PER_RUN ?? 74000);
+// ATTENZIONE: GitHub Actions termina forzatamente ogni job dopo 6 ore, SENZA
+// salvare nulla (raw-players.json viene scritto una sola volta a fine run).
+// Con la pausa di sicurezza di 1200ms tra chiamate, 16000 chiamate richiedono
+// circa 5h20m - abbastanza margine per restare sotto le 6 ore anche con
+// piani che permettono più chiamate al giorno (Ultra, Mega...). NON alzare
+// oltre questo valore senza anche salvare il progresso più spesso durante
+// il run, altrimenti un run troppo lungo rischia di perdere TUTTO il lavoro
+// fatto, non solo quello dell'ultima parte.
+const MAX_CALLS_PER_RUN = Number(process.env.MAX_CALLS_PER_RUN ?? 16000);
 
 // Sotto questa soglia di presenze totali in carriera, un giocatore non vale
 // una chiamata dedicata ai trofei (probabilmente non ne ha comunque).
@@ -717,11 +726,74 @@ async function writeOutputFiles(players) {
 }
 
 // ---------------------------------------------------------------------------
+// Checkpoint periodico: GitHub Actions termina forzatamente ogni job dopo 6
+// ore, SENZA salvare nulla di quello che stava facendo. Salvare solo alla
+// fine del run (come si faceva prima) significa rischiare di perdere ORE di
+// lavoro vero se il run dura più del previsto. Qui invece salviamo su disco
+// E pubblichiamo su Git ogni tot chiamate, non solo all'ultimo momento: se
+// il job viene ucciso, si perde solo il lavoro dall'ultimo checkpoint in
+// poi, non l'intero run.
+// ---------------------------------------------------------------------------
+const CHECKPOINT_INTERVAL_CALLS = 2000; // ogni ~40 minuti circa, con la pausa di sicurezza attuale
+
+function runGit(cmd) {
+  execSync(cmd, { stdio: "pipe" });
+}
+
+async function checkpointSave(playersMap, progress, label) {
+  await saveRawPlayers(playersMap);
+  await saveProgress(progress);
+  try {
+    runGit(`git config user.name "sync-bot"`);
+    runGit(`git config user.email "sync-bot@users.noreply.github.com"`);
+    runGit(`git add raw-players.json sync-progress.json`);
+
+    let hasChanges = true;
+    try {
+      runGit(`git diff --staged --quiet`); // esce con codice 0 se NON ci sono differenze
+      hasChanges = false;
+    } catch {
+      hasChanges = true; // esce con codice diverso da 0 se CI SONO differenze: caso normale
+    }
+    if (!hasChanges) return;
+
+    runGit(`git commit -m "chore: salvataggio intermedio (${label}) [skip ci]"`);
+
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      try {
+        runGit(`git fetch origin main`);
+        runGit(`git rebase origin/main`);
+        runGit(`git push`);
+        console.log(`  [checkpoint] progresso salvato e pubblicato (${label}).`);
+        return;
+      } catch (err) {
+        try { runGit(`git rebase --abort`); } catch {}
+        if (attempt === 3) throw err;
+        await sleep(5000);
+      }
+    }
+  } catch (err) {
+    // Un checkpoint fallito non deve far cadere tutto il run: si continua
+    // a lavorare, si riprova al prossimo checkpoint. Nel peggiore dei casi
+    // si torna al comportamento di prima (salvataggio solo a fine run).
+    console.log(`  [checkpoint] salvataggio intermedio non riuscito, proseguo comunque: ${err.message}`);
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
 
 async function main() {
   const budget = { remaining: MAX_CALLS_PER_RUN };
+  let callsAtLastCheckpoint = MAX_CALLS_PER_RUN;
+  async function maybeCheckpoint(playersMap, progress, label) {
+    const usedSinceLast = callsAtLastCheckpoint - budget.remaining;
+    if (usedSinceLast >= CHECKPOINT_INTERVAL_CALLS) {
+      await checkpointSave(playersMap, progress, label);
+      callsAtLastCheckpoint = budget.remaining;
+    }
+  }
 
   console.log("Carico progresso e dati grezzi salvati dai run precedenti...");
   const playersMap = await loadRawPlayers();
@@ -751,6 +823,7 @@ async function main() {
       const result = await sweepLeagueSeason(league, season, playersMap, budget);
       if (result.completed) {
         progress.completed.add(key);
+        await maybeCheckpoint(playersMap, progress, "spazzolata");
       } else if (result.reason === "budget") {
         // Budget davvero esaurito: qui ha senso fermare tutto il run, il
         // prossimo riprenderà esattamente da questa combinazione.
@@ -772,6 +845,7 @@ async function main() {
     if (result.completed) {
       rec.seasonRecords = result.records; // sostituisce del tutto: il recupero completo include già i campionati tracciati
       rec.careerBackfilled = true;
+      await maybeCheckpoint(playersMap, progress, "recupero carriera");
     }
     // se non completato (budget finito a metà), NON segniamo backfilled: il
     // prossimo run riprova da capo per questo giocatore (nessun dato perso,
@@ -785,6 +859,7 @@ async function main() {
     if (totalApps(rec) < MIN_APPS_FOR_TROPHIES) continue;
     rec.trophies = await fetchTrophies(rec.id, budget);
     rec.trophiesFetched = true;
+    await maybeCheckpoint(playersMap, progress, "trofei");
   }
 
   await saveRawPlayers(playersMap);
