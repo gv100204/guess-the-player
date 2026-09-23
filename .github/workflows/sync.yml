@@ -27,11 +27,12 @@ name: Sync players data
 
 on:
   schedule:
-    # Con il tetto di 16.000 chiamate/run (sicuro sotto il limite di 6 ore
-    # per job di GitHub Actions) e il piano Ultra (75.000/giorno), un solo
-    # run al giorno sfrutterebbe solo una piccola fetta della quota. Quattro
-    # run/giorno, ogni 6 ore, arrivano a ~64.000/giorno - molto più vicino
-    # al vero limite, restando comunque sicuri sotto le 6 ore per ciascuno.
+    # Con il tetto di 12.000 chiamate/run (sicuro sotto il limite di 6 ore
+    # per job di GitHub Actions, calcolato sul tasso REALE osservato di
+    # ~1,37s/chiamata, non solo sulla pausa teorica) e il piano Ultra
+    # (75.000/giorno), quattro run/giorno arrivano a ~48.000/giorno - più
+    # vicino al vero limite. La protezione "concurrency" qui sotto impedisce
+    # comunque le sovrapposizioni anche se un run durasse più del previsto.
     - cron: "0 0 * * *"
     - cron: "0 6 * * *"
     - cron: "0 12 * * *"
@@ -50,6 +51,15 @@ on:
         description: "Solo per test: ultima stagione da spazzolare (es. 2016). Vuoto = quella configurata nello script."
         required: false
         default: ""
+
+# Impedisce a due run di questo workflow di girare insieme: se uno schedulato
+# scatta mentre un altro run (schedulato o manuale) sta ancora andando, il
+# nuovo aspetta in coda invece di partire in parallelo. Necessario perché
+# raw-players.json è un unico file: due run che lo modificano insieme
+# rischiano di sovrascriversi a vicenda invece di sommare il lavoro.
+concurrency:
+  group: sync-players-data
+  cancel-in-progress: false
 
 jobs:
   sync:

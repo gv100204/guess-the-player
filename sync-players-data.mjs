@@ -63,14 +63,14 @@ const SEASON_RANGE = { from: 1995, to: 2025 };
 // il progresso. Tienilo un po' sotto la quota giornaliera reale del tuo
 // piano, per lasciare margine ad altre chiamate (es. test o debug manuale).
 // ATTENZIONE: GitHub Actions termina forzatamente ogni job dopo 6 ore, SENZA
-// salvare nulla (raw-players.json viene scritto una sola volta a fine run).
-// Con la pausa di sicurezza di 1200ms tra chiamate, 16000 chiamate richiedono
-// circa 5h20m - abbastanza margine per restare sotto le 6 ore anche con
-// piani che permettono più chiamate al giorno (Ultra, Mega...). NON alzare
-// oltre questo valore senza anche salvare il progresso più spesso durante
-// il run, altrimenti un run troppo lungo rischia di perdere TUTTO il lavoro
-// fatto, non solo quello dell'ultima parte.
-const MAX_CALLS_PER_RUN = Number(process.env.MAX_CALLS_PER_RUN ?? 16000);
+// salvare nulla (raw-players.json viene scritto una sola volta a fine run,
+// più i checkpoint periodici sotto). Il tasso REALE osservato è di circa
+// 1,37s/chiamata (non solo i 1200ms di pausa: ci va sommato anche il tempo
+// vero di risposta dell'API) - un tetto calcolato solo sulla pausa teorica
+// rischia comunque di sforare le 6 ore. Con 12000 chiamate a questo tasso
+// reale, un run dura al massimo ~4h34m: margine sia per le 6 ore di GitHub
+// sia per non arrivare a sovrapporsi col prossimo run schedulato 6 ore dopo.
+const MAX_CALLS_PER_RUN = Number(process.env.MAX_CALLS_PER_RUN ?? 12000);
 
 // Sotto questa soglia di presenze totali in carriera, un giocatore non vale
 // una chiamata dedicata ai trofei (probabilmente non ne ha comunque).
