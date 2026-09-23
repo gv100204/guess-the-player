@@ -61,7 +61,7 @@ const SEASON_RANGE = { from: 1995, to: 2025 };
 // Quante chiamate usare al massimo IN QUESTO run, prima di fermarsi e salvare
 // il progresso. Tienilo un po' sotto la quota giornaliera reale del tuo
 // piano, per lasciare margine ad altre chiamate (es. test o debug manuale).
-const MAX_CALLS_PER_RUN = Number(process.env.MAX_CALLS_PER_RUN ?? 7300);
+const MAX_CALLS_PER_RUN = Number(process.env.MAX_CALLS_PER_RUN ?? 74000);
 
 // Sotto questa soglia di presenze totali in carriera, un giocatore non vale
 // una chiamata dedicata ai trofei (probabilmente non ne ha comunque).
@@ -398,7 +398,12 @@ const NON_LEAGUE_KEYWORDS = [
   "friendl", "world cup", "euro championship", "european championship", "euro -", "qualif", "super cup",
   "shield", "trophy", "community", "confederations", "nations league",
   "intercontinental", "club world cup", "youth league", "playoff", "play-off", "play off",
-  "africa cup", "copa américa", "copa america", "asian cup", "gold cup", "olympic"
+  "africa cup", "copa américa", "copa america", "asian cup", "gold cup", "olympic",
+  // Trovate scandagliando i dati reali con audit-raw-data.mjs, non solo ipotizzate:
+  "primavera", // squadre giovanili di club (l'utente ha chiesto di escluderle: solo prima squadra)
+  "academy", "all-star", "all star",
+  "canadian championship", "eaff e-1", "waff championship",
+  "afc championship", "south american championship", "asean club championship"
 ];
 // Le nazionali (comprese quelle giovanili: U17, U19, U21...) hanno come
 // "squadra" il nome del paese seguito dalla categoria d'età - non un vero
@@ -408,9 +413,43 @@ const NON_LEAGUE_KEYWORDS = [
 // mescolate nella carriera come se fossero un club vero.
 const YOUTH_OR_NATIONAL_TEAM_PATTERN = /\bu-?(1[5-9]|2[0-3])\b/i;
 
+// Le nazionali MAGGIORI (non giovanili) non hanno un suffisso d'età nel nome
+// della squadra - si chiamano semplicemente come il paese ("Italy", "Brazil"...).
+// Nessun club vero al mondo si chiama così: se il nome squadra coincide con
+// un paese, è quasi certamente una convocazione in nazionale, qualunque sia
+// il nome del torneo (comprese amichevoli o tornei invitational mai visti
+// prima, che nessun elenco di parole chiave potrebbe coprire in anticipo).
+const NATION_NAMES = new Set([
+  "afghanistan","albania","algeria","andorra","angola","argentina","armenia","australia",
+  "austria","azerbaijan","bahrain","bangladesh","belarus","belgium","belize","benin",
+  "bhutan","bolivia","bosnia and herzegovina","botswana","brazil","bulgaria","burkina faso",
+  "burundi","cambodia","cameroon","canada","cape verde","chad","chile","china","colombia",
+  "comoros","congo","costa rica","croatia","cuba","cyprus","czech republic","denmark",
+  "djibouti","dominican republic","ecuador","egypt","el salvador","england","estonia",
+  "eswatini","ethiopia","fiji","finland","france","gabon","gambia","georgia","germany",
+  "ghana","greece","guatemala","guinea","guyana","haiti","honduras","hungary","iceland",
+  "india","indonesia","iran","iraq","ireland","israel","italy","ivory coast","jamaica",
+  "japan","jordan","kazakhstan","kenya","kosovo","kuwait","kyrgyzstan","laos","latvia",
+  "lebanon","lesotho","liberia","libya","liechtenstein","lithuania","luxembourg",
+  "madagascar","malawi","malaysia","maldives","mali","malta","mauritania","mauritius",
+  "mexico","moldova","mongolia","montenegro","morocco","mozambique","myanmar",
+  "namibia","nepal","netherlands","new zealand","nicaragua","niger","nigeria",
+  "north macedonia","northern ireland","norway","oman","pakistan","panama",
+  "papua new guinea","paraguay","peru","philippines","poland","portugal","qatar",
+  "romania","russia","rwanda","san marino","saudi arabia","scotland","senegal","serbia",
+  "sierra leone","singapore","slovakia","slovenia","somalia","south africa","south korea",
+  "spain","sri lanka","sudan","suriname","sweden","switzerland","syria","taiwan",
+  "tajikistan","tanzania","thailand","togo","trinidad and tobago","tunisia","turkey",
+  "turkmenistan","uganda","ukraine","united arab emirates","united states","uruguay",
+  "uzbekistan","venezuela","vietnam","wales","yemen","zambia","zimbabwe"
+]);
+
 function isLikelyDomesticLeague(name, teamName){
   if (!name) return false;
-  if (teamName && YOUTH_OR_NATIONAL_TEAM_PATTERN.test(teamName)) return false;
+  if (teamName) {
+    if (YOUTH_OR_NATIONAL_TEAM_PATTERN.test(teamName)) return false;
+    if (NATION_NAMES.has(teamName.trim().toLowerCase())) return false;
+  }
   const lower = name.toLowerCase();
   return !NON_LEAGUE_KEYWORDS.some((kw) => lower.includes(kw));
 }

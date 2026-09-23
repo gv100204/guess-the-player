@@ -386,6 +386,25 @@ async function main() {
     assert.equal(isLikelyDomesticLeague("UEFA U21 Championship", "Slovenia U21"), false);
     assert.equal(isLikelyDomesticLeague("1. SNL", "Maribor"), true, "un vero club non deve essere scartato per errore");
   });
+  await test("scarta anche le nazionali MAGGIORI (senza suffisso d'età) quando il nome squadra è esattamente un paese, qualunque sia il nome del torneo - copre amichevoli/tornei invitational mai visti prima, impossibili da elencare in anticipo per nome", () => {
+    assert.equal(isLikelyDomesticLeague("Kirin Cup", "Italy"), false, "già coperto dalla parola 'cup', ma verifichiamo comunque");
+    assert.equal(isLikelyDomesticLeague("Some Obscure Invitational Tournament", "Brazil"), false, "nessuna parola chiave lo coprirebbe: deve scattare dal nome squadra");
+    assert.equal(isLikelyDomesticLeague("Serie A", "Independiente"), true, "un vero club non deve essere scartato");
+    assert.equal(isLikelyDomesticLeague("Serie A", "America de Cali"), true, "un club che CONTIENE il nome di un paese ma non coincide con esso non va scartato: usiamo corrispondenza esatta, non una sottostringa");
+    assert.equal(isLikelyDomesticLeague("Coupe de France", "Monaco"), true, "bug reale trovato testando clean-raw-data.mjs: il Monaco è sia un paese sia un club vero (AS Monaco, Ligue 1) - non è nemmeno membro FIFA, quindi non c'è nessuna vera nazionale del Monaco da perdere escludendolo dall'elenco");
+  });
+  await test("scarta le competizioni trovate scandagliando i dati reali con audit-raw-data.mjs (non ipotizzate a tavolino)", () => {
+    assert.equal(isLikelyDomesticLeague("Campionato Primavera - 1"), false, "squadre giovanili di club: l'utente ha chiesto di escluderle, solo prima squadra");
+    assert.equal(isLikelyDomesticLeague("MLS All-Star"), false);
+    assert.equal(isLikelyDomesticLeague("Canadian Championship"), false);
+    assert.equal(isLikelyDomesticLeague("EAFF E-1 Football Championship"), false);
+    assert.equal(isLikelyDomesticLeague("WAFF Championship"), false);
+    assert.equal(isLikelyDomesticLeague("AFC Championship U23"), false);
+    assert.equal(isLikelyDomesticLeague("South American Championship U20"), false);
+    assert.equal(isLikelyDomesticLeague("ASEAN Club Championship"), false);
+    assert.equal(isLikelyDomesticLeague("Championship"), true, "il vero campionato inglese di Serie B non va scartato - trovato dall'audit come falso sospetto, confermato innocuo");
+    assert.equal(isLikelyDomesticLeague("Regionalliga"), true, "vero campionato tedesco minore, non va scartato");
+  });
   await test("riconosce anche i nomi per esteso delle nazionali maggiori che le sole parole chiave non coprivano ('European Championship', non 'Euro Championship')", () => {
     assert.equal(isLikelyDomesticLeague("UEFA European Championship"), false);
   });
