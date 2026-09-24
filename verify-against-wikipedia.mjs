@@ -318,13 +318,17 @@ async function main() {
       await sleep(REQUEST_DELAY_MS);
       let wikiEntries = parseSeniorCareer(wikitext);
 
-      if (wikiEntries.length === 0) {
-        // Prima di arrenderci, riproviamo UNA volta: test su pagine reali
-        // (Pastore, Guarín) hanno confermato che il parser legge bene
-        // questi formati - uno zero-tappe è più probabile una risposta
-        // sfortunata dovuta al traffico che un vero problema di pagina.
-        console.log(`  (${p.name}: zero tappe trovate, riprovo una volta prima di arrendermi...)`);
-        await sleep(REQUEST_DELAY_MS);
+      // Prima di arrenderci, riproviamo fino a 2 volte in più, con attesa
+      // crescente: test su pagine reali (Pastore, Guarín, Romero) hanno
+      // confermato che il parser legge bene questi formati - zero tappe è
+      // quasi sempre una risposta sfortunata dovuta al traffico, non un
+      // vero problema di pagina. Un solo ritentativo non bastava quando la
+      // pressione è sostenuta (confermato: Romero ha fallito 2 volte di
+      // fila anche con un ritentativo).
+      for (let retry = 1; wikiEntries.length === 0 && retry <= 2; retry++) {
+        const waitS = retry * 6;
+        console.log(`  (${p.name}: zero tappe trovate, aspetto ${waitS}s e riprovo [${retry}/2]...)`);
+        await sleep(waitS * 1000);
         wikitext = await fetchWikitext(title);
         await sleep(REQUEST_DELAY_MS);
         wikiEntries = parseSeniorCareer(wikitext);

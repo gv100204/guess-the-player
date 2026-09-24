@@ -107,6 +107,23 @@
       ],
       "checkedAt": "2026-09-24T08:33:22.682Z"
     },
+    "1645": {
+      "name": "Riccardo Montolivo",
+      "wikipediaTitle": "Riccardo Montolivo",
+      "verdict": "fail",
+      "missingFraction": 0.33,
+      "missing": [
+        {
+          "team": "Atalanta",
+          "from": 2003,
+          "to": 2005,
+          "position": "iniziale",
+          "apps": 73,
+          "goals": 7
+        }
+      ],
+      "checkedAt": "2026-09-24T08:45:09.828Z"
+    },
     "1750": {
       "name": "Graham Dorrans",
       "wikipediaTitle": "Graham Dorrans",
@@ -139,6 +156,14 @@
         }
       ],
       "checkedAt": "2026-09-24T08:26:53.778Z"
+    },
+    "1906": {
+      "name": "Adil Rami",
+      "wikipediaTitle": "Adil Rami",
+      "verdict": "ok",
+      "missingFraction": 0,
+      "missing": [],
+      "checkedAt": "2026-09-24T08:44:17.205Z"
     },
     "6373": {
       "name": "Nicolás Santiago Bertolo",
@@ -749,6 +774,23 @@
       ],
       "checkedAt": "2026-09-24T08:02:05.337Z"
     },
+    "30482": {
+      "name": "Andrea Poli",
+      "wikipediaTitle": "Andrea Poli",
+      "verdict": "ok",
+      "missingFraction": 0.11,
+      "missing": [
+        {
+          "team": "Pro Sesto",
+          "from": 2024,
+          "to": 2024,
+          "position": "finale",
+          "apps": 10,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-24T08:44:08.271Z"
+    },
     "30517": {
       "name": "Gianluca Pegolo",
       "wikipediaTitle": "Gianluca Pegolo",
@@ -773,6 +815,39 @@
         }
       ],
       "checkedAt": "2026-09-24T08:36:04.939Z"
+    },
+    "30541": {
+      "name": "Alessandro Matri",
+      "wikipediaTitle": "Alessandro Matri",
+      "verdict": "fail",
+      "missingFraction": 0.23,
+      "missing": [
+        {
+          "team": "AC Milan",
+          "from": 2003,
+          "to": 2007,
+          "position": "iniziale",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "team": "Prato",
+          "from": 2004,
+          "to": 2005,
+          "position": "centrale",
+          "apps": 32,
+          "goals": 5
+        },
+        {
+          "team": "Lumezzane",
+          "from": 2005,
+          "to": 2006,
+          "position": "centrale",
+          "apps": 34,
+          "goals": 13
+        }
+      ],
+      "checkedAt": "2026-09-24T08:45:18.755Z"
     },
     "30548": {
       "name": "Fabrizio Cacciatore",
@@ -815,6 +890,31 @@
         }
       ],
       "checkedAt": "2026-09-24T08:11:13.563Z"
+    },
+    "30574": {
+      "name": "Cyril Théréau",
+      "wikipediaTitle": "Cyril Théréau",
+      "verdict": "fail",
+      "missingFraction": 0.2,
+      "missing": [
+        {
+          "team": "Orléans",
+          "from": 2004,
+          "to": 2005,
+          "position": "iniziale",
+          "apps": 10,
+          "goals": 12
+        },
+        {
+          "team": "Steaua București",
+          "from": 2006,
+          "to": 2007,
+          "position": "centrale",
+          "apps": 17,
+          "goals": 10
+        }
+      ],
+      "checkedAt": "2026-09-24T08:45:27.651Z"
     },
     "30607": {
       "name": "Matteo Mancosu",
@@ -889,6 +989,14 @@
         }
       ],
       "checkedAt": "2026-09-24T08:28:13.546Z"
+    },
+    "30729": {
+      "name": "Davide Moscardelli",
+      "wikipediaTitle": "Davide Moscardelli",
+      "verdict": "ok",
+      "missingFraction": 0,
+      "missing": [],
+      "checkedAt": "2026-09-24T08:43:25.034Z"
     },
     "30734": {
       "name": "Stefano Sorrentino",
@@ -2541,6 +2649,39 @@
       "missing": [],
       "checkedAt": "2026-09-24T08:01:40.058Z"
     },
+    "91258": {
+      "name": "Željko Brkić",
+      "wikipediaTitle": "Željko Brkić",
+      "verdict": "fail",
+      "missingFraction": 0.38,
+      "missing": [
+        {
+          "team": "Kabel",
+          "from": 2004,
+          "to": 2005,
+          "position": "centrale",
+          "apps": null,
+          "goals": null
+        },
+        {
+          "team": "Proleter Novi Sad",
+          "from": 2005,
+          "to": 2007,
+          "position": "centrale",
+          "apps": 31,
+          "goals": 0
+        },
+        {
+          "team": "PAOK",
+          "from": 2016,
+          "to": 2018,
+          "position": "finale",
+          "apps": 7,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-24T08:43:42.527Z"
+    },
     "91302": {
       "name": "Antonio Nocerino",
       "wikipediaTitle": "Antonio Nocerino",
@@ -3499,6 +3640,63 @@
         }
       ],
       "checkedAt": "2026-09-24T08:05:09.653Z"
+    },
+    "115174": {
+      "name": "Luca Antonini",
+      "wikipediaTitle": "Luca Antonini",
+      "verdict": "fail",
+      "missingFraction": 0.46,
+      "missing": [
+        {
+          "team": "Prato",
+          "from": 2001,
+          "to": 2002,
+          "position": "iniziale",
+          "apps": 26,
+          "goals": 3
+        },
+        {
+          "team": "Ancona",
+          "from": 2002,
+          "to": 2003,
+          "position": "centrale",
+          "apps": 17,
+          "goals": 1
+        },
+        {
+          "team": "Sampdoria",
+          "from": 2003,
+          "to": 2007,
+          "position": "centrale",
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "team": "Modena",
+          "from": 2004,
+          "to": 2005,
+          "position": "centrale",
+          "apps": 15,
+          "goals": 1
+        },
+        {
+          "team": "Pescara",
+          "from": 2005,
+          "to": 2005,
+          "position": "centrale",
+          "apps": 22,
+          "goals": 3
+        },
+        {
+          "team": "Prato",
+          "from": 2016,
+          "to": 2016,
+          "position": "finale",
+          "apps": 9,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-24T08:43:33.770Z"
     },
     "115187": {
       "name": "Vlada Avramov",
