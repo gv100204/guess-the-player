@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-23T21:09:56.756Z",
+  "version": "2026-09-24T03:13:48.104Z",
   "players": [
     {
       "id": "stefan-savic-39",
@@ -43972,12 +43972,12 @@
       "isGK": true,
       "career": [
         {
-          "years": "2010",
+          "years": "2009–2011",
           "club": "Atletico Madrid",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 38,
+          "apps": 57,
           "goals": 0
         },
         {
@@ -43999,7 +43999,7 @@
           "goals": 87
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44009,13 +44009,76 @@
       "isGK": false,
       "career": [
         {
-          "years": "2018–2021",
+          "years": "2017",
+          "club": "Ponte Preta",
+          "league": null,
+          "leagueRaw": "Paulista A1",
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2017",
+          "club": "Ponte Preta",
+          "league": null,
+          "leagueRaw": "Serie A",
+          "country": "Brazil",
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2018",
           "club": "Real Betis",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 73,
-          "goals": 4
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2018",
+          "club": "Atletico-MG",
+          "league": null,
+          "leagueRaw": "Serie A",
+          "country": "Brazil",
+          "apps": 23,
+          "goals": 1
+        },
+        {
+          "years": "2018",
+          "club": "Ponte Preta",
+          "league": null,
+          "leagueRaw": "Paulista A1",
+          "country": null,
+          "apps": 14,
+          "goals": 1
+        },
+        {
+          "years": "2019",
+          "club": "Real Betis",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 33,
+          "goals": 3
+        },
+        {
+          "years": "2019",
+          "club": "Squadra sconosciuta",
+          "league": null,
+          "leagueRaw": "Tournoi Maurice Revello",
+          "country": null,
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2020",
+          "club": "Real Betis",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 34,
+          "goals": 1
         },
         {
           "years": "2021",
@@ -44052,9 +44115,27 @@
           "country": null,
           "apps": 17,
           "goals": 0
+        },
+        {
+          "years": "2025",
+          "club": "Flamengo",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": "World",
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2025",
+          "club": "Flamengo",
+          "league": null,
+          "leagueRaw": "Serie A",
+          "country": "Brazil",
+          "apps": 15,
+          "goals": 1
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44064,22 +44145,94 @@
       "isGK": false,
       "career": [
         {
-          "years": "2017–2020",
+          "years": "2012",
+          "club": "U. Catolica",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2014–2016",
+          "club": "U. Catolica",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 32,
+          "goals": 2
+        },
+        {
+          "years": "2015–2017",
+          "club": "U. Catolica",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 30,
+          "goals": 1
+        },
+        {
+          "years": "2016",
+          "club": "U. Catolica",
+          "league": null,
+          "leagueRaw": "CONMEBOL Sudamericana",
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2017",
           "club": "Alaves",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 43,
+          "apps": 19,
+          "goals": 0
+        },
+        {
+          "years": "2017",
+          "club": "U. Catolica",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": null,
+          "apps": 5,
+          "goals": 0
+        },
+        {
+          "years": "2018",
+          "club": "Alaves",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 23,
           "goals": 2
         },
         {
-          "years": "2019–2024",
+          "years": "2019",
           "club": "Monaco",
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
-          "apps": 123,
-          "goals": 11
+          "apps": 20,
+          "goals": 2
+        },
+        {
+          "years": "2019",
+          "club": "Alaves",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2020–2024",
+          "club": "Monaco",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 103,
+          "goals": 9
         },
         {
           "years": "2024–2026",
@@ -44091,7 +44244,7 @@
           "goals": 3
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44100,6 +44253,24 @@
       "nationality": "Spain",
       "isGK": false,
       "career": [
+        {
+          "years": "2015",
+          "club": "Valladolid",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 31,
+          "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Real Madrid II",
+          "league": null,
+          "leagueRaw": "Primera División RFEF",
+          "country": null,
+          "apps": 33,
+          "goals": 1
+        },
         {
           "years": "2017–2019",
           "club": "Espanyol",
@@ -44120,6 +44291,15 @@
         },
         {
           "years": "2024",
+          "club": "Bayer Leverkusen",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2024",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
@@ -44130,10 +44310,10 @@
         {
           "years": "2024",
           "club": "Bayer Leverkusen",
-          "league": "bundesliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 4,
+          "league": null,
+          "leagueRaw": "DFB Pokal",
+          "country": "Germany",
+          "apps": 1,
           "goals": 0
         },
         {
@@ -44146,7 +44326,7 @@
           "goals": 3
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44156,13 +44336,49 @@
       "isGK": true,
       "career": [
         {
-          "years": "2015–2017",
+          "years": "2010–2013",
+          "club": "Central Coast Mariners",
+          "league": null,
+          "leagueRaw": "A-League Men",
+          "country": null,
+          "apps": 80,
+          "goals": 0
+        },
+        {
+          "years": "2013–2015",
+          "club": "Club Brugge KV",
+          "league": null,
+          "leagueRaw": "Jupiler Pro League",
+          "country": "Belgium",
+          "apps": 77,
+          "goals": 0
+        },
+        {
+          "years": "2015",
           "club": "Valencia",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 10,
-          "goals": 14
+          "apps": 8,
+          "goals": 9
+        },
+        {
+          "years": "2016",
+          "club": "Genk",
+          "league": null,
+          "leagueRaw": "Jupiler Pro League",
+          "country": "Belgium",
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Valencia",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 2,
+          "goals": 5
         },
         {
           "years": "2017–2020",
@@ -44201,6 +44417,60 @@
           "goals": 5
         },
         {
+          "years": "2022",
+          "club": "AZ Alkmaar",
+          "league": null,
+          "leagueRaw": "Eredivisie",
+          "country": "Netherlands",
+          "apps": 18,
+          "goals": 18
+        },
+        {
+          "years": "2022",
+          "club": "FC Copenhagen",
+          "league": null,
+          "leagueRaw": "Superliga",
+          "country": "Denmark",
+          "apps": 6,
+          "goals": 7
+        },
+        {
+          "years": "2022",
+          "club": "AZ Alkmaar",
+          "league": null,
+          "leagueRaw": "KNVB Beker",
+          "country": "Netherlands",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2022",
+          "club": "FC Copenhagen",
+          "league": null,
+          "leagueRaw": "DBU Pokalen",
+          "country": "Denmark",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2023",
+          "club": "AZ Alkmaar",
+          "league": null,
+          "leagueRaw": "Eredivisie",
+          "country": "Netherlands",
+          "apps": 29,
+          "goals": 28
+        },
+        {
+          "years": "2023",
+          "club": "AZ Alkmaar",
+          "league": null,
+          "leagueRaw": "KNVB Beker",
+          "country": "Netherlands",
+          "apps": 1,
+          "goals": 0
+        },
+        {
           "years": "2024",
           "club": "Lens",
           "league": "ligue1",
@@ -44219,7 +44489,7 @@
           "goals": 56
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44228,6 +44498,105 @@
       "nationality": "Ukraine",
       "isGK": false,
       "career": [
+        {
+          "years": "2014",
+          "club": "Cherkaskyi Dnipro",
+          "league": null,
+          "leagueRaw": "Druha Liga - Group A",
+          "country": "Ukraine",
+          "apps": 20,
+          "goals": 7
+        },
+        {
+          "years": "2015",
+          "club": "Zaria Balti",
+          "league": null,
+          "leagueRaw": "Super Liga",
+          "country": null,
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Dnipro Dnipropetrovsk",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": "Ukraine",
+          "apps": 22,
+          "goals": 6
+        },
+        {
+          "years": "2017",
+          "club": "FC Midtjylland",
+          "league": null,
+          "leagueRaw": "Superliga",
+          "country": "Denmark",
+          "apps": 10,
+          "goals": 1
+        },
+        {
+          "years": "2017",
+          "club": "Dnipro Dnipropetrovsk",
+          "league": null,
+          "leagueRaw": "Druha Liga - Group A",
+          "country": "Ukraine",
+          "apps": 13,
+          "goals": 12
+        },
+        {
+          "years": "2017–2019",
+          "club": "FC Midtjylland",
+          "league": null,
+          "leagueRaw": "Superliga",
+          "country": "Denmark",
+          "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2018",
+          "club": "FC Midtjylland",
+          "league": null,
+          "leagueRaw": "DBU Pokalen",
+          "country": "Denmark",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2019",
+          "club": "Sonderjyske",
+          "league": null,
+          "leagueRaw": "Superliga",
+          "country": "Denmark",
+          "apps": 18,
+          "goals": 2
+        },
+        {
+          "years": "2019",
+          "club": "FC Midtjylland",
+          "league": null,
+          "leagueRaw": "Superliga",
+          "country": "Denmark",
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2019",
+          "club": "Sonderjyske",
+          "league": null,
+          "leagueRaw": "DBU Pokalen",
+          "country": "Denmark",
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2020–2023",
+          "club": "Dnipro-1",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": "Ukraine",
+          "apps": 71,
+          "goals": 44
+        },
         {
           "years": "2023",
           "club": "Girona",
@@ -44247,7 +44616,7 @@
           "goals": 15
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44256,6 +44625,42 @@
       "nationality": "Argentina",
       "isGK": true,
       "career": [
+        {
+          "years": "2010–2012",
+          "club": "River Plate",
+          "league": null,
+          "leagueRaw": "Primera Nacional",
+          "country": "Argentina",
+          "apps": 23,
+          "goals": 0
+        },
+        {
+          "years": "2013",
+          "club": "River Plate",
+          "league": null,
+          "leagueRaw": "Liga Profesional Argentina",
+          "country": null,
+          "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2013",
+          "club": "River Plate",
+          "league": null,
+          "leagueRaw": "CONMEBOL Sudamericana",
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2014–2017",
+          "club": "Spezia",
+          "league": null,
+          "leagueRaw": "Serie B",
+          "country": null,
+          "apps": 131,
+          "goals": 0
+        },
         {
           "years": "2017",
           "club": "Las Palmas",
@@ -44275,6 +44680,42 @@
           "goals": 1
         },
         {
+          "years": "2020",
+          "club": "FC Cartagena",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 9,
+          "goals": 10
+        },
+        {
+          "years": "2021",
+          "club": "Perugia",
+          "league": null,
+          "leagueRaw": "Serie B",
+          "country": "Italy",
+          "apps": 39,
+          "goals": 25
+        },
+        {
+          "years": "2022–2024",
+          "club": "Parma",
+          "league": null,
+          "leagueRaw": "Serie B",
+          "country": "Italy",
+          "apps": 71,
+          "goals": 48
+        },
+        {
+          "years": "2024",
+          "club": "Spezia",
+          "league": null,
+          "leagueRaw": "Serie B",
+          "country": "Italy",
+          "apps": 11,
+          "goals": 5
+        },
+        {
           "years": "2024",
           "club": "Parma",
           "league": "seriea",
@@ -44282,9 +44723,18 @@
           "country": null,
           "apps": 19,
           "goals": 3
+        },
+        {
+          "years": "2024–2026",
+          "club": "Modena",
+          "league": null,
+          "leagueRaw": "Serie B",
+          "country": "Italy",
+          "apps": 51,
+          "goals": 33
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44294,22 +44744,85 @@
       "isGK": false,
       "career": [
         {
-          "years": "2017–2019",
+          "years": "2016",
+          "club": "Vasco DA Gama",
+          "league": null,
+          "leagueRaw": "Serie B",
+          "country": "Brazil",
+          "apps": 14,
+          "goals": 2
+        },
+        {
+          "years": "2017",
           "club": "Girona",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 38,
+          "apps": 15,
           "goals": 0
         },
         {
-          "years": "2019–2024",
+          "years": "2017",
+          "club": "Vasco DA Gama",
+          "league": null,
+          "leagueRaw": "Carioca Série A",
+          "country": null,
+          "apps": 10,
+          "goals": 2
+        },
+        {
+          "years": "2017",
+          "club": "Vasco DA Gama",
+          "league": null,
+          "leagueRaw": "Serie A",
+          "country": "Brazil",
+          "apps": 11,
+          "goals": 1
+        },
+        {
+          "years": "2018",
+          "club": "Girona",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 23,
+          "goals": 0
+        },
+        {
+          "years": "2019",
           "club": "Aston Villa",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
-          "apps": 175,
-          "goals": 20
+          "apps": 36,
+          "goals": 3
+        },
+        {
+          "years": "2019",
+          "club": "Squadra sconosciuta",
+          "league": null,
+          "leagueRaw": "Tournoi Maurice Revello",
+          "country": null,
+          "apps": 4,
+          "goals": 1
+        },
+        {
+          "years": "2020–2024",
+          "club": "Aston Villa",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 139,
+          "goals": 17
+        },
+        {
+          "years": "2023",
+          "club": "Aston Villa",
+          "league": null,
+          "leagueRaw": "Premier League - Summer Series",
+          "country": "England",
+          "apps": 3,
+          "goals": 0
         },
         {
           "years": "2024",
@@ -44339,7 +44852,7 @@
           "goals": 1
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44349,12 +44862,66 @@
       "isGK": false,
       "career": [
         {
-          "years": "2018–2021",
+          "years": "2017",
+          "club": "Nice II",
+          "league": null,
+          "leagueRaw": "National 2 - Group A",
+          "country": "France",
+          "apps": 16,
+          "goals": 0
+        },
+        {
+          "years": "2018",
           "club": "Nice",
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
-          "apps": 33,
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2018",
+          "club": "Nice II",
+          "league": null,
+          "leagueRaw": "National 2 - Group A",
+          "country": "France",
+          "apps": 18,
+          "goals": 0
+        },
+        {
+          "years": "2019",
+          "club": "Nice",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 10,
+          "goals": 0
+        },
+        {
+          "years": "2019",
+          "club": "Nice II",
+          "league": null,
+          "leagueRaw": "National 3 - Group M",
+          "country": "France",
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2020",
+          "club": "Nice",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 19,
+          "goals": 0
+        },
+        {
+          "years": "2021–2023",
+          "club": "FC Basel 1893",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": "Switzerland",
+          "apps": 67,
           "goals": 0
         },
         {
@@ -44383,9 +44950,27 @@
           "country": null,
           "apps": 9,
           "goals": 0
+        },
+        {
+          "years": "2025",
+          "club": "Jagiellonia",
+          "league": null,
+          "leagueRaw": "Ekstraklasa",
+          "country": "Poland",
+          "apps": 17,
+          "goals": 0
+        },
+        {
+          "years": "2025",
+          "club": "Clermont Foot",
+          "league": null,
+          "leagueRaw": "Ligue 2",
+          "country": "France",
+          "apps": 3,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44395,12 +44980,48 @@
       "isGK": false,
       "career": [
         {
-          "years": "2019–2021",
+          "years": "2017",
+          "club": "Squadra sconosciuta",
+          "league": null,
+          "leagueRaw": "Primera División RFEF",
+          "country": null,
+          "apps": 29,
+          "goals": 5
+        },
+        {
+          "years": "2018",
+          "club": "Real Valladolid II",
+          "league": null,
+          "leagueRaw": "Primera División RFEF",
+          "country": null,
+          "apps": 35,
+          "goals": 2
+        },
+        {
+          "years": "2019",
           "club": "Valladolid",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 30,
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2019",
+          "club": "Real Valladolid II",
+          "league": null,
+          "leagueRaw": "Primera División RFEF - Group 4",
+          "country": "Spain",
+          "apps": 25,
+          "goals": 2
+        },
+        {
+          "years": "2020",
+          "club": "Valladolid",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 24,
           "goals": 0
         },
         {
@@ -44413,13 +45034,13 @@
           "goals": 2
         },
         {
-          "years": "2022",
+          "years": "2021–2023",
           "club": "Valladolid",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 36,
-          "goals": 1
+          "apps": 50,
+          "goals": 2
         },
         {
           "years": "2023",
@@ -44447,37 +45068,18 @@
           "country": null,
           "apps": 19,
           "goals": 2
-        }
-      ],
-      "careerComplete": false,
-      "trophies": []
-    },
-    {
-      "id": "saul-basilio-coco-bassey-oubina-122468",
-      "name": "Saúl Basilio Coco-Bassey Oubiña",
-      "nationality": "Equatorial Guinea",
-      "isGK": false,
-      "career": [
-        {
-          "years": "2023",
-          "club": "Las Palmas",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 33,
-          "goals": 1
         },
         {
-          "years": "2024–2026",
-          "club": "Torino",
-          "league": "seriea",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 70,
+          "years": "2025",
+          "club": "Venezia",
+          "league": null,
+          "leagueRaw": "Serie B",
+          "country": "Italy",
+          "apps": 35,
           "goals": 3
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44486,6 +45088,24 @@
       "nationality": "Spain",
       "isGK": false,
       "career": [
+        {
+          "years": "2019",
+          "club": "Squadra sconosciuta",
+          "league": null,
+          "leagueRaw": "UEFA U17 Championship",
+          "country": null,
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2020–2022",
+          "club": "Real Madrid II",
+          "league": null,
+          "leagueRaw": "Primera División RFEF - Group 2",
+          "country": "Spain",
+          "apps": 29,
+          "goals": 1
+        },
         {
           "years": "2023",
           "club": "Alaves",
@@ -44514,7 +45134,7 @@
           "goals": 1
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44531,6 +45151,24 @@
           "country": null,
           "apps": 1,
           "goals": 0
+        },
+        {
+          "years": "2022",
+          "club": "Velez Sarsfield",
+          "league": null,
+          "leagueRaw": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "apps": 22,
+          "goals": 2
+        },
+        {
+          "years": "2022",
+          "club": "Velez Sarsfield",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": "World",
+          "apps": 10,
+          "goals": 1
         },
         {
           "years": "2023",
@@ -44551,7 +45189,7 @@
           "goals": 3
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44561,6 +45199,15 @@
       "isGK": false,
       "career": [
         {
+          "years": "2021",
+          "club": "Sporting CP B",
+          "league": null,
+          "leagueRaw": "Liga 3",
+          "country": "Portugal",
+          "apps": 1,
+          "goals": 1
+        },
+        {
           "years": "2022",
           "club": "FC Augsburg",
           "league": "bundesliga",
@@ -44568,6 +45215,24 @@
           "country": null,
           "apps": 13,
           "goals": 0
+        },
+        {
+          "years": "2022",
+          "club": "Sporting CP B",
+          "league": null,
+          "leagueRaw": "Liga 3",
+          "country": "Portugal",
+          "apps": 15,
+          "goals": 3
+        },
+        {
+          "years": "2023",
+          "club": "FC Basel 1893",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": "Switzerland",
+          "apps": 23,
+          "goals": 2
         },
         {
           "years": "2024",
@@ -44597,7 +45262,7 @@
           "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44606,6 +45271,24 @@
       "nationality": "Serbia",
       "isGK": false,
       "career": [
+        {
+          "years": "2021",
+          "club": "Grafičar",
+          "league": null,
+          "leagueRaw": "Prva Liga",
+          "country": "Serbia",
+          "apps": 16,
+          "goals": 0
+        },
+        {
+          "years": "2022",
+          "club": "FK Crvena Zvezda",
+          "league": null,
+          "leagueRaw": "Super Liga",
+          "country": "Serbia",
+          "apps": 12,
+          "goals": 1
+        },
         {
           "years": "2023",
           "club": "Villarreal",
@@ -44616,12 +45299,30 @@
           "goals": 0
         },
         {
+          "years": "2023",
+          "club": "Villarreal II",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 29,
+          "goals": 3
+        },
+        {
           "years": "2024",
           "club": "Monza",
           "league": "seriea",
           "leagueRaw": null,
           "country": null,
           "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2024",
+          "club": "FK Crvena Zvezda",
+          "league": null,
+          "leagueRaw": "Super Liga",
+          "country": "Serbia",
+          "apps": 3,
           "goals": 0
         },
         {
@@ -44641,9 +45342,18 @@
           "country": null,
           "apps": 9,
           "goals": 2
+        },
+        {
+          "years": "2025",
+          "club": "FK Crvena Zvezda",
+          "league": null,
+          "leagueRaw": "Super Liga",
+          "country": "Serbia",
+          "apps": 7,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44652,6 +45362,15 @@
       "nationality": "Argentina",
       "isGK": false,
       "career": [
+        {
+          "years": "2021",
+          "club": "Real Madrid II",
+          "league": null,
+          "leagueRaw": "Primera División RFEF - Group 2",
+          "country": "Spain",
+          "apps": 6,
+          "goals": 0
+        },
         {
           "years": "2023",
           "club": "Real Madrid",
@@ -44671,7 +45390,7 @@
           "goals": 18
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44717,7 +45436,7 @@
           "goals": 2
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44736,6 +45455,24 @@
           "goals": 0
         },
         {
+          "years": "2024",
+          "club": "Belgrano Cordoba",
+          "league": null,
+          "leagueRaw": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "apps": 21,
+          "goals": 0
+        },
+        {
+          "years": "2024",
+          "club": "Belgrano Cordoba",
+          "league": null,
+          "leagueRaw": "CONMEBOL Sudamericana",
+          "country": "World",
+          "apps": 6,
+          "goals": 0
+        },
+        {
           "years": "2025",
           "club": "Levante",
           "league": "laliga",
@@ -44745,7 +45482,7 @@
           "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44754,6 +45491,42 @@
       "nationality": "Israel",
       "isGK": false,
       "career": [
+        {
+          "years": "2016–2018",
+          "club": "Maccabi Petah Tikva",
+          "league": null,
+          "leagueRaw": "Ligat Ha'al",
+          "country": "Israel",
+          "apps": 56,
+          "goals": 6
+        },
+        {
+          "years": "2018",
+          "club": "Shakhtar Donetsk",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": "Ukraine",
+          "apps": 11,
+          "goals": 0
+        },
+        {
+          "years": "2018",
+          "club": "Maccabi Petah Tikva",
+          "league": null,
+          "leagueRaw": "Ligat Ha'al",
+          "country": "Israel",
+          "apps": 12,
+          "goals": 2
+        },
+        {
+          "years": "2019–2022",
+          "club": "Shakhtar Donetsk",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": "Ukraine",
+          "apps": 59,
+          "goals": 16
+        },
         {
           "years": "2022",
           "club": "Fulham",
@@ -44773,13 +45546,13 @@
           "goals": 0
         },
         {
-          "years": "2025",
-          "club": "Fiorentina",
-          "league": "seriea",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 16,
-          "goals": 2
+          "years": "2024",
+          "club": "Leeds",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 39,
+          "goals": 10
         },
         {
           "years": "2025",
@@ -44789,9 +45562,18 @@
           "country": null,
           "apps": 6,
           "goals": 1
+        },
+        {
+          "years": "2025",
+          "club": "Fiorentina",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 16,
+          "goals": 2
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44801,13 +45583,22 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010–2012",
+          "years": "2005–2008",
+          "club": "Dinamo Zagreb",
+          "league": null,
+          "leagueRaw": "HNL",
+          "country": null,
+          "apps": 87,
+          "goals": 27
+        },
+        {
+          "years": "2008–2012",
           "club": "Tottenham",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
-          "apps": 68,
-          "goals": 7
+          "apps": 127,
+          "goals": 13
         },
         {
           "years": "2012–2025",
@@ -44828,7 +45619,7 @@
           "goals": 2
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44837,6 +45628,24 @@
       "nationality": "Spain",
       "isGK": true,
       "career": [
+        {
+          "years": "2008",
+          "club": "Valencia",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2009",
+          "club": "Recreativo Huelva",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 30,
+          "goals": 0
+        },
         {
           "years": "2010–2014",
           "club": "Valencia",
@@ -44847,22 +45656,13 @@
           "goals": 0
         },
         {
-          "years": "2014–2016",
+          "years": "2014–2018",
           "club": "Getafe",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 67,
-          "goals": 67
-        },
-        {
-          "years": "2017",
-          "club": "Getafe",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 33,
-          "goals": 26
+          "apps": 112,
+          "goals": 106
         },
         {
           "years": "2018–2023",
@@ -44883,7 +45683,7 @@
           "goals": 87
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44893,6 +45693,33 @@
       "isGK": false,
       "career": [
         {
+          "years": "2014",
+          "club": "FC Porto B",
+          "league": null,
+          "leagueRaw": "Segunda Liga",
+          "country": null,
+          "apps": 19,
+          "goals": 0
+        },
+        {
+          "years": "2014",
+          "club": "Madureira",
+          "league": null,
+          "leagueRaw": "Serie C",
+          "country": "Brazil",
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2014",
+          "club": "Paulista",
+          "league": null,
+          "leagueRaw": "Paulista A1",
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
           "years": "2015",
           "club": "Estoril",
           "league": "liga_pt",
@@ -44900,6 +45727,15 @@
           "country": null,
           "apps": 21,
           "goals": 2
+        },
+        {
+          "years": "2015",
+          "club": "Estoril",
+          "league": null,
+          "leagueRaw": "Taça de Portugal",
+          "country": null,
+          "apps": 1,
+          "goals": 0
         },
         {
           "years": "2016–2019",
@@ -44920,12 +45756,48 @@
           "goals": 6
         },
         {
-          "years": "2022–2025",
+          "years": "2022–2024",
           "club": "Aston Villa",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
-          "apps": 40,
+          "apps": 30,
+          "goals": 0
+        },
+        {
+          "years": "2023",
+          "club": "Aston Villa",
+          "league": null,
+          "leagueRaw": "Premier League - Summer Series",
+          "country": "England",
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2024",
+          "club": "Fenerbahçe",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2024",
+          "club": "Aston Villa",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 10,
+          "goals": 0
+        },
+        {
+          "years": "2024–2026",
+          "club": "Fenerbahçe",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 3,
           "goals": 0
         },
         {
@@ -44938,7 +45810,7 @@
           "goals": 1
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -44948,6 +45820,24 @@
       "isGK": false,
       "career": [
         {
+          "years": "2015",
+          "club": "LDU de Quito",
+          "league": null,
+          "leagueRaw": "Liga Pro",
+          "country": "Ecuador",
+          "apps": 32,
+          "goals": 0
+        },
+        {
+          "years": "2015",
+          "club": "LDU de Quito",
+          "league": null,
+          "leagueRaw": "CONMEBOL Sudamericana",
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
           "years": "2016",
           "club": "Granada CF",
           "league": "laliga",
@@ -44955,6 +45845,51 @@
           "country": null,
           "apps": 2,
           "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Granada II",
+          "league": null,
+          "leagueRaw": "Primera División RFEF",
+          "country": null,
+          "apps": 21,
+          "goals": 2
+        },
+        {
+          "years": "2016",
+          "club": "LDU de Quito",
+          "league": null,
+          "leagueRaw": "Liga Pro",
+          "country": "Ecuador",
+          "apps": 8,
+          "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "LDU de Quito",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": null,
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2017",
+          "club": "Almeria",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 26,
+          "goals": 0
+        },
+        {
+          "years": "2018",
+          "club": "Mallorca",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 23,
+          "goals": 3
         },
         {
           "years": "2019",
@@ -44975,13 +45910,22 @@
           "goals": 0
         },
         {
-          "years": "2022–2025",
+          "years": "2022–2024",
           "club": "Brighton",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
-          "apps": 84,
-          "goals": 4
+          "apps": 54,
+          "goals": 3
+        },
+        {
+          "years": "2023–2025",
+          "club": "Brighton",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 32,
+          "goals": 1
         },
         {
           "years": "2025",
@@ -44993,7 +45937,7 @@
           "goals": 1
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45002,6 +45946,15 @@
       "nationality": "Spain",
       "isGK": false,
       "career": [
+        {
+          "years": "2016",
+          "club": "Athletic Club II",
+          "league": null,
+          "leagueRaw": "Primera División RFEF",
+          "country": null,
+          "apps": 33,
+          "goals": 3
+        },
         {
           "years": "2017–2022",
           "club": "Athletic Club",
@@ -45030,30 +45983,12 @@
           "goals": 0
         },
         {
-          "years": "2024",
+          "years": "2024–2026",
           "club": "Celta Vigo",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 33,
-          "goals": 0
-        },
-        {
-          "years": "2025",
-          "club": "Hellas Verona",
-          "league": "seriea",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 17,
-          "goals": 0
-        },
-        {
-          "years": "2025",
-          "club": "Celta Vigo",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 4,
+          "apps": 37,
           "goals": 0
         },
         {
@@ -45064,9 +45999,18 @@
           "country": null,
           "apps": 13,
           "goals": 0
+        },
+        {
+          "years": "2025",
+          "club": "Hellas Verona",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 17,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45076,21 +46020,57 @@
       "isGK": false,
       "career": [
         {
-          "years": "2020–2022",
+          "years": "2018",
+          "club": "Squadra sconosciuta",
+          "league": null,
+          "leagueRaw": "UEFA U17 Championship",
+          "country": null,
+          "apps": 9,
+          "goals": 2
+        },
+        {
+          "years": "2020",
+          "club": "Real Madrid II",
+          "league": null,
+          "leagueRaw": "Primera División RFEF - Group 5",
+          "country": "Spain",
+          "apps": 15,
+          "goals": 1
+        },
+        {
+          "years": "2020",
           "club": "Real Madrid",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 9,
+          "apps": 6,
           "goals": 0
         },
         {
-          "years": "2022–2025",
+          "years": "2021",
+          "club": "Real Madrid II",
+          "league": null,
+          "leagueRaw": "Primera División RFEF - Group 2",
+          "country": "Spain",
+          "apps": 16,
+          "goals": 2
+        },
+        {
+          "years": "2021",
+          "club": "Real Madrid",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2022–2026",
           "club": "Girona",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 103,
+          "apps": 104,
           "goals": 5
         },
         {
@@ -45101,18 +46081,9 @@
           "country": null,
           "apps": 28,
           "goals": 1
-        },
-        {
-          "years": "2025",
-          "club": "Girona",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 1,
-          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45122,13 +46093,31 @@
       "isGK": false,
       "career": [
         {
-          "years": "2023",
+          "years": "2020",
+          "club": "El Ejido",
+          "league": null,
+          "leagueRaw": "Primera División RFEF - Group 5",
+          "country": "Spain",
+          "apps": 15,
+          "goals": 1
+        },
+        {
+          "years": "2021",
+          "club": "Granada II",
+          "league": null,
+          "leagueRaw": "Segunda División RFEF - Group 5",
+          "country": "Spain",
+          "apps": 33,
+          "goals": 7
+        },
+        {
+          "years": "2022–2024",
           "club": "Granada CF",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 21,
-          "goals": 6
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 63,
+          "goals": 11
         },
         {
           "years": "2023",
@@ -45150,24 +46139,24 @@
         },
         {
           "years": "2025",
-          "club": "AS Roma",
-          "league": "seriea",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 4,
-          "goals": 0
-        },
-        {
-          "years": "2025",
           "club": "Celta Vigo",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
           "apps": 19,
           "goals": 1
+        },
+        {
+          "years": "2025",
+          "club": "AS Roma",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 4,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45196,24 +46185,24 @@
         },
         {
           "years": "2025",
-          "club": "Hellas Verona",
-          "league": "seriea",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 2,
-          "goals": 0
-        },
-        {
-          "years": "2025",
           "club": "Arouca",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
           "apps": 5,
           "goals": 0
+        },
+        {
+          "years": "2025",
+          "club": "Hellas Verona",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 2,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45241,7 +46230,7 @@
           "goals": 2
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45269,7 +46258,7 @@
           "goals": 2
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45279,13 +46268,67 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010",
+          "years": "2003",
+          "club": "Arsenal",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 13,
+          "goals": 2
+        },
+        {
+          "years": "2003",
+          "club": "Sevilla",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 21,
+          "goals": 5
+        },
+        {
+          "years": "2004–2006",
+          "club": "Arsenal",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 55,
+          "goals": 14
+        },
+        {
+          "years": "2006",
+          "club": "Real Madrid",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 30,
+          "goals": 6
+        },
+        {
+          "years": "2007",
+          "club": "Atletico Madrid",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 26,
+          "goals": 0
+        },
+        {
+          "years": "2008",
+          "club": "Benfica",
+          "league": null,
+          "leagueRaw": "Primeira Liga",
+          "country": null,
+          "apps": 24,
+          "goals": 4
+        },
+        {
+          "years": "2009–2011",
           "club": "Atletico Madrid",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 34,
-          "goals": 6
+          "apps": 64,
+          "goals": 8
         },
         {
           "years": "2011",
@@ -45322,9 +46365,36 @@
           "country": null,
           "apps": 21,
           "goals": 3
+        },
+        {
+          "years": "2017",
+          "club": "Cordoba",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 17,
+          "goals": 1
+        },
+        {
+          "years": "2018",
+          "club": "Extremadura",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2018",
+          "club": "Xinjiang Tianshan",
+          "league": null,
+          "leagueRaw": "League One",
+          "country": "China",
+          "apps": 14,
+          "goals": 4
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45333,6 +46403,69 @@
       "nationality": "France",
       "isGK": false,
       "career": [
+        {
+          "years": "2003–2005",
+          "club": "Liverpool",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 31,
+          "goals": 4
+        },
+        {
+          "years": "2005",
+          "club": "Blackburn",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 10,
+          "goals": 1
+        },
+        {
+          "years": "2005",
+          "club": "Liverpool",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2006–2008",
+          "club": "Recreativo Huelva",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 69,
+          "goals": 22
+        },
+        {
+          "years": "2008",
+          "club": "Atletico Madrid",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 30,
+          "goals": 5
+        },
+        {
+          "years": "2009",
+          "club": "Sporting CP",
+          "league": null,
+          "leagueRaw": "Primeira Liga",
+          "country": null,
+          "apps": 5,
+          "goals": 1
+        },
+        {
+          "years": "2009",
+          "club": "Atletico Madrid",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 10,
+          "goals": 0
+        },
         {
           "years": "2010",
           "club": "Zaragoza",
@@ -45350,9 +46483,27 @@
           "country": null,
           "apps": 23,
           "goals": 4
+        },
+        {
+          "years": "2012–2014",
+          "club": "FC Rostov",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 18,
+          "goals": 2
+        },
+        {
+          "years": "2014",
+          "club": "Chicago Fire",
+          "league": null,
+          "leagueRaw": "Major League Soccer",
+          "country": "USA",
+          "apps": 7,
+          "goals": 1
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45362,6 +46513,42 @@
       "isGK": false,
       "career": [
         {
+          "years": "2003–2006",
+          "club": "Manchester United",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 84,
+          "goals": 47
+        },
+        {
+          "years": "2006–2009",
+          "club": "Real Madrid",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 67,
+          "goals": 45
+        },
+        {
+          "years": "2009",
+          "club": "Hamburger SV",
+          "league": null,
+          "leagueRaw": "Bundesliga",
+          "country": null,
+          "apps": 11,
+          "goals": 5
+        },
+        {
+          "years": "2009",
+          "club": "Real Madrid",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 1,
+          "goals": 1
+        },
+        {
           "years": "2010",
           "club": "Hamburger SV",
           "league": "bundesliga",
@@ -45369,6 +46556,15 @@
           "country": null,
           "apps": 25,
           "goals": 7
+        },
+        {
+          "years": "2010",
+          "club": "Hamburger SV",
+          "league": null,
+          "leagueRaw": "DFB Pokal",
+          "country": null,
+          "apps": 1,
+          "goals": 3
         },
         {
           "years": "2011",
@@ -45380,26 +46576,7 @@
           "goals": 4
         }
       ],
-      "careerComplete": false,
-      "trophies": []
-    },
-    {
-      "id": "frederic-oumar-kanoute-117003",
-      "name": "Frédéric Oumar Kanouté",
-      "nationality": "Mali",
-      "isGK": false,
-      "career": [
-        {
-          "years": "2010–2012",
-          "club": "Sevilla",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 54,
-          "goals": 16
-        }
-      ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45409,13 +46586,13 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010",
+          "years": "2004–2011",
           "club": "Arsenal",
-          "league": "pl",
-          "leagueRaw": null,
+          "league": null,
+          "leagueRaw": "Premier League",
           "country": null,
-          "apps": 25,
-          "goals": 3
+          "apps": 212,
+          "goals": 35
         },
         {
           "years": "2011–2014",
@@ -45427,25 +46604,70 @@
           "goals": 28
         },
         {
-          "years": "2014–2019",
+          "years": "2014–2018",
           "club": "Chelsea",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
-          "apps": 138,
+          "apps": 132,
           "goals": 15
         },
         {
-          "years": "2018–2022",
+          "years": "2018",
           "club": "Monaco",
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
-          "apps": 54,
-          "goals": 3
+          "apps": 13,
+          "goals": 1
+        },
+        {
+          "years": "2018",
+          "club": "Chelsea",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2019–2021",
+          "club": "Monaco",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 39,
+          "goals": 2
+        },
+        {
+          "years": "2021",
+          "club": "Monaco II",
+          "league": null,
+          "leagueRaw": "National 2 - Group D",
+          "country": "France",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2021",
+          "club": "Monaco",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2022",
+          "club": "Como",
+          "league": null,
+          "leagueRaw": "Serie B",
+          "country": "Italy",
+          "apps": 17,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45455,12 +46677,57 @@
       "isGK": true,
       "career": [
         {
-          "years": "2011–2013",
+          "years": "2004–2006",
+          "club": "Charlton",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 17,
+          "goals": 0
+        },
+        {
+          "years": "2006–2011",
+          "club": "Brondby",
+          "league": null,
+          "leagueRaw": "Superliga",
+          "country": null,
+          "apps": 133,
+          "goals": 0
+        },
+        {
+          "years": "2011",
           "club": "Evian TG",
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
-          "apps": 39,
+          "apps": 30,
+          "goals": 0
+        },
+        {
+          "years": "2011",
+          "club": "Brondby",
+          "league": null,
+          "leagueRaw": "Superliga",
+          "country": "Denmark",
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2012",
+          "club": "Evian TG",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2013",
+          "club": "GO Ahead Eagles",
+          "league": null,
+          "leagueRaw": "Eredivisie",
+          "country": "Netherlands",
+          "apps": 13,
           "goals": 0
         },
         {
@@ -45471,9 +46738,36 @@
           "country": null,
           "apps": 7,
           "goals": 0
+        },
+        {
+          "years": "2014",
+          "club": "FC Copenhagen",
+          "league": null,
+          "leagueRaw": "Superliga",
+          "country": "Denmark",
+          "apps": 33,
+          "goals": 0
+        },
+        {
+          "years": "2014–2017",
+          "club": "FC Copenhagen",
+          "league": null,
+          "leagueRaw": "Superliga",
+          "country": "Denmark",
+          "apps": 24,
+          "goals": 0
+        },
+        {
+          "years": "2016–2019",
+          "club": "FC Copenhagen",
+          "league": null,
+          "leagueRaw": "Superliga",
+          "country": "Denmark",
+          "apps": 23,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45482,6 +46776,15 @@
       "nationality": "Portugal",
       "isGK": false,
       "career": [
+        {
+          "years": "2004–2010",
+          "club": "Chelsea",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 136,
+          "goals": 7
+        },
         {
           "years": "2010–2013",
           "club": "Real Madrid",
@@ -45499,9 +46802,18 @@
           "country": null,
           "apps": 95,
           "goals": 2
+        },
+        {
+          "years": "2017",
+          "club": "SHANGHAI SIPG",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": "China",
+          "apps": 4,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45511,25 +46823,70 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010–2014",
+          "years": "2003",
+          "club": "Real Sociedad",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 34,
+          "goals": 3
+        },
+        {
+          "years": "2004–2009",
+          "club": "Liverpool",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 142,
+          "goals": 15
+        },
+        {
+          "years": "2009–2014",
           "club": "Real Madrid",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 124,
-          "goals": 1
+          "apps": 158,
+          "goals": 4
         },
         {
-          "years": "2014–2017",
+          "years": "2014",
           "club": "Bayern München",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 79,
-          "goals": 5
+          "apps": 26,
+          "goals": 2
+        },
+        {
+          "years": "2014–2016",
+          "club": "Bayern München",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 30,
+          "goals": 0
+        },
+        {
+          "years": "2015–2017",
+          "club": "Bayern München",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 31,
+          "goals": 4
+        },
+        {
+          "years": "2016",
+          "club": "Bayern München",
+          "league": null,
+          "leagueRaw": "DFB Pokal",
+          "country": "Germany",
+          "apps": 3,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45539,6 +46896,78 @@
       "isGK": false,
       "career": [
         {
+          "years": "2004–2006",
+          "club": "Arsenal",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 5,
+          "goals": 0
+        },
+        {
+          "years": "2006",
+          "club": "Spartak Moscow",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 14,
+          "goals": 1
+        },
+        {
+          "years": "2007",
+          "club": "Celta Vigo",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 21,
+          "goals": 4
+        },
+        {
+          "years": "2007",
+          "club": "Spartak Moscow",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2008",
+          "club": "Cardiff",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": null,
+          "apps": 5,
+          "goals": 0
+        },
+        {
+          "years": "2008",
+          "club": "Birmingham",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": null,
+          "apps": 19,
+          "goals": 2
+        },
+        {
+          "years": "2009",
+          "club": "Portsmouth",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 10,
+          "goals": 0
+        },
+        {
+          "years": "2009",
+          "club": "Spartak Moscow",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 8,
+          "goals": 2
+        },
+        {
           "years": "2010",
           "club": "Malaga",
           "league": "laliga",
@@ -45546,9 +46975,18 @@
           "country": null,
           "apps": 25,
           "goals": 2
+        },
+        {
+          "years": "2011–2013",
+          "club": "Panathinaikos",
+          "league": null,
+          "leagueRaw": "Super League 1",
+          "country": "Greece",
+          "apps": 43,
+          "goals": 4
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45558,12 +46996,12 @@
       "isGK": true,
       "career": [
         {
-          "years": "2010",
+          "years": "2005–2011",
           "club": "Osasuna",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 38,
+          "apps": 189,
           "goals": 0
         },
         {
@@ -45576,7 +47014,7 @@
           "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45586,12 +47024,48 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010",
+          "years": "2004",
+          "club": "Tottenham",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 23,
+          "goals": 1
+        },
+        {
+          "years": "2005",
+          "club": "Portsmouth",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 8,
+          "goals": 0
+        },
+        {
+          "years": "2005",
+          "club": "Tottenham",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2006–2009",
+          "club": "Portsmouth",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 57,
+          "goals": 3
+        },
+        {
+          "years": "2009–2011",
           "club": "Hércules",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 29,
+          "apps": 36,
           "goals": 0
         },
         {
@@ -45602,9 +47076,18 @@
           "country": null,
           "apps": 2,
           "goals": 0
+        },
+        {
+          "years": "2012–2014",
+          "club": "Hércules",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 50,
+          "goals": 4
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45614,13 +47097,67 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010",
-          "club": "Osasuna",
-          "league": "laliga",
-          "leagueRaw": null,
+          "years": "2003",
+          "club": "Deportivo La Coruna",
+          "league": null,
+          "leagueRaw": "Primera División",
           "country": null,
-          "apps": 21,
-          "goals": 3
+          "apps": 28,
+          "goals": 14
+        },
+        {
+          "years": "2004",
+          "club": "Birmingham",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 14,
+          "goals": 4
+        },
+        {
+          "years": "2004",
+          "club": "Deportivo La Coruna",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 15,
+          "goals": 6
+        },
+        {
+          "years": "2005",
+          "club": "Espanyol",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 18,
+          "goals": 1
+        },
+        {
+          "years": "2005",
+          "club": "Birmingham",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 17,
+          "goals": 2
+        },
+        {
+          "years": "2006",
+          "club": "Espanyol",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 34,
+          "goals": 7
+        },
+        {
+          "years": "2007–2011",
+          "club": "Osasuna",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 92,
+          "goals": 27
         },
         {
           "years": "2011",
@@ -45630,9 +47167,45 @@
           "country": null,
           "apps": 15,
           "goals": 3
+        },
+        {
+          "years": "2012",
+          "club": "Atlético Baleares",
+          "league": null,
+          "leagueRaw": "Segunda B",
+          "country": null,
+          "apps": 9,
+          "goals": 1
+        },
+        {
+          "years": "2012",
+          "club": "Villarreal",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 17,
+          "goals": 2
+        },
+        {
+          "years": "2013",
+          "club": "Miramar",
+          "league": null,
+          "leagueRaw": "Primera División - Clausura",
+          "country": "Uruguay",
+          "apps": 19,
+          "goals": 5
+        },
+        {
+          "years": "2015",
+          "club": "Lausanne",
+          "league": null,
+          "leagueRaw": "Challenge League",
+          "country": null,
+          "apps": 15,
+          "goals": 1
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45642,6 +47215,51 @@
       "isGK": false,
       "career": [
         {
+          "years": "2004",
+          "club": "Chelsea",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 14,
+          "goals": 0
+        },
+        {
+          "years": "2005",
+          "club": "Birmingham",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 24,
+          "goals": 5
+        },
+        {
+          "years": "2008",
+          "club": "Krylia Sovetov",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 22,
+          "goals": 2
+        },
+        {
+          "years": "2009",
+          "club": "Zaragoza",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 20,
+          "goals": 2
+        },
+        {
+          "years": "2009",
+          "club": "Krylia Sovetov",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 25,
+          "goals": 2
+        },
+        {
           "years": "2010",
           "club": "Zaragoza",
           "league": "laliga",
@@ -45649,9 +47267,27 @@
           "country": null,
           "apps": 36,
           "goals": 3
+        },
+        {
+          "years": "2011–2013",
+          "club": "Sparta Praha",
+          "league": null,
+          "leagueRaw": "Czech Liga",
+          "country": null,
+          "apps": 47,
+          "goals": 5
+        },
+        {
+          "years": "2013–2015",
+          "club": "Alaves",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 52,
+          "goals": 4
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45661,16 +47297,43 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010–2023",
+          "years": "2005",
+          "club": "Manchester United",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2006",
+          "club": "Zaragoza",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 22,
+          "goals": 2
+        },
+        {
+          "years": "2007",
+          "club": "Manchester United",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2008–2023",
           "club": "Barcelona",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 340,
-          "goals": 26
+          "apps": 397,
+          "goals": 29
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45680,12 +47343,93 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010–2013",
+          "years": "2005–2007",
+          "club": "Chelsea",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 13,
+          "goals": 0
+        },
+        {
+          "years": "2007",
+          "club": "Portsmouth",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 12,
+          "goals": 1
+        },
+        {
+          "years": "2007",
+          "club": "Arsenal",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2008",
+          "club": "Real Madrid",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 19,
+          "goals": 0
+        },
+        {
+          "years": "2008",
+          "club": "Portsmouth",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 12,
+          "goals": 0
+        },
+        {
+          "years": "2009–2012",
           "club": "Real Madrid",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 45,
+          "apps": 66,
+          "goals": 1
+        },
+        {
+          "years": "2012",
+          "club": "Anzhi",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 14,
+          "goals": 0
+        },
+        {
+          "years": "2012",
+          "club": "Real Madrid",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2013",
+          "club": "Lokomotiv",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 17,
+          "goals": 1
+        },
+        {
+          "years": "2013",
+          "club": "Anzhi",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 4,
           "goals": 0
         },
         {
@@ -45707,7 +47451,7 @@
           "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45717,13 +47461,31 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010–2012",
+          "years": "2005",
+          "club": "Arsenal",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 5,
+          "goals": 0
+        },
+        {
+          "years": "2006",
+          "club": "Charlton",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 12,
+          "goals": 0
+        },
+        {
+          "years": "2006–2012",
           "club": "Arsenal",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
-          "apps": 65,
-          "goals": 5
+          "apps": 133,
+          "goals": 7
         },
         {
           "years": "2012–2014",
@@ -45742,9 +47504,27 @@
           "country": null,
           "apps": 40,
           "goals": 0
+        },
+        {
+          "years": "2016–2018",
+          "club": "Rubin",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": "Russia",
+          "apps": 22,
+          "goals": 1
+        },
+        {
+          "years": "2018–2020",
+          "club": "FC Sion",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": "Switzerland",
+          "apps": 20,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45754,13 +47534,40 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010",
-          "club": "Manchester City",
-          "league": "pl",
-          "leagueRaw": null,
+          "years": "2005",
+          "club": "Arsenal",
+          "league": null,
+          "leagueRaw": "Premier League",
           "country": null,
-          "apps": 8,
+          "apps": 13,
+          "goals": 4
+        },
+        {
+          "years": "2005",
+          "club": "Monaco",
+          "league": null,
+          "leagueRaw": "Ligue 1",
+          "country": null,
+          "apps": 13,
           "goals": 1
+        },
+        {
+          "years": "2006–2009",
+          "club": "Arsenal",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 91,
+          "goals": 42
+        },
+        {
+          "years": "2009",
+          "club": "Manchester City",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 26,
+          "goals": 14
         },
         {
           "years": "2010",
@@ -45770,6 +47577,15 @@
           "country": null,
           "apps": 14,
           "goals": 5
+        },
+        {
+          "years": "2010",
+          "club": "Manchester City",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 8,
+          "goals": 1
         },
         {
           "years": "2011–2015",
@@ -45788,9 +47604,63 @@
           "country": null,
           "apps": 12,
           "goals": 1
+        },
+        {
+          "years": "2016",
+          "club": "Başakşehir",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 11,
+          "goals": 6
+        },
+        {
+          "years": "2016–2018",
+          "club": "Başakşehir",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 35,
+          "goals": 16
+        },
+        {
+          "years": "2017–2019",
+          "club": "Başakşehir",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 20,
+          "goals": 4
+        },
+        {
+          "years": "2018",
+          "club": "Başakşehir",
+          "league": null,
+          "leagueRaw": "Türkiye Kupası",
+          "country": "Turkey",
+          "apps": 4,
+          "goals": 1
+        },
+        {
+          "years": "2019",
+          "club": "Kayserispor",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 8,
+          "goals": 2
+        },
+        {
+          "years": "2020",
+          "club": "Olimpia",
+          "league": null,
+          "leagueRaw": "Division Profesional - Clausura",
+          "country": "Paraguay",
+          "apps": 2,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45799,6 +47669,51 @@
       "nationality": "Spain",
       "isGK": false,
       "career": [
+        {
+          "years": "2005",
+          "club": "Chelsea",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 25,
+          "goals": 1
+        },
+        {
+          "years": "2006",
+          "club": "Valencia",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2007",
+          "club": "Athletic Club",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 16,
+          "goals": 0
+        },
+        {
+          "years": "2008",
+          "club": "Valencia",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2009",
+          "club": "Valladolid",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 13,
+          "goals": 0
+        },
         {
           "years": "2010–2012",
           "club": "Levante",
@@ -45809,7 +47724,7 @@
           "goals": 2
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45818,6 +47733,60 @@
       "nationality": "Argentina",
       "isGK": false,
       "career": [
+        {
+          "years": "2005",
+          "club": "Corinthians",
+          "league": null,
+          "leagueRaw": "Serie A",
+          "country": null,
+          "apps": 8,
+          "goals": 0
+        },
+        {
+          "years": "2006",
+          "club": "Liverpool",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2006",
+          "club": "West Ham",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 5,
+          "goals": 0
+        },
+        {
+          "years": "2006",
+          "club": "Corinthians",
+          "league": null,
+          "leagueRaw": "Serie A",
+          "country": null,
+          "apps": 18,
+          "goals": 0
+        },
+        {
+          "years": "2007–2010",
+          "club": "Liverpool",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 86,
+          "goals": 1
+        },
+        {
+          "years": "2010",
+          "club": "Barcelona",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 27,
+          "goals": 0
+        },
         {
           "years": "2010",
           "club": "Liverpool",
@@ -45828,16 +47797,16 @@
           "goals": 0
         },
         {
-          "years": "2010–2018",
+          "years": "2011–2018",
           "club": "Barcelona",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 203,
+          "apps": 176,
           "goals": 1
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45847,6 +47816,24 @@
       "isGK": false,
       "career": [
         {
+          "years": "2006–2010",
+          "club": "Liverpool",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 46,
+          "goals": 0
+        },
+        {
+          "years": "2010",
+          "club": "Galatasaray",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": null,
+          "apps": 16,
+          "goals": 0
+        },
+        {
           "years": "2011",
           "club": "Sporting CP",
           "league": "liga_pt",
@@ -45854,6 +47841,24 @@
           "country": null,
           "apps": 24,
           "goals": 0
+        },
+        {
+          "years": "2011",
+          "club": "Sporting CP",
+          "league": null,
+          "leagueRaw": "Taça da Liga",
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2011",
+          "club": "Sporting CP",
+          "league": null,
+          "leagueRaw": "Taça de Portugal",
+          "country": null,
+          "apps": 6,
+          "goals": 2
         },
         {
           "years": "2012",
@@ -45871,6 +47876,15 @@
           "leagueRaw": null,
           "country": null,
           "apps": 13,
+          "goals": 0
+        },
+        {
+          "years": "2012",
+          "club": "Sporting CP",
+          "league": null,
+          "leagueRaw": "Taça da Liga",
+          "country": null,
+          "apps": 2,
           "goals": 0
         },
         {
@@ -45901,16 +47915,79 @@
           "goals": 0
         },
         {
+          "years": "2015–2017",
+          "club": "VfB Stuttgart",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 38,
+          "goals": 1
+        },
+        {
+          "years": "2016–2018",
+          "club": "VfB Stuttgart",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 27,
+          "goals": 0
+        },
+        {
           "years": "2017–2019",
           "club": "VfB Stuttgart",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 52,
+          "apps": 29,
           "goals": 2
+        },
+        {
+          "years": "2018–2020",
+          "club": "VfB Stuttgart",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2020",
+          "club": "Los Angeles Galaxy",
+          "league": null,
+          "leagueRaw": "Major League Soccer",
+          "country": "USA",
+          "apps": 22,
+          "goals": 0
+        },
+        {
+          "years": "2021",
+          "club": "Aldosivi",
+          "league": null,
+          "leagueRaw": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "apps": 26,
+          "goals": 0
+        },
+        {
+          "years": "2022",
+          "club": "Racing Club",
+          "league": null,
+          "leagueRaw": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "apps": 33,
+          "goals": 0
+        },
+        {
+          "years": "2022–2024",
+          "club": "Racing Club",
+          "league": null,
+          "leagueRaw": "CONMEBOL Sudamericana",
+          "country": "World",
+          "apps": 10,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -45919,6 +47996,33 @@
       "nationality": "Morocco",
       "isGK": false,
       "career": [
+        {
+          "years": "2006",
+          "club": "Liverpool",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2008–2010",
+          "club": "Liverpool",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 18,
+          "goals": 0
+        },
+        {
+          "years": "2010",
+          "club": "PAOK",
+          "league": null,
+          "leagueRaw": "Super League 1",
+          "country": null,
+          "apps": 24,
+          "goals": 2
+        },
         {
           "years": "2011–2015",
           "club": "Levante",
@@ -45963,56 +48067,18 @@
           "country": null,
           "apps": 57,
           "goals": 6
-        }
-      ],
-      "careerComplete": false,
-      "trophies": []
-    },
-    {
-      "id": "alvaro-arbeloa-coca-90521",
-      "name": "Álvaro Arbeloa Coca",
-      "nationality": "Spain",
-      "isGK": false,
-      "career": [
-        {
-          "years": "2010–2016",
-          "club": "Real Madrid",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 124,
-          "goals": 1
         },
         {
-          "years": "2016",
-          "club": "West Ham",
-          "league": "pl",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 3,
-          "goals": 0
+          "years": "2019–2021",
+          "club": "Al Ahli Doha",
+          "league": null,
+          "leagueRaw": "Stars League",
+          "country": "Qatar",
+          "apps": 41,
+          "goals": 15
         }
       ],
-      "careerComplete": false,
-      "trophies": []
-    },
-    {
-      "id": "alain-didier-zokora-deguy-117083",
-      "name": "Alain Didier Zokora-Déguy",
-      "nationality": "Côte d'Ivoire",
-      "isGK": false,
-      "career": [
-        {
-          "years": "2010",
-          "club": "Sevilla",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 23,
-          "goals": 0
-        }
-      ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46022,13 +48088,22 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010–2013",
+          "years": "2005–2007",
+          "club": "Southampton",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": null,
+          "apps": 40,
+          "goals": 5
+        },
+        {
+          "years": "2007–2013",
           "club": "Tottenham",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
-          "apps": 99,
-          "goals": 38
+          "apps": 146,
+          "goals": 43
         },
         {
           "years": "2013–2020",
@@ -46056,9 +48131,18 @@
           "country": null,
           "apps": 5,
           "goals": 1
+        },
+        {
+          "years": "2022",
+          "club": "Los Angeles FC",
+          "league": null,
+          "leagueRaw": "Major League Soccer",
+          "country": "USA",
+          "apps": 13,
+          "goals": 3
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46067,6 +48151,33 @@
       "nationality": "Netherlands",
       "isGK": false,
       "career": [
+        {
+          "years": "2005",
+          "club": "Ajax",
+          "league": null,
+          "leagueRaw": "Eredivisie",
+          "country": null,
+          "apps": 25,
+          "goals": 2
+        },
+        {
+          "years": "2007–2010",
+          "club": "Liverpool",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 82,
+          "goals": 11
+        },
+        {
+          "years": "2010",
+          "club": "1899 Hoffenheim",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 15,
+          "goals": 1
+        },
         {
           "years": "2010",
           "club": "Liverpool",
@@ -46082,7 +48193,70 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 46,
+          "apps": 32,
+          "goals": 4
+        },
+        {
+          "years": "2011",
+          "club": "1899 Hoffenheim",
+          "league": null,
+          "leagueRaw": "DFB Pokal",
+          "country": "Germany",
+          "apps": 4,
+          "goals": 1
+        },
+        {
+          "years": "2012",
+          "club": "Ajax",
+          "league": null,
+          "leagueRaw": "Eredivisie",
+          "country": "Netherlands",
+          "apps": 16,
+          "goals": 4
+        },
+        {
+          "years": "2012",
+          "club": "Ajax",
+          "league": null,
+          "leagueRaw": "KNVB Beker",
+          "country": null,
+          "apps": 2,
+          "goals": 1
+        },
+        {
+          "years": "2013",
+          "club": "Kasımpaşa",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 29,
+          "goals": 5
+        },
+        {
+          "years": "2013–2015",
+          "club": "Kasımpaşa",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 30,
+          "goals": 9
+        },
+        {
+          "years": "2015",
+          "club": "Al Ain",
+          "league": null,
+          "leagueRaw": "Pro League",
+          "country": "United-Arab-Emirates",
+          "apps": 8,
+          "goals": 1
+        },
+        {
+          "years": "2016",
+          "club": "Beşiktaş",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 18,
           "goals": 5
         },
         {
@@ -46095,6 +48269,24 @@
           "goals": 4
         },
         {
+          "years": "2016–2018",
+          "club": "Beşiktaş",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 33,
+          "goals": 13
+        },
+        {
+          "years": "2017",
+          "club": "Beşiktaş",
+          "league": null,
+          "leagueRaw": "Türkiye Kupası",
+          "country": "Turkey",
+          "apps": 5,
+          "goals": 0
+        },
+        {
           "years": "2018",
           "club": "Fulham",
           "league": "pl",
@@ -46102,9 +48294,81 @@
           "country": null,
           "apps": 16,
           "goals": 5
+        },
+        {
+          "years": "2018",
+          "club": "Beşiktaş",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 12,
+          "goals": 4
+        },
+        {
+          "years": "2019",
+          "club": "Ajax",
+          "league": null,
+          "leagueRaw": "Eredivisie",
+          "country": "Netherlands",
+          "apps": 5,
+          "goals": 0
+        },
+        {
+          "years": "2019",
+          "club": "Galatasaray",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 15,
+          "goals": 5
+        },
+        {
+          "years": "2019",
+          "club": "Ajax",
+          "league": null,
+          "leagueRaw": "KNVB Beker",
+          "country": "Netherlands",
+          "apps": 2,
+          "goals": 1
+        },
+        {
+          "years": "2020",
+          "club": "Galatasaray",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 32,
+          "goals": 7
+        },
+        {
+          "years": "2020–2022",
+          "club": "Galatasaray",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 32,
+          "goals": 3
+        },
+        {
+          "years": "2022",
+          "club": "Eyüpspor",
+          "league": null,
+          "leagueRaw": "1. Lig",
+          "country": "Turkey",
+          "apps": 27,
+          "goals": 5
+        },
+        {
+          "years": "2022–2024",
+          "club": "Eyüpspor",
+          "league": null,
+          "leagueRaw": "Türkiye Kupası",
+          "country": "Turkey",
+          "apps": 2,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46114,12 +48378,57 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010",
+          "years": "2005–2007",
+          "club": "Rangers",
+          "league": null,
+          "leagueRaw": "Premiership",
+          "country": null,
+          "apps": 51,
+          "goals": 0
+        },
+        {
+          "years": "2007",
+          "club": "Tottenham",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 14,
+          "goals": 0
+        },
+        {
+          "years": "2007",
+          "club": "Rangers",
+          "league": null,
+          "leagueRaw": "Premiership",
+          "country": null,
+          "apps": 20,
+          "goals": 0
+        },
+        {
+          "years": "2008",
+          "club": "Tottenham",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 8,
+          "goals": 0
+        },
+        {
+          "years": "2009",
+          "club": "Sunderland",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 11,
+          "goals": 0
+        },
+        {
+          "years": "2009–2011",
           "club": "Tottenham",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
-          "apps": 21,
+          "apps": 29,
           "goals": 2
         },
         {
@@ -46141,16 +48450,34 @@
           "goals": 0
         },
         {
-          "years": "2014–2016",
+          "years": "2012",
+          "club": "Nottingham Forest",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2013",
+          "club": "Bolton",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2014–2019",
           "club": "Aston Villa",
-          "league": "pl",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 58,
-          "goals": 1
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 157,
+          "goals": 3
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46159,6 +48486,24 @@
       "nationality": "Spain",
       "isGK": false,
       "career": [
+        {
+          "years": "2007",
+          "club": "Real Sociedad",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 13,
+          "goals": 1
+        },
+        {
+          "years": "2008–2010",
+          "club": "Arsenal",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 6,
+          "goals": 1
+        },
         {
           "years": "2010–2012",
           "club": "Atletico Madrid",
@@ -46178,34 +48523,79 @@
           "goals": 0
         },
         {
-          "years": "2016",
-          "club": "Osasuna",
-          "league": "laliga",
-          "leagueRaw": null,
+          "years": "2012",
+          "club": "Hércules",
+          "league": null,
+          "leagueRaw": "Segunda División",
           "country": null,
-          "apps": 15,
+          "apps": 18,
           "goals": 1
         },
         {
-          "years": "2019",
-          "club": "Osasuna",
-          "league": "laliga",
-          "leagueRaw": null,
+          "years": "2013",
+          "club": "Atletico Paranaense",
+          "league": null,
+          "leagueRaw": "Serie A",
+          "country": "Brazil",
+          "apps": 6,
+          "goals": 1
+        },
+        {
+          "years": "2014",
+          "club": "Huesca",
+          "league": null,
+          "leagueRaw": "Primera División RFEF",
           "country": null,
-          "apps": 23,
+          "apps": 21,
+          "goals": 1
+        },
+        {
+          "years": "2014",
+          "club": "Atletico Paranaense",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": null,
+          "apps": 6,
           "goals": 0
         },
         {
-          "years": "2021",
-          "club": "Espanyol",
-          "league": "laliga",
-          "leagueRaw": null,
+          "years": "2015",
+          "club": "Huesca",
+          "league": null,
+          "leagueRaw": "Segunda División",
           "country": null,
-          "apps": 10,
-          "goals": 0
+          "apps": 37,
+          "goals": 7
+        },
+        {
+          "years": "2016–2020",
+          "club": "Osasuna",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 104,
+          "goals": 9
+        },
+        {
+          "years": "2020–2022",
+          "club": "Espanyol",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 46,
+          "goals": 1
+        },
+        {
+          "years": "2022–2024",
+          "club": "Tianjin Teda",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": "China",
+          "apps": 44,
+          "goals": 5
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46215,16 +48605,34 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010–2020",
+          "years": "2009–2020",
           "club": "Athletic Club",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 265,
-          "goals": 26
+          "apps": 290,
+          "goals": 27
+        },
+        {
+          "years": "2020",
+          "club": "Birmingham",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 27,
+          "goals": 0
+        },
+        {
+          "years": "2021",
+          "club": "Amorebieta",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 27,
+          "goals": 1
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46233,6 +48641,33 @@
       "nationality": "Paraguay",
       "isGK": false,
       "career": [
+        {
+          "years": "2005–2007",
+          "club": "Bayern München",
+          "league": null,
+          "leagueRaw": "Bundesliga",
+          "country": null,
+          "apps": 39,
+          "goals": 6
+        },
+        {
+          "years": "2007–2009",
+          "club": "Blackburn",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 57,
+          "goals": 23
+        },
+        {
+          "years": "2009",
+          "club": "Manchester City",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 19,
+          "goals": 3
+        },
         {
           "years": "2010",
           "club": "Blackburn",
@@ -46261,16 +48696,151 @@
           "goals": 7
         },
         {
-          "years": "2012–2016",
+          "years": "2012–2014",
           "club": "Malaga",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 91,
+          "apps": 62,
+          "goals": 14
+        },
+        {
+          "years": "2014",
+          "club": "Cruz Azul",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": null,
+          "apps": 10,
+          "goals": 4
+        },
+        {
+          "years": "2014–2016",
+          "club": "Malaga",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 29,
+          "goals": 5
+        },
+        {
+          "years": "2016–2018",
+          "club": "Olimpia",
+          "league": null,
+          "leagueRaw": "Division Profesional - Clausura",
+          "country": "Paraguay",
+          "apps": 42,
+          "goals": 8
+        },
+        {
+          "years": "2017",
+          "club": "Olimpia",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": null,
+          "apps": 4,
+          "goals": 1
+        },
+        {
+          "years": "2017–2019",
+          "club": "Olimpia",
+          "league": null,
+          "leagueRaw": "Division Profesional - Clausura",
+          "country": "Paraguay",
+          "apps": 36,
+          "goals": 13
+        },
+        {
+          "years": "2018–2020",
+          "club": "Olimpia",
+          "league": null,
+          "leagueRaw": "Division Profesional - Clausura",
+          "country": "Paraguay",
+          "apps": 38,
+          "goals": 27
+        },
+        {
+          "years": "2019–2021",
+          "club": "Olimpia",
+          "league": null,
+          "leagueRaw": "Division Profesional - Clausura",
+          "country": "Paraguay",
+          "apps": 35,
           "goals": 19
+        },
+        {
+          "years": "2020–2022",
+          "club": "Olimpia",
+          "league": null,
+          "leagueRaw": "Division Profesional - Apertura",
+          "country": "Paraguay",
+          "apps": 30,
+          "goals": 4
+        },
+        {
+          "years": "2021",
+          "club": "Olimpia",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": "World",
+          "apps": 6,
+          "goals": 1
+        },
+        {
+          "years": "2022",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "Division Profesional - Apertura",
+          "country": "Paraguay",
+          "apps": 39,
+          "goals": 12
+        },
+        {
+          "years": "2022–2024",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": "World",
+          "apps": 6,
+          "goals": 2
+        },
+        {
+          "years": "2023–2025",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "Division Profesional - Apertura",
+          "country": "Paraguay",
+          "apps": 34,
+          "goals": 4
+        },
+        {
+          "years": "2024",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": "World",
+          "apps": 4,
+          "goals": 1
+        },
+        {
+          "years": "2024–2026",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": "World",
+          "apps": 11,
+          "goals": 1
+        },
+        {
+          "years": "2025",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "Division Profesional - Apertura",
+          "country": "Paraguay",
+          "apps": 11,
+          "goals": 4
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46279,6 +48849,24 @@
       "nationality": "Bulgaria",
       "isGK": false,
       "career": [
+        {
+          "years": "2005–2007",
+          "club": "Atletico Madrid",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 49,
+          "goals": 3
+        },
+        {
+          "years": "2007–2010",
+          "club": "Manchester City",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 59,
+          "goals": 9
+        },
         {
           "years": "2010–2012",
           "club": "Bolton",
@@ -46296,9 +48884,27 @@
           "country": null,
           "apps": 8,
           "goals": 0
+        },
+        {
+          "years": "2012",
+          "club": "Bolton",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 14,
+          "goals": 3
+        },
+        {
+          "years": "2013",
+          "club": "CSKA Sofia",
+          "league": null,
+          "leagueRaw": "A PFG",
+          "country": null,
+          "apps": 17,
+          "goals": 3
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46308,16 +48914,52 @@
       "isGK": false,
       "career": [
         {
-          "years": "2012–2014",
+          "years": "2003",
+          "club": "Celta Vigo",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 12,
+          "goals": 0
+        },
+        {
+          "years": "2005–2007",
+          "club": "Celta Vigo",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 66,
+          "goals": 2
+        },
+        {
+          "years": "2007",
+          "club": "Birmingham",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2008",
+          "club": "Celta Vigo",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 15,
+          "goals": 0
+        },
+        {
+          "years": "2010–2014",
           "club": "Celta Vigo",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 61,
+          "apps": 93,
           "goals": 2
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46326,6 +48968,15 @@
       "nationality": "France",
       "isGK": false,
       "career": [
+        {
+          "years": "2010",
+          "club": "Lorient II",
+          "league": null,
+          "leagueRaw": "National 2",
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
         {
           "years": "2010",
           "club": "Lorient",
@@ -46354,22 +49005,58 @@
           "goals": 0
         },
         {
-          "years": "2015–2018",
+          "years": "2013",
+          "club": "SC Freiburg",
+          "league": null,
+          "leagueRaw": "DFB Pokal",
+          "country": "Germany",
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2014",
+          "club": "Charlton",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 5,
+          "goals": 0
+        },
+        {
+          "years": "2015–2017",
           "club": "Arsenal",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
-          "apps": 62,
+          "apps": 55,
           "goals": 0
         },
         {
-          "years": "2017–2020",
+          "years": "2017",
           "club": "Valencia",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 61,
+          "apps": 9,
           "goals": 1
+        },
+        {
+          "years": "2017",
+          "club": "Arsenal",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2018–2020",
+          "club": "Valencia",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 52,
+          "goals": 0
         },
         {
           "years": "2020–2024",
@@ -46381,16 +49068,34 @@
           "goals": 3
         },
         {
-          "years": "2024–2026",
+          "years": "2024",
           "club": "Nantes",
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
-          "apps": 22,
+          "apps": 6,
           "goals": 1
+        },
+        {
+          "years": "2024",
+          "club": "Nantes II",
+          "league": null,
+          "leagueRaw": "National 3 - Group J",
+          "country": "France",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2025",
+          "club": "Nantes",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 16,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46400,13 +49105,22 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010–2013",
-          "club": "Newcastle",
-          "league": "pl",
-          "leagueRaw": null,
+          "years": "2005–2008",
+          "club": "Mallorca",
+          "league": null,
+          "leagueRaw": "La Liga",
           "country": null,
-          "apps": 108,
-          "goals": 6
+          "apps": 96,
+          "goals": 5
+        },
+        {
+          "years": "2008–2013",
+          "club": "Newcastle",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": null,
+          "apps": 175,
+          "goals": 10
         },
         {
           "years": "2013",
@@ -46436,7 +49150,7 @@
           "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46446,13 +49160,22 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010",
+          "years": "2005–2008",
+          "club": "Marseille",
+          "league": null,
+          "leagueRaw": "Ligue 1",
+          "country": null,
+          "apps": 79,
+          "goals": 10
+        },
+        {
+          "years": "2008–2011",
           "club": "Arsenal",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
-          "apps": 30,
-          "goals": 10
+          "apps": 85,
+          "goals": 18
         },
         {
           "years": "2011",
@@ -46473,12 +49196,12 @@
           "goals": 0
         },
         {
-          "years": "2012–2017",
+          "years": "2012–2016",
           "club": "Manchester City",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
-          "apps": 99,
+          "apps": 98,
           "goals": 13
         },
         {
@@ -46491,6 +49214,24 @@
           "goals": 2
         },
         {
+          "years": "2016",
+          "club": "Manchester City",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2017",
+          "club": "Antalyaspor",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 8,
+          "goals": 2
+        },
+        {
           "years": "2018",
           "club": "West Ham",
           "league": "pl",
@@ -46498,9 +49239,18 @@
           "country": null,
           "apps": 5,
           "goals": 0
+        },
+        {
+          "years": "2019",
+          "club": "Anderlecht",
+          "league": null,
+          "leagueRaw": "Jupiler Pro League",
+          "country": "Belgium",
+          "apps": 7,
+          "goals": 1
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46510,10 +49260,55 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010",
+          "years": "2004–2006",
+          "club": "Deportivo La Coruna",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 18,
+          "goals": 3
+        },
+        {
+          "years": "2006",
+          "club": "Squadra sconosciuta",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 29,
+          "goals": 14
+        },
+        {
+          "years": "2007",
+          "club": "Deportivo La Coruna",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 25,
+          "goals": 9
+        },
+        {
+          "years": "2008",
           "club": "Newcastle",
-          "league": "pl",
-          "leagueRaw": null,
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 5,
+          "goals": 1
+        },
+        {
+          "years": "2009",
+          "club": "Racing Santander",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 23,
+          "goals": 3
+        },
+        {
+          "years": "2009",
+          "club": "Newcastle",
+          "league": null,
+          "leagueRaw": "Championship",
           "country": null,
           "apps": 2,
           "goals": 0
@@ -46528,16 +49323,133 @@
           "goals": 2
         },
         {
-          "years": "2014",
-          "club": "Cordoba",
-          "league": "laliga",
+          "years": "2010",
+          "club": "Newcastle",
+          "league": "pl",
           "leagueRaw": null,
           "country": null,
-          "apps": 9,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2011",
+          "club": "Deportivo La Coruna",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 16,
+          "goals": 3
+        },
+        {
+          "years": "2012–2014",
+          "club": "Cordoba",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 52,
+          "goals": 18
+        },
+        {
+          "years": "2014",
+          "club": "Mallorca",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 16,
+          "goals": 9
+        },
+        {
+          "years": "2014–2016",
+          "club": "Cordoba",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 43,
+          "goals": 12
+        },
+        {
+          "years": "2016",
+          "club": "Muangthong United",
+          "league": null,
+          "leagueRaw": "Thai League 1",
+          "country": "Thailand",
+          "apps": 5,
+          "goals": 4
+        },
+        {
+          "years": "2017",
+          "club": "Osasuna",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 32,
+          "goals": 8
+        },
+        {
+          "years": "2017",
+          "club": "Muangthong United",
+          "league": null,
+          "leagueRaw": "Thai League 1",
+          "country": "Thailand",
+          "apps": 8,
+          "goals": 5
+        },
+        {
+          "years": "2018",
+          "club": "Osasuna",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 29,
+          "goals": 5
+        },
+        {
+          "years": "2019",
+          "club": "Penarol",
+          "league": null,
+          "leagueRaw": "Primera División - Clausura",
+          "country": "Uruguay",
+          "apps": 13,
+          "goals": 5
+        },
+        {
+          "years": "2020",
+          "club": "Alcorcon",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 15,
+          "goals": 5
+        },
+        {
+          "years": "2020",
+          "club": "Penarol",
+          "league": null,
+          "leagueRaw": "Primera División - Apertura",
+          "country": "Uruguay",
+          "apps": 10,
           "goals": 1
+        },
+        {
+          "years": "2020",
+          "club": "Penarol",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": "World",
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2021",
+          "club": "Alcorcon",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 27,
+          "goals": 6
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46546,6 +49458,33 @@
       "nationality": "Argentina",
       "isGK": false,
       "career": [
+        {
+          "years": "2006–2008",
+          "club": "A. Italiano",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": null,
+          "apps": 61,
+          "goals": 14
+        },
+        {
+          "years": "2008",
+          "club": "Chelsea",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 8,
+          "goals": 0
+        },
+        {
+          "years": "2009",
+          "club": "Blackburn",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 22,
+          "goals": 1
+        },
         {
           "years": "2010–2013",
           "club": "Wigan",
@@ -46565,13 +49504,49 @@
           "goals": 17
         },
         {
-          "years": "2015–2018",
+          "years": "2014",
+          "club": "Werder Bremen",
+          "league": null,
+          "leagueRaw": "DFB Pokal",
+          "country": "Germany",
+          "apps": 2,
+          "goals": 1
+        },
+        {
+          "years": "2015",
           "club": "FC Schalke 04",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 67,
-          "goals": 5
+          "apps": 25,
+          "goals": 2
+        },
+        {
+          "years": "2015–2017",
+          "club": "FC Schalke 04",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 14,
+          "goals": 1
+        },
+        {
+          "years": "2016–2018",
+          "club": "FC Schalke 04",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 31,
+          "goals": 3
+        },
+        {
+          "years": "2017",
+          "club": "FC Schalke 04",
+          "league": null,
+          "leagueRaw": "DFB Pokal",
+          "country": "Germany",
+          "apps": 4,
+          "goals": 1
         },
         {
           "years": "2018",
@@ -46590,9 +49565,135 @@
           "country": null,
           "apps": 4,
           "goals": 0
+        },
+        {
+          "years": "2019",
+          "club": "Atletico-MG",
+          "league": null,
+          "leagueRaw": "Serie A",
+          "country": "Brazil",
+          "apps": 21,
+          "goals": 3
+        },
+        {
+          "years": "2019",
+          "club": "Atletico-MG",
+          "league": null,
+          "leagueRaw": "CONMEBOL Sudamericana",
+          "country": "World",
+          "apps": 2,
+          "goals": 1
+        },
+        {
+          "years": "2020",
+          "club": "San Lorenzo",
+          "league": null,
+          "leagueRaw": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2020",
+          "club": "Atletico-MG",
+          "league": null,
+          "leagueRaw": "Mineiro - 1",
+          "country": "Brazil",
+          "apps": 6,
+          "goals": 3
+        },
+        {
+          "years": "2020",
+          "club": "Atletico-MG",
+          "league": null,
+          "leagueRaw": "CONMEBOL Sudamericana",
+          "country": "World",
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2021",
+          "club": "Göztepe",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 15,
+          "goals": 3
+        },
+        {
+          "years": "2021",
+          "club": "San Lorenzo",
+          "league": null,
+          "leagueRaw": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "apps": 27,
+          "goals": 10
+        },
+        {
+          "years": "2021",
+          "club": "Göztepe",
+          "league": null,
+          "leagueRaw": "Türkiye Kupası",
+          "country": "Turkey",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2021",
+          "club": "San Lorenzo",
+          "league": null,
+          "leagueRaw": "CONMEBOL Sudamericana",
+          "country": "World",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2021",
+          "club": "San Lorenzo",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": "World",
+          "apps": 4,
+          "goals": 3
+        },
+        {
+          "years": "2022",
+          "club": "Club Tijuana",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": "Mexico",
+          "apps": 15,
+          "goals": 2
+        },
+        {
+          "years": "2023",
+          "club": "U. Catolica",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": "Chile",
+          "apps": 20,
+          "goals": 2
+        },
+        {
+          "years": "2023",
+          "club": "U. Catolica",
+          "league": null,
+          "leagueRaw": "CONMEBOL Sudamericana",
+          "country": "World",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2024",
+          "club": "Independ. Rivadavia",
+          "league": null,
+          "leagueRaw": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "apps": 1,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46601,6 +49702,33 @@
       "nationality": "Mexico",
       "isGK": false,
       "career": [
+        {
+          "years": "2006",
+          "club": "Salamanca UDS",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 31,
+          "goals": 8
+        },
+        {
+          "years": "2007",
+          "club": "Osasuna",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 33,
+          "goals": 3
+        },
+        {
+          "years": "2008–2010",
+          "club": "Arsenal",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 25,
+          "goals": 2
+        },
         {
           "years": "2010",
           "club": "West Brom",
@@ -46627,9 +49755,18 @@
           "country": null,
           "apps": 219,
           "goals": 66
+        },
+        {
+          "years": "2018–2025",
+          "club": "Los Angeles FC",
+          "league": null,
+          "leagueRaw": "Major League Soccer",
+          "country": "USA",
+          "apps": 165,
+          "goals": 80
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46638,6 +49775,51 @@
       "nationality": "France",
       "isGK": false,
       "career": [
+        {
+          "years": "2005–2007",
+          "club": "Le Havre",
+          "league": null,
+          "leagueRaw": "Ligue 2",
+          "country": null,
+          "apps": 56,
+          "goals": 3
+        },
+        {
+          "years": "2007",
+          "club": "Paris Saint Germain",
+          "league": null,
+          "leagueRaw": "Ligue 1",
+          "country": null,
+          "apps": 16,
+          "goals": 0
+        },
+        {
+          "years": "2008",
+          "club": "Middlesbrough",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 23,
+          "goals": 0
+        },
+        {
+          "years": "2009",
+          "club": "Nice",
+          "league": null,
+          "leagueRaw": "Ligue 1",
+          "country": null,
+          "apps": 12,
+          "goals": 1
+        },
+        {
+          "years": "2009",
+          "club": "Middlesbrough",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": null,
+          "apps": 9,
+          "goals": 0
+        },
         {
           "years": "2010–2015",
           "club": "Nice",
@@ -46664,9 +49846,18 @@
           "country": null,
           "apps": 3,
           "goals": 0
+        },
+        {
+          "years": "2017",
+          "club": "Lorca",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 6,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46676,25 +49867,79 @@
       "isGK": false,
       "career": [
         {
-          "years": "2012–2014",
+          "years": "2008",
+          "club": "Hull City",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 13,
+          "goals": 2
+        },
+        {
+          "years": "2008",
+          "club": "Manchester United",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2009",
+          "club": "Valladolid",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 28,
+          "goals": 4
+        },
+        {
+          "years": "2010",
+          "club": "Manisaspor",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": null,
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2010",
+          "club": "Bucaspor",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": null,
+          "apps": 12,
+          "goals": 2
+        },
+        {
+          "years": "2011–2014",
           "club": "Valladolid",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 51,
-          "goals": 11
+          "apps": 70,
+          "goals": 15
         },
         {
-          "years": "2014–2016",
+          "years": "2014–2018",
           "club": "Rayo Vallecano",
-          "league": "laliga",
-          "leagueRaw": null,
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 112,
+          "goals": 14
+        },
+        {
+          "years": "2018",
+          "club": "Cornellà",
+          "league": null,
+          "leagueRaw": "Segunda B",
           "country": null,
-          "apps": 65,
-          "goals": 9
+          "apps": 16,
+          "goals": 1
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46703,6 +49948,78 @@
       "nationality": "Greece",
       "isGK": false,
       "career": [
+        {
+          "years": "2005",
+          "club": "Panathinaikos",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": null,
+          "apps": 28,
+          "goals": 15
+        },
+        {
+          "years": "2006",
+          "club": "VfL Bochum",
+          "league": null,
+          "leagueRaw": "Bundesliga",
+          "country": null,
+          "apps": 32,
+          "goals": 21
+        },
+        {
+          "years": "2007",
+          "club": "Bayer Leverkusen",
+          "league": null,
+          "leagueRaw": "Bundesliga",
+          "country": null,
+          "apps": 29,
+          "goals": 11
+        },
+        {
+          "years": "2008",
+          "club": "Portsmouth",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2008",
+          "club": "Bayer Leverkusen",
+          "league": null,
+          "leagueRaw": "Bundesliga",
+          "country": null,
+          "apps": 15,
+          "goals": 2
+        },
+        {
+          "years": "2009",
+          "club": "Hertha BSC",
+          "league": null,
+          "leagueRaw": "Bundesliga",
+          "country": null,
+          "apps": 17,
+          "goals": 6
+        },
+        {
+          "years": "2009",
+          "club": "Bayer Leverkusen",
+          "league": null,
+          "leagueRaw": "Bundesliga",
+          "country": null,
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2009",
+          "club": "Bayer Leverkusen",
+          "league": null,
+          "leagueRaw": "DFB Pokal",
+          "country": null,
+          "apps": 2,
+          "goals": 1
+        },
         {
           "years": "2010",
           "club": "Eintracht Frankfurt",
@@ -46713,6 +50030,60 @@
           "goals": 16
         },
         {
+          "years": "2010",
+          "club": "Eintracht Frankfurt",
+          "league": null,
+          "leagueRaw": "DFB Pokal",
+          "country": null,
+          "apps": 3,
+          "goals": 2
+        },
+        {
+          "years": "2011",
+          "club": "Samsunspor",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 11,
+          "goals": 8
+        },
+        {
+          "years": "2011",
+          "club": "Eintracht Frankfurt",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 14,
+          "goals": 7
+        },
+        {
+          "years": "2011",
+          "club": "Samsunspor",
+          "league": null,
+          "leagueRaw": "Türkiye Kupası",
+          "country": "Turkey",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2011",
+          "club": "Eintracht Frankfurt",
+          "league": null,
+          "leagueRaw": "DFB Pokal",
+          "country": "Germany",
+          "apps": 1,
+          "goals": 2
+        },
+        {
+          "years": "2012",
+          "club": "Akhisarspor",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 15,
+          "goals": 12
+        },
+        {
           "years": "2012",
           "club": "Levante",
           "league": "laliga",
@@ -46720,9 +50091,99 @@
           "country": null,
           "apps": 4,
           "goals": 0
+        },
+        {
+          "years": "2013",
+          "club": "Konyaspor",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 24,
+          "goals": 13
+        },
+        {
+          "years": "2014",
+          "club": "Akhisarspor",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 24,
+          "goals": 12
+        },
+        {
+          "years": "2014",
+          "club": "Akhisarspor",
+          "league": null,
+          "leagueRaw": "Türkiye Kupası",
+          "country": "Turkey",
+          "apps": 3,
+          "goals": 1
+        },
+        {
+          "years": "2015",
+          "club": "FC Sion",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": null,
+          "apps": 18,
+          "goals": 10
+        },
+        {
+          "years": "2015",
+          "club": "Eskişehirspor",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 10,
+          "goals": 5
+        },
+        {
+          "years": "2015",
+          "club": "FC Sion",
+          "league": null,
+          "leagueRaw": "Schweizer Pokal",
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Sivasspor",
+          "league": null,
+          "leagueRaw": "1. Lig",
+          "country": "Turkey",
+          "apps": 10,
+          "goals": 2
+        },
+        {
+          "years": "2016",
+          "club": "FC Sion",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": "Switzerland",
+          "apps": 12,
+          "goals": 3
+        },
+        {
+          "years": "2016",
+          "club": "Sivasspor",
+          "league": null,
+          "leagueRaw": "Türkiye Kupası",
+          "country": "Turkey",
+          "apps": 2,
+          "goals": 1
+        },
+        {
+          "years": "2016",
+          "club": "FC Sion",
+          "league": null,
+          "leagueRaw": "Schweizer Pokal",
+          "country": null,
+          "apps": 1,
+          "goals": 1
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46732,12 +50193,48 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010",
-          "club": "Tottenham",
-          "league": "pl",
-          "leagueRaw": null,
+          "years": "2007",
+          "club": "Barcelona",
+          "league": null,
+          "leagueRaw": "La Liga",
           "country": null,
-          "apps": 3,
+          "apps": 28,
+          "goals": 3
+        },
+        {
+          "years": "2008",
+          "club": "Ipswich",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": null,
+          "apps": 8,
+          "goals": 4
+        },
+        {
+          "years": "2008",
+          "club": "Tottenham",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2009",
+          "club": "Galatasaray",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": null,
+          "apps": 14,
+          "goals": 0
+        },
+        {
+          "years": "2009",
+          "club": "Tottenham",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 1,
           "goals": 0
         },
         {
@@ -46750,12 +50247,12 @@
           "goals": 5
         },
         {
-          "years": "2011",
+          "years": "2010–2012",
           "club": "Tottenham",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
-          "apps": 7,
+          "apps": 10,
           "goals": 0
         },
         {
@@ -46775,9 +50272,27 @@
           "country": null,
           "apps": 57,
           "goals": 12
+        },
+        {
+          "years": "2015–2019",
+          "club": "Los Angeles Galaxy",
+          "league": null,
+          "leagueRaw": "Major League Soccer",
+          "country": "USA",
+          "apps": 81,
+          "goals": 27
+        },
+        {
+          "years": "2019–2021",
+          "club": "Club America",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": "Mexico",
+          "apps": 39,
+          "goals": 4
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46787,6 +50302,42 @@
       "isGK": false,
       "career": [
         {
+          "years": "2005",
+          "club": "Sporting Gijon",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 24,
+          "goals": 1
+        },
+        {
+          "years": "2007–2009",
+          "club": "Sporting Gijon",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 66,
+          "goals": 3
+        },
+        {
+          "years": "2009",
+          "club": "Birmingham",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2009",
+          "club": "Sporting Gijon",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 13,
+          "goals": 0
+        },
+        {
           "years": "2011–2014",
           "club": "Getafe",
           "league": "laliga",
@@ -46794,9 +50345,27 @@
           "country": null,
           "apps": 54,
           "goals": 1
+        },
+        {
+          "years": "2015–2020",
+          "club": "Qarabag",
+          "league": null,
+          "leagueRaw": "Birinci Dasta",
+          "country": "Azerbaijan",
+          "apps": 104,
+          "goals": 16
+        },
+        {
+          "years": "2020",
+          "club": "Marino de Luanco",
+          "league": null,
+          "leagueRaw": "Primera División RFEF - Group 5",
+          "country": "Spain",
+          "apps": 8,
+          "goals": 2
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46805,6 +50374,24 @@
       "nationality": "Spain",
       "isGK": false,
       "career": [
+        {
+          "years": "2009",
+          "club": "Liverpool",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2010",
+          "club": "Norwich",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": null,
+          "apps": 6,
+          "goals": 2
+        },
         {
           "years": "2010",
           "club": "Liverpool",
@@ -46824,16 +50411,106 @@
           "goals": 0
         },
         {
-          "years": "2017",
-          "club": "Getafe",
-          "league": "laliga",
-          "leagueRaw": null,
+          "years": "2012",
+          "club": "Huesca",
+          "league": null,
+          "leagueRaw": "Segunda División",
           "country": null,
-          "apps": 11,
+          "apps": 19,
+          "goals": 5
+        },
+        {
+          "years": "2013",
+          "club": "Alcorcon",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 32,
+          "goals": 5
+        },
+        {
+          "years": "2014",
+          "club": "Real Betis",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 23,
           "goals": 0
+        },
+        {
+          "years": "2015",
+          "club": "Alaves",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 36,
+          "goals": 3
+        },
+        {
+          "years": "2016–2018",
+          "club": "Getafe",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 45,
+          "goals": 6
+        },
+        {
+          "years": "2018–2020",
+          "club": "Malaga",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 46,
+          "goals": 2
+        },
+        {
+          "years": "2020",
+          "club": "UD Logroñés",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 10,
+          "goals": 0
+        },
+        {
+          "years": "2021",
+          "club": "Gornik Zabrze",
+          "league": null,
+          "leagueRaw": "Ekstraklasa",
+          "country": "Poland",
+          "apps": 8,
+          "goals": 1
+        },
+        {
+          "years": "2021",
+          "club": "Aris",
+          "league": null,
+          "leagueRaw": "1. Division",
+          "country": "Cyprus",
+          "apps": 12,
+          "goals": 0
+        },
+        {
+          "years": "2022–2024",
+          "club": "Gornik Zabrze",
+          "league": null,
+          "leagueRaw": "Ekstraklasa",
+          "country": "Poland",
+          "apps": 48,
+          "goals": 3
+        },
+        {
+          "years": "2024–2026",
+          "club": "Wisla Plock",
+          "league": null,
+          "leagueRaw": "Ekstraklasa",
+          "country": "Poland",
+          "apps": 58,
+          "goals": 3
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46842,6 +50519,51 @@
       "nationality": "USA",
       "isGK": false,
       "career": [
+        {
+          "years": "2006–2008",
+          "club": "New York Red Bulls",
+          "league": null,
+          "leagueRaw": "MLS",
+          "country": null,
+          "apps": 33,
+          "goals": 13
+        },
+        {
+          "years": "2008",
+          "club": "Villarreal",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 6,
+          "goals": 1
+        },
+        {
+          "years": "2008",
+          "club": "New York Red Bulls",
+          "league": null,
+          "leagueRaw": "MLS",
+          "country": null,
+          "apps": 8,
+          "goals": 3
+        },
+        {
+          "years": "2009",
+          "club": "Hull City",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 28,
+          "goals": 1
+        },
+        {
+          "years": "2010",
+          "club": "Bursaspor",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": null,
+          "apps": 12,
+          "goals": 1
+        },
         {
           "years": "2010",
           "club": "Villarreal",
@@ -46852,6 +50574,15 @@
           "goals": 0
         },
         {
+          "years": "2011–2013",
+          "club": "AZ Alkmaar",
+          "league": null,
+          "leagueRaw": "Eredivisie",
+          "country": "Netherlands",
+          "apps": 67,
+          "goals": 38
+        },
+        {
           "years": "2013–2015",
           "club": "Sunderland",
           "league": "pl",
@@ -46859,9 +50590,36 @@
           "country": null,
           "apps": 42,
           "goals": 1
+        },
+        {
+          "years": "2015–2022",
+          "club": "Toronto FC",
+          "league": null,
+          "leagueRaw": "Major League Soccer",
+          "country": "USA",
+          "apps": 153,
+          "goals": 70
+        },
+        {
+          "years": "2022",
+          "club": "Puebla",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": "Mexico",
+          "apps": 6,
+          "goals": 2
+        },
+        {
+          "years": "2022–2024",
+          "club": "New England Revolution",
+          "league": null,
+          "leagueRaw": "Major League Soccer",
+          "country": "USA",
+          "apps": 27,
+          "goals": 2
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46870,6 +50628,42 @@
       "nationality": "Paraguay",
       "isGK": false,
       "career": [
+        {
+          "years": "2003–2007",
+          "club": "Toluca",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": null,
+          "apps": 132,
+          "goals": 8
+        },
+        {
+          "years": "2008",
+          "club": "Toluca",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": null,
+          "apps": 40,
+          "goals": 1
+        },
+        {
+          "years": "2009",
+          "club": "Sunderland",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 16,
+          "goals": 0
+        },
+        {
+          "years": "2010",
+          "club": "Zaragoza",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 13,
+          "goals": 0
+        },
         {
           "years": "2010",
           "club": "Sunderland",
@@ -46880,16 +50674,115 @@
           "goals": 0
         },
         {
-          "years": "2010–2012",
+          "years": "2011",
           "club": "Zaragoza",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 42,
+          "apps": 29,
           "goals": 1
+        },
+        {
+          "years": "2012",
+          "club": "CF Pachuca",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": null,
+          "apps": 33,
+          "goals": 2
+        },
+        {
+          "years": "2013–2017",
+          "club": "Toluca",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": null,
+          "apps": 148,
+          "goals": 14
+        },
+        {
+          "years": "2016",
+          "club": "Toluca",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": null,
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2017",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "Division Profesional - Clausura",
+          "country": "Paraguay",
+          "apps": 14,
+          "goals": 0
+        },
+        {
+          "years": "2017–2019",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "Division Profesional - Clausura",
+          "country": "Paraguay",
+          "apps": 26,
+          "goals": 0
+        },
+        {
+          "years": "2018–2020",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "Division Profesional - Clausura",
+          "country": "Paraguay",
+          "apps": 24,
+          "goals": 0
+        },
+        {
+          "years": "2019–2021",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "Division Profesional - Clausura",
+          "country": "Paraguay",
+          "apps": 23,
+          "goals": 0
+        },
+        {
+          "years": "2020",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": "World",
+          "apps": 5,
+          "goals": 0
+        },
+        {
+          "years": "2021",
+          "club": "12 de Octubre",
+          "league": null,
+          "leagueRaw": "Division Profesional - Apertura",
+          "country": "Paraguay",
+          "apps": 32,
+          "goals": 1
+        },
+        {
+          "years": "2021–2023",
+          "club": "12 de Octubre",
+          "league": null,
+          "leagueRaw": "Division Profesional - Apertura",
+          "country": "Paraguay",
+          "apps": 43,
+          "goals": 0
+        },
+        {
+          "years": "2023",
+          "club": "Independiente F.b.c.",
+          "league": null,
+          "leagueRaw": "Division Intermedia",
+          "country": "Paraguay",
+          "apps": 8,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46898,6 +50791,24 @@
       "nationality": "Spain",
       "isGK": false,
       "career": [
+        {
+          "years": "2008",
+          "club": "Rayo Vallecano",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 18,
+          "goals": 1
+        },
+        {
+          "years": "2010",
+          "club": "Rayo Vallecano",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 28,
+          "goals": 0
+        },
         {
           "years": "2011–2014",
           "club": "Real Betis",
@@ -46908,16 +50819,25 @@
           "goals": 1
         },
         {
-          "years": "2014–2016",
+          "years": "2014–2018",
           "club": "Rayo Vallecano",
-          "league": "laliga",
-          "leagueRaw": null,
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 85,
+          "goals": 5
+        },
+        {
+          "years": "2018",
+          "club": "Ucam Murcia",
+          "league": null,
+          "leagueRaw": "Segunda B",
           "country": null,
-          "apps": 36,
-          "goals": 2
+          "apps": 7,
+          "goals": 1
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46927,13 +50847,67 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010–2014",
+          "years": "2005",
+          "club": "Club Nacional",
+          "league": null,
+          "leagueRaw": "Liga AUF",
+          "country": null,
+          "apps": 29,
+          "goals": 12
+        },
+        {
+          "years": "2008–2010",
+          "club": "Ajax",
+          "league": null,
+          "leagueRaw": "Eredivisie",
+          "country": null,
+          "apps": 64,
+          "goals": 57
+        },
+        {
+          "years": "2009",
+          "club": "Ajax",
+          "league": null,
+          "leagueRaw": "KNVB Beker",
+          "country": null,
+          "apps": 5,
+          "goals": 8
+        },
+        {
+          "years": "2010",
           "club": "Liverpool",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
-          "apps": 110,
-          "goals": 69
+          "apps": 13,
+          "goals": 4
+        },
+        {
+          "years": "2010",
+          "club": "Ajax",
+          "league": null,
+          "leagueRaw": "Eredivisie",
+          "country": "Netherlands",
+          "apps": 13,
+          "goals": 7
+        },
+        {
+          "years": "2010",
+          "club": "Ajax",
+          "league": null,
+          "leagueRaw": "KNVB Beker",
+          "country": null,
+          "apps": 1,
+          "goals": 1
+        },
+        {
+          "years": "2011–2014",
+          "club": "Liverpool",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 97,
+          "goals": 65
         },
         {
           "years": "2014–2020",
@@ -46952,9 +50926,54 @@
           "country": null,
           "apps": 67,
           "goals": 32
+        },
+        {
+          "years": "2022",
+          "club": "Club Nacional",
+          "league": null,
+          "leagueRaw": "Primera División - Clausura",
+          "country": "Uruguay",
+          "apps": 14,
+          "goals": 8
+        },
+        {
+          "years": "2022",
+          "club": "Club Nacional",
+          "league": null,
+          "leagueRaw": "CONMEBOL Sudamericana",
+          "country": "World",
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2023",
+          "club": "Gremio",
+          "league": null,
+          "leagueRaw": "Serie A",
+          "country": "Brazil",
+          "apps": 32,
+          "goals": 17
+        },
+        {
+          "years": "2023",
+          "club": "Gremio",
+          "league": null,
+          "leagueRaw": "Gaúcho - 1",
+          "country": "Brazil",
+          "apps": 32,
+          "goals": 17
+        },
+        {
+          "years": "2024–2026",
+          "club": "Inter Miami",
+          "league": null,
+          "leagueRaw": "Major League Soccer",
+          "country": "USA",
+          "apps": 59,
+          "goals": 31
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -46963,6 +50982,24 @@
       "nationality": "Spain",
       "isGK": false,
       "career": [
+        {
+          "years": "2005",
+          "club": "Celta Vigo",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 34,
+          "goals": 3
+        },
+        {
+          "years": "2006–2010",
+          "club": "Valencia",
+          "league": null,
+          "leagueRaw": "La Liga",
+          "country": null,
+          "apps": 119,
+          "goals": 22
+        },
         {
           "years": "2010–2020",
           "club": "Manchester City",
@@ -46982,7 +51019,7 @@
           "goals": 6
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -47001,13 +51038,40 @@
           "goals": 1
         },
         {
-          "years": "2011–2014",
+          "years": "2011",
           "club": "Benfica",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
-          "apps": 66,
-          "goals": 27
+          "apps": 20,
+          "goals": 9
+        },
+        {
+          "years": "2011–2013",
+          "club": "Benfica",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 22,
+          "goals": 9
+        },
+        {
+          "years": "2012–2014",
+          "club": "Benfica",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 28,
+          "goals": 13
+        },
+        {
+          "years": "2013",
+          "club": "Benfica",
+          "league": null,
+          "leagueRaw": "Taça de Portugal",
+          "country": null,
+          "apps": 5,
+          "goals": 2
         },
         {
           "years": "2014–2020",
@@ -47026,9 +51090,36 @@
           "country": null,
           "apps": 88,
           "goals": 26
+        },
+        {
+          "years": "2023",
+          "club": "Al-Rayyan SC",
+          "league": null,
+          "leagueRaw": "Stars League",
+          "country": "Qatar",
+          "apps": 5,
+          "goals": 3
+        },
+        {
+          "years": "2024",
+          "club": "Al-Gharafa",
+          "league": null,
+          "leagueRaw": "Stars League",
+          "country": "Qatar",
+          "apps": 4,
+          "goals": 1
+        },
+        {
+          "years": "2024–2026",
+          "club": "Al-Rayyan SC",
+          "league": null,
+          "leagueRaw": "Stars League",
+          "country": "Qatar",
+          "apps": 9,
+          "goals": 3
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -47037,6 +51128,24 @@
       "nationality": "France",
       "isGK": false,
       "career": [
+        {
+          "years": "2005–2008",
+          "club": "Lyon",
+          "league": null,
+          "leagueRaw": "Ligue 1",
+          "country": null,
+          "apps": 49,
+          "goals": 7
+        },
+        {
+          "years": "2008–2010",
+          "club": "Marseille",
+          "league": null,
+          "leagueRaw": "Ligue 1",
+          "country": null,
+          "apps": 62,
+          "goals": 9
+        },
         {
           "years": "2010",
           "club": "Newcastle",
@@ -47128,7 +51237,7 @@
           "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -47138,12 +51247,57 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010–2015",
+          "years": "2006",
+          "club": "Guadalajara Chivas",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": null,
+          "apps": 8,
+          "goals": 1
+        },
+        {
+          "years": "2008",
+          "club": "Leones Negros UDG",
+          "league": null,
+          "leagueRaw": "Liga de Expansión MX",
+          "country": null,
+          "apps": 7,
+          "goals": 2
+        },
+        {
+          "years": "2008",
+          "club": "Guadalajara Chivas",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": null,
+          "apps": 22,
+          "goals": 4
+        },
+        {
+          "years": "2008–2010",
+          "club": "Guadalajara Chivas",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": null,
+          "apps": 29,
+          "goals": 21
+        },
+        {
+          "years": "2009",
+          "club": "Guadalajara Chivas",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": null,
+          "apps": 5,
+          "goals": 3
+        },
+        {
+          "years": "2010–2014",
           "club": "Manchester United",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
-          "apps": 102,
+          "apps": 101,
           "goals": 37
         },
         {
@@ -47154,6 +51308,24 @@
           "country": null,
           "apps": 23,
           "goals": 7
+        },
+        {
+          "years": "2014",
+          "club": "Manchester United",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2015",
+          "club": "Bayer Leverkusen",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 28,
+          "goals": 17
         },
         {
           "years": "2015",
@@ -47170,17 +51342,26 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 54,
-          "goals": 28
+          "apps": 29,
+          "goals": 15
         },
         {
-          "years": "2017–2020",
+          "years": "2016",
+          "club": "Bayer Leverkusen",
+          "league": null,
+          "leagueRaw": "DFB Pokal",
+          "country": "Germany",
+          "apps": 2,
+          "goals": 1
+        },
+        {
+          "years": "2017–2019",
           "club": "West Ham",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
-          "apps": 55,
-          "goals": 16
+          "apps": 53,
+          "goals": 15
         },
         {
           "years": "2019",
@@ -47190,9 +51371,54 @@
           "country": null,
           "apps": 9,
           "goals": 1
+        },
+        {
+          "years": "2019",
+          "club": "West Ham",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 2,
+          "goals": 1
+        },
+        {
+          "years": "2020–2023",
+          "club": "Los Angeles Galaxy",
+          "league": null,
+          "leagueRaw": "Major League Soccer",
+          "country": "USA",
+          "apps": 67,
+          "goals": 37
+        },
+        {
+          "years": "2023",
+          "club": "Guadalajara Chivas",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": "Mexico",
+          "apps": 10,
+          "goals": 1
+        },
+        {
+          "years": "2023",
+          "club": "Los Angeles Galaxy",
+          "league": null,
+          "leagueRaw": "Major League Soccer",
+          "country": "USA",
+          "apps": 9,
+          "goals": 1
+        },
+        {
+          "years": "2024–2026",
+          "club": "Guadalajara Chivas",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": "Mexico",
+          "apps": 24,
+          "goals": 2
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -47203,6 +51429,15 @@
       "career": [
         {
           "years": "2011",
+          "club": "Hibernian",
+          "league": null,
+          "leagueRaw": "Premiership",
+          "country": "Scotland",
+          "apps": 13,
+          "goals": 2
+        },
+        {
+          "years": "2011",
           "club": "Wolves",
           "league": "pl",
           "leagueRaw": null,
@@ -47211,22 +51446,31 @@
           "goals": 0
         },
         {
-          "years": "2018–2020",
-          "club": "Wolves",
-          "league": "pl",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 74,
-          "goals": 8
+          "years": "2012",
+          "club": "Bury",
+          "league": null,
+          "leagueRaw": "League One",
+          "country": "England",
+          "apps": 17,
+          "goals": 1
         },
         {
-          "years": "2020–2023",
+          "years": "2013–2020",
+          "club": "Wolves",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 246,
+          "goals": 19
+        },
+        {
+          "years": "2020–2022",
           "club": "Tottenham",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
-          "apps": 44,
-          "goals": 3
+          "apps": 32,
+          "goals": 2
         },
         {
           "years": "2022",
@@ -47238,6 +51482,15 @@
           "goals": 0
         },
         {
+          "years": "2022",
+          "club": "Tottenham",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 12,
+          "goals": 1
+        },
+        {
           "years": "2023–2026",
           "club": "Wolves",
           "league": "pl",
@@ -47247,7 +51500,7 @@
           "goals": 3
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -47256,6 +51509,33 @@
       "nationality": "Mexico",
       "isGK": false,
       "career": [
+        {
+          "years": "2005–2007",
+          "club": "U.N.A.M. - Pumas",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": null,
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2008",
+          "club": "Squadra sconosciuta",
+          "league": null,
+          "leagueRaw": "Liga de Expansión MX",
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2008–2010",
+          "club": "U.N.A.M. - Pumas",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": null,
+          "apps": 49,
+          "goals": 14
+        },
         {
           "years": "2010",
           "club": "West Ham",
@@ -47273,9 +51553,81 @@
           "country": null,
           "apps": 20,
           "goals": 1
+        },
+        {
+          "years": "2011",
+          "club": "West Ham",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2012–2014",
+          "club": "Cruz Azul",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": null,
+          "apps": 37,
+          "goals": 3
+        },
+        {
+          "years": "2014",
+          "club": "Monterrey",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": null,
+          "apps": 17,
+          "goals": 2
+        },
+        {
+          "years": "2014",
+          "club": "Cruz Azul",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": null,
+          "apps": 13,
+          "goals": 1
+        },
+        {
+          "years": "2015",
+          "club": "Monterrey",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": null,
+          "apps": 21,
+          "goals": 1
+        },
+        {
+          "years": "2016–2020",
+          "club": "U.N.A.M. - Pumas",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": "Mexico",
+          "apps": 113,
+          "goals": 15
+        },
+        {
+          "years": "2020",
+          "club": "Atletico San Luis",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": "Mexico",
+          "apps": 29,
+          "goals": 1
+        },
+        {
+          "years": "2021–2026",
+          "club": "Club Queretaro",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": "Mexico",
+          "apps": 148,
+          "goals": 18
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -47294,6 +51646,33 @@
           "goals": 0
         },
         {
+          "years": "2013",
+          "club": "Leicester",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2015",
+          "club": "Ponferradina",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 25,
+          "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Lugo",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 33,
+          "goals": 2
+        },
+        {
           "years": "2017",
           "club": "Malaga",
           "league": "laliga",
@@ -47301,6 +51680,15 @@
           "country": null,
           "apps": 20,
           "goals": 0
+        },
+        {
+          "years": "2017",
+          "club": "Lugo",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 16,
+          "goals": 1
         },
         {
           "years": "2018",
@@ -47312,16 +51700,70 @@
           "goals": 0
         },
         {
-          "years": "2023",
+          "years": "2019",
+          "club": "Girona",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 22,
+          "goals": 0
+        },
+        {
+          "years": "2020",
+          "club": "Leganes",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 21,
+          "goals": 0
+        },
+        {
+          "years": "2021",
+          "club": "Huesca",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 34,
+          "goals": 4
+        },
+        {
+          "years": "2022–2024",
           "club": "Granada CF",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 34,
+          "apps": 67,
           "goals": 1
+        },
+        {
+          "years": "2024",
+          "club": "Levante",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2024",
+          "club": "Granada CF",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2025",
+          "club": "Leganes",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 29,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -47331,6 +51773,33 @@
       "isGK": false,
       "career": [
         {
+          "years": "2010",
+          "club": "Burnley",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": null,
+          "apps": 4,
+          "goals": 1
+        },
+        {
+          "years": "2010",
+          "club": "IF Brommapojkarna",
+          "league": null,
+          "leagueRaw": "Allsvenskan",
+          "country": null,
+          "apps": 8,
+          "goals": 3
+        },
+        {
+          "years": "2011",
+          "club": "Feyenoord",
+          "league": null,
+          "leagueRaw": "Eredivisie",
+          "country": "Netherlands",
+          "apps": 23,
+          "goals": 20
+        },
+        {
           "years": "2013",
           "club": "Stoke City",
           "league": "pl",
@@ -47338,6 +51807,15 @@
           "country": null,
           "apps": 6,
           "goals": 0
+        },
+        {
+          "years": "2014",
+          "club": "Celtic",
+          "league": null,
+          "leagueRaw": "Premiership",
+          "country": "Scotland",
+          "apps": 24,
+          "goals": 8
         },
         {
           "years": "2015–2017",
@@ -47367,16 +51845,43 @@
           "goals": 0
         },
         {
-          "years": "2018–2022",
+          "years": "2018",
           "club": "Alaves",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 47,
+          "apps": 22,
+          "goals": 2
+        },
+        {
+          "years": "2019",
+          "club": "Hannover 96",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 14,
           "goals": 3
+        },
+        {
+          "years": "2019–2022",
+          "club": "Alaves",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 25,
+          "goals": 1
+        },
+        {
+          "years": "2022–2026",
+          "club": "AIK Stockholm",
+          "league": null,
+          "leagueRaw": "Allsvenskan",
+          "country": "Sweden",
+          "apps": 68,
+          "goals": 9
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -47386,12 +51891,30 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010–2012",
+          "years": "2010",
           "club": "Blackburn",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
-          "apps": 22,
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2010",
+          "club": "Barcelona B",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 13,
+          "goals": 2
+        },
+        {
+          "years": "2011",
+          "club": "Blackburn",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 18,
           "goals": 2
         },
         {
@@ -47404,6 +51927,15 @@
           "goals": 1
         },
         {
+          "years": "2012",
+          "club": "Blackburn",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 19,
+          "goals": 5
+        },
+        {
           "years": "2013",
           "club": "Rayo Vallecano",
           "league": "laliga",
@@ -47411,6 +51943,15 @@
           "country": null,
           "apps": 17,
           "goals": 3
+        },
+        {
+          "years": "2013",
+          "club": "Blackburn",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 5,
+          "goals": 0
         },
         {
           "years": "2014–2016",
@@ -47422,25 +51963,52 @@
           "goals": 8
         },
         {
-          "years": "2017–2021",
+          "years": "2016",
+          "club": "Rubin",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": "Russia",
+          "apps": 23,
+          "goals": 2
+        },
+        {
+          "years": "2017",
           "club": "Levante",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 85,
-          "goals": 9
+          "apps": 5,
+          "goals": 1
         },
         {
-          "years": "2021",
+          "years": "2017",
+          "club": "Rubin",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": "Russia",
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2018–2021",
+          "club": "Levante",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 80,
+          "goals": 8
+        },
+        {
+          "years": "2021–2023",
           "club": "Granada CF",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 15,
+          "apps": 23,
           "goals": 1
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -47450,12 +52018,30 @@
       "isGK": false,
       "career": [
         {
+          "years": "2009",
+          "club": "Squadra sconosciuta",
+          "league": null,
+          "leagueRaw": "Campeonato de Portugal Prio",
+          "country": null,
+          "apps": 26,
+          "goals": 4
+        },
+        {
           "years": "2010",
           "club": "Manchester United",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
           "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2011",
+          "club": "Beşiktaş",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 4,
           "goals": 0
         },
         {
@@ -47477,12 +52063,30 @@
           "goals": 12
         },
         {
+          "years": "2013",
+          "club": "Pacos Ferreira",
+          "league": null,
+          "leagueRaw": "Taça de Portugal",
+          "country": null,
+          "apps": 1,
+          "goals": 1
+        },
+        {
           "years": "2014",
           "club": "Cordoba",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
           "apps": 18,
+          "goals": 0
+        },
+        {
+          "years": "2014",
+          "club": "Benfica",
+          "league": null,
+          "leagueRaw": "Taça de Portugal",
+          "country": null,
+          "apps": 1,
           "goals": 0
         },
         {
@@ -47504,13 +52108,31 @@
           "goals": 3
         },
         {
-          "years": "2016–2018",
+          "years": "2016",
           "club": "Eibar",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 29,
+          "apps": 20,
           "goals": 3
+        },
+        {
+          "years": "2017",
+          "club": "Rayo Vallecano",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 17,
+          "goals": 3
+        },
+        {
+          "years": "2017",
+          "club": "Eibar",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 9,
+          "goals": 0
         },
         {
           "years": "2018",
@@ -47531,16 +52153,43 @@
           "goals": 0
         },
         {
-          "years": "2021–2024",
+          "years": "2019–2022",
           "club": "Rayo Vallecano",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 52,
-          "goals": 3
+          "apps": 67,
+          "goals": 10
+        },
+        {
+          "years": "2022",
+          "club": "Zaragoza",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 14,
+          "goals": 4
+        },
+        {
+          "years": "2022–2024",
+          "club": "Rayo Vallecano",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 23,
+          "goals": 2
+        },
+        {
+          "years": "2024",
+          "club": "Racing Ferrol",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 14,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -47566,9 +52215,18 @@
           "country": null,
           "apps": 61,
           "goals": 0
+        },
+        {
+          "years": "2018–2020",
+          "club": "Club Nacional",
+          "league": null,
+          "leagueRaw": "Primera División - Clausura",
+          "country": "Uruguay",
+          "apps": 13,
+          "goals": 0
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
@@ -47577,6 +52235,24 @@
       "nationality": "Paraguay",
       "isGK": false,
       "career": [
+        {
+          "years": "2005–2007",
+          "club": "Beira-Mar",
+          "league": null,
+          "leagueRaw": "Segunda Liga",
+          "country": null,
+          "apps": 57,
+          "goals": 3
+        },
+        {
+          "years": "2008–2010",
+          "club": "Club Brugge KV",
+          "league": null,
+          "leagueRaw": "First Division A",
+          "country": null,
+          "apps": 58,
+          "goals": 4
+        },
         {
           "years": "2010–2013",
           "club": "Wigan",
@@ -47603,9 +52279,189 @@
           "country": null,
           "apps": 6,
           "goals": 1
+        },
+        {
+          "years": "2016–2018",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "Division Profesional - Clausura",
+          "country": "Paraguay",
+          "apps": 47,
+          "goals": 1
+        },
+        {
+          "years": "2017",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": null,
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2017–2019",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "Division Profesional - Clausura",
+          "country": "Paraguay",
+          "apps": 34,
+          "goals": 1
+        },
+        {
+          "years": "2018",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": null,
+          "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2019",
+          "club": "Olimpia",
+          "league": null,
+          "leagueRaw": "Division Profesional - Clausura",
+          "country": "Paraguay",
+          "apps": 23,
+          "goals": 4
+        },
+        {
+          "years": "2019–2021",
+          "club": "Olimpia",
+          "league": null,
+          "leagueRaw": "Division Profesional - Clausura",
+          "country": "Paraguay",
+          "apps": 27,
+          "goals": 1
+        },
+        {
+          "years": "2020–2022",
+          "club": "Olimpia",
+          "league": null,
+          "leagueRaw": "Division Profesional - Apertura",
+          "country": "Paraguay",
+          "apps": 28,
+          "goals": 1
+        },
+        {
+          "years": "2021",
+          "club": "Olimpia",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": "World",
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2022",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "Division Profesional - Apertura",
+          "country": "Paraguay",
+          "apps": 11,
+          "goals": 1
+        },
+        {
+          "years": "2022",
+          "club": "Olimpia",
+          "league": null,
+          "leagueRaw": "Division Profesional - Apertura",
+          "country": "Paraguay",
+          "apps": 13,
+          "goals": 0
+        },
+        {
+          "years": "2022",
+          "club": "Olimpia",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": "World",
+          "apps": 8,
+          "goals": 0
+        },
+        {
+          "years": "2023",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "Division Profesional - Apertura",
+          "country": "Paraguay",
+          "apps": 6,
+          "goals": 1
+        },
+        {
+          "years": "2023",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": "World",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2023",
+          "club": "Olimpia",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": "World",
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2023",
+          "club": "Olimpia",
+          "league": null,
+          "leagueRaw": "Division Profesional - Apertura",
+          "country": "Paraguay",
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2024",
+          "club": "Club Guarani",
+          "league": null,
+          "leagueRaw": "Division Profesional - Apertura",
+          "country": "Paraguay",
+          "apps": 34,
+          "goals": 10
+        },
+        {
+          "years": "2024",
+          "club": "Club Guarani",
+          "league": null,
+          "leagueRaw": "CONMEBOL Sudamericana",
+          "country": "World",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2025",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "Division Profesional - Apertura",
+          "country": "Paraguay",
+          "apps": 15,
+          "goals": 0
+        },
+        {
+          "years": "2025",
+          "club": "Libertad Asuncion",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": "World",
+          "apps": 6,
+          "goals": 1
+        },
+        {
+          "years": "2025",
+          "club": "Olimpia",
+          "league": null,
+          "leagueRaw": "Division Profesional - Apertura",
+          "country": "Paraguay",
+          "apps": 20,
+          "goals": 6
         }
       ],
-      "careerComplete": false,
+      "careerComplete": true,
       "trophies": []
     },
     {
