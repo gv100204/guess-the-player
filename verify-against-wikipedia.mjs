@@ -336,39 +336,28 @@ async function main() {
         wikiEntries = parseSeniorCareer(wikitext);
       }
 
-      // Ultima risorsa: se il nome ha più di 2 parole (probabile secondo
-      // nome, come "Jonathan Ludovic Biabiany") e ancora zero tappe, la
-      // ricerca col nome completo potrebbe aver trovato una pagina
-      // ESISTENTE ma SBAGLIATA (non vuota, quindi il tentativo di riserva
-      // di findWikipediaTitle non scattava mai) - proviamo esplicitamente
-      // il nome corto qui, con un titolo potenzialmente diverso.
       // Ultima risorsa: se il nome ha più di 2 parole e ancora zero tappe,
       // la ricerca col nome completo potrebbe aver trovato una pagina
       // ESISTENTE ma SBAGLIATA (non vuota, quindi il tentativo di riserva
       // di findWikipediaTitle non scattava mai) - proviamo esplicitamente
       // dei nomi corti qui, con un titolo potenzialmente diverso.
+      //
+      // Invece di indovinare la convenzione culturale giusta (secondo nome
+      // singolo? doppio cognome? connettivo "i"/"y"/"de"?), proviamo OGNI
+      // singola parola del nome insieme alla prima - molto più esaustivo,
+      // copre da solo tutti i casi visti finora (Mkhitaryan, Barrientos,
+      // Giménez Báez, Albiol i Tortajada, Olivera da Rosa...) senza dover
+      // aggiungere una nuova regola ogni volta che salta fuori un nuovo
+      // pattern. I connettivi (i, y, de, van...) vengono scartati subito,
+      // non sono mai una parte vera del nome.
       if (wikiEntries.length === 0) {
         const parts = p.name.trim().split(/\s+/);
         if (parts.length > 2) {
-          const candidates = [];
-
-          // Connettivi tipici di cognomi composti (catalano "i", spagnolo
-          // "y"/"de", portoghese "e", olandese/tedesco "van"/"von"...): se
-          // presente, il nome vero è quasi sempre tutto quello che viene
-          // PRIMA - bug reale trovato: "Raúl Albiol i Tortajada" produceva
-          // il candidato senza senso "Raúl i", quando il nome vero è
-          // semplicemente "Raúl Albiol" (tutto prima del connettivo).
-          const CONNECTORS = new Set(["i", "y", "e", "de", "del", "van", "von", "der", "la", "das", "dos", "du"]);
-          const connectorIdx = parts.findIndex((w, i) => i > 0 && CONNECTORS.has(w.toLowerCase()));
-          if (connectorIdx > 0) candidates.push(parts.slice(0, connectorIdx).join(" "));
-
-          // Due convenzioni generiche, se il connettivo non basta: primo+
-          // ULTIMA parola (secondo nome singolo, es. "Jonathan Ludovic
-          // Biabiany" -> "Jonathan Biabiany") e primo+PENULTIMA parola
-          // (doppio cognome spagnolo, es. "Henry Damián Giménez Báez" ->
-          // "Henry Giménez", non "Henry Báez").
-          candidates.push(`${parts[0]} ${parts[parts.length - 1]}`);
-          if (parts.length > 3) candidates.push(`${parts[0]} ${parts[parts.length - 2]}`);
+          const CONNECTORS = new Set(["i", "y", "e", "de", "da", "do", "del", "van", "von", "der", "la", "las", "los", "das", "dos", "du"]);
+          const candidates = parts
+            .slice(1)
+            .filter((w) => !CONNECTORS.has(w.toLowerCase()))
+            .map((w) => `${parts[0]} ${w}`);
 
           for (const shortName of candidates) {
             if (wikiEntries.length > 0) break;

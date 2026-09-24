@@ -33,6 +33,39 @@
       ],
       "checkedAt": "2026-09-24T08:01:31.244Z"
     },
+    "274": {
+      "name": "Edinson Roberto Cavani Gómez",
+      "wikipediaTitle": "Edinson Roberto Cavani Gómez",
+      "verdict": "fail",
+      "missingFraction": 1,
+      "missing": [
+        {
+          "team": "Villa Teresa",
+          "from": 2009,
+          "to": 2010,
+          "position": "iniziale",
+          "apps": null,
+          "goals": null
+        },
+        {
+          "team": "Agrotikos Asteras",
+          "from": 2010,
+          "to": 2011,
+          "position": "centrale",
+          "apps": 13,
+          "goals": 0
+        },
+        {
+          "team": "Panserraikos",
+          "from": 2011,
+          "to": 2011,
+          "position": "finale",
+          "apps": null,
+          "goals": 23
+        }
+      ],
+      "checkedAt": "2026-09-24T08:59:39.647Z"
+    },
     "358": {
       "name": "Marko Marin",
       "wikipediaTitle": "Marko Marin",
@@ -164,6 +197,23 @@
       "missingFraction": 0,
       "missing": [],
       "checkedAt": "2026-09-24T08:44:17.205Z"
+    },
+    "2057": {
+      "name": "Franco Damián Vázquez",
+      "wikipediaTitle": "Franco Damián Vázquez",
+      "verdict": "ok",
+      "missingFraction": 0.14,
+      "missing": [
+        {
+          "team": "Belgrano",
+          "from": 2026,
+          "to": 2026,
+          "position": "finale",
+          "apps": 19,
+          "goals": 2
+        }
+      ],
+      "checkedAt": "2026-09-24T08:56:16.794Z"
     },
     "6176": {
       "name": "Pablo Sebastián Valeira Álvarez",
@@ -1934,6 +1984,47 @@
       ],
       "checkedAt": "2026-09-24T08:04:39.943Z"
     },
+    "31433": {
+      "name": "Nico Pulzetti",
+      "wikipediaTitle": "Nico Pulzetti",
+      "verdict": "fail",
+      "missingFraction": 0.31,
+      "missing": [
+        {
+          "team": "Cesena",
+          "from": 2003,
+          "to": 2004,
+          "position": "iniziale",
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "team": "Castelnuovo",
+          "from": 2004,
+          "to": 2005,
+          "position": "centrale",
+          "apps": 31,
+          "goals": 5
+        },
+        {
+          "team": "Sandonà",
+          "from": 2019,
+          "to": 2020,
+          "position": "centrale",
+          "apps": null,
+          "goals": null
+        },
+        {
+          "team": "Montebelluna",
+          "from": 2020,
+          "to": 2021,
+          "position": "finale",
+          "apps": 14,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-24T08:56:25.460Z"
+    },
     "31494": {
       "name": "Ledian Memushaj",
       "wikipediaTitle": "Ledian Memushaj",
@@ -2162,6 +2253,207 @@
       "missingFraction": 0,
       "missing": [],
       "checkedAt": "2026-09-24T08:19:14.091Z"
+    },
+    "36006": {
+      "name": "Carlos Arnoldo Salcido Flores",
+      "wikipediaTitle": "Carlos Arnoldo Salcido Flores",
+      "verdict": "fail",
+      "missingFraction": 1,
+      "missing": [
+        {
+          "team": "Sport Boys",
+          "from": 1991,
+          "to": 1994,
+          "position": "iniziale",
+          "apps": 53,
+          "goals": 16
+        },
+        {
+          "team": "Universitario de Deportes",
+          "from": 1995,
+          "to": 1995,
+          "position": "centrale",
+          "apps": 11,
+          "goals": 3
+        },
+        {
+          "team": "Asociación Deportiva San Agustín",
+          "from": 1996,
+          "to": 1996,
+          "position": "centrale",
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "team": "Al-Hilal{{citation needed",
+          "from": 1996,
+          "to": 1997,
+          "position": "centrale",
+          "apps": 18,
+          "goals": 6
+        },
+        {
+          "team": "Sport Boys",
+          "from": 1998,
+          "to": 1998,
+          "position": "centrale",
+          "apps": 29,
+          "goals": 4
+        },
+        {
+          "team": "Aris",
+          "from": 1998,
+          "to": 1999,
+          "position": "centrale",
+          "apps": 21,
+          "goals": 2
+        },
+        {
+          "team": "Alianza Lima",
+          "from": 1999,
+          "to": 1999,
+          "position": "centrale",
+          "apps": 10,
+          "goals": 1
+        },
+        {
+          "team": "Sport Boys",
+          "from": 2000,
+          "to": 2000,
+          "position": "centrale",
+          "apps": 11,
+          "goals": 2
+        },
+        {
+          "team": "Clube Atlético Paranaense",
+          "from": 2000,
+          "to": 2000,
+          "position": "centrale",
+          "apps": null,
+          "goals": null
+        },
+        {
+          "team": "Sport Boys",
+          "from": 2001,
+          "to": 2001,
+          "position": "centrale",
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "team": "Belgrano",
+          "from": 2001,
+          "to": 2001,
+          "position": "centrale",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "team": "Juan Aurich",
+          "from": 2002,
+          "to": 2002,
+          "position": "centrale",
+          "apps": 24,
+          "goals": 7
+        },
+        {
+          "team": "Sport Boys",
+          "from": 2002,
+          "to": 2002,
+          "position": "centrale",
+          "apps": 8,
+          "goals": 2
+        },
+        {
+          "team": "Unión Huaral",
+          "from": 2003,
+          "to": 2003,
+          "position": "centrale",
+          "apps": 7,
+          "goals": 1
+        },
+        {
+          "team": "Sport Boys",
+          "from": 2004,
+          "to": 2004,
+          "position": "centrale",
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "team": "Deportivo Wanka",
+          "from": 2004,
+          "to": 2004,
+          "position": "centrale",
+          "apps": 12,
+          "goals": 5
+        },
+        {
+          "team": "Universitario de Deportes",
+          "from": 2005,
+          "to": 2005,
+          "position": "centrale",
+          "apps": 11,
+          "goals": 2
+        },
+        {
+          "team": "Sport Áncash",
+          "from": 2007,
+          "to": 2007,
+          "position": "centrale",
+          "apps": 16,
+          "goals": 2
+        },
+        {
+          "team": "Deportivo Pereira",
+          "from": 2008,
+          "to": 2008,
+          "position": "centrale",
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "team": "Sport Boys",
+          "from": 2008,
+          "to": 2008,
+          "position": "centrale",
+          "apps": 18,
+          "goals": 1
+        },
+        {
+          "team": "Sport Áncash",
+          "from": 2008,
+          "to": 2009,
+          "position": "centrale",
+          "apps": 17,
+          "goals": 4
+        },
+        {
+          "team": "CNI",
+          "from": 2009,
+          "to": 2009,
+          "position": "centrale",
+          "apps": 12,
+          "goals": 1
+        },
+        {
+          "team": "Sport Boys",
+          "from": 2010,
+          "to": 2010,
+          "position": "centrale",
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "team": "Cobresol FBC",
+          "from": 2012,
+          "to": 2012,
+          "position": "finale",
+          "apps": 4,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-24T08:55:32.365Z"
     },
     "40397": {
       "name": "Cristian Pasquato",
@@ -3162,6 +3454,47 @@
       ],
       "checkedAt": "2026-09-24T08:02:31.779Z"
     },
+    "91384": {
+      "name": "Cristian Raimondi",
+      "wikipediaTitle": "Cristian Raimondi",
+      "verdict": "fail",
+      "missingFraction": 0.5,
+      "missing": [
+        {
+          "team": "Albinoleffe",
+          "from": 1998,
+          "to": 1999,
+          "position": "iniziale",
+          "apps": 16,
+          "goals": 0
+        },
+        {
+          "team": "Albinoleffe",
+          "from": 2001,
+          "to": 2004,
+          "position": "centrale",
+          "apps": 90,
+          "goals": 13
+        },
+        {
+          "team": "Pro Vercelli",
+          "from": 2002,
+          "to": 2002,
+          "position": "centrale",
+          "apps": 8,
+          "goals": 1
+        },
+        {
+          "team": "Palermo",
+          "from": 2004,
+          "to": 2006,
+          "position": "centrale",
+          "apps": 14,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-24T08:57:17.937Z"
+    },
     "91409": {
       "name": "Andrea Lisuzzo",
       "wikipediaTitle": "Andrea Lisuzzo",
@@ -3825,6 +4158,71 @@
         }
       ],
       "checkedAt": "2026-09-24T08:34:38.318Z"
+    },
+    "114828": {
+      "name": "Paulo Renato Rebocho Ferreira",
+      "wikipediaTitle": "Paulo Renato Rebocho Ferreira",
+      "verdict": "fail",
+      "missingFraction": 1,
+      "missing": [
+        {
+          "team": "Estrela da Amadora",
+          "from": 1992,
+          "to": 1999,
+          "position": "iniziale",
+          "apps": 127,
+          "goals": 10
+        },
+        {
+          "team": "Porto B",
+          "from": 1999,
+          "to": 2000,
+          "position": "centrale",
+          "apps": 5,
+          "goals": 1
+        },
+        {
+          "team": "Farense",
+          "from": 2000,
+          "to": 2000,
+          "position": "centrale",
+          "apps": 14,
+          "goals": 2
+        },
+        {
+          "team": "Estrela da Amadora",
+          "from": 2000,
+          "to": 2001,
+          "position": "centrale",
+          "apps": 16,
+          "goals": 1
+        },
+        {
+          "team": "Farense",
+          "from": 2001,
+          "to": 2002,
+          "position": "centrale",
+          "apps": 24,
+          "goals": 0
+        },
+        {
+          "team": "Varzim",
+          "from": 2002,
+          "to": 2004,
+          "position": "centrale",
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "team": "9 Abril Trajouce",
+          "from": 2004,
+          "to": 2007,
+          "position": "finale",
+          "apps": null,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-24T08:57:09.216Z"
     },
     "114887": {
       "name": "Marek Cech",
