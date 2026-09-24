@@ -165,6 +165,95 @@
       "missing": [],
       "checkedAt": "2026-09-24T08:44:17.205Z"
     },
+    "6176": {
+      "name": "Pablo Sebastián Valeira Álvarez",
+      "wikipediaTitle": "Pablo Álvarez (footballer, born 1980)",
+      "verdict": "fail",
+      "missingFraction": 1,
+      "missing": [
+        {
+          "team": "Sporting Gijón B",
+          "from": 1998,
+          "to": 2001,
+          "position": "iniziale",
+          "apps": 52,
+          "goals": 6
+        },
+        {
+          "team": "Sporting Gijón",
+          "from": 2001,
+          "to": 2006,
+          "position": "centrale",
+          "apps": 161,
+          "goals": 25
+        },
+        {
+          "team": "Deportivo La Coruña",
+          "from": 2006,
+          "to": 2012,
+          "position": "centrale",
+          "apps": 85,
+          "goals": 5
+        },
+        {
+          "team": "Racing Santander",
+          "from": 2008,
+          "to": 2008,
+          "position": "centrale",
+          "apps": 18,
+          "goals": 1
+        },
+        {
+          "team": "Lugo",
+          "from": 2012,
+          "to": 2014,
+          "position": "centrale",
+          "apps": 47,
+          "goals": 4
+        },
+        {
+          "team": "Langreo",
+          "from": 2014,
+          "to": 2014,
+          "position": "centrale",
+          "apps": 12,
+          "goals": 0
+        },
+        {
+          "team": "New York City",
+          "from": 2015,
+          "to": 2015,
+          "position": "centrale",
+          "apps": 8,
+          "goals": 0
+        },
+        {
+          "team": "Wilmington Hammerheads",
+          "from": 2015,
+          "to": 2015,
+          "position": "centrale",
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "team": "Langreo",
+          "from": 2016,
+          "to": 2016,
+          "position": "centrale",
+          "apps": 5,
+          "goals": 2
+        },
+        {
+          "team": "Llanera",
+          "from": 2016,
+          "to": 2018,
+          "position": "finale",
+          "apps": 20,
+          "goals": 10
+        }
+      ],
+      "checkedAt": "2026-09-24T08:51:31.254Z"
+    },
     "6373": {
       "name": "Nicolás Santiago Bertolo",
       "wikipediaTitle": "Nicolás Bertolo",
@@ -2776,6 +2865,14 @@
         }
       ],
       "checkedAt": "2026-09-24T08:27:33.807Z"
+    },
+    "85781": {
+      "name": "Leon Best",
+      "wikipediaTitle": "Leon Best",
+      "verdict": "ok",
+      "missingFraction": 0,
+      "missing": [],
+      "checkedAt": "2026-09-24T08:50:29.646Z"
     },
     "87053": {
       "name": "Jérémie Aliadière",

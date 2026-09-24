@@ -291,6 +291,7 @@ async function main() {
 
   let checkedNow = 0;
   let notFoundOnWikipedia = 0;
+  let unreadable = 0; // pagina trovata ma zero tappe estratte, anche dopo tutti i tentativi
   let failed = 0;
   let processedIdx = 0;
 
@@ -299,7 +300,8 @@ async function main() {
     const totalOk = all.filter((e) => e.verdict === "ok").length;
     const totalFail = all.filter((e) => e.verdict === "fail").length;
     const pct = ((processedIdx / candidates.length) * 100).toFixed(1);
-    console.log(`  [${processedIdx}/${candidates.length} in questo lancio, ${pct}% | totale finora: ${totalOk} ok, ${totalFail} fail]`);
+    const totalNotFound = notFoundOnWikipedia + unreadable;
+    console.log(`  [${processedIdx}/${candidates.length} in questo lancio, ${pct}% | totale finora: ${totalOk} ok, ${totalFail} fail, ${totalNotFound} non trovati (${notFoundOnWikipedia} pagina assente, ${unreadable} non leggibile)]`);
   }
 
   for (const p of candidates) {
@@ -345,15 +347,27 @@ async function main() {
       // ESISTENTE ma SBAGLIATA (non vuota, quindi il tentativo di riserva
       // di findWikipediaTitle non scattava mai) - proviamo esplicitamente
       // dei nomi corti qui, con un titolo potenzialmente diverso.
-      // Due convenzioni diverse da provare: primo+ULTIMA parola (secondo
-      // nome singolo, es. "Jonathan Ludovic Biabiany" -> "Jonathan
-      // Biabiany") e primo+PENULTIMA parola (doppio cognome spagnolo, es.
-      // "Henry Damián Giménez Báez" -> "Henry Giménez", non "Henry Báez" -
-      // in spagnolo si usa il cognome del padre, non l'ultima parola).
       if (wikiEntries.length === 0) {
         const parts = p.name.trim().split(/\s+/);
         if (parts.length > 2) {
-          const candidates = [`${parts[0]} ${parts[parts.length - 1]}`];
+          const candidates = [];
+
+          // Connettivi tipici di cognomi composti (catalano "i", spagnolo
+          // "y"/"de", portoghese "e", olandese/tedesco "van"/"von"...): se
+          // presente, il nome vero è quasi sempre tutto quello che viene
+          // PRIMA - bug reale trovato: "Raúl Albiol i Tortajada" produceva
+          // il candidato senza senso "Raúl i", quando il nome vero è
+          // semplicemente "Raúl Albiol" (tutto prima del connettivo).
+          const CONNECTORS = new Set(["i", "y", "e", "de", "del", "van", "von", "der", "la", "das", "dos", "du"]);
+          const connectorIdx = parts.findIndex((w, i) => i > 0 && CONNECTORS.has(w.toLowerCase()));
+          if (connectorIdx > 0) candidates.push(parts.slice(0, connectorIdx).join(" "));
+
+          // Due convenzioni generiche, se il connettivo non basta: primo+
+          // ULTIMA parola (secondo nome singolo, es. "Jonathan Ludovic
+          // Biabiany" -> "Jonathan Biabiany") e primo+PENULTIMA parola
+          // (doppio cognome spagnolo, es. "Henry Damián Giménez Báez" ->
+          // "Henry Giménez", non "Henry Báez").
+          candidates.push(`${parts[0]} ${parts[parts.length - 1]}`);
           if (parts.length > 3) candidates.push(`${parts[0]} ${parts[parts.length - 2]}`);
 
           for (const shortName of candidates) {
@@ -373,6 +387,7 @@ async function main() {
 
       if (wikiEntries.length === 0) {
         console.log(`? ${p.name} (${title}): non riesco a leggere la scheda carriera, salto`);
+        unreadable++;
         printProgress();
         continue;
       }
@@ -413,7 +428,8 @@ async function main() {
 
   console.log("\n" + "=".repeat(60));
   console.log(`Controllati in questo lancio: ${checkedNow} / ${candidates.length}`);
-  console.log(`Non trovati su Wikipedia: ${notFoundOnWikipedia}`);
+  console.log(`Nessuna pagina Wikipedia trovata: ${notFoundOnWikipedia}`);
+  console.log(`Pagina trovata ma non leggibile: ${unreadable}`);
   console.log(`Falliti (verranno esclusi dal gioco): ${failed}`);
   console.log(`Totale verdetti salvati finora: ${Object.keys(checkData.checked).length}`);
   console.log(`\nSalvato in: ${CHECK_FILE}`);
