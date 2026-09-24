@@ -340,18 +340,33 @@ async function main() {
       // ESISTENTE ma SBAGLIATA (non vuota, quindi il tentativo di riserva
       // di findWikipediaTitle non scattava mai) - proviamo esplicitamente
       // il nome corto qui, con un titolo potenzialmente diverso.
+      // Ultima risorsa: se il nome ha più di 2 parole e ancora zero tappe,
+      // la ricerca col nome completo potrebbe aver trovato una pagina
+      // ESISTENTE ma SBAGLIATA (non vuota, quindi il tentativo di riserva
+      // di findWikipediaTitle non scattava mai) - proviamo esplicitamente
+      // dei nomi corti qui, con un titolo potenzialmente diverso.
+      // Due convenzioni diverse da provare: primo+ULTIMA parola (secondo
+      // nome singolo, es. "Jonathan Ludovic Biabiany" -> "Jonathan
+      // Biabiany") e primo+PENULTIMA parola (doppio cognome spagnolo, es.
+      // "Henry Damián Giménez Báez" -> "Henry Giménez", non "Henry Báez" -
+      // in spagnolo si usa il cognome del padre, non l'ultima parola).
       if (wikiEntries.length === 0) {
         const parts = p.name.trim().split(/\s+/);
         if (parts.length > 2) {
-          const shortName = `${parts[0]} ${parts[parts.length - 1]}`;
-          console.log(`  (${p.name}: ancora zero tappe, provo il nome corto "${shortName}"...)`);
-          const shortTitles = await searchWikipediaTitles(shortName);
-          await sleep(REQUEST_DELAY_MS);
-          const shortTitle = shortTitles.find((t) => /footballer/i.test(t)) || shortTitles[0];
-          if (shortTitle && shortTitle !== title) {
-            wikitext = await fetchWikitext(shortTitle);
+          const candidates = [`${parts[0]} ${parts[parts.length - 1]}`];
+          if (parts.length > 3) candidates.push(`${parts[0]} ${parts[parts.length - 2]}`);
+
+          for (const shortName of candidates) {
+            if (wikiEntries.length > 0) break;
+            console.log(`  (${p.name}: ancora zero tappe, provo il nome corto "${shortName}"...)`);
+            const shortTitles = await searchWikipediaTitles(shortName);
             await sleep(REQUEST_DELAY_MS);
-            wikiEntries = parseSeniorCareer(wikitext);
+            const shortTitle = shortTitles.find((t) => /footballer/i.test(t)) || shortTitles[0];
+            if (shortTitle && shortTitle !== title) {
+              wikitext = await fetchWikitext(shortTitle);
+              await sleep(REQUEST_DELAY_MS);
+              wikiEntries = parseSeniorCareer(wikitext);
+            }
           }
         }
       }
