@@ -7,10 +7,12 @@
 // prima che venisse corretta.
 //
 // NON fa nessuna chiamata API: lavora solo su quello che è già stato
-// scaricato. Tocca solo i giocatori con careerBackfilled=true, perché solo
-// le loro righe sono passate dal filtro delle competizioni (le righe trovate
-// dalla sola spazzolata vengono già garantite pulite da matchLeague, che
-// confronta contro il nostro catalogo di 6 campionati - non serve toccarle).
+// scaricato. Controlla TUTTI i giocatori, non solo quelli con
+// careerBackfilled=true: anche le righe della sola spazzolata possono
+// contenere una squadra giovanile/nazionale etichettata per errore dalla
+// fonte dati come campionato tracciato vero (bug reale trovato dall'audit:
+// "Cesena U19" segnata come Serie A) - non bastava fidarsi del solo nome
+// del campionato dichiarato.
 //
 // Uso:
 //   node clean-raw-data.mjs raw-players.json
@@ -79,7 +81,15 @@ function isLikelyDomesticLeague(name, teamName) {
 // campionato tracciato (league === "seriea" ecc.) sono già garantite pulite
 // da matchLeague, non serve ricontrollarle.
 function shouldKeep(record) {
-  if (record.league) return true; // campionato tracciato: sempre pulito
+  // Il nome della squadra va controllato SEMPRE per nazionali/giovanili,
+  // anche se il campionato è uno di quelli tracciati - bug reale trovato
+  // dall'audit: un'apparizione di "Cesena U19" era etichettata come vera
+  // Serie A dalla fonte dati stessa, e la vecchia versione si fidava
+  // ciecamente di ogni riga con un campionato tracciato senza ricontrollare.
+  if (YOUTH_OR_NATIONAL_TEAM_PATTERN.test(record.club || "") || NATION_NAMES.has((record.club || "").trim().toLowerCase())) {
+    return false;
+  }
+  if (record.league) return true; // campionato tracciato, squadra verificata: pulito
   if (!record.leagueRaw) return true; // niente da verificare, lascialo
   return isLikelyDomesticLeague(record.leagueRaw, record.club);
 }
@@ -93,7 +103,11 @@ async function main() {
   const removedExamples = [];
 
   for (const p of players) {
-    if (!p.careerBackfilled) continue; // solo i già arricchiti hanno righe da ricontrollare
+    // NON saltiamo più i giocatori non ancora arricchiti: il controllo
+    // nazionali/giovanili sul nome squadra (dentro shouldKeep) vale anche
+    // per le righe della sola spazzolata - bug reale trovato dall'audit,
+    // "Cesena U19" etichettata come Serie A vera dalla fonte dati stessa,
+    // su un giocatore MAI arricchito dal recupero completo.
     const before = p.seasonRecords || [];
     const after = before.filter((r) => {
       const keep = shouldKeep(r);

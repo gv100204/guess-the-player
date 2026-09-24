@@ -285,12 +285,18 @@ function mergePlayerEntry(playersMap, entry, season) {
     const apps = s.games?.appearences || 0;
     if (apps === 0) return;
 
+    const club = s.team?.name || "Squadra sconosciuta";
+    // Bug reale trovato dall'audit: la fonte dati a volte etichetta una
+    // partita di squadra giovanile come se fosse nel campionato vero (es.
+    // "Cesena U19" segnato come Serie A) - il solo controllo sul nome del
+    // campionato (sopra) non basta, serve controllare anche la squadra.
+    if (YOUTH_OR_NATIONAL_TEAM_PATTERN.test(club) || NATION_NAMES.has(club.trim().toLowerCase())) return;
+
     const isGK = s.games?.position === GK_POSITION;
     if (isGK) rec.isGK = true;
 
     const goals = s.goals?.total || 0;
     const conceded = s.goals?.conceded || 0;
-    const club = s.team?.name || "Squadra sconosciuta";
 
     rec.seasonRecords.push({ season, club, league: leagueMeta.id, leagueRaw: null, country: null, apps, goals: isGK ? conceded : goals });
   });

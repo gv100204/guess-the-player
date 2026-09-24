@@ -279,6 +279,17 @@ async function main() {
     mergePlayerEntry(players, entry, 2022);
     assert.equal(finalizeCareer(players.get(4)).length, 1, "solo la Premier League deve comparire, non la FA Cup");
   });
+  await test("una squadra giovanile etichettata dalla fonte dati come campionato TRACCIATO vero viene comunque scartata (bug reale trovato dall'audit: 'Cesena U19' segnato come Serie A vera dall'API stessa)", () => {
+    const players = newPlayersMap();
+    const entry = {
+      player: { id: 5, name: "Test Player Giovanile", nationality: "Italy" },
+      statistics: [
+        { team: { name: "Cesena U19" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: 3, position: "Midfielder" }, goals: { total: 0 } }
+      ]
+    };
+    mergePlayerEntry(players, entry, 2011);
+    assert.equal(players.get(5).seasonRecords.length, 0, "non deve comparire nemmeno se il campionato dichiarato è uno di quelli tracciati");
+  });
 
   console.log("\nsweepLeagueSeason() - paginazione e budget di chiamate");
   await test("segue la paginazione finché non arriva all'ultima pagina", async () => {
