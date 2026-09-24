@@ -95,20 +95,32 @@ async function searchWikipediaTitles(query) {
   return data[1] || [];
 }
 
+// Nomi ispanici/portoghesi/etc. spesso hanno più parole di quante la
+// pagina Wikipedia ne usi nel titolo (secondi nomi, doppi cognomi,
+// connettivi come "i"/"y"/"de"/"van"...) - invece di indovinare quale
+// convenzione culturale si applica, proviamo OGNI singola parola insieme
+// alla prima. Funzione condivisa: usata sia quando la ricerca col nome
+// completo non trova NULLA, sia quando trova una pagina ESISTENTE ma
+// SBAGLIATA (zero tappe estratte).
+const NAME_CONNECTORS = new Set(["i", "y", "e", "de", "da", "do", "del", "van", "von", "der", "la", "las", "los", "das", "dos", "du"]);
+function nameCandidates(fullName) {
+  const parts = fullName.trim().split(/\s+/);
+  if (parts.length <= 2) return [];
+  return parts.slice(1).filter((w) => !NAME_CONNECTORS.has(w.toLowerCase())).map((w) => `${parts[0]} ${w}`);
+}
+
 async function findWikipediaTitle(playerName) {
   let titles = await searchWikipediaTitles(playerName);
 
-  // Se il nome completo (con eventuali secondi nomi, comune nei nomi
-  // ispanici/portoghesi) non trova nulla, riprova con solo il PRIMO e
-  // l'ULTIMO pezzo - bug reale trovato: "Pablo César Barrientos" non
-  // veniva trovato, ma la pagina vera si chiama solo "Pablo Barrientos"
-  // (senza "César" in mezzo).
+  // Se il nome completo non trova nulla, proviamo ogni parola singola
+  // insieme alla prima - bug reale trovato: "Hendry Bernardo Thomas
+  // Suazo" non veniva trovato nemmeno provando primo+ultima ("Hendry
+  // Suazo", sbagliato) - la pagina vera è "Hendry Thomas" (terza parola).
   if (titles.length === 0) {
-    const parts = playerName.trim().split(/\s+/);
-    if (parts.length > 2) {
-      const shortName = `${parts[0]} ${parts[parts.length - 1]}`;
+    for (const shortName of nameCandidates(playerName)) {
       await sleep(REQUEST_DELAY_MS);
       titles = await searchWikipediaTitles(shortName);
+      if (titles.length > 0) break;
     }
   }
 
@@ -340,36 +352,19 @@ async function main() {
       // la ricerca col nome completo potrebbe aver trovato una pagina
       // ESISTENTE ma SBAGLIATA (non vuota, quindi il tentativo di riserva
       // di findWikipediaTitle non scattava mai) - proviamo esplicitamente
-      // dei nomi corti qui, con un titolo potenzialmente diverso.
-      //
-      // Invece di indovinare la convenzione culturale giusta (secondo nome
-      // singolo? doppio cognome? connettivo "i"/"y"/"de"?), proviamo OGNI
-      // singola parola del nome insieme alla prima - molto più esaustivo,
-      // copre da solo tutti i casi visti finora (Mkhitaryan, Barrientos,
-      // Giménez Báez, Albiol i Tortajada, Olivera da Rosa...) senza dover
-      // aggiungere una nuova regola ogni volta che salta fuori un nuovo
-      // pattern. I connettivi (i, y, de, van...) vengono scartati subito,
-      // non sono mai una parte vera del nome.
+      // gli stessi candidati (stessa funzione nameCandidates usata sopra),
+      // con un titolo potenzialmente diverso.
       if (wikiEntries.length === 0) {
-        const parts = p.name.trim().split(/\s+/);
-        if (parts.length > 2) {
-          const CONNECTORS = new Set(["i", "y", "e", "de", "da", "do", "del", "van", "von", "der", "la", "las", "los", "das", "dos", "du"]);
-          const candidates = parts
-            .slice(1)
-            .filter((w) => !CONNECTORS.has(w.toLowerCase()))
-            .map((w) => `${parts[0]} ${w}`);
-
-          for (const shortName of candidates) {
-            if (wikiEntries.length > 0) break;
-            console.log(`  (${p.name}: ancora zero tappe, provo il nome corto "${shortName}"...)`);
-            const shortTitles = await searchWikipediaTitles(shortName);
+        for (const shortName of nameCandidates(p.name)) {
+          if (wikiEntries.length > 0) break;
+          console.log(`  (${p.name}: ancora zero tappe, provo il nome corto "${shortName}"...)`);
+          const shortTitles = await searchWikipediaTitles(shortName);
+          await sleep(REQUEST_DELAY_MS);
+          const shortTitle = shortTitles.find((t) => /footballer/i.test(t)) || shortTitles[0];
+          if (shortTitle && shortTitle !== title) {
+            wikitext = await fetchWikitext(shortTitle);
             await sleep(REQUEST_DELAY_MS);
-            const shortTitle = shortTitles.find((t) => /footballer/i.test(t)) || shortTitles[0];
-            if (shortTitle && shortTitle !== title) {
-              wikitext = await fetchWikitext(shortTitle);
-              await sleep(REQUEST_DELAY_MS);
-              wikiEntries = parseSeniorCareer(wikitext);
-            }
+            wikiEntries = parseSeniorCareer(wikitext);
           }
         }
       }

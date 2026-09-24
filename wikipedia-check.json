@@ -321,6 +321,23 @@
       ],
       "checkedAt": "2026-09-24T08:37:19.016Z"
     },
+    "6607": {
+      "name": "Gonzalo Javier Rodríguez",
+      "wikipediaTitle": "Gonzalo Javier Rodríguez",
+      "verdict": "fail",
+      "missingFraction": 0.25,
+      "missing": [
+        {
+          "team": "San Lorenzo",
+          "from": 2002,
+          "to": 2004,
+          "position": "iniziale",
+          "apps": 57,
+          "goals": 4
+        }
+      ],
+      "checkedAt": "2026-09-24T09:02:38.040Z"
+    },
     "6857": {
       "name": "Keisuke Honda",
       "wikipediaTitle": "Keisuke Honda",
@@ -1810,6 +1827,47 @@
         }
       ],
       "checkedAt": "2026-09-24T08:04:22.478Z"
+    },
+    "31336": {
+      "name": "Mariano Julio Izco",
+      "wikipediaTitle": "Mariano Julio Izco",
+      "verdict": "fail",
+      "missingFraction": 0.44,
+      "missing": [
+        {
+          "team": "San Telmo",
+          "from": 2000,
+          "to": 2004,
+          "position": "iniziale",
+          "apps": 93,
+          "goals": 4
+        },
+        {
+          "team": "Almagro",
+          "from": 2004,
+          "to": 2005,
+          "position": "centrale",
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "team": "Tigre",
+          "from": 2005,
+          "to": 2006,
+          "position": "centrale",
+          "apps": 27,
+          "goals": 1
+        },
+        {
+          "team": "Catania",
+          "from": 2020,
+          "to": 2022,
+          "position": "finale",
+          "apps": 43,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-24T09:01:44.197Z"
     },
     "31365": {
       "name": "Simone Bentivoglio",
@@ -3594,6 +3652,14 @@
       ],
       "checkedAt": "2026-09-24T08:38:40.173Z"
     },
+    "97964": {
+      "name": "Massimo Donati",
+      "wikipediaTitle": "Massimo Donati",
+      "verdict": "ok",
+      "missingFraction": 0,
+      "missing": [],
+      "checkedAt": "2026-09-24T09:00:46.327Z"
+    },
     "100517": {
       "name": "Paolo De Ceglie",
       "wikipediaTitle": "Paolo De Ceglie",
@@ -4795,6 +4861,63 @@
         }
       ],
       "checkedAt": "2026-09-24T08:42:13.953Z"
+    },
+    "115295": {
+      "name": "Igor Budan",
+      "wikipediaTitle": "Igor Budan",
+      "verdict": "fail",
+      "missingFraction": 0.5,
+      "missing": [
+        {
+          "team": "Rijeka",
+          "from": 1997,
+          "to": 1999,
+          "position": "iniziale",
+          "apps": 33,
+          "goals": 3
+        },
+        {
+          "team": "Venezia",
+          "from": 1999,
+          "to": 2002,
+          "position": "centrale",
+          "apps": 19,
+          "goals": 2
+        },
+        {
+          "team": "Empoli",
+          "from": 2000,
+          "to": 2001,
+          "position": "centrale",
+          "apps": 5,
+          "goals": 1
+        },
+        {
+          "team": "Bellinzona",
+          "from": 2001,
+          "to": 2001,
+          "position": "centrale",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "team": "Venezia",
+          "from": 2002,
+          "to": 2003,
+          "position": "centrale",
+          "apps": 7,
+          "goals": 1
+        },
+        {
+          "team": "Ancona",
+          "from": 2003,
+          "to": 2003,
+          "position": "centrale",
+          "apps": 15,
+          "goals": 3
+        }
+      ],
+      "checkedAt": "2026-09-24T09:00:55.730Z"
     },
     "115297": {
       "name": "Michele Ferri",
