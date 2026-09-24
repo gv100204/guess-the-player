@@ -49,6 +49,14 @@
       "missing": [],
       "checkedAt": "2026-09-24T08:25:04.623Z"
     },
+    "630": {
+      "name": "Fabian Delph",
+      "wikipediaTitle": "Fabian Delph",
+      "verdict": "ok",
+      "missingFraction": 0,
+      "missing": [],
+      "checkedAt": "2026-09-24T08:37:27.923Z"
+    },
     "779": {
       "name": "Daniele De Rossi",
       "wikipediaTitle": "Daniele De Rossi",
@@ -56,6 +64,23 @@
       "missingFraction": 0,
       "missing": [],
       "checkedAt": "2026-09-24T08:00:22.835Z"
+    },
+    "1606": {
+      "name": "Lazaros Christodoulopoulos",
+      "wikipediaTitle": "Lazaros Christodoulopoulos",
+      "verdict": "fail",
+      "missingFraction": 0.09,
+      "missing": [
+        {
+          "team": "Olympiacos",
+          "from": 2018,
+          "to": 2020,
+          "position": "centrale",
+          "apps": 23,
+          "goals": 4
+        }
+      ],
+      "checkedAt": "2026-09-24T08:41:40.182Z"
     },
     "1633": {
       "name": "Ivan Strinić",
@@ -115,6 +140,23 @@
       ],
       "checkedAt": "2026-09-24T08:26:53.778Z"
     },
+    "6373": {
+      "name": "Nicolás Santiago Bertolo",
+      "wikipediaTitle": "Nicolás Bertolo",
+      "verdict": "fail",
+      "missingFraction": 0.07,
+      "missing": [
+        {
+          "team": "Nacional",
+          "from": 2008,
+          "to": 2008,
+          "position": "centrale",
+          "apps": 15,
+          "goals": 3
+        }
+      ],
+      "checkedAt": "2026-09-24T08:37:19.016Z"
+    },
     "6857": {
       "name": "Keisuke Honda",
       "wikipediaTitle": "Keisuke Honda",
@@ -171,6 +213,23 @@
         }
       ],
       "checkedAt": "2026-09-24T08:24:05.598Z"
+    },
+    "8552": {
+      "name": "Gabriele Angella",
+      "wikipediaTitle": "Gabriele Angella",
+      "verdict": "fail",
+      "missingFraction": 0.13,
+      "missing": [
+        {
+          "team": "Queens Park Rangers",
+          "from": 2015,
+          "to": 2016,
+          "position": "centrale",
+          "apps": 17,
+          "goals": 1
+        }
+      ],
+      "checkedAt": "2026-09-24T08:40:09.473Z"
     },
     "8685": {
       "name": "Serge Gakpé",
@@ -237,6 +296,39 @@
         }
       ],
       "checkedAt": "2026-09-24T08:16:13.587Z"
+    },
+    "13582": {
+      "name": "Matías Ariel Fernández Fernández",
+      "wikipediaTitle": "Matías Fernández (footballer, born 1986)",
+      "verdict": "fail",
+      "missingFraction": 0.33,
+      "missing": [
+        {
+          "team": "Colo-Colo",
+          "from": 2004,
+          "to": 2006,
+          "position": "iniziale",
+          "apps": 82,
+          "goals": 37
+        },
+        {
+          "team": "Colo-Colo",
+          "from": 2020,
+          "to": 2021,
+          "position": "centrale",
+          "apps": 19,
+          "goals": 0
+        },
+        {
+          "team": "Deportes La Serena",
+          "from": 2021,
+          "to": 2022,
+          "position": "finale",
+          "apps": 39,
+          "goals": 3
+        }
+      ],
+      "checkedAt": "2026-09-24T08:41:31.389Z"
     },
     "18757": {
       "name": "Leighton Baines",
@@ -798,6 +890,47 @@
       ],
       "checkedAt": "2026-09-24T08:28:13.546Z"
     },
+    "30734": {
+      "name": "Stefano Sorrentino",
+      "wikipediaTitle": "Stefano Sorrentino",
+      "verdict": "fail",
+      "missingFraction": 0.44,
+      "missing": [
+        {
+          "team": "Torino",
+          "from": 1998,
+          "to": 2005,
+          "position": "iniziale",
+          "apps": 89,
+          "goals": 0
+        },
+        {
+          "team": "AEK Athens",
+          "from": 2005,
+          "to": 2009,
+          "position": "centrale",
+          "apps": 50,
+          "goals": 0
+        },
+        {
+          "team": "F.C. Cervo",
+          "from": 2019,
+          "to": 2020,
+          "position": "centrale",
+          "apps": null,
+          "goals": null
+        },
+        {
+          "team": "Torinese",
+          "from": 2020,
+          "to": 2021,
+          "position": "finale",
+          "apps": null,
+          "goals": 9
+        }
+      ],
+      "checkedAt": "2026-09-24T08:39:05.061Z"
+    },
     "30759": {
       "name": "Sergio Pellissier",
       "wikipediaTitle": "Sergio Pellissier",
@@ -914,6 +1047,47 @@
         }
       ],
       "checkedAt": "2026-09-24T08:28:39.586Z"
+    },
+    "30896": {
+      "name": "Marco Biagianti",
+      "wikipediaTitle": "Marco Biagianti",
+      "verdict": "fail",
+      "missingFraction": 0.67,
+      "missing": [
+        {
+          "team": "Fano",
+          "from": 2003,
+          "to": 2004,
+          "position": "iniziale",
+          "apps": 30,
+          "goals": 0
+        },
+        {
+          "team": "Chieti",
+          "from": 2004,
+          "to": 2005,
+          "position": "centrale",
+          "apps": 27,
+          "goals": 1
+        },
+        {
+          "team": "Pro Vasto",
+          "from": 2005,
+          "to": 2006,
+          "position": "centrale",
+          "apps": 44,
+          "goals": 1
+        },
+        {
+          "team": "Catania",
+          "from": 2016,
+          "to": 2020,
+          "position": "finale",
+          "apps": 107,
+          "goals": 8
+        }
+      ],
+      "checkedAt": "2026-09-24T08:38:22.518Z"
     },
     "30939": {
       "name": "Samuel Di Carmine",
@@ -1038,6 +1212,47 @@
       "missingFraction": 0,
       "missing": [],
       "checkedAt": "2026-09-24T08:08:27.277Z"
+    },
+    "31039": {
+      "name": "Luca Antonelli",
+      "wikipediaTitle": "Luca Antonelli",
+      "verdict": "fail",
+      "missingFraction": 0.57,
+      "missing": [
+        {
+          "team": "A.C. Milan",
+          "from": 2006,
+          "to": 2008,
+          "position": "iniziale",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "team": "Bari",
+          "from": 2007,
+          "to": 2008,
+          "position": "centrale",
+          "apps": 17,
+          "goals": 1
+        },
+        {
+          "team": "A.C. Milan",
+          "from": 2015,
+          "to": 2018,
+          "position": "centrale",
+          "apps": 53,
+          "goals": 4
+        },
+        {
+          "team": "Miami FC",
+          "from": 2021,
+          "to": 2022,
+          "position": "finale",
+          "apps": 19,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-24T08:42:40.765Z"
     },
     "31046": {
       "name": "Manuel Pasqual",
@@ -1557,6 +1772,39 @@
       "missing": [],
       "checkedAt": "2026-09-24T08:19:14.091Z"
     },
+    "40397": {
+      "name": "Cristian Pasquato",
+      "wikipediaTitle": "Cristian Pasquato",
+      "verdict": "fail",
+      "missingFraction": 0.18,
+      "missing": [
+        {
+          "team": "Legia Warsaw",
+          "from": 2017,
+          "to": 2019,
+          "position": "centrale",
+          "apps": 29,
+          "goals": 2
+        },
+        {
+          "team": "Legia Warsaw II",
+          "from": 2017,
+          "to": 2018,
+          "position": "centrale",
+          "apps": 2,
+          "goals": 3
+        },
+        {
+          "team": "Campodarsego",
+          "from": 2019,
+          "to": 2020,
+          "position": "centrale",
+          "apps": 13,
+          "goals": 4
+        }
+      ],
+      "checkedAt": "2026-09-24T08:38:05.241Z"
+    },
     "41327": {
       "name": "Rodrigo Defendi",
       "wikipediaTitle": "Rodrigo Defendi",
@@ -1606,6 +1854,31 @@
       ],
       "checkedAt": "2026-09-24T08:33:31.345Z"
     },
+    "42188": {
+      "name": "Nigel de Jong",
+      "wikipediaTitle": "Nigel de Jong",
+      "verdict": "fail",
+      "missingFraction": 0.22,
+      "missing": [
+        {
+          "team": "LA Galaxy",
+          "from": 2016,
+          "to": 2016,
+          "position": "centrale",
+          "apps": 18,
+          "goals": 0
+        },
+        {
+          "team": "Al-Shahania",
+          "from": 2019,
+          "to": 2021,
+          "position": "finale",
+          "apps": 36,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-24T08:39:48.656Z"
+    },
     "42346": {
       "name": "Arnold Mvuemba",
       "wikipediaTitle": "Arnold Mvuemba",
@@ -1630,6 +1903,63 @@
         }
       ],
       "checkedAt": "2026-09-24T08:34:28.284Z"
+    },
+    "47993": {
+      "name": "Sebastian Anders Fredrik Eriksson",
+      "wikipediaTitle": "Sebastian Eriksson",
+      "verdict": "fail",
+      "missingFraction": 0.67,
+      "missing": [
+        {
+          "team": "Åsebro IF",
+          "from": 2004,
+          "to": 2005,
+          "position": "iniziale",
+          "apps": null,
+          "goals": null
+        },
+        {
+          "team": "IFK Göteborg",
+          "from": 2007,
+          "to": 2012,
+          "position": "centrale",
+          "apps": 81,
+          "goals": 5
+        },
+        {
+          "team": "IFK Göteborg",
+          "from": 2015,
+          "to": 2015,
+          "position": "centrale",
+          "apps": 11,
+          "goals": 2
+        },
+        {
+          "team": "IFK Göteborg",
+          "from": 2015,
+          "to": 2018,
+          "position": "centrale",
+          "apps": 82,
+          "goals": 2
+        },
+        {
+          "team": "IFK Göteborg",
+          "from": 2019,
+          "to": 2019,
+          "position": "centrale",
+          "apps": 16,
+          "goals": 2
+        },
+        {
+          "team": "IFK Göteborg",
+          "from": 2020,
+          "to": 2023,
+          "position": "finale",
+          "apps": 60,
+          "goals": 2
+        }
+      ],
+      "checkedAt": "2026-09-24T08:39:18.135Z"
     },
     "48531": {
       "name": "Robert Acquafresca",
@@ -1697,6 +2027,47 @@
       ],
       "checkedAt": "2026-09-24T08:29:22.355Z"
     },
+    "49957": {
+      "name": "Ondřej Čelůstka",
+      "wikipediaTitle": "Ondřej Čelůstka",
+      "verdict": "fail",
+      "missingFraction": 0.4,
+      "missing": [
+        {
+          "team": "Fastav Zlín",
+          "from": 2007,
+          "to": 2009,
+          "position": "iniziale",
+          "apps": 24,
+          "goals": 3
+        },
+        {
+          "team": "Slavia Prague",
+          "from": 2009,
+          "to": 2011,
+          "position": "centrale",
+          "apps": 41,
+          "goals": 3
+        },
+        {
+          "team": "Sparta Prague",
+          "from": 2020,
+          "to": 2023,
+          "position": "centrale",
+          "apps": 37,
+          "goals": 2
+        },
+        {
+          "team": "Sparta Prague B",
+          "from": 2021,
+          "to": 2021,
+          "position": "centrale",
+          "apps": 5,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-24T08:38:31.380Z"
+    },
     "50023": {
       "name": "Samir Ujkani",
       "wikipediaTitle": "Samir Ujkani",
@@ -1745,6 +2116,151 @@
         }
       ],
       "checkedAt": "2026-09-24T08:30:18.267Z"
+    },
+    "51803": {
+      "name": "Mariano Adrián Bogliacino Hernández",
+      "wikipediaTitle": "Mariano Fernández (footballer, born 1978)",
+      "verdict": "fail",
+      "missingFraction": 1,
+      "missing": [
+        {
+          "team": "Lanús",
+          "from": 1997,
+          "to": 2001,
+          "position": "iniziale",
+          "apps": 65,
+          "goals": 5
+        },
+        {
+          "team": "Belgrano",
+          "from": 2000,
+          "to": 2000,
+          "position": "centrale",
+          "apps": 12,
+          "goals": 0
+        },
+        {
+          "team": "Sturm Graz",
+          "from": 2001,
+          "to": 2002,
+          "position": "centrale",
+          "apps": 19,
+          "goals": 0
+        },
+        {
+          "team": "Beira-Mar",
+          "from": 2002,
+          "to": 2003,
+          "position": "centrale",
+          "apps": 31,
+          "goals": 0
+        },
+        {
+          "team": "Torino",
+          "from": 2003,
+          "to": 2004,
+          "position": "centrale",
+          "apps": 28,
+          "goals": 1
+        },
+        {
+          "team": "Real Murcia",
+          "from": 2004,
+          "to": 2005,
+          "position": "centrale",
+          "apps": 6,
+          "goals": 1
+        },
+        {
+          "team": "Córdoba",
+          "from": 2005,
+          "to": 2006,
+          "position": "centrale",
+          "apps": 15,
+          "goals": 1
+        },
+        {
+          "team": "Nueva Chicago",
+          "from": 2006,
+          "to": 2007,
+          "position": "centrale",
+          "apps": 8,
+          "goals": 0
+        },
+        {
+          "team": "Dinamo Bucharest",
+          "from": 2007,
+          "to": 2008,
+          "position": "centrale",
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "team": "Cisco Roma",
+          "from": 2008,
+          "to": 2008,
+          "position": "centrale",
+          "apps": 11,
+          "goals": 1
+        },
+        {
+          "team": "Gela",
+          "from": 2008,
+          "to": 2009,
+          "position": "centrale",
+          "apps": 23,
+          "goals": 0
+        },
+        {
+          "team": "Sorrento",
+          "from": 2009,
+          "to": 2010,
+          "position": "centrale",
+          "apps": 28,
+          "goals": 4
+        },
+        {
+          "team": "Casale",
+          "from": 2010,
+          "to": 2011,
+          "position": "centrale",
+          "apps": 12,
+          "goals": 0
+        },
+        {
+          "team": "Cosenza",
+          "from": 2011,
+          "to": 2011,
+          "position": "centrale",
+          "apps": 13,
+          "goals": 0
+        },
+        {
+          "team": "Siracusa",
+          "from": 2011,
+          "to": 2012,
+          "position": "centrale",
+          "apps": 23,
+          "goals": 1
+        },
+        {
+          "team": "Paganese",
+          "from": 2012,
+          "to": 2013,
+          "position": "centrale",
+          "apps": 23,
+          "goals": 3
+        },
+        {
+          "team": "Matera",
+          "from": 2013,
+          "to": 2014,
+          "position": "finale",
+          "apps": 26,
+          "goals": 1
+        }
+      ],
+      "checkedAt": "2026-09-24T08:39:39.806Z"
     },
     "56409": {
       "name": "Jonathan Rossini",
@@ -2025,6 +2541,39 @@
       "missing": [],
       "checkedAt": "2026-09-24T08:01:40.058Z"
     },
+    "91302": {
+      "name": "Antonio Nocerino",
+      "wikipediaTitle": "Antonio Nocerino",
+      "verdict": "fail",
+      "missingFraction": 0.21,
+      "missing": [
+        {
+          "team": "Avellino",
+          "from": 2003,
+          "to": 2004,
+          "position": "iniziale",
+          "apps": 34,
+          "goals": 0
+        },
+        {
+          "team": "Genoa",
+          "from": 2004,
+          "to": 2006,
+          "position": "centrale",
+          "apps": 5,
+          "goals": 0
+        },
+        {
+          "team": "Catanzaro",
+          "from": 2005,
+          "to": 2005,
+          "position": "centrale",
+          "apps": 21,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-24T08:39:26.937Z"
+    },
     "91371": {
       "name": "Francesco Totti",
       "wikipediaTitle": "Francesco Totti",
@@ -2165,6 +2714,31 @@
       ],
       "checkedAt": "2026-09-24T08:22:23.183Z"
     },
+    "96798": {
+      "name": "Seydou Kéita",
+      "wikipediaTitle": "Seydou Keita",
+      "verdict": "fail",
+      "missingFraction": 0.22,
+      "missing": [
+        {
+          "team": "Marseille",
+          "from": 1999,
+          "to": 2000,
+          "position": "iniziale",
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "team": "Lorient",
+          "from": 2000,
+          "to": 2002,
+          "position": "centrale",
+          "apps": 58,
+          "goals": 1
+        }
+      ],
+      "checkedAt": "2026-09-24T08:38:40.173Z"
+    },
     "100517": {
       "name": "Paolo De Ceglie",
       "wikipediaTitle": "Paolo De Ceglie",
@@ -2247,6 +2821,31 @@
         }
       ],
       "checkedAt": "2026-09-24T08:22:14.510Z"
+    },
+    "105801": {
+      "name": "György Garics",
+      "wikipediaTitle": "György Garics",
+      "verdict": "fail",
+      "missingFraction": 0.29,
+      "missing": [
+        {
+          "team": "Rapid Vienna II",
+          "from": 2001,
+          "to": 2002,
+          "position": "iniziale",
+          "apps": 18,
+          "goals": 2
+        },
+        {
+          "team": "Imolese",
+          "from": 2017,
+          "to": 2018,
+          "position": "finale",
+          "apps": 13,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-24T08:38:13.933Z"
     },
     "105837": {
       "name": "Andrey Arshavin",
@@ -3122,6 +3721,88 @@
       ],
       "checkedAt": "2026-09-24T08:15:32.393Z"
     },
+    "115293": {
+      "name": "Simone Perrotta",
+      "wikipediaTitle": "Simone Perrotta",
+      "verdict": "fail",
+      "missingFraction": 0.8,
+      "missing": [
+        {
+          "team": "Reggina",
+          "from": 1995,
+          "to": 1998,
+          "position": "iniziale",
+          "apps": 77,
+          "goals": 1
+        },
+        {
+          "team": "Juventus",
+          "from": 1998,
+          "to": 1999,
+          "position": "centrale",
+          "apps": 5,
+          "goals": 0
+        },
+        {
+          "team": "Bari",
+          "from": 1999,
+          "to": 2001,
+          "position": "centrale",
+          "apps": 56,
+          "goals": 1
+        },
+        {
+          "team": "Chievo",
+          "from": 2001,
+          "to": 2004,
+          "position": "centrale",
+          "apps": 95,
+          "goals": 6
+        }
+      ],
+      "checkedAt": "2026-09-24T08:42:13.953Z"
+    },
+    "115297": {
+      "name": "Michele Ferri",
+      "wikipediaTitle": "Michele Ferri",
+      "verdict": "fail",
+      "missingFraction": 0.36,
+      "missing": [
+        {
+          "team": "Cesena",
+          "from": 2001,
+          "to": 2002,
+          "position": "iniziale",
+          "apps": 25,
+          "goals": 1
+        },
+        {
+          "team": "Triestina",
+          "from": 2002,
+          "to": 2003,
+          "position": "centrale",
+          "apps": 27,
+          "goals": 1
+        },
+        {
+          "team": "Pro Patria",
+          "from": 2015,
+          "to": 2016,
+          "position": "centrale",
+          "apps": 24,
+          "goals": 0
+        },
+        {
+          "team": "Varese",
+          "from": 2016,
+          "to": 2018,
+          "position": "finale",
+          "apps": 18,
+          "goals": 1
+        }
+      ],
+      "checkedAt": "2026-09-24T08:40:44.369Z"
+    },
     "115313": {
       "name": "Antonio Bocchetti",
       "wikipediaTitle": "Antonio Bocchetti (footballer, born 1990)",
@@ -3300,6 +3981,47 @@
         }
       ],
       "checkedAt": "2026-09-24T08:31:09.513Z"
+    },
+    "115422": {
+      "name": "Michele Marcolini",
+      "wikipediaTitle": "Michele Marcolini",
+      "verdict": "fail",
+      "missingFraction": 0.5,
+      "missing": [
+        {
+          "team": "Sora",
+          "from": 1990,
+          "to": 1991,
+          "position": "iniziale",
+          "apps": 22,
+          "goals": 0
+        },
+        {
+          "team": "Sora",
+          "from": 1994,
+          "to": 1997,
+          "position": "centrale",
+          "apps": 67,
+          "goals": 3
+        },
+        {
+          "team": "Bari",
+          "from": 1997,
+          "to": 2001,
+          "position": "centrale",
+          "apps": 86,
+          "goals": 5
+        },
+        {
+          "team": "Vicenza",
+          "from": 2001,
+          "to": 2003,
+          "position": "centrale",
+          "apps": 70,
+          "goals": 11
+        }
+      ],
+      "checkedAt": "2026-09-24T08:42:31.351Z"
     },
     "115438": {
       "name": "Davide Baiocco",

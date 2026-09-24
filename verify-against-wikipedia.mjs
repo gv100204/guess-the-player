@@ -314,9 +314,21 @@ async function main() {
         continue;
       }
 
-      const wikitext = await fetchWikitext(title);
+      let wikitext = await fetchWikitext(title);
       await sleep(REQUEST_DELAY_MS);
-      const wikiEntries = parseSeniorCareer(wikitext);
+      let wikiEntries = parseSeniorCareer(wikitext);
+
+      if (wikiEntries.length === 0) {
+        // Prima di arrenderci, riproviamo UNA volta: test su pagine reali
+        // (Pastore, Guarín) hanno confermato che il parser legge bene
+        // questi formati - uno zero-tappe è più probabile una risposta
+        // sfortunata dovuta al traffico che un vero problema di pagina.
+        console.log(`  (${p.name}: zero tappe trovate, riprovo una volta prima di arrendermi...)`);
+        await sleep(REQUEST_DELAY_MS);
+        wikitext = await fetchWikitext(title);
+        await sleep(REQUEST_DELAY_MS);
+        wikiEntries = parseSeniorCareer(wikitext);
+      }
 
       if (wikiEntries.length === 0) {
         console.log(`? ${p.name} (${title}): non riesco a leggere la scheda carriera, salto`);
