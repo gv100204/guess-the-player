@@ -334,6 +334,28 @@ async function main() {
         wikiEntries = parseSeniorCareer(wikitext);
       }
 
+      // Ultima risorsa: se il nome ha più di 2 parole (probabile secondo
+      // nome, come "Jonathan Ludovic Biabiany") e ancora zero tappe, la
+      // ricerca col nome completo potrebbe aver trovato una pagina
+      // ESISTENTE ma SBAGLIATA (non vuota, quindi il tentativo di riserva
+      // di findWikipediaTitle non scattava mai) - proviamo esplicitamente
+      // il nome corto qui, con un titolo potenzialmente diverso.
+      if (wikiEntries.length === 0) {
+        const parts = p.name.trim().split(/\s+/);
+        if (parts.length > 2) {
+          const shortName = `${parts[0]} ${parts[parts.length - 1]}`;
+          console.log(`  (${p.name}: ancora zero tappe, provo il nome corto "${shortName}"...)`);
+          const shortTitles = await searchWikipediaTitles(shortName);
+          await sleep(REQUEST_DELAY_MS);
+          const shortTitle = shortTitles.find((t) => /footballer/i.test(t)) || shortTitles[0];
+          if (shortTitle && shortTitle !== title) {
+            wikitext = await fetchWikitext(shortTitle);
+            await sleep(REQUEST_DELAY_MS);
+            wikiEntries = parseSeniorCareer(wikitext);
+          }
+        }
+      }
+
       if (wikiEntries.length === 0) {
         console.log(`? ${p.name} (${title}): non riesco a leggere la scheda carriera, salto`);
         printProgress();

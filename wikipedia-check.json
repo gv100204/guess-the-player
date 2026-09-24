@@ -380,6 +380,14 @@
       ],
       "checkedAt": "2026-09-24T08:35:18.240Z"
     },
+    "18837": {
+      "name": "Julián Speroni",
+      "wikipediaTitle": "Julián Speroni",
+      "verdict": "ok",
+      "missingFraction": 0,
+      "missing": [],
+      "checkedAt": "2026-09-24T08:47:02.821Z"
+    },
     "18891": {
       "name": "Ciaran Clark",
       "wikipediaTitle": "Ciaran Clark",
@@ -1725,6 +1733,14 @@
       ],
       "checkedAt": "2026-09-24T08:22:05.140Z"
     },
+    "31686": {
+      "name": "Emanuele Calaiò",
+      "wikipediaTitle": "Emanuele Calaiò",
+      "verdict": "ok",
+      "missingFraction": 0,
+      "missing": [],
+      "checkedAt": "2026-09-24T08:46:53.931Z"
+    },
     "31689": {
       "name": "Alessandro Rosina",
       "wikipediaTitle": "Alessandro Rosina",
@@ -2649,6 +2665,14 @@
       "missing": [],
       "checkedAt": "2026-09-24T08:01:40.058Z"
     },
+    "90510": {
+      "name": "Shaun Maloney",
+      "wikipediaTitle": "Shaun Maloney",
+      "verdict": "ok",
+      "missingFraction": 0,
+      "missing": [],
+      "checkedAt": "2026-09-24T08:46:09.625Z"
+    },
     "91258": {
       "name": "Željko Brkić",
       "wikipediaTitle": "Željko Brkić",
@@ -2715,6 +2739,47 @@
       ],
       "checkedAt": "2026-09-24T08:39:26.937Z"
     },
+    "91334": {
+      "name": "Archimede Morleo",
+      "wikipediaTitle": "Archimede Morleo",
+      "verdict": "fail",
+      "missingFraction": 0.5,
+      "missing": [
+        {
+          "team": "Carrarese",
+          "from": 2002,
+          "to": 2003,
+          "position": "iniziale",
+          "apps": 12,
+          "goals": 0
+        },
+        {
+          "team": "Sora",
+          "from": 2003,
+          "to": 2005,
+          "position": "centrale",
+          "apps": 58,
+          "goals": 3
+        },
+        {
+          "team": "Cisco Roma",
+          "from": 2005,
+          "to": 2006,
+          "position": "centrale",
+          "apps": 28,
+          "goals": 0
+        },
+        {
+          "team": "Casarano",
+          "from": 2019,
+          "to": 2019,
+          "position": "finale",
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "checkedAt": "2026-09-24T08:47:28.927Z"
+    },
     "91371": {
       "name": "Francesco Totti",
       "wikipediaTitle": "Francesco Totti",
@@ -2722,6 +2787,39 @@
       "missingFraction": 0,
       "missing": [],
       "checkedAt": "2026-09-24T08:08:18.595Z"
+    },
+    "91373": {
+      "name": "Federico Agliardi",
+      "wikipediaTitle": "Federico Agliardi",
+      "verdict": "fail",
+      "missingFraction": 0.3,
+      "missing": [
+        {
+          "team": "Brescia",
+          "from": 2002,
+          "to": 2006,
+          "position": "iniziale",
+          "apps": 31,
+          "goals": 0
+        },
+        {
+          "team": "Cosenza",
+          "from": 2002,
+          "to": 2003,
+          "position": "centrale",
+          "apps": 16,
+          "goals": 0
+        },
+        {
+          "team": "Lumezzane",
+          "from": 2020,
+          "to": 2021,
+          "position": "finale",
+          "apps": null,
+          "goals": null
+        }
+      ],
+      "checkedAt": "2026-09-24T08:47:20.205Z"
     },
     "91376": {
       "name": "Marco Storari",
@@ -3771,6 +3869,63 @@
         }
       ],
       "checkedAt": "2026-09-24T08:00:40.260Z"
+    },
+    "115277": {
+      "name": "Gaetano D'Agostino",
+      "wikipediaTitle": "Gaetano D'Agostino",
+      "verdict": "fail",
+      "missingFraction": 0.55,
+      "missing": [
+        {
+          "team": "Roma",
+          "from": 2000,
+          "to": 2001,
+          "position": "iniziale",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "team": "Bari",
+          "from": 2001,
+          "to": 2003,
+          "position": "centrale",
+          "apps": 63,
+          "goals": 2
+        },
+        {
+          "team": "Roma",
+          "from": 2003,
+          "to": 2005,
+          "position": "centrale",
+          "apps": 22,
+          "goals": 1
+        },
+        {
+          "team": "Fidelis Andria",
+          "from": 2014,
+          "to": 2014,
+          "position": "centrale",
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "team": "Benevento",
+          "from": 2014,
+          "to": 2015,
+          "position": "centrale",
+          "apps": 17,
+          "goals": 1
+        },
+        {
+          "team": "Lupa Roma",
+          "from": 2015,
+          "to": 2016,
+          "position": "finale",
+          "apps": 19,
+          "goals": 1
+        }
+      ],
+      "checkedAt": "2026-09-24T08:47:11.516Z"
     },
     "115279": {
       "name": "Salvatore Aronica",
