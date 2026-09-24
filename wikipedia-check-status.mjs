@@ -34,8 +34,14 @@ async function main() {
   const checked = Object.values(checkData.checked);
   const total = checked.length;
   const ok = checked.filter((e) => e.verdict === "ok").length;
-  const fail = checked.filter((e) => e.verdict === "fail").length;
-  const filled = checked.filter((e) => e.filledFromWikipediaAt).length;
+  const failEntries = checked.filter((e) => e.verdict === "fail");
+  const fail = failEntries.length;
+  // Solo tra chi fallisce ANCORA ADESSO: quanti hanno comunque ricevuto una
+  // riparazione parziale (alcune tappe aggiunte, ma non tutte - altrimenti
+  // sarebbero già passati a "ok"). Bug reale corretto: prima contava TUTTI
+  // i giocatori mai riparati nella storia, anche quelli già passati a "ok",
+  // producendo numeri assurdi tipo "82 riparati su 7 falliti".
+  const partiallyFilled = failEntries.filter((e) => e.filledFromWikipediaAt).length;
   const remaining = Math.max(0, eligible - total);
   const pct = eligible > 0 ? (total / eligible) * 100 : 0;
 
@@ -48,11 +54,11 @@ async function main() {
   console.log(`[${bar}] ${pct.toFixed(1)}%`);
   console.log();
   console.log(`  Passano:    ${ok.toLocaleString("it-IT")}`);
-  console.log(`  Falliscono: ${fail.toLocaleString("it-IT")}${filled ? ` (di cui ${filled} già riparati da Wikipedia)` : ""}`);
+  console.log(`  Falliscono: ${fail.toLocaleString("it-IT")}${partiallyFilled ? ` (di cui ${partiallyFilled} riparati solo in parte)` : ""}`);
   console.log(`  Ancora da controllare: ${remaining.toLocaleString("it-IT")}`);
 
-  if (fail > filled) {
-    console.log(`\n${fail - filled} giocatori falliscono e non sono ancora stati riparati:`);
+  if (fail > 0) {
+    console.log(`\n${fail} giocatori falliscono e non sono stati riparati del tutto:`);
     console.log("  node apply-wikipedia-fills.mjs raw-players.json wikipedia-check.json");
   }
 }
