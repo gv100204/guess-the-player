@@ -353,6 +353,14 @@
       "missing": [],
       "checkedAt": "2026-09-24T11:03:33.419Z"
     },
+    "205": {
+      "name": "Radja Nainggolan",
+      "wikipediaTitle": "Radja Nainggolan",
+      "verdict": "ok",
+      "missingFraction": 0,
+      "missing": [],
+      "checkedAt": "2026-09-24T15:09:36.821Z"
+    },
     "207": {
       "name": "Ivan Perišić",
       "wikipediaTitle": "Ivan Perišić",
@@ -600,6 +608,39 @@
         }
       ],
       "checkedAt": "2026-09-24T11:32:27.228Z"
+    },
+    "332": {
+      "name": "Dries Mertens",
+      "wikipediaTitle": "Dries Mertens",
+      "verdict": "fail",
+      "missingFraction": 0.43,
+      "missing": [
+        {
+          "team": "Eendracht Aalst",
+          "from": 2005,
+          "to": 2006,
+          "position": "iniziale",
+          "apps": 14,
+          "goals": 4
+        },
+        {
+          "team": "AGOVV",
+          "from": 2006,
+          "to": 2007,
+          "position": "centrale",
+          "apps": 35,
+          "goals": 2
+        },
+        {
+          "team": "AGOVV",
+          "from": 2007,
+          "to": 2009,
+          "position": "centrale",
+          "apps": 73,
+          "goals": 28
+        }
+      ],
+      "checkedAt": "2026-09-24T15:09:19.158Z"
     },
     "358": {
       "name": "Marko Marin",
@@ -1215,6 +1256,23 @@
       "missingFraction": 0,
       "missing": [],
       "checkedAt": "2026-09-24T09:11:13.347Z"
+    },
+    "922": {
+      "name": "Facundo Sebastián Roncaglia",
+      "wikipediaTitle": "Facundo Sebastián Roncaglia",
+      "verdict": "ok",
+      "missingFraction": 0.08,
+      "missing": [
+        {
+          "team": "San Telmo",
+          "from": 2026,
+          "to": 2026,
+          "position": "finale",
+          "apps": 8,
+          "goals": 1
+        }
+      ],
+      "checkedAt": "2026-09-24T15:09:10.345Z"
     },
     "949": {
       "name": "Steve von Bergen",
@@ -7942,6 +8000,39 @@
       ],
       "checkedAt": "2026-09-24T12:49:18.884Z"
     },
+    "30426": {
+      "name": "Andrea Masiello",
+      "wikipediaTitle": "Andrea Masiello",
+      "verdict": "fail",
+      "missingFraction": 0.33,
+      "missing": [
+        {
+          "team": "Lucchese",
+          "from": 2003,
+          "to": 2003,
+          "position": "iniziale",
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "team": "Juventus",
+          "from": 2005,
+          "to": 2006,
+          "position": "centrale",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "team": "Südtirol",
+          "from": 2022,
+          "to": 2026,
+          "position": "finale",
+          "apps": 97,
+          "goals": 2
+        }
+      ],
+      "checkedAt": "2026-09-24T15:10:09.550Z"
+    },
     "30433": {
       "name": "Alejandro Darío Gómez Villaverde",
       "wikipediaTitle": "Alejandro",
@@ -9304,6 +9395,23 @@
       ],
       "checkedAt": "2026-09-24T12:17:48.403Z"
     },
+    "30771": {
+      "name": "Domenico Criscito",
+      "wikipediaTitle": "Domenico Criscito",
+      "verdict": "fail",
+      "missingFraction": 0.13,
+      "missing": [
+        {
+          "team": "Genoa",
+          "from": 2003,
+          "to": 2004,
+          "position": "iniziale",
+          "apps": 1,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-24T15:09:45.692Z"
+    },
     "30781": {
       "name": "Miguel Luís Pinto Veloso",
       "wikipediaTitle": "Miguel Luís Pinto Veloso",
@@ -10005,6 +10113,63 @@
         }
       ],
       "checkedAt": "2026-09-24T10:41:17.612Z"
+    },
+    "31014": {
+      "name": "Simone Iacoponi",
+      "wikipediaTitle": "Simone Iacoponi",
+      "verdict": "fail",
+      "missingFraction": 0.55,
+      "missing": [
+        {
+          "team": "Monza",
+          "from": 2008,
+          "to": 2009,
+          "position": "centrale",
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "team": "Cuoiocappiano",
+          "from": 2009,
+          "to": 2009,
+          "position": "centrale",
+          "apps": 15,
+          "goals": 0
+        },
+        {
+          "team": "Südtirol",
+          "from": 2011,
+          "to": 2012,
+          "position": "centrale",
+          "apps": 31,
+          "goals": 1
+        },
+        {
+          "team": "Südtirol",
+          "from": 2012,
+          "to": 2013,
+          "position": "centrale",
+          "apps": 45,
+          "goals": 5
+        },
+        {
+          "team": "Roma City",
+          "from": 2022,
+          "to": 2023,
+          "position": "centrale",
+          "apps": 18,
+          "goals": 0
+        },
+        {
+          "team": "Aglianese",
+          "from": 2023,
+          "to": 2023,
+          "position": "finale",
+          "apps": 1,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-24T15:09:27.648Z"
     },
     "31015": {
       "name": "Bruno Eduardo Regufe Alves",
@@ -14154,6 +14319,14 @@
         }
       ],
       "checkedAt": "2026-09-24T12:44:13.422Z"
+    },
+    "47382": {
+      "name": "Iván Ramis Barrios",
+      "wikipediaTitle": "Iván Ramis Barrios",
+      "verdict": "ok",
+      "missingFraction": 0,
+      "missing": [],
+      "checkedAt": "2026-09-24T15:08:13.107Z"
     },
     "47411": {
       "name": "Nabil El Zhar",
@@ -18753,6 +18926,47 @@
         }
       ],
       "checkedAt": "2026-09-24T08:07:35.534Z"
+    },
+    "91477": {
+      "name": "Alexandre Geijo Pazos",
+      "wikipediaTitle": "Alexandre Geijo Pazos",
+      "verdict": "fail",
+      "missingFraction": 0.31,
+      "missing": [
+        {
+          "team": "Neuchâtel Xamax",
+          "from": 2000,
+          "to": 2001,
+          "position": "iniziale",
+          "apps": 11,
+          "goals": 1
+        },
+        {
+          "team": "Málaga B",
+          "from": 2001,
+          "to": 2005,
+          "position": "centrale",
+          "apps": 122,
+          "goals": 51
+        },
+        {
+          "team": "Málaga",
+          "from": 2003,
+          "to": 2005,
+          "position": "centrale",
+          "apps": 15,
+          "goals": 0
+        },
+        {
+          "team": "Xerez",
+          "from": 2005,
+          "to": 2007,
+          "position": "centrale",
+          "apps": 71,
+          "goals": 20
+        }
+      ],
+      "checkedAt": "2026-09-24T15:06:02.226Z"
     },
     "91480": {
       "name": "Paulo Sérgio Betanin",

@@ -103,33 +103,53 @@ async function searchWikipediaTitles(query) {
 // ESISTENTE ma SBAGLIATA (zero tappe estratte). Pattern coperti (tutti
 // trovati su casi reali, non ipotizzati a tavolino):
 //   - mononimo, solo la prima parola (es. "Joaquín", noto così in Spagna)
+//   - mononimo con disambiguante (es. "Maxwell (footballer)" - "Maxwell"
+//     da solo è troppo comune, la ricerca nuda trova la disambiguazione)
 //   - prima parola + una successiva (secondo nome/doppio cognome/parola
 //     mai usata pubblicamente, es. "Henrikh Mkhitaryan", "Henry Giménez")
 //   - due parole adiacenti che NON includono la prima (es. "Anton Ciprian
 //     Tătărușanu" -> "Ciprian Tătărușanu", "Anton" mai usato pubblicamente)
+//   - ordine invertito per nomi di 2 parole (convenzione coreana: cognome
+//     PRIMA, es. i nostri dati hanno "Ji-Sung Park", il titolo vero è
+//     "Park Ji-sung")
 const NAME_CONNECTORS = new Set(["i", "y", "e", "de", "da", "do", "del", "van", "von", "der", "la", "las", "los", "das", "dos", "du"]);
-function nameCandidates(fullName) {
+function nameCandidates(fullName, birthYear) {
+  const candidates = [];
+
+  // Omonimia: se esiste più di un calciatore/persona con lo stesso nome,
+  // Wikipedia disambigua con "(footballer, born ANNO)" - dato che abbiamo
+  // già l'anno di nascita nei nostri dati, costruiamo il candidato esatto
+  // invece di indovinare. Vale per QUALUNQUE nome, anche di 2 parole (es.
+  // "Michael Turner", che senza questo non generava nessun tentativo -
+  // esiste anche un "Mike Turner" più anziano, la ricerca nuda trovava
+  // solo la pagina di disambiguazione, senza scheda carriera da leggere).
+  if (birthYear) candidates.push(`${fullName} (footballer, born ${birthYear})`);
+  candidates.push(`${fullName} (footballer)`);
+
   const parts = fullName.trim().split(/\s+/).filter((w) => !NAME_CONNECTORS.has(w.toLowerCase()));
-  if (parts.length <= 2) return [];
 
-  const candidates = [parts[0]]; // mononimo
+  if (parts.length === 2) {
+    candidates.push(`${parts[1]} ${parts[0]}`); // ordine invertito (coreano)
+  }
 
-  for (let i = 1; i < parts.length; i++) candidates.push(`${parts[0]} ${parts[i]}`); // prima + ciascuna altra
-
-  for (let i = 1; i < parts.length - 1; i++) candidates.push(`${parts[i]} ${parts[i + 1]}`); // coppie senza la prima
+  if (parts.length > 2) {
+    candidates.push(parts[0]); // mononimo
+    if (birthYear) candidates.push(`${parts[0]} (footballer, born ${birthYear})`);
+    candidates.push(`${parts[0]} (footballer)`); // mononimo + disambiguante
+    for (let i = 1; i < parts.length; i++) candidates.push(`${parts[0]} ${parts[i]}`); // prima + ciascuna altra
+    for (let i = 1; i < parts.length - 1; i++) candidates.push(`${parts[i]} ${parts[i + 1]}`); // coppie senza la prima
+  }
 
   return candidates;
 }
 
-async function findWikipediaTitle(playerName) {
+async function findWikipediaTitle(playerName, birthYear) {
   let titles = await searchWikipediaTitles(playerName);
 
-  // Se il nome completo non trova nulla, proviamo ogni parola singola
-  // insieme alla prima - bug reale trovato: "Hendry Bernardo Thomas
-  // Suazo" non veniva trovato nemmeno provando primo+ultima ("Hendry
-  // Suazo", sbagliato) - la pagina vera è "Hendry Thomas" (terza parola).
+  // Se il nome completo non trova nulla, proviamo i candidati generati
+  // sopra (disambiguante con anno, mononimo, ricombinazioni delle parole).
   if (titles.length === 0) {
-    for (const shortName of nameCandidates(playerName)) {
+    for (const shortName of nameCandidates(playerName, birthYear)) {
       await sleep(REQUEST_DELAY_MS);
       titles = await searchWikipediaTitles(shortName);
       if (titles.length > 0) break;
@@ -316,6 +336,8 @@ async function main() {
   let checkedNow = 0;
   let notFoundOnWikipedia = 0;
   let unreadable = 0; // pagina trovata ma zero tappe estratte, anche dopo tutti i tentativi
+  const notFoundNames = [];
+  const unreadableNames = [];
   let failed = 0;
   let processedIdx = 0;
 
@@ -331,11 +353,12 @@ async function main() {
   for (const p of candidates) {
     processedIdx++;
     try {
-      const title = await findWikipediaTitle(p.name);
+      const title = await findWikipediaTitle(p.name, p.birthYear);
       await sleep(REQUEST_DELAY_MS);
       if (!title) {
         console.log(`? ${p.name}: nessuna pagina Wikipedia trovata, salto (non salvato: riprovabile in futuro)`);
         notFoundOnWikipedia++;
+        notFoundNames.push(p.name);
         printProgress();
         continue;
       }
@@ -344,17 +367,16 @@ async function main() {
       await sleep(REQUEST_DELAY_MS);
       let wikiEntries = parseSeniorCareer(wikitext);
 
-      // Prima di arrenderci, riproviamo fino a 2 volte in più, con attesa
-      // crescente: test su pagine reali (Pastore, Guarín, Romero) hanno
-      // confermato che il parser legge bene questi formati - zero tappe è
-      // quasi sempre una risposta sfortunata dovuta al traffico, non un
-      // vero problema di pagina. Un solo ritentativo non bastava quando la
-      // pressione è sostenuta (confermato: Romero ha fallito 2 volte di
-      // fila anche con un ritentativo).
-      for (let retry = 1; wikiEntries.length === 0 && retry <= 2; retry++) {
-        const waitS = retry * 6;
-        console.log(`  (${p.name}: zero tappe trovate, aspetto ${waitS}s e riprovo [${retry}/2]...)`);
-        await sleep(waitS * 1000);
+      // Prima di arrenderci, riproviamo UNA volta: test su pagine reali
+      // (Pastore, Guarín, Romero) hanno confermato che il parser legge
+      // bene questi formati - zero tappe è spesso una risposta sfortunata
+      // dovuta al traffico, non un vero problema di pagina. Un solo
+      // ritentativo (invece di due) è un compromesso: risparmia ~12-14s
+      // per caso, accettando che sotto pressione molto sostenuta possa
+      // ancora capitare di dover passare ai nomi corti inutilmente.
+      if (wikiEntries.length === 0) {
+        console.log(`  (${p.name}: zero tappe trovate, aspetto 8s e riprovo...)`);
+        await sleep(8000);
         wikitext = await fetchWikitext(title);
         await sleep(REQUEST_DELAY_MS);
         wikiEntries = parseSeniorCareer(wikitext);
@@ -367,7 +389,7 @@ async function main() {
       // gli stessi candidati (stessa funzione nameCandidates usata sopra),
       // con un titolo potenzialmente diverso.
       if (wikiEntries.length === 0) {
-        for (const shortName of nameCandidates(p.name)) {
+        for (const shortName of nameCandidates(p.name, p.birthYear)) {
           if (wikiEntries.length > 0) break;
           console.log(`  (${p.name}: ancora zero tappe, provo il nome corto "${shortName}"...)`);
           const shortTitles = await searchWikipediaTitles(shortName);
@@ -384,6 +406,7 @@ async function main() {
       if (wikiEntries.length === 0) {
         console.log(`? ${p.name} (${title}): non riesco a leggere la scheda carriera, salto`);
         unreadable++;
+        unreadableNames.push(`${p.name} (${title})`);
         printProgress();
         continue;
       }
@@ -429,6 +452,25 @@ async function main() {
   console.log(`Falliti (verranno esclusi dal gioco): ${failed}`);
   console.log(`Totale verdetti salvati finora: ${Object.keys(checkData.checked).length}`);
   console.log(`\nSalvato in: ${CHECK_FILE}`);
+
+  // Elenco dei non trovati/non leggibili di QUESTO lancio, salvato su file:
+  // quello che scorre nel terminale non resta da nessuna parte una volta
+  // chiuso, questo file invece si può riguardare con calma (o mandare a
+  // Claude per indagare altri casi, come fatto finora).
+  if (notFoundNames.length > 0 || unreadableNames.length > 0) {
+    const lines = [
+      `Report del ${new Date().toISOString()}`,
+      "",
+      `Nessuna pagina trovata (${notFoundNames.length}):`,
+      ...notFoundNames.map((n) => `  ${n}`),
+      "",
+      `Pagina trovata ma non leggibile (${unreadableNames.length}):`,
+      ...unreadableNames.map((n) => `  ${n}`)
+    ];
+    await fs.writeFile("./wikipedia-unresolved.txt", lines.join("\n"), "utf-8");
+    console.log(`Elenco dei non trovati/non leggibili salvato in: ./wikipedia-unresolved.txt`);
+  }
+
   if (!FULL_SCAN) {
     console.log("Rilancia con lo stesso comando per controllarne altri (salta chi è già fatto).");
   }
