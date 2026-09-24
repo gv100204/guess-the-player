@@ -96,17 +96,29 @@ async function searchWikipediaTitles(query) {
 }
 
 // Nomi ispanici/portoghesi/etc. spesso hanno più parole di quante la
-// pagina Wikipedia ne usi nel titolo (secondi nomi, doppi cognomi,
-// connettivi come "i"/"y"/"de"/"van"...) - invece di indovinare quale
-// convenzione culturale si applica, proviamo OGNI singola parola insieme
-// alla prima. Funzione condivisa: usata sia quando la ricerca col nome
-// completo non trova NULLA, sia quando trova una pagina ESISTENTE ma
-// SBAGLIATA (zero tappe estratte).
+// pagina Wikipedia ne usi nel titolo - invece di indovinare quale
+// convenzione culturale si applica, generiamo diversi candidati plausibili
+// e li proviamo in ordine. Funzione condivisa: usata sia quando la ricerca
+// col nome completo non trova NULLA, sia quando trova una pagina
+// ESISTENTE ma SBAGLIATA (zero tappe estratte). Pattern coperti (tutti
+// trovati su casi reali, non ipotizzati a tavolino):
+//   - mononimo, solo la prima parola (es. "Joaquín", noto così in Spagna)
+//   - prima parola + una successiva (secondo nome/doppio cognome/parola
+//     mai usata pubblicamente, es. "Henrikh Mkhitaryan", "Henry Giménez")
+//   - due parole adiacenti che NON includono la prima (es. "Anton Ciprian
+//     Tătărușanu" -> "Ciprian Tătărușanu", "Anton" mai usato pubblicamente)
 const NAME_CONNECTORS = new Set(["i", "y", "e", "de", "da", "do", "del", "van", "von", "der", "la", "las", "los", "das", "dos", "du"]);
 function nameCandidates(fullName) {
-  const parts = fullName.trim().split(/\s+/);
+  const parts = fullName.trim().split(/\s+/).filter((w) => !NAME_CONNECTORS.has(w.toLowerCase()));
   if (parts.length <= 2) return [];
-  return parts.slice(1).filter((w) => !NAME_CONNECTORS.has(w.toLowerCase())).map((w) => `${parts[0]} ${w}`);
+
+  const candidates = [parts[0]]; // mononimo
+
+  for (let i = 1; i < parts.length; i++) candidates.push(`${parts[0]} ${parts[i]}`); // prima + ciascuna altra
+
+  for (let i = 1; i < parts.length - 1; i++) candidates.push(`${parts[i]} ${parts[i + 1]}`); // coppie senza la prima
+
+  return candidates;
 }
 
 async function findWikipediaTitle(playerName) {
