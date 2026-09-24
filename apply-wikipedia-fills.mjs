@@ -57,21 +57,24 @@ async function main() {
   let blocksAdded = 0;
   let skippedImplausible = 0;
   let skippedDuplicate = 0;
+  let verdictsUpgraded = 0;
 
   for (const [id, entry] of Object.entries(checkData.checked || {})) {
     const p = byId.get(id);
     if (!p) continue;
     const missing = entry.missing || [];
     let touchedThisPlayer = false;
+    let allMissingResolved = true; // resta true solo se OGNI tappa mancante è stata aggiunta o era già presente
 
     for (const m of missing) {
       if (!isPlausible(m)) {
         skippedImplausible++;
+        allMissingResolved = false; // questa non l'abbiamo risolta: il giocatore ha ancora un buco vero
         continue;
       }
       if (alreadyHasBlock(p.seasonRecords, m)) {
         skippedDuplicate++;
-        continue;
+        continue; // già risolta in un lancio precedente, va bene comunque
       }
       p.seasonRecords = p.seasonRecords || [];
       p.seasonRecords.push({
@@ -89,10 +92,22 @@ async function main() {
       touchedThisPlayer = true;
     }
     if (touchedThisPlayer) playersAffected++;
+
+    // Se TUTTE le tappe mancanti sono state risolte (aggiunte ora o già
+    // presenti da prima), il giocatore non ha più motivo di restare
+    // escluso dal gioco - bug reale trovato: senza questo aggiornamento,
+    // un giocatore riparato restava comunque fuori, perché il verdetto
+    // "fail" non veniva mai ricalcolato dopo la riparazione.
+    if (entry.verdict === "fail" && missing.length > 0 && allMissingResolved) {
+      entry.verdict = "ok";
+      entry.filledFromWikipediaAt = new Date().toISOString();
+      verdictsUpgraded++;
+    }
   }
 
   console.log(`Giocatori toccati: ${playersAffected}`);
   console.log(`Blocchi storici aggiunti: ${blocksAdded}`);
+  console.log(`Verdetti passati da FALLISCE a OK (ora riparati del tutto): ${verdictsUpgraded}`);
   console.log(`Scartati per dati implausibili (0 presenze, intervallo assurdo, nome troppo corto): ${skippedImplausible}`);
   console.log(`Scartati perché già presenti da un lancio precedente: ${skippedDuplicate}`);
 
@@ -102,6 +117,13 @@ async function main() {
   console.log(`\nScritto: ${outPath}`);
   console.log("L'originale NON è stato toccato. Controlla il nuovo file, poi se va bene");
   console.log("rinominalo/sostituiscilo tu stesso a raw-players.json prima del prossimo sync.");
+
+  // wikipedia-check.json invece lo aggiorniamo DIRETTAMENTE: è già lui il
+  // checkpoint della scansione, e i verdetti passati da FALLISCE a OK
+  // devono valere subito per il prossimo sync, senza un passaggio manuale
+  // in più come per raw-players.json.
+  await fs.writeFile(CHECK_FILE, JSON.stringify(checkData, null, 2), "utf-8");
+  console.log(`Aggiornato: ${CHECK_FILE} (verdetti riparati salvati)`);
 }
 
 main();

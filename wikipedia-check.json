@@ -3,7 +3,7 @@
     "189": {
       "name": "Daniele Padelli",
       "wikipediaTitle": "Daniele Padelli",
-      "verdict": "fail",
+      "verdict": "ok",
       "missingFraction": 0.2,
       "missing": [
         {
@@ -23,12 +23,13 @@
           "goals": 0
         }
       ],
-      "checkedAt": "2026-09-24T06:31:18.800Z"
+      "checkedAt": "2026-09-24T06:31:18.800Z",
+      "filledFromWikipediaAt": "2026-09-24T06:38:37.019Z"
     },
     "30877": {
       "name": "Sergio Floccari",
       "wikipediaTitle": "Sergio Floccari",
-      "verdict": "fail",
+      "verdict": "ok",
       "missingFraction": 0.33,
       "missing": [
         {
@@ -72,12 +73,13 @@
           "goals": 1
         }
       ],
-      "checkedAt": "2026-09-24T06:31:25.861Z"
+      "checkedAt": "2026-09-24T06:31:25.861Z",
+      "filledFromWikipediaAt": "2026-09-24T06:38:37.027Z"
     },
     "31093": {
       "name": "Federico Dionisi",
       "wikipediaTitle": "Federico Dionisi",
-      "verdict": "fail",
+      "verdict": "ok",
       "missingFraction": 0.4,
       "missing": [
         {
@@ -113,12 +115,13 @@
           "goals": 23
         }
       ],
-      "checkedAt": "2026-09-24T06:31:22.188Z"
+      "checkedAt": "2026-09-24T06:31:22.188Z",
+      "filledFromWikipediaAt": "2026-09-24T06:38:37.027Z"
     },
     "91316": {
       "name": "Paolo Cannavaro",
       "wikipediaTitle": "Paolo Cannavaro",
-      "verdict": "fail",
+      "verdict": "ok",
       "missingFraction": 0.33,
       "missing": [
         {
@@ -138,12 +141,13 @@
           "goals": 1
         }
       ],
-      "checkedAt": "2026-09-24T06:31:11.632Z"
+      "checkedAt": "2026-09-24T06:31:11.632Z",
+      "filledFromWikipediaAt": "2026-09-24T06:38:37.027Z"
     },
     "104259": {
       "name": "Brett Emerton",
       "wikipediaTitle": "Brett Emerton",
-      "verdict": "fail",
+      "verdict": "ok",
       "missingFraction": 0.5,
       "missing": [
         {
@@ -163,7 +167,8 @@
           "goals": 11
         }
       ],
-      "checkedAt": "2026-09-24T06:31:15.260Z"
+      "checkedAt": "2026-09-24T06:31:15.260Z",
+      "filledFromWikipediaAt": "2026-09-24T06:38:37.027Z"
     }
   }
 }
