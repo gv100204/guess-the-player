@@ -51,7 +51,7 @@ const RAW_FILE = process.argv[3] || "./raw-players.json";
 const CHECK_FILE = process.argv[4] || "./wikipedia-check.json";
 const FULL_SCAN = rawArg.toLowerCase() === "all";
 const SAMPLE_SIZE = FULL_SCAN ? Infinity : (Number(rawArg) || 15);
-const REQUEST_DELAY_MS = 1500; // cortesia verso i server di Wikipedia
+const REQUEST_DELAY_MS = 4000; // alzato ancora da 2000ms: i 429 restavano frequenti anche così in un run prolungato
 const USER_AGENT = "guess-the-player-data-check/1.0 (uso personale, non commerciale)";
 const MISSING_FRACTION_THRESHOLD = 0.3;
 const SAVE_EVERY_N_PLAYERS = 1; // salva dopo OGNI giocatore: è il checkpoint
@@ -61,11 +61,16 @@ function sleep(ms) {
 }
 
 async function wikiFetch(url) {
-  for (let attempt = 1; attempt <= 3; attempt++) {
+  const MAX_ATTEMPTS = 6; // alzato da 3: nella scansione completa i 429 sono più frequenti del previsto
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     const res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
     if (res.ok) return res.json();
-    if (res.status === 429 && attempt < 3) {
-      const waitSeconds = attempt * 5;
+    if (res.status === 429 && attempt < MAX_ATTEMPTS) {
+      // Se Wikipedia dice esplicitamente quanto aspettare (intestazione
+      // Retry-After), usiamo quel numero invece di indovinare - più
+      // affidabile del backoff fisso che avevamo prima.
+      const retryAfterHeader = res.headers.get("retry-after");
+      const waitSeconds = retryAfterHeader ? Number(retryAfterHeader) : attempt * 15;
       console.log(`  (Wikipedia troppo trafficata, aspetto ${waitSeconds}s e riprovo...)`);
       await sleep(waitSeconds * 1000);
       continue;
