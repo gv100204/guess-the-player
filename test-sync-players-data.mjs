@@ -105,6 +105,15 @@ async function main() {
   await test("un nome che non corrisponde a nessun campionato tracciato restituisce undefined", () => {
     assert.equal(matchLeague("Coppa Italia", "Italy"), undefined);
   });
+  await test("riconosce il campionato anche con il prefisso '1.' che l'API usa solo in alcune stagioni (bug reale segnalato dall'utente: la Bundesliga usciva spezzata in più tappe sovrapposte perché 'Bundesliga' e '1. Bundesliga' non si consideravano lo stesso campionato)", () => {
+    var conPrefisso = matchLeague("1. Bundesliga", "Germany");
+    var senzaPrefisso = matchLeague("Bundesliga", "Germany");
+    assert.ok(conPrefisso, "'1. Bundesliga' deve risolversi");
+    assert.ok(senzaPrefisso, "'Bundesliga' deve risolversi");
+    assert.equal(conPrefisso.id, "bundesliga");
+    assert.equal(senzaPrefisso.id, "bundesliga");
+    assert.equal(conPrefisso.id, senzaPrefisso.id, "devono risolversi allo STESSO campionato, non a due diversi");
+  });
 
   console.log("\nmergePlayerEntry() - aggregazione carriera");
   await test("il nome per esteso si ricostruisce da firstname+lastname, non dalla forma abbreviata 'name' (bug reale: usciva 'L. Messi')", () => {
@@ -397,6 +406,11 @@ async function main() {
     assert.equal(isLikelyDomesticLeague(null), false);
     assert.equal(isLikelyDomesticLeague("Coupe de France"), false, "bug reale segnalato dall'utente: lo spelling francese di 'coppa' non era mai stato escluso, passava sempre");
     assert.equal(isLikelyDomesticLeague("Coupe de la Ligue"), false, "stesso bug, altra coppa francese");
+    assert.equal(isLikelyDomesticLeague("DFB Pokal"), false, "bug reale segnalato dall'utente: lo spelling tedesco di 'coppa' non era mai stato escluso, passava sempre");
+    assert.equal(isLikelyDomesticLeague("KNVB Beker"), false, "bug reale trovato scandagliando i dati di Arnautovic: lo spelling olandese di 'coppa' non era mai stato escluso");
+    assert.equal(isLikelyDomesticLeague("Taça de Portugal"), false, "stesso pattern, coppa portoghese - trovata prima che causasse un bug visibile, non dopo");
+    assert.equal(isLikelyDomesticLeague("Taça da Liga"), false, "altra coppa portoghese");
+    assert.equal(isLikelyDomesticLeague("Reserve League"), false, "squadre riserve di club: stessa scelta fatta per le giovanili, solo prima squadra");
   });
   await test("riconosce nomi di campionati veri come da includere", () => {
     assert.equal(isLikelyDomesticLeague("Primera División"), true);

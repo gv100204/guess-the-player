@@ -29,12 +29,12 @@ if (!inputPath) {
 
 // ---- stessa identica logica di sync-players-data.mjs (isLikelyDomesticLeague) ----
 const NON_LEAGUE_KEYWORDS = [
-  "cup", "copa", "coppa", "champions league", "europa league", "conference league",
+  "cup", "copa", "coppa", "coupe", "pokal", "beker", "taça", "taca", "champions league", "europa league", "conference league",
   "friendl", "world cup", "euro championship", "european championship", "euro -", "qualif", "super cup",
   "shield", "trophy", "community", "confederations", "nations league",
   "intercontinental", "club world cup", "youth league", "playoff", "play-off", "play off",
   "africa cup", "copa américa", "copa america", "asian cup", "gold cup", "olympic",
-  "primavera", "academy", "all-star", "all star",
+  "primavera", "reserve", "academy", "all-star", "all star",
   "canadian championship", "eaff e-1", "waff championship",
   "afc championship", "south american championship", "asean club championship"
 ];

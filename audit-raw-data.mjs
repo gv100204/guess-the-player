@@ -57,7 +57,7 @@ const YOUTH_PATTERN = /\bu-?(1[5-9]|2[0-3])\b/i;
 // scartare automaticamente. Meglio un falso allarme in più che un bug
 // invisibile in meno.
 const SUSPECT_KEYWORDS = [
-  "cup", "copa", "coppa", "championship", "trophy", "shield", "friendl",
+  "cup", "copa", "coppa", "coupe", "pokal", "beker", "taça", "taca", "championship", "trophy", "shield", "friendl",
   "qualif", "playoff", "play-off", "play off", "olympic", "invitational",
   "confederations", "nations league", "youth", "reserve", "primavera",
   "b team", " b)", "regional", "exhibition", "all-star", "all star"

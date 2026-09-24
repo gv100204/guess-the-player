@@ -209,8 +209,19 @@ async function resolveLeagueApiIds(budget, leagueIds) {
 // collisione Italia/Brasile "Serie A" più sopra).
 // ---------------------------------------------------------------------------
 
+// Alcuni campionati vengono riportati con piccole variazioni di spelling a
+// seconda della stagione (es. "1. Bundesliga" invece di "Bundesliga" -
+// prefisso burocratico usato per distinguerla dalla "2. Bundesliga", non
+// sempre presente). Un confronto ESATTO farebbe sfuggire quelle stagioni,
+// che finirebbero trattate come campionato "non tracciato" a sé - bug reale
+// trovato dall'utente: la carriera al Werder Bremen usciva spezzata in più
+// tappe che si sovrapponevano negli anni, invece di una sola tappa continua.
+function normalizeLeagueName(name) {
+  return (name || "").replace(/^1\.\s*/i, "").trim().toLowerCase();
+}
 function matchLeague(name, country) {
-  return LEAGUES_TO_SYNC.find((l) => l.apiName === name && l.country === country);
+  const norm = normalizeLeagueName(name);
+  return LEAGUES_TO_SYNC.find((l) => normalizeLeagueName(l.apiName) === norm && l.country === country);
 }
 
 // ---------------------------------------------------------------------------
@@ -419,13 +430,13 @@ async function sweepLeagueSeason(league, season, playersMap, budget) {
 // ---------------------------------------------------------------------------
 
 const NON_LEAGUE_KEYWORDS = [
-  "cup", "copa", "coppa", "coupe", "champions league", "europa league", "conference league",
+  "cup", "copa", "coppa", "coupe", "pokal", "beker", "taça", "taca", "champions league", "europa league", "conference league",
   "friendl", "world cup", "euro championship", "european championship", "euro -", "qualif", "super cup",
   "shield", "trophy", "community", "confederations", "nations league",
   "intercontinental", "club world cup", "youth league", "playoff", "play-off", "play off",
   "africa cup", "copa américa", "copa america", "asian cup", "gold cup", "olympic",
   // Trovate scandagliando i dati reali con audit-raw-data.mjs, non solo ipotizzate:
-  "primavera", // squadre giovanili di club (l'utente ha chiesto di escluderle: solo prima squadra)
+  "primavera", "reserve", // squadre giovanili/riserve di club (l'utente ha chiesto di escluderle: solo prima squadra)
   "academy", "all-star", "all star",
   "canadian championship", "eaff e-1", "waff championship",
   "afc championship", "south american championship", "asean club championship"
