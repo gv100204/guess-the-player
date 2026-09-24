@@ -42,6 +42,15 @@
 //                                                   ore - interrompibile e
 //                                                   riprendibile in ogni
 //                                                   momento)
+//   node verify-against-wikipedia.mjs recompute  -> NON chiama Wikipedia:
+//                                                   riapplica la regola di
+//                                                   verdetto ATTUALE a tutti
+//                                                   i giocatori già
+//                                                   controllati in passato,
+//                                                   usando i dati che hai
+//                                                   già raccolto - istantaneo,
+//                                                   utile dopo aver cambiato
+//                                                   la regola stessa
 // ---------------------------------------------------------------------------
 
 import fs from "node:fs/promises";
@@ -50,6 +59,7 @@ const rawArg = process.argv[2] || "15";
 const RAW_FILE = process.argv[3] || "./raw-players.json";
 const CHECK_FILE = process.argv[4] || "./wikipedia-check.json";
 const FULL_SCAN = rawArg.toLowerCase() === "all";
+const RECOMPUTE = rawArg.toLowerCase() === "recompute";
 const SAMPLE_SIZE = FULL_SCAN ? Infinity : (Number(rawArg) || 15);
 const REQUEST_DELAY_MS = 4000; // alzato ancora da 2000ms: i 429 restavano frequenti anche così in un run prolungato
 const USER_AGENT = "guess-the-player-data-check/1.0 (uso personale, non commerciale)";
@@ -79,11 +89,29 @@ async function wikiFetch(url) {
   }
 }
 
-async function findWikipediaTitle(playerName) {
-  const query = encodeURIComponent(playerName);
-  const url = `https://en.wikipedia.org/w/api.php?action=opensearch&search=${query}&limit=3&namespace=0&format=json`;
+async function searchWikipediaTitles(query) {
+  const url = `https://en.wikipedia.org/w/api.php?action=opensearch&search=${encodeURIComponent(query)}&limit=3&namespace=0&format=json`;
   const data = await wikiFetch(url);
-  const titles = data[1] || [];
+  return data[1] || [];
+}
+
+async function findWikipediaTitle(playerName) {
+  let titles = await searchWikipediaTitles(playerName);
+
+  // Se il nome completo (con eventuali secondi nomi, comune nei nomi
+  // ispanici/portoghesi) non trova nulla, riprova con solo il PRIMO e
+  // l'ULTIMO pezzo - bug reale trovato: "Pablo César Barrientos" non
+  // veniva trovato, ma la pagina vera si chiama solo "Pablo Barrientos"
+  // (senza "César" in mezzo).
+  if (titles.length === 0) {
+    const parts = playerName.trim().split(/\s+/);
+    if (parts.length > 2) {
+      const shortName = `${parts[0]} ${parts[parts.length - 1]}`;
+      await sleep(REQUEST_DELAY_MS);
+      titles = await searchWikipediaTitles(shortName);
+    }
+  }
+
   if (titles.length === 0) return null;
   const footballerTitle = titles.find((t) => /footballer/i.test(t));
   return footballerTitle || titles[0];
@@ -100,8 +128,15 @@ async function fetchWikitext(title) {
 
 function parseSeniorCareer(wikitext) {
   if (!wikitext) return [];
-  const nationalIdx = wikitext.search(/\|\s*nationalyears\d*\s*=/i);
-  const clubSection = nationalIdx >= 0 ? wikitext.slice(0, nationalIdx) : wikitext;
+  // NOTA: non tagliamo più il testo alla prima comparsa di "nationalyears"
+  // come si faceva prima - bug reale trovato su Giuseppe Sculli: la pagina
+  // mette le presenze in nazionale IN MEZZO alle tappe di club nel testo
+  // sorgente (years1, years2, nationalyears1, nationalyears2, poi years3
+  // fino a years14), quindi tagliare lì perdeva 12 tappe su 14. Non serve
+  // comunque: le regex qui sotto richiedono che "years"/"clubs"/"caps"
+  // arrivi SUBITO dopo il "|" (a parte gli spazi) - "nationalyears1" non le
+  // fa scattare per errore, perché tra "|" e "years" c'è "national" di
+  // mezzo, che \s* non salta.
 
   const years = {};
   const teams = {};
@@ -112,10 +147,10 @@ function parseSeniorCareer(wikitext) {
   const capsRe = /\|\s*caps(\d+)\s*=\s*((?:(?!\n|\|\s*\w+\s*=).)+)/gi;
   const goalsRe = /\|\s*goals(\d+)\s*=\s*((?:(?!\n|\|\s*\w+\s*=).)+)/gi;
   let m;
-  while ((m = yearsRe.exec(clubSection))) years[m[1]] = m[2].trim();
-  while ((m = teamRe.exec(clubSection))) teams[m[1]] = m[2].trim();
-  while ((m = capsRe.exec(clubSection))) caps[m[1]] = m[2].trim();
-  while ((m = goalsRe.exec(clubSection))) goals[m[1]] = m[2].trim();
+  while ((m = yearsRe.exec(wikitext))) years[m[1]] = m[2].trim();
+  while ((m = teamRe.exec(wikitext))) teams[m[1]] = m[2].trim();
+  while ((m = capsRe.exec(wikitext))) caps[m[1]] = m[2].trim();
+  while ((m = goalsRe.exec(wikitext))) goals[m[1]] = m[2].trim();
 
   const entries = [];
   for (const idx of Object.keys(years)) {
@@ -163,8 +198,17 @@ function isCovered(wikiEntry, seasonRecords) {
 }
 
 // Calcola il verdetto secondo la regola concordata: fallisce se manca più
-// del 30% delle tappe, oppure se manca una tappa "nel mezzo" (non la prima,
-// non l'ultima, in ordine cronologico degli anni Wikipedia).
+// del 30% delle tappe, oppure se manca una tappa CENTRALE o INIZIALE (solo
+// una tappa FINALE mancante non fa mai fallire da sola, a prescindere dalla
+// percentuale - deciso dopo aver visto Silvestre e Bojan Krkic passare con
+// l'iniziale mancante: la regola è stata resa più severa apposta).
+function verdictFromMissing(missing, totalEntries) {
+  const missingFraction = missing.length / totalEntries;
+  const hasFailingPosition = missing.some((m) => m.position !== "finale");
+  const fail = missingFraction > MISSING_FRACTION_THRESHOLD || hasFailingPosition;
+  return { fail, missing, totalEntries, missingFraction };
+}
+
 function computeVerdict(wikiEntries, seasonRecords) {
   if (wikiEntries.length === 0) return null; // impossibile giudicare, niente da confrontare
   const lastIdx = wikiEntries.length - 1;
@@ -180,11 +224,7 @@ function computeVerdict(wikiEntries, seasonRecords) {
     missing.push({ team: e.team, from: e.from, to: e.to, position, apps: e.apps, goals: e.goals });
   });
 
-  const missingFraction = missing.length / wikiEntries.length;
-  const hasMissingMiddle = missing.some((m) => m.position === "centrale" || m.position === "unica");
-  const fail = missingFraction > MISSING_FRACTION_THRESHOLD || hasMissingMiddle;
-
-  return { fail, missing, totalEntries: wikiEntries.length, missingFraction };
+  return verdictFromMissing(missing, wikiEntries.length);
 }
 
 function pickCandidates(players, checked) {
@@ -212,9 +252,36 @@ async function saveCheckFile(data) {
 }
 
 async function main() {
+  const checkData = await loadCheckFile();
+
+  if (RECOMPUTE) {
+    // Nessuna chiamata a Wikipedia, e non serve nemmeno raw-players.json:
+    // per ogni giocatore già controllato in passato, riapplichiamo la
+    // regola ATTUALE ai dati (squadra/anni/presenze delle tappe mancanti)
+    // che avevamo già salvato allora - utile dopo aver cambiato la regola
+    // stessa, senza dover rifare ore di richieste di rete già fatte una volta.
+    let changed = 0;
+    for (const [, entry] of Object.entries(checkData.checked)) {
+      const missing = entry.missing || [];
+      const totalEntries = entry.missingFraction != null && missing.length > 0
+        ? Math.round(missing.length / entry.missingFraction)
+        : missing.length; // se mancava tutto (fraction=1) o non c'era nulla di mancante
+      const verdict = verdictFromMissing(missing, totalEntries || 1);
+      const newVerdict = verdict.fail ? "fail" : "ok";
+      if (entry.verdict !== newVerdict) {
+        console.log(`${entry.name}: ${entry.verdict} -> ${newVerdict}`);
+        entry.verdict = newVerdict;
+        changed++;
+      }
+    }
+    await saveCheckFile(checkData);
+    console.log(`\nRicalcolati: ${Object.keys(checkData.checked).length}`);
+    console.log(`Verdetto cambiato per: ${changed}`);
+    return;
+  }
+
   const raw = JSON.parse(await fs.readFile(RAW_FILE, "utf-8"));
   const players = raw.players || [];
-  const checkData = await loadCheckFile();
 
   const alreadyChecked = Object.keys(checkData.checked).length;
   const candidates = pickCandidates(players, checkData.checked);
@@ -225,14 +292,25 @@ async function main() {
   let checkedNow = 0;
   let notFoundOnWikipedia = 0;
   let failed = 0;
+  let processedIdx = 0;
+
+  function printProgress() {
+    const all = Object.values(checkData.checked);
+    const totalOk = all.filter((e) => e.verdict === "ok").length;
+    const totalFail = all.filter((e) => e.verdict === "fail").length;
+    const pct = ((processedIdx / candidates.length) * 100).toFixed(1);
+    console.log(`  [${processedIdx}/${candidates.length} in questo lancio, ${pct}% | totale finora: ${totalOk} ok, ${totalFail} fail]`);
+  }
 
   for (const p of candidates) {
+    processedIdx++;
     try {
       const title = await findWikipediaTitle(p.name);
       await sleep(REQUEST_DELAY_MS);
       if (!title) {
         console.log(`? ${p.name}: nessuna pagina Wikipedia trovata, salto (non salvato: riprovabile in futuro)`);
         notFoundOnWikipedia++;
+        printProgress();
         continue;
       }
 
@@ -242,6 +320,7 @@ async function main() {
 
       if (wikiEntries.length === 0) {
         console.log(`? ${p.name} (${title}): non riesco a leggere la scheda carriera, salto`);
+        printProgress();
         continue;
       }
 
@@ -264,14 +343,16 @@ async function main() {
           console.log(`    [${e.position}] ${e.team} (${years})`);
         });
       } else if (verdict.missing.length > 0) {
-        console.log(`✓ ${p.name}: passa (manca solo la tappa iniziale/finale, non conta)`);
+        console.log(`✓ ${p.name}: passa (manca solo la tappa finale, non conta)`);
       } else {
         console.log(`✓ ${p.name}: tutte le tappe Wikipedia trovate`);
       }
+      printProgress();
 
       if (checkedNow % SAVE_EVERY_N_PLAYERS === 0) await saveCheckFile(checkData);
     } catch (err) {
       console.log(`? ${p.name}: errore (${err.message}), salto (non salvato: riprovabile in futuro)`);
+      printProgress();
     }
   }
 
