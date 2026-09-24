@@ -228,6 +228,36 @@ async function main() {
     assert.equal(career[0].apps, 30, "deve restare 30, non 60: lo sweep non deve aggiungere righe a un giocatore già arricchito");
   });
 
+  await test("un blocco storico (da Wikipedia) è sempre una tappa a sé, con l'anno vero senza +1 (bug reale a cui fare attenzione: un blocco 2003-2008 non deve diventare '2003-2009')", () => {
+    const players = newPlayersMap();
+    players.set(50, {
+      id: 50, name: "Test Blocco", nationality: "Argentina", isGK: false,
+      seasonRecords: [
+        { season: 2003, blockToYear: 2008, club: "Boca Juniors", league: null, leagueRaw: "Storico", country: null, apps: 63, goals: 6, source: "wikipedia" },
+        { season: 2008, club: "Catania", league: "seriea", leagueRaw: null, country: null, apps: 11, goals: 0 }
+      ],
+      trophies: null, trophiesFetched: false, careerBackfilled: true
+    });
+    const career = finalizeCareer(players.get(50));
+    assert.equal(career.length, 2, "il blocco e la stagione normale restano tappe separate");
+    assert.equal(career[0].years, "2003–2008", "l'anno del blocco è già quello vero, NON deve avere +1");
+    assert.equal(career[0].apps, 63);
+    assert.equal(career[1].years, "2008", "la stagione normale successiva usa comunque la sua formattazione abituale");
+  });
+  await test("un blocco storico non si fonde MAI con una tappa normale adiacente dello stesso club, anche se gli anni sembrerebbero consecutivi", () => {
+    const players = newPlayersMap();
+    players.set(51, {
+      id: 51, name: "Test Blocco Stesso Club", nationality: "Italy", isGK: false,
+      seasonRecords: [
+        { season: 2000, blockToYear: 2004, club: "Bologna", league: null, leagueRaw: "Storico", country: null, apps: 80, goals: 3, source: "wikipedia" },
+        { season: 2005, club: "Bologna", league: "seriea", leagueRaw: null, country: null, apps: 25, goals: 2 }
+      ],
+      trophies: null, trophiesFetched: false, careerBackfilled: true
+    });
+    const career = finalizeCareer(players.get(51));
+    assert.equal(career.length, 2, "blocco e tappa normale restano SEMPRE separati, mai fusi, anche con lo stesso club");
+  });
+
   await test("due stagioni nello stesso club/campionato si aggregano in un solo stint", () => {
     const players = newPlayersMap();
     const entry = {
@@ -582,6 +612,29 @@ async function main() {
     const final = buildFinalDataset(players);
     assert.equal(final.length, 1, "solo il titolare deve superare la soglia MIN_APPS_TO_INCLUDE");
     assert.equal(final[0].name, "Titolare");
+  });
+  await test("un giocatore bocciato dal controllo Wikipedia (excludedIds) non compare nel dataset finale, anche se sopra la soglia presenze", () => {
+    const players = newPlayersMap();
+    mergePlayerEntry(players, {
+      player: { id: 7, name: "Bocciato", nationality: "Italy" },
+      statistics: [{ team: { name: "Team Z" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: 100, position: "Attacker" }, goals: { total: 5 } }]
+    }, 2020);
+    mergePlayerEntry(players, {
+      player: { id: 8, name: "Promosso", nationality: "Italy" },
+      statistics: [{ team: { name: "Team W" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: 100, position: "Attacker" }, goals: { total: 5 } }]
+    }, 2020);
+    const final = buildFinalDataset(players, new Set([7]));
+    assert.equal(final.length, 1, "il bocciato deve sparire, il promosso restare");
+    assert.equal(final[0].name, "Promosso");
+  });
+  await test("senza excludedIds (nessun file wikipedia-check.json), il comportamento resta identico a prima - nessuno escluso", () => {
+    const players = newPlayersMap();
+    mergePlayerEntry(players, {
+      player: { id: 9, name: "Qualunque", nationality: "Italy" },
+      statistics: [{ team: { name: "Team V" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: 100, position: "Attacker" }, goals: { total: 5 } }]
+    }, 2020);
+    const final = buildFinalDataset(players); // nessun secondo argomento, come nei run senza il file
+    assert.equal(final.length, 1, "senza excludedIds nessuno deve essere escluso");
   });
 
   console.log("\nPersistenza tra run (raw-players.json, sync-progress.json)");

@@ -311,10 +311,21 @@ function dedupedSeasonRecords(rec){
   const byKey = new Map();
   (rec.seasonRecords || []).forEach((r) => {
     const compKey = r.league || (r.leagueRaw + "|" + r.country); // id interno se tracciato, altrimenti nome grezzo+paese
-    const key = r.season + "|" + r.club + "|" + compKey;
+    // I blocchi "storici" (da Wikipedia, già aggregati su più anni, vedi
+    // apply-wikipedia-fills.mjs) hanno una chiave a parte che include
+    // l'intervallo di anni intero - non vanno mai confusi con una riga
+    // normale della stessa stagione/club/campionato.
+    const key = r.blockToYear != null
+      ? "block|" + r.season + "-" + r.blockToYear + "|" + r.club
+      : r.season + "|" + r.club + "|" + compKey;
     let existing = byKey.get(key);
     if (!existing) {
-      existing = { season: r.season, club: r.club, league: r.league || null, leagueRaw: r.leagueRaw || null, country: r.country || null, apps: 0, goals: 0 };
+      existing = {
+        season: r.season, club: r.club, league: r.league || null,
+        leagueRaw: r.leagueRaw || null, country: r.country || null,
+        apps: 0, goals: 0,
+        blockToYear: r.blockToYear ?? null, source: r.source || null
+      };
       byKey.set(key, existing);
     }
     existing.apps += r.apps;
@@ -332,6 +343,20 @@ function finalizeCareer(rec) {
   const stints = [];
 
   records.forEach((r) => {
+    if (r.blockToYear != null) {
+      // Blocco storico già aggregato (es. da Wikipedia via
+      // apply-wikipedia-fills.mjs): è SEMPRE una tappa a sé, non si fonde
+      // mai con quella prima o dopo - i totali arrivano già pronti, non
+      // c'è nulla da accumulare stagione per stagione. Chiudiamo anche la
+      // catena di continuità: la riga successiva non può "continuare" un
+      // blocco, deve sempre aprirne una nuova.
+      stints.push({
+        club: r.club, league: r.league, leagueRaw: r.leagueRaw, country: r.country,
+        minYear: r.season, maxYear: r.blockToYear, apps: r.apps, goals: r.goals,
+        repApps: r.apps, isBlock: true
+      });
+      return;
+    }
     const last = stints[stints.length - 1];
     // Basta che sia lo STESSO CLUB in stagioni consecutive per continuare la
     // stessa tappa, anche se il campionato/competizione tracciata cambia
@@ -339,8 +364,10 @@ function finalizeCareer(rec) {
     // in Serie B - non tracciata di suo - poi di nuovo Bologna in Serie A:
     // è comunque un'unica permanenza al Bologna, non tre). Un prestito vero
     // resta separato lo stesso, perché il club "di mezzo" è diverso
-    // (Atalanta, non Bologna) e quindi rompe comunque la continuità.
-    const isContinuation = last && last.club === r.club && r.season === last.maxYear + 1;
+    // (Atalanta, non Bologna) e quindi rompe comunque la continuità. Un
+    // blocco storico (isBlock) non è mai un punto di partenza valido per
+    // continuare: la tappa successiva deve sempre aprirne una nuova.
+    const isContinuation = last && !last.isBlock && last.club === r.club && r.season === last.maxYear + 1;
     if (isContinuation) {
       last.maxYear = r.season;
       last.apps += r.apps;
@@ -364,7 +391,13 @@ function finalizeCareer(rec) {
   });
 
   return stints.map((s) => ({
-    years: s.minYear === s.maxYear ? String(s.minYear) : `${s.minYear}–${s.maxYear + 1}`,
+    // Un blocco storico ha già l'anno VERO di arrivo/partenza (da
+    // Wikipedia): niente +1. Una tappa normale invece usa l'anno di inizio
+    // stagione (es. 2008 = stagione 2008/09), quindi +1 per mostrare
+    // l'anno solare vero di fine.
+    years: s.minYear === s.maxYear
+      ? String(s.minYear)
+      : (s.isBlock ? `${s.minYear}–${s.maxYear}` : `${s.minYear}–${s.maxYear + 1}`),
     club: s.club,
     league: s.league,
     leagueRaw: s.leagueRaw,
@@ -676,10 +709,11 @@ async function saveProgress(progress) {
 // Dataset finale per il gioco (filtrato, nella forma che il prototipo usa già)
 // ---------------------------------------------------------------------------
 
-function buildFinalDataset(playersMap) {
+function buildFinalDataset(playersMap, excludedIds) {
   const result = [];
   playersMap.forEach((rec) => {
     if (totalApps(rec) < MIN_APPS_TO_INCLUDE) return;
+    if (excludedIds && excludedIds.has(rec.id)) return; // bocciato dal controllo Wikipedia (wikipedia-check.json)
     result.push({
       id: slugify(rec.name) + "-" + rec.id, // l'id numerico evita collisioni tra omonimi veri
       name: rec.name,
@@ -882,7 +916,26 @@ async function main() {
   await saveRawPlayers(playersMap);
   await saveProgress(progress);
 
-  const finalPlayers = buildFinalDataset(playersMap);
+  // Se esiste wikipedia-check.json (prodotto a parte da
+  // verify-against-wikipedia.mjs, mai qui automaticamente), escludiamo dal
+  // gioco chi ha fallito il controllo - carriera con un buco a metà, o
+  // mancante per più del 30%. Se il file non c'è (caso normale sui run
+  // automatici), il comportamento resta identico a prima: nessuno escluso.
+  let excludedIds = null;
+  try {
+    const checkRaw = await fs.readFile("./wikipedia-check.json", "utf-8");
+    const checkData = JSON.parse(checkRaw);
+    excludedIds = new Set(
+      Object.entries(checkData.checked || {})
+        .filter(([, v]) => v.verdict === "fail")
+        .map(([id]) => Number(id))
+    );
+    console.log(`\nControllo Wikipedia trovato: ${excludedIds.size} giocatori esclusi dal gioco (carriera incompleta su Wikipedia).`);
+  } catch {
+    // Nessun file: comportamento normale, nessuno escluso.
+  }
+
+  const finalPlayers = buildFinalDataset(playersMap, excludedIds);
   await writeOutputFiles(finalPlayers);
 
   const doneTotal = activeLeagues.length * (activeSeasons.to - activeSeasons.from + 1);

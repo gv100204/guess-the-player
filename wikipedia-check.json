@@ -1,0 +1,169 @@
+{
+  "checked": {
+    "189": {
+      "name": "Daniele Padelli",
+      "wikipediaTitle": "Daniele Padelli",
+      "verdict": "fail",
+      "missingFraction": 0.2,
+      "missing": [
+        {
+          "team": "Pizzighettone",
+          "from": 2005,
+          "to": 2006,
+          "position": "iniziale",
+          "apps": 33,
+          "goals": 0
+        },
+        {
+          "team": "Pisa",
+          "from": 2008,
+          "to": 2009,
+          "position": "centrale",
+          "apps": 7,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-24T06:31:18.800Z"
+    },
+    "30877": {
+      "name": "Sergio Floccari",
+      "wikipediaTitle": "Sergio Floccari",
+      "verdict": "fail",
+      "missingFraction": 0.33,
+      "missing": [
+        {
+          "team": "Avezzano",
+          "from": 1997,
+          "to": 1998,
+          "position": "iniziale",
+          "apps": 11,
+          "goals": 1
+        },
+        {
+          "team": "Montebelluna",
+          "from": 1998,
+          "to": 2000,
+          "position": "centrale",
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "team": "Mestre",
+          "from": 2000,
+          "to": 2002,
+          "position": "centrale",
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "team": "Faenza",
+          "from": 2001,
+          "to": 2002,
+          "position": "centrale",
+          "apps": 33,
+          "goals": 10
+        },
+        {
+          "team": "Genoa",
+          "from": 2002,
+          "to": 2003,
+          "position": "centrale",
+          "apps": 9,
+          "goals": 1
+        }
+      ],
+      "checkedAt": "2026-09-24T06:31:25.861Z"
+    },
+    "31093": {
+      "name": "Federico Dionisi",
+      "wikipediaTitle": "Federico Dionisi",
+      "verdict": "fail",
+      "missingFraction": 0.4,
+      "missing": [
+        {
+          "team": "Monterotondo",
+          "from": 2003,
+          "to": 2006,
+          "position": "iniziale",
+          "apps": 42,
+          "goals": 17
+        },
+        {
+          "team": "Cisco Roma",
+          "from": 2006,
+          "to": 2007,
+          "position": "centrale",
+          "apps": 10,
+          "goals": 0
+        },
+        {
+          "team": "Celano",
+          "from": 2007,
+          "to": 2009,
+          "position": "centrale",
+          "apps": 74,
+          "goals": 28
+        },
+        {
+          "team": "Livorno",
+          "from": 2024,
+          "to": 2026,
+          "position": "finale",
+          "apps": 65,
+          "goals": 23
+        }
+      ],
+      "checkedAt": "2026-09-24T06:31:22.188Z"
+    },
+    "91316": {
+      "name": "Paolo Cannavaro",
+      "wikipediaTitle": "Paolo Cannavaro",
+      "verdict": "fail",
+      "missingFraction": 0.33,
+      "missing": [
+        {
+          "team": "Napoli",
+          "from": 1998,
+          "to": 1999,
+          "position": "iniziale",
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "team": "Verona",
+          "from": 2001,
+          "to": 2002,
+          "position": "centrale",
+          "apps": 24,
+          "goals": 1
+        }
+      ],
+      "checkedAt": "2026-09-24T06:31:11.632Z"
+    },
+    "104259": {
+      "name": "Brett Emerton",
+      "wikipediaTitle": "Brett Emerton",
+      "verdict": "fail",
+      "missingFraction": 0.5,
+      "missing": [
+        {
+          "team": "Sydney Olympic",
+          "from": 1996,
+          "to": 2000,
+          "position": "iniziale",
+          "apps": 94,
+          "goals": 16
+        },
+        {
+          "team": "Feyenoord",
+          "from": 2000,
+          "to": 2003,
+          "position": "centrale",
+          "apps": 92,
+          "goals": 11
+        }
+      ],
+      "checkedAt": "2026-09-24T06:31:15.260Z"
+    }
+  }
+}
