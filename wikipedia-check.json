@@ -6362,6 +6362,23 @@
       "missing": [],
       "checkedAt": "2026-09-24T08:44:17.205Z"
     },
+    "1912": {
+      "name": "Dimitri Payet",
+      "wikipediaTitle": "Dimitri Payet",
+      "verdict": "fail",
+      "missingFraction": 0.13,
+      "missing": [
+        {
+          "team": "AS Excelsior",
+          "from": 2004,
+          "to": 2005,
+          "position": "iniziale",
+          "apps": 36,
+          "goals": 12
+        }
+      ],
+      "checkedAt": "2026-09-25T12:08:33.229Z"
+    },
     "1970": {
       "name": "Markus Rosenberg",
       "wikipediaTitle": "Markus Rosenberg",
@@ -9352,6 +9369,103 @@
       ],
       "checkedAt": "2026-09-24T08:51:31.254Z"
     },
+    "6207": {
+      "name": "Marco Natanel Torsiglieri",
+      "wikipediaTitle": "Marco Torsiglieri",
+      "verdict": "fail",
+      "missingFraction": 0.79,
+      "missing": [
+        {
+          "team": "Vélez Sarsfield",
+          "from": 2006,
+          "to": 2010,
+          "position": "iniziale",
+          "apps": 32,
+          "goals": 1
+        },
+        {
+          "team": "Talleres (C)",
+          "from": 2007,
+          "to": 2008,
+          "position": "centrale",
+          "apps": 31,
+          "goals": 0
+        },
+        {
+          "team": "Almería",
+          "from": 2013,
+          "to": 2014,
+          "position": "centrale",
+          "apps": 27,
+          "goals": 1
+        },
+        {
+          "team": "Boca Juniors",
+          "from": 2015,
+          "to": 2015,
+          "position": "centrale",
+          "apps": 12,
+          "goals": 0
+        },
+        {
+          "team": "Morelia",
+          "from": 2015,
+          "to": 2016,
+          "position": "centrale",
+          "apps": 15,
+          "goals": 0
+        },
+        {
+          "team": "Rosario Central",
+          "from": 2016,
+          "to": 2018,
+          "position": "centrale",
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "team": "Racing Club",
+          "from": 2017,
+          "to": 2017,
+          "position": "centrale",
+          "apps": 11,
+          "goals": 1
+        },
+        {
+          "team": "Vélez Sarsfield",
+          "from": 2018,
+          "to": 2018,
+          "position": "centrale",
+          "apps": 5,
+          "goals": 0
+        },
+        {
+          "team": "Lanús",
+          "from": 2018,
+          "to": 2019,
+          "position": "centrale",
+          "apps": 20,
+          "goals": 0
+        },
+        {
+          "team": "Gimnasia y Esgrima",
+          "from": 2019,
+          "to": 2019,
+          "position": "centrale",
+          "apps": 8,
+          "goals": 0
+        },
+        {
+          "team": "Wilstermann",
+          "from": 2020,
+          "to": 2020,
+          "position": "finale",
+          "apps": 3,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-25T12:04:22.184Z"
+    },
     "6289": {
       "name": "Denis Andrés Stracqualursi",
       "wikipediaTitle": "Denis",
@@ -9408,6 +9522,55 @@
         }
       ],
       "checkedAt": "2026-09-24T16:12:53.032Z"
+    },
+    "6346": {
+      "name": "Mauro Abel Formica",
+      "wikipediaTitle": "Mauro Formica",
+      "verdict": "fail",
+      "missingFraction": 0.56,
+      "missing": [
+        {
+          "team": "Newell's Old Boys",
+          "from": 2006,
+          "to": 2011,
+          "position": "iniziale",
+          "apps": 76,
+          "goals": 17
+        },
+        {
+          "team": "Newell's Old Boys",
+          "from": 2015,
+          "to": 2017,
+          "position": "centrale",
+          "apps": 44,
+          "goals": 7
+        },
+        {
+          "team": "UNAM",
+          "from": 2017,
+          "to": 2018,
+          "position": "centrale",
+          "apps": 21,
+          "goals": 0
+        },
+        {
+          "team": "Newell's Old Boys",
+          "from": 2018,
+          "to": 2021,
+          "position": "centrale",
+          "apps": 53,
+          "goals": 6
+        },
+        {
+          "team": "Colón",
+          "from": 2021,
+          "to": 2022,
+          "position": "centrale",
+          "apps": 18,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-25T12:08:24.517Z"
     },
     "6353": {
       "name": "Maximiliano Rubén Rodríguez",
@@ -18636,6 +18799,55 @@
       ],
       "checkedAt": "2026-09-24T19:34:22.461Z"
     },
+    "19593": {
+      "name": "Tomer Hemed",
+      "wikipediaTitle": "Tomer Hemed",
+      "verdict": "fail",
+      "missingFraction": 0.38,
+      "missing": [
+        {
+          "team": "Maccabi Herzliya",
+          "from": 2008,
+          "to": 2008,
+          "position": "centrale",
+          "apps": 17,
+          "goals": 3
+        },
+        {
+          "team": "Bnei Yehuda",
+          "from": 2008,
+          "to": 2009,
+          "position": "centrale",
+          "apps": 28,
+          "goals": 1
+        },
+        {
+          "team": "Almería",
+          "from": 2014,
+          "to": 2015,
+          "position": "centrale",
+          "apps": 35,
+          "goals": 8
+        },
+        {
+          "team": "Queens Park Rangers",
+          "from": 2018,
+          "to": 2019,
+          "position": "centrale",
+          "apps": 27,
+          "goals": 7
+        },
+        {
+          "team": "Hapoel Be'er Sheva",
+          "from": 2022,
+          "to": 2024,
+          "position": "centrale",
+          "apps": 26,
+          "goals": 6
+        }
+      ],
+      "checkedAt": "2026-09-25T12:07:03.982Z"
+    },
     "19606": {
       "name": "Paul McShane",
       "wikipediaTitle": "Paul McShane (footballer)",
@@ -27471,6 +27683,23 @@
       ],
       "checkedAt": "2026-09-25T06:40:17.975Z"
     },
+    "35706": {
+      "name": "Santiago García",
+      "wikipediaTitle": "Santiago García (Argentine footballer)",
+      "verdict": "fail",
+      "missingFraction": 0.11,
+      "missing": [
+        {
+          "team": "Unión La Calera",
+          "from": 2020,
+          "to": 2022,
+          "position": "centrale",
+          "apps": 40,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-25T12:10:21.833Z"
+    },
     "35714": {
       "name": "Pablo César Barrientos",
       "wikipediaTitle": "Pablo",
@@ -27826,6 +28055,23 @@
         }
       ],
       "checkedAt": "2026-09-24T08:55:32.365Z"
+    },
+    "36788": {
+      "name": "Vurnon San Benito Anita",
+      "wikipediaTitle": "Vurnon Anita",
+      "verdict": "fail",
+      "missingFraction": 0.13,
+      "missing": [
+        {
+          "team": "Al-Orobah",
+          "from": 2023,
+          "to": 2024,
+          "position": "centrale",
+          "apps": 32,
+          "goals": 2
+        }
+      ],
+      "checkedAt": "2026-09-25T12:10:13.094Z"
     },
     "36846": {
       "name": "Oussama Assaidi",
@@ -29873,6 +30119,119 @@
         }
       ],
       "checkedAt": "2026-09-24T10:28:52.118Z"
+    },
+    "46818": {
+      "name": "Luis Hernández Rodríguez",
+      "wikipediaTitle": "Luisma (footballer, born 1989)",
+      "verdict": "fail",
+      "missingFraction": 1,
+      "missing": [
+        {
+          "team": "Racing B",
+          "from": 2007,
+          "to": 2010,
+          "position": "iniziale",
+          "apps": 60,
+          "goals": 10
+        },
+        {
+          "team": "Racing Santander",
+          "from": 2007,
+          "to": 2010,
+          "position": "centrale",
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "team": "Real Unión",
+          "from": 2010,
+          "to": 2011,
+          "position": "centrale",
+          "apps": 18,
+          "goals": 1
+        },
+        {
+          "team": "Alavés",
+          "from": 2011,
+          "to": 2012,
+          "position": "centrale",
+          "apps": 11,
+          "goals": 1
+        },
+        {
+          "team": "Amorebieta",
+          "from": 2012,
+          "to": 2012,
+          "position": "centrale",
+          "apps": 15,
+          "goals": 2
+        },
+        {
+          "team": "Noja",
+          "from": 2012,
+          "to": 2013,
+          "position": "centrale",
+          "apps": 28,
+          "goals": 3
+        },
+        {
+          "team": "Barnet",
+          "from": 2013,
+          "to": 2015,
+          "position": "centrale",
+          "apps": 61,
+          "goals": 17
+        },
+        {
+          "team": "Arenas",
+          "from": 2015,
+          "to": 2018,
+          "position": "centrale",
+          "apps": 81,
+          "goals": 19
+        },
+        {
+          "team": "Ponferradina",
+          "from": 2018,
+          "to": 2018,
+          "position": "centrale",
+          "apps": 8,
+          "goals": 0
+        },
+        {
+          "team": "Bengaluru",
+          "from": 2019,
+          "to": 2019,
+          "position": "centrale",
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "team": "Sestao",
+          "from": 2020,
+          "to": 2020,
+          "position": "centrale",
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "team": "Gernika",
+          "from": 2020,
+          "to": 2021,
+          "position": "centrale",
+          "apps": 12,
+          "goals": 0
+        },
+        {
+          "team": "Leioa",
+          "from": 2021,
+          "to": 2024,
+          "position": "finale",
+          "apps": 89,
+          "goals": 29
+        }
+      ],
+      "checkedAt": "2026-09-25T12:11:26.838Z"
     },
     "46846": {
       "name": "Christian Fernández Salas",
@@ -37303,6 +37662,14 @@
       "missingFraction": 0,
       "missing": [],
       "checkedAt": "2026-09-24T12:55:17.671Z"
+    },
+    "87077": {
+      "name": "Patrice Evra",
+      "wikipediaTitle": "Patrice Evra",
+      "verdict": "ok",
+      "missingFraction": 0,
+      "missing": [],
+      "checkedAt": "2026-09-25T12:10:30.608Z"
     },
     "87116": {
       "name": "Morgan De Sanctis",
@@ -51758,6 +52125,14 @@
       ],
       "checkedAt": "2026-09-24T16:51:12.934Z"
     },
+    "115429": {
+      "name": "Omar Milanetto",
+      "wikipediaTitle": "Omar Milanetto",
+      "verdict": "ok",
+      "missingFraction": 0,
+      "missing": [],
+      "checkedAt": "2026-09-25T12:05:26.313Z"
+    },
     "115432": {
       "name": "Ezequiel Alejo Carboni",
       "wikipediaTitle": "Ezequiel Alejo Carboni",
@@ -53336,6 +53711,63 @@
       ],
       "checkedAt": "2026-09-24T14:11:31.827Z"
     },
+    "116975": {
+      "name": "Ricardo Lopez Felipe",
+      "wikipediaTitle": "Ricardo (footballer, born 1971)",
+      "verdict": "fail",
+      "missingFraction": 0.75,
+      "missing": [
+        {
+          "team": "Atlético Madrid B",
+          "from": 1990,
+          "to": 1998,
+          "position": "iniziale",
+          "apps": 146,
+          "goals": 0
+        },
+        {
+          "team": "Ávila",
+          "from": 1991,
+          "to": 1992,
+          "position": "centrale",
+          "apps": 15,
+          "goals": 0
+        },
+        {
+          "team": "Atlético Madrid",
+          "from": 1994,
+          "to": 1997,
+          "position": "centrale",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "team": "Valladolid",
+          "from": 1998,
+          "to": 2002,
+          "position": "centrale",
+          "apps": 53,
+          "goals": 0
+        },
+        {
+          "team": "Manchester United",
+          "from": 2002,
+          "to": 2005,
+          "position": "centrale",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "team": "Racing Santander",
+          "from": 2003,
+          "to": 2004,
+          "position": "centrale",
+          "apps": 34,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-25T12:09:25.843Z"
+    },
     "116996": {
       "name": "Noé Elias Pamarot",
       "wikipediaTitle": "Noé Elias Pamarot",
@@ -53368,6 +53800,103 @@
         }
       ],
       "checkedAt": "2026-09-24T12:03:56.358Z"
+    },
+    "117000": {
+      "name": "Igor Gabilondo del Campo",
+      "wikipediaTitle": "Igor (footballer, born 1979)",
+      "verdict": "fail",
+      "missingFraction": 1,
+      "missing": [
+        {
+          "team": "Atlético Paranaense",
+          "from": 2000,
+          "to": 2004,
+          "position": "iniziale",
+          "apps": null,
+          "goals": 0
+        },
+        {
+          "team": "Ponta Grossa",
+          "from": 2000,
+          "to": 2000,
+          "position": "centrale",
+          "apps": null,
+          "goals": 0
+        },
+        {
+          "team": "Fluminense",
+          "from": 2005,
+          "to": 2005,
+          "position": "centrale",
+          "apps": null,
+          "goals": 0
+        },
+        {
+          "team": "Juventude",
+          "from": 2006,
+          "to": 2006,
+          "position": "centrale",
+          "apps": null,
+          "goals": 0
+        },
+        {
+          "team": "Botafogo",
+          "from": 2007,
+          "to": 2007,
+          "position": "centrale",
+          "apps": null,
+          "goals": 0
+        },
+        {
+          "team": "Sport",
+          "from": 2007,
+          "to": 2011,
+          "position": "centrale",
+          "apps": null,
+          "goals": 0
+        },
+        {
+          "team": "Mirassol",
+          "from": 2012,
+          "to": 2012,
+          "position": "centrale",
+          "apps": null,
+          "goals": 0
+        },
+        {
+          "team": "Guaratinguetá",
+          "from": 2012,
+          "to": 2012,
+          "position": "centrale",
+          "apps": null,
+          "goals": 0
+        },
+        {
+          "team": "Botafogo-SP",
+          "from": 2013,
+          "to": 2013,
+          "position": "centrale",
+          "apps": null,
+          "goals": 0
+        },
+        {
+          "team": "Botafogo da Paraíba",
+          "from": 2013,
+          "to": 2013,
+          "position": "centrale",
+          "apps": null,
+          "goals": 0
+        },
+        {
+          "team": "Botafogo-SP",
+          "from": 2014,
+          "to": 2015,
+          "position": "finale",
+          "apps": null,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-25T12:05:17.793Z"
     },
     "117003": {
       "name": "Frédéric Oumar Kanouté",

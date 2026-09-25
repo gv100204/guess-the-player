@@ -167,9 +167,23 @@ function nameCandidates(fullName, birthYear) {
   }
 
   if (parts.length > 2) {
-    candidates.push(parts[0]); // mononimo
+    // Versioni CON disambiguante prima: sono più precise (costruiscono
+    // esattamente il formato che Wikipedia usa per gli omonimi) e quindi
+    // meno a rischio di agganciare la persona sbagliata per pura
+    // coincidenza di nome+anno. Il mononimo NUDO (senza disambiguante) va
+    // provato per ultimo tra questi, perché è il più rischioso - bug reale
+    // trovato: il mononimo nudo "Luis" si agganciava a "Luisma (footballer,
+    // born 1989)", un'altra persona reale nata nello stesso identico anno
+    // per pura coincidenza, superando anche il controllo anno di nascita.
+    // Se "Luis Hernández (footballer, born 1989)" (primo+secondo parola +
+    // disambiguante) fosse stato provato PRIMA, avrebbe trovato la persona
+    // giusta senza mai arrivare al mononimo rischioso.
+    if (birthYear) candidates.push(`${parts[0]} ${parts[1]} (footballer, born ${birthYear})`);
+    candidates.push(`${parts[0]} ${parts[1]} (footballer)`);
     if (birthYear) candidates.push(`${parts[0]} (footballer, born ${birthYear})`);
-    candidates.push(`${parts[0]} (footballer)`); // mononimo + disambiguante
+    candidates.push(`${parts[0]} (footballer)`);
+    candidates.push(parts[0]); // mononimo nudo - ultima risorsa tra questi, il più rischioso
+
     for (let i = 1; i < parts.length; i++) candidates.push(`${parts[0]} ${parts[i]}`); // prima + ciascuna altra
     for (let i = 1; i < parts.length - 1; i++) candidates.push(`${parts[i]} ${parts[i + 1]}`); // coppie senza la prima
   }
