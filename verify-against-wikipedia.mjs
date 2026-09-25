@@ -95,6 +95,40 @@ async function searchWikipediaTitles(query) {
   return data[1] || [];
 }
 
+// Verifica che la pagina trovata sia DAVVERO quella giusta, non solo "ha
+// abbastanza tappe". Bug reale trovato: la ricerca del mononimo "José" (da
+// solo) trovava sempre "Josue (footballer, born 1987)" - un brasiliano
+// oscuro con 10 tappe, abbastanza per superare la soglia minima, ma NIENTE
+// a che vedere con Callejón/Jurado/Ulloa/eccetera. La ricerca fuzzy di
+// Wikipedia puo' agganciare nomi simili ma diversi, quindi tante tappe da
+// sole non bastano a fidarsi.
+function normalizeWord(w) {
+  return (w || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+function titleLooksRelated(query, title) {
+  const qFirst = normalizeWord(query.trim().split(/\s+/)[0]);
+  const tFirst = normalizeWord(title.replace(/\s*\(.*?\)\s*$/, "").trim().split(/\s+/)[0]);
+  if (!qFirst || !tFirst) return true;
+  return qFirst === tFirst || qFirst.startsWith(tFirst) || tFirst.startsWith(qFirst);
+}
+
+function extractBirthYear(wikitext) {
+  if (!wikitext) return null;
+  const m = wikitext.match(/\{\{\s*[Bb]irth date(?: and age)?\s*\|[^}]*?(\d{4})/);
+  if (!m) return null;
+  const year = Number(m[1]);
+  return year >= 1900 && year <= 2025 ? year : null;
+}
+
+function isTrustworthyMatch(query, title, wikitext, expectedBirthYear) {
+  if (!titleLooksRelated(query, title)) return false;
+  if (expectedBirthYear) {
+    const pageBirthYear = extractBirthYear(wikitext);
+    if (pageBirthYear && pageBirthYear !== expectedBirthYear) return false;
+  }
+  return true;
+}
+
 // Nomi ispanici/portoghesi/etc. spesso hanno più parole di quante la
 // pagina Wikipedia ne usi nel titolo - invece di indovinare quale
 // convenzione culturale si applica, generiamo diversi candidati plausibili
@@ -145,6 +179,7 @@ function nameCandidates(fullName, birthYear) {
 
 async function findWikipediaTitle(playerName, birthYear) {
   let titles = await searchWikipediaTitles(playerName);
+  let query = playerName;
 
   // Se il nome completo non trova nulla, proviamo i candidati generati
   // sopra (disambiguante con anno, mononimo, ricombinazioni delle parole).
@@ -152,13 +187,23 @@ async function findWikipediaTitle(playerName, birthYear) {
     for (const shortName of nameCandidates(playerName, birthYear)) {
       await sleep(REQUEST_DELAY_MS);
       titles = await searchWikipediaTitles(shortName);
-      if (titles.length > 0) break;
+      if (titles.length > 0) {
+        query = shortName;
+        break;
+      }
     }
   }
 
   if (titles.length === 0) return null;
-  const footballerTitle = titles.find((t) => /footballer/i.test(t));
-  return footballerTitle || titles[0];
+  // Scartiamo i titoli che non sembrano nemmeno imparentati col nome
+  // cercato (bug reale: "José" -> agganciato a "Josue", nome simile ma
+  // diverso). Se dopo il filtro non resta nulla, meglio ripiegare sul
+  // primo risultato grezzo che restituire null - verrà comunque ricontrollato
+  // più avanti quando proviamo a leggere la pagina.
+  const related = titles.filter((t) => titleLooksRelated(query, t));
+  const pool = related.length > 0 ? related : titles;
+  const footballerTitle = pool.find((t) => /footballer/i.test(t));
+  return footballerTitle || pool[0];
 }
 
 async function fetchWikitext(title) {
@@ -367,6 +412,16 @@ async function main() {
       await sleep(REQUEST_DELAY_MS);
       let wikiEntries = parseSeniorCareer(wikitext);
 
+      // Anche se ha trovato delle tappe, controlliamo che la pagina sia
+      // DAVVERO quella giusta (nome imparentato + anno di nascita, se
+      // disponibile) - bug reale: "José" da solo si agganciava sempre a
+      // "Josue (footballer, born 1987)", un'altra persona con 10 tappe
+      // proprie, accettata per errore solo perché il numero era alto.
+      if (wikiEntries.length > 0 && !isTrustworthyMatch(p.name, title, wikitext, p.birthYear)) {
+        console.log(`  (${p.name}: pagina trovata (${title}) non sembra la persona giusta, la scarto e riprovo...)`);
+        wikiEntries = [];
+      }
+
       // Prima di arrenderci, riproviamo UNA volta: test su pagine reali
       // (Pastore, Guarín, Romero) hanno confermato che il parser legge
       // bene questi formati - zero tappe è spesso una risposta sfortunata
@@ -380,6 +435,9 @@ async function main() {
         wikitext = await fetchWikitext(title);
         await sleep(REQUEST_DELAY_MS);
         wikiEntries = parseSeniorCareer(wikitext);
+        if (wikiEntries.length > 0 && !isTrustworthyMatch(p.name, title, wikitext, p.birthYear)) {
+          wikiEntries = [];
+        }
       }
 
       // Ultima risorsa: se il nome ha più di 2 parole e ancora zero tappe,
@@ -387,19 +445,39 @@ async function main() {
       // ESISTENTE ma SBAGLIATA (non vuota, quindi il tentativo di riserva
       // di findWikipediaTitle non scattava mai) - proviamo esplicitamente
       // gli stessi candidati (stessa funzione nameCandidates usata sopra),
-      // con un titolo potenzialmente diverso.
+      // con un titolo potenzialmente diverso. Ogni candidato deve anche
+      // superare isTrustworthyMatch (nome imparentato + anno di nascita se
+      // disponibile) prima di essere considerato "il migliore" - bug reale
+      // trovato: il mononimo "José" si agganciava sempre a "Josue
+      // (footballer, born 1987)", un'altra persona con 10 tappe proprie,
+      // accettata per errore per Callejón/Jurado/Ulloa/eccetera solo
+      // perché il numero di tappe era alto.
       if (wikiEntries.length === 0) {
+        let bestEntries = [];
+        let bestTitle = null;
+        const MIN_ACCEPTABLE = 3; // sotto questa soglia, continuiamo a cercare un candidato migliore invece di accontentarci
         for (const shortName of nameCandidates(p.name, p.birthYear)) {
-          if (wikiEntries.length > 0) break;
+          if (bestEntries.length >= MIN_ACCEPTABLE) break;
           console.log(`  (${p.name}: ancora zero tappe, provo il nome corto "${shortName}"...)`);
           const shortTitles = await searchWikipediaTitles(shortName);
           await sleep(REQUEST_DELAY_MS);
-          const shortTitle = shortTitles.find((t) => /footballer/i.test(t)) || shortTitles[0];
+          const relevantTitles = shortTitles.filter((t) => titleLooksRelated(shortName, t));
+          const shortTitle = relevantTitles.find((t) => /footballer/i.test(t)) || relevantTitles[0];
           if (shortTitle && shortTitle !== title) {
-            wikitext = await fetchWikitext(shortTitle);
+            const candidateWikitext = await fetchWikitext(shortTitle);
             await sleep(REQUEST_DELAY_MS);
-            wikiEntries = parseSeniorCareer(wikitext);
+            const candidateEntries = parseSeniorCareer(candidateWikitext);
+            const trustworthy = candidateEntries.length > 0 && isTrustworthyMatch(shortName, shortTitle, candidateWikitext, p.birthYear);
+            if (trustworthy && candidateEntries.length > bestEntries.length) {
+              bestEntries = candidateEntries;
+              bestTitle = shortTitle;
+              wikitext = candidateWikitext;
+            }
           }
+        }
+        if (bestEntries.length > 0) {
+          wikiEntries = bestEntries;
+          title = bestTitle; // aggiorno anche il titolo, cosi' il log finale mostra quello giusto
         }
       }
 
