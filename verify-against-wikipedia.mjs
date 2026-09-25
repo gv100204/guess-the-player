@@ -353,7 +353,7 @@ async function main() {
   for (const p of candidates) {
     processedIdx++;
     try {
-      const title = await findWikipediaTitle(p.name, p.birthYear);
+      let title = await findWikipediaTitle(p.name, p.birthYear);
       await sleep(REQUEST_DELAY_MS);
       if (!title) {
         console.log(`? ${p.name}: nessuna pagina Wikipedia trovata, salto (non salvato: riprovabile in futuro)`);
