@@ -257,6 +257,23 @@
       "missing": [],
       "checkedAt": "2026-09-25T06:15:20.832Z"
     },
+    "170": {
+      "name": "Jan Vertonghen",
+      "wikipediaTitle": "Jan Vertonghen",
+      "verdict": "fail",
+      "missingFraction": 0.2,
+      "missing": [
+        {
+          "team": "RKC Waalwijk",
+          "from": 2006,
+          "to": 2007,
+          "position": "centrale",
+          "apps": 12,
+          "goals": 3
+        }
+      ],
+      "checkedAt": "2026-09-25T12:26:20.101Z"
+    },
     "179": {
       "name": "Moussa Sissoko",
       "wikipediaTitle": "Moussa Sissoko",
@@ -3082,6 +3099,23 @@
         }
       ],
       "checkedAt": "2026-09-24T11:12:52.905Z"
+    },
+    "2886": {
+      "name": "Javier Hernández Balcázar",
+      "wikipediaTitle": "Javier Hernández",
+      "verdict": "fail",
+      "missingFraction": 0.13,
+      "missing": [
+        {
+          "team": "LA Galaxy",
+          "from": 2020,
+          "to": 2023,
+          "position": "centrale",
+          "apps": 74,
+          "goals": 38
+        }
+      ],
+      "checkedAt": "2026-09-25T12:24:26.001Z"
     },
     "2905": {
       "name": "Chung-Yong Lee",
@@ -6720,6 +6754,23 @@
       "missing": [],
       "checkedAt": "2026-09-24T09:25:38.621Z"
     },
+    "19186": {
+      "name": "Ahmed Eissa El Mohamady Abdel Fattah",
+      "wikipediaTitle": "Ahmed Elmohamady",
+      "verdict": "fail",
+      "missingFraction": 0.14,
+      "missing": [
+        {
+          "team": "Ghazl El Mahalla",
+          "from": 2004,
+          "to": 2006,
+          "position": "iniziale",
+          "apps": 17,
+          "goals": 4
+        }
+      ],
+      "checkedAt": "2026-09-25T12:26:11.424Z"
+    },
     "19189": {
       "name": "Mile Jedinak",
       "wikipediaTitle": "Mile Jedinak",
@@ -7758,6 +7809,31 @@
         }
       ],
       "checkedAt": "2026-09-24T12:44:22.092Z"
+    },
+    "19952": {
+      "name": "Sébastien Aymar Bassong Nguena",
+      "wikipediaTitle": "Sébastien Bassong",
+      "verdict": "fail",
+      "missingFraction": 0.29,
+      "missing": [
+        {
+          "team": "Wolverhampton Wanderers",
+          "from": 2012,
+          "to": 2012,
+          "position": "centrale",
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "team": "Volos",
+          "from": 2019,
+          "to": 2019,
+          "position": "finale",
+          "apps": 3,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-25T12:25:41.945Z"
     },
     "19979": {
       "name": "David Adam Stockdale",
@@ -15105,6 +15181,39 @@
       ],
       "checkedAt": "2026-09-24T18:16:59.631Z"
     },
+    "46742": {
+      "name": "Daniel José Rodríguez Vázquez",
+      "wikipediaTitle": "Dani Rodríguez (footballer, born 1988)",
+      "verdict": "fail",
+      "missingFraction": 0.38,
+      "missing": [
+        {
+          "team": "Deportivo B",
+          "from": 2007,
+          "to": 2011,
+          "position": "iniziale",
+          "apps": 99,
+          "goals": 11
+        },
+        {
+          "team": "Betanzos",
+          "from": 2007,
+          "to": 2008,
+          "position": "centrale",
+          "apps": 38,
+          "goals": 8
+        },
+        {
+          "team": "Leganés",
+          "from": 2026,
+          "to": 2026,
+          "position": "finale",
+          "apps": 18,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-25T12:23:21.794Z"
+    },
     "46781": {
       "name": "Vincenzo Renato Rennella",
       "wikipediaTitle": "Vincenzo",
@@ -17920,6 +18029,71 @@
         }
       ],
       "checkedAt": "2026-09-24T14:30:08.017Z"
+    },
+    "80957": {
+      "name": "Brown Ideye Aide",
+      "wikipediaTitle": "Brown Ideye",
+      "verdict": "fail",
+      "missingFraction": 0.54,
+      "missing": [
+        {
+          "team": "Bayelsa United",
+          "from": 2006,
+          "to": 2007,
+          "position": "iniziale",
+          "apps": 19,
+          "goals": 6
+        },
+        {
+          "team": "Ocean Boys",
+          "from": 2006,
+          "to": 2007,
+          "position": "centrale",
+          "apps": 13,
+          "goals": 10
+        },
+        {
+          "team": "Neuchâtel Xamax",
+          "from": 2007,
+          "to": 2009,
+          "position": "centrale",
+          "apps": 55,
+          "goals": 23
+        },
+        {
+          "team": "Olympiacos",
+          "from": 2015,
+          "to": 2017,
+          "position": "centrale",
+          "apps": 43,
+          "goals": 23
+        },
+        {
+          "team": "Málaga",
+          "from": 2018,
+          "to": 2018,
+          "position": "centrale",
+          "apps": 13,
+          "goals": 2
+        },
+        {
+          "team": "Al-Yarmouk",
+          "from": 2022,
+          "to": 2022,
+          "position": "centrale",
+          "apps": 8,
+          "goals": 4
+        },
+        {
+          "team": "Enyimba",
+          "from": 2024,
+          "to": 2025,
+          "position": "finale",
+          "apps": 10,
+          "goals": 4
+        }
+      ],
+      "checkedAt": "2026-09-25T12:23:08.678Z"
     },
     "81058": {
       "name": "Nicki Niels Bille Nielsen",
@@ -21798,6 +21972,63 @@
       ],
       "checkedAt": "2026-09-24T08:30:44.538Z"
     },
+    "101865": {
+      "name": "Pierre Achille Webó Kouamo",
+      "wikipediaTitle": "Pierre Webó",
+      "verdict": "fail",
+      "missingFraction": 0.6,
+      "missing": [
+        {
+          "team": "Real Banjul",
+          "from": 1999,
+          "to": 2000,
+          "position": "iniziale",
+          "apps": null,
+          "goals": 0
+        },
+        {
+          "team": "Nacional",
+          "from": 2000,
+          "to": 2002,
+          "position": "centrale",
+          "apps": 31,
+          "goals": 14
+        },
+        {
+          "team": "Leganés",
+          "from": 2003,
+          "to": 2003,
+          "position": "centrale",
+          "apps": 7,
+          "goals": 0
+        },
+        {
+          "team": "Osmanlıspor",
+          "from": 2015,
+          "to": 2017,
+          "position": "centrale",
+          "apps": 49,
+          "goals": 15
+        },
+        {
+          "team": "Gazişehir",
+          "from": 2017,
+          "to": 2018,
+          "position": "centrale",
+          "apps": 24,
+          "goals": 7
+        },
+        {
+          "team": "Nacional",
+          "from": 2018,
+          "to": 2018,
+          "position": "finale",
+          "apps": 2,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-25T12:26:33.148Z"
+    },
     "102731": {
       "name": "Didier Yves Drogba Tébily",
       "wikipediaTitle": "Didier Yves Drogba Tébily",
@@ -22724,6 +22955,47 @@
         }
       ],
       "checkedAt": "2026-09-24T13:43:15.589Z"
+    },
+    "105427": {
+      "name": "Andoni Iraola Sagarna",
+      "wikipediaTitle": "Andoni Iraola",
+      "verdict": "fail",
+      "missingFraction": 1,
+      "missing": [
+        {
+          "team": "Basconia",
+          "from": 2000,
+          "to": 2001,
+          "position": "iniziale",
+          "apps": 35,
+          "goals": 4
+        },
+        {
+          "team": "Bilbao Athletic",
+          "from": 2001,
+          "to": 2003,
+          "position": "centrale",
+          "apps": 75,
+          "goals": 15
+        },
+        {
+          "team": "Athletic Bilbao",
+          "from": 2003,
+          "to": 2015,
+          "position": "centrale",
+          "apps": 406,
+          "goals": 33
+        },
+        {
+          "team": "New York City FC",
+          "from": 2015,
+          "to": 2016,
+          "position": "finale",
+          "apps": 38,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-25T12:27:13.028Z"
     },
     "105432": {
       "name": "Ronald Zubar",
@@ -25305,6 +25577,39 @@
         }
       ],
       "checkedAt": "2026-09-24T08:11:04.919Z"
+    },
+    "115023": {
+      "name": "Raúl González Blanco",
+      "wikipediaTitle": "Raúl González",
+      "verdict": "fail",
+      "missingFraction": 0.5,
+      "missing": [
+        {
+          "team": "Real Madrid C",
+          "from": 1994,
+          "to": 1994,
+          "position": "iniziale",
+          "apps": 9,
+          "goals": 16
+        },
+        {
+          "team": "Real Madrid B",
+          "from": 1994,
+          "to": 1994,
+          "position": "centrale",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "team": "New York Cosmos",
+          "from": 2014,
+          "to": 2015,
+          "position": "finale",
+          "apps": 28,
+          "goals": 8
+        }
+      ],
+      "checkedAt": "2026-09-25T12:23:51.357Z"
     },
     "115025": {
       "name": "Michael Ballack",

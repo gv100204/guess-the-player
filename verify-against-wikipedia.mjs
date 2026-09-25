@@ -73,7 +73,22 @@ function sleep(ms) {
 async function wikiFetch(url) {
   const MAX_ATTEMPTS = 6; // alzato da 3: nella scansione completa i 429 sono più frequenti del previsto
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
-    const res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
+    let res;
+    try {
+      res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
+    } catch (err) {
+      // Errore di rete generico (connessione interrotta, timeout, DNS...),
+      // non una risposta HTTP con un codice preciso - bug reale trovato:
+      // questi errori saltavano fuori dal ciclo di ritentativi senza mai
+      // essere riprovati, a differenza dei 429 che venivano gestiti bene.
+      if (attempt < MAX_ATTEMPTS) {
+        const waitSeconds = attempt * 10;
+        console.log(`  (errore di rete (${err.message}), aspetto ${waitSeconds}s e riprovo...)`);
+        await sleep(waitSeconds * 1000);
+        continue;
+      }
+      throw err;
+    }
     if (res.ok) return res.json();
     if (res.status === 429 && attempt < MAX_ATTEMPTS) {
       // Se Wikipedia dice esplicitamente quanto aspettare (intestazione
