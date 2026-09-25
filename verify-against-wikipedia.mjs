@@ -95,6 +95,19 @@ async function searchWikipediaTitles(query) {
   return data[1] || [];
 }
 
+// Ricerca a TESTO PIENO (cerca dentro il contenuto delle pagine, non solo
+// nei titoli come opensearch) - utile quando il nome completo compare
+// nell'infobox ("fullname = ...") ma il titolo della pagina è un
+// soprannome o una forma abbreviata diversa (es. "Yannick Anister Sagbo-
+// Latte" nei nostri dati, ma la pagina si chiama solo "Yannick Sagbo" -
+// opensearch sui titoli non lo trova, la ricerca a testo pieno sì, perché
+// "Sagbo-Latte" compare comunque nel testo della pagina).
+async function fullTextSearchTitles(query) {
+  const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&format=json&srlimit=5`;
+  const data = await wikiFetch(url);
+  return (data?.query?.search || []).map((r) => r.title);
+}
+
 // Verifica che la pagina trovata sia DAVVERO quella giusta, non solo "ha
 // abbastanza tappe". Bug reale trovato: la ricerca del mononimo "José" (da
 // solo) trovava sempre "Josue (footballer, born 1987)" - un brasiliano
@@ -186,6 +199,18 @@ function nameCandidates(fullName, birthYear) {
 
     for (let i = 1; i < parts.length; i++) candidates.push(`${parts[0]} ${parts[i]}`); // prima + ciascuna altra
     for (let i = 1; i < parts.length - 1; i++) candidates.push(`${parts[i]} ${parts[i + 1]}`); // coppie senza la prima
+
+    // Cognomi composti col trattino: a volte Wikipedia usa solo la prima
+    // metà, scartando quella dopo il trattino - bug reale trovato: "Sagbo-
+    // Latte" (cognome vero) diventa solo "Sagbo" su Wikipedia ("Yannick
+    // Sagbo"), ma la parola intera "Sagbo-Latte" non produce mai "Sagbo"
+    // da solo perché divido il nome solo sugli spazi, non sui trattini.
+    for (const w of parts.slice(1)) {
+      if (!w.includes("-")) continue;
+      for (const sub of w.split("-")) {
+        if (sub) candidates.push(`${parts[0]} ${sub}`);
+      }
+    }
   }
 
   return candidates;
@@ -195,8 +220,15 @@ async function findWikipediaTitle(playerName, birthYear) {
   let titles = await searchWikipediaTitles(playerName);
   let query = playerName;
 
-  // Se il nome completo non trova nulla, proviamo i candidati generati
-  // sopra (disambiguante con anno, mononimo, ricombinazioni delle parole).
+  // Se il nome completo non trova nulla, proviamo prima la ricerca a
+  // testo pieno (trova pagine dove il nome vero compare nell'infobox
+  // anche se il titolo è un soprannome/forma abbreviata), poi i candidati
+  // generati sopra (disambiguante con anno, mononimo, ricombinazioni).
+  if (titles.length === 0) {
+    titles = await fullTextSearchTitles(playerName);
+    await sleep(REQUEST_DELAY_MS);
+  }
+
   if (titles.length === 0) {
     for (const shortName of nameCandidates(playerName, birthYear)) {
       await sleep(REQUEST_DELAY_MS);
@@ -470,6 +502,31 @@ async function main() {
         let bestEntries = [];
         let bestTitle = null;
         const MIN_ACCEPTABLE = 3; // sotto questa soglia, continuiamo a cercare un candidato migliore invece di accontentarci
+
+        // Proviamo prima la ricerca a testo pieno col nome completo: trova
+        // pagine dove il nome vero compare nell'infobox anche se il titolo
+        // è un soprannome/forma abbreviata diversa - bug reale trovato:
+        // "Yannick Anister Sagbo-Latte" nei nostri dati, ma la pagina si
+        // chiama solo "Yannick Sagbo" (il "-Latte" del cognome scartato) -
+        // nessuna combinazione di parole avrebbe mai prodotto questo senza
+        // sapere in anticipo di dover spezzare il trattino.
+        console.log(`  (${p.name}: provo la ricerca a testo pieno...)`);
+        const fullTextTitles = await fullTextSearchTitles(p.name);
+        await sleep(REQUEST_DELAY_MS);
+        for (const candidateTitle of fullTextTitles.filter((t) => titleLooksRelated(p.name, t))) {
+          if (candidateTitle === title) continue;
+          const candidateWikitext = await fetchWikitext(candidateTitle);
+          await sleep(REQUEST_DELAY_MS);
+          const candidateEntries = parseSeniorCareer(candidateWikitext);
+          const trustworthy = candidateEntries.length > 0 && isTrustworthyMatch(p.name, candidateTitle, candidateWikitext, p.birthYear);
+          if (trustworthy && candidateEntries.length > bestEntries.length) {
+            bestEntries = candidateEntries;
+            bestTitle = candidateTitle;
+            wikitext = candidateWikitext;
+          }
+          if (bestEntries.length >= MIN_ACCEPTABLE) break;
+        }
+
         for (const shortName of nameCandidates(p.name, p.birthYear)) {
           if (bestEntries.length >= MIN_ACCEPTABLE) break;
           console.log(`  (${p.name}: ancora zero tappe, provo il nome corto "${shortName}"...)`);
