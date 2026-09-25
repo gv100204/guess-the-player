@@ -148,8 +148,36 @@ function extractBirthYear(wikitext) {
   return year >= 1900 && year <= 2025 ? year : null;
 }
 
-function isTrustworthyMatch(query, title, wikitext, expectedBirthYear) {
-  if (!titleLooksRelated(query, title)) return false;
+// Il campo "fullname" dell'infobox contiene il nome legale completo,
+// indipendentemente dal titolo della pagina - utile quando il titolo è un
+// soprannome (es. "Pepe Reina") ma il nome cercato è quello legale (es.
+// "José Manuel Reina Páez"): il titolo non assomiglia per niente al nome
+// cercato, ma il campo fullname sì, parola per parola.
+function extractFullNameField(wikitext) {
+  if (!wikitext) return null;
+  const m = wikitext.match(/\|\s*fullname\s*=\s*([^\n|]+)/i);
+  if (!m) return null;
+  return m[1]
+    .replace(/<ref[^>]*\/>|<ref[^>]*>.*?<\/ref>/gi, "") // blocco intero, non solo il tag
+    .replace(/\{\{[^}]*\}\}|\[\[([^\]|]+\|)?([^\]]+)\]\]|<[^>]+>|\[\d+\]/g, "$2")
+    .replace(/"/g, "")
+    .trim();
+}
+
+// Vero se OGNI parola del nome cercato compare, per intero, tra le parole
+// del campo fullname - più severo di titleLooksRelated (basta un prefisso
+// della prima parola), ma qui possiamo permettercelo: il fullname è testo
+// libero scritto apposta per essere il nome legale completo, non un
+// titolo abbreviato per forza.
+function fullNameFieldMatches(query, wikitext) {
+  const fullname = extractFullNameField(wikitext);
+  if (!fullname) return false;
+  const fullnameWords = new Set(fullname.split(/\s+/).map(normalizeWord));
+  return query.trim().split(/\s+/).every((w) => fullnameWords.has(normalizeWord(w)));
+}
+
+function isTrustworthyMatch(query, title, wikitext, expectedBirthYear, requireNameMatch = true) {
+  if (requireNameMatch && !titleLooksRelated(query, title) && !fullNameFieldMatches(query, wikitext)) return false;
   if (expectedBirthYear) {
     const pageBirthYear = extractBirthYear(wikitext);
     if (pageBirthYear && pageBirthYear !== expectedBirthYear) return false;
@@ -234,6 +262,7 @@ function nameCandidates(fullName, birthYear) {
 async function findWikipediaTitle(playerName, birthYear) {
   let titles = await searchWikipediaTitles(playerName);
   let query = playerName;
+  let fromFullText = false;
 
   // Se il nome completo non trova nulla, proviamo prima la ricerca a
   // testo pieno (trova pagine dove il nome vero compare nell'infobox
@@ -242,6 +271,7 @@ async function findWikipediaTitle(playerName, birthYear) {
   if (titles.length === 0) {
     titles = await fullTextSearchTitles(playerName);
     await sleep(REQUEST_DELAY_MS);
+    if (titles.length > 0) fromFullText = true;
   }
 
   if (titles.length === 0) {
@@ -260,9 +290,14 @@ async function findWikipediaTitle(playerName, birthYear) {
   // cercato (bug reale: "José" -> agganciato a "Josue", nome simile ma
   // diverso). Se dopo il filtro non resta nulla, meglio ripiegare sul
   // primo risultato grezzo che restituire null - verrà comunque ricontrollato
-  // più avanti quando proviamo a leggere la pagina.
-  const related = titles.filter((t) => titleLooksRelated(query, t));
-  const pool = related.length > 0 ? related : titles;
+  // più avanti quando proviamo a leggere la pagina. Per i risultati della
+  // ricerca a testo pieno saltiamo questo filtro: lì il punto è proprio
+  // trovare titoli che NON assomigliano al nome (soprannomi come "Pepe"
+  // per "José") - il nome compare comunque nel contenuto della pagina.
+  const pool = fromFullText ? titles : (() => {
+    const related = titles.filter((t) => titleLooksRelated(query, t));
+    return related.length > 0 ? related : titles;
+  })();
   const footballerTitle = pool.find((t) => /footballer/i.test(t));
   return footballerTitle || pool[0];
 }
@@ -528,12 +563,20 @@ async function main() {
         console.log(`  (${p.name}: provo la ricerca a testo pieno...)`);
         const fullTextTitles = await fullTextSearchTitles(p.name);
         await sleep(REQUEST_DELAY_MS);
-        for (const candidateTitle of fullTextTitles.filter((t) => titleLooksRelated(p.name, t))) {
+        // Niente filtro sul nome qui: il punto della ricerca a testo pieno
+        // è proprio trovare pagine il cui TITOLO non assomiglia al nome
+        // cercato (soprannomi come "Pepe" per "José") - il nome compare
+        // comunque nel contenuto della pagina, quindi ci affidiamo
+        // all'anno di nascita come conferma, se lo conosciamo. Senza anno
+        // di nascita noto, torniamo a richiedere la somiglianza del nome
+        // per sicurezza (nessun altro segnale a cui appoggiarsi).
+        const requireNameForFullText = !p.birthYear;
+        for (const candidateTitle of fullTextTitles) {
           if (candidateTitle === title) continue;
           const candidateWikitext = await fetchWikitext(candidateTitle);
           await sleep(REQUEST_DELAY_MS);
           const candidateEntries = parseSeniorCareer(candidateWikitext);
-          const trustworthy = candidateEntries.length > 0 && isTrustworthyMatch(p.name, candidateTitle, candidateWikitext, p.birthYear);
+          const trustworthy = candidateEntries.length > 0 && isTrustworthyMatch(p.name, candidateTitle, candidateWikitext, p.birthYear, requireNameForFullText);
           if (trustworthy && candidateEntries.length > bestEntries.length) {
             bestEntries = candidateEntries;
             bestTitle = candidateTitle;
