@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-26T10:34:36.050Z",
+  "version": "2026-09-26T15:31:31.498Z",
   "players": [
     {
       "id": "stefan-savic-39",
@@ -195665,7 +195665,17 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Liga AUF",
+          "country": "Uruguay",
+          "count": 2,
+          "seasons": [
+            "2016",
+            "2014/2015"
+          ]
+        }
+      ]
     },
     {
       "id": "marcos-mauro-lopez-gutierrez-46762",
@@ -196157,7 +196167,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        }
+      ]
     },
     {
       "id": "filip-malbasic-47084",
@@ -196529,7 +196548,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Tournoi Maurice Revello",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2015"
+          ]
+        }
+      ]
     },
     {
       "id": "jose-manuel-sanchez-guillen-47222",
@@ -196929,7 +196965,40 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super League 1",
+          "country": "Greece",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Greece",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Türkiye",
+          "count": 1,
+          "seasons": [
+            "2017"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Türkiye",
+          "count": 1,
+          "seasons": [
+            "2016/2017"
+          ]
+        }
+      ]
     },
     {
       "id": "roberto-navarro-munoz-84086",
@@ -197056,7 +197125,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2019/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "oriol-rey-erenas-106727",
@@ -197120,7 +197198,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        }
+      ]
     },
     {
       "id": "alfonso-gonzalez-martinez-119213",
@@ -197302,7 +197389,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa del Rey Juvenil",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2017"
+          ]
+        },
+        {
+          "comp": "División de Honor Juvenil",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2016/2017"
+          ]
+        }
+      ]
     },
     {
       "id": "juan-antonio-iglesias-sanchez-119742",
@@ -197585,7 +197689,63 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Trofeo Joan Gamper",
+          "country": "World",
+          "count": 5,
+          "seasons": [
+            "2025",
+            "2023",
+            "2022",
+            "2021",
+            "2020"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 2,
+          "seasons": [
+            "2025",
+            "2023"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 2,
+          "seasons": [
+            "2024/2025",
+            "2020/2021"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 2,
+          "seasons": [
+            "2024/2025",
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "UEFA European Championship",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "UEFA Nations League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2022/2024"
+          ]
+        }
+      ]
     },
     {
       "id": "marvin-olawale-akinlabi-park-162026",
@@ -197631,7 +197791,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "UEFA Youth League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        },
+        {
+          "comp": "Alkass International Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2017"
+          ]
+        }
+      ]
     },
     {
       "id": "sergio-arribas-calvo-162033",
@@ -197677,7 +197854,64 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "UEFA Super Cup",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "FIFA Intercontinental Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2022 Morocco"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "UEFA Champions League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "UEFA Youth League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        }
+      ]
     },
     {
       "id": "victor-chust-garcia-162058",
@@ -197741,7 +197975,48 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "UEFA Youth League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        },
+        {
+          "comp": "UEFA U19 Championship",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        },
+        {
+          "comp": "Copa del Rey Juvenil",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2017"
+          ]
+        },
+        {
+          "comp": "División de Honor Juvenil",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2016/2017"
+          ]
+        },
+        {
+          "comp": "UEFA U17 Championship",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2016/2017"
+          ]
+        }
+      ]
     },
     {
       "id": "moriba-kourouma-kourouma-162123",
@@ -197832,7 +198107,40 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Olympics Intercontinental Play-offs",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Germany",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        },
+        {
+          "comp": "Trofeo Joan Gamper",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2020"
+          ]
+        }
+      ]
     },
     {
       "id": "jesus-vazquez-alcalde-162175",
@@ -198051,7 +198359,72 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "UEFA Champions League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "UEFA Youth League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        },
+        {
+          "comp": "UEFA U19 Championship",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        },
+        {
+          "comp": "Copa del Rey Juvenil",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2017"
+          ]
+        },
+        {
+          "comp": "División de Honor Juvenil",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2016/2017"
+          ]
+        },
+        {
+          "comp": "UEFA U17 Championship",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2016/2017"
+          ]
+        }
+      ]
     },
     {
       "id": "oscar-mingueza-garcia-162712",
@@ -198106,7 +198479,33 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Trofeo Joan Gamper",
+          "country": "World",
+          "count": 2,
+          "seasons": [
+            "2021",
+            "2020"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        },
+        {
+          "comp": "UEFA Youth League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2017/2018"
+          ]
+        }
+      ]
     },
     {
       "id": "gabriel-veiga-novas-182504",
@@ -198206,7 +198605,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "AFC Champions League Elite",
+          "country": "Asia",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        }
+      ]
     },
     {
       "id": "jon-morcillo-conesa-182563",
@@ -198279,7 +198687,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "jorge-herrando-oroz-182592",
@@ -198426,7 +198843,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        }
+      ]
     },
     {
       "id": "alejandro-millan-iranzo-182668",
@@ -198562,7 +198988,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "UEFA Europa League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "alejandro-cantero-sanchez-182671",
@@ -198708,7 +199143,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2019/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "benat-turrientes-imaz-183744",
@@ -198772,7 +199216,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Olympics Men",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2019/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "nicholas-williams-arthuer-183799",
@@ -198818,7 +199279,40 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "UEFA European Championship",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "UEFA Nations League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2022/2024"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        }
+      ]
     },
     {
       "id": "aitor-paredes-casamichana-183849",
@@ -198873,7 +199367,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        }
+      ]
     },
     {
       "id": "sabit-abdulai-186458",
@@ -199028,7 +199539,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2019/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "john-chetauya-nwankwo-donald-okeh-189866",
@@ -199183,7 +199703,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "UEFA/CONMEBOL Club Challenge",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        }
+      ]
     },
     {
       "id": "miguel-rodriguez-vidal-192434",
@@ -199357,7 +199894,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        }
+      ]
     },
     {
       "id": "john-joe-patrick-finn-benoa-293297",
@@ -199540,7 +200086,63 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Superliga",
+          "country": "Denmark",
+          "count": 5,
+          "seasons": [
+            "2024/2025",
+            "2015/2016",
+            "2012/2013",
+            "2010/2011",
+            "2009/2010"
+          ]
+        },
+        {
+          "comp": "DBU Pokalen",
+          "country": "Denmark",
+          "count": 4,
+          "seasons": [
+            "2024/2025",
+            "2015/2016",
+            "2014/2015",
+            "2011/2012"
+          ]
+        },
+        {
+          "comp": "UEFA/CONMEBOL Club Challenge",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        },
+        {
+          "comp": "DFB Pokal",
+          "country": "Germany",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Germany",
+          "count": 1,
+          "seasons": [
+            "2019"
+          ]
+        },
+        {
+          "comp": "The Atlantic Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2014"
+          ]
+        }
+      ]
     },
     {
       "id": "mamadou-loum-n-diaye-384",
@@ -199649,7 +200251,40 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "CAF Africa Cup of Nations",
+          "country": "Africa",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Portugal",
+          "count": 1,
+          "seasons": [
+            "2020"
+          ]
+        },
+        {
+          "comp": "liga_pt",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        },
+        {
+          "comp": "Taça de Portugal",
+          "country": "Portugal",
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        }
+      ]
     },
     {
       "id": "jesus-manuel-corona-ruiz-389",
@@ -199785,7 +200420,84 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "UEFA/CONMEBOL Club Challenge",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        },
+        {
+          "comp": "UEFA Europa League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Portugal",
+          "count": 2,
+          "seasons": [
+            "2020",
+            "2018/2019"
+          ]
+        },
+        {
+          "comp": "Taça de Portugal",
+          "country": "Portugal",
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        },
+        {
+          "comp": "liga_pt",
+          "country": null,
+          "count": 2,
+          "seasons": [
+            "2019/2020",
+            "2017/2018"
+          ]
+        },
+        {
+          "comp": "Concacaf Gold Cup",
+          "country": "N/C America",
+          "count": 1,
+          "seasons": [
+            "2015"
+          ]
+        },
+        {
+          "comp": "Concacaf U20",
+          "country": "N/C America",
+          "count": 1,
+          "seasons": [
+            "2012/2013"
+          ]
+        },
+        {
+          "comp": "Concacaf Champions Cup",
+          "country": "N/C America",
+          "count": 3,
+          "seasons": [
+            "2012/2013",
+            "2011/2012",
+            "2010/2011"
+          ]
+        },
+        {
+          "comp": "Liga MX",
+          "country": "Mexico",
+          "count": 1,
+          "seasons": [
+            "2010"
+          ]
+        }
+      ]
     },
     {
       "id": "david-olatukunbo-alaba-505",
@@ -199858,7 +200570,110 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 2,
+          "seasons": [
+            "2024",
+            "2022"
+          ]
+        },
+        {
+          "comp": "FIFA Intercontinental Cup",
+          "country": "World",
+          "count": 4,
+          "seasons": [
+            "2024",
+            "2023",
+            "2021",
+            "2013"
+          ]
+        },
+        {
+          "comp": "UEFA Super Cup",
+          "country": "Europe",
+          "count": 4,
+          "seasons": [
+            "2024",
+            "2022",
+            "2020",
+            "2013"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 2,
+          "seasons": [
+            "2023/2024",
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "UEFA Champions League",
+          "country": "Europe",
+          "count": 4,
+          "seasons": [
+            "2023/2024",
+            "2021/2022",
+            "2019/2020",
+            "2012/2013"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "bundesliga",
+          "country": null,
+          "count": 10,
+          "seasons": [
+            "2020/2021",
+            "2019/2020",
+            "2018/2019",
+            "2017/2018",
+            "2016/2017",
+            "2015/2016",
+            "2014/2015",
+            "2013/2014",
+            "2012/2013",
+            "2009/2010"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Germany",
+          "count": 6,
+          "seasons": [
+            "2020",
+            "2018",
+            "2017",
+            "2016",
+            "2012",
+            "2010/2011"
+          ]
+        },
+        {
+          "comp": "DFB Pokal",
+          "country": "Germany",
+          "count": 6,
+          "seasons": [
+            "2019/2020",
+            "2018/2019",
+            "2015/2016",
+            "2013/2014",
+            "2012/2013",
+            "2009/2010"
+          ]
+        }
+      ]
     },
     {
       "id": "franco-emanuel-cervi-570",
@@ -199931,7 +200746,35 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Portugal",
+          "count": 3,
+          "seasons": [
+            "2019",
+            "2017",
+            "2016"
+          ]
+        },
+        {
+          "comp": "liga_pt",
+          "country": null,
+          "count": 2,
+          "seasons": [
+            "2018/2019",
+            "2016/2017"
+          ]
+        },
+        {
+          "comp": "Taça de Portugal",
+          "country": "Portugal",
+          "count": 1,
+          "seasons": [
+            "2016/2017"
+          ]
+        }
+      ]
     },
     {
       "id": "francisco-jose-garcia-torres-736",
@@ -199977,7 +200820,65 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "UEFA Super Cup",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "FIFA Intercontinental Cup",
+          "country": "World",
+          "count": 2,
+          "seasons": [
+            "2024",
+            "2018"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "UEFA Champions League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "Copa del Rey Juvenil",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2017"
+          ]
+        },
+        {
+          "comp": "División de Honor Juvenil",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2016/2017"
+          ]
+        }
+      ]
     },
     {
       "id": "youssouf-sabaly-1264",
@@ -200041,7 +200942,32 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "Trophée des Champions",
+          "country": "France",
+          "count": 1,
+          "seasons": [
+            "2015"
+          ]
+        },
+        {
+          "comp": "FIFA U20 World Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2013"
+          ]
+        }
+      ]
     },
     {
       "id": "eduardo-celmi-camavinga-2207",
@@ -200105,7 +201031,77 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "FIFA Intercontinental Cup",
+          "country": "World",
+          "count": 2,
+          "seasons": [
+            "2024",
+            "2023"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 2,
+          "seasons": [
+            "2024",
+            "2022"
+          ]
+        },
+        {
+          "comp": "UEFA Super Cup",
+          "country": "Europe",
+          "count": 2,
+          "seasons": [
+            "2024",
+            "2022"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 2,
+          "seasons": [
+            "2023/2024",
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "UEFA Champions League",
+          "country": "Europe",
+          "count": 2,
+          "seasons": [
+            "2023/2024",
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "UEFA Nations League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2020/2022"
+          ]
+        },
+        {
+          "comp": "Coupe de France",
+          "country": "France",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        }
+      ]
     },
     {
       "id": "dario-ismael-benedetto-2478",
@@ -200358,7 +201354,46 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Copa",
+          "country": "Argentina",
+          "count": 3,
+          "seasons": [
+            "2023",
+            "2019",
+            "2012"
+          ]
+        },
+        {
+          "comp": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "count": 4,
+          "seasons": [
+            "2022",
+            "2017/2018",
+            "2016/2017",
+            "2011/2012"
+          ]
+        },
+        {
+          "comp": "Concacaf Champions Cup",
+          "country": "N/C America",
+          "count": 2,
+          "seasons": [
+            "2015/2016",
+            "2014/2015"
+          ]
+        },
+        {
+          "comp": "Liga MX",
+          "country": "Mexico",
+          "count": 1,
+          "seasons": [
+            "2014/2015"
+          ]
+        }
+      ]
     },
     {
       "id": "santiago-arzamendia-duarte-2508",
@@ -200503,7 +201538,26 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Trofeo de Campeones",
+          "country": "Argentina",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Division Profesional",
+          "country": "Paraguay",
+          "count": 3,
+          "seasons": [
+            "2020",
+            "2017",
+            "2015"
+          ]
+        }
+      ]
     },
     {
       "id": "giovanni-alessandro-gonzalez-apud-2610",
@@ -200639,7 +201693,33 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Premier League",
+          "country": "Russia",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "Liga AUF",
+          "country": "Uruguay",
+          "count": 2,
+          "seasons": [
+            "2021",
+            "2018"
+          ]
+        },
+        {
+          "comp": "Super Copa",
+          "country": "Uruguay",
+          "count": 1,
+          "seasons": [
+            "2018"
+          ]
+        }
+      ]
     },
     {
       "id": "facundo-nahuel-tenaglia-6233",
@@ -200938,7 +202018,36 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Chile",
+          "count": 2,
+          "seasons": [
+            "2021",
+            "2019"
+          ]
+        },
+        {
+          "comp": "Primera División",
+          "country": "Chile",
+          "count": 3,
+          "seasons": [
+            "2020/2021",
+            "2019",
+            "2018"
+          ]
+        },
+        {
+          "comp": "Primera División",
+          "country": "Bolivia",
+          "count": 2,
+          "seasons": [
+            "2016/2017",
+            "2016/2017"
+          ]
+        }
+      ]
     },
     {
       "id": "tomas-jesus-alarcon-vergara-11471",
@@ -201165,7 +202274,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "NB I",
+          "country": "Hungary",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "ivan-balliu-campeny-20520",
@@ -201229,7 +202355,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Ligue 2",
+          "country": "France",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2012/2013"
+          ]
+        }
+      ]
     },
     {
       "id": "nikola-maras-41412",
@@ -201457,7 +202600,33 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Super Liga",
+          "country": "Serbia",
+          "count": 2,
+          "seasons": [
+            "2020/2021",
+            "2019/2020"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Serbia",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "franco-matias-russo-panos-46736",
@@ -201566,7 +202735,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "First League",
+          "country": "Bulgaria",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Bulgaria",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        }
+      ]
     },
     {
       "id": "angel-algobia-esteves-47540",
@@ -201630,7 +202816,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        }
+      ]
     },
     {
       "id": "eray-ervin-comert-48372",
@@ -201730,7 +202925,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Schweizer Pokal",
+          "country": "Switzerland",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        },
+        {
+          "comp": "Super League",
+          "country": "Switzerland",
+          "count": 1,
+          "seasons": [
+            "2015/2016"
+          ]
+        }
+      ]
     },
     {
       "id": "pedro-gaston-alvarez-sosa-51449",
@@ -201930,7 +203142,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Recopa Gaúcha",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        }
+      ]
     },
     {
       "id": "dominik-greif-61142",
@@ -202003,7 +203224,29 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "1. liga",
+          "country": "Slovakia",
+          "count": 3,
+          "seasons": [
+            "2020/2021",
+            "2019/2020",
+            "2018/2019"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Slovakia",
+          "count": 4,
+          "seasons": [
+            "2020/2021",
+            "2019/2020",
+            "2017/2018",
+            "2016/2017"
+          ]
+        }
+      ]
     },
     {
       "id": "milutin-osmajic-66761",
@@ -202094,7 +203337,17 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "First League",
+          "country": "Montenegro",
+          "count": 2,
+          "seasons": [
+            "2018/2019",
+            "2017/2018"
+          ]
+        }
+      ]
     },
     {
       "id": "thiago-galhardo-do-nascimento-rocha-80166",
@@ -202428,7 +203681,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Cearense 1",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        }
+      ]
     },
     {
       "id": "pedro-ortiz-bernat-119235",
@@ -202537,7 +203799,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "UEFA/CONMEBOL Club Challenge",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        }
+      ]
     },
     {
       "id": "randy-nteka-122657",
@@ -202583,7 +203854,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "COSAFA Cup",
+          "country": "Africa",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "Primera División RFEF",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        }
+      ]
     },
     {
       "id": "diego-jose-conde-alcolado-122956",
@@ -202656,7 +203944,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        }
+      ]
     },
     {
       "id": "enric-franquesa-dolz-129657",
@@ -202756,7 +204053,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        }
+      ]
     },
     {
       "id": "alejandro-balde-martinez-161928",
@@ -202802,7 +204108,53 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Trofeo Joan Gamper",
+          "country": "World",
+          "count": 4,
+          "seasons": [
+            "2025",
+            "2023",
+            "2022",
+            "2021"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 2,
+          "seasons": [
+            "2025",
+            "2023"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 2,
+          "seasons": [
+            "2024/2025",
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "División de Honor Juvenil",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ]
     },
     {
       "id": "juan-miguel-latasa-fernandez-layos-162028",
@@ -202857,7 +204209,40 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "UEFA Super Cup",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "UEFA Champions League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "UEFA Youth League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        }
+      ]
     },
     {
       "id": "diego-lopez-noguerol-162127",
@@ -202885,7 +204270,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Olympics Men",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        }
+      ]
     },
     {
       "id": "mika-marmol-medina-162475",
@@ -202940,7 +204334,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa Catalunya",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        }
+      ]
     },
     {
       "id": "leonardo-roman-riquelme-179139",
@@ -203113,7 +204516,25 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Trofeo Joan Gamper",
+          "country": "World",
+          "count": 2,
+          "seasons": [
+            "2023",
+            "2022"
+          ]
+        },
+        {
+          "comp": "CAF U23 Cup of Nations",
+          "country": "Africa",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        }
+      ]
     },
     {
       "id": "jesus-areso-blanco-182181",
@@ -203241,7 +204662,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "joan-garcia-pons-182718",
@@ -203296,7 +204726,32 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Trofeo Joan Gamper",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "Olympics Men",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "julen-agirrezabala-astulez-183848",
@@ -203360,7 +204815,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        }
+      ]
     },
     {
       "id": "santiago-garcia-gonzalez-184743",
@@ -203606,7 +205070,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "UEFA/CONMEBOL Club Challenge",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        }
+      ]
     },
     {
       "id": "ruben-sanchez-saez-199824",
@@ -203679,7 +205152,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "matthew-timothy-hoppe-203014",
@@ -203761,7 +205243,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Concacaf Gold Cup",
+          "country": "N/C America",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        }
+      ]
     },
     {
       "id": "peter-federico-gonzalez-carmona-270516",
@@ -203825,7 +205316,73 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 2,
+          "seasons": [
+            "2024",
+            "2022"
+          ]
+        },
+        {
+          "comp": "FIFA Intercontinental Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Copa del Rey Juvenil",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        },
+        {
+          "comp": "UEFA Super Cup",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "UEFA Champions League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "UEFA Youth League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        }
+      ]
     },
     {
       "id": "nicolas-serrano-galdeano-286593",
@@ -203962,7 +205519,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "damian-rodriguez-sousa-286796",
@@ -204063,7 +205629,40 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Trofeo Joan Gamper",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        },
+        {
+          "comp": "División de Honor Juvenil",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ]
     },
     {
       "id": "javier-llabres-exposito-293604",
@@ -204200,7 +205799,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Olympics Men",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        }
+      ]
     },
     {
       "id": "pablo-martin-paez-gavira-296667",
@@ -204246,7 +205854,61 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Trofeo Joan Gamper",
+          "country": "World",
+          "count": 4,
+          "seasons": [
+            "2025",
+            "2023",
+            "2022",
+            "2021"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 2,
+          "seasons": [
+            "2025",
+            "2023"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 2,
+          "seasons": [
+            "2024/2025",
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "UEFA Nations League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2022/2024"
+          ]
+        },
+        {
+          "comp": "División de Honor Juvenil",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ]
     },
     {
       "id": "enrique-jesus-salas-valiente-297311",
@@ -204310,7 +205972,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "UEFA/CONMEBOL Club Challenge",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        }
+      ]
     },
     {
       "id": "javier-guerra-moreno-315699",
@@ -204605,7 +206276,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Olympics Men",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        }
+      ]
     },
     {
       "id": "axel-laurent-angel-lambert-witsel-20",
@@ -204723,7 +206403,91 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "DFB Pokal",
+          "country": "Germany",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Germany",
+          "count": 1,
+          "seasons": [
+            "2019"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Russia",
+          "count": 2,
+          "seasons": [
+            "2016",
+            "2015"
+          ]
+        },
+        {
+          "comp": "The Atlantic Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2016"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Russia",
+          "count": 1,
+          "seasons": [
+            "2015/2016"
+          ]
+        },
+        {
+          "comp": "Premier League",
+          "country": "Russia",
+          "count": 1,
+          "seasons": [
+            "2014/2015"
+          ]
+        },
+        {
+          "comp": "Taça da Liga",
+          "country": "Portugal",
+          "count": 1,
+          "seasons": [
+            "2011/2012"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Belgium",
+          "count": 1,
+          "seasons": [
+            "2010/2011"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Belgium",
+          "count": 2,
+          "seasons": [
+            "2009/2010",
+            "2008/2009"
+          ]
+        },
+        {
+          "comp": "First Division A",
+          "country": "Belgium",
+          "count": 2,
+          "seasons": [
+            "2008/2009",
+            "2007/2008"
+          ]
+        }
+      ]
     },
     {
       "id": "ronael-julien-pierre-gabriel-99",
@@ -204859,7 +206623,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "HNL",
+          "country": "Croatia",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Croatia",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        }
+      ]
     },
     {
       "id": "sr-an-babic-340",
@@ -204977,7 +206758,42 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "Super Liga",
+          "country": "Serbia",
+          "count": 3,
+          "seasons": [
+            "2019/2020",
+            "2018/2019",
+            "2017/2018"
+          ]
+        },
+        {
+          "comp": "FIFA U20 World Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2015"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Serbia",
+          "count": 1,
+          "seasons": [
+            "2013/2014"
+          ]
+        }
+      ]
     },
     {
       "id": "marcos-do-nascimento-teixeira-433",
@@ -205122,7 +206938,48 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "UEFA/CONMEBOL Club Challenge",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        },
+        {
+          "comp": "UEFA Europa League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Türkiye",
+          "count": 1,
+          "seasons": [
+            "2019"
+          ]
+        },
+        {
+          "comp": "Süper Lig",
+          "country": "Türkiye",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Türkiye",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        }
+      ]
     },
     {
       "id": "robert-lewandowski-521",
@@ -205168,7 +207025,133 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Trofeo Joan Gamper",
+          "country": "World",
+          "count": 3,
+          "seasons": [
+            "2025",
+            "2023",
+            "2022"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 2,
+          "seasons": [
+            "2025",
+            "2023"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 2,
+          "seasons": [
+            "2024/2025",
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "bundesliga",
+          "country": null,
+          "count": 10,
+          "seasons": [
+            "2021/2022",
+            "2020/2021",
+            "2019/2020",
+            "2018/2019",
+            "2017/2018",
+            "2016/2017",
+            "2015/2016",
+            "2014/2015",
+            "2011/2012",
+            "2010/2011"
+          ]
+        },
+        {
+          "comp": "FIFA Intercontinental Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Germany",
+          "count": 6,
+          "seasons": [
+            "2021",
+            "2020",
+            "2018",
+            "2017",
+            "2016",
+            "2013"
+          ]
+        },
+        {
+          "comp": "UEFA Super Cup",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2020"
+          ]
+        },
+        {
+          "comp": "DFB Pokal",
+          "country": "Germany",
+          "count": 4,
+          "seasons": [
+            "2019/2020",
+            "2018/2019",
+            "2015/2016",
+            "2011/2012"
+          ]
+        },
+        {
+          "comp": "UEFA Champions League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        },
+        {
+          "comp": "Ekstraklasa",
+          "country": "Poland",
+          "count": 1,
+          "seasons": [
+            "2009/2010"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Poland",
+          "count": 1,
+          "seasons": [
+            "2009/2010"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Poland",
+          "count": 1,
+          "seasons": [
+            "2008/2009"
+          ]
+        }
+      ]
     },
     {
       "id": "kasper-dolberg-rasmussen-550",
@@ -205286,7 +207269,40 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Netherlands",
+          "count": 1,
+          "seasons": [
+            "2019"
+          ]
+        },
+        {
+          "comp": "Eredivisie",
+          "country": "Netherlands",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        },
+        {
+          "comp": "KNVB Beker",
+          "country": "Netherlands",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        },
+        {
+          "comp": "U19 Divisie 1",
+          "country": "Netherlands",
+          "count": 1,
+          "seasons": [
+            "2015/2016"
+          ]
+        }
+      ]
     },
     {
       "id": "aurelien-djani-tchouameni-1271",
@@ -205350,7 +207366,66 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "UEFA Super Cup",
+          "country": "Europe",
+          "count": 2,
+          "seasons": [
+            "2024",
+            "2022"
+          ]
+        },
+        {
+          "comp": "FIFA Intercontinental Cup",
+          "country": "World",
+          "count": 2,
+          "seasons": [
+            "2024",
+            "2023"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "UEFA Champions League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "UEFA Nations League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2020/2022"
+          ]
+        }
+      ]
     },
     {
       "id": "goncalo-mendes-paciencia-1830",
@@ -205504,7 +207579,32 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Pernambucano 1",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "UEFA Europa League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "liga_pt",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2017/2018"
+          ]
+        }
+      ]
     },
     {
       "id": "cyle-christopher-larin-2001",
@@ -205640,7 +207740,40 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Türkiye",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Belgium",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        },
+        {
+          "comp": "Süper Lig",
+          "country": "Türkiye",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Türkiye",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "viktor-tsygankov-2182",
@@ -205686,7 +207819,43 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa Catalunya",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "Premier League",
+          "country": "Ukraine",
+          "count": 2,
+          "seasons": [
+            "2020/2021",
+            "2014/2015"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Ukraine",
+          "count": 3,
+          "seasons": [
+            "2020/2021",
+            "2019/2020",
+            "2014/2015"
+          ]
+        },
+        {
+          "comp": "U19 League",
+          "country": "Ukraine",
+          "count": 1,
+          "seasons": [
+            "2015/2016"
+          ]
+        }
+      ]
     },
     {
       "id": "agustin-federico-marchesin-2464",
@@ -205903,7 +208072,94 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Gaúcho 1",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Portugal",
+          "count": 2,
+          "seasons": [
+            "2022",
+            "2020"
+          ]
+        },
+        {
+          "comp": "liga_pt",
+          "country": null,
+          "count": 2,
+          "seasons": [
+            "2021/2022",
+            "2019/2020"
+          ]
+        },
+        {
+          "comp": "Taça de Portugal",
+          "country": "Portugal",
+          "count": 2,
+          "seasons": [
+            "2021/2022",
+            "2019/2020"
+          ]
+        },
+        {
+          "comp": "CONMEBOL Copa America",
+          "country": "South America",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        },
+        {
+          "comp": "Campeón de Campeones",
+          "country": "Mexico",
+          "count": 2,
+          "seasons": [
+            "2019",
+            "2015"
+          ]
+        },
+        {
+          "comp": "Liga MX",
+          "country": "Mexico",
+          "count": 2,
+          "seasons": [
+            "2018/2019",
+            "2014/2015"
+          ]
+        },
+        {
+          "comp": "Copa MX",
+          "country": "Mexico",
+          "count": 2,
+          "seasons": [
+            "2018/2019",
+            "2014/2015"
+          ]
+        },
+        {
+          "comp": "CONMEBOL Sudamericana",
+          "country": "South America",
+          "count": 1,
+          "seasons": [
+            "2013"
+          ]
+        },
+        {
+          "comp": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "count": 1,
+          "seasons": [
+            "2007/2008"
+          ]
+        }
+      ]
     },
     {
       "id": "awer-bul-mabil-2755",
@@ -206030,7 +208286,40 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Czech Liga",
+          "country": "Czechia",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Superliga",
+          "country": "Denmark",
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        },
+        {
+          "comp": "DBU Pokalen",
+          "country": "Denmark",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        },
+        {
+          "comp": "Australia Cup",
+          "country": "Australia",
+          "count": 1,
+          "seasons": [
+            "2014"
+          ]
+        }
+      ]
     },
     {
       "id": "predrag-rajkovic-2814",
@@ -206130,7 +208419,73 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Saudi League",
+          "country": "Saudi Arabia",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "King's Cup",
+          "country": "Saudi Arabia",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "Ligat Ha'al",
+          "country": "Israel",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        },
+        {
+          "comp": "Toto Cup Ligat Al",
+          "country": "Israel",
+          "count": 2,
+          "seasons": [
+            "2018",
+            "2017"
+          ]
+        },
+        {
+          "comp": "FIFA U20 World Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2015"
+          ]
+        },
+        {
+          "comp": "Super Liga",
+          "country": "Serbia",
+          "count": 1,
+          "seasons": [
+            "2013/2014"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Serbia",
+          "count": 1,
+          "seasons": [
+            "2012/2013"
+          ]
+        },
+        {
+          "comp": "UEFA U19 Championship",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2012/2013"
+          ]
+        }
+      ]
     },
     {
       "id": "cesar-jasib-montes-castro-2873",
@@ -206203,7 +208558,52 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Concacaf Gold Cup",
+          "country": "N/C America",
+          "count": 3,
+          "seasons": [
+            "2025",
+            "2023",
+            "2019"
+          ]
+        },
+        {
+          "comp": "Concacaf Nations League",
+          "country": "N/C America",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "Concacaf Champions Cup",
+          "country": "N/C America",
+          "count": 2,
+          "seasons": [
+            "2021",
+            "2019"
+          ]
+        },
+        {
+          "comp": "Liga MX",
+          "country": "Mexico",
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        },
+        {
+          "comp": "Copa MX",
+          "country": "Mexico",
+          "count": 2,
+          "seasons": [
+            "2019/2020",
+            "2017/2018"
+          ]
+        }
+      ]
     },
     {
       "id": "philana-tinotenda-kadewere-3084",
@@ -206321,7 +208721,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "COSAFA Cup",
+          "country": "Africa",
+          "count": 1,
+          "seasons": [
+            "2018"
+          ]
+        },
+        {
+          "comp": "Svenska Cupen",
+          "country": "Sweden",
+          "count": 1,
+          "seasons": [
+            "2017/2018"
+          ]
+        }
+      ]
     },
     {
       "id": "fabrizio-german-angileri-5987",
@@ -206421,7 +208838,56 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Paulista A1",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        },
+        {
+          "comp": "Super Copa",
+          "country": "Argentina",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        },
+        {
+          "comp": "Trofeo de Campeones",
+          "country": "Argentina",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        },
+        {
+          "comp": "Copa Argentina",
+          "country": "Argentina",
+          "count": 1,
+          "seasons": [
+            "2019"
+          ]
+        },
+        {
+          "comp": "CONMEBOL Recopa",
+          "country": "South America",
+          "count": 1,
+          "seasons": [
+            "2019"
+          ]
+        }
+      ]
     },
     {
       "id": "lucas-gaston-robertone-6065",
@@ -206467,7 +208933,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ]
     },
     {
       "id": "selim-amallah-8587",
@@ -206685,7 +209160,40 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "CONMEBOL Sudamericana",
+          "country": "South America",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        },
+        {
+          "comp": "Olympics Men",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        },
+        {
+          "comp": "Paranaense 1",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2020"
+          ]
+        },
+        {
+          "comp": "Copa do Brasil",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2019"
+          ]
+        }
+      ]
     },
     {
       "id": "khalid-abdul-mumin-suleman-15900",
@@ -206849,7 +209357,80 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Carioca Série A",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "Supercopa do Brasil",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "Copa do Brasil",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Emir Cup",
+          "country": "Qatar",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Stars League",
+          "country": "Qatar",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Portugal",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "liga_pt",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        },
+        {
+          "comp": "Taça da Liga",
+          "country": "Portugal",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        },
+        {
+          "comp": "CONMEBOL U20",
+          "country": "South America",
+          "count": 1,
+          "seasons": [
+            "2019"
+          ]
+        }
+      ]
     },
     {
       "id": "houboulang-mendes-20627",
@@ -206976,7 +209557,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Ligue 2",
+          "country": "France",
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        }
+      ]
     },
     {
       "id": "pape-alassane-gueye-20696",
@@ -207085,7 +209675,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "UEFA Europa League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "CAF Africa Cup of Nations",
+          "country": "Africa",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        }
+      ]
     },
     {
       "id": "haissem-hassan-20844",
@@ -207349,7 +209956,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Cup",
+          "country": "Slovenia",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ]
     },
     {
       "id": "brian-alexis-ocampo-ferreira-51588",
@@ -207458,7 +210082,34 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Copa",
+          "country": "Uruguay",
+          "count": 2,
+          "seasons": [
+            "2021",
+            "2019"
+          ]
+        },
+        {
+          "comp": "Liga AUF",
+          "country": "Uruguay",
+          "count": 2,
+          "seasons": [
+            "2020/2021",
+            "2019"
+          ]
+        },
+        {
+          "comp": "CONMEBOL Libertadores U20",
+          "country": "South America",
+          "count": 1,
+          "seasons": [
+            "2018"
+          ]
+        }
+      ]
     },
     {
       "id": "cenk-ozkacar-72048",
@@ -207750,7 +210401,99 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "UEFA/CONMEBOL Club Challenge",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        },
+        {
+          "comp": "UEFA Europa League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Germany",
+          "count": 3,
+          "seasons": [
+            "2022",
+            "2021",
+            "2020"
+          ]
+        },
+        {
+          "comp": "Tournoi Maurice Revello",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        },
+        {
+          "comp": "bundesliga",
+          "country": null,
+          "count": 2,
+          "seasons": [
+            "2021/2022",
+            "2020/2021"
+          ]
+        },
+        {
+          "comp": "FIFA Intercontinental Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        },
+        {
+          "comp": "UEFA Super Cup",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2020"
+          ]
+        },
+        {
+          "comp": "ligue1",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        },
+        {
+          "comp": "DFB Pokal",
+          "country": "Germany",
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        },
+        {
+          "comp": "UEFA Champions League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        },
+        {
+          "comp": "Trophée des Champions",
+          "country": "France",
+          "count": 1,
+          "seasons": [
+            "2019"
+          ]
+        }
+      ]
     },
     {
       "id": "pablo-ibanez-lumbreras-139001",
@@ -207896,7 +210639,32 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        },
+        {
+          "comp": "Community Shield",
+          "country": "England",
+          "count": 1,
+          "seasons": [
+            "2019"
+          ]
+        },
+        {
+          "comp": "U18 Premier League Cup",
+          "country": "England",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        }
+      ]
     },
     {
       "id": "francisco-perez-martinez-162931",
@@ -208153,7 +210921,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "UEFA Europa League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        }
+      ]
     },
     {
       "id": "carlos-romero-serrano-184420",
@@ -208408,7 +211193,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ]
     },
     {
       "id": "lazaro-vinicius-marques-237103",
@@ -208535,7 +211329,48 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Paulista A1",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Carioca Série A",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        },
+        {
+          "comp": "Supercopa do Brasil",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        },
+        {
+          "comp": "Serie A",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        },
+        {
+          "comp": "FIFA U17 World Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2019"
+          ]
+        }
+      ]
     },
     {
       "id": "pau-victor-delgado-263530",
@@ -208599,7 +211434,32 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        }
+      ]
     },
     {
       "id": "luiz-henrique-andre-rosa-da-silva-265785",
@@ -208735,7 +211595,32 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Serie A",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "CONMEBOL Libertadores",
+          "country": "South America",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Carioca Série A",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        }
+      ]
     },
     {
       "id": "williot-theo-swedberg-269163",
@@ -208918,7 +211803,50 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 2,
+          "seasons": [
+            "2025",
+            "2023"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 2,
+          "seasons": [
+            "2024/2025",
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "Trofeo Joan Gamper",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        },
+        {
+          "comp": "Primera División RFEF",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ]
     },
     {
       "id": "alberto-mari-sanchez-288074",
@@ -209046,7 +211974,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        }
+      ]
     },
     {
       "id": "pablo-marin-tejada-290106",
@@ -209348,7 +212285,52 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Trofeo Joan Gamper",
+          "country": "World",
+          "count": 3,
+          "seasons": [
+            "2025",
+            "2023",
+            "2022"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 2,
+          "seasons": [
+            "2025",
+            "2023"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 2,
+          "seasons": [
+            "2024/2025",
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "División de Honor Juvenil",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ]
     },
     {
       "id": "manuel-bueno-sebastian-331607",
@@ -209385,7 +212367,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "UEFA/CONMEBOL Club Challenge",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        },
+        {
+          "comp": "UEFA Europa League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        }
+      ]
     },
     {
       "id": "unai-gomez-etxebarria-332308",
@@ -209413,7 +212412,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        }
+      ]
     },
     {
       "id": "diego-mendez-molero-333378",
@@ -209496,7 +212504,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa Catalunya",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        }
+      ]
     },
     {
       "id": "rodrigo-mendoza-martinez-moya-341371",
@@ -209588,7 +212605,25 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "liga_pt",
+          "country": null,
+          "count": 2,
+          "seasons": [
+            "2024/2025",
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "Taça de Portugal",
+          "country": "Portugal",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        }
+      ]
     },
     {
       "id": "alvaro-daniel-rodriguez-munoz-343202",
@@ -209634,7 +212669,56 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "UEFA Champions League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "FIFA Intercontinental Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Copa del Rey Juvenil",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        }
+      ]
     },
     {
       "id": "mario-martin-rielves-343205",
@@ -209689,7 +212773,64 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "UEFA Super Cup",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "UEFA Champions League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "FIFA Intercontinental Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Copa del Rey Juvenil",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        }
+      ]
     },
     {
       "id": "karl-edouard-blaise-etta-eyong-378284",
@@ -209781,7 +212922,50 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Trofeo Joan Gamper",
+          "country": "World",
+          "count": 2,
+          "seasons": [
+            "2025",
+            "2023"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 2,
+          "seasons": [
+            "2024/2025",
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "UEFA European Championship",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        }
+      ]
     },
     {
       "id": "hector-fort-garcia-386859",
@@ -209827,7 +213011,58 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Trofeo Joan Gamper",
+          "country": "World",
+          "count": 2,
+          "seasons": [
+            "2025",
+            "2023"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "Copa del Rey Juvenil",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 2,
+          "seasons": [
+            "2024/2025",
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "UEFA Youth League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        }
+      ]
     },
     {
       "id": "francisco-javier-gonzalez-perez-396475",
@@ -210019,7 +213254,61 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "China PR",
+          "count": 2,
+          "seasons": [
+            "2025",
+            "2024"
+          ]
+        },
+        {
+          "comp": "Taça da Liga",
+          "country": "Portugal",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Taça de Portugal",
+          "country": "Portugal",
+          "count": 3,
+          "seasons": [
+            "2022/2023",
+            "2021/2022",
+            "2019/2020"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Portugal",
+          "count": 2,
+          "seasons": [
+            "2022",
+            "2020"
+          ]
+        },
+        {
+          "comp": "liga_pt",
+          "country": null,
+          "count": 2,
+          "seasons": [
+            "2021/2022",
+            "2019/2020"
+          ]
+        },
+        {
+          "comp": "Segunda Liga",
+          "country": "Portugal",
+          "count": 1,
+          "seasons": [
+            "2016/2017"
+          ]
+        }
+      ]
     },
     {
       "id": "daley-sinkgraven-536",
@@ -210119,7 +213408,32 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Eredivisie",
+          "country": "Netherlands",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        },
+        {
+          "comp": "KNVB Beker",
+          "country": "Netherlands",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        },
+        {
+          "comp": "Eerste Divisie",
+          "country": "Netherlands",
+          "count": 1,
+          "seasons": [
+            "2017/2018"
+          ]
+        }
+      ]
     },
     {
       "id": "mohameth-djibril-ibrahima-sow-957",
@@ -210183,7 +213497,25 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "UEFA Europa League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "Super League",
+          "country": "Switzerland",
+          "count": 2,
+          "seasons": [
+            "2018/2019",
+            "2017/2018"
+          ]
+        }
+      ]
     },
     {
       "id": "diadie-samassekou-1094",
@@ -210301,7 +213633,35 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "The Atlantic Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2019"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Austria",
+          "count": 2,
+          "seasons": [
+            "2018/2019",
+            "2016/2017"
+          ]
+        },
+        {
+          "comp": "Bundesliga",
+          "country": "Austria",
+          "count": 3,
+          "seasons": [
+            "2018/2019",
+            "2017/2018",
+            "2016/2017"
+          ]
+        }
+      ]
     },
     {
       "id": "jailson-marques-siqueira-1364",
@@ -210464,7 +213824,67 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Paulista A1",
+          "country": "Brazil",
+          "count": 2,
+          "seasons": [
+            "2023",
+            "2022"
+          ]
+        },
+        {
+          "comp": "Serie A",
+          "country": "Brazil",
+          "count": 2,
+          "seasons": [
+            "2023",
+            "2022"
+          ]
+        },
+        {
+          "comp": "Supercopa do Brasil",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        },
+        {
+          "comp": "CONMEBOL Recopa",
+          "country": "South America",
+          "count": 2,
+          "seasons": [
+            "2022",
+            "2018"
+          ]
+        },
+        {
+          "comp": "Gaúcho 1",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2018"
+          ]
+        },
+        {
+          "comp": "CONMEBOL Libertadores",
+          "country": "South America",
+          "count": 1,
+          "seasons": [
+            "2017"
+          ]
+        },
+        {
+          "comp": "Copa do Brasil",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2016"
+          ]
+        }
+      ]
     },
     {
       "id": "hamari-traore-2202",
@@ -210537,7 +213957,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Coupe de France",
+          "country": "France",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        }
+      ]
     },
     {
       "id": "carlos-nahuel-benavidez-protesoni-6085",
@@ -210646,7 +214075,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "CONMEBOL U20",
+          "country": "South America",
+          "count": 1,
+          "seasons": [
+            "2017"
+          ]
+        }
+      ]
     },
     {
       "id": "roman-yaremchuk-8493",
@@ -210755,7 +214193,32 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super League 1",
+          "country": "Greece",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Greece",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "Premier League",
+          "country": "Ukraine",
+          "count": 1,
+          "seasons": [
+            "2015/2016"
+          ]
+        }
+      ]
     },
     {
       "id": "augusto-martin-batalla-barga-11379",
@@ -210882,7 +214345,66 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa Argentina",
+          "country": "Argentina",
+          "count": 2,
+          "seasons": [
+            "2017",
+            "2016"
+          ]
+        },
+        {
+          "comp": "CONMEBOL Recopa",
+          "country": "South America",
+          "count": 2,
+          "seasons": [
+            "2016",
+            "2015"
+          ]
+        },
+        {
+          "comp": "Super Copa",
+          "country": "Argentina",
+          "count": 1,
+          "seasons": [
+            "2015"
+          ]
+        },
+        {
+          "comp": "CONMEBOL U20",
+          "country": "South America",
+          "count": 1,
+          "seasons": [
+            "2015"
+          ]
+        },
+        {
+          "comp": "CONMEBOL Libertadores",
+          "country": "South America",
+          "count": 1,
+          "seasons": [
+            "2015"
+          ]
+        },
+        {
+          "comp": "CONMEBOL Sudamericana",
+          "country": "South America",
+          "count": 1,
+          "seasons": [
+            "2014"
+          ]
+        },
+        {
+          "comp": "CONMEBOL U17",
+          "country": "South America",
+          "count": 1,
+          "seasons": [
+            "2013"
+          ]
+        }
+      ]
     },
     {
       "id": "famara-diedhiou-19278",
@@ -211045,7 +214567,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "CAF Africa Cup of Nations",
+          "country": "Africa",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        }
+      ]
     },
     {
       "id": "rominigue-kouame-n-guessan-20608",
@@ -211172,7 +214711,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Ligue 2",
+          "country": "France",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "christ-emmanuel-faitout-maouassa-21441",
@@ -211335,7 +214883,40 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "First Division A",
+          "country": "Belgium",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "Ligue 2",
+          "country": "France",
+          "count": 1,
+          "seasons": [
+            "2015/2016"
+          ]
+        },
+        {
+          "comp": "UEFA U19 Championship",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2015/2016"
+          ]
+        },
+        {
+          "comp": "UEFA U17 Championship",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2014/2015"
+          ]
+        }
+      ]
     },
     {
       "id": "mihailo-ristic-21584",
@@ -211435,7 +215016,32 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Portugal",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        },
+        {
+          "comp": "liga_pt",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Super Liga",
+          "country": "Serbia",
+          "count": 1,
+          "seasons": [
+            "2015/2016"
+          ]
+        }
+      ]
     },
     {
       "id": "sory-kaba-21714",
@@ -211544,7 +215150,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Superliga",
+          "country": "Denmark",
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        }
+      ]
     },
     {
       "id": "jonathan-fousseni-bamba-22235",
@@ -211671,7 +215286,32 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "CAF Africa Cup of Nations",
+          "country": "Africa",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Trophée des Champions",
+          "country": "France",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        },
+        {
+          "comp": "ligue1",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "siebe-van-der-heyden-37639",
@@ -211744,7 +215384,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Challenger Pro League",
+          "country": "Belgium",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "sheraldo-rudi-becker-37938",
@@ -211862,7 +215511,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "U19 Divisie 1",
+          "country": "Netherlands",
+          "count": 1,
+          "seasons": [
+            "2013/2014"
+          ]
+        }
+      ]
     },
     {
       "id": "ibrahima-kone-39245",
@@ -212053,7 +215711,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        }
+      ]
     },
     {
       "id": "alvaro-valles-rosa-46990",
@@ -212181,7 +215848,42 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "League Cup",
+          "country": "Scotland",
+          "count": 2,
+          "seasons": [
+            "2022/2023",
+            "2021"
+          ]
+        },
+        {
+          "comp": "Premiership",
+          "country": "Scotland",
+          "count": 2,
+          "seasons": [
+            "2022/2023",
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "Scottish Cup",
+          "country": "Scotland",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Superettan",
+          "country": "Sweden",
+          "count": 1,
+          "seasons": [
+            "2017"
+          ]
+        }
+      ]
     },
     {
       "id": "kirian-rodriguez-concepcion-70315",
@@ -212455,7 +216157,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Jugendliga U18",
+          "country": "Austria",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        }
+      ]
     },
     {
       "id": "jude-victor-william-bellingham-129718",
@@ -212492,7 +216203,56 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "UEFA Super Cup",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "FIFA Intercontinental Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "UEFA Champions League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "DFB Pokal",
+          "country": "Germany",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "joao-lucas-de-souza-cardoso-133185",
@@ -212628,7 +216388,17 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Concacaf Nations League",
+          "country": "N/C America",
+          "count": 2,
+          "seasons": [
+            "2023/2024",
+            "2022/2023"
+          ]
+        }
+      ]
     },
     {
       "id": "adria-altimira-reynaldos-162122",
@@ -212701,7 +216471,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa Catalunya",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        }
+      ]
     },
     {
       "id": "javier-rueda-garcia-179955",
@@ -212747,7 +216526,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "UEFA Youth League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        }
+      ]
     },
     {
       "id": "alberto-moleiro-gonzalez-182519",
@@ -212930,7 +216718,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        }
+      ]
     },
     {
       "id": "isaac-romero-bernal-185398",
@@ -212985,7 +216782,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "UEFA/CONMEBOL Club Challenge",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        }
+      ]
     },
     {
       "id": "carlos-vicente-robles-187214",
@@ -213122,7 +216928,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Primera División",
+          "country": "Venezuela",
+          "count": 1,
+          "seasons": [
+            "2020"
+          ]
+        }
+      ]
     },
     {
       "id": "arsen-zakharyan-268960",
@@ -213269,7 +217084,56 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "UEFA Super Cup",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "FIFA Intercontinental Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "UEFA Champions League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Türkiye",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        }
+      ]
     },
     {
       "id": "daniel-andres-luna-garcia-297646",
@@ -213342,7 +217206,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Primera A",
+          "country": "Colombia",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        }
+      ]
     },
     {
       "id": "jhon-elmer-solis-romero-306727",
@@ -213415,7 +217288,40 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa Catalunya",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "Superliga",
+          "country": "Colombia",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        },
+        {
+          "comp": "Primera A",
+          "country": "Colombia",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        },
+        {
+          "comp": "Copa Colombia",
+          "country": "Colombia",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        }
+      ]
     },
     {
       "id": "alvaro-santiago-mourino-gonzalez-311773",
@@ -213470,7 +217376,32 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Uruguay",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        },
+        {
+          "comp": "Super Copa",
+          "country": "Uruguay",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        },
+        {
+          "comp": "Liga AUF",
+          "country": "Uruguay",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "hugo-rincon-lumbreras-313025",
@@ -213534,7 +217465,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        }
+      ]
     },
     {
       "id": "yoel-lago-amil-329722",
@@ -213618,7 +217558,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        }
+      ]
     },
     {
       "id": "stanis-idumbo-muzambo-340152",
@@ -213719,7 +217668,32 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Belgium",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        },
+        {
+          "comp": "First Division A",
+          "country": "Belgium",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Belgium",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        }
+      ]
     },
     {
       "id": "vitor-hugo-roque-ferreira-340279",
@@ -213846,7 +217820,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Paranaense 1",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        },
+        {
+          "comp": "CONMEBOL U20",
+          "country": "South America",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        }
+      ]
     },
     {
       "id": "fermin-lopez-martin-340626",
@@ -213865,7 +217856,65 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Trofeo Joan Gamper",
+          "country": "World",
+          "count": 2,
+          "seasons": [
+            "2025",
+            "2023"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "UEFA European Championship",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Olympics Men",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "División de Honor Juvenil",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ]
     },
     {
       "id": "nobel-mendy-358431",
@@ -213975,7 +218024,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Olympics Men",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        }
+      ]
     },
     {
       "id": "yarek-gasiorowski-hernandis-361385",
@@ -214012,7 +218070,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Netherlands",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "UEFA U19 Championship",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        }
+      ]
     },
     {
       "id": "asier-osambela-larraya-381197",
@@ -214133,7 +218208,48 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "Trofeo Joan Gamper",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "Olympics Men",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        }
+      ]
     },
     {
       "id": "jon-martin-vicente-405073",
@@ -214262,7 +218378,85 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "FIFA Intercontinental Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "UEFA Super Cup",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Trophée des Champions",
+          "country": "France",
+          "count": 5,
+          "seasons": [
+            "2024",
+            "2022",
+            "2021",
+            "2019",
+            "2018"
+          ]
+        },
+        {
+          "comp": "ligue1",
+          "country": null,
+          "count": 7,
+          "seasons": [
+            "2023/2024",
+            "2022/2023",
+            "2021/2022",
+            "2019/2020",
+            "2018/2019",
+            "2017/2018",
+            "2016/2017"
+          ]
+        },
+        {
+          "comp": "Coupe de France",
+          "country": "France",
+          "count": 4,
+          "seasons": [
+            "2023/2024",
+            "2020/2021",
+            "2019/2020",
+            "2017/2018"
+          ]
+        },
+        {
+          "comp": "UEFA Nations League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2020/2022"
+          ]
+        },
+        {
+          "comp": "FIFA World Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2018"
+          ]
+        },
+        {
+          "comp": "UEFA U19 Championship",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2015/2016"
+          ]
+        }
+      ]
     },
     {
       "id": "florian-grillitsch-719",
@@ -214462,7 +218656,120 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "Trofeo Joan Gamper",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "UEFA European Championship",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Germany",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        },
+        {
+          "comp": "UEFA Nations League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2022/2024"
+          ]
+        },
+        {
+          "comp": "DFB Pokal",
+          "country": "Germany",
+          "count": 2,
+          "seasons": [
+            "2022/2023",
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Croatia",
+          "count": 1,
+          "seasons": [
+            "2019"
+          ]
+        },
+        {
+          "comp": "HNL",
+          "country": "Croatia",
+          "count": 4,
+          "seasons": [
+            "2018/2019",
+            "2017/2018",
+            "2015/2016",
+            "2014/2015"
+          ]
+        },
+        {
+          "comp": "UEFA U21 Championship",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2017/2019"
+          ]
+        },
+        {
+          "comp": "1. HNL Juniori",
+          "country": "Croatia",
+          "count": 2,
+          "seasons": [
+            "2017/2018",
+            "2015/2016"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Croatia",
+          "count": 4,
+          "seasons": [
+            "2017/2018",
+            "2016/2017",
+            "2015/2016",
+            "2014/2015"
+          ]
+        }
+      ]
     },
     {
       "id": "julian-antonio-chicco-5974",
@@ -214535,7 +218842,33 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "Super Copa",
+          "country": "Argentina",
+          "count": 1,
+          "seasons": [
+            "2019"
+          ]
+        },
+        {
+          "comp": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "count": 2,
+          "seasons": [
+            "2017/2018",
+            "2016/2017"
+          ]
+        }
+      ]
     },
     {
       "id": "facundo-tomas-garces-6638",
@@ -214627,7 +218960,35 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Bundesliga",
+          "country": "Austria",
+          "count": 3,
+          "seasons": [
+            "2022/2023",
+            "2021/2022",
+            "2020/2021"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Austria",
+          "count": 2,
+          "seasons": [
+            "2021/2022",
+            "2020/2021"
+          ]
+        },
+        {
+          "comp": "Jugendliga U18",
+          "country": "Austria",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        }
+      ]
     },
     {
       "id": "irvin-charly-jose-cardona-8683",
@@ -214772,7 +219133,32 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Challenger Pro League",
+          "country": "Belgium",
+          "count": 1,
+          "seasons": [
+            "2017/2018"
+          ]
+        },
+        {
+          "comp": "ligue1",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2016/2017"
+          ]
+        },
+        {
+          "comp": "Coupe Gambardella",
+          "country": "France",
+          "count": 1,
+          "seasons": [
+            "2016"
+          ]
+        }
+      ]
     },
     {
       "id": "maximiliano-caufriez-8718",
@@ -214890,7 +219276,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Cup",
+          "country": "Russia",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ]
     },
     {
       "id": "henrique-silva-milagres-10561",
@@ -215026,7 +219421,17 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Carioca Série A",
+          "country": "Brazil",
+          "count": 2,
+          "seasons": [
+            "2016",
+            "2015"
+          ]
+        }
+      ]
     },
     {
       "id": "valentin-andre-henri-rosier-21701",
@@ -215144,7 +219549,32 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Türkiye",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        },
+        {
+          "comp": "Süper Lig",
+          "country": "Türkiye",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Türkiye",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "logan-evans-costa-21997",
@@ -215217,7 +219647,25 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Coupe de France",
+          "country": "France",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Ligue 2",
+          "country": "France",
+          "count": 2,
+          "seasons": [
+            "2021/2022",
+            "2017/2018"
+          ]
+        }
+      ]
     },
     {
       "id": "takuma-asano-25375",
@@ -215308,7 +219756,43 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "2. Bundesliga",
+          "country": "Germany",
+          "count": 1,
+          "seasons": [
+            "2016/2017"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Japan",
+          "count": 3,
+          "seasons": [
+            "2016",
+            "2014",
+            "2013"
+          ]
+        },
+        {
+          "comp": "AFC U23 Asian Cup",
+          "country": "Asia",
+          "count": 1,
+          "seasons": [
+            "2015/2016"
+          ]
+        },
+        {
+          "comp": "J1 League",
+          "country": "Japan",
+          "count": 2,
+          "seasons": [
+            "2015",
+            "2013"
+          ]
+        }
+      ]
     },
     {
       "id": "tamas-nikitscher-28373",
@@ -215671,7 +220155,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Segunda División",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        }
+      ]
     },
     {
       "id": "ivan-jaime-pajuelo-46828",
@@ -215753,7 +220246,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Portugal",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Taça de Portugal",
+          "country": "Portugal",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        }
+      ]
     },
     {
       "id": "ruben-estephan-vargas-martinez-48471",
@@ -215917,7 +220427,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Copa",
+          "country": "Argentina",
+          "count": 1,
+          "seasons": [
+            "2016"
+          ]
+        }
+      ]
     },
     {
       "id": "akor-jerome-adams-57446",
@@ -216036,7 +220555,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Superliga",
+          "country": "Denmark",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "1. Deild",
+          "country": "Iceland",
+          "count": 1,
+          "seasons": [
+            "2019"
+          ]
+        }
+      ]
     },
     {
       "id": "bertug-ozgur-y-ld-r-m-68483",
@@ -216236,7 +220772,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Coupe de France",
+          "country": "France",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Ligue 2",
+          "country": "France",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ]
     },
     {
       "id": "mateu-jaume-morey-bauza-108519",
@@ -216300,7 +220853,40 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "DFB Pokal",
+          "country": "Germany",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Germany",
+          "count": 1,
+          "seasons": [
+            "2019"
+          ]
+        },
+        {
+          "comp": "UEFA Youth League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2017/2018"
+          ]
+        },
+        {
+          "comp": "UEFA U17 Championship",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2016/2017"
+          ]
+        }
+      ]
     },
     {
       "id": "bojan-miovski-109564",
@@ -216418,7 +221004,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa Catalunya",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        }
+      ]
     },
     {
       "id": "gerard-fernandez-castellano-162126",
@@ -216482,7 +221077,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "División de Honor Juvenil",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ]
     },
     {
       "id": "hugo-novoa-ramos-162170",
@@ -216555,7 +221159,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Germany",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        },
+        {
+          "comp": "DFB Pokal",
+          "country": "Germany",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ]
     },
     {
       "id": "alejandro-frances-torrijo-162434",
@@ -216592,7 +221213,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa Catalunya",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        }
+      ]
     },
     {
       "id": "abel-bretones-cruz-181259",
@@ -216675,7 +221305,40 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "Trofeo Joan Gamper",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        }
+      ]
     },
     {
       "id": "alvaro-djalo-dias-fernandes-190489",
@@ -216721,7 +221384,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Taça da Liga",
+          "country": "Portugal",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        }
+      ]
     },
     {
       "id": "ramon-martinez-gil-197196",
@@ -216987,7 +221659,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa Catalunya",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        }
+      ]
     },
     {
       "id": "maroan-sannadi-harrouch-287680",
@@ -217449,7 +222130,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "1. Division",
+          "country": "Norway",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        }
+      ]
     },
     {
       "id": "youssef-enriquez-lekhedim-361384",
@@ -217568,7 +222258,50 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Paulista A1",
+          "country": "Brazil",
+          "count": 2,
+          "seasons": [
+            "2024",
+            "2023"
+          ]
+        },
+        {
+          "comp": "UEFA Super Cup",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "FIFA Intercontinental Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Serie A",
+          "country": "Brazil",
+          "count": 2,
+          "seasons": [
+            "2023",
+            "2022"
+          ]
+        },
+        {
+          "comp": "Supercopa do Brasil",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        }
+      ]
     },
     {
       "id": "jose-maria-andres-baixauli-388871",
@@ -217938,7 +222671,32 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Serie A",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "CONMEBOL Libertadores",
+          "country": "South America",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "FIFA World Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        }
+      ]
     },
     {
       "id": "gabriel-alonso-suazo-urbina-11421",
@@ -218047,7 +222805,46 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Coupe de France",
+          "country": "France",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Primera División",
+          "country": "Chile",
+          "count": 3,
+          "seasons": [
+            "2022",
+            "2017",
+            "2015/2016"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Chile",
+          "count": 3,
+          "seasons": [
+            "2022",
+            "2018",
+            "2017"
+          ]
+        },
+        {
+          "comp": "Copa Chile",
+          "country": "Chile",
+          "count": 3,
+          "seasons": [
+            "2021",
+            "2019/2020",
+            "2016"
+          ]
+        }
+      ]
     },
     {
       "id": "goduine-koyalipou-20817",
@@ -218437,7 +223234,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Tournoi Maurice Revello",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2015"
+          ]
+        }
+      ]
     },
     {
       "id": "fabio-rafael-rodrigues-cardoso-41208",
@@ -218519,7 +223325,43 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Portugal",
+          "count": 2,
+          "seasons": [
+            "2024",
+            "2022"
+          ]
+        },
+        {
+          "comp": "Taça de Portugal",
+          "country": "Portugal",
+          "count": 3,
+          "seasons": [
+            "2023/2024",
+            "2022/2023",
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "Taça da Liga",
+          "country": "Portugal",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "liga_pt",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ]
     },
     {
       "id": "david-mota-veiga-teixeira-carmo-41970",
@@ -218628,7 +223470,67 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super League 1",
+          "country": "Greece",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Greece",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Portugal",
+          "count": 2,
+          "seasons": [
+            "2024",
+            "2022"
+          ]
+        },
+        {
+          "comp": "UEFA Conference League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "Taça da Liga",
+          "country": "Portugal",
+          "count": 2,
+          "seasons": [
+            "2022/2023",
+            "2019/2020"
+          ]
+        },
+        {
+          "comp": "Taça de Portugal",
+          "country": "Portugal",
+          "count": 2,
+          "seasons": [
+            "2022/2023",
+            "2020/2021"
+          ]
+        },
+        {
+          "comp": "UEFA U19 Championship",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2017/2018"
+          ]
+        }
+      ]
     },
     {
       "id": "veljko-birmancevic-45804",
@@ -218728,7 +223630,56 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Cup",
+          "country": "Czechia",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "Czech Liga",
+          "country": "Czechia",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "Coupe de France",
+          "country": "France",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Svenska Cupen",
+          "country": "Sweden",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "Allsvenskan",
+          "country": "Sweden",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Serbia",
+          "count": 1,
+          "seasons": [
+            "2015/2016"
+          ]
+        }
+      ]
     },
     {
       "id": "filip-ugrinic-48465",
@@ -218783,7 +223734,26 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super League",
+          "country": "Switzerland",
+          "count": 2,
+          "seasons": [
+            "2023/2024",
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Schweizer Pokal",
+          "country": "Switzerland",
+          "count": 2,
+          "seasons": [
+            "2022/2023",
+            "2020/2021"
+          ]
+        }
+      ]
     },
     {
       "id": "federico-sebastian-vinas-barboza-51530",
@@ -219320,7 +224290,33 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Premier League",
+          "country": "Ukraine",
+          "count": 2,
+          "seasons": [
+            "2024/2025",
+            "2020/2021"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Ukraine",
+          "count": 1,
+          "seasons": [
+            "2020/2021"
+          ]
+        },
+        {
+          "comp": "U19 League",
+          "country": "Ukraine",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        }
+      ]
     },
     {
       "id": "georges-mikautadze-180496",
@@ -219420,7 +224416,17 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Play-offs 1/2",
+          "country": "Belgium",
+          "count": 2,
+          "seasons": [
+            "2022",
+            "2021"
+          ]
+        }
+      ]
     },
     {
       "id": "alvaro-nunez-cobo-182661",
@@ -219557,7 +224563,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Copa Catalunya",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        }
+      ]
     },
     {
       "id": "martim-carvalho-neto-271580",
@@ -219621,7 +224636,32 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "U20 Intercontinental Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        },
+        {
+          "comp": "Júniores U19",
+          "country": "Portugal",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "UEFA Youth League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ]
     },
     {
       "id": "tyrhys-dolan-273732",
@@ -219841,7 +224881,40 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "MLS All-Star",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Concacaf Champions Cup",
+          "country": "N/C America",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Copa Colombia",
+          "country": "Colombia",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        },
+        {
+          "comp": "Superliga",
+          "country": "Colombia",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        }
+      ]
     },
     {
       "id": "roony-bardghji-338958",
@@ -219869,7 +224942,43 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Trofeo Joan Gamper",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "Superliga",
+          "country": "Denmark",
+          "count": 3,
+          "seasons": [
+            "2024/2025",
+            "2022/2023",
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "DBU Pokalen",
+          "country": "Denmark",
+          "count": 2,
+          "seasons": [
+            "2024/2025",
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "U19 Ligaen",
+          "country": "Denmark",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ]
     },
     {
       "id": "tanitoluwa-oluwatimikhin-oluwaseyi-351587",
@@ -219979,7 +225088,24 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Copa International",
+          "country": "Argentina",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        }
+      ]
     },
     {
       "id": "adrian-liso-lahoz-394573",
@@ -220126,7 +225252,16 @@
         }
       ],
       "careerComplete": true,
-      "trophies": []
+      "trophies": [
+        {
+          "comp": "Super Copa",
+          "country": "Argentina",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        }
+      ]
     },
     {
       "id": "jan-virgili-tenas-491248",
