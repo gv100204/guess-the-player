@@ -165,6 +165,7 @@ function extractFullNameField(wikitext) {
   const m = wikitext.match(/\|\s*fullname\s*=\s*([^\n]+)/i);
   if (!m) return null;
   const withoutBlocks = m[1]
+    .replace(/<!--[\s\S]*?-->/g, "") // commenti HTML nascosti (es. "<!--non cambiare-->" prima del vero nome)
     .replace(/<ref[^>]*\/>|<ref[^>]*>.*?<\/ref>/gi, "") // blocco intero, non solo il tag
     .replace(/\{\{[^{}]*\}\}/g, "") // template semplici (senza altre {{ }} annidate dentro)
     // Link wiki [[testo|alias]] hanno anche loro un pipe interno - lo
@@ -893,7 +894,7 @@ async function main() {
       // disponibile) - bug reale: "José" da solo si agganciava sempre a
       // "Josue (footballer, born 1987)", un'altra persona con 10 tappe
       // proprie, accettata per errore solo perché il numero era alto.
-      if (wikiEntries.length > 0 && !isTrustworthyMatch(p.name, title, wikitext, p.birthYear, true, p.name)) {
+      if (wikiEntries.length > 0 && !isTrustworthyMatch(p.name, title, wikitext, p.birthYear, !p.birthYear, p.name)) {
         const foundFullName = extractFullNameField(wikitext);
         const foundBirthYear = extractBirthYear(wikitext);
         console.log(`  (${p.name}: pagina trovata (${title}) non sembra la persona giusta, la scarto e riprovo...)`);
@@ -914,7 +915,7 @@ async function main() {
         wikitext = await fetchWikitext(title);
         await sleep(REQUEST_DELAY_MS);
         wikiEntries = parseSeniorCareer(wikitext);
-        if (wikiEntries.length > 0 && !isTrustworthyMatch(p.name, title, wikitext, p.birthYear, true, p.name)) {
+        if (wikiEntries.length > 0 && !isTrustworthyMatch(p.name, title, wikitext, p.birthYear, !p.birthYear, p.name)) {
           wikiEntries = [];
         }
       }
