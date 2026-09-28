@@ -360,7 +360,12 @@ async function findWikipediaTitle(playerName, birthYear) {
 
 async function fetchWikitext(title) {
   const query = encodeURIComponent(title);
-  const url = `https://en.wikipedia.org/w/api.php?action=query&titles=${query}&prop=revisions&rvprop=content&rvslots=main&format=json`;
+  // redirects=1: se il titolo cercato è in realtà un reindirizzamento
+  // (es. "José Andrés Guardado Hernández" -> "Andrés Guardado"), l'API lo
+  // segue da sola e restituisce il contenuto vero della pagina di
+  // destinazione - senza questo parametro si ottiene solo la riga
+  // "#REDIRECT [[...]]", zero tappe, e nessun campo "fullname" da leggere.
+  const url = `https://en.wikipedia.org/w/api.php?action=query&titles=${query}&redirects=1&prop=revisions&rvprop=content&rvslots=main&format=json`;
   const data = await wikiFetch(url);
   const pages = data.query?.pages || {};
   const page = Object.values(pages)[0];
