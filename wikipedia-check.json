@@ -76832,6 +76832,39 @@
       "missing": [],
       "checkedAt": "2026-09-25T22:24:12.731Z"
     },
+    "87224": {
+      "name": "Abdoulaye Traoré",
+      "wikipediaTitle": "Abdou Traoré (footballer, born 1988)",
+      "verdict": "fail",
+      "missingFraction": 0.6,
+      "missing": [
+        {
+          "team": "CO Bamako",
+          "from": 2005,
+          "to": 2006,
+          "position": "iniziale",
+          "apps": 47,
+          "goals": 14
+        },
+        {
+          "team": "Bordeaux B",
+          "from": 2012,
+          "to": 2017,
+          "position": "centrale",
+          "apps": 26,
+          "goals": 1
+        },
+        {
+          "team": "Al-Nahda",
+          "from": 2018,
+          "to": 2018,
+          "position": "finale",
+          "apps": 13,
+          "goals": 0
+        }
+      ],
+      "checkedAt": "2026-09-28T20:22:30.382Z"
+    },
     "87225": {
       "name": "Guido Leonardo Milán",
       "wikipediaTitle": "Guido Milán",

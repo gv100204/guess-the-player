@@ -274,6 +274,32 @@ function isTrustworthyMatch(query, title, wikitext, expectedBirthYear, requireNa
 //     PRIMA, es. i nostri dati hanno "Ji-Sung Park", il titolo vero è
 //     "Park Ji-sung")
 const NAME_CONNECTORS = new Set(["i", "y", "e", "de", "da", "do", "del", "van", "von", "der", "la", "las", "los", "das", "dos", "du"]);
+
+// Diminutivi greci: il nome pubblico/da giocatore spesso non ha NESSUNA
+// lettera in comune con il nome formale (es. "Stylianos" -> "Stelios"),
+// quindi nessuna combinazione di parole può mai trovarlo - serve una
+// tabella scritta a mano. Solo le corrispondenze più consolidate e
+// riconosciute, non inventate.
+const GREEK_DIMINUTIVES = new Map([
+  ["stylianos", "stelios"],
+  ["konstantinos", "kostas"],
+  ["ioannis", "giannis"],
+  ["nikolaos", "nikos"],
+  ["anastasios", "tasos"],
+  ["panagiotis", "panos"],
+  ["georgios", "giorgos"],
+  ["dimitrios", "dimitris"],
+  ["vasileios", "vasilis"],
+  ["athanasios", "thanasis"],
+  ["efstathios", "stathis"],
+  ["spyridon", "spyros"],
+  ["theodoros", "thodoris"],
+  ["aristeidis", "aris"],
+  ["charalampos", "babis"],
+  ["michail", "michalis"],
+  ["emmanouil", "manolis"]
+]);
+
 function nameCandidates(fullName, birthYear) {
   const candidates = [];
 
@@ -288,6 +314,18 @@ function nameCandidates(fullName, birthYear) {
   candidates.push(`${fullName} (footballer)`);
 
   const parts = fullName.trim().split(/\s+/).filter((w) => !NAME_CONNECTORS.has(w.toLowerCase()));
+
+  // Diminutivo greco al posto del primo nome, se lo riconosciamo - va
+  // provato presto: se il resto del nome (cognome) combacia comunque, è un
+  // candidato molto affidabile, non una scommessa come il mononimo nudo.
+  const diminutiveRaw = parts.length > 0 ? GREEK_DIMINUTIVES.get(normalizeWord(parts[0])) : null;
+  const diminutive = diminutiveRaw ? diminutiveRaw[0].toUpperCase() + diminutiveRaw.slice(1) : null;
+  if (diminutive) {
+    const rest = parts.slice(1).join(" ");
+    if (birthYear) candidates.push(`${diminutive} ${rest} (footballer, born ${birthYear})`);
+    candidates.push(`${diminutive} ${rest} (footballer)`);
+    candidates.push(`${diminutive} ${rest}`);
+  }
 
   if (parts.length === 2) {
     candidates.push(`${parts[1]} ${parts[0]}`); // ordine invertito (coreano)
