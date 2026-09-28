@@ -157,11 +157,25 @@ function extractBirthYear(wikitext) {
 // cercato, ma il campo fullname sì, parola per parola.
 function extractFullNameField(wikitext) {
   if (!wikitext) return null;
-  const m = wikitext.match(/\|\s*fullname\s*=\s*([^\n|]+)/i);
+  // Catturiamo TUTTA la riga (non ci fermiamo al primo "|"): una citazione
+  // o un template incollato al nome può contenere pipe al suo interno
+  // (es. "{{cite news |title=... |url=...}}"), e fermarsi al primo pipe
+  // trovato taglia a metà, PRIMA della "}}" di chiusura - bug reale
+  // trovato su "Francis Chris Malonga Ntsayi{{cite news" (mai richiuso).
+  const m = wikitext.match(/\|\s*fullname\s*=\s*([^\n]+)/i);
   if (!m) return null;
-  return m[1]
+  const withoutBlocks = m[1]
     .replace(/<ref[^>]*\/>|<ref[^>]*>.*?<\/ref>/gi, "") // blocco intero, non solo il tag
-    .replace(/\{\{[^}]*\}\}|\[\[([^\]|]+\|)?([^\]]+)\]\]|<[^>]+>|\[\d+\]/g, "$2")
+    .replace(/\{\{[^{}]*\}\}/g, "") // template semplici (senza altre {{ }} annidate dentro)
+    // Link wiki [[testo|alias]] hanno anche loro un pipe interno - lo
+    // risolviamo subito (teniamo solo l'alias, o il testo se non c'è alias)
+    // invece di lasciarlo lì a confondere il taglio sul primo "|" più sotto.
+    .replace(/\[\[([^\]|]+\|)?([^\]]+)\]\]/g, "$2")
+    .replace(/<[^>]+>|\[\d+\]/g, "");
+  // Ora che i blocchi con pipe interni sono spariti, il primo "|" rimasto
+  // è davvero il separatore verso il parametro successivo del wikitext.
+  return withoutBlocks
+    .split("|")[0]
     .replace(/"/g, "")
     .trim();
 }
