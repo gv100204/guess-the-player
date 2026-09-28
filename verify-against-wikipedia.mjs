@@ -347,7 +347,18 @@ function nameCandidates(fullName, birthYear) {
     candidates.push(`${parts[0]} ${parts[1]} (footballer)`);
     if (birthYear) candidates.push(`${parts[0]} (footballer, born ${birthYear})`);
     candidates.push(`${parts[0]} (footballer)`);
-    candidates.push(parts[0]); // mononimo nudo - ultima risorsa tra questi, il più rischioso
+
+    // Mononimo sull'ULTIMA parola (il cognome), con disambiguante: alcuni
+    // giocatori sono noti solo col cognome, non col nome di battesimo -
+    // caso reale trovato: "Paulo Vitor de Sousa Barreto" è conosciuto solo
+    // come "Barreto" ("Barreto (footballer, born 1985)"), il nome di
+    // battesimo non compare mai nel titolo. Col disambiguante è
+    // ragionevolmente sicuro anche se il cognome da solo è comune.
+    const last = parts[parts.length - 1];
+    if (birthYear) candidates.push(`${last} (footballer, born ${birthYear})`);
+    candidates.push(`${last} (footballer)`);
+
+    candidates.push(parts[0]); // mononimo nudo sulla prima parola - ultima risorsa, il più rischioso
 
     for (let i = 1; i < parts.length; i++) candidates.push(`${parts[0]} ${parts[i]}`); // prima + ciascuna altra
     for (let i = 1; i < parts.length - 1; i++) candidates.push(`${parts[i]} ${parts[i + 1]}`); // coppie senza la prima
