@@ -1,0 +1,460 @@
+{
+  "unresolved": {
+    "1036": {
+      "name": "Ignacio Cases Mora",
+      "birthYear": 1987,
+      "nationality": "Spain",
+      "reason": "unreadable",
+      "titleFound": "Nacho Cases",
+      "lastTriedAt": "2026-09-28T14:12:04.526Z"
+    },
+    "1573": {
+      "name": "José Andrés Guardado Hernández",
+      "birthYear": 1986,
+      "nationality": "Mexico",
+      "reason": "unreadable",
+      "titleFound": "Andrés Guardado",
+      "lastTriedAt": "2026-09-28T19:29:22.035Z"
+    },
+    "1599": {
+      "name": "Vassilis Torosidis",
+      "birthYear": 1985,
+      "nationality": "Greece",
+      "reason": "unreadable",
+      "titleFound": "Vasilis Torosidis",
+      "lastTriedAt": "2026-09-28T17:33:22.896Z"
+    },
+    "2365": {
+      "name": "Stylianos Malezas",
+      "birthYear": 1985,
+      "nationality": "Greece",
+      "reason": "unreadable",
+      "titleFound": "Panetolikos F.C.",
+      "lastTriedAt": "2026-09-28T17:32:17.870Z"
+    },
+    "2706": {
+      "name": "Manuel Marouan da Costa Trindade Senoussi",
+      "birthYear": 1986,
+      "nationality": "Morocco",
+      "reason": "unreadable",
+      "titleFound": "Manuel (footballer, born 1941)",
+      "lastTriedAt": "2026-09-28T13:17:41.174Z"
+    },
+    "3378": {
+      "name": "Abdoul Khaled Akiola Adénon",
+      "birthYear": 1985,
+      "nationality": "Benin",
+      "reason": "unreadable",
+      "titleFound": "Khaled Adénon",
+      "lastTriedAt": "2026-09-28T19:10:35.107Z"
+    },
+    "5966": {
+      "name": "Lisandro Ezequiel López Dessypris",
+      "birthYear": 1989,
+      "nationality": "Argentina",
+      "reason": "unreadable",
+      "titleFound": "Leandro (footballer, born 1993)",
+      "lastTriedAt": "2026-09-28T13:39:16.825Z"
+    },
+    "6886": {
+      "name": "Papa Babacar Diawara",
+      "birthYear": 1988,
+      "nationality": "Senegal",
+      "reason": "unreadable",
+      "titleFound": "Baba Diawara",
+      "lastTriedAt": "2026-09-28T19:13:43.192Z"
+    },
+    "9437": {
+      "name": "Lazaro Luan Zanini Scapolan",
+      "birthYear": 1988,
+      "nationality": "Brazil",
+      "reason": "unreadable",
+      "titleFound": "Lázaro (footballer, born 1990)",
+      "lastTriedAt": "2026-09-28T14:53:52.198Z"
+    },
+    "13109": {
+      "name": "Omatsone Folarin Aluko",
+      "birthYear": 1989,
+      "nationality": "Nigeria",
+      "reason": "unreadable",
+      "titleFound": "Sone Aluko",
+      "lastTriedAt": "2026-09-28T14:13:23.527Z"
+    },
+    "18791": {
+      "name": "Benjamin Anthony Foster",
+      "birthYear": 1983,
+      "nationality": "England",
+      "reason": "unreadable",
+      "titleFound": "Ben Foster (actor)",
+      "lastTriedAt": "2026-09-28T13:41:26.035Z"
+    },
+    "18834": {
+      "name": "Andrii Yarmolenko",
+      "birthYear": 1989,
+      "nationality": "Ukraine",
+      "reason": "unreadable",
+      "titleFound": "Andriy Yarmolenko",
+      "lastTriedAt": "2026-09-28T19:18:35.355Z"
+    },
+    "19054": {
+      "name": "Daniel Williams",
+      "birthYear": 1989,
+      "nationality": "USA",
+      "reason": "unreadable",
+      "titleFound": "Daniel Williams",
+      "lastTriedAt": "2026-09-28T14:43:25.354Z"
+    },
+    "19240": {
+      "name": "Jonathan Mark Howson",
+      "birthYear": 1988,
+      "nationality": "England",
+      "reason": "unreadable",
+      "titleFound": "Jonny Howson",
+      "lastTriedAt": "2026-09-28T19:17:05.124Z"
+    },
+    "19303": {
+      "name": "Benjamin Watson",
+      "birthYear": 1985,
+      "nationality": "England",
+      "reason": "unreadable",
+      "titleFound": "Benjamin Watson",
+      "lastTriedAt": "2026-09-28T13:18:46.129Z"
+    },
+    "19543": {
+      "name": "Daniel Fox",
+      "birthYear": 1986,
+      "nationality": "Scotland",
+      "reason": "unreadable",
+      "titleFound": "Daniel Fox",
+      "lastTriedAt": "2026-09-28T14:19:54.999Z"
+    },
+    "20613": {
+      "name": "Beninwende Yann Jonathan Pitroipa",
+      "birthYear": 1986,
+      "nationality": "Burkina Faso",
+      "reason": "unreadable",
+      "titleFound": "Jonathan Pitroipa",
+      "lastTriedAt": "2026-09-28T14:25:21.585Z"
+    },
+    "20831": {
+      "name": "Abdoulrazak Boukari Fafadji",
+      "birthYear": 1987,
+      "nationality": "Togo",
+      "reason": "unreadable",
+      "titleFound": "Abdul Razak (footballer)",
+      "lastTriedAt": "2026-09-28T13:15:35.663Z"
+    },
+    "22012": {
+      "name": "Jacques-Alaixys Cigánek Romao",
+      "birthYear": 1984,
+      "nationality": "Togo",
+      "reason": "unreadable",
+      "titleFound": "Tomáš Cigánek",
+      "lastTriedAt": "2026-09-28T19:26:29.034Z"
+    },
+    "25329": {
+      "name": "Maximilian Bennet Kruse",
+      "birthYear": 1988,
+      "nationality": "Germany",
+      "reason": "unreadable",
+      "titleFound": "2026 24 Hours of Nürburgring",
+      "lastTriedAt": "2026-09-28T13:27:34.469Z"
+    },
+    "30433": {
+      "name": "Alejandro Darío Gómez Villaverde",
+      "birthYear": 1988,
+      "nationality": "Argentina",
+      "reason": "unreadable",
+      "titleFound": "Papu Gómez",
+      "lastTriedAt": "2026-09-28T13:32:21.950Z"
+    },
+    "30547": {
+      "name": "Rafael de Andrade Bittencourt Pinheir",
+      "birthYear": 1982,
+      "nationality": "Brazil",
+      "reason": "unreadable",
+      "titleFound": "Rafael de Andrade Bittencourt Pinheiro",
+      "lastTriedAt": "2026-09-28T13:29:42.781Z"
+    },
+    "36675": {
+      "name": "Sibiri Alain Traoré",
+      "birthYear": 1988,
+      "nationality": "Burkina Faso",
+      "reason": "unreadable",
+      "titleFound": "Alain Traoré",
+      "lastTriedAt": "2026-09-28T14:16:59.306Z"
+    },
+    "39422": {
+      "name": "Paulo Rinaldo Cruzado Durand",
+      "birthYear": 1984,
+      "nationality": "Peru",
+      "reason": "unreadable",
+      "titleFound": "Rinaldo Cruzado",
+      "lastTriedAt": "2026-09-28T13:43:52.508Z"
+    },
+    "41407": {
+      "name": "José Lionn Barbosa de Lucena",
+      "birthYear": 1989,
+      "nationality": "Brazil",
+      "reason": "unreadable",
+      "titleFound": "Lionn",
+      "lastTriedAt": "2026-09-28T14:41:50.942Z"
+    },
+    "46197": {
+      "name": "Calvin Anele Ngcongca",
+      "birthYear": 1987,
+      "nationality": "South Africa",
+      "reason": "unreadable",
+      "titleFound": "Anele Ngcongca",
+      "lastTriedAt": "2026-09-28T15:01:21.759Z"
+    },
+    "47428": {
+      "name": "Gustavo Daniel Cabral Cáceres",
+      "birthYear": 1985,
+      "nationality": "Argentina",
+      "reason": "unreadable",
+      "titleFound": "List of Argentine footballers in La Liga",
+      "lastTriedAt": "2026-09-28T13:20:58.858Z"
+    },
+    "47517": {
+      "name": "Alejandro Granell Nogué",
+      "birthYear": 1988,
+      "nationality": "Spain",
+      "reason": "unreadable",
+      "titleFound": "Girona FC",
+      "lastTriedAt": "2026-09-28T13:56:17.342Z"
+    },
+    "59963": {
+      "name": "Ferrán Corominas Telechea",
+      "birthYear": 1983,
+      "nationality": "Spain",
+      "reason": "unreadable",
+      "titleFound": "Coro (footballer)",
+      "lastTriedAt": "2026-09-28T13:25:22.124Z"
+    },
+    "59986": {
+      "name": "Pape Amodou Sougou",
+      "birthYear": 1984,
+      "nationality": "Senegal",
+      "reason": "unreadable",
+      "titleFound": "Modou Sougou",
+      "lastTriedAt": "2026-09-28T14:45:13.149Z"
+    },
+    "80389": {
+      "name": "Marcos Venancio de Alburquerque",
+      "birthYear": 1980,
+      "nationality": "Brazil",
+      "reason": "unreadable",
+      "titleFound": "Marcos Venancio de Albuquerque",
+      "lastTriedAt": "2026-09-28T14:39:53.409Z"
+    },
+    "87108": {
+      "name": "Francis Chris Malonga Ntsayi",
+      "birthYear": 1987,
+      "nationality": "Congo",
+      "reason": "unreadable",
+      "titleFound": "Chris Malonga",
+      "lastTriedAt": "2026-09-28T18:08:14.538Z"
+    },
+    "87224": {
+      "name": "Abdoulaye Traoré",
+      "birthYear": 1988,
+      "nationality": "Mali",
+      "reason": "unreadable",
+      "titleFound": "Abdoulaye Traoré (footballer, born 1967)",
+      "lastTriedAt": "2026-09-28T19:19:39.021Z"
+    },
+    "90654": {
+      "name": "Artoms Rudņevs",
+      "birthYear": 1988,
+      "nationality": "Latvia",
+      "reason": "unreadable",
+      "titleFound": "Artjoms Rudņevs",
+      "lastTriedAt": "2026-09-28T15:05:39.217Z"
+    },
+    "90713": {
+      "name": "Tohouri Zahoui Constant Djakpa",
+      "birthYear": 1986,
+      "nationality": "Côte d'Ivoire",
+      "reason": "unreadable",
+      "titleFound": "Constant Djakpa",
+      "lastTriedAt": "2026-09-28T15:08:17.931Z"
+    },
+    "96560": {
+      "name": "Pedro Miguel Dos Santos Oliveira",
+      "birthYear": 1983,
+      "nationality": "Portugal",
+      "reason": "unreadable",
+      "titleFound": "Miguel Oliveira (footballer, born 1983)",
+      "lastTriedAt": "2026-09-28T14:27:46.623Z"
+    },
+    "104851": {
+      "name": "Guilherme Magdalena Siqueira",
+      "birthYear": 1986,
+      "nationality": "Brazil",
+      "reason": "unreadable",
+      "titleFound": "Guillerme Madalena Siqueira",
+      "lastTriedAt": "2026-09-28T14:47:17.382Z"
+    },
+    "105035": {
+      "name": "Jon Ansotegi Gorostola",
+      "birthYear": 1982,
+      "nationality": "Spain",
+      "reason": "unreadable",
+      "titleFound": "Ion Ansotegi",
+      "lastTriedAt": "2026-09-28T13:37:07.395Z"
+    },
+    "105071": {
+      "name": "José Eduardo Albácar Gallego",
+      "birthYear": 1979,
+      "nationality": "Spain",
+      "reason": "unreadable",
+      "titleFound": "José Eduardo (footballer, born 1981)",
+      "lastTriedAt": "2026-09-28T15:31:35.130Z"
+    },
+    "113635": {
+      "name": "Christian Koffi Romaric N'Dri",
+      "birthYear": 1983,
+      "nationality": "Côte d'Ivoire",
+      "reason": "unreadable",
+      "titleFound": "Romaric (footballer)",
+      "lastTriedAt": "2026-09-28T19:02:51.251Z"
+    },
+    "113655": {
+      "name": "Fabien Audard",
+      "birthYear": 1976,
+      "nationality": "France",
+      "reason": "unreadable",
+      "titleFound": "Fabien Audard",
+      "lastTriedAt": "2026-09-28T14:21:23.504Z"
+    },
+    "113678": {
+      "name": "Eric-Sylvain Bilal Abidal",
+      "birthYear": 1979,
+      "nationality": "France",
+      "reason": "unreadable",
+      "titleFound": "List of French films of 2024",
+      "lastTriedAt": "2026-09-28T14:00:25.912Z"
+    },
+    "113743": {
+      "name": "Yohann Poulard",
+      "birthYear": 1976,
+      "nationality": "France",
+      "reason": "unreadable",
+      "titleFound": "Yoann Poulard",
+      "lastTriedAt": "2026-09-28T17:15:08.909Z"
+    },
+    "114870": {
+      "name": "Lohoré Steve Ulrich Gohouri",
+      "birthYear": 1981,
+      "nationality": "Côte d'Ivoire",
+      "reason": "unreadable",
+      "titleFound": "Steve Gohouri",
+      "lastTriedAt": "2026-09-28T15:12:48.736Z"
+    },
+    "114963": {
+      "name": "Claudemir Jerônimo Barretto",
+      "birthYear": 1981,
+      "nationality": "Germany",
+      "reason": "unreadable",
+      "titleFound": "Claudemir Jerônimo Barreto",
+      "lastTriedAt": "2026-09-28T17:53:55.211Z"
+    },
+    "115070": {
+      "name": "Mohammadou Idrissou",
+      "birthYear": 1980,
+      "nationality": "Cameroon",
+      "reason": "unreadable",
+      "titleFound": "Mohamadou Idrissou",
+      "lastTriedAt": "2026-09-28T17:31:13.926Z"
+    },
+    "115086": {
+      "name": "Yousif Wasef Mohamad",
+      "birthYear": 1980,
+      "nationality": "Lebanon",
+      "reason": "unreadable",
+      "titleFound": "Yusi (footballer)",
+      "lastTriedAt": "2026-09-28T14:59:12.608Z"
+    },
+    "115193": {
+      "name": "Paulo Vitor de Sousa Barreto",
+      "birthYear": 1985,
+      "nationality": "Brazil",
+      "reason": "unreadable",
+      "titleFound": "List of Brazil international footballers",
+      "lastTriedAt": "2026-09-28T13:23:35.325Z"
+    },
+    "115251": {
+      "name": "Antonio Baltasar Doblas Santana",
+      "birthYear": 1980,
+      "nationality": "Spain",
+      "reason": "unreadable",
+      "titleFound": "Antônio (footballer, born 1989)",
+      "lastTriedAt": "2026-09-28T14:57:28.762Z"
+    },
+    "116468": {
+      "name": "Nuno Miguel Pereira Sousa",
+      "birthYear": 1979,
+      "nationality": "Portugal",
+      "reason": "unreadable",
+      "titleFound": "Briguel",
+      "lastTriedAt": "2026-09-28T15:04:43.728Z"
+    },
+    "116553": {
+      "name": "Jorge Fernando Meireles de Sousa",
+      "birthYear": 1988,
+      "nationality": "Portugal",
+      "reason": "unreadable",
+      "titleFound": "Mauricio de Sousa",
+      "lastTriedAt": "2026-09-28T14:08:17.503Z"
+    },
+    "116608": {
+      "name": "Euripides Daniel Adao Amoreirinha",
+      "birthYear": 1984,
+      "nationality": "Portugal",
+      "reason": "unreadable",
+      "titleFound": "Euripedes Daniel Adao Amoreirinha",
+      "lastTriedAt": "2026-09-28T14:34:12.580Z"
+    },
+    "116658": {
+      "name": "Oliveira Almeida Anderson do Oliveira",
+      "birthYear": 1980,
+      "nationality": "Brazil",
+      "reason": "unreadable",
+      "titleFound": "Anderson do Ó",
+      "lastTriedAt": "2026-09-28T14:31:30.461Z"
+    },
+    "116771": {
+      "name": "José António dos Santos Silva",
+      "birthYear": 1977,
+      "nationality": "Portugal",
+      "reason": "unreadable",
+      "titleFound": "Zé António",
+      "lastTriedAt": "2026-09-28T13:35:13.259Z"
+    },
+    "116772": {
+      "name": "Michel Simplicio Rosseto",
+      "birthYear": 1982,
+      "nationality": "Brazil",
+      "reason": "unreadable",
+      "titleFound": "Michel Simplicio Rosseto",
+      "lastTriedAt": "2026-09-28T14:18:43.295Z"
+    },
+    "116856": {
+      "name": "Daniel Estrada Agirrezablaga",
+      "birthYear": 1987,
+      "nationality": "Spain",
+      "reason": "unreadable",
+      "titleFound": "Daniel Estrada Agirrezabalaga",
+      "lastTriedAt": "2026-09-28T18:13:48.509Z"
+    },
+    "117083": {
+      "name": "Alain Didier Zokora-Déguy",
+      "birthYear": 1980,
+      "nationality": "Côte d'Ivoire",
+      "reason": "unreadable",
+      "titleFound": "Didier Zokora",
+      "lastTriedAt": "2026-09-28T14:51:56.248Z"
+    }
+  }
+}
