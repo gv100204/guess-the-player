@@ -880,7 +880,10 @@ async function main() {
       // "Josue (footballer, born 1987)", un'altra persona con 10 tappe
       // proprie, accettata per errore solo perché il numero era alto.
       if (wikiEntries.length > 0 && !isTrustworthyMatch(p.name, title, wikitext, p.birthYear, true, p.name)) {
+        const foundFullName = extractFullNameField(wikitext);
+        const foundBirthYear = extractBirthYear(wikitext);
         console.log(`  (${p.name}: pagina trovata (${title}) non sembra la persona giusta, la scarto e riprovo...)`);
+        console.log(`    [diagnostica] campo fullname letto: ${JSON.stringify(foundFullName)} | anno letto: ${foundBirthYear} | nostro anno: ${p.birthYear}`);
         wikiEntries = [];
       }
 
