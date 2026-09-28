@@ -120,7 +120,7 @@ async function searchWikipediaTitles(query) {
 // opensearch sui titoli non lo trova, la ricerca a testo pieno sì, perché
 // "Sagbo-Latte" compare comunque nel testo della pagina).
 async function fullTextSearchTitles(query) {
-  const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&format=json&srlimit=5`;
+  const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&format=json&srlimit=10`;
   const data = await wikiFetch(url);
   return (data?.query?.search || []).map((r) => r.title);
 }
