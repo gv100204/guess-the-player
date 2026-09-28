@@ -315,6 +315,25 @@ function nameCandidates(fullName, birthYear) {
   return candidates;
 }
 
+// Cerca il titolo E legge la pagina in UNA chiamata sola, invece di due
+// separate (prima searchWikipediaTitles, poi fetchWikitext) con una pausa
+// di 4 secondi in mezzo. MediaWiki lo permette con "generator=search":
+// combina la ricerca a testo pieno con la lettura del contenuto nella
+// stessa risposta. Per il caso semplice (la maggioranza dei giocatori,
+// dove il primo tentativo trova subito la pagina giusta) questo dimezza
+// sia le chiamate di rete sia l'attesa tra l'una e l'altra.
+async function searchAndFetchWikitext(query) {
+  const url = `https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}&gsrlimit=1&redirects=1&prop=revisions&rvprop=content&rvslots=main&format=json`;
+  const data = await wikiFetch(url);
+  const pages = data.query?.pages || {};
+  const page = Object.values(pages)[0];
+  if (!page) return { title: null, wikitext: null };
+  return {
+    title: page.title || null,
+    wikitext: page.revisions?.[0]?.slots?.main?.["*"] || null
+  };
+}
+
 async function findWikipediaTitle(playerName, birthYear) {
   let titles = await searchWikipediaTitles(playerName);
   let query = playerName;
@@ -831,18 +850,28 @@ async function main() {
   for (const p of candidates) {
     processedIdx++;
     try {
-      let title = await findWikipediaTitle(p.name, p.birthYear);
+      let title, wikitext;
+      const combined = await searchAndFetchWikitext(p.name);
       await sleep(REQUEST_DELAY_MS);
-      if (!title) {
-        console.log(`? ${p.name}: nessuna pagina Wikipedia trovata, salto (non salvato: riprovabile in futuro)`);
-        notFoundOnWikipedia++;
-        await recordUnresolved(p, "not_found", null);
-        printProgress();
-        continue;
+      if (combined.title && combined.wikitext) {
+        title = combined.title;
+        wikitext = combined.wikitext;
+      } else {
+        // Il tentativo combinato non ha trovato nulla (raro): torniamo al
+        // percorso separato, che include anche la ricerca a testo pieno e
+        // le combinazioni di nome come riserva.
+        title = await findWikipediaTitle(p.name, p.birthYear);
+        await sleep(REQUEST_DELAY_MS);
+        if (!title) {
+          console.log(`? ${p.name}: nessuna pagina Wikipedia trovata, salto (non salvato: riprovabile in futuro)`);
+          notFoundOnWikipedia++;
+          await recordUnresolved(p, "not_found", null);
+          printProgress();
+          continue;
+        }
+        wikitext = await fetchWikitext(title);
+        await sleep(REQUEST_DELAY_MS);
       }
-
-      let wikitext = await fetchWikitext(title);
-      await sleep(REQUEST_DELAY_MS);
       let wikiEntries = parseSeniorCareer(wikitext);
 
       // Anche se ha trovato delle tappe, controlliamo che la pagina sia
