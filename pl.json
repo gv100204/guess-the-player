@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-29T18:46:41.687Z",
+  "version": "2026-09-29T19:15:57.633Z",
   "players": [
     {
       "id": "stefan-savic-39",
@@ -1843,15 +1843,6 @@
           "country": "Serbia",
           "apps": 22,
           "goals": 6
-        },
-        {
-          "years": "2018–2020",
-          "club": "Red Star Belgrade",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 34,
-          "goals": 9
         },
         {
           "years": "2019",
@@ -5290,7 +5281,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2008–2010",
+          "years": "2008–2009",
           "club": "Real Madrid B",
           "league": null,
           "leagueRaw": "Storico",
@@ -6191,7 +6182,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2005–2007",
+          "years": "2005–2006",
           "club": "River Plate",
           "league": null,
           "leagueRaw": "Storico",
@@ -9234,15 +9225,6 @@
           "goals": 0
         },
         {
-          "years": "2004–2005",
-          "club": "Hellas Verona",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 33,
-          "goals": 3
-        },
-        {
           "years": "2005–2008",
           "club": "Lazio",
           "league": null,
@@ -9991,7 +9973,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2005–2007",
+          "years": "2005–2006",
           "club": "ŽP Šport Podbrezová",
           "league": null,
           "leagueRaw": "Storico",
@@ -10253,7 +10235,7 @@
           "goals": 3
         },
         {
-          "years": "2016–2018",
+          "years": "2016–2017",
           "club": "Hebei China Fortune",
           "league": null,
           "leagueRaw": "Storico",
@@ -11161,7 +11143,7 @@
           "goals": 4
         },
         {
-          "years": "2018–2021",
+          "years": "2018–2019",
           "club": "UNAM",
           "league": null,
           "leagueRaw": "Storico",
@@ -11684,15 +11666,6 @@
           "goals": 0
         },
         {
-          "years": "1997–1998",
-          "club": "Leganés",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 28,
-          "goals": 3
-        },
-        {
           "years": "2000",
           "club": "Mallorca",
           "league": null,
@@ -12106,7 +12079,7 @@
           "goals": 0
         },
         {
-          "years": "2009–2011",
+          "years": "2009–2010",
           "club": "Sevilla B",
           "league": null,
           "leagueRaw": "Storico",
@@ -12790,7 +12763,7 @@
           "goals": 3
         },
         {
-          "years": "2019–2021",
+          "years": "2019–2020",
           "club": "B-SAD",
           "league": null,
           "leagueRaw": "Storico",
@@ -12883,15 +12856,6 @@
           "country": null,
           "apps": 126,
           "goals": 14
-        },
-        {
-          "years": "2001",
-          "club": "Universidad de Chile",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 6,
-          "goals": 1
         },
         {
           "years": "2005",
@@ -13635,7 +13599,7 @@
           "goals": 0
         },
         {
-          "years": "2004–2006",
+          "years": "2004–2005",
           "club": "Genoa",
           "league": null,
           "leagueRaw": "Storico",
@@ -13659,15 +13623,6 @@
           "leagueRaw": "Serie B",
           "country": null,
           "apps": 15,
-          "goals": 0
-        },
-        {
-          "years": "2005",
-          "club": "Catanzaro",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 21,
           "goals": 0
         },
         {
@@ -14841,15 +14796,6 @@
           "goals": 12
         },
         {
-          "years": "2000–2001",
-          "club": "Spartak Subotica",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 27,
-          "goals": 6
-        },
-        {
           "years": "2005",
           "club": "Manchester United",
           "league": null,
@@ -15110,7 +15056,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2006–2009",
+          "years": "2006–2008",
           "club": "Sochaux II",
           "league": null,
           "leagueRaw": "Storico",
@@ -15421,7 +15367,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2008–2010",
+          "years": "2008–2009",
           "club": "Internațional Curtea de Argeș",
           "league": null,
           "leagueRaw": "Storico",
@@ -17353,7 +17299,7 @@
           "goals": 4
         },
         {
-          "years": "2007–2009",
+          "years": "2007–2008",
           "club": "Al-Sadd",
           "league": null,
           "leagueRaw": "Storico",
@@ -17631,15 +17577,6 @@
           "country": null,
           "apps": 42,
           "goals": 4
-        },
-        {
-          "years": "2009–2010",
-          "club": "Sliven",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 23,
-          "goals": 1
         },
         {
           "years": "2011–2013",
@@ -18665,7 +18602,7 @@
           "goals": 1
         },
         {
-          "years": "2005–2007",
+          "years": "2005–2006",
           "club": "Bellaria Igea",
           "league": null,
           "leagueRaw": "Storico",
@@ -20680,30 +20617,12 @@
           "goals": 1
         },
         {
-          "years": "2001–2002",
-          "club": "Genoa",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 24,
-          "goals": 3
-        },
-        {
-          "years": "2002–2006",
+          "years": "2002–2005",
           "club": "Chievo",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 22,
-          "goals": 0
-        },
-        {
-          "years": "2004",
-          "club": "Modena",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 6,
           "goals": 0
         },
         {
@@ -21412,15 +21331,6 @@
           "country": null,
           "apps": 20,
           "goals": 7
-        },
-        {
-          "years": "2016–2017",
-          "club": "Shabab Al Ahli",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 14,
-          "goals": 6
         },
         {
           "years": "2017–2019",
@@ -22326,7 +22236,7 @@
           "goals": 15
         },
         {
-          "years": "2017–2019",
+          "years": "2017–2018",
           "club": "Tianjin Tianhai",
           "league": null,
           "leagueRaw": "Storico",
@@ -23760,7 +23670,7 @@
           "goals": 2
         },
         {
-          "years": "1998–2001",
+          "years": "1999–2001",
           "club": "Monaco",
           "league": null,
           "leagueRaw": "Storico",
@@ -25555,7 +25465,7 @@
           "goals": 4
         },
         {
-          "years": "2008–2010",
+          "years": "2008–2009",
           "club": "Estudiantes de LP",
           "league": null,
           "leagueRaw": "Storico",
@@ -29303,15 +29213,6 @@
           "goals": 14
         },
         {
-          "years": "2001–2002",
-          "club": "Liverpool",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 20,
-          "goals": 4
-        },
-        {
           "years": "2003–2005",
           "club": "Manchester City",
           "league": null,
@@ -29419,15 +29320,6 @@
           "country": null,
           "apps": 47,
           "goals": 5
-        },
-        {
-          "years": "1999",
-          "club": "Newcastle United",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 11,
-          "goals": 1
         },
         {
           "years": "2003",
@@ -29584,31 +29476,13 @@
           "goals": 8
         },
         {
-          "years": "2010",
+          "years": "2010–2013",
           "club": "QPR",
           "league": null,
           "leagueRaw": "Championship",
           "country": null,
-          "apps": 39,
-          "goals": 19
-        },
-        {
-          "years": "2010–2015",
-          "club": "Queens Park Rangers",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 109,
+          "apps": 97,
           "goals": 26
-        },
-        {
-          "years": "2011–2013",
-          "club": "QPR",
-          "league": "pl",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 58,
-          "goals": 7
         },
         {
           "years": "2013",
@@ -29737,31 +29611,13 @@
           "goals": 0
         },
         {
-          "years": "2022",
+          "years": "2022–2024",
           "club": "Al Nasr",
           "league": null,
           "leagueRaw": "Pro League",
           "country": "United-Arab-Emirates",
-          "apps": 22,
-          "goals": 6
-        },
-        {
-          "years": "2022–2025",
-          "club": "Al-Nasr",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 55,
-          "goals": 21
-        },
-        {
-          "years": "2023",
-          "club": "Al Nasr",
-          "league": null,
-          "leagueRaw": "Pro League",
-          "country": "United-Arab-Emirates",
-          "apps": 15,
-          "goals": 4
+          "apps": 37,
+          "goals": 10
         },
         {
           "years": "2024",
@@ -30238,7 +30094,7 @@
           "goals": 2
         },
         {
-          "years": "2016–2018",
+          "years": "2016–2017",
           "club": "Hebei China Fortune",
           "league": null,
           "leagueRaw": "Storico",
@@ -30399,7 +30255,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2004–2006",
+          "years": "2004–2005",
           "club": "Grêmio",
           "league": null,
           "leagueRaw": "Storico",
@@ -31721,15 +31577,6 @@
           "country": null,
           "apps": 20,
           "goals": 7
-        },
-        {
-          "years": "2009–2012",
-          "club": "Sevilla B",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 77,
-          "goals": 25
         },
         {
           "years": "2010",
@@ -36909,7 +36756,7 @@
           "goals": 1
         },
         {
-          "years": "2011–2013",
+          "years": "2011–2012",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -38684,15 +38531,6 @@
           "country": null,
           "apps": 28,
           "goals": 2
-        },
-        {
-          "years": "2004–2005",
-          "club": "Vålerenga",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 2,
-          "goals": 0
         },
         {
           "years": "2005",
@@ -42584,7 +42422,7 @@
           "goals": 4
         },
         {
-          "years": "2010–2017",
+          "years": "2010–2011",
           "club": "Lyon B",
           "league": null,
           "leagueRaw": "Storico",
@@ -45124,7 +44962,7 @@
           "goals": 5
         },
         {
-          "years": "2018–2021",
+          "years": "2018–2019",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -45488,7 +45326,7 @@
           "goals": 0
         },
         {
-          "years": "2014–2017",
+          "years": "2014–2015",
           "club": "Paris Saint-Germain B",
           "league": null,
           "leagueRaw": "Storico",
@@ -49189,7 +49027,7 @@
           "goals": 0
         },
         {
-          "years": "2014–2016",
+          "years": "2014–2015",
           "club": "Amiens B",
           "league": null,
           "leagueRaw": "Storico",
@@ -55653,7 +55491,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2022–2024",
+          "years": "2022–2023",
           "club": "Real Madrid Castilla",
           "league": null,
           "leagueRaw": "Storico",
@@ -55970,7 +55808,7 @@
           "goals": 3
         },
         {
-          "years": "2011–2013",
+          "years": "2011–2012",
           "club": "Sevilla B",
           "league": null,
           "leagueRaw": "Storico",
@@ -61758,7 +61596,7 @@
           "goals": 0
         },
         {
-          "years": "2019–2022",
+          "years": "2019–2020",
           "club": "AGF",
           "league": null,
           "leagueRaw": "Storico",
@@ -61882,15 +61720,6 @@
           "country": null,
           "apps": 48,
           "goals": 5
-        },
-        {
-          "years": "2003",
-          "club": "Swindon Town",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 6,
-          "goals": 2
         },
         {
           "years": "2004",
@@ -63802,24 +63631,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "1995–2000",
-          "club": "West Ham United",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 127,
-          "goals": 2
-        },
-        {
-          "years": "1996–1997",
-          "club": "AFC Bournemouth",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 10,
-          "goals": 0
-        },
-        {
           "years": "2000–2002",
           "club": "Leeds United",
           "league": null,
@@ -65422,15 +65233,6 @@
           "goals": 0
         },
         {
-          "years": "2015–2019",
-          "club": "UCD",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 116,
-          "goals": 32
-        },
-        {
           "years": "2016–2018",
           "club": "Bristol City",
           "league": null,
@@ -66862,33 +66664,6 @@
       "isGK": true,
       "career": [
         {
-          "years": "1994–1997",
-          "club": "Blackburn Rovers",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 2,
-          "goals": 0
-        },
-        {
-          "years": "1996",
-          "club": "Swindon Town",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 5,
-          "goals": 0
-        },
-        {
-          "years": "1996",
-          "club": "Sunderland",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 17,
-          "goals": 0
-        },
-        {
           "years": "2003–2008",
           "club": "Newcastle",
           "league": null,
@@ -67161,15 +66936,6 @@
           "goals": 0
         },
         {
-          "years": "2000–2001",
-          "club": "Leeds United",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 18,
-          "goals": 9
-        },
-        {
           "years": "2001–2002",
           "club": "Leeds United",
           "league": null,
@@ -67364,15 +67130,6 @@
         {
           "years": "2000–2002",
           "club": "Paris Saint-Germain",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 28,
-          "goals": 0
-        },
-        {
-          "years": "2001–2002",
-          "club": "Newcastle United",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
@@ -67858,33 +67615,6 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 35,
-          "goals": 0
-        },
-        {
-          "years": "2000",
-          "club": "Nottingham Forest",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2001",
-          "club": "Crystal Palace",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 7,
-          "goals": 0
-        },
-        {
-          "years": "2002",
-          "club": "Reading",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 14,
           "goals": 0
         },
         {
@@ -68397,15 +68127,6 @@
           "goals": 1
         },
         {
-          "years": "1999–2000",
-          "club": "Colchester United",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 2,
-          "goals": 0
-        },
-        {
           "years": "2003–2007",
           "club": "Newcastle",
           "league": null,
@@ -68505,15 +68226,6 @@
           "country": null,
           "apps": 64,
           "goals": 2
-        },
-        {
-          "years": "2001–2004",
-          "club": "Chelsea",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 43,
-          "goals": 4
         },
         {
           "years": "2003–2005",
@@ -69951,7 +69663,7 @@
           "goals": 14
         },
         {
-          "years": "2003–2005",
+          "years": "2003–2004",
           "club": "Perugia",
           "league": null,
           "leagueRaw": "Storico",
@@ -71030,15 +70742,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "1999–2004",
-          "club": "West Ham United",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 136,
-          "goals": 6
-        },
-        {
           "years": "1999",
           "club": "Swindon Town",
           "league": null,
@@ -71048,13 +70751,13 @@
           "goals": 2
         },
         {
-          "years": "2000",
-          "club": "Birmingham City",
+          "years": "1999–2004",
+          "club": "West Ham United",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
-          "apps": 2,
-          "goals": 0
+          "apps": 136,
+          "goals": 6
         },
         {
           "years": "2004–2006",
@@ -71448,15 +71151,6 @@
           "country": null,
           "apps": 42,
           "goals": 3
-        },
-        {
-          "years": "2001–2002",
-          "club": "Paris Saint-Germain",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 31,
-          "goals": 2
         },
         {
           "years": "2002–2004",
@@ -72030,24 +71724,6 @@
           "country": null,
           "apps": 25,
           "goals": 4
-        },
-        {
-          "years": "2000–2001",
-          "club": "VfB Stuttgart II",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 17,
-          "goals": 4
-        },
-        {
-          "years": "2000–2005",
-          "club": "VfB Stuttgart",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 137,
-          "goals": 13
         },
         {
           "years": "2005–2008",
@@ -72981,24 +72657,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2001–2004",
-          "club": "Chester City",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 71,
-          "goals": 4
-        },
-        {
-          "years": "2002–2003",
-          "club": "Vauxhall Motors",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 18,
-          "goals": 2
-        },
-        {
           "years": "2005–2009",
           "club": "Sunderland",
           "league": null,
@@ -73144,7 +72802,7 @@
           "goals": 0
         },
         {
-          "years": "2005–2010",
+          "years": "2005–2006",
           "club": "Everton",
           "league": null,
           "leagueRaw": "Storico",
@@ -74518,15 +74176,6 @@
           "goals": 0
         },
         {
-          "years": "2011–2013",
-          "club": "Queens Park Rangers",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 44,
-          "goals": 0
-        },
-        {
           "years": "2012",
           "club": "Bursaspor",
           "league": null,
@@ -74609,7 +74258,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2004–2006",
+          "years": "2004–2005",
           "club": "Bastia",
           "league": null,
           "leagueRaw": "Storico",
@@ -75407,15 +75056,6 @@
           "goals": 3
         },
         {
-          "years": "2002",
-          "club": "Billericay Town",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 5,
-          "goals": 2
-        },
-        {
           "years": "2003–2005",
           "club": "Yeading",
           "league": null,
@@ -75604,15 +75244,6 @@
           "country": null,
           "apps": 84,
           "goals": 3
-        },
-        {
-          "years": "2001",
-          "club": "SG Untersiebenbrunn",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 16,
-          "goals": 5
         },
         {
           "years": "2004",
@@ -77361,15 +76992,6 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
-        },
-        {
-          "years": "2005–2006",
-          "club": "Carshalton Athletic",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 25,
           "goals": 0
         },
         {
@@ -79147,15 +78769,6 @@
           "country": null,
           "apps": 84,
           "goals": 20
-        },
-        {
-          "years": "2003–2004",
-          "club": "Roma",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 20,
-          "goals": 6
         },
         {
           "years": "2004",
@@ -83112,15 +82725,6 @@
           "goals": 3
         },
         {
-          "years": "2016",
-          "club": "Wadi Degla",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 16,
-          "goals": 3
-        },
-        {
           "years": "2017",
           "club": "FC Differdange 03",
           "league": null,
@@ -83700,42 +83304,6 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 27,
-          "goals": 0
-        },
-        {
-          "years": "1998–1999",
-          "club": "Sakaryaspor",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 21,
-          "goals": 0
-        },
-        {
-          "years": "1999–2001",
-          "club": "Göztepe",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 19,
-          "goals": 0
-        },
-        {
-          "years": "2001–2002",
-          "club": "Antalyaspor",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 15,
-          "goals": 0
-        },
-        {
-          "years": "2002–2003",
-          "club": "Elazığspor",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 20,
           "goals": 0
         },
         {
@@ -85214,7 +84782,7 @@
           "goals": 8
         },
         {
-          "years": "2019–2023",
+          "years": "2019–2020",
           "club": "Shandong Taishan",
           "league": null,
           "leagueRaw": "Storico",
@@ -85341,15 +84909,6 @@
           "country": null,
           "apps": 16,
           "goals": 0
-        },
-        {
-          "years": "2003–2004",
-          "club": "Rouen",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 34,
-          "goals": 10
         },
         {
           "years": "2004–2005",
@@ -86482,7 +86041,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2007–2011",
+          "years": "2007–2008",
           "club": "Manchester United",
           "league": null,
           "leagueRaw": "Storico",
@@ -87071,15 +86630,6 @@
           "goals": 0
         },
         {
-          "years": "2005",
-          "club": "Wakefield-Emley",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 7,
-          "goals": 0
-        },
-        {
           "years": "2006",
           "club": "Darlington",
           "league": null,
@@ -87606,7 +87156,7 @@
           "goals": 2
         },
         {
-          "years": "2004–2006",
+          "years": "2004–2005",
           "club": "Deportivo B",
           "league": null,
           "leagueRaw": "Storico",
@@ -87867,7 +87417,7 @@
           "goals": 7
         },
         {
-          "years": "2006–2008",
+          "years": "2006–2007",
           "club": "Audax Italiano",
           "league": null,
           "leagueRaw": "Storico",
@@ -88795,24 +88345,6 @@
           "goals": 3
         },
         {
-          "years": "2002–2003",
-          "club": "Djurgårdens IF",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 19,
-          "goals": 12
-        },
-        {
-          "years": "2003–2004",
-          "club": "NAC Breda",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 31,
-          "goals": 7
-        },
-        {
           "years": "2005",
           "club": "Brondby",
           "league": null,
@@ -89433,15 +88965,6 @@
           "goals": 4
         },
         {
-          "years": "2000–2001",
-          "club": "Calahorra",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 27,
-          "goals": 1
-        },
-        {
           "years": "2003–2007",
           "club": "Osasuna",
           "league": null,
@@ -89746,15 +89269,6 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 41,
-          "goals": 0
-        },
-        {
-          "years": "2000–2001",
-          "club": "Freamunde",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 11,
           "goals": 0
         },
         {
@@ -90731,7 +90245,7 @@
           "goals": 4
         },
         {
-          "years": "2020–2025",
+          "years": "2020–2021",
           "club": "Ulsan HD",
           "league": null,
           "leagueRaw": "Storico",
@@ -90921,15 +90435,6 @@
           "goals": 8
         },
         {
-          "years": "2001–2002",
-          "club": "Barcelona B",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 6,
-          "goals": 1
-        },
-        {
           "years": "2002–2004",
           "club": "Real Madrid B",
           "league": null,
@@ -90937,15 +90442,6 @@
           "country": null,
           "apps": 69,
           "goals": 6
-        },
-        {
-          "years": "2003–2004",
-          "club": "Real Madrid",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 2,
-          "goals": 0
         },
         {
           "years": "2004–2006",
@@ -90957,7 +90453,7 @@
           "goals": 2
         },
         {
-          "years": "2006–2008",
+          "years": "2006–2007",
           "club": "Mallorca",
           "league": null,
           "leagueRaw": "Storico",
@@ -91074,7 +90570,7 @@
           "goals": 7
         },
         {
-          "years": "2013–2016",
+          "years": "2013–2014",
           "club": "Llagostera",
           "league": null,
           "leagueRaw": "Storico",
@@ -92513,7 +92009,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2003–2007",
+          "years": "2003–2006",
           "club": "Bohemians",
           "league": null,
           "leagueRaw": "Storico",
@@ -96570,7 +96066,7 @@
           "goals": 5
         },
         {
-          "years": "2006–2010",
+          "years": "2006–2009",
           "club": "Celtic",
           "league": null,
           "leagueRaw": "Storico",
@@ -96705,15 +96201,6 @@
           "country": null,
           "apps": 92,
           "goals": 3
-        },
-        {
-          "years": "1996–1997",
-          "club": "Salamanca",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 36,
-          "goals": 1
         },
         {
           "years": "2003–2009",
@@ -96979,15 +96466,6 @@
           "country": null,
           "apps": 60,
           "goals": 5
-        },
-        {
-          "years": "1999–2001",
-          "club": "Agios Nikolaos",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 53,
-          "goals": 3
         },
         {
           "years": "2005",
@@ -99492,7 +98970,7 @@
           "goals": 1
         },
         {
-          "years": "2019–2022",
+          "years": "2019–2020",
           "club": "Guangzhou City",
           "league": null,
           "leagueRaw": "Storico",
@@ -99689,7 +99167,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2005–2008",
+          "years": "2005–2007",
           "club": "NA Hussein Dey",
           "league": null,
           "leagueRaw": "Storico",
@@ -100039,15 +99517,6 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 16,
-          "goals": 3
-        },
-        {
-          "years": "2003",
-          "club": "Universidad de Concepción",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 30,
           "goals": 3
         },
         {
@@ -100419,22 +99888,13 @@
       "isGK": false,
       "career": [
         {
-          "years": "2003–2006",
+          "years": "2003–2005",
           "club": "Wealdstone",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 82,
           "goals": 54
-        },
-        {
-          "years": "2003–2004",
-          "club": "Uxbridge",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 8,
-          "goals": 2
         },
         {
           "years": "2005",
@@ -101275,7 +100735,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010–2013",
+          "years": "2010–2011",
           "club": "Manchester United",
           "league": null,
           "leagueRaw": "Storico",
@@ -102620,7 +102080,7 @@
           "goals": 0
         },
         {
-          "years": "2005–2010",
+          "years": "2005–2006",
           "club": "UNAM",
           "league": null,
           "leagueRaw": "Storico",
@@ -102728,7 +102188,7 @@
           "goals": 8
         },
         {
-          "years": "2016–2020",
+          "years": "2016–2017",
           "club": "UNAM",
           "league": null,
           "leagueRaw": "Storico",
@@ -104026,7 +103486,7 @@
           "goals": 6
         },
         {
-          "years": "2015–2018",
+          "years": "2015–2016",
           "club": "Shanghai Greenland Shenhua",
           "league": null,
           "leagueRaw": "Storico",
@@ -104421,24 +103881,6 @@
           "goals": 0
         },
         {
-          "years": "2003",
-          "club": "Hull City",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 11,
-          "goals": 5
-        },
-        {
-          "years": "2003–2004",
-          "club": "Barnsley",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 8,
-          "goals": 0
-        },
-        {
           "years": "2004–2005",
           "club": "Hull City",
           "league": null,
@@ -104582,33 +104024,6 @@
           "country": null,
           "apps": 21,
           "goals": 1
-        },
-        {
-          "years": "2001–2002",
-          "club": "Grays Athletic",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 4,
-          "goals": 3
-        },
-        {
-          "years": "2002",
-          "club": "Dagenham & Redbridge",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 3,
-          "goals": 1
-        },
-        {
-          "years": "2002–2003",
-          "club": "Dagenham & Redbridge",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 5,
-          "goals": 0
         },
         {
           "years": "2003–2005",
@@ -105718,7 +105133,7 @@
           "goals": 1
         },
         {
-          "years": "2013–2015",
+          "years": "2013–2014",
           "club": "Stade Rennais",
           "league": null,
           "leagueRaw": "Storico",
@@ -105806,15 +105221,6 @@
           "country": null,
           "apps": 15,
           "goals": 5
-        },
-        {
-          "years": "2004–2005",
-          "club": "Bayer Leverkusen",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 5,
-          "goals": 0
         },
         {
           "years": "2005–2007",
@@ -106174,15 +105580,6 @@
           "country": null,
           "apps": 29,
           "goals": 0
-        },
-        {
-          "years": "2001–2003",
-          "club": "Aves",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 44,
-          "goals": 1
         },
         {
           "years": "2005–2010",
@@ -109136,7 +108533,7 @@
           "goals": 1
         },
         {
-          "years": "2008–2010",
+          "years": "2008–2009",
           "club": "Gimnasia-LP",
           "league": null,
           "leagueRaw": "Storico",
@@ -111176,24 +110573,6 @@
           "goals": 8
         },
         {
-          "years": "2005–2006",
-          "club": "Gravesend & Northfleet",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 24,
-          "goals": 5
-        },
-        {
-          "years": "2006",
-          "club": "Stevenage Borough",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 4,
-          "goals": 0
-        },
-        {
           "years": "2008",
           "club": "Brighton",
           "league": null,
@@ -111346,15 +110725,6 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 26,
-          "goals": 0
-        },
-        {
-          "years": "2006–2012",
-          "club": "Politehnica Timișoara",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 93,
           "goals": 0
         },
         {
@@ -114033,24 +113403,6 @@
           "goals": 2
         },
         {
-          "years": "2003",
-          "club": "Baltika Kaliningrad",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 40,
-          "goals": 15
-        },
-        {
-          "years": "2004",
-          "club": "Khimki",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 12,
-          "goals": 6
-        },
-        {
           "years": "2005",
           "club": "Shinnik Yaroslavl",
           "league": null,
@@ -114228,7 +113580,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2004–2007",
+          "years": "2004–2005",
           "club": "Figueirense",
           "league": null,
           "leagueRaw": "Storico",
@@ -114477,7 +113829,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2005–2011",
+          "years": "2005–2006",
           "club": "Dundee United",
           "league": null,
           "leagueRaw": "Storico",
@@ -115348,15 +114700,6 @@
           "country": null,
           "apps": 76,
           "goals": 15
-        },
-        {
-          "years": "2002–2003",
-          "club": "Espanyol",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 5,
-          "goals": 0
         },
         {
           "years": "2003",
@@ -118800,7 +118143,7 @@
           "goals": 1
         },
         {
-          "years": "2022–2026",
+          "years": "2022–2023",
           "club": "D.C. United",
           "league": null,
           "leagueRaw": "Storico",
@@ -119545,7 +118888,7 @@
           "goals": 3
         },
         {
-          "years": "2017–2024",
+          "years": "2017–2018",
           "club": "Shanghai Port",
           "league": null,
           "leagueRaw": "Storico",
@@ -119763,7 +119106,7 @@
           "goals": 6
         },
         {
-          "years": "2016–2018",
+          "years": "2016–2017",
           "club": "Hebei China Fortune",
           "league": null,
           "leagueRaw": "Storico",
@@ -120023,15 +119366,6 @@
           "country": null,
           "apps": 79,
           "goals": 15
-        },
-        {
-          "years": "2007",
-          "club": "Stirling Albion",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 12,
-          "goals": 5
         },
         {
           "years": "2008–2012",
@@ -123013,7 +122347,7 @@
           "goals": 0
         },
         {
-          "years": "2006–2008",
+          "years": "2006–2007",
           "club": "Omniworld",
           "league": null,
           "leagueRaw": "Storico",
@@ -123576,7 +122910,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2004–2006",
+          "years": "2004–2005",
           "club": "Real Madrid C",
           "league": null,
           "leagueRaw": "Storico",
@@ -123960,7 +123294,7 @@
           "goals": 1
         },
         {
-          "years": "2005–2008",
+          "years": "2005–2007",
           "club": "Anderlecht",
           "league": null,
           "leagueRaw": "Storico",
@@ -124624,15 +123958,6 @@
           "goals": 9
         },
         {
-          "years": "2001–2005",
-          "club": "Borussia Dortmund",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 33,
-          "goals": 0
-        },
-        {
           "years": "2005",
           "club": "Hamburger SV",
           "league": null,
@@ -124939,7 +124264,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2003–2006",
+          "years": "2003–2005",
           "club": "Heerenveen",
           "league": null,
           "leagueRaw": "Storico",
@@ -125320,15 +124645,6 @@
           "goals": 25
         },
         {
-          "years": "1996–1998",
-          "club": "Apollon Smyrnis",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 55,
-          "goals": 9
-        },
-        {
           "years": "2003–2005",
           "club": "Inter Milan",
           "league": null,
@@ -125492,7 +124808,7 @@
           "goals": 2
         },
         {
-          "years": "2007–2010",
+          "years": "2007–2008",
           "club": "AGOVV Apeldoorn",
           "league": null,
           "leagueRaw": "Storico",
@@ -126234,31 +125550,13 @@
           "goals": 0
         },
         {
-          "years": "2007–2014",
+          "years": "2007–2013",
           "club": "Olympiacos",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 92,
           "goals": 41
-        },
-        {
-          "years": "2011",
-          "club": "Panionios",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 11,
-          "goals": 8
-        },
-        {
-          "years": "2011–2012",
-          "club": "Atromitos",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 34,
-          "goals": 17
         },
         {
           "years": "2013",
@@ -126468,22 +125766,13 @@
           "goals": 3
         },
         {
-          "years": "2007–2014",
+          "years": "2007–2009",
           "club": "Porto",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 142,
           "goals": 2
-        },
-        {
-          "years": "2007–2008",
-          "club": "Estrela Amadora",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 26,
-          "goals": 1
         },
         {
           "years": "2009–2013",
@@ -126504,7 +125793,7 @@
           "goals": 17
         },
         {
-          "years": "2017–2019",
+          "years": "2017–2018",
           "club": "Galatasaray",
           "league": null,
           "leagueRaw": "Storico",
@@ -126522,7 +125811,7 @@
           "goals": 1
         },
         {
-          "years": "2019–2023",
+          "years": "2019–2020",
           "club": "Sevilla",
           "league": null,
           "leagueRaw": "Storico",
@@ -128121,7 +127410,7 @@
           "goals": 6
         },
         {
-          "years": "2006–2010",
+          "years": "2007–2008",
           "club": "Betis B",
           "league": null,
           "leagueRaw": "Storico",
@@ -128741,7 +128030,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2007–2010",
+          "years": "2007–2009",
           "club": "Elche B",
           "league": null,
           "leagueRaw": "Storico",
@@ -128831,7 +128120,7 @@
           "goals": 0
         },
         {
-          "years": "2011–2013",
+          "years": "2011–2012",
           "club": "Zamora",
           "league": null,
           "leagueRaw": "Storico",
@@ -128903,7 +128192,7 @@
           "goals": 2
         },
         {
-          "years": "2013–2016",
+          "years": "2013–2014",
           "club": "Cádiz",
           "league": null,
           "leagueRaw": "Storico",
@@ -128966,7 +128255,7 @@
           "goals": 7
         },
         {
-          "years": "2017–2020",
+          "years": "2017–2018",
           "club": "Lugo",
           "league": null,
           "leagueRaw": "Storico",
@@ -128984,7 +128273,7 @@
           "goals": 44
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "UCAM Murcia",
           "league": null,
           "leagueRaw": "Storico",
@@ -129256,7 +128545,7 @@
           "goals": 2
         },
         {
-          "years": "2017–2020",
+          "years": "2017–2018",
           "club": "AaB",
           "league": null,
           "leagueRaw": "Storico",
@@ -130475,15 +129764,6 @@
           "country": null,
           "apps": 84,
           "goals": 12
-        },
-        {
-          "years": "2005",
-          "club": "South Coast United",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 18,
-          "goals": 7
         },
         {
           "years": "2008",
@@ -132700,7 +131980,7 @@
           "goals": 5
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Jeonbuk Hyundai Motors",
           "league": null,
           "leagueRaw": "Storico",
@@ -133439,7 +132719,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2006–2009",
+          "years": "2006–2008",
           "club": "Celta B",
           "league": null,
           "leagueRaw": "Storico",
@@ -133961,7 +133241,7 @@
           "goals": 2
         },
         {
-          "years": "2022–2025",
+          "years": "2022–2023",
           "club": "Johor Darul Ta'zim",
           "league": null,
           "leagueRaw": "Storico",
@@ -134680,7 +133960,7 @@
           "goals": 0
         },
         {
-          "years": "2013–2015",
+          "years": "2013–2014",
           "club": "Estudiantes",
           "league": null,
           "leagueRaw": "Storico",
@@ -134780,15 +134060,6 @@
           "country": null,
           "apps": 40,
           "goals": 28
-        },
-        {
-          "years": "2004–2005",
-          "club": "Rayo Vallecano",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 12,
-          "goals": 1
         },
         {
           "years": "2005–2007",
@@ -135130,15 +134401,6 @@
           "goals": 0
         },
         {
-          "years": "2001–2002",
-          "club": "Stockport County",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 12,
-          "goals": 1
-        },
-        {
           "years": "2002",
           "club": "Huddersfield Town",
           "league": null,
@@ -135390,15 +134652,6 @@
           "country": null,
           "apps": 13,
           "goals": 0
-        },
-        {
-          "years": "2001–2002",
-          "club": "Plaza Colonia",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 46,
-          "goals": 4
         },
         {
           "years": "2005",
@@ -135839,15 +135092,6 @@
           "goals": 6
         },
         {
-          "years": "2002–2003",
-          "club": "OFI",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 12,
-          "goals": 1
-        },
-        {
           "years": "2003–2006",
           "club": "AIK",
           "league": null,
@@ -135972,15 +135216,6 @@
           "country": null,
           "apps": 83,
           "goals": 4
-        },
-        {
-          "years": "2000–2001",
-          "club": "FCM Bacău",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 14,
-          "goals": 2
         },
         {
           "years": "2008–2013",
@@ -140846,15 +140081,6 @@
           "goals": 26
         },
         {
-          "years": "2002",
-          "club": "Palmeiras",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 24,
-          "goals": 5
-        },
-        {
           "years": "2003",
           "club": "Mallorca",
           "league": null,
@@ -143286,7 +142512,7 @@
           "goals": 4
         },
         {
-          "years": "2012–2014",
+          "years": "2012–2013",
           "club": "Morelia",
           "league": null,
           "leagueRaw": "Storico",
@@ -144401,7 +143627,7 @@
           "goals": 2
         },
         {
-          "years": "2020–2023",
+          "years": "2020–2021",
           "club": "Jeonbuk Hyundai Motors",
           "league": null,
           "leagueRaw": "Storico",
@@ -146421,15 +145647,6 @@
           "country": null,
           "apps": 19,
           "goals": 6
-        },
-        {
-          "years": "2006–2007",
-          "club": "Ocean Boys",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 13,
-          "goals": 10
         },
         {
           "years": "2007–2009",
@@ -149211,7 +148428,7 @@
           "goals": 2
         },
         {
-          "years": "2010–2013",
+          "years": "2010–2012",
           "club": "Al Mokawloon",
           "league": null,
           "leagueRaw": "Storico",
@@ -150327,7 +149544,7 @@
           "goals": 5
         },
         {
-          "years": "2019–2021",
+          "years": "2019–2020",
           "club": "Dalian Professional",
           "league": null,
           "leagueRaw": "Storico",
@@ -152574,7 +151791,7 @@
           "goals": 16
         },
         {
-          "years": "2005–2007",
+          "years": "2005–2006",
           "club": "TP Mazembe",
           "league": null,
           "leagueRaw": "Storico",
@@ -153719,7 +152936,7 @@
           "goals": 0
         },
         {
-          "years": "2004–2006",
+          "years": "2005–2006",
           "club": "Chelmsley Town",
           "league": null,
           "leagueRaw": "Storico",
@@ -154091,30 +153308,12 @@
       "isGK": false,
       "career": [
         {
-          "years": "2008–2012",
+          "years": "2008–2010",
           "club": "Brighton & Hove Albion",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
-        },
-        {
-          "years": "2009",
-          "club": "Havant & Waterlooville",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 5,
-          "goals": 0
-        },
-        {
-          "years": "2009–2010",
-          "club": "Eastleigh",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 10,
           "goals": 0
         },
         {
@@ -155768,24 +154967,6 @@
           "country": null,
           "apps": 10,
           "goals": 1
-        },
-        {
-          "years": "2006",
-          "club": "Oldham Athletic",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 9,
-          "goals": 0
-        },
-        {
-          "years": "2007–2008",
-          "club": "Motherwell",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 5,
-          "goals": 0
         },
         {
           "years": "2008",
@@ -162192,7 +161373,7 @@
           "goals": 5
         },
         {
-          "years": "2012–2015",
+          "years": "2012–2013",
           "club": "Angers B",
           "league": null,
           "leagueRaw": "Storico",
@@ -162318,7 +161499,7 @@
           "goals": 0
         },
         {
-          "years": "2024–2026",
+          "years": "2024–2025",
           "club": "Union SG",
           "league": null,
           "leagueRaw": "Storico",
@@ -164904,15 +164085,6 @@
           "goals": 0
         },
         {
-          "years": "2010–2011",
-          "club": "Bury Town",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 5,
-          "goals": 0
-        },
-        {
           "years": "2011",
           "club": "Welling United",
           "league": null,
@@ -166070,7 +165242,7 @@
           "goals": 6
         },
         {
-          "years": "2012–2017",
+          "years": "2012–2013",
           "club": "Jong PSV",
           "league": null,
           "leagueRaw": "Storico",
@@ -166169,7 +165341,7 @@
           "goals": 8
         },
         {
-          "years": "2023–2025",
+          "years": "2023–2024",
           "club": "Nea Salamina",
           "league": null,
           "leagueRaw": "Storico",
@@ -170598,7 +169770,7 @@
           "goals": 0
         },
         {
-          "years": "2009–2011",
+          "years": "2009–2010",
           "club": "Austria Wien",
           "league": null,
           "leagueRaw": "Storico",
@@ -175216,7 +174388,7 @@
           "goals": 1
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Shanghai Port",
           "league": null,
           "leagueRaw": "Storico",
@@ -176929,7 +176101,7 @@
           "goals": 7
         },
         {
-          "years": "2019–2022",
+          "years": "2019–2021",
           "club": "Vitória de Guimarães",
           "league": null,
           "leagueRaw": "Storico",
@@ -178789,7 +177961,7 @@
       "isGK": true,
       "career": [
         {
-          "years": "2011–2013",
+          "years": "2011–2012",
           "club": "Basconia",
           "league": null,
           "leagueRaw": "Storico",
@@ -178807,7 +177979,7 @@
           "goals": 0
         },
         {
-          "years": "2013–2015",
+          "years": "2013–2014",
           "club": "Athletic Bilbao B",
           "league": null,
           "leagueRaw": "Storico",
@@ -179849,7 +179021,7 @@
           "goals": 2
         },
         {
-          "years": "2011–2013",
+          "years": "2011–2012",
           "club": "Damash Gilan",
           "league": null,
           "leagueRaw": "Storico",
@@ -180581,7 +179753,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010–2013",
+          "years": "2010–2012",
           "club": "ASEC Mimosas",
           "league": null,
           "leagueRaw": "Storico",
@@ -183437,7 +182609,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2014–2016",
+          "years": "2014–2015",
           "club": "Real Bamako",
           "league": null,
           "leagueRaw": "Storico",
@@ -183545,7 +182717,7 @@
           "goals": 0
         },
         {
-          "years": "2011–2014",
+          "years": "2011–2013",
           "club": "Villarreal C",
           "league": null,
           "leagueRaw": "Storico",
@@ -184169,7 +183341,7 @@
       "isGK": true,
       "career": [
         {
-          "years": "2006–2008",
+          "years": "2006–2007",
           "club": "Deportivo B",
           "league": null,
           "leagueRaw": "Storico",
@@ -187167,7 +186339,7 @@
           "goals": 0
         },
         {
-          "years": "2014–2017",
+          "years": "2014–2015",
           "club": "Jong PSV",
           "league": null,
           "leagueRaw": "Storico",
@@ -189008,7 +188180,7 @@
           "goals": 0
         },
         {
-          "years": "2014–2020",
+          "years": "2014–2016",
           "club": "Slavia Prague",
           "league": null,
           "leagueRaw": "Storico",
@@ -190040,7 +189212,7 @@
           "goals": 13
         },
         {
-          "years": "2011–2016",
+          "years": "2011–2015",
           "club": "TP Mazembe",
           "league": null,
           "leagueRaw": "Storico",
@@ -191259,7 +190431,7 @@
           "goals": 3
         },
         {
-          "years": "2016–2019",
+          "years": "2016–2017",
           "club": "Argentinos Juniors",
           "league": null,
           "leagueRaw": "Storico",
@@ -194206,7 +193378,7 @@
           "goals": 0
         },
         {
-          "years": "2009–2011",
+          "years": "2009–2010",
           "club": "Zürich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -196003,7 +195175,7 @@
           "goals": 0
         },
         {
-          "years": "2010–2013",
+          "years": "2010–2011",
           "club": "Paris Saint-Germain B",
           "league": null,
           "leagueRaw": "Storico",
@@ -206472,7 +205644,7 @@
           "goals": 0
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "Athletico Paranaense",
           "league": null,
           "leagueRaw": "Storico",
@@ -211178,7 +210350,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2016–2018",
+          "years": "2016–2017",
           "club": "Jong PSV",
           "league": null,
           "leagueRaw": "Storico",
@@ -212857,7 +212029,7 @@
           "goals": 3
         },
         {
-          "years": "2013–2015",
+          "years": "2013–2014",
           "club": "Inverness Caledonian Thistle",
           "league": null,
           "leagueRaw": "Storico",
@@ -214035,7 +213207,7 @@
           "goals": 0
         },
         {
-          "years": "2009–2011",
+          "years": "2009–2010",
           "club": "Real Madrid Castilla",
           "league": null,
           "leagueRaw": "Storico",
@@ -217581,7 +216753,7 @@
           "goals": 17
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Union SG",
           "league": null,
           "leagueRaw": "Storico",
@@ -223999,7 +223171,7 @@
           "goals": 2
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "Sint-Truiden",
           "league": null,
           "leagueRaw": "Storico",
@@ -226667,7 +225839,7 @@
           "goals": 0
         },
         {
-          "years": "2015–2017",
+          "years": "2015–2016",
           "club": "Tours B",
           "league": null,
           "leagueRaw": "Storico",
@@ -237062,7 +236234,7 @@
           "goals": 0
         },
         {
-          "years": "2016–2018",
+          "years": "2016–2017",
           "club": "Real Sociedad C",
           "league": null,
           "leagueRaw": "Storico",
@@ -238452,7 +237624,7 @@
           "goals": 5
         },
         {
-          "years": "2019–2021",
+          "years": "2019–2020",
           "club": "Lyon B",
           "league": null,
           "leagueRaw": "Storico",
@@ -238926,7 +238098,7 @@
           "goals": 0
         },
         {
-          "years": "2020–2023",
+          "years": "2020–2021",
           "club": "Club NXT",
           "league": null,
           "leagueRaw": "Storico",
@@ -239463,7 +238635,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2019–2021",
+          "years": "2019–2020",
           "club": "FC Ingolstadt II",
           "league": null,
           "leagueRaw": "Storico",
@@ -240681,7 +239853,7 @@
           "goals": 0
         },
         {
-          "years": "2023–2025",
+          "years": "2023–2024",
           "club": "Union Saint-Gilloise",
           "league": null,
           "leagueRaw": "Storico",
@@ -240878,7 +240050,7 @@
           "goals": 1
         },
         {
-          "years": "2022–2025",
+          "years": "2023–2024",
           "club": "Celta B",
           "league": null,
           "leagueRaw": "Storico",
@@ -240933,7 +240105,7 @@
           "goals": 0
         },
         {
-          "years": "2022–2024",
+          "years": "2022–2023",
           "club": "Olympiacos B",
           "league": null,
           "leagueRaw": "Storico",

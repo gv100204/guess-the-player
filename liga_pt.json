@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-29T18:46:41.687Z",
+  "version": "2026-09-29T19:15:57.633Z",
   "players": [
     {
       "id": "bryan-cristante-778",
@@ -1741,22 +1741,13 @@
           "goals": 0
         },
         {
-          "years": "2003–2007",
+          "years": "2003–2006",
           "club": "Envigado",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 38,
           "goals": 4
-        },
-        {
-          "years": "2005–2006",
-          "club": "Boca Juniors",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 2,
-          "goals": 0
         },
         {
           "years": "2006–2008",
@@ -2272,7 +2263,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2012–2014",
+          "years": "2012–2013",
           "club": "Desportivo Brasil",
           "league": null,
           "leagueRaw": "Storico",
@@ -2434,7 +2425,7 @@
           "goals": 1
         },
         {
-          "years": "2021–2025",
+          "years": "2021–2022",
           "club": "Red Bull Bragantino",
           "league": null,
           "leagueRaw": "Storico",
@@ -3675,7 +3666,7 @@
           "goals": 4
         },
         {
-          "years": "2018–2021",
+          "years": "2018–2019",
           "club": "UNAM",
           "league": null,
           "leagueRaw": "Storico",
@@ -4704,7 +4695,7 @@
           "goals": 3
         },
         {
-          "years": "2019–2021",
+          "years": "2019–2020",
           "club": "B-SAD",
           "league": null,
           "leagueRaw": "Storico",
@@ -5731,22 +5722,13 @@
       "isGK": false,
       "career": [
         {
-          "years": "2005–2009",
+          "years": "2005–2008",
           "club": "Atlético Mineiro",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 32,
           "goals": 0
-        },
-        {
-          "years": "2006",
-          "club": "Santa Cruz",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 11,
-          "goals": 2
         },
         {
           "years": "2008",
@@ -6808,7 +6790,7 @@
           "goals": 0
         },
         {
-          "years": "2011–2014",
+          "years": "2011–2013",
           "club": "Universidad Católica",
           "league": null,
           "leagueRaw": "Storico",
@@ -8084,7 +8066,7 @@
           "goals": 13
         },
         {
-          "years": "2007–2009",
+          "years": "2007–2008",
           "club": "Celano",
           "league": null,
           "leagueRaw": "Storico",
@@ -8247,7 +8229,7 @@
           "goals": 8
         },
         {
-          "years": "2011–2015",
+          "years": "2011–2012",
           "club": "Fulham",
           "league": null,
           "leagueRaw": "Storico",
@@ -10652,7 +10634,7 @@
           "goals": 2
         },
         {
-          "years": "2014–2016",
+          "years": "2014–2015",
           "club": "Skoda Xanthi",
           "league": null,
           "leagueRaw": "Storico",
@@ -11430,24 +11412,6 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 26,
-          "goals": 0
-        },
-        {
-          "years": "2000",
-          "club": "Vitória Setúbal",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 14,
-          "goals": 0
-        },
-        {
-          "years": "2000",
-          "club": "Alverca",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 4,
           "goals": 0
         },
         {
@@ -15786,7 +15750,7 @@
           "goals": 1
         },
         {
-          "years": "2014–2017",
+          "years": "2014–2015",
           "club": "Manchester City",
           "league": null,
           "leagueRaw": "Storico",
@@ -15840,7 +15804,7 @@
           "goals": 2
         },
         {
-          "years": "2017–2019",
+          "years": "2017–2018",
           "club": "Galatasaray",
           "league": null,
           "leagueRaw": "Storico",
@@ -15885,7 +15849,7 @@
           "goals": 0
         },
         {
-          "years": "2019–2023",
+          "years": "2019–2020",
           "club": "Sevilla",
           "league": null,
           "leagueRaw": "Storico",
@@ -16625,22 +16589,13 @@
           "goals": 3
         },
         {
-          "years": "2007–2014",
+          "years": "2007–2009",
           "club": "Porto",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 142,
           "goals": 2
-        },
-        {
-          "years": "2007–2008",
-          "club": "Estrela Amadora",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 26,
-          "goals": 1
         },
         {
           "years": "2009",
@@ -16742,7 +16697,7 @@
           "goals": 0
         },
         {
-          "years": "2014–2017",
+          "years": "2014–2015",
           "club": "Manchester City",
           "league": null,
           "leagueRaw": "Storico",
@@ -16796,7 +16751,7 @@
           "goals": 0
         },
         {
-          "years": "2017–2019",
+          "years": "2017–2018",
           "club": "Galatasaray",
           "league": null,
           "leagueRaw": "Storico",
@@ -16832,7 +16787,7 @@
           "goals": 0
         },
         {
-          "years": "2019–2023",
+          "years": "2019–2020",
           "club": "Sevilla",
           "league": null,
           "leagueRaw": "Storico",
@@ -19311,7 +19266,7 @@
           "goals": 1
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "B-SAD",
           "league": null,
           "leagueRaw": "Storico",
@@ -20116,31 +20071,13 @@
           "goals": 8
         },
         {
-          "years": "2010",
+          "years": "2010–2013",
           "club": "QPR",
           "league": null,
           "leagueRaw": "Championship",
           "country": null,
-          "apps": 39,
-          "goals": 19
-        },
-        {
-          "years": "2010–2015",
-          "club": "Queens Park Rangers",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 109,
+          "apps": 97,
           "goals": 26
-        },
-        {
-          "years": "2011–2013",
-          "club": "QPR",
-          "league": "pl",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 58,
-          "goals": 7
         },
         {
           "years": "2013",
@@ -20269,31 +20206,13 @@
           "goals": 0
         },
         {
-          "years": "2022",
+          "years": "2022–2024",
           "club": "Al Nasr",
           "league": null,
           "leagueRaw": "Pro League",
           "country": "United-Arab-Emirates",
-          "apps": 22,
-          "goals": 6
-        },
-        {
-          "years": "2022–2025",
-          "club": "Al-Nasr",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 55,
-          "goals": 21
-        },
-        {
-          "years": "2023",
-          "club": "Al Nasr",
-          "league": null,
-          "leagueRaw": "Pro League",
-          "country": "United-Arab-Emirates",
-          "apps": 15,
-          "goals": 4
+          "apps": 37,
+          "goals": 10
         },
         {
           "years": "2024",
@@ -21985,7 +21904,7 @@
           "goals": 0
         },
         {
-          "years": "2013–2015",
+          "years": "2013–2014",
           "club": "Académico de Viseu",
           "league": null,
           "leagueRaw": "Storico",
@@ -23470,7 +23389,7 @@
           "goals": 6
         },
         {
-          "years": "2010–2013",
+          "years": "2010–2011",
           "club": "Arsenal de Sarandí",
           "league": null,
           "leagueRaw": "Storico",
@@ -29495,7 +29414,7 @@
           "goals": 1
         },
         {
-          "years": "2024–2026",
+          "years": "2024–2025",
           "club": "Al-Ula",
           "league": null,
           "leagueRaw": "Storico",
@@ -33621,7 +33540,7 @@
           "goals": 0
         },
         {
-          "years": "2015–2017",
+          "years": "2015–2016",
           "club": "Basel U-21",
           "league": null,
           "leagueRaw": "Storico",
@@ -37387,7 +37306,7 @@
           "goals": 0
         },
         {
-          "years": "2020–2024",
+          "years": "2020–2022",
           "club": "Athletico Paranaense",
           "league": null,
           "leagueRaw": "Storico",
@@ -37465,15 +37384,6 @@
           "leagueRaw": "CONMEBOL Sudamericana",
           "country": "World",
           "apps": 4,
-          "goals": 0
-        },
-        {
-          "years": "2023",
-          "club": "Red Bull Bragantino",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 20,
           "goals": 0
         },
         {
@@ -39582,15 +39492,6 @@
           "goals": 7
         },
         {
-          "years": "1998–1999",
-          "club": "Felgueiras",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 31,
-          "goals": 2
-        },
-        {
           "years": "2003–2004",
           "club": "Porto",
           "league": null,
@@ -39981,7 +39882,7 @@
           "goals": 0
         },
         {
-          "years": "2001–2004",
+          "years": "2001–2002",
           "club": "RKC",
           "league": null,
           "leagueRaw": "Storico",
@@ -40893,7 +40794,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2005–2008",
+          "years": "2005–2007",
           "club": "NA Hussein Dey",
           "league": null,
           "leagueRaw": "Storico",
@@ -43426,31 +43327,13 @@
           "goals": 0
         },
         {
-          "years": "2007–2014",
+          "years": "2007–2013",
           "club": "Olympiacos",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 92,
           "goals": 41
-        },
-        {
-          "years": "2011",
-          "club": "Panionios",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 11,
-          "goals": 8
-        },
-        {
-          "years": "2011–2012",
-          "club": "Atromitos",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 34,
-          "goals": 17
         },
         {
           "years": "2013",
@@ -47432,22 +47315,13 @@
       "isGK": false,
       "career": [
         {
-          "years": "2005–2010",
+          "years": "2005–2009",
           "club": "Atlético Paranaense",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 92,
           "goals": 13
-        },
-        {
-          "years": "2008",
-          "club": "Goiás",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 18,
-          "goals": 7
         },
         {
           "years": "2009",
@@ -49323,7 +49197,7 @@
           "goals": 7
         },
         {
-          "years": "2019–2022",
+          "years": "2019–2021",
           "club": "Vitória de Guimarães",
           "league": null,
           "leagueRaw": "Storico",
@@ -50124,7 +49998,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010–2013",
+          "years": "2010–2012",
           "club": "ASEC Mimosas",
           "league": null,
           "leagueRaw": "Storico",
@@ -52394,15 +52268,6 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
-        },
-        {
-          "years": "2017–2018",
-          "club": "Málaga",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 34,
           "goals": 0
         },
         {
@@ -56434,7 +56299,7 @@
           "goals": 0
         },
         {
-          "years": "2009–2011",
+          "years": "2009–2010",
           "club": "Real Madrid Castilla",
           "league": null,
           "leagueRaw": "Storico",
@@ -58452,7 +58317,7 @@
           "goals": 0
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Vitória de Guimarães",
           "league": null,
           "leagueRaw": "Storico",
@@ -61974,15 +61839,6 @@
           "goals": 3
         },
         {
-          "years": "2001–2002",
-          "club": "Campomaiorense",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 27,
-          "goals": 1
-        },
-        {
           "years": "2003",
           "club": "Académica",
           "league": null,
@@ -62774,7 +62630,7 @@
           "goals": 3
         },
         {
-          "years": "2022–2024",
+          "years": "2022–2023",
           "club": "UNAM",
           "league": null,
           "leagueRaw": "Storico",
@@ -63064,31 +62920,13 @@
           "goals": 33
         },
         {
-          "years": "2004–2007",
+          "years": "2005–2007",
           "club": "Braga",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
           "goals": 0
-        },
-        {
-          "years": "2005–2006",
-          "club": "Paços Ferreira",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 21,
-          "goals": 2
-        },
-        {
-          "years": "2006–2007",
-          "club": "Gil Vicente",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 25,
-          "goals": 6
         },
         {
           "years": "2007–2008",
@@ -67659,15 +67497,6 @@
           "goals": 0
         },
         {
-          "years": "2002–2003",
-          "club": "Casa Pia",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 38,
-          "goals": 0
-        },
-        {
           "years": "2005–2006",
           "club": "Marco",
           "league": null,
@@ -67956,7 +67785,7 @@
           "goals": 1
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "B-SAD",
           "league": null,
           "leagueRaw": "Storico",
@@ -68785,15 +68614,6 @@
           "goals": 3
         },
         {
-          "years": "2003–2004",
-          "club": "Callatis Mangalia",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 10,
-          "goals": 0
-        },
-        {
           "years": "2008",
           "club": "FC Porto",
           "league": null,
@@ -69075,7 +68895,7 @@
           "goals": 0
         },
         {
-          "years": "2015–2018",
+          "years": "2015–2016",
           "club": "Osmanlıspor",
           "league": null,
           "leagueRaw": "Storico",
@@ -69130,22 +68950,13 @@
           "goals": 6
         },
         {
-          "years": "2006–2010",
+          "years": "2006–2008",
           "club": "Porto",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 5,
           "goals": 0
-        },
-        {
-          "years": "2006–2008",
-          "club": "Académica",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 23,
-          "goals": 4
         },
         {
           "years": "2008",
@@ -69332,15 +69143,6 @@
           "goals": 1
         },
         {
-          "years": "2007–2008",
-          "club": "Talleres (C)",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 31,
-          "goals": 0
-        },
-        {
           "years": "2010",
           "club": "Sporting CP",
           "league": "liga_pt",
@@ -69411,15 +69213,6 @@
           "country": null,
           "apps": 6,
           "goals": 0
-        },
-        {
-          "years": "2017",
-          "club": "Racing Club",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 11,
-          "goals": 1
         },
         {
           "years": "2018",
@@ -71017,7 +70810,7 @@
           "goals": 10
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "Zhejiang Greentown",
           "league": null,
           "leagueRaw": "Storico",
@@ -71761,7 +71554,7 @@
           "goals": 11
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "B-SAD",
           "league": null,
           "leagueRaw": "Storico",
@@ -72284,7 +72077,7 @@
           "goals": 10
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "Al Taawoun",
           "league": null,
           "leagueRaw": "Storico",
@@ -74537,7 +74330,7 @@
           "goals": 2
         },
         {
-          "years": "2009–2013",
+          "years": "2009–2010",
           "club": "Mafra",
           "league": null,
           "leagueRaw": "Storico",
@@ -74609,7 +74402,7 @@
           "goals": 3
         },
         {
-          "years": "2017–2021",
+          "years": "2017–2018",
           "club": "Hebei FC",
           "league": null,
           "leagueRaw": "Storico",
@@ -76010,15 +75803,6 @@
           "goals": 4
         },
         {
-          "years": "2015–2016",
-          "club": "Málaga B",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 31,
-          "goals": 3
-        },
-        {
           "years": "2016",
           "club": "Malaga",
           "league": "laliga",
@@ -76541,7 +76325,7 @@
           "goals": 22
         },
         {
-          "years": "2019–2021",
+          "years": "2019–2020",
           "club": "B-SAD",
           "league": null,
           "leagueRaw": "Storico",
@@ -77864,7 +77648,7 @@
           "goals": 8
         },
         {
-          "years": "2019–2022",
+          "years": "2019–2020",
           "club": "Dalian Professional",
           "league": null,
           "leagueRaw": "Storico",
@@ -78696,7 +78480,7 @@
           "goals": 0
         },
         {
-          "years": "2009–2011",
+          "years": "2009–2010",
           "club": "La Equidad",
           "league": null,
           "leagueRaw": "Storico",
@@ -80853,7 +80637,7 @@
           "goals": 0
         },
         {
-          "years": "2022–2024",
+          "years": "2022–2023",
           "club": "Al-Tai",
           "league": null,
           "leagueRaw": "Storico",
@@ -82615,7 +82399,7 @@
           "goals": 0
         },
         {
-          "years": "2015–2018",
+          "years": "2015–2016",
           "club": "Sevilla B",
           "league": null,
           "leagueRaw": "Storico",
@@ -83119,7 +82903,7 @@
           "goals": 0
         },
         {
-          "years": "2017–2019",
+          "years": "2017–2018",
           "club": "Saburtalo",
           "league": null,
           "leagueRaw": "Storico",
@@ -84781,7 +84565,7 @@
           "goals": 3
         },
         {
-          "years": "2013–2015",
+          "years": "2013–2014",
           "club": "Mouscron-Péruwelz",
           "league": null,
           "leagueRaw": "Storico",
@@ -85856,7 +85640,7 @@
           "goals": 0
         },
         {
-          "years": "2017–2019",
+          "years": "2017–2018",
           "club": "Villarreal C",
           "league": null,
           "leagueRaw": "Storico",
@@ -86769,7 +86553,7 @@
           "goals": 2
         },
         {
-          "years": "2019–2023",
+          "years": "2019–2020",
           "club": "Sevilla B",
           "league": null,
           "leagueRaw": "Storico",
@@ -89609,7 +89393,7 @@
           "goals": 0
         },
         {
-          "years": "2022–2024",
+          "years": "2022–2023",
           "club": "Valladolid B",
           "league": null,
           "leagueRaw": "Storico",
@@ -89991,7 +89775,7 @@
           "goals": 3
         },
         {
-          "years": "2013–2015",
+          "years": "2013–2014",
           "club": "Dynamo-2 Kyiv",
           "league": null,
           "leagueRaw": "Storico",
@@ -90757,7 +90541,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2018–2021",
+          "years": "2018–2020",
           "club": "Debrecen II",
           "league": null,
           "leagueRaw": "Storico",
@@ -90992,7 +90776,7 @@
           "goals": 0
         },
         {
-          "years": "2012–2014",
+          "years": "2012–2013",
           "club": "Basconia",
           "league": null,
           "leagueRaw": "Storico",
@@ -91425,7 +91209,7 @@
           "goals": 0
         },
         {
-          "years": "2021–2023",
+          "years": "2021–2022",
           "club": "Polvorín",
           "league": null,
           "leagueRaw": "Storico",
@@ -91489,7 +91273,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2023–2025",
+          "years": "2023–2024",
           "club": "Betis B",
           "league": null,
           "leagueRaw": "Storico",
@@ -93290,7 +93074,7 @@
           "goals": 0
         },
         {
-          "years": "2012–2014",
+          "years": "2012–2013",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -93926,21 +93710,12 @@
       "isGK": false,
       "career": [
         {
-          "years": "2008–2012",
+          "years": "2008–2010",
           "club": "Santo André",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2009",
-          "club": "CSA",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 6,
           "goals": 0
         },
         {
@@ -95726,7 +95501,7 @@
           "goals": 0
         },
         {
-          "years": "2015–2017",
+          "years": "2015–2016",
           "club": "NK Zagreb II",
           "league": null,
           "leagueRaw": "Storico",
@@ -95762,7 +95537,7 @@
           "goals": 5
         },
         {
-          "years": "2017–2022",
+          "years": "2017–2018",
           "club": "Slavia Prague",
           "league": null,
           "leagueRaw": "Storico",
@@ -95914,7 +95689,7 @@
           "goals": 0
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -97189,7 +96964,7 @@
           "goals": 1
         },
         {
-          "years": "2023–2025",
+          "years": "2023–2024",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -97281,7 +97056,7 @@
           "goals": 2
         },
         {
-          "years": "2016–2019",
+          "years": "2016–2017",
           "club": "Paris Saint-Germain B",
           "league": null,
           "leagueRaw": "Storico",
@@ -98524,7 +98299,7 @@
           "goals": 0
         },
         {
-          "years": "2014–2016",
+          "years": "2014–2015",
           "club": "Akhisar Belediyespor",
           "league": null,
           "leagueRaw": "Storico",
@@ -98730,15 +98505,6 @@
           "country": null,
           "apps": 22,
           "goals": 2
-        },
-        {
-          "years": "2004–2009",
-          "club": "Porto",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 4,
-          "goals": 0
         },
         {
           "years": "2005",
@@ -100253,7 +100019,7 @@
           "goals": 1
         },
         {
-          "years": "2012–2015",
+          "years": "2012–2013",
           "club": "Lorient B",
           "league": null,
           "leagueRaw": "Storico",
@@ -100452,7 +100218,7 @@
           "goals": 0
         },
         {
-          "years": "2017–2019",
+          "years": "2017–2018",
           "club": "Gazişehir Gaziantep",
           "league": null,
           "leagueRaw": "Storico",
@@ -102885,7 +102651,7 @@
           "goals": 1
         },
         {
-          "years": "2013–2015",
+          "years": "2013–2014",
           "club": "Paris Saint-Germain B",
           "league": null,
           "leagueRaw": "Storico",
@@ -103398,7 +103164,7 @@
           "goals": 0
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Vitória de Guimarães",
           "league": null,
           "leagueRaw": "Storico",
@@ -107454,7 +107220,7 @@
           "goals": 0
         },
         {
-          "years": "2011–2013",
+          "years": "2011–2012",
           "club": "Deportivo Petare",
           "league": null,
           "leagueRaw": "Storico",
@@ -107544,7 +107310,7 @@
           "goals": 2
         },
         {
-          "years": "2019–2022",
+          "years": "2019–2020",
           "club": "Benfica",
           "league": null,
           "leagueRaw": "Storico",
@@ -108885,7 +108651,7 @@
           "goals": 0
         },
         {
-          "years": "2019–2022",
+          "years": "2019–2020",
           "club": "Angers II",
           "league": null,
           "leagueRaw": "Storico",
@@ -109131,7 +108897,7 @@
           "goals": 3
         },
         {
-          "years": "2016–2021",
+          "years": "2016–2017",
           "club": "Jong PSV",
           "league": null,
           "leagueRaw": "Storico",
@@ -111329,7 +111095,7 @@
           "goals": 1
         },
         {
-          "years": "2014–2017",
+          "years": "2014–2015",
           "club": "Paris Saint-Germain B",
           "league": null,
           "leagueRaw": "Storico",
@@ -111660,7 +111426,7 @@
           "goals": 1
         },
         {
-          "years": "2017–2022",
+          "years": "2017–2019",
           "club": "Vitória de Guimarães",
           "league": null,
           "leagueRaw": "Storico",
@@ -113963,7 +113729,7 @@
           "goals": 0
         },
         {
-          "years": "2015–2017",
+          "years": "2015–2016",
           "club": "Akhisar Belediyespor",
           "league": null,
           "leagueRaw": "Storico",
@@ -114318,7 +114084,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2006–2010",
+          "years": "2006–2008",
           "club": "Marítimo B",
           "league": null,
           "leagueRaw": "Storico",
@@ -114796,15 +114562,6 @@
           "goals": 0
         },
         {
-          "years": "2005",
-          "club": "Juventude",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 8,
-          "goals": 0
-        },
-        {
           "years": "2008–2011",
           "club": "Nacional",
           "league": null,
@@ -114901,15 +114658,6 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 28,
-          "goals": 0
-        },
-        {
-          "years": "2006",
-          "club": "Egaleo",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 8,
           "goals": 0
         },
         {
@@ -116025,7 +115773,7 @@
           "goals": 3
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "SAK 1914",
           "league": null,
           "leagueRaw": "Storico",
@@ -116078,15 +115826,6 @@
           "country": null,
           "apps": 41,
           "goals": 9
-        },
-        {
-          "years": "2005",
-          "club": "Vitória Guimarães",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 13,
-          "goals": 1
         },
         {
           "years": "2008",
@@ -117001,22 +116740,13 @@
       "isGK": false,
       "career": [
         {
-          "years": "2006–2009",
+          "years": "2006–2008",
           "club": "Estoril",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 28,
           "goals": 1
-        },
-        {
-          "years": "2006–2007",
-          "club": "Rio Maior",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 21,
-          "goals": 3
         },
         {
           "years": "2008–2011",
@@ -117064,7 +116794,7 @@
           "goals": 0
         },
         {
-          "years": "2013–2016",
+          "years": "2013–2014",
           "club": "Steaua București",
           "league": null,
           "leagueRaw": "Storico",
@@ -117530,7 +117260,7 @@
           "goals": 5
         },
         {
-          "years": "2016–2020",
+          "years": "2016–2017",
           "club": "Shanghai Port",
           "league": null,
           "leagueRaw": "Storico",
@@ -118432,7 +118162,7 @@
           "goals": 0
         },
         {
-          "years": "2008–2010",
+          "years": "2008–2009",
           "club": "Leixões",
           "league": null,
           "leagueRaw": "Storico",
@@ -118604,30 +118334,12 @@
           "goals": 0
         },
         {
-          "years": "2006–2010",
+          "years": "2006–2008",
           "club": "Porto",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2006–2007",
-          "club": "Standard Liège",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 10,
-          "goals": 0
-        },
-        {
-          "years": "2007–2008",
-          "club": "Portimonense",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 15,
           "goals": 0
         },
         {
@@ -119589,21 +119301,21 @@
       "isGK": false,
       "career": [
         {
-          "years": "2007–2009",
-          "club": "Cruzeiro",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
           "years": "2007",
           "club": "Cabofriense",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 8,
+          "goals": 0
+        },
+        {
+          "years": "2007–2008",
+          "club": "Cruzeiro",
+          "league": null,
+          "leagueRaw": "Storico",
+          "country": null,
+          "apps": 1,
           "goals": 0
         },
         {
@@ -120147,7 +119859,7 @@
           "goals": 4
         },
         {
-          "years": "2007–2010",
+          "years": "2007–2008",
           "club": "Porto",
           "league": null,
           "leagueRaw": "Storico",
@@ -120290,15 +120002,6 @@
           "goals": 0
         },
         {
-          "years": "2005–2006",
-          "club": "Figueirense",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 2,
-          "goals": 0
-        },
-        {
           "years": "2008–2011",
           "club": "Naval 1893",
           "league": "liga_pt",
@@ -120308,7 +120011,7 @@
           "goals": 8
         },
         {
-          "years": "2012–2014",
+          "years": "2012–2013",
           "club": "Muangthong United",
           "league": null,
           "leagueRaw": "Storico",
@@ -120671,15 +120374,6 @@
           "goals": 6
         },
         {
-          "years": "2003–2004",
-          "club": "Chaves",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 27,
-          "goals": 1
-        },
-        {
           "years": "2006–2009",
           "club": "Porto",
           "league": null,
@@ -120687,24 +120381,6 @@
           "country": null,
           "apps": 1,
           "goals": 0
-        },
-        {
-          "years": "2007",
-          "club": "Marítimo",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 5,
-          "goals": 1
-        },
-        {
-          "years": "2007–2009",
-          "club": "Leixões",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 46,
-          "goals": 5
         },
         {
           "years": "2009",
@@ -121033,15 +120709,6 @@
           "goals": 14
         },
         {
-          "years": "2001–2002",
-          "club": "Anadia",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 26,
-          "goals": 4
-        },
-        {
           "years": "2006–2007",
           "club": "Tourizense",
           "league": null,
@@ -121104,15 +120771,6 @@
           "country": null,
           "apps": 68,
           "goals": 9
-        },
-        {
-          "years": "2016–2017",
-          "club": "Penafiel",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 35,
-          "goals": 5
         },
         {
           "years": "2017–2018",
@@ -121242,7 +120900,7 @@
           "goals": 3
         },
         {
-          "years": "2011–2013",
+          "years": "2011–2012",
           "club": "Steaua București",
           "league": null,
           "leagueRaw": "Storico",
@@ -121734,15 +121392,6 @@
           "goals": 1
         },
         {
-          "years": "2004",
-          "club": "Porto",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
           "years": "2008–2010",
           "club": "Rio Ave",
           "league": null,
@@ -121907,7 +121556,7 @@
           "goals": 0
         },
         {
-          "years": "2009–2013",
+          "years": "2009–2010",
           "club": "Marítimo B",
           "league": null,
           "leagueRaw": "Storico",
@@ -121959,15 +121608,6 @@
           "country": null,
           "apps": 21,
           "goals": 0
-        },
-        {
-          "years": "2014–2015",
-          "club": "Olhanense",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 31,
-          "goals": 5
         },
         {
           "years": "2015",
@@ -122050,15 +121690,6 @@
           "country": null,
           "apps": 50,
           "goals": 29
-        },
-        {
-          "years": "2007",
-          "club": "Grêmio",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 8,
-          "goals": 0
         },
         {
           "years": "2008–2011",
@@ -122250,7 +121881,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "1998–2015",
+          "years": "1998–2008",
           "club": "Marítimo B",
           "league": null,
           "leagueRaw": "Storico",
@@ -122567,7 +122198,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "1999–2015",
+          "years": "1999–2008",
           "club": "Marítimo B",
           "league": null,
           "leagueRaw": "Storico",
@@ -122831,24 +122462,6 @@
           "goals": 1
         },
         {
-          "years": "2004–2005",
-          "club": "Moreirense",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 22,
-          "goals": 1
-        },
-        {
-          "years": "2005–2006",
-          "club": "Aves",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 27,
-          "goals": 6
-        },
-        {
           "years": "2006–2007",
           "club": "Aves",
           "league": null,
@@ -122895,22 +122508,13 @@
           "goals": 11
         },
         {
-          "years": "2003–2010",
+          "years": "2004–2008",
           "club": "Porto",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 17,
           "goals": 2
-        },
-        {
-          "years": "2004–2005",
-          "club": "Vitória Setúbal",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 24,
-          "goals": 5
         },
         {
           "years": "2008",
@@ -123085,15 +122689,6 @@
           "goals": 8
         },
         {
-          "years": "2000",
-          "club": "Braga B",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
           "years": "2001–2004",
           "club": "Sporting CP",
           "league": null,
@@ -123101,15 +122696,6 @@
           "country": null,
           "apps": 18,
           "goals": 0
-        },
-        {
-          "years": "2001–2003",
-          "club": "Sporting CP B",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 10,
-          "goals": 2
         },
         {
           "years": "2004",
@@ -123258,21 +122844,12 @@
           "goals": 0
         },
         {
-          "years": "2005–2009",
+          "years": "2005–2008",
           "club": "Académica",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 36,
-          "goals": 0
-        },
-        {
-          "years": "2006–2007",
-          "club": "Tourizense",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 2,
           "goals": 0
         },
         {
@@ -123364,15 +122941,6 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 33,
-          "goals": 3
-        },
-        {
-          "years": "1997–1998",
-          "club": "Alverca",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 20,
           "goals": 3
         },
         {
@@ -123793,42 +123361,6 @@
           "goals": 0
         },
         {
-          "years": "2003",
-          "club": "Figueirense",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 16,
-          "goals": 2
-        },
-        {
-          "years": "2004",
-          "club": "Vitória",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 26,
-          "goals": 1
-        },
-        {
-          "years": "2005",
-          "club": "Internacional",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 5,
-          "goals": 0
-        },
-        {
-          "years": "2005–2006",
-          "club": "Académica",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 21,
-          "goals": 1
-        },
-        {
           "years": "2007",
           "club": "Corinthians",
           "league": null,
@@ -123908,24 +123440,6 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
-        },
-        {
-          "years": "1997–1998",
-          "club": "Lourinhanense",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 30,
-          "goals": 7
-        },
-        {
-          "years": "1998–1999",
-          "club": "Campomaiorense",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 12,
           "goals": 0
         },
         {
@@ -125098,7 +124612,7 @@
           "goals": 1
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "B-SAD",
           "league": null,
           "leagueRaw": "Storico",
@@ -125189,7 +124703,7 @@
           "goals": 3
         },
         {
-          "years": "2010–2012",
+          "years": "2010–2011",
           "club": "Cerceda",
           "league": null,
           "leagueRaw": "Storico",
@@ -125207,7 +124721,7 @@
           "goals": 0
         },
         {
-          "years": "2012–2014",
+          "years": "2012–2013",
           "club": "Compostela",
           "league": null,
           "leagueRaw": "Storico",
@@ -125243,7 +124757,7 @@
           "goals": 4
         },
         {
-          "years": "2014–2023",
+          "years": "2014–2015",
           "club": "Racing Ferrol",
           "league": null,
           "leagueRaw": "Storico",
@@ -125363,42 +124877,6 @@
           "goals": 0
         },
         {
-          "years": "2006–2007",
-          "club": "Tourizense",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 18,
-          "goals": 5
-        },
-        {
-          "years": "2007",
-          "club": "Penafiel",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 3,
-          "goals": 0
-        },
-        {
-          "years": "2008",
-          "club": "Gondomar",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 12,
-          "goals": 3
-        },
-        {
-          "years": "2008–2009",
-          "club": "Gil Vicente",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 26,
-          "goals": 4
-        },
-        {
           "years": "2009",
           "club": "Olhanense",
           "league": null,
@@ -125426,7 +124904,7 @@
           "goals": 6
         },
         {
-          "years": "2011–2013",
+          "years": "2011–2012",
           "club": "AEL",
           "league": null,
           "leagueRaw": "Storico",
@@ -125589,7 +125067,7 @@
           "goals": 0
         },
         {
-          "years": "2010–2013",
+          "years": "2010–2011",
           "club": "Vitória de Setúbal",
           "league": null,
           "leagueRaw": "Storico",
@@ -125938,24 +125416,6 @@
           "goals": 10
         },
         {
-          "years": "2005",
-          "club": "Santos",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 12,
-          "goals": 1
-        },
-        {
-          "years": "2006",
-          "club": "Figueirense",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 9,
-          "goals": 3
-        },
-        {
           "years": "2007",
           "club": "Sport Recife",
           "league": null,
@@ -126226,15 +125686,6 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 9,
-          "goals": 0
-        },
-        {
-          "years": "2008",
-          "club": "Portuguesa",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 6,
           "goals": 0
         },
         {
@@ -126867,15 +126318,6 @@
           "goals": 0
         },
         {
-          "years": "2005–2008",
-          "club": "Grêmio Anápolis",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 31,
-          "goals": 3
-        },
-        {
           "years": "2005",
           "club": "Mixto",
           "league": null,
@@ -126885,22 +126327,13 @@
           "goals": 1
         },
         {
-          "years": "2006–2007",
-          "club": "Santa Clara",
+          "years": "2005–2008",
+          "club": "Grêmio Anápolis",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
-          "apps": 29,
-          "goals": 1
-        },
-        {
-          "years": "2007–2008",
-          "club": "Leixões",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 2,
-          "goals": 0
+          "apps": 31,
+          "goals": 3
         },
         {
           "years": "2008",
@@ -129107,24 +128540,6 @@
           "goals": 12
         },
         {
-          "years": "2006–2007",
-          "club": "Penafiel",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 27,
-          "goals": 3
-        },
-        {
-          "years": "2007–2008",
-          "club": "Beira-Mar",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 24,
-          "goals": 2
-        },
-        {
           "years": "2008–2009",
           "club": "União Leiria",
           "league": null,
@@ -129847,15 +129262,6 @@
           "goals": 0
         },
         {
-          "years": "2007–2008",
-          "club": "Ribeirão",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 17,
-          "goals": 0
-        },
-        {
           "years": "2010",
           "club": "Rio Ave",
           "league": "liga_pt",
@@ -130183,7 +129589,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2008–2015",
+          "years": "2008–2011",
           "club": "Marítimo B",
           "league": null,
           "leagueRaw": "Storico",
@@ -130624,21 +130030,12 @@
           "goals": 0
         },
         {
-          "years": "2011–2013",
+          "years": "2011–2012",
           "club": "Villarreal B",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2011–2012",
-          "club": "Palencia",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 26,
           "goals": 0
         },
         {
@@ -131366,7 +130763,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2007–2015",
+          "years": "2007–2011",
           "club": "Marítimo B",
           "league": null,
           "leagueRaw": "Storico",
@@ -131475,7 +130872,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2008–2011",
+          "years": "2008–2010",
           "club": "Moreirense",
           "league": null,
           "leagueRaw": "Storico",
@@ -133064,33 +132461,6 @@
           "goals": 0
         },
         {
-          "years": "2006–2007",
-          "club": "União Leiria",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 20,
-          "goals": 1
-        },
-        {
-          "years": "2007–2008",
-          "club": "Académica",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 22,
-          "goals": 0
-        },
-        {
-          "years": "2008–2009",
-          "club": "Gil Vicente",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 22,
-          "goals": 2
-        },
-        {
           "years": "2010",
           "club": "Portimonense",
           "league": "liga_pt",
@@ -133811,33 +133181,6 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 8,
-          "goals": 0
-        },
-        {
-          "years": "2003",
-          "club": "Varzim",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 2,
-          "goals": 0
-        },
-        {
-          "years": "2003–2004",
-          "club": "Porto B",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 3,
-          "goals": 0
-        },
-        {
-          "years": "2004–2005",
-          "club": "Braga",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 33,
           "goals": 0
         },
         {
@@ -135873,15 +135216,6 @@
           "goals": 3
         },
         {
-          "years": "2006–2007",
-          "club": "Atlético-PR",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 32,
-          "goals": 1
-        },
-        {
           "years": "2008–2009",
           "club": "Desportivo Brasil",
           "league": null,
@@ -137287,7 +136621,7 @@
           "goals": 0
         },
         {
-          "years": "2014–2016",
+          "years": "2014–2015",
           "club": "Jong PSV",
           "league": null,
           "leagueRaw": "Storico",
@@ -138648,15 +137982,6 @@
           "goals": 18
         },
         {
-          "years": "2007–2008",
-          "club": "União Madeira",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 36,
-          "goals": 4
-        },
-        {
           "years": "2011–2013",
           "club": "Pacos Ferreira",
           "league": "liga_pt",
@@ -138802,7 +138127,7 @@
           "goals": 2
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "B-SAD",
           "league": null,
           "leagueRaw": "Storico",
@@ -139777,15 +139102,6 @@
           "goals": 1
         },
         {
-          "years": "2006–2008",
-          "club": "Tourizense",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 51,
-          "goals": 15
-        },
-        {
           "years": "2008",
           "club": "Lokomotiv Mezdra",
           "league": null,
@@ -140537,7 +139853,7 @@
           "goals": 0
         },
         {
-          "years": "2012–2015",
+          "years": "2012–2013",
           "club": "Braga B",
           "league": null,
           "leagueRaw": "Storico",
@@ -140791,7 +140107,7 @@
           "goals": 0
         },
         {
-          "years": "2010–2012",
+          "years": "2010–2011",
           "club": "Akademiya Togliatti",
           "league": null,
           "leagueRaw": "Storico",
@@ -142401,7 +141717,7 @@
           "goals": 5
         },
         {
-          "years": "2013–2016",
+          "years": "2013–2014",
           "club": "Sporting B",
           "league": null,
           "leagueRaw": "Storico",
@@ -143743,7 +143059,7 @@
           "goals": 6
         },
         {
-          "years": "2021–2023",
+          "years": "2021–2022",
           "club": "Lion City Sailors",
           "league": null,
           "leagueRaw": "Storico",
@@ -143968,7 +143284,7 @@
           "goals": 4
         },
         {
-          "years": "2018–2021",
+          "years": "2018–2019",
           "club": "B-SAD",
           "league": null,
           "leagueRaw": "Storico",
@@ -145951,24 +145267,6 @@
           "goals": 3
         },
         {
-          "years": "2009",
-          "club": "NK Varteks",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 13,
-          "goals": 1
-        },
-        {
-          "years": "2010",
-          "club": "Shandong Luneng",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 19,
-          "goals": 2
-        },
-        {
           "years": "2011",
           "club": "NK Zagreb",
           "league": null,
@@ -145978,7 +145276,7 @@
           "goals": 1
         },
         {
-          "years": "2011–2013",
+          "years": "2011–2012",
           "club": "Ettifaq",
           "league": null,
           "leagueRaw": "Storico",
@@ -146005,7 +145303,7 @@
           "goals": 2
         },
         {
-          "years": "2013–2015",
+          "years": "2013–2014",
           "club": "Zob Ahan",
           "league": null,
           "leagueRaw": "Storico",
@@ -146657,7 +145955,7 @@
           "goals": 8
         },
         {
-          "years": "2017–2019",
+          "years": "2017–2018",
           "club": "Paços de Ferreira",
           "league": null,
           "leagueRaw": "Storico",
@@ -147280,15 +146578,6 @@
           "goals": 2
         },
         {
-          "years": "2000",
-          "club": "Fylkir",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 16,
-          "goals": 1
-        },
-        {
           "years": "2003–2005",
           "club": "Fylkir",
           "league": null,
@@ -147405,15 +146694,6 @@
           "country": null,
           "apps": 41,
           "goals": 8
-        },
-        {
-          "years": "2008",
-          "club": "Kastoria",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 1,
-          "goals": 0
         },
         {
           "years": "2009–2010",
@@ -147957,7 +147237,7 @@
           "goals": 0
         },
         {
-          "years": "2022–2024",
+          "years": "2022–2023",
           "club": "Rabo de Peixe",
           "league": null,
           "leagueRaw": "Storico",
@@ -149523,7 +148803,7 @@
           "goals": 0
         },
         {
-          "years": "2010–2013",
+          "years": "2010–2011",
           "club": "Real Esppor",
           "league": null,
           "leagueRaw": "Storico",
@@ -152129,15 +151409,6 @@
           "goals": 0
         },
         {
-          "years": "2012–2016",
-          "club": "CSP",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 17,
-          "goals": 10
-        },
-        {
           "years": "2012",
           "club": "{{ill|Caicó Esporte Clube",
           "league": null,
@@ -152154,6 +151425,15 @@
           "country": null,
           "apps": 6,
           "goals": 0
+        },
+        {
+          "years": "2012–2013",
+          "club": "CSP",
+          "league": null,
+          "leagueRaw": "Storico",
+          "country": null,
+          "apps": 17,
+          "goals": 10
         },
         {
           "years": "2013",
@@ -152192,31 +151472,13 @@
           "goals": 4
         },
         {
-          "years": "2014",
+          "years": "2014–2016",
           "club": "Nacional",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
-          "apps": 12,
-          "goals": 2
-        },
-        {
-          "years": "2014",
-          "club": "Lucena",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 7,
-          "goals": 3
-        },
-        {
-          "years": "2015",
-          "club": "Nacional",
-          "league": "liga_pt",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 15,
-          "goals": 5
+          "apps": 27,
+          "goals": 7
         },
         {
           "years": "2016",
@@ -152644,7 +151906,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2007–2010",
+          "years": "2007–2009",
           "club": "Panachaiki",
           "league": null,
           "leagueRaw": "Storico",
@@ -153649,7 +152911,7 @@
           "goals": 0
         },
         {
-          "years": "2019–2023",
+          "years": "2019–2020",
           "club": "Red Bull Bragantino",
           "league": null,
           "leagueRaw": "Storico",
@@ -154097,7 +153359,7 @@
           "goals": 3
         },
         {
-          "years": "2017–2020",
+          "years": "2017–2018",
           "club": "Nea Salamina",
           "league": null,
           "leagueRaw": "Storico",
@@ -155423,7 +154685,7 @@
           "goals": 4
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Al-Taawoun",
           "league": null,
           "leagueRaw": "Storico",
@@ -155809,7 +155071,7 @@
           "goals": 0
         },
         {
-          "years": "2014–2018",
+          "years": "2014–2015",
           "club": "Vitória SC B",
           "league": null,
           "leagueRaw": "Storico",
@@ -157017,7 +156279,7 @@
           "goals": 2
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "Vitória de Setúbal",
           "league": null,
           "leagueRaw": "Storico",
@@ -157934,7 +157196,7 @@
           "goals": 1
         },
         {
-          "years": "2012–2014",
+          "years": "2012–2013",
           "club": "Videoton",
           "league": null,
           "leagueRaw": "Storico",
@@ -158387,7 +157649,7 @@
           "goals": 2
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Al Batin",
           "league": null,
           "leagueRaw": "Storico",
@@ -158956,7 +158218,7 @@
           "goals": 4
         },
         {
-          "years": "2010–2012",
+          "years": "2010–2011",
           "club": "Gondomar",
           "league": null,
           "leagueRaw": "Storico",
@@ -159101,7 +158363,7 @@
           "goals": 1
         },
         {
-          "years": "2012–2014",
+          "years": "2012–2013",
           "club": "Dundee United",
           "league": null,
           "leagueRaw": "Storico",
@@ -160251,7 +159513,7 @@
           "goals": 0
         },
         {
-          "years": "2012–2017",
+          "years": "2012–2013",
           "club": "Wa All-Stars",
           "league": null,
           "leagueRaw": "Storico",
@@ -160296,7 +159558,7 @@
           "goals": 2
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "Maritzburg United",
           "league": null,
           "leagueRaw": "Storico",
@@ -160323,7 +159585,7 @@
           "goals": 0
         },
         {
-          "years": "2020–2024",
+          "years": "2020–2021",
           "club": "Orlando Pirates",
           "league": null,
           "leagueRaw": "Storico",
@@ -160405,7 +159667,7 @@
           "goals": 2
         },
         {
-          "years": "2004–2006",
+          "years": "2005–2006",
           "club": "Porto",
           "league": null,
           "leagueRaw": "Storico",
@@ -160730,7 +159992,7 @@
           "goals": 0
         },
         {
-          "years": "2012–2014",
+          "years": "2012–2013",
           "club": "Lechia Gdańsk II",
           "league": null,
           "leagueRaw": "Storico",
@@ -162802,7 +162064,7 @@
           "goals": 2
         },
         {
-          "years": "2021–2023",
+          "years": "2021–2022",
           "club": "Al Batin",
           "league": null,
           "leagueRaw": "Storico",
@@ -164159,7 +163421,7 @@
           "goals": 0
         },
         {
-          "years": "2021–2023",
+          "years": "2021–2022",
           "club": "AGF",
           "league": null,
           "leagueRaw": "Storico",
@@ -165322,7 +164584,7 @@
           "goals": 0
         },
         {
-          "years": "2013–2018",
+          "years": "2013–2014",
           "club": "Atlético Mineiro",
           "league": null,
           "leagueRaw": "Storico",
@@ -165367,31 +164629,13 @@
           "goals": 0
         },
         {
-          "years": "2017",
+          "years": "2017–2019",
           "club": "Aves",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
-          "apps": 29,
-          "goals": 1
-        },
-        {
-          "years": "2017",
-          "club": "Internacional",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 26,
+          "apps": 61,
           "goals": 3
-        },
-        {
-          "years": "2018",
-          "club": "Aves",
-          "league": "liga_pt",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 32,
-          "goals": 2
         },
         {
           "years": "2018",
@@ -165430,7 +164674,7 @@
           "goals": 1
         },
         {
-          "years": "2019–2021",
+          "years": "2019–2020",
           "club": "Santa Clara",
           "league": null,
           "leagueRaw": "Storico",
@@ -165484,7 +164728,7 @@
           "goals": 0
         },
         {
-          "years": "2021–2026",
+          "years": "2021–2022",
           "club": "Al-Shabab",
           "league": null,
           "leagueRaw": "Storico",
@@ -168708,7 +167952,7 @@
           "goals": 9
         },
         {
-          "years": "2013–2015",
+          "years": "2013–2014",
           "club": "SKA-Energiya Khabarovsk",
           "league": null,
           "leagueRaw": "Storico",
@@ -169131,15 +168375,6 @@
           "goals": 1
         },
         {
-          "years": "2005",
-          "club": "Braga",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
           "years": "2006–2007",
           "club": "Istres",
           "league": null,
@@ -169367,7 +168602,7 @@
           "goals": 1
         },
         {
-          "years": "2015–2017",
+          "years": "2015–2016",
           "club": "União da Madeira",
           "league": null,
           "leagueRaw": "Storico",
@@ -169785,22 +169020,13 @@
           "goals": 10
         },
         {
-          "years": "2005–2009",
+          "years": "2005–2008",
           "club": "Marsaxlokk",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 51,
           "goals": 24
-        },
-        {
-          "years": "2007–2008",
-          "club": "Eintracht Braunschweig",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 29,
-          "goals": 9
         },
         {
           "years": "2008",
@@ -170237,7 +169463,7 @@
           "goals": 1
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Arsenal de Sarandí",
           "league": null,
           "leagueRaw": "Storico",
@@ -170658,7 +169884,7 @@
           "goals": 0
         },
         {
-          "years": "2016–2018",
+          "years": "2016–2017",
           "club": "Paços de Ferreira",
           "league": null,
           "leagueRaw": "Storico",
@@ -172744,7 +171970,7 @@
           "goals": 11
         },
         {
-          "years": "2016–2018",
+          "years": "2016–2017",
           "club": "Paços de Ferreira",
           "league": null,
           "leagueRaw": "Storico",
@@ -172898,22 +172124,13 @@
       "isGK": false,
       "career": [
         {
-          "years": "2016–2024",
+          "years": "2016–2017",
           "club": "Grêmio",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 120,
           "goals": 16
-        },
-        {
-          "years": "2016–2017",
-          "club": "São Luiz",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 42,
-          "goals": 8
         },
         {
           "years": "2017",
@@ -172961,7 +172178,7 @@
           "goals": 0
         },
         {
-          "years": "2019–2022",
+          "years": "2019–2020",
           "club": "Aimoré",
           "league": null,
           "leagueRaw": "Storico",
@@ -175284,7 +174501,7 @@
           "goals": 1
         },
         {
-          "years": "2011–2015",
+          "years": "2011–2012",
           "club": "Radnički Kragujevac",
           "league": null,
           "leagueRaw": "Storico",
@@ -175842,7 +175059,7 @@
           "goals": 2
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "B-SAD",
           "league": null,
           "leagueRaw": "Storico",
@@ -176322,7 +175539,7 @@
           "goals": 0
         },
         {
-          "years": "2021–2025",
+          "years": "2021–2023",
           "club": "Petro Atlético",
           "league": null,
           "leagueRaw": "Storico",
@@ -177091,15 +176308,6 @@
           "country": null,
           "apps": 15,
           "goals": 2
-        },
-        {
-          "years": "2006",
-          "club": "Väsby United",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 25,
-          "goals": 1
         },
         {
           "years": "2007–2008",
@@ -179724,7 +178932,7 @@
           "goals": 80
         },
         {
-          "years": "2019–2022",
+          "years": "2019–2020",
           "club": "Vitória de Guimarães",
           "league": null,
           "leagueRaw": "Storico",
@@ -182201,7 +181409,7 @@
           "goals": 1
         },
         {
-          "years": "2022–2024",
+          "years": "2022–2023",
           "club": "Shandong Taishan",
           "league": null,
           "leagueRaw": "Storico",
@@ -182436,7 +181644,7 @@
           "goals": 3
         },
         {
-          "years": "2021–2023",
+          "years": "2021–2022",
           "club": "Al-Tai",
           "league": null,
           "leagueRaw": "Storico",
@@ -182899,7 +182107,7 @@
           "goals": 0
         },
         {
-          "years": "2014–2017",
+          "years": "2014–2015",
           "club": "Lyon II",
           "league": null,
           "leagueRaw": "Storico",
@@ -183331,7 +182539,7 @@
           "goals": 0
         },
         {
-          "years": "2011–2014",
+          "years": "2011–2013",
           "club": "Colo-Colo B",
           "league": null,
           "leagueRaw": "Storico",
@@ -184479,7 +183687,7 @@
           "goals": 3
         },
         {
-          "years": "2021–2023",
+          "years": "2021–2022",
           "club": "Universidad Central",
           "league": null,
           "leagueRaw": "Storico",
@@ -186755,7 +185963,7 @@
           "goals": 1
         },
         {
-          "years": "2015–2018",
+          "years": "2015–2016",
           "club": "Waasland-Beveren",
           "league": null,
           "leagueRaw": "Storico",
@@ -186809,7 +186017,7 @@
           "goals": 1
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Sint-Truiden",
           "league": null,
           "leagueRaw": "Storico",
@@ -187900,7 +187108,7 @@
           "goals": 5
         },
         {
-          "years": "2018–2023",
+          "years": "2018–2019",
           "club": "B-SAD",
           "league": null,
           "leagueRaw": "Storico",
@@ -188172,7 +187380,7 @@
           "goals": 1
         },
         {
-          "years": "2013–2015",
+          "years": "2013–2014",
           "club": "Zestaponi",
           "league": null,
           "leagueRaw": "Storico",
@@ -188794,7 +188002,7 @@
           "goals": 0
         },
         {
-          "years": "2010–2014",
+          "years": "2010–2011",
           "club": "Argentinos Juniors",
           "league": null,
           "leagueRaw": "Storico",
@@ -190199,7 +189407,7 @@
           "goals": 1
         },
         {
-          "years": "2016–2020",
+          "years": "2016–2017",
           "club": "Sampaio Corrêa",
           "league": null,
           "leagueRaw": "Storico",
@@ -192842,7 +192050,7 @@
           "goals": 6
         },
         {
-          "years": "2021–2024",
+          "years": "2021–2022",
           "club": "Metalist Kharkiv",
           "league": null,
           "leagueRaw": "Storico",
@@ -195252,7 +194460,7 @@
           "goals": 0
         },
         {
-          "years": "2016–2023",
+          "years": "2016–2017",
           "club": "Operário Ferroviário",
           "league": null,
           "leagueRaw": "Storico",
@@ -200430,7 +199638,7 @@
           "goals": 1
         },
         {
-          "years": "2017–2019",
+          "years": "2017–2018",
           "club": "Cova da Piedade",
           "league": null,
           "leagueRaw": "Storico",
@@ -200966,7 +200174,7 @@
           "goals": 0
         },
         {
-          "years": "2015–2019",
+          "years": "2015–2016",
           "club": "Athletico Paranaense",
           "league": null,
           "leagueRaw": "Storico",
@@ -202752,7 +201960,7 @@
           "goals": 2
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "Desportivo Aves B",
           "league": null,
           "leagueRaw": "Storico",
@@ -203171,7 +202379,7 @@
           "goals": 13
         },
         {
-          "years": "2018–2021",
+          "years": "2018–2019",
           "club": "B-SAD",
           "league": null,
           "leagueRaw": "Storico",
@@ -203455,7 +202663,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2018–2022",
+          "years": "2018–2019",
           "club": "B-SAD",
           "league": null,
           "leagueRaw": "Storico",
@@ -203537,7 +202745,7 @@
           "goals": 1
         },
         {
-          "years": "2019–2022",
+          "years": "2019–2020",
           "club": "B-SAD",
           "league": null,
           "leagueRaw": "Storico",
@@ -203672,7 +202880,7 @@
           "goals": 0
         },
         {
-          "years": "2019–2023",
+          "years": "2019–2020",
           "club": "B-SAD",
           "league": null,
           "leagueRaw": "Storico",
@@ -207207,7 +206415,7 @@
           "goals": 1
         },
         {
-          "years": "2016–2020",
+          "years": "2016–2017",
           "club": "Sevilla B",
           "league": null,
           "leagueRaw": "Storico",
@@ -209363,7 +208571,7 @@
           "goals": 1
         },
         {
-          "years": "2018–2023",
+          "years": "2018–2019",
           "club": "Paços de Ferreira",
           "league": null,
           "leagueRaw": "Storico",
@@ -209662,7 +208870,7 @@
           "goals": 2
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "B-SAD",
           "league": null,
           "leagueRaw": "Storico",
@@ -211135,7 +210343,7 @@
           "goals": 4
         },
         {
-          "years": "2018–2023",
+          "years": "2018–2020",
           "club": "B-SAD",
           "league": null,
           "leagueRaw": "Storico",
@@ -211158,15 +210366,6 @@
           "league": null,
           "leagueRaw": "Campeonato de Portugal Prio - Group H",
           "country": "Portugal",
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2020",
-          "club": "B-SAD B",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
           "apps": 1,
           "goals": 0
         },
@@ -211281,7 +210480,7 @@
           "goals": 1
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Vitória SC B",
           "league": null,
           "leagueRaw": "Storico",
@@ -214505,7 +213704,7 @@
           "goals": 0
         },
         {
-          "years": "2023–2026",
+          "years": "2023–2024",
           "club": "Lion City Sailors",
           "league": null,
           "leagueRaw": "Storico",
@@ -214720,7 +213919,7 @@
           "goals": 0
         },
         {
-          "years": "2017–2019",
+          "years": "2017–2018",
           "club": "Sporting da Covilhã",
           "league": null,
           "leagueRaw": "Storico",
@@ -214883,7 +214082,7 @@
           "goals": 0
         },
         {
-          "years": "2016–2020",
+          "years": "2016–2017",
           "club": "Sevilla B",
           "league": null,
           "leagueRaw": "Storico",
@@ -216705,7 +215904,7 @@
           "goals": 0
         },
         {
-          "years": "2019–2021",
+          "years": "2019–2020",
           "club": "Benfica U23",
           "league": null,
           "leagueRaw": "Storico",
@@ -219335,7 +218534,7 @@
           "goals": 0
         },
         {
-          "years": "2009–2016",
+          "years": "2009–2010",
           "club": "Terek Grozny",
           "league": null,
           "leagueRaw": "Storico",
@@ -219549,7 +218748,7 @@
           "goals": 2
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Neftçi Baku",
           "league": null,
           "leagueRaw": "Storico",
@@ -220711,7 +219910,7 @@
           "goals": 2
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Jeonbuk Hyundai Motors",
           "league": null,
           "leagueRaw": "Storico",
@@ -221095,7 +220294,7 @@
           "goals": 1
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Puskás Akadémia",
           "league": null,
           "leagueRaw": "Storico",
@@ -221348,7 +220547,7 @@
           "goals": 0
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "Cova Piedade",
           "league": null,
           "leagueRaw": "Storico",
@@ -221557,7 +220756,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2009–2013",
+          "years": "2009–2012",
           "club": "Oeiras",
           "league": null,
           "leagueRaw": "Storico",
@@ -223118,7 +222317,7 @@
           "goals": 1
         },
         {
-          "years": "2022–2024",
+          "years": "2022–2023",
           "club": "Atlético Morelia",
           "league": null,
           "leagueRaw": "Storico",
@@ -224017,7 +223216,7 @@
           "goals": 0
         },
         {
-          "years": "2021–2025",
+          "years": "2021–2022",
           "club": "Athletico Paranaense",
           "league": null,
           "leagueRaw": "Storico",
@@ -224642,7 +223841,7 @@
           "goals": 0
         },
         {
-          "years": "2019–2022",
+          "years": "2019–2020",
           "club": "Betis Deportivo",
           "league": null,
           "leagueRaw": "Storico",
@@ -227504,7 +226703,7 @@
           "goals": 10
         },
         {
-          "years": "2021–2023",
+          "years": "2021–2022",
           "club": "Sagrada Esperança",
           "league": null,
           "leagueRaw": "Storico",
@@ -228783,7 +227982,7 @@
           "goals": 0
         },
         {
-          "years": "2019–2021",
+          "years": "2019–2020",
           "club": "Jong PSV",
           "league": null,
           "leagueRaw": "Storico",
@@ -229116,7 +228315,7 @@
       "isGK": true,
       "career": [
         {
-          "years": "2017–2024",
+          "years": "2017–2019",
           "club": "Legia Warsaw II",
           "league": null,
           "leagueRaw": "Storico",
@@ -230751,7 +229950,7 @@
           "goals": 0
         },
         {
-          "years": "2020–2023",
+          "years": "2020–2022",
           "club": "Jong PSV",
           "league": null,
           "leagueRaw": "Storico",
@@ -230832,7 +230031,7 @@
           "goals": 1
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Bourg-Péronnas",
           "league": null,
           "leagueRaw": "Storico",
@@ -231245,7 +230444,7 @@
           "goals": 0
         },
         {
-          "years": "2021–2024",
+          "years": "2021–2022",
           "club": "Internacional",
           "league": null,
           "leagueRaw": "Storico",
@@ -231985,7 +231184,7 @@
           "goals": 0
         },
         {
-          "years": "2022–2025",
+          "years": "2022–2023",
           "club": "Red Bull Bragantino",
           "league": null,
           "leagueRaw": "Storico",
@@ -233483,7 +232682,7 @@
           "goals": 0
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "Wacker Innsbruck II",
           "league": null,
           "leagueRaw": "Storico",
@@ -233537,7 +232736,7 @@
           "goals": 0
         },
         {
-          "years": "2021–2024",
+          "years": "2021–2022",
           "club": "WSG Tirol",
           "league": null,
           "leagueRaw": "Storico",
@@ -233981,7 +233180,7 @@
           "goals": 0
         },
         {
-          "years": "2020–2025",
+          "years": "2020–2021",
           "club": "Red Bull Bragantino",
           "league": null,
           "leagueRaw": "Storico",
@@ -234262,7 +233461,7 @@
           "goals": 0
         },
         {
-          "years": "2020–2024",
+          "years": "2020–2021",
           "club": "AaB",
           "league": null,
           "leagueRaw": "Storico",
@@ -235373,7 +234572,7 @@
           "goals": 0
         },
         {
-          "years": "2017–2020",
+          "years": "2017–2018",
           "club": "Lyon B",
           "league": null,
           "leagueRaw": "Storico",
@@ -235983,7 +235182,7 @@
           "goals": 4
         },
         {
-          "years": "2018–2022",
+          "years": "2018–2019",
           "club": "Real Sociedad C",
           "league": null,
           "leagueRaw": "Storico",
@@ -241058,7 +240257,7 @@
           "goals": 3
         },
         {
-          "years": "2022–2025",
+          "years": "2022–2023",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -241415,7 +240614,7 @@
           "goals": 1
         },
         {
-          "years": "2022–2025",
+          "years": "2022–2023",
           "club": "Jong Genk",
           "league": null,
           "leagueRaw": "Storico",

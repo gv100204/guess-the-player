@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-29T18:46:41.687Z",
+  "version": "2026-09-29T19:15:57.633Z",
   "players": [
     {
       "id": "arturo-erasmo-vidal-pardo-151",
@@ -714,15 +714,6 @@
           "country": "Serbia",
           "apps": 22,
           "goals": 6
-        },
-        {
-          "years": "2018–2020",
-          "club": "Red Star Belgrade",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 34,
-          "goals": 9
         },
         {
           "years": "2019",
@@ -3154,7 +3145,7 @@
           "goals": 0
         },
         {
-          "years": "2022–2024",
+          "years": "2022–2023",
           "club": "Wehen Wiesbaden",
           "league": null,
           "leagueRaw": "Storico",
@@ -4221,15 +4212,6 @@
           "goals": 0
         },
         {
-          "years": "2004–2005",
-          "club": "Hellas Verona",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 33,
-          "goals": 3
-        },
-        {
           "years": "2005–2008",
           "club": "Lazio",
           "league": null,
@@ -4809,24 +4791,6 @@
           "country": null,
           "apps": 25,
           "goals": 20
-        },
-        {
-          "years": "2003",
-          "club": "União Leiria",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 13,
-          "goals": 3
-        },
-        {
-          "years": "2004",
-          "club": "União Leiria",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 14,
-          "goals": 2
         },
         {
           "years": "2005",
@@ -6351,7 +6315,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2006–2009",
+          "years": "2006–2008",
           "club": "Sochaux II",
           "league": null,
           "leagueRaw": "Storico",
@@ -7909,7 +7873,7 @@
           "goals": 0
         },
         {
-          "years": "2011–2014",
+          "years": "2011–2013",
           "club": "Universidad Católica",
           "league": null,
           "leagueRaw": "Storico",
@@ -9164,15 +9128,6 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 39,
-          "goals": 0
-        },
-        {
-          "years": "2001–2002",
-          "club": "Fiorentina",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 24,
           "goals": 0
         },
         {
@@ -10618,24 +10573,6 @@
           "goals": 0
         },
         {
-          "years": "2003",
-          "club": "De Graafschap",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 9,
-          "goals": 0
-        },
-        {
-          "years": "2003–2004",
-          "club": "AGOVV",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 35,
-          "goals": 26
-        },
-        {
           "years": "2005",
           "club": "Ajax",
           "league": null,
@@ -10871,7 +10808,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2004–2006",
+          "years": "2004–2005",
           "club": "Admira Wacker",
           "league": null,
           "leagueRaw": "Storico",
@@ -11042,7 +10979,7 @@
           "goals": 5
         },
         {
-          "years": "2017–2019",
+          "years": "2017–2018",
           "club": "Beerschot Wilrijk",
           "league": null,
           "leagueRaw": "Storico",
@@ -17126,7 +17063,7 @@
           "goals": 2
         },
         {
-          "years": "2014–2017",
+          "years": "2014–2015",
           "club": "Puskás Akadémia",
           "league": null,
           "leagueRaw": "Storico",
@@ -17923,7 +17860,7 @@
           "goals": 0
         },
         {
-          "years": "2019–2021",
+          "years": "2019–2020",
           "club": "AGF",
           "league": null,
           "leagueRaw": "Storico",
@@ -20765,7 +20702,7 @@
           "goals": 1
         },
         {
-          "years": "2011–2013",
+          "years": "2011–2012",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -21881,15 +21818,6 @@
           "country": null,
           "apps": 28,
           "goals": 2
-        },
-        {
-          "years": "2004–2005",
-          "club": "Vålerenga",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 2,
-          "goals": 0
         },
         {
           "years": "2005",
@@ -26901,7 +26829,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2018",
+          "years": "2015–2016",
           "club": "Jong PSV",
           "league": null,
           "leagueRaw": "Storico",
@@ -27408,7 +27336,7 @@
           "goals": 5
         },
         {
-          "years": "2018–2021",
+          "years": "2018–2019",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -28711,7 +28639,7 @@
           "goals": 2
         },
         {
-          "years": "2018–2021",
+          "years": "2018–2019",
           "club": "WSG Tirol",
           "league": null,
           "leagueRaw": "Storico",
@@ -29386,7 +29314,7 @@
           "goals": 4
         },
         {
-          "years": "2016–2018",
+          "years": "2016–2017",
           "club": "Argentinos Juniors",
           "league": null,
           "leagueRaw": "Storico",
@@ -30183,7 +30111,7 @@
           "goals": 2
         },
         {
-          "years": "2010–2012",
+          "years": "2010–2011",
           "club": "Radnički Kragujevac",
           "league": null,
           "leagueRaw": "Storico",
@@ -31489,7 +31417,7 @@
           "goals": 4
         },
         {
-          "years": "2023–2026",
+          "years": "2023–2024",
           "club": "Estudiantes (LP)",
           "league": null,
           "leagueRaw": "Storico",
@@ -33722,15 +33650,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2005–2010",
-          "club": "Red Bull Juniors Salzburg",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 76,
-          "goals": 4
-        },
-        {
           "years": "2009",
           "club": "Anif",
           "league": null,
@@ -35508,7 +35427,7 @@
       "isGK": true,
       "career": [
         {
-          "years": "2016–2021",
+          "years": "2016–2018",
           "club": "OB",
           "league": null,
           "leagueRaw": "Storico",
@@ -40658,7 +40577,7 @@
           "goals": 0
         },
         {
-          "years": "2018–2023",
+          "years": "2018–2019",
           "club": "Young Boys II",
           "league": null,
           "leagueRaw": "Storico",
@@ -41404,7 +41323,7 @@
           "goals": 0
         },
         {
-          "years": "2019–2022",
+          "years": "2019–2020",
           "club": "AGF",
           "league": null,
           "leagueRaw": "Storico",
@@ -41721,7 +41640,7 @@
           "goals": 7
         },
         {
-          "years": "2001–2004",
+          "years": "2001–2003",
           "club": "Marseille",
           "league": null,
           "leagueRaw": "Storico",
@@ -42194,42 +42113,6 @@
           "goals": 0
         },
         {
-          "years": "1996–2000",
-          "club": "Lahti",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 72,
-          "goals": 2
-        },
-        {
-          "years": "1997",
-          "club": "Hämeenlinna",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 4,
-          "goals": 0
-        },
-        {
-          "years": "1998",
-          "club": "Hämeenlinna",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2000–2004",
-          "club": "Ajax",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 59,
-          "goals": 7
-        },
-        {
           "years": "2003",
           "club": "Portsmouth",
           "league": null,
@@ -42284,30 +42167,12 @@
           "goals": 1
         },
         {
-          "years": "2012",
-          "club": "Aarhus",
-          "league": null,
-          "leagueRaw": "DBU Pokalen",
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
           "years": "2012–2014",
-          "club": "AGF",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 44,
-          "goals": 2
-        },
-        {
-          "years": "2013",
           "club": "Aarhus",
           "league": null,
           "leagueRaw": "Superliga",
           "country": "Denmark",
-          "apps": 21,
+          "apps": 22,
           "goals": 1
         },
         {
@@ -42906,24 +42771,6 @@
           "country": null,
           "apps": 25,
           "goals": 4
-        },
-        {
-          "years": "2000–2001",
-          "club": "VfB Stuttgart II",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 17,
-          "goals": 4
-        },
-        {
-          "years": "2000–2005",
-          "club": "VfB Stuttgart",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 137,
-          "goals": 13
         },
         {
           "years": "2005–2008",
@@ -43591,7 +43438,7 @@
           "goals": 0
         },
         {
-          "years": "2006–2011",
+          "years": "2006–2008",
           "club": "Chelsea",
           "league": null,
           "leagueRaw": "Storico",
@@ -43715,15 +43562,6 @@
           "country": null,
           "apps": 84,
           "goals": 3
-        },
-        {
-          "years": "2001",
-          "club": "SG Untersiebenbrunn",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 16,
-          "goals": 5
         },
         {
           "years": "2004",
@@ -44260,15 +44098,6 @@
           "goals": 5
         },
         {
-          "years": "1995–1997",
-          "club": "Chemnitzer FC",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 49,
-          "goals": 10
-        },
-        {
           "years": "1997–1998",
           "club": "1. FC Kaiserslautern II",
           "league": null,
@@ -44278,7 +44107,7 @@
           "goals": 8
         },
         {
-          "years": "1997–1999",
+          "years": "1998–1999",
           "club": "1. FC Kaiserslautern",
           "league": null,
           "leagueRaw": "Storico",
@@ -44414,7 +44243,7 @@
           "goals": 0
         },
         {
-          "years": "2001–2004",
+          "years": "2001–2002",
           "club": "RKC",
           "league": null,
           "leagueRaw": "Storico",
@@ -44702,7 +44531,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2005–2008",
+          "years": "2005–2006",
           "club": "Nottingham Forest",
           "league": null,
           "leagueRaw": "Storico",
@@ -46330,7 +46159,7 @@
           "goals": 7
         },
         {
-          "years": "2006–2008",
+          "years": "2006–2007",
           "club": "Audax Italiano",
           "league": null,
           "leagueRaw": "Storico",
@@ -47836,15 +47665,6 @@
           "goals": 5
         },
         {
-          "years": "1999–2001",
-          "club": "Agios Nikolaos",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 53,
-          "goals": 3
-        },
-        {
           "years": "2005",
           "club": "Rangers",
           "league": null,
@@ -48872,7 +48692,7 @@
           "goals": 6
         },
         {
-          "years": "2015–2018",
+          "years": "2015–2016",
           "club": "Shanghai Greenland Shenhua",
           "league": null,
           "leagueRaw": "Storico",
@@ -49005,15 +48825,6 @@
           "country": null,
           "apps": 15,
           "goals": 5
-        },
-        {
-          "years": "2004–2005",
-          "club": "Bayer Leverkusen",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 5,
-          "goals": 0
         },
         {
           "years": "2005–2007",
@@ -50631,24 +50442,6 @@
           "country": null,
           "apps": 18,
           "goals": 2
-        },
-        {
-          "years": "2003",
-          "club": "Baltika Kaliningrad",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 40,
-          "goals": 15
-        },
-        {
-          "years": "2004",
-          "club": "Khimki",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 12,
-          "goals": 6
         },
         {
           "years": "2005",
@@ -55128,7 +54921,7 @@
           "goals": 16
         },
         {
-          "years": "2005–2007",
+          "years": "2005–2006",
           "club": "TP Mazembe",
           "league": null,
           "leagueRaw": "Storico",
@@ -59422,7 +59215,7 @@
           "goals": 0
         },
         {
-          "years": "2009–2011",
+          "years": "2009–2010",
           "club": "Austria Wien",
           "league": null,
           "leagueRaw": "Storico",
@@ -65410,7 +65203,7 @@
           "goals": 1
         },
         {
-          "years": "2023–2026",
+          "years": "2023–2024",
           "club": "OB",
           "league": null,
           "leagueRaw": "Storico",
@@ -66531,7 +66324,7 @@
           "goals": 0
         },
         {
-          "years": "2009–2011",
+          "years": "2009–2010",
           "club": "Zürich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -70521,7 +70314,7 @@
           "goals": 1
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "Dundee United",
           "league": null,
           "leagueRaw": "Storico",
@@ -72767,7 +72560,7 @@
           "goals": 17
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Union SG",
           "league": null,
           "leagueRaw": "Storico",
@@ -74990,7 +74783,7 @@
           "goals": 7
         },
         {
-          "years": "2013–2015",
+          "years": "2013–2014",
           "club": "SC Freiburg U19",
           "league": null,
           "leagueRaw": "Storico",
@@ -75160,7 +74953,7 @@
           "goals": 2
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "Sint-Truiden",
           "league": null,
           "leagueRaw": "Storico",
@@ -75414,7 +75207,7 @@
           "goals": 0
         },
         {
-          "years": "2018–2021",
+          "years": "2018–2019",
           "club": "Borussia Mönchengladbach II",
           "league": null,
           "leagueRaw": "Storico",
@@ -79473,7 +79266,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2019–2021",
+          "years": "2019–2020",
           "club": "FC Ingolstadt II",
           "league": null,
           "leagueRaw": "Storico",
@@ -80611,7 +80404,7 @@
           "goals": 4
         },
         {
-          "years": "2011–2013",
+          "years": "2011–2012",
           "club": "Pandurii Târgu Jiu",
           "league": null,
           "leagueRaw": "Storico",
@@ -82724,15 +82517,6 @@
           "country": null,
           "apps": 38,
           "goals": 8
-        },
-        {
-          "years": "2003–2005",
-          "club": "Bayern Munich",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 13,
-          "goals": 1
         },
         {
           "years": "2005",
@@ -84983,7 +84767,7 @@
           "goals": 0
         },
         {
-          "years": "2006–2011",
+          "years": "2006–2009",
           "club": "Panathinaikos",
           "league": null,
           "leagueRaw": "Storico",
@@ -85089,15 +84873,6 @@
           "country": null,
           "apps": 23,
           "goals": 0
-        },
-        {
-          "years": "2000–2004",
-          "club": "Schalke 04 II",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 87,
-          "goals": 35
         },
         {
           "years": "2005–2007",
@@ -87646,7 +87421,7 @@
           "goals": 1
         },
         {
-          "years": "2002–2005",
+          "years": "2003–2005",
           "club": "Greuther Fürth",
           "league": null,
           "leagueRaw": "Storico",
@@ -89727,7 +89502,7 @@
           "goals": 0
         },
         {
-          "years": "2009–2011",
+          "years": "2009–2010",
           "club": "La Equidad",
           "league": null,
           "leagueRaw": "Storico",
@@ -93187,7 +92962,7 @@
           "goals": 0
         },
         {
-          "years": "2019–2023",
+          "years": "2019–2020",
           "club": "Union SG",
           "league": null,
           "leagueRaw": "Storico",
@@ -95101,7 +94876,7 @@
           "goals": 0
         },
         {
-          "years": "2005–2007",
+          "years": "2005–2006",
           "club": "Schalke 04 II",
           "league": null,
           "leagueRaw": "Storico",
@@ -95468,7 +95243,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2003–2007",
+          "years": "2003–2006",
           "club": "FC Schalke II",
           "league": null,
           "leagueRaw": "Storico",
@@ -95738,7 +95513,7 @@
           "goals": 0
         },
         {
-          "years": "2006–2011",
+          "years": "2006–2008",
           "club": "1860 Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -97472,30 +97247,12 @@
       "isGK": true,
       "career": [
         {
-          "years": "1999–2006",
+          "years": "1999–2005",
           "club": "Bayer Leverkusen II",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 53,
-          "goals": 0
-        },
-        {
-          "years": "2004",
-          "club": "Hamburger SV",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 2,
-          "goals": 0
-        },
-        {
-          "years": "2004",
-          "club": "Hamburger SV II",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 2,
           "goals": 0
         },
         {
@@ -97984,15 +97741,6 @@
           "goals": 9
         },
         {
-          "years": "2001–2003",
-          "club": "Bayern Munich",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 13,
-          "goals": 0
-        },
-        {
           "years": "2005",
           "club": "1. FC Köln",
           "league": null,
@@ -98281,7 +98029,7 @@
           "goals": 0
         },
         {
-          "years": "2005–2007",
+          "years": "2005–2006",
           "club": "Schalke 04 II",
           "league": null,
           "leagueRaw": "Storico",
@@ -98632,15 +98380,6 @@
           "goals": 18
         },
         {
-          "years": "2003",
-          "club": "SSV Reutlingen",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 13,
-          "goals": 0
-        },
-        {
           "years": "2004–2005",
           "club": "Alemannia Aachen",
           "league": null,
@@ -98966,15 +98705,6 @@
           "goals": 22
         },
         {
-          "years": "2001–2005",
-          "club": "Schalke 04",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 58,
-          "goals": 7
-        },
-        {
           "years": "2005–2007",
           "club": "VfL Wolfsburg",
           "league": null,
@@ -99120,7 +98850,7 @@
           "goals": 3
         },
         {
-          "years": "2010–2012",
+          "years": "2010–2011",
           "club": "Bayer 04 Leverkusen",
           "league": null,
           "leagueRaw": "Storico",
@@ -99227,15 +98957,6 @@
           "country": null,
           "apps": 13,
           "goals": 2
-        },
-        {
-          "years": "2003",
-          "club": "Werder Bremen",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 1,
-          "goals": 0
         },
         {
           "years": "2005–2007",
@@ -100073,15 +99794,6 @@
           "goals": 0
         },
         {
-          "years": "2001–2002",
-          "club": "MSV Duisburg",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 22,
-          "goals": 1
-        },
-        {
           "years": "2003–2004",
           "club": "Rot-Weiss Essen",
           "league": null,
@@ -100270,33 +99982,6 @@
           "country": null,
           "apps": 55,
           "goals": 23
-        },
-        {
-          "years": "1997–2003",
-          "club": "Bayern Munich",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 3,
-          "goals": 0
-        },
-        {
-          "years": "1999–2000",
-          "club": "MSV Duisburg",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 25,
-          "goals": 2
-        },
-        {
-          "years": "2000–2002",
-          "club": "SpVgg Unterhaching",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 32,
-          "goals": 4
         },
         {
           "years": "2005–2007",
@@ -101020,15 +100705,6 @@
           "country": null,
           "apps": 24,
           "goals": 3
-        },
-        {
-          "years": "2003–2004",
-          "club": "Sopron",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 14,
-          "goals": 6
         },
         {
           "years": "2005",
@@ -101874,7 +101550,7 @@
           "goals": 3
         },
         {
-          "years": "2004–2006",
+          "years": "2004–2005",
           "club": "Paris Saint-Germain",
           "league": null,
           "leagueRaw": "Storico",
@@ -103319,15 +102995,6 @@
           "goals": 0
         },
         {
-          "years": "2002–2005",
-          "club": "Borussia Mönchengladbach II",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 61,
-          "goals": 25
-        },
-        {
           "years": "2005–2007",
           "club": "Alemannia Aachen",
           "league": null,
@@ -103542,15 +103209,6 @@
           "country": null,
           "apps": 1,
           "goals": 0
-        },
-        {
-          "years": "2001–2004",
-          "club": "Arminia Bielefeld II",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 46,
-          "goals": 3
         },
         {
           "years": "2004–2006",
@@ -104104,7 +103762,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2003–2009",
+          "years": "2003–2008",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -106265,7 +105923,7 @@
           "goals": 0
         },
         {
-          "years": "2009–2012",
+          "years": "2009–2010",
           "club": "Kapfenberger SV",
           "league": null,
           "leagueRaw": "Storico",
@@ -106717,7 +106375,7 @@
           "goals": 6
         },
         {
-          "years": "2016–2018",
+          "years": "2016–2017",
           "club": "Liaoning Whowin",
           "league": null,
           "leagueRaw": "Storico",
@@ -106925,7 +106583,7 @@
           "goals": 0
         },
         {
-          "years": "2019–2021",
+          "years": "2019–2020",
           "club": "Wehen Wiesbaden",
           "league": null,
           "leagueRaw": "Storico",
@@ -107530,7 +107188,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2003–2008",
+          "years": "2003–2007",
           "club": "Vojvodina",
           "league": null,
           "leagueRaw": "Storico",
@@ -107836,15 +107494,6 @@
           "country": null,
           "apps": 8,
           "goals": 0
-        },
-        {
-          "years": "1999–2002",
-          "club": "Schalke 04 II",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 72,
-          "goals": 28
         },
         {
           "years": "2004–2006",
@@ -108335,7 +107984,7 @@
           "goals": 1
         },
         {
-          "years": "2005–2007",
+          "years": "2005–2006",
           "club": "Odd Grenland",
           "league": null,
           "leagueRaw": "Storico",
@@ -108426,7 +108075,7 @@
       "isGK": true,
       "career": [
         {
-          "years": "2005–2008",
+          "years": "2005–2007",
           "club": "St. Gallen II",
           "league": null,
           "leagueRaw": "Storico",
@@ -109756,7 +109405,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2004–2006",
+          "years": "2004–2005",
           "club": "1860 Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -110469,7 +110118,7 @@
           "goals": 1
         },
         {
-          "years": "2008–2011",
+          "years": "2008–2009",
           "club": "Borussia Mönchengladbach II",
           "league": null,
           "leagueRaw": "Storico",
@@ -110775,15 +110424,6 @@
           "country": null,
           "apps": 17,
           "goals": 6
-        },
-        {
-          "years": "2007–2009",
-          "club": "Carl Zeiss Jena",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 41,
-          "goals": 4
         },
         {
           "years": "2008",
@@ -112128,7 +111768,7 @@
           "goals": 0
         },
         {
-          "years": "2008–2011",
+          "years": "2008–2009",
           "club": "Bayer Leverkusen II",
           "league": null,
           "leagueRaw": "Storico",
@@ -113515,7 +113155,7 @@
           "goals": 1
         },
         {
-          "years": "2009–2014",
+          "years": "2009–2010",
           "club": "TSG 1899 Hoffenheim",
           "league": null,
           "leagueRaw": "Storico",
@@ -114557,7 +114197,7 @@
           "goals": 5
         },
         {
-          "years": "2007–2010",
+          "years": "2007–2009",
           "club": "Real Madrid B",
           "league": null,
           "leagueRaw": "Storico",
@@ -114675,7 +114315,7 @@
           "goals": 1
         },
         {
-          "years": "2007–2010",
+          "years": "2007–2008",
           "club": "Moscow",
           "league": null,
           "leagueRaw": "Storico",
@@ -115010,22 +114650,13 @@
           "goals": 0
         },
         {
-          "years": "2009–2012",
+          "years": "2009–2010",
           "club": "Borussia Dortmund II",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
           "goals": 0
-        },
-        {
-          "years": "2009–2017",
-          "club": "Borussia Dortmund",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 158,
-          "goals": 4
         },
         {
           "years": "2010",
@@ -115074,7 +114705,7 @@
           "goals": 1
         },
         {
-          "years": "2009–2011",
+          "years": "2009–2010",
           "club": "Bayer Leverkusen II",
           "league": null,
           "leagueRaw": "Storico",
@@ -115657,15 +115288,6 @@
           "goals": 5
         },
         {
-          "years": "2003–2004",
-          "club": "Tigre",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 16,
-          "goals": 0
-        },
-        {
           "years": "2005",
           "club": "Tiro Federal",
           "league": null,
@@ -116219,7 +115841,7 @@
           "goals": 0
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "Argentinos Juniors",
           "league": null,
           "leagueRaw": "Storico",
@@ -118128,7 +117750,7 @@
           "goals": 2
         },
         {
-          "years": "2008–2011",
+          "years": "2008–2009",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -118282,7 +117904,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2004–2007",
+          "years": "2004–2005",
           "club": "1860 Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -118355,7 +117977,7 @@
           "goals": 0
         },
         {
-          "years": "2009–2011",
+          "years": "2009–2010",
           "club": "Borussia Mönchengladbach II",
           "league": null,
           "leagueRaw": "Storico",
@@ -119400,7 +119022,7 @@
           "goals": 1
         },
         {
-          "years": "2020–2025",
+          "years": "2020–2022",
           "club": "1. FC Düren",
           "league": null,
           "leagueRaw": "Storico",
@@ -119816,7 +119438,7 @@
           "goals": 2
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "WSG Tirol",
           "league": null,
           "leagueRaw": "Storico",
@@ -123668,24 +123290,6 @@
           "goals": 2
         },
         {
-          "years": "2006–2007",
-          "club": "Rot-Weiß Erfurt",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 21,
-          "goals": 0
-        },
-        {
-          "years": "2006–2007",
-          "club": "Rot-Weiß Erfurt II",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 4,
-          "goals": 1
-        },
-        {
           "years": "2008–2010",
           "club": "Rot-weiss Oberhausen",
           "league": null,
@@ -125021,7 +124625,7 @@
           "goals": 13
         },
         {
-          "years": "2019–2021",
+          "years": "2019–2020",
           "club": "Jong PSV",
           "league": null,
           "leagueRaw": "Storico",
@@ -125093,7 +124697,7 @@
           "goals": 0
         },
         {
-          "years": "2008–2010",
+          "years": "2008–2009",
           "club": "1860 Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -125500,7 +125104,7 @@
           "goals": 5
         },
         {
-          "years": "2009–2011",
+          "years": "2009–2010",
           "club": "Slavia Prague",
           "league": null,
           "leagueRaw": "Storico",
@@ -126345,7 +125949,7 @@
           "goals": 1
         },
         {
-          "years": "2013–2015",
+          "years": "2013–2014",
           "club": "Nantes B",
           "league": null,
           "leagueRaw": "Storico",
@@ -126437,7 +126041,7 @@
           "goals": 0
         },
         {
-          "years": "2005–2010",
+          "years": "2005–2006",
           "club": "Midtjylland{{cite web",
           "league": null,
           "leagueRaw": "Storico",
@@ -126537,7 +126141,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2007–2009",
+          "years": "2007–2008",
           "club": "Bayer Leverkusen II",
           "league": null,
           "leagueRaw": "Storico",
@@ -127079,7 +126683,7 @@
           "goals": 1
         },
         {
-          "years": "2012–2014",
+          "years": "2012–2013",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -127211,7 +126815,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2006–2009",
+          "years": "2006–2008",
           "club": "1860 Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -127329,7 +126933,7 @@
           "goals": 2
         },
         {
-          "years": "2008–2010",
+          "years": "2008–2009",
           "club": "Eintracht Braunschweig II",
           "league": null,
           "leagueRaw": "Storico",
@@ -127574,7 +127178,7 @@
           "goals": 9
         },
         {
-          "years": "2007–2009",
+          "years": "2007–2008",
           "club": "Austria Kärnten",
           "league": null,
           "leagueRaw": "Storico",
@@ -127601,7 +127205,7 @@
           "goals": 6
         },
         {
-          "years": "2009–2012",
+          "years": "2009–2011",
           "club": "Austria Wien",
           "league": null,
           "leagueRaw": "Storico",
@@ -128570,7 +128174,7 @@
           "goals": 0
         },
         {
-          "years": "2011–2013",
+          "years": "2011–2012",
           "club": "Borussia Mönchengladbach II",
           "league": null,
           "leagueRaw": "Storico",
@@ -130077,7 +129681,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2008–2011",
+          "years": "2008–2009",
           "club": "OFK Beograd",
           "league": null,
           "leagueRaw": "Storico",
@@ -130269,7 +129873,7 @@
           "goals": 2
         },
         {
-          "years": "2010–2013",
+          "years": "2010–2011",
           "club": "Borussia Mönchengladbach II",
           "league": null,
           "leagueRaw": "Storico",
@@ -131298,7 +130902,7 @@
           "goals": 0
         },
         {
-          "years": "2011–2015",
+          "years": "2011–2012",
           "club": "Borussia Mönchengladbach II",
           "league": null,
           "leagueRaw": "Storico",
@@ -131606,7 +131210,7 @@
           "goals": 1
         },
         {
-          "years": "2012–2016",
+          "years": "2012–2013",
           "club": "TSG 1899 Hoffenheim",
           "league": null,
           "leagueRaw": "Storico",
@@ -131661,7 +131265,7 @@
           "goals": 0
         },
         {
-          "years": "2011–2013",
+          "years": "2011–2012",
           "club": "Hamburg II",
           "league": null,
           "leagueRaw": "Storico",
@@ -132230,7 +131834,7 @@
           "goals": 0
         },
         {
-          "years": "2009–2018",
+          "years": "2009–2015",
           "club": "Borussia Mönchengladbach II",
           "league": null,
           "leagueRaw": "Storico",
@@ -133771,7 +133375,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2007–2009",
+          "years": "2007–2008",
           "club": "Real Sociedad B",
           "league": null,
           "leagueRaw": "Storico",
@@ -134103,7 +133707,7 @@
           "goals": 1
         },
         {
-          "years": "2017–2019",
+          "years": "2017–2018",
           "club": "D.C. United",
           "league": null,
           "leagueRaw": "Storico",
@@ -134726,7 +134330,7 @@
           "goals": 1
         },
         {
-          "years": "2004–2006",
+          "years": "2004–2005",
           "club": "FC Den Bosch",
           "league": null,
           "leagueRaw": "Storico",
@@ -135638,33 +135242,6 @@
           "goals": 3
         },
         {
-          "years": "1997–1998",
-          "club": "Dukla Hranice",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 18,
-          "goals": 2
-        },
-        {
-          "years": "1998–1999",
-          "club": "Fotbal Třinec",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 20,
-          "goals": 2
-        },
-        {
-          "years": "1999",
-          "club": "FC NH Ostrava",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 15,
-          "goals": 1
-        },
-        {
           "years": "2001–2005",
           "club": "Baník Ostrava",
           "league": null,
@@ -135692,7 +135269,7 @@
           "goals": 2
         },
         {
-          "years": "2008–2011",
+          "years": "2008–2009",
           "club": "F.C. Copenhagen",
           "league": null,
           "leagueRaw": "Storico",
@@ -135949,7 +135526,7 @@
           "goals": 2
         },
         {
-          "years": "2010–2012",
+          "years": "2010–2011",
           "club": "Energie Cottbus II",
           "league": null,
           "leagueRaw": "Storico",
@@ -137517,15 +137094,6 @@
           "goals": 0
         },
         {
-          "years": "2006–2007",
-          "club": "FC Zwolle",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 4,
-          "goals": 1
-        },
-        {
           "years": "2008",
           "club": "Sonderjyske",
           "league": null,
@@ -138572,15 +138140,6 @@
           "country": null,
           "apps": 18,
           "goals": 2
-        },
-        {
-          "years": "2005–2006",
-          "club": "Velké Meziříčí",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 8,
-          "goals": 0
         },
         {
           "years": "2007–2008",
@@ -139791,7 +139350,7 @@
           "goals": 10
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Türkgücü München",
           "league": null,
           "leagueRaw": "Storico",
@@ -140818,7 +140377,7 @@
           "goals": 0
         },
         {
-          "years": "2012–2014",
+          "years": "2012–2013",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -143371,7 +142930,7 @@
           "goals": 15
         },
         {
-          "years": "2013–2016",
+          "years": "2013–2014",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -145003,7 +144562,7 @@
           "goals": 0
         },
         {
-          "years": "2009–2011",
+          "years": "2009–2010",
           "club": "Bayer Leverkusen II",
           "league": null,
           "leagueRaw": "Storico",
@@ -145628,7 +145187,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2008–2012",
+          "years": "2008–2009",
           "club": "Rheindorf Altach",
           "league": null,
           "leagueRaw": "Storico",
@@ -145691,7 +145250,7 @@
           "goals": 1
         },
         {
-          "years": "2013–2016",
+          "years": "2013–2014",
           "club": "Eintracht Braunschweig II",
           "league": null,
           "leagueRaw": "Storico",
@@ -145908,7 +145467,7 @@
           "goals": 3
         },
         {
-          "years": "2020–2025",
+          "years": "2020–2021",
           "club": "Jeonbuk Hyundai Motors",
           "league": null,
           "leagueRaw": "Storico",
@@ -145917,31 +145476,13 @@
           "goals": 4
         },
         {
-          "years": "2021–2024",
+          "years": "2021–2026",
           "club": "Jeonbuk Motors",
           "league": null,
           "leagueRaw": "K League 1",
           "country": "South-Korea",
-          "apps": 77,
+          "apps": 127,
           "goals": 3
-        },
-        {
-          "years": "2023",
-          "club": "Jeonbuk Hyundai Motors B",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2024–2026",
-          "club": "Jeonbuk Motors",
-          "league": null,
-          "leagueRaw": "K League 1",
-          "country": "South-Korea",
-          "apps": 50,
-          "goals": 0
         },
         {
           "years": "2026",
@@ -146110,7 +145651,7 @@
           "goals": 0
         },
         {
-          "years": "2021–2023",
+          "years": "2021–2022",
           "club": "Suwon FC",
           "league": null,
           "leagueRaw": "Storico",
@@ -147734,7 +147275,7 @@
           "goals": 4
         },
         {
-          "years": "2017–2020",
+          "years": "2017–2018",
           "club": "Jeonbuk Hyundai Motors",
           "league": null,
           "leagueRaw": "Storico",
@@ -147770,7 +147311,7 @@
           "goals": 0
         },
         {
-          "years": "2021–2023",
+          "years": "2021–2022",
           "club": "Jeonbuk Hyundai Motors",
           "league": null,
           "leagueRaw": "Storico",
@@ -149151,7 +148692,7 @@
           "goals": 0
         },
         {
-          "years": "2008–2012",
+          "years": "2008–2009",
           "club": "Karlsruher SC II",
           "league": null,
           "leagueRaw": "Storico",
@@ -150429,7 +149970,7 @@
           "goals": 2
         },
         {
-          "years": "2014–2017",
+          "years": "2014–2015",
           "club": "Borussia Mönchengladbach II",
           "league": null,
           "leagueRaw": "Storico",
@@ -152031,7 +151572,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2007–2012",
+          "years": "2007–2008",
           "club": "Wehen Wiesbaden",
           "league": null,
           "leagueRaw": "Storico",
@@ -152058,7 +151599,7 @@
           "goals": 0
         },
         {
-          "years": "2008–2011",
+          "years": "2008–2009",
           "club": "Wehen Wiesbaden II",
           "league": null,
           "leagueRaw": "Storico",
@@ -152167,7 +151708,7 @@
           "goals": 1
         },
         {
-          "years": "2010–2015",
+          "years": "2010–2011",
           "club": "Sparta Prague B",
           "league": null,
           "leagueRaw": "Storico",
@@ -153239,7 +152780,7 @@
           "goals": 0
         },
         {
-          "years": "2013–2015",
+          "years": "2013–2014",
           "club": "Zürich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -154348,7 +153889,7 @@
           "goals": 3
         },
         {
-          "years": "2016–2018",
+          "years": "2016–2017",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -154765,7 +154306,7 @@
           "goals": 0
         },
         {
-          "years": "2014–2018",
+          "years": "2014–2015",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -155825,7 +155366,7 @@
           "goals": 3
         },
         {
-          "years": "2019–2023",
+          "years": "2019–2020",
           "club": "AaB",
           "league": null,
           "leagueRaw": "Storico",
@@ -156703,7 +156244,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2008–2010",
+          "years": "2008–2009",
           "club": "ASV Durlach",
           "league": null,
           "leagueRaw": "Storico",
@@ -156903,7 +156444,7 @@
           "goals": 1
         },
         {
-          "years": "2007–2010",
+          "years": "2007–2008",
           "club": "RKC",
           "league": null,
           "leagueRaw": "Storico",
@@ -157242,21 +156783,12 @@
       "isGK": false,
       "career": [
         {
-          "years": "2008–2012",
+          "years": "2008–2010",
           "club": "Santo André",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2009",
-          "club": "CSA",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 6,
           "goals": 0
         },
         {
@@ -157657,7 +157189,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2007–2010",
+          "years": "2007–2008",
           "club": "1860 Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -159200,7 +158732,7 @@
           "goals": 0
         },
         {
-          "years": "2016–2022",
+          "years": "2016–2017",
           "club": "1. Köln",
           "league": null,
           "leagueRaw": "Storico",
@@ -159471,7 +159003,7 @@
           "goals": 1
         },
         {
-          "years": "2016–2018",
+          "years": "2016–2017",
           "club": "Borussia Mönchengladbach II",
           "league": null,
           "leagueRaw": "Storico",
@@ -160331,7 +159863,7 @@
           "goals": 2
         },
         {
-          "years": "2010–2013",
+          "years": "2010–2011",
           "club": "1860 Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -160983,30 +160515,12 @@
           "goals": 0
         },
         {
-          "years": "2016",
+          "years": "2016–2019",
           "club": "Borussia M'gladbach II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 11,
-          "goals": 0
-        },
-        {
-          "years": "2016",
-          "club": "Borussia Mönchengladbach",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 84,
-          "goals": 0
-        },
-        {
-          "years": "2017–2019",
-          "club": "Borussia M'gladbach II",
-          "league": null,
-          "leagueRaw": "Regionalliga",
-          "country": null,
-          "apps": 52,
+          "apps": 63,
           "goals": 0
         },
         {
@@ -162799,7 +162313,7 @@
           "goals": 0
         },
         {
-          "years": "2012–2014",
+          "years": "2012–2013",
           "club": "Lyon II",
           "league": null,
           "leagueRaw": "Storico",
@@ -163380,7 +162894,7 @@
           "goals": 6
         },
         {
-          "years": "2014–2017",
+          "years": "2014–2015",
           "club": "Paris Saint-Germain B",
           "league": null,
           "leagueRaw": "Storico",
@@ -164579,7 +164093,7 @@
           "goals": 1
         },
         {
-          "years": "2016–2019",
+          "years": "2016–2017",
           "club": "Hamburger II",
           "league": null,
           "leagueRaw": "Storico",
@@ -164633,7 +164147,7 @@
           "goals": 0
         },
         {
-          "years": "2019–2023",
+          "years": "2019–2021",
           "club": "Sint-Truiden",
           "league": null,
           "leagueRaw": "Storico",
@@ -164922,7 +164436,7 @@
           "goals": 3
         },
         {
-          "years": "2019–2022",
+          "years": "2019–2021",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -167607,7 +167121,7 @@
           "goals": 0
         },
         {
-          "years": "2010–2016",
+          "years": "2010–2011",
           "club": "Union Berlin II",
           "league": null,
           "leagueRaw": "Storico",
@@ -169170,7 +168684,7 @@
           "goals": 1
         },
         {
-          "years": "2011–2015",
+          "years": "2011–2012",
           "club": "Grasshopper Club Zürich",
           "league": null,
           "leagueRaw": "Storico",
@@ -170485,7 +169999,7 @@
           "goals": 4
         },
         {
-          "years": "2021–2023",
+          "years": "2021–2022",
           "club": "Grasshopper Club Zürich",
           "league": null,
           "leagueRaw": "Storico",
@@ -170812,7 +170326,7 @@
           "goals": 6
         },
         {
-          "years": "2017–2020",
+          "years": "2017–2018",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -171081,7 +170595,7 @@
           "goals": 2
         },
         {
-          "years": "2015–2018",
+          "years": "2015–2016",
           "club": "Ludogorets Razgrad II",
           "league": null,
           "leagueRaw": "Storico",
@@ -171354,7 +170868,7 @@
           "goals": 3
         },
         {
-          "years": "2010–2014",
+          "years": "2010–2011",
           "club": "Lyon B",
           "league": null,
           "leagueRaw": "Storico",
@@ -172046,15 +171560,6 @@
           "country": null,
           "apps": 57,
           "goals": 11
-        },
-        {
-          "years": "2016",
-          "club": "TSG Backnang II",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 3,
-          "goals": 1
         },
         {
           "years": "2017",
@@ -172984,7 +172489,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2013–2016",
+          "years": "2013–2014",
           "club": "Paradou AC",
           "league": null,
           "leagueRaw": "Storico",
@@ -173228,7 +172733,7 @@
           "goals": 0
         },
         {
-          "years": "2013–2016",
+          "years": "2013–2014",
           "club": "Suwon Samsung Bluewings",
           "league": null,
           "leagueRaw": "Storico",
@@ -173318,7 +172823,7 @@
           "goals": 1
         },
         {
-          "years": "2021–2023",
+          "years": "2021–2022",
           "club": "Suwon Samsung Bluewings",
           "league": null,
           "leagueRaw": "Storico",
@@ -173971,7 +173476,7 @@
           "goals": 1
         },
         {
-          "years": "2015–2018",
+          "years": "2015–2016",
           "club": "Waasland-Beveren",
           "league": null,
           "leagueRaw": "Storico",
@@ -174406,7 +173911,7 @@
           "goals": 1
         },
         {
-          "years": "2012–2018",
+          "years": "2012–2014",
           "club": "Rapid Wien",
           "league": null,
           "leagueRaw": "Storico",
@@ -175162,7 +174667,7 @@
           "goals": 0
         },
         {
-          "years": "2012–2014",
+          "years": "2012–2013",
           "club": "Hansa Rostock II",
           "league": null,
           "leagueRaw": "Storico",
@@ -177702,7 +177207,7 @@
           "goals": 0
         },
         {
-          "years": "2014–2020",
+          "years": "2014–2015",
           "club": "OB",
           "league": null,
           "leagueRaw": "Storico",
@@ -179680,7 +179185,7 @@
           "goals": 0
         },
         {
-          "years": "2015–2017",
+          "years": "2015–2016",
           "club": "NK Zagreb II",
           "league": null,
           "leagueRaw": "Storico",
@@ -179716,7 +179221,7 @@
           "goals": 5
         },
         {
-          "years": "2017–2022",
+          "years": "2017–2018",
           "club": "Slavia Prague",
           "league": null,
           "leagueRaw": "Storico",
@@ -179941,7 +179446,7 @@
           "goals": 0
         },
         {
-          "years": "2019–2021",
+          "years": "2019–2020",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -180355,7 +179860,7 @@
           "goals": 5
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -180798,7 +180303,7 @@
           "goals": 0
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "SV Lippstadt",
           "league": null,
           "leagueRaw": "Storico",
@@ -181370,7 +180875,7 @@
           "goals": 0
         },
         {
-          "years": "2020–2023",
+          "years": "2020–2021",
           "club": "Borussia Mönchengladbach II",
           "league": null,
           "leagueRaw": "Storico",
@@ -182128,7 +181633,7 @@
           "goals": 4
         },
         {
-          "years": "2014–2018",
+          "years": "2014–2015",
           "club": "Jeonbuk Hyundai Motors",
           "league": null,
           "leagueRaw": "Storico",
@@ -182489,7 +181994,7 @@
           "goals": 9
         },
         {
-          "years": "2016–2018",
+          "years": "2016–2017",
           "club": "Lyon B",
           "league": null,
           "leagueRaw": "Storico",
@@ -185056,15 +184561,6 @@
           "goals": 8
         },
         {
-          "years": "2017–2019",
-          "club": "TSG Backnang",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 35,
-          "goals": 2
-        },
-        {
           "years": "2019–2020",
           "club": "SV Göppingen",
           "league": null,
@@ -185612,7 +185108,7 @@
           "goals": 0
         },
         {
-          "years": "2017–2019",
+          "years": "2017–2018",
           "club": "Paris Saint-Germain B",
           "league": null,
           "leagueRaw": "Storico",
@@ -187315,7 +186811,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2013–2015",
+          "years": "2013–2014",
           "club": "Dubrava",
           "league": null,
           "leagueRaw": "Storico",
@@ -187810,7 +187306,7 @@
           "goals": 0
         },
         {
-          "years": "2017–2020",
+          "years": "2017–2018",
           "club": "Angers II",
           "league": null,
           "leagueRaw": "Storico",
@@ -188427,7 +187923,7 @@
           "goals": 1
         },
         {
-          "years": "2012–2016",
+          "years": "2012–2013",
           "club": "Angers II",
           "league": null,
           "leagueRaw": "Storico",
@@ -189298,7 +188794,7 @@
           "goals": 1
         },
         {
-          "years": "2014–2017",
+          "years": "2014–2015",
           "club": "Angers B",
           "league": null,
           "leagueRaw": "Storico",
@@ -190206,7 +189702,7 @@
           "goals": 1
         },
         {
-          "years": "2020–2023",
+          "years": "2020–2022",
           "club": "Club NXT",
           "league": null,
           "leagueRaw": "Storico",
@@ -190313,7 +189809,7 @@
           "goals": 0
         },
         {
-          "years": "2019–2021",
+          "years": "2019–2020",
           "club": "Türkgücü München",
           "league": null,
           "leagueRaw": "Storico",
@@ -190976,7 +190472,7 @@
           "goals": 1
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "SV Pullach",
           "league": null,
           "leagueRaw": "Storico",
@@ -193212,7 +192708,7 @@
           "goals": 1
         },
         {
-          "years": "2018–2020",
+          "years": "2018–2019",
           "club": "AaB",
           "league": null,
           "leagueRaw": "Storico",
@@ -193828,7 +193324,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2012–2014",
+          "years": "2012–2013",
           "club": "Arminia Bielefeld II",
           "league": null,
           "leagueRaw": "Storico",
@@ -194191,7 +193687,7 @@
           "goals": 0
         },
         {
-          "years": "2013–2015",
+          "years": "2013–2014",
           "club": "1860 Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -194291,7 +193787,7 @@
           "goals": 0
         },
         {
-          "years": "2012–2014",
+          "years": "2012–2013",
           "club": "Bayer Leverkusen II",
           "league": null,
           "leagueRaw": "Storico",
@@ -194481,7 +193977,7 @@
           "goals": 1
         },
         {
-          "years": "2015–2018",
+          "years": "2015–2016",
           "club": "Eintracht Braunschweig II",
           "league": null,
           "leagueRaw": "Storico",
@@ -194562,7 +194058,7 @@
           "goals": 5
         },
         {
-          "years": "2019–2021",
+          "years": "2019–2020",
           "club": "Wehen Wiesbaden",
           "league": null,
           "leagueRaw": "Storico",
@@ -194661,7 +194157,7 @@
           "goals": 1
         },
         {
-          "years": "2020–2023",
+          "years": "2020–2021",
           "club": "Union Saint-Gilloise",
           "league": null,
           "leagueRaw": "Storico",
@@ -195512,7 +195008,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2017–2019",
+          "years": "2017–2018",
           "club": "SC Verl II",
           "league": null,
           "leagueRaw": "Storico",
@@ -196183,7 +195679,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Young Boys U21",
           "league": null,
           "leagueRaw": "Storico",
@@ -196338,7 +195834,7 @@
           "goals": 3
         },
         {
-          "years": "2020–2023",
+          "years": "2020–2021",
           "club": "Wehen Wiesbaden",
           "league": null,
           "leagueRaw": "Storico",
@@ -197249,7 +196745,7 @@
           "goals": 2
         },
         {
-          "years": "2022–2024",
+          "years": "2022–2023",
           "club": "Bayern Munich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -197449,7 +196945,7 @@
           "goals": 0
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Wolfsberger II",
           "league": null,
           "leagueRaw": "Storico",
@@ -197576,7 +197072,7 @@
           "goals": 0
         },
         {
-          "years": "2021–2024",
+          "years": "2021–2022",
           "club": "Rapid Wien",
           "league": null,
           "leagueRaw": "Storico",
@@ -197731,7 +197227,7 @@
           "goals": 0
         },
         {
-          "years": "2023–2025",
+          "years": "2023–2024",
           "club": "Borussia Mönchengladbach II",
           "league": null,
           "leagueRaw": "Storico",
@@ -198821,15 +198317,6 @@
           "goals": 13
         },
         {
-          "years": "2019–2021",
-          "club": "Austria Wien II",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 12,
-          "goals": 5
-        },
-        {
           "years": "2020",
           "club": "Austria Vienna",
           "league": null,
@@ -199084,7 +198571,7 @@
           "goals": 2
         },
         {
-          "years": "2016–2019",
+          "years": "2016–2017",
           "club": "Paris Saint-Germain B",
           "league": null,
           "leagueRaw": "Storico",
@@ -199800,7 +199287,7 @@
           "goals": 14
         },
         {
-          "years": "2012–2014",
+          "years": "2012–2013",
           "club": "Dinamo-2 Tbilisi",
           "league": null,
           "leagueRaw": "Storico",
@@ -200255,7 +199742,7 @@
           "goals": 0
         },
         {
-          "years": "2019–2021",
+          "years": "2019–2020",
           "club": "Juniors OÖ",
           "league": null,
           "leagueRaw": "Storico",
@@ -201098,7 +200585,7 @@
           "goals": 3
         },
         {
-          "years": "2021–2023",
+          "years": "2021–2022",
           "club": "RFS",
           "league": null,
           "leagueRaw": "Storico",
@@ -202259,7 +201746,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2018–2021",
+          "years": "2018–2020",
           "club": "Viktoria Plzeň B",
           "league": null,
           "leagueRaw": "Storico",
@@ -202775,7 +202262,7 @@
           "goals": 1
         },
         {
-          "years": "2023–2025",
+          "years": "2023–2024",
           "club": "Union SG",
           "league": null,
           "leagueRaw": "Storico",
@@ -202966,7 +202453,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2019–2021",
+          "years": "2019–2020",
           "club": "Preußen Münster II",
           "league": null,
           "leagueRaw": "Storico",
@@ -203275,7 +202762,7 @@
           "goals": 1
         },
         {
-          "years": "2022–2024",
+          "years": "2022–2023",
           "club": "Académico de Viseu",
           "league": null,
           "leagueRaw": "Storico",
@@ -204726,7 +204213,7 @@
           "goals": 5
         },
         {
-          "years": "2022–2024",
+          "years": "2022–2023",
           "club": "Union SG",
           "league": null,
           "leagueRaw": "Storico",
@@ -205593,7 +205080,7 @@
           "goals": 0
         },
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Saburtalo Tbilisi",
           "league": null,
           "leagueRaw": "Storico",
@@ -205790,7 +205277,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2020–2022",
+          "years": "2020–2021",
           "club": "Jong PSV",
           "league": null,
           "leagueRaw": "Storico",
@@ -206172,7 +205659,7 @@
           "goals": 0
         },
         {
-          "years": "2021–2025",
+          "years": "2021–2023",
           "club": "Athletico Paranaense",
           "league": null,
           "leagueRaw": "Storico",
@@ -206471,7 +205958,7 @@
           "goals": 0
         },
         {
-          "years": "2022–2024",
+          "years": "2022–2023",
           "club": "Lyon B",
           "league": null,
           "leagueRaw": "Storico",
@@ -206744,7 +206231,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2022–2024",
+          "years": "2022–2023",
           "club": "Basel U21",
           "league": null,
           "leagueRaw": "Storico",
