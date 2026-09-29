@@ -303,36 +303,23 @@ function mergePlayerEntry(playersMap, entry, season) {
 }
 
 /**
- * Unisce eventuali righe duplicate (stessa stagione+club+campionato arrivata
- * più di una volta) e ordina per stagione: passo preliminare comune sia a
- * totalApps() sia a finalizeCareer(), così restano sempre coerenti tra loro.
+ * Unisce eventuali righe duplicate (stessa stagione+club arrivata più di
+ * una volta, di qualunque campionato) e ordina per stagione: passo
+ * preliminare comune sia a totalApps() sia a finalizeCareer(), così
+ * restano sempre coerenti tra loro.
  */
-function canonicalLeagueKey(r) {
-  // Se l'id interno è risolto, usiamo il nome vero e il paese di QUEL
-  // campionato tracciato (dalla tabella), non l'id stesso - così una riga
-  // con "league: pl" e una riga della STESSA competizione ma senza id
-  // risolto (solo "leagueRaw: Premier League") finiscono con la stessa
-  // chiave, invece di essere trattate come due campionati diversi. Bug
-  // reale trovato: il recupero carriera completa a volte non risolve
-  // l'id interno anche per un campionato che tracciamo, e la stagione
-  // finiva spezzata in due righe non fuse (es. Tonali, Newcastle 2023).
-  const tracked = r.league ? LEAGUES_TO_SYNC.find((l) => l.id === r.league) : null;
-  const name = tracked ? tracked.apiName : (r.leagueRaw || "");
-  const country = tracked ? tracked.country : (r.country || "");
-  return (name + "|" + country).toLowerCase().trim();
-}
-
 function dedupedSeasonRecords(rec){
   const byKey = new Map();
   (rec.seasonRecords || []).forEach((r) => {
-    const compKey = canonicalLeagueKey(r);
-    // I blocchi "storici" (da Wikipedia, già aggregati su più anni, vedi
-    // apply-wikipedia-fills.mjs) hanno una chiave a parte che include
-    // l'intervallo di anni intero - non vanno mai confusi con una riga
-    // normale della stessa stagione/club/campionato.
+    // Chiave semplice: solo stagione+club, senza il campionato. Le coppe/
+    // nazionali sono già escluse a monte (isLikelyDomesticLeague), quindi
+    // quello che resta per un club in una stagione è quasi sempre un'unica
+    // vera competizione - separarle ulteriormente per campionato causava il
+    // bug trovato con Tonali (due righe Newcastle 2023 non fuse perché una
+    // fonte aveva l'id interno risolto e l'altra no, con leagueRaw diverso).
     const key = r.blockToYear != null
       ? "block|" + r.season + "-" + r.blockToYear + "|" + r.club
-      : r.season + "|" + r.club + "|" + compKey;
+      : r.season + "|" + r.club;
     let existing = byKey.get(key);
     if (!existing) {
       existing = {
