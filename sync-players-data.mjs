@@ -307,10 +307,25 @@ function mergePlayerEntry(playersMap, entry, season) {
  * più di una volta) e ordina per stagione: passo preliminare comune sia a
  * totalApps() sia a finalizeCareer(), così restano sempre coerenti tra loro.
  */
+function canonicalLeagueKey(r) {
+  // Se l'id interno è risolto, usiamo il nome vero e il paese di QUEL
+  // campionato tracciato (dalla tabella), non l'id stesso - così una riga
+  // con "league: pl" e una riga della STESSA competizione ma senza id
+  // risolto (solo "leagueRaw: Premier League") finiscono con la stessa
+  // chiave, invece di essere trattate come due campionati diversi. Bug
+  // reale trovato: il recupero carriera completa a volte non risolve
+  // l'id interno anche per un campionato che tracciamo, e la stagione
+  // finiva spezzata in due righe non fuse (es. Tonali, Newcastle 2023).
+  const tracked = r.league ? LEAGUES_TO_SYNC.find((l) => l.id === r.league) : null;
+  const name = tracked ? tracked.apiName : (r.leagueRaw || "");
+  const country = tracked ? tracked.country : (r.country || "");
+  return (name + "|" + country).toLowerCase().trim();
+}
+
 function dedupedSeasonRecords(rec){
   const byKey = new Map();
   (rec.seasonRecords || []).forEach((r) => {
-    const compKey = r.league || (r.leagueRaw + "|" + r.country); // id interno se tracciato, altrimenti nome grezzo+paese
+    const compKey = canonicalLeagueKey(r);
     // I blocchi "storici" (da Wikipedia, già aggregati su più anni, vedi
     // apply-wikipedia-fills.mjs) hanno una chiave a parte che include
     // l'intervallo di anni intero - non vanno mai confusi con una riga
@@ -330,6 +345,10 @@ function dedupedSeasonRecords(rec){
     }
     existing.apps += r.apps;
     existing.goals += r.goals;
+    // Se questa riga ha l'id interno risolto e quella "capofila" no,
+    // lo aggiorniamo - altrimenti il filtro per campionato nel gioco
+    // perderebbe questa tappa anche se ora è correttamente unita.
+    if (r.league && !existing.league) existing.league = r.league;
   });
   return Array.from(byKey.values()).sort((a, b) => a.season - b.season);
 }
