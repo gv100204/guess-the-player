@@ -485,14 +485,40 @@ function parseSeniorCareer(wikitext) {
   for (const idx of Object.keys(years)) {
     if (!teams[idx]) continue;
     const yearRange = parseYearRange(years[idx]);
+    // Il prestito si riconosce PRIMA di pulire il testo (cleanWikiMarkup
+    // toglie "→" e "(loan)", quindi va controllato sul testo grezzo).
+    const isLoan = /^\s*→|\(\s*(loan|on loan|dual registration)\s*\)/i.test(teams[idx]);
     const teamName = cleanWikiMarkup(teams[idx]);
     const capsNum = caps[idx] != null ? Number((caps[idx].match(/\d+/) || [])[0]) : null;
     const goalsNum = goals[idx] != null ? Number((goals[idx].match(/\d+/) || [])[0]) : null;
     if (capsNum === 0) continue;
     if (yearRange && teamName) {
-      entries.push({ team: teamName, from: yearRange.from, to: yearRange.to, apps: capsNum || null, goals: goalsNum ?? 0 });
+      entries.push({ team: teamName, from: yearRange.from, to: yearRange.to, apps: capsNum || null, goals: goalsNum ?? 0, isLoan });
     }
   }
+
+  // Un prestito è per definizione dentro il periodo di contratto di un
+  // altro club (quello che lo presta) - senza aggiustare gli intervalli,
+  // le due tappe si sovrappongono nel tempo, come se il giocatore fosse
+  // in due squadre insieme. Tagliamo l'intervallo del club "ospitante"
+  // per escludere gli anni coperti dal prestito. Semplificazione: se il
+  // prestito è nel mezzo (non solo a un bordo), tagliamo la coda del club
+  // ospitante fino all'inizio del prestito - il prestito porta quasi
+  // sempre alla fine del rapporto con quel club, non lo interrompe per poi
+  // farlo continuare identico dopo.
+  for (const loan of entries.filter((e) => e.isLoan)) {
+    for (const host of entries) {
+      if (host === loan || host.isLoan || host.team === loan.team) continue;
+      if (host.from <= loan.from && host.to >= loan.from && host.to <= loan.to) {
+        host.to = loan.from; // il prestito comincia dentro l'intervallo dell'ospitante: taglio la coda
+      } else if (host.from >= loan.from && host.from <= loan.to && host.to >= loan.to) {
+        host.from = loan.to; // il prestito finisce dentro l'intervallo dell'ospitante: taglio l'inizio
+      } else if (host.from < loan.from && host.to > loan.to) {
+        host.to = loan.from; // il prestito è tutto dentro l'intervallo dell'ospitante: taglio la coda (semplificazione)
+      }
+    }
+  }
+
   return entries.sort((a, b) => a.from - b.from);
 }
 
@@ -553,7 +579,26 @@ const CLUB_ALIASES = new Map([
   // "bilbao athletic", "celta vigo" -> "celta b") perché molti giocatori
   // passano dalla B alla prima squadra negli stessi anni.
   ["athletic club ii", "bilbao athletic"],
-  ["celta de vigo ii", "celta ii"]            // "celta ii" = "Celta B" dopo la regola B = II
+  ["celta de vigo ii", "celta ii"],            // "celta ii" = "Celta B" dopo la regola B = II
+  // Secondo giro di mine-club-aliases.mjs, solo i sicuri (stesso club,
+  // stesso livello - gli scartati confondevano prima squadra e riserva,
+  // stesso errore delle volte precedenti, o club distinti: "Belenenses" e
+  // "B-SAD" sono due squadre diverse dal 2018, non la stessa scritta
+  // diverso, quindi quell'alias NON va aggiunto).
+  ["pacos ferreira", "pacos de ferreira"],
+  ["bayern munchen ii", "bayern munich ii"],
+  ["olympique lyonnais ii", "lyon b"],
+  ["gazelec fc ajaccio", "gazelec ajaccio"],
+  ["st truiden", "sint truiden"],
+  ["atletico paranaense", "athletico paranaense"],
+  ["psg ii", "paris saint germain b"],
+  ["borussia mgladbach ii", "borussia monchengladbach ii"],
+  ["sevilla atletico", "sevilla b"],
+  ["vitoria de guimaraes", "vitoria guimaraes"], // stesso bersaglio di "vitoria sc" sopra, Wikipedia usa entrambe le forme
+  ["slavia praha", "slavia prague"],
+  ["austria vienna", "austria wien"],
+  ["rapid vienna", "rapid wien"],
+  ["u madeira", "uniao madeira"]
 ]);
 const LETTER_FIXES = { "ø": "o", "æ": "ae", "œ": "oe", "ł": "l", "đ": "d", "ð": "d", "þ": "th", "ß": "ss" };
 function normClub(s) {
