@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-30T17:24:49.628Z",
+  "version": "2026-09-30T20:00:35.207Z",
   "players": [
     {
       "id": "keita-balde-diao-213",
@@ -307,7 +307,7 @@
           "goals": 56
         },
         {
-          "years": "2018",
+          "years": "2018–2018",
           "club": "Paris Saint Germain",
           "league": "ligue1",
           "leagueRaw": null,
@@ -2078,7 +2078,7 @@
           "goals": 41
         },
         {
-          "years": "2025",
+          "years": "2025–2025",
           "club": "Argentinos JRS",
           "league": null,
           "leagueRaw": "Liga Profesional Argentina",
@@ -2404,6 +2404,15 @@
           "goals": 4
         },
         {
+          "years": "2022–2022",
+          "club": "U. Catolica",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": "Chile",
+          "apps": 12,
+          "goals": 0
+        },
+        {
           "years": "2022–2023",
           "club": "Universidad Católica",
           "league": null,
@@ -2413,12 +2422,12 @@
           "goals": 1
         },
         {
-          "years": "2022–2024",
+          "years": "2023–2024",
           "club": "U. Catolica",
           "league": null,
           "leagueRaw": "Primera División",
           "country": "Chile",
-          "apps": 23,
+          "apps": 11,
           "goals": 1
         },
         {
@@ -4614,15 +4623,6 @@
         },
         {
           "years": "2021–2021",
-          "club": "Saint Etienne",
-          "league": "ligue1",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 13,
-          "goals": 0
-        },
-        {
-          "years": "2021–2022",
           "club": "Saint-Étienne II",
           "league": null,
           "leagueRaw": "National 3 - Group M",
@@ -4631,12 +4631,12 @@
           "goals": 0
         },
         {
-          "years": "2022–2023",
+          "years": "2021–2023",
           "club": "Saint Etienne",
-          "league": null,
-          "leagueRaw": "Ligue 2",
-          "country": "France",
-          "apps": 6,
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 19,
           "goals": 0
         },
         {
@@ -6659,6 +6659,15 @@
           "goals": 3
         },
         {
+          "years": "2017–2017",
+          "club": "Los Angeles Galaxy",
+          "league": null,
+          "leagueRaw": "Major League Soccer",
+          "country": "USA",
+          "apps": 6,
+          "goals": 1
+        },
+        {
           "years": "2017–2018",
           "club": "LA Galaxy",
           "league": null,
@@ -6668,13 +6677,13 @@
           "goals": 2
         },
         {
-          "years": "2017–2019",
+          "years": "2018–2019",
           "club": "Los Angeles Galaxy",
           "league": null,
           "leagueRaw": "Major League Soccer",
           "country": "USA",
-          "apps": 27,
-          "goals": 2
+          "apps": 21,
+          "goals": 1
         }
       ],
       "careerComplete": true,
@@ -8344,6 +8353,15 @@
           "goals": 2
         },
         {
+          "years": "2013–2013",
+          "club": "Paris Saint Germain",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 15,
+          "goals": 0
+        },
+        {
           "years": "2013–2015",
           "club": "Paris Saint-Germain",
           "league": null,
@@ -8353,12 +8371,12 @@
           "goals": 0
         },
         {
-          "years": "2013–2015",
+          "years": "2014–2015",
           "club": "Paris Saint Germain",
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
-          "apps": 30,
+          "apps": 15,
           "goals": 0
         },
         {
@@ -11856,6 +11874,15 @@
           "goals": 6
         },
         {
+          "years": "2008–2008",
+          "club": "Paris Saint Germain",
+          "league": null,
+          "leagueRaw": "Ligue 1",
+          "country": null,
+          "apps": 34,
+          "goals": 9
+        },
+        {
           "years": "2008–2011",
           "club": "Paris Saint-Germain",
           "league": null,
@@ -11865,13 +11892,13 @@
           "goals": 16
         },
         {
-          "years": "2008–2011",
+          "years": "2009–2011",
           "club": "Paris Saint Germain",
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
-          "apps": 100,
-          "goals": 16
+          "apps": 66,
+          "goals": 7
         },
         {
           "years": "2011–2012",
@@ -14403,7 +14430,7 @@
           "goals": 1
         },
         {
-          "years": "2015",
+          "years": "2015–2015",
           "club": "Gazelec FC Ajaccio",
           "league": "ligue1",
           "leagueRaw": null,
@@ -14612,15 +14639,6 @@
           "goals": 9
         },
         {
-          "years": "2012–2012",
-          "club": "Al-Gharafa",
-          "league": null,
-          "leagueRaw": "Stars League",
-          "country": "Qatar",
-          "apps": 9,
-          "goals": 1
-        },
-        {
           "years": "2012–2013",
           "club": "Queens Park Rangers",
           "league": null,
@@ -14628,6 +14646,15 @@
           "country": null,
           "apps": 26,
           "goals": 9
+        },
+        {
+          "years": "2012–2013",
+          "club": "Al-Gharafa",
+          "league": null,
+          "leagueRaw": "Stars League",
+          "country": "Qatar",
+          "apps": 9,
+          "goals": 1
         },
         {
           "years": "2013–2013",
@@ -20124,6 +20151,15 @@
           "goals": 4
         },
         {
+          "years": "2007–2007",
+          "club": "Saint Etienne",
+          "league": null,
+          "leagueRaw": "Ligue 1",
+          "country": null,
+          "apps": 35,
+          "goals": 0
+        },
+        {
           "years": "2007–2011",
           "club": "Saint-Étienne",
           "league": null,
@@ -20133,13 +20169,22 @@
           "goals": 3
         },
         {
-          "years": "2007–2011",
+          "years": "2008–2011",
           "club": "Saint Etienne",
           "league": null,
           "leagueRaw": "Ligue 1",
           "country": null,
-          "apps": 132,
+          "apps": 97,
           "goals": 3
+        },
+        {
+          "years": "2011–2011",
+          "club": "Paris Saint Germain",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 29,
+          "goals": 1
         },
         {
           "years": "2011–2017",
@@ -20151,13 +20196,13 @@
           "goals": 23
         },
         {
-          "years": "2011–2017",
+          "years": "2012–2017",
           "club": "Paris Saint Germain",
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
-          "apps": 203,
-          "goals": 23
+          "apps": 174,
+          "goals": 22
         },
         {
           "years": "2017–2020",
@@ -22363,6 +22408,15 @@
           "goals": 12
         },
         {
+          "years": "2012–2012",
+          "club": "Paris Saint Germain",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 22,
+          "goals": 1
+        },
+        {
           "years": "2012–2016",
           "club": "Paris Saint-Germain",
           "league": null,
@@ -22372,13 +22426,13 @@
           "goals": 4
         },
         {
-          "years": "2012–2016",
+          "years": "2013–2016",
           "club": "Paris Saint Germain",
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
-          "apps": 89,
-          "goals": 4
+          "apps": 67,
+          "goals": 3
         },
         {
           "years": "2016–2017",
@@ -25281,7 +25335,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015",
+          "years": "2015–2015",
           "club": "U. Catolica",
           "league": null,
           "leagueRaw": "Primera División",
@@ -30446,15 +30500,6 @@
           "goals": 0
         },
         {
-          "years": "2017–2018",
-          "club": "Borussia Mönchengladbach II",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 2,
-          "goals": 1
-        },
-        {
           "years": "2017–2017",
           "club": "Borussia M'gladbach II",
           "league": null,
@@ -30464,13 +30509,22 @@
           "goals": 0
         },
         {
-          "years": "2017–2018",
+          "years": "2017–2017",
           "club": "Borussia Mönchengladbach",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 24,
           "goals": 0
+        },
+        {
+          "years": "2017–2018",
+          "club": "Borussia Mönchengladbach II",
+          "league": null,
+          "leagueRaw": "Storico",
+          "country": null,
+          "apps": 2,
+          "goals": 1
         },
         {
           "years": "2018–2018",
@@ -33994,7 +34048,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2019",
+          "years": "2019–2019",
           "club": "Bayern München II",
           "league": null,
           "leagueRaw": "3. Liga",
@@ -37581,7 +37635,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2012",
+          "years": "2012–2012",
           "club": "U. Catolica",
           "league": null,
           "leagueRaw": "Primera División",
@@ -42800,7 +42854,16 @@
           "goals": 0
         },
         {
-          "years": "2005",
+          "years": "2005–2005",
+          "club": "West Ham",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2005–2006",
           "club": "Wolves",
           "league": null,
           "leagueRaw": "Championship",
@@ -42810,30 +42873,21 @@
         },
         {
           "years": "2006",
-          "club": "West Ham",
-          "league": null,
-          "leagueRaw": "Premier League",
-          "country": null,
-          "apps": 7,
-          "goals": 0
-        },
-        {
-          "years": "2006",
-          "club": "Arsenal",
-          "league": null,
-          "leagueRaw": "Premier League",
-          "country": null,
-          "apps": 11,
-          "goals": 0
-        },
-        {
-          "years": "2006",
           "club": "Wolverhampton Wanderers",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 14,
           "goals": 2
+        },
+        {
+          "years": "2006–2007",
+          "club": "Arsenal",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": null,
+          "apps": 11,
+          "goals": 0
         },
         {
           "years": "2007–2010",
@@ -51585,7 +51639,7 @@
           "goals": 4
         },
         {
-          "years": "2015",
+          "years": "2015–2015",
           "club": "Gazelec FC Ajaccio",
           "league": "ligue1",
           "leagueRaw": null,
@@ -56975,6 +57029,15 @@
           "goals": 1
         },
         {
+          "years": "2023–2023",
+          "club": "Al-Fateh",
+          "league": null,
+          "leagueRaw": "Pro League",
+          "country": "Saudi-Arabia",
+          "apps": 21,
+          "goals": 1
+        },
+        {
           "years": "2023–2025",
           "club": "Al Fateh",
           "league": null,
@@ -56984,13 +57047,13 @@
           "goals": 1
         },
         {
-          "years": "2023–2025",
+          "years": "2024–2025",
           "club": "Al-Fateh",
           "league": null,
           "leagueRaw": "Pro League",
           "country": "Saudi-Arabia",
-          "apps": 36,
-          "goals": 1
+          "apps": 15,
+          "goals": 0
         }
       ],
       "careerComplete": true,
@@ -59500,6 +59563,15 @@
           "goals": 0
         },
         {
+          "years": "2019–2019",
+          "club": "Sporting Gijon",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 40,
+          "goals": 3
+        },
+        {
           "years": "2019–2021",
           "club": "Sporting Gijón",
           "league": null,
@@ -59509,13 +59581,13 @@
           "goals": 4
         },
         {
-          "years": "2019–2021",
+          "years": "2020–2021",
           "club": "Sporting Gijon",
           "league": null,
           "leagueRaw": "Segunda División",
           "country": "Spain",
-          "apps": 75,
-          "goals": 4
+          "apps": 35,
+          "goals": 1
         },
         {
           "years": "2021–2022",
@@ -63482,7 +63554,7 @@
           "goals": 0
         },
         {
-          "years": "2023",
+          "years": "2023–2023",
           "club": "Rapid Vienna",
           "league": null,
           "leagueRaw": "Bundesliga",
@@ -64756,6 +64828,15 @@
           "goals": 1
         },
         {
+          "years": "2013–2013",
+          "club": "Pacos Ferreira",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 23,
+          "goals": 2
+        },
+        {
           "years": "2013–2015",
           "club": "Paços de Ferreira",
           "league": null,
@@ -64765,13 +64846,13 @@
           "goals": 2
         },
         {
-          "years": "2013–2015",
+          "years": "2014–2015",
           "club": "Pacos Ferreira",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
-          "apps": 56,
-          "goals": 3
+          "apps": 33,
+          "goals": 1
         },
         {
           "years": "2015–2018",
@@ -65078,6 +65159,15 @@
           "goals": 1
         },
         {
+          "years": "2016–2016",
+          "club": "Wolves",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 31,
+          "goals": 5
+        },
+        {
           "years": "2016–2019",
           "club": "Wolverhampton Wanderers",
           "league": null,
@@ -65087,13 +65177,13 @@
           "goals": 17
         },
         {
-          "years": "2016–2019",
+          "years": "2017–2019",
           "club": "Wolves",
           "league": null,
           "leagueRaw": "Championship",
           "country": "England",
-          "apps": 96,
-          "goals": 17
+          "apps": 65,
+          "goals": 12
         },
         {
           "years": "2019–2020",
@@ -69188,21 +69278,21 @@
           "goals": 0
         },
         {
-          "years": "2013",
-          "club": "Lens",
-          "league": null,
-          "leagueRaw": "Ligue 2",
-          "country": "France",
-          "apps": 35,
-          "goals": 0
-        },
-        {
           "years": "2013–2014",
           "club": "Paris Saint-Germain",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 75,
+          "goals": 0
+        },
+        {
+          "years": "2013–2014",
+          "club": "Lens",
+          "league": null,
+          "leagueRaw": "Ligue 2",
+          "country": "France",
+          "apps": 35,
           "goals": 0
         },
         {
@@ -71997,6 +72087,15 @@
           "goals": 0
         },
         {
+          "years": "2018–2018",
+          "club": "Atletico Paranaense",
+          "league": null,
+          "leagueRaw": "Serie A",
+          "country": "Brazil",
+          "apps": 47,
+          "goals": 3
+        },
+        {
           "years": "2018–2019",
           "club": "Athletico Paranaense",
           "league": null,
@@ -72006,13 +72105,13 @@
           "goals": 10
         },
         {
-          "years": "2018–2019",
+          "years": "2019–2019",
           "club": "Atletico Paranaense",
           "league": null,
           "leagueRaw": "Serie A",
           "country": "Brazil",
-          "apps": 79,
-          "goals": 7
+          "apps": 32,
+          "goals": 4
         },
         {
           "years": "2019–2021",
@@ -74656,6 +74755,15 @@
       "isGK": false,
       "career": [
         {
+          "years": "2016–2016",
+          "club": "Atletico Paranaense",
+          "league": null,
+          "leagueRaw": "Serie A",
+          "country": "Brazil",
+          "apps": 3,
+          "goals": 0
+        },
+        {
           "years": "2016–2019",
           "club": "Athletico Paranaense",
           "league": null,
@@ -74665,12 +74773,12 @@
           "goals": 1
         },
         {
-          "years": "2016–2019",
+          "years": "2017–2019",
           "club": "Atletico Paranaense",
           "league": null,
           "leagueRaw": "Paranaense 1",
           "country": null,
-          "apps": 66,
+          "apps": 63,
           "goals": 5
         },
         {
@@ -77119,15 +77227,6 @@
           "goals": 25
         },
         {
-          "years": "2024",
-          "club": "Rizespor",
-          "league": null,
-          "leagueRaw": "Süper Lig",
-          "country": "Turkey",
-          "apps": 23,
-          "goals": 31
-        },
-        {
           "years": "2024–2025",
           "club": "Sheffield United",
           "league": null,
@@ -77135,6 +77234,15 @@
           "country": null,
           "apps": 9,
           "goals": 0
+        },
+        {
+          "years": "2024–2025",
+          "club": "Rizespor",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 23,
+          "goals": 31
         },
         {
           "years": "2025–2026",
@@ -79401,6 +79509,15 @@
       "career": [
         {
           "years": "2021–2021",
+          "club": "Espanyol",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2021–2022",
           "club": "Espanyol II",
           "league": null,
           "leagueRaw": "Segunda División RFEF - Group 5",
@@ -79409,12 +79526,12 @@
           "goals": 0
         },
         {
-          "years": "2021–2022",
+          "years": "2022–2022",
           "club": "Espanyol",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 5,
+          "apps": 4,
           "goals": 1
         },
         {
@@ -80311,6 +80428,15 @@
       "isGK": false,
       "career": [
         {
+          "years": "2020–2020",
+          "club": "Slavia Praha",
+          "league": null,
+          "leagueRaw": "Czech Liga",
+          "country": "Czech-Republic",
+          "apps": 21,
+          "goals": 11
+        },
+        {
           "years": "2020–2021",
           "club": "Slavia Prague",
           "league": null,
@@ -80320,13 +80446,13 @@
           "goals": 11
         },
         {
-          "years": "2020–2021",
+          "years": "2021–2021",
           "club": "Slavia Praha",
           "league": null,
           "leagueRaw": "Czech Liga",
           "country": "Czech-Republic",
-          "apps": 24,
-          "goals": 11
+          "apps": 3,
+          "goals": 0
         },
         {
           "years": "2021–2022",
@@ -83182,6 +83308,15 @@
           "goals": 0
         },
         {
+          "years": "2014–2014",
+          "club": "Gazelec FC Ajaccio",
+          "league": null,
+          "leagueRaw": "Ligue 2",
+          "country": "France",
+          "apps": 28,
+          "goals": 2
+        },
+        {
           "years": "2014–2018",
           "club": "Gazélec Ajaccio",
           "league": null,
@@ -83191,13 +83326,13 @@
           "goals": 4
         },
         {
-          "years": "2014–2018",
+          "years": "2015–2018",
           "club": "Gazelec FC Ajaccio",
           "league": null,
           "leagueRaw": "Ligue 2",
           "country": "France",
-          "apps": 112,
-          "goals": 4
+          "apps": 84,
+          "goals": 2
         }
       ],
       "careerComplete": true,
@@ -83978,6 +84113,15 @@
           "goals": 0
         },
         {
+          "years": "2022–2022",
+          "club": "U. Catolica",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": "Chile",
+          "apps": 10,
+          "goals": 1
+        },
+        {
           "years": "2022–2024",
           "club": "Universidad Católica",
           "league": null,
@@ -83987,13 +84131,13 @@
           "goals": 4
         },
         {
-          "years": "2022–2025",
+          "years": "2023–2025",
           "club": "U. Catolica",
           "league": null,
           "leagueRaw": "Primera División",
           "country": "Chile",
-          "apps": 53,
-          "goals": 4
+          "apps": 43,
+          "goals": 3
         },
         {
           "years": "2025",
@@ -84845,6 +84989,15 @@
           "goals": 3
         },
         {
+          "years": "2018–2018",
+          "club": "Paris Saint Germain",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 25,
+          "goals": 1
+        },
+        {
           "years": "2018–2023",
           "club": "Paris Saint-Germain",
           "league": null,
@@ -84854,13 +85007,13 @@
           "goals": 2
         },
         {
-          "years": "2018–2023",
+          "years": "2019–2023",
           "club": "Paris Saint Germain",
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
-          "apps": 91,
-          "goals": 2
+          "apps": 66,
+          "goals": 1
         },
         {
           "years": "2023–2024",
@@ -87192,16 +87345,7 @@
           "goals": 1
         },
         {
-          "years": "2018",
-          "club": "Gazelec FC Ajaccio",
-          "league": null,
-          "leagueRaw": "Ligue 2",
-          "country": "France",
-          "apps": 13,
-          "goals": 0
-        },
-        {
-          "years": "2019",
+          "years": "2018–2018",
           "club": "Larisa",
           "league": null,
           "leagueRaw": "Super League 1",
@@ -87217,6 +87361,15 @@
           "country": null,
           "apps": 8,
           "goals": 1
+        },
+        {
+          "years": "2018–2019",
+          "club": "Gazelec FC Ajaccio",
+          "league": null,
+          "leagueRaw": "Ligue 2",
+          "country": "France",
+          "apps": 13,
+          "goals": 0
         },
         {
           "years": "2019",
@@ -92456,7 +92609,7 @@
           "goals": 0
         },
         {
-          "years": "2024",
+          "years": "2024–2024",
           "club": "Bordeaux  II",
           "league": null,
           "leagueRaw": "National 3 - Group J",
@@ -97644,6 +97797,15 @@
           "goals": 1
         },
         {
+          "years": "2019–2019",
+          "club": "Atletico Paranaense",
+          "league": null,
+          "leagueRaw": "Serie A",
+          "country": "Brazil",
+          "apps": 8,
+          "goals": 0
+        },
+        {
           "years": "2019–2022",
           "club": "Athletico Paranaense",
           "league": null,
@@ -97653,12 +97815,12 @@
           "goals": 4
         },
         {
-          "years": "2019–2022",
+          "years": "2020–2022",
           "club": "Atletico Paranaense",
           "league": null,
           "leagueRaw": "Paranaense - 1",
           "country": "Brazil",
-          "apps": 132,
+          "apps": 124,
           "goals": 5
         },
         {
@@ -97787,6 +97949,15 @@
           "goals": 0
         },
         {
+          "years": "2022–2022",
+          "club": "Almeria",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 14,
+          "goals": 0
+        },
+        {
           "years": "2022–2023",
           "club": "Almería",
           "league": null,
@@ -97796,12 +97967,12 @@
           "goals": 0
         },
         {
-          "years": "2022–2023",
+          "years": "2023–2023",
           "club": "Almeria",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 21,
+          "apps": 7,
           "goals": 0
         },
         {
@@ -98392,7 +98563,7 @@
           "goals": 12
         },
         {
-          "years": "2013",
+          "years": "2013–2013",
           "club": "Gazelec FC Ajaccio",
           "league": null,
           "leagueRaw": "Ligue 3",
@@ -100203,6 +100374,15 @@
       "isGK": false,
       "career": [
         {
+          "years": "2018–2018",
+          "club": "Reims II",
+          "league": null,
+          "leagueRaw": "National 2 - Group A",
+          "country": "France",
+          "apps": 6,
+          "goals": 0
+        },
+        {
           "years": "2018–2020",
           "club": "Reims B",
           "league": null,
@@ -100212,12 +100392,12 @@
           "goals": 2
         },
         {
-          "years": "2018–2020",
+          "years": "2019–2020",
           "club": "Reims II",
           "league": null,
           "leagueRaw": "National 2 - Group D",
           "country": "France",
-          "apps": 25,
+          "apps": 19,
           "goals": 2
         },
         {
@@ -102558,15 +102738,6 @@
         },
         {
           "years": "2017–2017",
-          "club": "Argentinos JRS",
-          "league": null,
-          "leagueRaw": "Liga Profesional Argentina",
-          "country": "Argentina",
-          "apps": 12,
-          "goals": 4
-        },
-        {
-          "years": "2017–2018",
           "club": "Gremio",
           "league": null,
           "leagueRaw": "Primeira Liga",
@@ -102575,12 +102746,12 @@
           "goals": 13
         },
         {
-          "years": "2018–2018",
-          "club": "Colo Colo",
+          "years": "2017–2018",
+          "club": "Argentinos JRS",
           "league": null,
-          "leagueRaw": "Primera División",
-          "country": "Chile",
-          "apps": 18,
+          "leagueRaw": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "apps": 12,
           "goals": 4
         },
         {
@@ -102590,6 +102761,15 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 12,
+          "goals": 4
+        },
+        {
+          "years": "2018–2018",
+          "club": "Colo Colo",
+          "league": null,
+          "leagueRaw": "Primera División",
+          "country": "Chile",
+          "apps": 18,
           "goals": 4
         },
         {
@@ -102861,6 +103041,15 @@
       "isGK": false,
       "career": [
         {
+          "years": "2008–2008",
+          "club": "Bayern München II",
+          "league": null,
+          "leagueRaw": "3. Liga",
+          "country": null,
+          "apps": 12,
+          "goals": 2
+        },
+        {
           "years": "2008–2009",
           "club": "Bayern Munich II",
           "league": null,
@@ -102870,13 +103059,13 @@
           "goals": 2
         },
         {
-          "years": "2008–2009",
+          "years": "2009–2009",
           "club": "Bayern München II",
           "league": null,
           "leagueRaw": "3. Liga",
           "country": null,
-          "apps": 28,
-          "goals": 2
+          "apps": 16,
+          "goals": 0
         },
         {
           "years": "2009–2010",
@@ -103397,6 +103586,15 @@
           "goals": 0
         },
         {
+          "years": "2015–2015",
+          "club": "Paris Saint Germain",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 35,
+          "goals": 19
+        },
+        {
           "years": "2015–2018",
           "club": "Paris Saint-Germain",
           "league": null,
@@ -103406,13 +103604,13 @@
           "goals": 0
         },
         {
-          "years": "2015–2018",
+          "years": "2016–2018",
           "club": "Paris Saint Germain",
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
-          "apps": 63,
-          "goals": 36
+          "apps": 28,
+          "goals": 17
         },
         {
           "years": "2018–2025",
@@ -104877,7 +105075,7 @@
           "goals": 69
         },
         {
-          "years": "2020",
+          "years": "2020–2020",
           "club": "Bayern München",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -105633,6 +105831,15 @@
           "goals": 15
         },
         {
+          "years": "2012–2012",
+          "club": "Austria Vienna",
+          "league": null,
+          "leagueRaw": "Bundesliga",
+          "country": "Austria",
+          "apps": 30,
+          "goals": 27
+        },
+        {
           "years": "2012–2014",
           "club": "Austria Wien",
           "league": null,
@@ -105642,13 +105849,13 @@
           "goals": 46
         },
         {
-          "years": "2012–2014",
+          "years": "2013–2014",
           "club": "Austria Vienna",
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": "Austria",
-          "apps": 64,
-          "goals": 41
+          "apps": 34,
+          "goals": 14
         },
         {
           "years": "2014",
@@ -107209,6 +107416,15 @@
           "goals": 1
         },
         {
+          "years": "2019–2019",
+          "club": "Paris Saint Germain",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 16,
+          "goals": 0
+        },
+        {
           "years": "2019–2022",
           "club": "Paris Saint-Germain",
           "league": null,
@@ -107218,12 +107434,12 @@
           "goals": 0
         },
         {
-          "years": "2019–2022",
+          "years": "2020–2022",
           "club": "Paris Saint Germain",
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
-          "apps": 50,
+          "apps": 34,
           "goals": 0
         },
         {
@@ -110676,6 +110892,15 @@
           "goals": 0
         },
         {
+          "years": "2022–2022",
+          "club": "1899 Hoffenheim",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 23,
+          "goals": 1
+        },
+        {
           "years": "2022–2025",
           "club": "TSG Hoffenheim",
           "league": null,
@@ -110685,13 +110910,13 @@
           "goals": 1
         },
         {
-          "years": "2022–2025",
+          "years": "2023–2025",
           "club": "1899 Hoffenheim",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 64,
-          "goals": 1
+          "apps": 41,
+          "goals": 0
         },
         {
           "years": "2025–2026",
@@ -115050,15 +115275,6 @@
           "goals": 1
         },
         {
-          "years": "2016–2016",
-          "club": "AS Eupen",
-          "league": null,
-          "leagueRaw": "Jupiler Pro League",
-          "country": "Belgium",
-          "apps": 2,
-          "goals": 0
-        },
-        {
           "years": "2016–2017",
           "club": "Standard Liège",
           "league": null,
@@ -115066,6 +115282,15 @@
           "country": null,
           "apps": 15,
           "goals": 1
+        },
+        {
+          "years": "2016–2017",
+          "club": "AS Eupen",
+          "league": null,
+          "leagueRaw": "Jupiler Pro League",
+          "country": "Belgium",
+          "apps": 2,
+          "goals": 0
         },
         {
           "years": "2017",
@@ -115556,6 +115781,15 @@
           "goals": 0
         },
         {
+          "years": "2021–2021",
+          "club": "Paris Saint Germain",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
           "years": "2021–2023",
           "club": "Paris Saint-Germain",
           "league": null,
@@ -115565,12 +115799,12 @@
           "goals": 0
         },
         {
-          "years": "2021–2023",
+          "years": "2022–2023",
           "club": "Paris Saint Germain",
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
-          "apps": 8,
+          "apps": 6,
           "goals": 0
         },
         {
@@ -119274,6 +119508,15 @@
           "goals": 3
         },
         {
+          "years": "2016–2016",
+          "club": "Gazelec FC Ajaccio",
+          "league": null,
+          "leagueRaw": "Ligue 2",
+          "country": "France",
+          "apps": 18,
+          "goals": 2
+        },
+        {
           "years": "2016–2018",
           "club": "Gazélec Ajaccio",
           "league": null,
@@ -119283,13 +119526,13 @@
           "goals": 2
         },
         {
-          "years": "2016–2018",
+          "years": "2017–2018",
           "club": "Gazelec FC Ajaccio",
           "league": null,
           "leagueRaw": "Ligue 2",
           "country": "France",
-          "apps": 25,
-          "goals": 2
+          "apps": 7,
+          "goals": 0
         }
       ],
       "careerComplete": true,
@@ -119615,6 +119858,89 @@
           ]
         }
       ]
+    },
+    {
+      "id": "gregory-pujol-113604",
+      "name": "Grégory Pujol",
+      "displayName": "Grégory Pujol",
+      "nationality": "France",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2001–2005",
+          "club": "Nantes",
+          "league": null,
+          "leagueRaw": "Storico",
+          "country": null,
+          "apps": 71,
+          "goals": 11
+        },
+        {
+          "years": "2005",
+          "club": "Nantes",
+          "league": null,
+          "leagueRaw": "Ligue 1",
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2005–2006",
+          "club": "Anderlecht",
+          "league": null,
+          "leagueRaw": "Storico",
+          "country": null,
+          "apps": 11,
+          "goals": 4
+        },
+        {
+          "years": "2006–2007",
+          "club": "Sedan",
+          "league": null,
+          "leagueRaw": "Ligue 1",
+          "country": null,
+          "apps": 19,
+          "goals": 9
+        },
+        {
+          "years": "2007–2014",
+          "club": "Valenciennes",
+          "league": null,
+          "leagueRaw": "Ligue 1",
+          "country": null,
+          "apps": 189,
+          "goals": 50
+        },
+        {
+          "years": "2014–2014",
+          "club": "Gazelec FC Ajaccio",
+          "league": null,
+          "leagueRaw": "Ligue 2",
+          "country": "France",
+          "apps": 28,
+          "goals": 4
+        },
+        {
+          "years": "2014–2016",
+          "club": "Gazélec Ajaccio",
+          "league": null,
+          "leagueRaw": "Storico",
+          "country": null,
+          "apps": 47,
+          "goals": 9
+        },
+        {
+          "years": "2015–2016",
+          "club": "Gazelec FC Ajaccio",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 19,
+          "goals": 5
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
     },
     {
       "id": "olivier-sorin-113616",
@@ -121913,7 +122239,7 @@
           "goals": 7
         },
         {
-          "years": "2012",
+          "years": "2012–2012",
           "club": "Wolves",
           "league": null,
           "leagueRaw": "Championship",
@@ -122202,6 +122528,15 @@
           "goals": 0
         },
         {
+          "years": "2011–2011",
+          "club": "Saint Etienne",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 38,
+          "goals": 0
+        },
+        {
           "years": "2011–2021",
           "club": "Saint-Étienne",
           "league": null,
@@ -122211,12 +122546,12 @@
           "goals": 0
         },
         {
-          "years": "2011–2020",
+          "years": "2012–2020",
           "club": "Saint Etienne",
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
-          "apps": 315,
+          "apps": 277,
           "goals": 199
         }
       ],
@@ -123301,6 +123636,15 @@
           "goals": 2
         },
         {
+          "years": "2015–2015",
+          "club": "Gazelec FC Ajaccio",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 31,
+          "goals": 0
+        },
+        {
           "years": "2015–2017",
           "club": "Gazélec Ajaccio",
           "league": null,
@@ -123310,12 +123654,12 @@
           "goals": 2
         },
         {
-          "years": "2015–2017",
+          "years": "2016–2017",
           "club": "Gazelec FC Ajaccio",
-          "league": "ligue1",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 54,
+          "league": null,
+          "leagueRaw": "Ligue 2",
+          "country": "France",
+          "apps": 23,
           "goals": 2
         },
         {
@@ -124739,7 +125083,7 @@
           "goals": 50
         },
         {
-          "years": "2022",
+          "years": "2022–2022",
           "club": "Saint Etienne",
           "league": null,
           "leagueRaw": "Ligue 2",
@@ -127193,6 +127537,15 @@
       "isGK": false,
       "career": [
         {
+          "years": "2008–2008",
+          "club": "Saint Etienne",
+          "league": null,
+          "leagueRaw": "Ligue 1",
+          "country": null,
+          "apps": 11,
+          "goals": 0
+        },
+        {
           "years": "2008–2012",
           "club": "Saint-Étienne",
           "league": null,
@@ -127202,12 +127555,12 @@
           "goals": 0
         },
         {
-          "years": "2008–2011",
+          "years": "2009–2011",
           "club": "Saint Etienne",
           "league": null,
           "leagueRaw": "Ligue 1",
           "country": null,
-          "apps": 24,
+          "apps": 13,
           "goals": 0
         },
         {
@@ -129706,6 +130059,15 @@
           "goals": 1
         },
         {
+          "years": "2016–2016",
+          "club": "Atletico Paranaense",
+          "league": null,
+          "leagueRaw": "Serie A",
+          "country": "Brazil",
+          "apps": 12,
+          "goals": 0
+        },
+        {
           "years": "2016–2021",
           "club": "Athletico Paranaense",
           "league": null,
@@ -129715,12 +130077,12 @@
           "goals": 4
         },
         {
-          "years": "2016–2021",
+          "years": "2017–2021",
           "club": "Atletico Paranaense",
           "league": null,
           "leagueRaw": "Paranaense 1",
           "country": null,
-          "apps": 103,
+          "apps": 91,
           "goals": 4
         }
       ],
@@ -130092,6 +130454,15 @@
           "goals": 11
         },
         {
+          "years": "2017–2017",
+          "club": "Gazelec FC Ajaccio",
+          "league": null,
+          "leagueRaw": "Ligue 2",
+          "country": "France",
+          "apps": 21,
+          "goals": 2
+        },
+        {
           "years": "2017–2019",
           "club": "Gazélec Ajaccio",
           "league": null,
@@ -130101,13 +130472,13 @@
           "goals": 3
         },
         {
-          "years": "2017–2019",
+          "years": "2018–2019",
           "club": "Gazelec FC Ajaccio",
           "league": null,
           "leagueRaw": "Ligue 2",
           "country": "France",
-          "apps": 37,
-          "goals": 3
+          "apps": 16,
+          "goals": 1
         }
       ],
       "careerComplete": true,
@@ -130564,6 +130935,15 @@
           "goals": 4
         },
         {
+          "years": "2012–2012",
+          "club": "Standard Liege",
+          "league": null,
+          "leagueRaw": "Jupiler Pro League",
+          "country": "Belgium",
+          "apps": 36,
+          "goals": 4
+        },
+        {
           "years": "2012–2014",
           "club": "Standard Liège",
           "league": null,
@@ -130573,13 +130953,13 @@
           "goals": 5
         },
         {
-          "years": "2012–2014",
+          "years": "2013–2014",
           "club": "Standard Liege",
           "league": null,
           "leagueRaw": "Jupiler Pro League",
           "country": "Belgium",
-          "apps": 64,
-          "goals": 5
+          "apps": 28,
+          "goals": 1
         },
         {
           "years": "2014–2015",
@@ -134010,7 +134390,7 @@
           "goals": 1
         },
         {
-          "years": "2022",
+          "years": "2022–2022",
           "club": "St. Truiden",
           "league": null,
           "leagueRaw": "Jupiler Pro League",
@@ -134756,6 +135136,15 @@
           "goals": 5
         },
         {
+          "years": "2022–2022",
+          "club": "Saint Etienne",
+          "league": null,
+          "leagueRaw": "Ligue 2",
+          "country": "France",
+          "apps": 23,
+          "goals": 0
+        },
+        {
           "years": "2022–2024",
           "club": "Saint-Étienne",
           "league": null,
@@ -134765,12 +135154,12 @@
           "goals": 0
         },
         {
-          "years": "2022–2024",
+          "years": "2023–2024",
           "club": "Saint Etienne",
           "league": null,
           "leagueRaw": "Ligue 2",
           "country": "France",
-          "apps": 47,
+          "apps": 24,
           "goals": 0
         },
         {
@@ -138472,6 +138861,15 @@
           "goals": 3
         },
         {
+          "years": "2014–2014",
+          "club": "Gazelec FC Ajaccio",
+          "league": null,
+          "leagueRaw": "Ligue 2",
+          "country": "France",
+          "apps": 28,
+          "goals": 6
+        },
+        {
           "years": "2014–2016",
           "club": "Gazélec Ajaccio",
           "league": null,
@@ -138481,13 +138879,13 @@
           "goals": 9
         },
         {
-          "years": "2014–2016",
+          "years": "2015–2016",
           "club": "Gazelec FC Ajaccio",
-          "league": null,
-          "leagueRaw": "Ligue 2",
-          "country": "France",
-          "apps": 51,
-          "goals": 9
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 23,
+          "goals": 3
         },
         {
           "years": "2016–2017",
@@ -139155,7 +139553,7 @@
           "goals": 1
         },
         {
-          "years": "2018",
+          "years": "2018–2018",
           "club": "Gazelec FC Ajaccio",
           "league": null,
           "leagueRaw": "Ligue 2",
@@ -139877,6 +140275,15 @@
       "isGK": false,
       "career": [
         {
+          "years": "2010–2010",
+          "club": "Sochaux II",
+          "league": null,
+          "leagueRaw": "National 2",
+          "country": null,
+          "apps": 4,
+          "goals": 0
+        },
+        {
           "years": "2010–2013",
           "club": "Sochaux B",
           "league": null,
@@ -139886,12 +140293,12 @@
           "goals": 0
         },
         {
-          "years": "2010–2013",
+          "years": "2011–2013",
           "club": "Sochaux II",
           "league": null,
           "leagueRaw": "National 2 - Group D",
           "country": "France",
-          "apps": 53,
+          "apps": 49,
           "goals": 0
         },
         {
@@ -144677,7 +145084,7 @@
           "goals": 0
         },
         {
-          "years": "2018",
+          "years": "2018–2018",
           "club": "Gazelec FC Ajaccio",
           "league": null,
           "leagueRaw": "Ligue 2",
@@ -144787,6 +145194,15 @@
           "goals": 0
         },
         {
+          "years": "2017–2017",
+          "club": "Gazelec FC Ajaccio",
+          "league": null,
+          "leagueRaw": "Ligue 2",
+          "country": "France",
+          "apps": 32,
+          "goals": 1
+        },
+        {
           "years": "2017–2019",
           "club": "Gazélec Ajaccio",
           "league": null,
@@ -144796,13 +145212,13 @@
           "goals": 1
         },
         {
-          "years": "2017–2019",
+          "years": "2018–2019",
           "club": "Gazelec FC Ajaccio",
           "league": null,
           "leagueRaw": "Ligue 2",
           "country": "France",
-          "apps": 44,
-          "goals": 1
+          "apps": 12,
+          "goals": 0
         },
         {
           "years": "2020–2021",
@@ -145602,7 +146018,7 @@
           "goals": 0
         },
         {
-          "years": "2015",
+          "years": "2015–2015",
           "club": "Gazelec FC Ajaccio",
           "league": "ligue1",
           "leagueRaw": null,
@@ -146430,7 +146846,7 @@
           "goals": 70
         },
         {
-          "years": "2021",
+          "years": "2021–2021",
           "club": "Argentinos JRS",
           "league": null,
           "leagueRaw": "Liga Profesional Argentina",
@@ -148080,21 +148496,21 @@
           "goals": 0
         },
         {
-          "years": "2013–2013",
-          "club": "Reims II",
-          "league": null,
-          "leagueRaw": "National 3",
-          "country": null,
-          "apps": 4,
-          "goals": 0
-        },
-        {
           "years": "2013–2014",
           "club": "Paris Saint-Germain",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2013–2013",
+          "club": "Reims II",
+          "league": null,
+          "leagueRaw": "National 3",
+          "country": null,
+          "apps": 4,
           "goals": 0
         },
         {
@@ -149444,6 +149860,15 @@
           "goals": 1
         },
         {
+          "years": "2012–2012",
+          "club": "Guingamp II",
+          "league": null,
+          "leagueRaw": "National 3",
+          "country": null,
+          "apps": 8,
+          "goals": 4
+        },
+        {
           "years": "2012–2013",
           "club": "Guingamp B",
           "league": null,
@@ -149453,13 +149878,13 @@
           "goals": 14
         },
         {
-          "years": "2012–2013",
+          "years": "2013–2013",
           "club": "Guingamp II",
           "league": null,
           "leagueRaw": "National 3",
           "country": null,
-          "apps": 12,
-          "goals": 5
+          "apps": 4,
+          "goals": 1
         },
         {
           "years": "2013–2014",
@@ -149763,6 +150188,15 @@
           "goals": 0
         },
         {
+          "years": "2016–2016",
+          "club": "Gazelec FC Ajaccio",
+          "league": null,
+          "leagueRaw": "Ligue 2",
+          "country": "France",
+          "apps": 33,
+          "goals": 2
+        },
+        {
           "years": "2016–2017",
           "club": "Gazélec Ajaccio",
           "league": null,
@@ -149772,13 +150206,13 @@
           "goals": 2
         },
         {
-          "years": "2016–2018",
+          "years": "2017–2018",
           "club": "Gazelec FC Ajaccio",
           "league": null,
           "leagueRaw": "Ligue 2",
           "country": "France",
-          "apps": 35,
-          "goals": 2
+          "apps": 2,
+          "goals": 0
         },
         {
           "years": "2018",
@@ -150798,6 +151232,15 @@
       "isGK": false,
       "career": [
         {
+          "years": "2008–2008",
+          "club": "Chateauroux",
+          "league": null,
+          "leagueRaw": "Ligue 2",
+          "country": null,
+          "apps": 9,
+          "goals": 2
+        },
+        {
           "years": "2008–2010",
           "club": "Châteauroux",
           "league": null,
@@ -150807,13 +151250,13 @@
           "goals": 4
         },
         {
-          "years": "2008–2010",
+          "years": "2009–2010",
           "club": "Chateauroux",
           "league": null,
           "leagueRaw": "Ligue 2",
           "country": null,
-          "apps": 26,
-          "goals": 4
+          "apps": 17,
+          "goals": 2
         },
         {
           "years": "2010–2011",
@@ -154676,7 +155119,7 @@
           "goals": 1
         },
         {
-          "years": "2009",
+          "years": "2009–2009",
           "club": "Chateauroux",
           "league": null,
           "leagueRaw": "Ligue 2",
@@ -158840,7 +159283,7 @@
           "goals": 1
         },
         {
-          "years": "2019",
+          "years": "2019–2019",
           "club": "Almeria",
           "league": null,
           "leagueRaw": "Segunda División",
@@ -163035,6 +163478,15 @@
           "goals": 10
         },
         {
+          "years": "2014–2014",
+          "club": "Rapid Vienna",
+          "league": null,
+          "leagueRaw": "Bundesliga",
+          "country": "Austria",
+          "apps": 33,
+          "goals": 27
+        },
+        {
           "years": "2014–2015",
           "club": "Rapid Wien",
           "league": null,
@@ -163044,13 +163496,13 @@
           "goals": 30
         },
         {
-          "years": "2014–2015",
+          "years": "2015–2015",
           "club": "Rapid Vienna",
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": "Austria",
-          "apps": 38,
-          "goals": 30
+          "apps": 5,
+          "goals": 3
         },
         {
           "years": "2015–2015",
@@ -166780,15 +167232,6 @@
           "goals": 0
         },
         {
-          "years": "2017–2017",
-          "club": "Arsenal Tula",
-          "league": null,
-          "leagueRaw": "Premier League",
-          "country": "Russia",
-          "apps": 1,
-          "goals": 0
-        },
-        {
           "years": "2017–2018",
           "club": "Saint-Étienne",
           "league": null,
@@ -166796,6 +167239,15 @@
           "country": null,
           "apps": 18,
           "goals": 1
+        },
+        {
+          "years": "2017–2018",
+          "club": "Arsenal Tula",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": "Russia",
+          "apps": 1,
+          "goals": 0
         },
         {
           "years": "2018–2023",
@@ -166908,7 +167360,7 @@
           "goals": 40
         },
         {
-          "years": "2023",
+          "years": "2023–2023",
           "club": "Al Shabab",
           "league": null,
           "leagueRaw": "Pro League",
@@ -167924,6 +168376,15 @@
       "isGK": false,
       "career": [
         {
+          "years": "2014–2014",
+          "club": "Toulouse II",
+          "league": null,
+          "leagueRaw": "National 3",
+          "country": null,
+          "apps": 4,
+          "goals": 0
+        },
+        {
           "years": "2014–2016",
           "club": "Toulouse B",
           "league": null,
@@ -167933,12 +168394,12 @@
           "goals": 1
         },
         {
-          "years": "2014–2016",
+          "years": "2015–2016",
           "club": "Toulouse II",
           "league": null,
           "leagueRaw": "National 3",
           "country": null,
-          "apps": 24,
+          "apps": 20,
           "goals": 1
         },
         {
@@ -169775,6 +170236,15 @@
           "goals": 0
         },
         {
+          "years": "2016–2016",
+          "club": "Rennes II",
+          "league": null,
+          "leagueRaw": "National 2 - Group D",
+          "country": "France",
+          "apps": 11,
+          "goals": 0
+        },
+        {
           "years": "2016–2018",
           "club": "Rennes B",
           "league": null,
@@ -169784,12 +170254,12 @@
           "goals": 0
         },
         {
-          "years": "2016–2018",
+          "years": "2017–2018",
           "club": "Rennes II",
           "league": null,
           "leagueRaw": "National 2 - Group A",
           "country": "France",
-          "apps": 27,
+          "apps": 16,
           "goals": 0
         },
         {
@@ -172032,7 +172502,7 @@
           "goals": 15
         },
         {
-          "years": "2016",
+          "years": "2016–2016",
           "club": "St. Truiden",
           "league": null,
           "leagueRaw": "Jupiler Pro League",
@@ -173080,7 +173550,7 @@
           "goals": 9
         },
         {
-          "years": "2025",
+          "years": "2025–2025",
           "club": "Atletico Paranaense",
           "league": null,
           "leagueRaw": "Serie B",
@@ -173435,7 +173905,7 @@
           "goals": 3
         },
         {
-          "years": "2021",
+          "years": "2021–2021",
           "club": "CFR 1907 Cluj",
           "league": null,
           "leagueRaw": "Liga I",
@@ -174030,7 +174500,7 @@
           "goals": 0
         },
         {
-          "years": "2021",
+          "years": "2021–2021",
           "club": "Chateauroux",
           "league": null,
           "leagueRaw": "Ligue 3",
@@ -174607,15 +175077,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2017–2018",
-          "club": "Nice B",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 13,
-          "goals": 9
-        },
-        {
           "years": "2017–2017",
           "club": "Nice II",
           "league": null,
@@ -174625,13 +175086,22 @@
           "goals": 8
         },
         {
-          "years": "2017–2018",
+          "years": "2017–2017",
           "club": "Nice",
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
           "apps": 6,
           "goals": 1
+        },
+        {
+          "years": "2017–2018",
+          "club": "Nice B",
+          "league": null,
+          "leagueRaw": "Storico",
+          "country": null,
+          "apps": 13,
+          "goals": 9
         },
         {
           "years": "2018–2018",
@@ -176453,6 +176923,15 @@
           "goals": 0
         },
         {
+          "years": "2018–2018",
+          "club": "Paris Saint Germain",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 17,
+          "goals": 0
+        },
+        {
           "years": "2018–2022",
           "club": "Paris Saint-Germain",
           "league": null,
@@ -176462,12 +176941,12 @@
           "goals": 1
         },
         {
-          "years": "2018–2022",
+          "years": "2019–2022",
           "club": "Paris Saint Germain",
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
-          "apps": 55,
+          "apps": 38,
           "goals": 1
         },
         {
@@ -178503,20 +178982,20 @@
         },
         {
           "years": "2020",
-          "club": "RED Star FC 93",
-          "league": null,
-          "leagueRaw": "Ligue 3",
-          "country": "France",
-          "apps": 19,
-          "goals": 0
-        },
-        {
-          "years": "2020",
           "club": "Gazélec Ajaccio",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 8,
+          "goals": 0
+        },
+        {
+          "years": "2020–2021",
+          "club": "RED Star FC 93",
+          "league": null,
+          "leagueRaw": "Ligue 3",
+          "country": "France",
+          "apps": 19,
           "goals": 0
         },
         {
@@ -178769,6 +179248,15 @@
       "isGK": false,
       "career": [
         {
+          "years": "2013–2013",
+          "club": "Nîmes II",
+          "league": null,
+          "leagueRaw": "National 3",
+          "country": null,
+          "apps": 18,
+          "goals": 2
+        },
+        {
           "years": "2013–2014",
           "club": "Nîmes B",
           "league": null,
@@ -178778,13 +179266,13 @@
           "goals": 13
         },
         {
-          "years": "2013–2014",
+          "years": "2014–2014",
           "club": "Nîmes II",
           "league": null,
           "leagueRaw": "National 3",
           "country": null,
-          "apps": 32,
-          "goals": 6
+          "apps": 14,
+          "goals": 4
         },
         {
           "years": "2014–2015",
@@ -180544,6 +181032,15 @@
           "goals": 4
         },
         {
+          "years": "2018–2018",
+          "club": "Saint Etienne",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 3,
+          "goals": 0
+        },
+        {
           "years": "2018–2019",
           "club": "Saint-Étienne",
           "league": null,
@@ -180551,15 +181048,6 @@
           "country": null,
           "apps": 43,
           "goals": 3
-        },
-        {
-          "years": "2018–2019",
-          "club": "Saint Etienne",
-          "league": "ligue1",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 3,
-          "goals": 0
         },
         {
           "years": "2019–2019",
@@ -180976,6 +181464,15 @@
       "isGK": true,
       "career": [
         {
+          "years": "2019–2019",
+          "club": "Paris Saint Germain",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
           "years": "2019–2020",
           "club": "Paris Saint-Germain",
           "league": null,
@@ -180985,12 +181482,12 @@
           "goals": 0
         },
         {
-          "years": "2019–2020",
+          "years": "2020–2020",
           "club": "Paris Saint Germain",
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
-          "apps": 2,
+          "apps": 1,
           "goals": 1
         },
         {
@@ -181580,6 +182077,15 @@
       "isGK": true,
       "career": [
         {
+          "years": "2014–2014",
+          "club": "Brest II",
+          "league": null,
+          "leagueRaw": "National 3",
+          "country": null,
+          "apps": 8,
+          "goals": 0
+        },
+        {
           "years": "2014–2017",
           "club": "Brest B",
           "league": null,
@@ -181589,12 +182095,12 @@
           "goals": 0
         },
         {
-          "years": "2014–2017",
+          "years": "2015–2017",
           "club": "Brest II",
           "league": null,
           "leagueRaw": "National 3",
           "country": null,
-          "apps": 39,
+          "apps": 31,
           "goals": 0
         },
         {
@@ -182322,15 +182828,6 @@
           "goals": 0
         },
         {
-          "years": "2025–2025",
-          "club": "Larisa",
-          "league": null,
-          "leagueRaw": "Super League 1",
-          "country": "Greece",
-          "apps": 18,
-          "goals": 1
-        },
-        {
           "years": "2025–2026",
           "club": "Saint-Étienne B",
           "league": null,
@@ -182338,6 +182835,15 @@
           "country": null,
           "apps": 3,
           "goals": 0
+        },
+        {
+          "years": "2025–2026",
+          "club": "Larisa",
+          "league": null,
+          "leagueRaw": "Super League 1",
+          "country": "Greece",
+          "apps": 18,
+          "goals": 1
         },
         {
           "years": "2026",
@@ -182939,15 +183445,6 @@
           "goals": 13
         },
         {
-          "years": "2021–2021",
-          "club": "Troyes II",
-          "league": null,
-          "leagueRaw": "National 3 - Group M",
-          "country": "France",
-          "apps": 1,
-          "goals": 0
-        },
-        {
           "years": "2021–2022",
           "club": "Troyes",
           "league": null,
@@ -182955,6 +183452,15 @@
           "country": null,
           "apps": 64,
           "goals": 15
+        },
+        {
+          "years": "2021–2021",
+          "club": "Troyes II",
+          "league": null,
+          "leagueRaw": "National 3 - Group M",
+          "country": "France",
+          "apps": 1,
+          "goals": 0
         },
         {
           "years": "2021–2022",
@@ -184639,7 +185145,7 @@
           "goals": 1
         },
         {
-          "years": "2019",
+          "years": "2019–2019",
           "club": "St. Truiden",
           "league": null,
           "leagueRaw": "Jupiler Pro League",
@@ -184722,6 +185228,15 @@
           "goals": 0
         },
         {
+          "years": "2019–2019",
+          "club": "Atletico Paranaense",
+          "league": null,
+          "leagueRaw": "Serie A",
+          "country": "Brazil",
+          "apps": 16,
+          "goals": 0
+        },
+        {
           "years": "2019–2020",
           "club": "Athletico Paranaense",
           "league": null,
@@ -184731,12 +185246,12 @@
           "goals": 0
         },
         {
-          "years": "2019–2020",
+          "years": "2020–2020",
           "club": "Atletico Paranaense",
           "league": null,
-          "leagueRaw": "Serie A",
+          "leagueRaw": "Paranaense - 1",
           "country": "Brazil",
-          "apps": 18,
+          "apps": 2,
           "goals": 0
         },
         {
@@ -185780,6 +186295,15 @@
           "goals": 0
         },
         {
+          "years": "2018–2018",
+          "club": "Vitória SC",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 9,
+          "goals": 1
+        },
+        {
           "years": "2018–2020",
           "club": "Vitória de Guimarães",
           "league": null,
@@ -185789,13 +186313,13 @@
           "goals": 2
         },
         {
-          "years": "2018–2020",
+          "years": "2019–2020",
           "club": "Vitória SC",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
-          "apps": 36,
-          "goals": 2
+          "apps": 27,
+          "goals": 1
         },
         {
           "years": "2020–2023",
@@ -188063,15 +188587,6 @@
           "goals": 0
         },
         {
-          "years": "2018",
-          "club": "AEK Larnaca",
-          "league": null,
-          "leagueRaw": "1. Division",
-          "country": "Cyprus",
-          "apps": 20,
-          "goals": 1
-        },
-        {
           "years": "2018–2019",
           "club": "Olympiacos",
           "league": null,
@@ -188079,6 +188594,15 @@
           "country": null,
           "apps": 2,
           "goals": 0
+        },
+        {
+          "years": "2018–2019",
+          "club": "AEK Larnaca",
+          "league": null,
+          "leagueRaw": "1. Division",
+          "country": "Cyprus",
+          "apps": 20,
+          "goals": 1
         },
         {
           "years": "2019–2021",
@@ -188638,7 +189162,7 @@
           "goals": 0
         },
         {
-          "years": "2024",
+          "years": "2024–2024",
           "club": "Sakaryaspor",
           "league": null,
           "leagueRaw": "1. Lig",
@@ -188647,7 +189171,7 @@
           "goals": 1
         },
         {
-          "years": "2025",
+          "years": "2024–2024",
           "club": "Fatih Karagümrük",
           "league": null,
           "leagueRaw": "Türkiye Kupası",
@@ -188656,7 +189180,7 @@
           "goals": 1
         },
         {
-          "years": "2026",
+          "years": "2024–2025",
           "club": "St. Truiden",
           "league": null,
           "leagueRaw": "Jupiler Pro League",
@@ -188666,21 +189190,21 @@
         },
         {
           "years": "2025",
-          "club": "Qingdao Jonoon",
-          "league": null,
-          "leagueRaw": "Super League",
-          "country": "China",
-          "apps": 11,
-          "goals": 7
-        },
-        {
-          "years": "2025",
           "club": "Sint-Truiden",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 11,
           "goals": 4
+        },
+        {
+          "years": "2025–2025",
+          "club": "Qingdao Jonoon",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": "China",
+          "apps": 11,
+          "goals": 7
         },
         {
           "years": "2025",
@@ -188748,7 +189272,7 @@
           "goals": 0
         },
         {
-          "years": "2020",
+          "years": "2020–2020",
           "club": "Vitória SC",
           "league": "liga_pt",
           "leagueRaw": null,
@@ -188821,7 +189345,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2019",
+          "years": "2019–2019",
           "club": "Reims II",
           "league": null,
           "leagueRaw": "National 2 - Group D",
@@ -190174,6 +190698,15 @@
           "goals": 1
         },
         {
+          "years": "2019–2019",
+          "club": "Austria Vienna",
+          "league": null,
+          "leagueRaw": "Bundesliga",
+          "country": "Austria",
+          "apps": 25,
+          "goals": 2
+        },
+        {
           "years": "2019–2021",
           "club": "Austria Wien",
           "league": null,
@@ -190183,13 +190716,13 @@
           "goals": 2
         },
         {
-          "years": "2019–2021",
+          "years": "2020–2021",
           "club": "Austria Vienna",
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": "Austria",
-          "apps": 52,
-          "goals": 2
+          "apps": 27,
+          "goals": 0
         },
         {
           "years": "2021–2023",
@@ -191620,15 +192153,6 @@
           "goals": 2
         },
         {
-          "years": "2022–2022",
-          "club": "Le Mans",
-          "league": null,
-          "leagueRaw": "Ligue 3",
-          "country": "France",
-          "apps": 15,
-          "goals": 3
-        },
-        {
           "years": "2022",
           "club": "Paços de Ferreira",
           "league": null,
@@ -191645,6 +192169,15 @@
           "country": null,
           "apps": 12,
           "goals": 2
+        },
+        {
+          "years": "2022–2023",
+          "club": "Le Mans",
+          "league": null,
+          "leagueRaw": "Ligue 3",
+          "country": "France",
+          "apps": 15,
+          "goals": 3
         },
         {
           "years": "2023–2023",
@@ -192507,6 +193040,15 @@
       "isGK": false,
       "career": [
         {
+          "years": "2020–2020",
+          "club": "Bordeaux  II",
+          "league": null,
+          "leagueRaw": "National 3 - Group M",
+          "country": "France",
+          "apps": 1,
+          "goals": 0
+        },
+        {
           "years": "2020–2021",
           "club": "Bordeaux B",
           "league": null,
@@ -192516,12 +193058,12 @@
           "goals": 5
         },
         {
-          "years": "2020–2021",
+          "years": "2021–2021",
           "club": "Bordeaux  II",
           "league": null,
           "leagueRaw": "National 3 - Group M",
           "country": "France",
-          "apps": 23,
+          "apps": 22,
           "goals": 5
         },
         {
@@ -193799,7 +194341,7 @@
           "goals": 1
         },
         {
-          "years": "2017",
+          "years": "2017–2017",
           "club": "Slavia Praha",
           "league": null,
           "leagueRaw": "Czech Liga",
@@ -194552,6 +195094,15 @@
           "goals": 9
         },
         {
+          "years": "2016–2016",
+          "club": "Gazelec FC Ajaccio",
+          "league": null,
+          "leagueRaw": "Ligue 2",
+          "country": "France",
+          "apps": 24,
+          "goals": 1
+        },
+        {
           "years": "2016–2018",
           "club": "Gazélec Ajaccio",
           "league": null,
@@ -194561,13 +195112,13 @@
           "goals": 4
         },
         {
-          "years": "2016–2018",
+          "years": "2017–2018",
           "club": "Gazelec FC Ajaccio",
           "league": null,
           "leagueRaw": "Ligue 2",
           "country": "France",
-          "apps": 60,
-          "goals": 3
+          "apps": 36,
+          "goals": 2
         },
         {
           "years": "2018–2019",
@@ -194622,215 +195173,6 @@
           "country": null,
           "apps": 32,
           "goals": 5
-        }
-      ],
-      "careerComplete": true,
-      "trophies": []
-    },
-    {
-      "id": "mickael-jose-barreto-20858",
-      "name": "Mickaël Jose Barreto",
-      "displayName": "Mickaël Barreto",
-      "nationality": "France",
-      "isGK": false,
-      "career": [
-        {
-          "years": "2009–2012",
-          "club": "Estac Troyes",
-          "league": null,
-          "leagueRaw": "Ligue 2",
-          "country": "France",
-          "apps": 10,
-          "goals": 0
-        },
-        {
-          "years": "2012–2012",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "National 3",
-          "country": null,
-          "apps": 2,
-          "goals": 1
-        },
-        {
-          "years": "2012–2012",
-          "club": "Fréjus St-Raphaël",
-          "league": null,
-          "leagueRaw": "Ligue 3",
-          "country": "France",
-          "apps": 14,
-          "goals": 1
-        },
-        {
-          "years": "2012–2013",
-          "club": "Fréjus Saint-Raphaël",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 14,
-          "goals": 1
-        },
-        {
-          "years": "2012–2013",
-          "club": "Cannes",
-          "league": null,
-          "leagueRaw": "National 2 - Group D",
-          "country": "France",
-          "apps": 16,
-          "goals": 0
-        },
-        {
-          "years": "2013–2014",
-          "club": "Cannes",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 16,
-          "goals": 0
-        },
-        {
-          "years": "2013–2013",
-          "club": "Estac Troyes",
-          "league": null,
-          "leagueRaw": "Ligue 2",
-          "country": "France",
-          "apps": 3,
-          "goals": 0
-        },
-        {
-          "years": "2013–2014",
-          "club": "Troyes II",
-          "league": null,
-          "leagueRaw": "National 3",
-          "country": null,
-          "apps": 20,
-          "goals": 8
-        },
-        {
-          "years": "2014–2014",
-          "club": "Estac Troyes",
-          "league": null,
-          "leagueRaw": "Ligue 2",
-          "country": "France",
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2014–2015",
-          "club": "Avranches",
-          "league": null,
-          "leagueRaw": "Ligue 3",
-          "country": "France",
-          "apps": 27,
-          "goals": 7
-        },
-        {
-          "years": "2015–2017",
-          "club": "Orleans",
-          "league": null,
-          "leagueRaw": "Ligue 2",
-          "country": "France",
-          "apps": 67,
-          "goals": 9
-        },
-        {
-          "years": "2017–2017",
-          "club": "Auxerre II",
-          "league": null,
-          "leagueRaw": "National 3",
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2017–2018",
-          "club": "Auxerre",
-          "league": null,
-          "leagueRaw": "Ligue 2",
-          "country": "France",
-          "apps": 9,
-          "goals": 2
-        },
-        {
-          "years": "2018–2018",
-          "club": "Auxerre II",
-          "league": null,
-          "leagueRaw": "National 3",
-          "country": null,
-          "apps": 7,
-          "goals": 2
-        },
-        {
-          "years": "2018–2020",
-          "club": "Auxerre",
-          "league": null,
-          "leagueRaw": "Ligue 2",
-          "country": "France",
-          "apps": 42,
-          "goals": 1
-        },
-        {
-          "years": "2020–2021",
-          "club": "Ajaccio",
-          "league": null,
-          "leagueRaw": "Ligue 2",
-          "country": "France",
-          "apps": 57,
-          "goals": 6
-        },
-        {
-          "years": "2021–2022",
-          "club": "Ajaccio II",
-          "league": null,
-          "leagueRaw": "National 3 - Group M",
-          "country": "France",
-          "apps": 3,
-          "goals": 2
-        },
-        {
-          "years": "2022–2022",
-          "club": "Ajaccio",
-          "league": "ligue1",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 22,
-          "goals": 1
-        },
-        {
-          "years": "2022–2023",
-          "club": "Ajaccio B",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 3,
-          "goals": 2
-        },
-        {
-          "years": "2023–2025",
-          "club": "Ajaccio",
-          "league": null,
-          "leagueRaw": "Ligue 2",
-          "country": "France",
-          "apps": 42,
-          "goals": 4
-        },
-        {
-          "years": "2025",
-          "club": "Dijon",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 17,
-          "goals": 4
-        },
-        {
-          "years": "2025",
-          "club": "Dijon B",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 1,
-          "goals": 0
         }
       ],
       "careerComplete": true,
@@ -196251,21 +196593,21 @@
         },
         {
           "years": "2022–2022",
-          "club": "Lens II",
-          "league": null,
-          "leagueRaw": "National 3 - Group M",
-          "country": "France",
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2022–2022",
           "club": "Paris FC",
           "league": null,
           "leagueRaw": "Ligue 2",
           "country": "France",
           "apps": 13,
           "goals": 1
+        },
+        {
+          "years": "2022–2022",
+          "club": "Lens II",
+          "league": null,
+          "leagueRaw": "National 3 - Group M",
+          "country": "France",
+          "apps": 1,
+          "goals": 0
         },
         {
           "years": "2022–2023",
@@ -198236,7 +198578,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2021",
+          "years": "2021–2021",
           "club": "Montpellier II",
           "league": null,
           "leagueRaw": "National 2 - Group D",
@@ -200450,6 +200792,15 @@
           "goals": 10
         },
         {
+          "years": "2017–2017",
+          "club": "Vitória SC",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 10,
+          "goals": 1
+        },
+        {
           "years": "2017–2019",
           "club": "Vitória de Guimarães",
           "league": null,
@@ -200459,13 +200810,13 @@
           "goals": 24
         },
         {
-          "years": "2017–2019",
+          "years": "2018–2019",
           "club": "Vitória SC",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
-          "apps": 14,
-          "goals": 1
+          "apps": 4,
+          "goals": 0
         },
         {
           "years": "2019",
@@ -203598,7 +203949,7 @@
           "goals": 0
         },
         {
-          "years": "2019",
+          "years": "2019–2019",
           "club": "Atletico Paranaense",
           "league": null,
           "leagueRaw": "Serie A",
@@ -208115,6 +208466,15 @@
           "goals": 3
         },
         {
+          "years": "2024–2024",
+          "club": "Rapid Vienna",
+          "league": null,
+          "leagueRaw": "Bundesliga",
+          "country": "Austria",
+          "apps": 27,
+          "goals": 2
+        },
+        {
           "years": "2024–2025",
           "club": "Rapid Wien",
           "league": null,
@@ -208124,13 +208484,13 @@
           "goals": 2
         },
         {
-          "years": "2024–2025",
+          "years": "2025–2025",
           "club": "Rapid Vienna",
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": "Austria",
-          "apps": 30,
-          "goals": 2
+          "apps": 3,
+          "goals": 0
         },
         {
           "years": "2025–2026",
