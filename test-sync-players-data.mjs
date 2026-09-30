@@ -168,9 +168,9 @@ async function main() {
 
     const career = finalizeCareer(players.get(20));
     assert.equal(career.length, 3, "devono risultare TRE tappe distinte, non due (Bologna unito) o una sola");
-    assert.equal(career[0].club, "Bologna"); assert.equal(career[0].years, "2015");
-    assert.equal(career[1].club, "Atalanta"); assert.equal(career[1].years, "2016");
-    assert.equal(career[2].club, "Bologna"); assert.equal(career[2].years, "2017");
+    assert.equal(career[0].club, "Bologna"); assert.equal(career[0].years, "2015–2016");
+    assert.equal(career[1].club, "Atalanta"); assert.equal(career[1].years, "2016–2017");
+    assert.equal(career[2].club, "Bologna"); assert.equal(career[2].years, "2017–2018");
     assert.notEqual(career[0].years, "2015–2018", "non deve fondere le due tappe al Bologna in un unico intervallo che nasconde il prestito");
   });
 
@@ -242,7 +242,7 @@ async function main() {
     assert.equal(career.length, 2, "il blocco e la stagione normale restano tappe separate");
     assert.equal(career[0].years, "2003–2008", "l'anno del blocco è già quello vero, NON deve avere +1");
     assert.equal(career[0].apps, 63);
-    assert.equal(career[1].years, "2008", "la stagione normale successiva usa comunque la sua formattazione abituale");
+    assert.equal(career[1].years, "2008–2009", "la stagione normale successiva usa comunque la sua formattazione abituale (intervallo vero, non solo l'anno nudo)");
   });
   await test("un blocco storico non si fonde MAI con una tappa normale adiacente dello stesso club, anche se gli anni sembrerebbero consecutivi", () => {
     const players = newPlayersMap();
