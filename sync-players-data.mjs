@@ -780,6 +780,7 @@ async function saveRawPlayers(playersMap) {
   const players = Array.from(playersMap.values()).map((rec) => ({
     id: rec.id,
     name: rec.name,
+    displayName: rec.displayName || null,
     nationality: rec.nationality,
     birthYear: rec.birthYear || null,
     isGK: rec.isGK,
@@ -816,6 +817,7 @@ function buildFinalDataset(playersMap, excludedIds) {
     result.push({
       id: slugify(rec.name) + "-" + rec.id, // l'id numerico evita collisioni tra omonimi veri
       name: rec.name,
+      displayName: rec.displayName || null,
       nationality: rec.nationality,
       isGK: rec.isGK,
       career: finalizeCareer(rec),
