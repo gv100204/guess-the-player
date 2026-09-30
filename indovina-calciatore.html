@@ -132,6 +132,12 @@
       <button data-include="yes" class="active">Includi</button>
       <button data-include="no">Escludi</button>
     </div>
+    <div class="field-label" id="showTrophyYearsLabel">Anni nel palmares</div>
+    <p class="hint" id="showTrophyYearsHint"></p>
+    <div class="segmented" id="showTrophyYearsSegment">
+      <button data-show="yes" class="active">Mostra</button>
+      <button data-show="no">Nascondi</button>
+    </div>
     <button class="btn secondary" id="closeSettingsBtn">Chiudi</button>
   </div>
 
@@ -286,6 +292,9 @@
       includeIncompleteLabel: "Carriere incomplete",
       includeIncompleteHint: "Alcuni giocatori hanno solo le tappe scoperte finora: il recupero della carriera intera è ancora in corso. Utile solo per testare i dati, non per giocare davvero.",
       includeYes: "Includi", includeNo: "Escludi",
+      showTrophyYearsLabel: "Anni nel palmares",
+      showTrophyYearsHint: "Mostra l'anno o l'edizione di ogni trofeo vinto. Disattiva per una sfida più difficile, senza quell'indizio.",
+      showYes: "Mostra", showNo: "Nascondi",
       backToMenu: "Torna al menu", confirmExit: "Vuoi tornare al menu? La partita in corso andrà persa.",
       modeTitle: "Modalità", career: "Carriera", palmares: "Palmares",
       players: "Giocatori", solo: "Singolo", turns: "A turni", party: "Tutti insieme",
@@ -346,6 +355,9 @@
       includeIncompleteLabel: "Incomplete careers",
       includeIncompleteHint: "Some players only have the stages discovered so far: their full career recovery is still in progress. Useful for testing the data only, not for real play.",
       includeYes: "Include", includeNo: "Exclude",
+      showTrophyYearsLabel: "Years in honours",
+      showTrophyYearsHint: "Show the year or edition of each trophy won. Turn off for a harder challenge, without that clue.",
+      showYes: "Show", showNo: "Hide",
       backToMenu: "Back to menu", confirmExit: "Go back to the menu? The current game will be lost.",
       modeTitle: "Mode", career: "Career", palmares: "Honours",
       players: "Players", solo: "Solo", turns: "Take turns", party: "All together",
@@ -666,6 +678,7 @@
   // ---- settings state ----
   var lang = "it";
   var includeIncomplete = true; // di test: include anche i giocatori con carriera non ancora arricchita del tutto
+  var showTrophyYears = true; // mostra l'anno/edizione di ogni trofeo nel palmares - disattivabile per una sfida piu' difficile
   var contentMode = "career";
   var matchType = "solo";
   var selectedLeagues = new Set();
@@ -698,6 +711,8 @@
   if (savedLang === "it" || savedLang === "en") lang = savedLang;
   var savedIncludeIncomplete = safeGet("indovina_calciatore_include_incomplete");
   if (savedIncludeIncomplete === true || savedIncludeIncomplete === false) includeIncomplete = savedIncludeIncomplete;
+  var savedShowTrophyYears = safeGet("indovina_calciatore_show_trophy_years");
+  if (savedShowTrophyYears === true || savedShowTrophyYears === false) showTrophyYears = savedShowTrophyYears;
 
   function t(key){ return UI[lang][key]; }
 
@@ -705,6 +720,7 @@
   var el = {};
   ["settingsBtn","backBtn","settingsPanel","settingsTitle","langLabel","langSegment","closeSettingsBtn",
    "includeIncompleteLabel","includeIncompleteHint","includeIncompleteSegment",
+   "showTrophyYearsLabel","showTrophyYearsHint","showTrophyYearsSegment",
    "sbTitle","sbSub","lblPoints","lblStreak","lblBest",
    "modeTitle","contentModeSegment","playersLabel","playersModeSegment",
    "multiSetup","multiSetupHint","whoPlaysLabel","playerInputs","addPlayerBtn",
@@ -829,6 +845,12 @@
     el.includeIncompleteSegment.querySelector('[data-include="no"]').textContent = t("includeNo");
     el.includeIncompleteSegment.querySelectorAll("button").forEach(function(b){ b.classList.toggle("active", b.getAttribute("data-include") === (includeIncomplete ? "yes" : "no")); });
 
+    el.showTrophyYearsLabel.textContent = t("showTrophyYearsLabel");
+    el.showTrophyYearsHint.textContent = t("showTrophyYearsHint");
+    el.showTrophyYearsSegment.querySelector('[data-show="yes"]').textContent = t("showYes");
+    el.showTrophyYearsSegment.querySelector('[data-show="no"]').textContent = t("showNo");
+    el.showTrophyYearsSegment.querySelectorAll("button").forEach(function(b){ b.classList.toggle("active", b.getAttribute("data-show") === (showTrophyYears ? "yes" : "no")); });
+
     el.sbTitle.textContent = t("title");
     el.lblPoints.textContent = t("points");
     el.lblStreak.textContent = t("streak");
@@ -911,6 +933,13 @@
     btn.addEventListener("click", function(){
       includeIncomplete = btn.getAttribute("data-include") === "yes";
       safeSet("indovina_calciatore_include_incomplete", includeIncomplete);
+      applyStaticLabels();
+    });
+  });
+  el.showTrophyYearsSegment.querySelectorAll("button").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      showTrophyYears = btn.getAttribute("data-show") === "yes";
+      safeSet("indovina_calciatore_show_trophy_years", showTrophyYears);
       applyStaticLabels();
     });
   });
@@ -1067,14 +1096,23 @@
       var answer = normalize(full);
       if (guessNormalized === answer) return true;
       if (guessNormalized.length <= 2) return false;
-      // Ciascuna parola dopo la prima (di solito il nome di battesimo) è
-      // accettata come possibile cognome - non solo l'ultima. Bug reale:
-      // "Juan Camilo Zúñiga Mosquera" ha due cognomi, e chi scrive
-      // "Zuniga" (il cognome con cui è davvero conosciuto) veniva
-      // rifiutato perché il controllo guardava solo l'ultima parola
-      // ("Mosquera").
-      var words = full.split(" ").slice(1);
-      return words.some(function(w){ return normalize(w) === guessNormalized; });
+      // Qualunque pezzo CONSECUTIVO del nome è accettato (non solo una
+      // parola sola, non solo l'inizio) - tranne il nome intero (già
+      // controllato sopra) e il solo primo nome da solo (troppo generico,
+      // rischia di far indovinare per caso con un nome comune). Bug reali
+      // trovati: "Zúñiga" dentro "Juan Camilo Zúñiga Mosquera" (un
+      // cognome in mezzo, non l'ultimo), "Alex Sandro" dentro "Alex
+      // Sandro Lobo Silva" (primi due nomi insieme, non un cognome
+      // singolo).
+      var allWords = full.split(" ");
+      for (var start = 0; start < allWords.length; start++){
+        for (var end = start + 1; end <= allWords.length; end++){
+          if (start === 0 && end === allWords.length) continue; // nome intero, già gestito
+          if (start === 0 && end === 1) continue; // solo primo nome da solo: troppo generico
+          if (normalize(allWords.slice(start, end).join(" ")) === guessNormalized) return true;
+        }
+      }
+      return false;
     });
   }
 
@@ -1108,7 +1146,7 @@
       if (tr.country) name = name + " (" + tr.country + ")"; // competizione non riconosciuta: il paese la disambigua (es. "Super Cup" esiste in più nazioni)
       var title;
       if (tr.count > 1) title = t("championMulti")(tr.count, name);
-      else if (tr.seasons && tr.seasons[0]) title = t("titleWithYear")(name, tr.seasons[0]);
+      else if (showTrophyYears && tr.seasons && tr.seasons[0]) title = t("titleWithYear")(name, tr.seasons[0]);
       else title = t("champion")(name);
       return { left: name, title: title, sub: "" };
     });
