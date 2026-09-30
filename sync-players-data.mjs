@@ -405,12 +405,14 @@ function finalizeCareer(rec) {
 
   return stints.map((s) => ({
     // Un blocco storico ha già l'anno VERO di arrivo/partenza (da
-    // Wikipedia): niente +1. Una tappa normale invece usa l'anno di inizio
-    // stagione (es. 2008 = stagione 2008/09), quindi +1 per mostrare
-    // l'anno solare vero di fine.
-    years: s.minYear === s.maxYear
-      ? String(s.minYear)
-      : (s.isBlock ? `${s.minYear}–${s.maxYear}` : `${s.minYear}–${s.maxYear + 1}`),
+    // Wikipedia): niente +1, nemmeno per un blocco di un solo anno. Una
+    // tappa normale invece usa l'anno di inizio stagione (es. 2008 =
+    // stagione 2008/09) - il +1 si applica SEMPRE, anche per una singola
+    // stagione, per mostrare il vero confine stagionale (es. "2013–2014",
+    // non solo "2013").
+    years: s.isBlock
+      ? (s.minYear === s.maxYear ? String(s.minYear) : `${s.minYear}–${s.maxYear}`)
+      : `${s.minYear}–${s.maxYear + 1}`,
     club: s.club,
     league: s.league,
     leagueRaw: s.leagueRaw,
