@@ -463,22 +463,39 @@ function finalizeCareer(rec) {
     }
   });
 
-  return stints.map((s) => ({
-    // Un blocco storico ha già l'anno VERO di arrivo/partenza (da
-    // Wikipedia): niente +1, nemmeno per un blocco di un solo anno. Una
-    // tappa normale invece usa l'anno di inizio stagione (es. 2008 =
-    // stagione 2008/09) - il +1 si applica di norma anche per una singola
-    // stagione, per mostrare il vero confine stagionale (es. "2013–2014",
-    // non solo "2013") - TRANNE quando la tappa è rimasta in un vero
-    // pareggio con un'altra dello stesso anno (nessun indizio a
-    // distinguerle, es. un prestito a gennaio mai visto altrove nei
-    // nostri dati): lì mostriamo l'anno nudo, perché un intervallo pieno
-    // farebbe sembrare una permanenza di un anno intero che non c'è mai
-    // stata (caso reale: Simon Sohm, Fiorentina e Bologna entrambi "2025"
-    // senza nulla prima né dopo a distinguerli).
-    years: s.isBlock
-      ? (s.minYear === s.maxYear ? String(s.minYear) : `${s.minYear}–${s.maxYear}`)
-      : (s.ambiguousYear && s.minYear === s.maxYear ? String(s.minYear + s.ambiguousIndex) : `${s.minYear}–${s.maxYear + 1}`),
+  // Anno di inizio/fine "mostrati" per ogni tappa normale (non blocco):
+  // di norma inizio=minYear, fine=maxYear+1 (il vero confine stagionale).
+  // Una tappa rimasta in un vero pareggio (vedi sopra) è un caso a parte:
+  // mostra solo un anno secco, quindi qui inizio e fine coincidono - non
+  // può mai "sporgere" nella tappa successiva.
+  const displayed = stints.map((s) => {
+    if (s.isBlock) return { start: s.minYear, end: s.maxYear };
+    if (s.ambiguousYear && s.minYear === s.maxYear) {
+      const y = s.minYear + s.ambiguousIndex;
+      return { start: y, end: y };
+    }
+    return { start: s.minYear, end: s.maxYear + 1 };
+  });
+
+  // Controllo generale su OGNI coppia di tappe adiacenti (qualunque sia la
+  // causa a monte): se la fine mostrata della prima supera l'inizio
+  // mostrato della seconda, tagliamo quella della prima - un giocatore non
+  // può risultare in due squadre diverse nello stesso anno. Non tocchiamo
+  // mai i blocchi storici (hanno già gli anni veri da Wikipedia) né le
+  // tappe rimaste in un vero pareggio (già ridotte a un punto, non possono
+  // sporgere). Caso reale trovato: Bandinelli, Empoli "2019–2023" e Spezia
+  // "2022–2026" si sovrapponevano di un anno intero pur avendo già
+  // l'ordine giusto - il problema non era l'ordine, era il confine.
+  for (let i = 0; i < displayed.length - 1; i++) {
+    const cur = displayed[i], next = displayed[i + 1];
+    if (stints[i].isBlock || (stints[i].ambiguousYear && stints[i].minYear === stints[i].maxYear)) continue;
+    if (cur.end > next.start) cur.end = next.start;
+  }
+
+  return stints.map((s, i) => ({
+    years: s.isBlock || (s.ambiguousYear && s.minYear === s.maxYear)
+      ? (displayed[i].start === displayed[i].end ? String(displayed[i].start) : `${displayed[i].start}–${displayed[i].end}`)
+      : `${displayed[i].start}–${displayed[i].end}`,
     club: s.club,
     league: s.league,
     leagueRaw: s.leagueRaw,
