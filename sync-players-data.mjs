@@ -315,6 +315,67 @@ function mergePlayerEntry(playersMap, entry, season) {
  * preliminare comune sia a totalApps() sia a finalizeCareer(), così
  * restano sempre coerenti tra loro.
  */
+// Senza questa normalizzazione, lo stesso club scritto in due modi diversi
+// (es. "Argentinos JRS" e "Argentinos Juniors", trovati entrambi per lo
+// stesso giocatore nello stesso anno) non si fondono MAI in dedupedSeason
+// Records, né vengono riconosciuti come continuazione l'uno dell'altro in
+// finalizeCareer - risultando in tappe duplicate con anni sovrapposti.
+// Stessa lista di alias già verificata in verify-against-wikipedia.mjs
+// (lì serve per confrontare i nostri dati con Wikipedia; qui serve per
+// unire i nostri dati CON SE STESSI).
+const CLUB_ALIASES = new Map([
+  ["qpr", "queens park rangers"],
+  ["bayern munchen", "bayern munich"],
+  ["wolves", "wolverhampton wanderers"],
+  ["olympiakos piraeus", "olympiacos"],
+  ["athletic club", "athletic bilbao"],
+  ["vitoria sc", "vitoria guimaraes"],
+  ["sheffield utd", "sheffield united"],
+  ["atletico mg", "atletico mineiro"],
+  ["tsv 1860 munchen", "1860 munich"],
+  ["1899 hoffenheim", "tsg hoffenheim"],
+  ["sparta praha", "sparta prague"],
+  ["fk crvena zvezda", "red star belgrade"],
+  ["cfr 1907 cluj", "cfr cluj"],
+  ["uniao de leiria", "uniao leiria"],
+  ["legia warszawa", "legia warsaw"],
+  ["los angeles galaxy", "la galaxy"],
+  ["athletic club ii", "bilbao athletic"],
+  ["celta de vigo ii", "celta ii"],
+  ["pacos ferreira", "pacos de ferreira"],
+  ["bayern munchen ii", "bayern munich ii"],
+  ["olympique lyonnais ii", "lyon b"],
+  ["gazelec fc ajaccio", "gazelec ajaccio"],
+  ["st truiden", "sint truiden"],
+  ["atletico paranaense", "athletico paranaense"],
+  ["psg ii", "paris saint germain b"],
+  ["borussia mgladbach ii", "borussia monchengladbach ii"],
+  ["sevilla atletico", "sevilla b"],
+  ["vitoria de guimaraes", "vitoria guimaraes"],
+  ["slavia praha", "slavia prague"],
+  ["austria vienna", "austria wien"],
+  ["rapid vienna", "rapid wien"],
+  ["u madeira", "uniao madeira"],
+  ["el mokawloon", "al mokawloon"],
+  ["universidad catolica", "u catolica"],
+  ["club libertad", "libertad asuncion"],
+  // Trovato oggi, sullo stesso giocatore nello stesso anno:
+  ["argentinos jrs", "argentinos juniors"]
+]);
+const LETTER_FIXES = { "ø": "o", "æ": "ae", "œ": "oe", "ł": "l", "đ": "d", "ð": "d", "þ": "th", "ß": "ss" };
+function normClub(s) {
+  let base = (s || "")
+    .toLowerCase()
+    .replace(/[øæœłđðþß]/g, (c) => LETTER_FIXES[c])
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/['’`´]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+  base = base.replace(/ b$/, " ii");
+  return CLUB_ALIASES.get(base) || base;
+}
+
 function dedupedSeasonRecords(rec){
   const byKey = new Map();
   (rec.seasonRecords || []).forEach((r) => {
@@ -324,9 +385,10 @@ function dedupedSeasonRecords(rec){
     // vera competizione - separarle ulteriormente per campionato causava il
     // bug trovato con Tonali (due righe Newcastle 2023 non fuse perché una
     // fonte aveva l'id interno risolto e l'altra no, con leagueRaw diverso).
+    const normalizedClub = normClub(r.club);
     const key = r.blockToYear != null
-      ? "block|" + r.season + "-" + r.blockToYear + "|" + r.club
-      : r.season + "|" + r.club;
+      ? "block|" + r.season + "-" + r.blockToYear + "|" + normalizedClub
+      : r.season + "|" + normalizedClub;
     let existing = byKey.get(key);
     if (!existing) {
       existing = {
@@ -351,15 +413,15 @@ function dedupedSeasonRecords(rec){
   const clubsBySeason = new Map();
   records.forEach((r) => {
     if (!clubsBySeason.has(r.season)) clubsBySeason.set(r.season, new Set());
-    clubsBySeason.get(r.season).add(r.club);
+    clubsBySeason.get(r.season).add(normClub(r.club));
   });
   const wasContinuing = (r) => {
     const prev = clubsBySeason.get(r.season - 1);
-    return !!(prev && prev.has(r.club));
+    return !!(prev && prev.has(normClub(r.club)));
   };
   const willContinue = (r) => {
     const next = clubsBySeason.get(r.season + 1);
-    return !!(next && next.has(r.club));
+    return !!(next && next.has(normClub(r.club)));
   };
 
   // Marchiamo le tappe rimaste in un vero pareggio: stesso anno, più club,
@@ -372,7 +434,7 @@ function dedupedSeasonRecords(rec){
   // precisione che non abbiamo.
   clubsBySeason.forEach((clubs, season) => {
     if (clubs.size < 2) return;
-    const tied = records.filter((r) => r.season === season && clubs.has(r.club));
+    const tied = records.filter((r) => r.season === season && clubs.has(normClub(r.club)));
     const anyDecisive = tied.some((r) => wasContinuing(r) || willContinue(r));
     if (!anyDecisive) tied.forEach((r) => { r.ambiguousYear = true; });
   });
@@ -434,7 +496,7 @@ function finalizeCareer(rec) {
     // (Atalanta, non Bologna) e quindi rompe comunque la continuità. Un
     // blocco storico (isBlock) non è mai un punto di partenza valido per
     // continuare: la tappa successiva deve sempre aprirne una nuova.
-    const isContinuation = last && !last.isBlock && last.club === r.club && r.season === last.maxYear + 1;
+    const isContinuation = last && !last.isBlock && normClub(last.club) === normClub(r.club) && r.season === last.maxYear + 1;
     if (isContinuation) {
       last.maxYear = r.season;
       last.apps += r.apps;
