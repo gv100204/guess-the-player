@@ -296,7 +296,14 @@ function mergePlayerEntry(playersMap, entry, season) {
     if (isGK) rec.isGK = true;
 
     const goals = s.goals?.total || 0;
-    const conceded = s.goals?.conceded || 0;
+    // Per i portieri: se l'API non riporta i gol subiti, teniamo null
+    // invece di forzare a zero - altrimenti "dato mancante" e "zero vero"
+    // diventano indistinguibili per sempre una volta salvati (bug reale
+    // trovato: un portiere mostrava "0 gol subiti" identico in OGNI tappa
+    // di tutta la carriera, evidentemente il dato mancante travestito da
+    // zero, non un vero record di imbattibilità).
+    const concededRaw = s.goals?.conceded;
+    const conceded = concededRaw === null || concededRaw === undefined ? null : concededRaw;
 
     rec.seasonRecords.push({ season, club, league: leagueMeta.id, leagueRaw: null, country: null, apps, goals: isGK ? conceded : goals });
   });
@@ -331,7 +338,7 @@ function dedupedSeasonRecords(rec){
       byKey.set(key, existing);
     }
     existing.apps += r.apps;
-    existing.goals += r.goals;
+    existing.goals = (existing.goals == null && r.goals == null) ? null : (existing.goals || 0) + (r.goals || 0);
     // Se questa riga ha l'id interno risolto e quella "capofila" no,
     // lo aggiorniamo - altrimenti il filtro per campionato nel gioco
     // perderebbe questa tappa anche se ora è correttamente unita.
@@ -590,7 +597,8 @@ async function fetchFullCareer(playerId, birthYear, budget) {
 
       const isGK = s.games?.position === GK_POSITION;
       const goals = s.goals?.total || 0;
-      const conceded = s.goals?.conceded || 0;
+      const concededRaw = s.goals?.conceded;
+      const conceded = concededRaw === null || concededRaw === undefined ? null : concededRaw;
       const club = s.team?.name || "Squadra sconosciuta";
       const matchedLeague = matchLeague(s.league?.name, s.league?.country);
 
