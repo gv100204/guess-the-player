@@ -357,6 +357,10 @@ function dedupedSeasonRecords(rec){
     const prev = clubsBySeason.get(r.season - 1);
     return !!(prev && prev.has(r.club));
   };
+  const willContinue = (r) => {
+    const next = clubsBySeason.get(r.season + 1);
+    return !!(next && next.has(r.club));
+  };
 
   return records.sort((a, b) => {
     if (a.season !== b.season) return a.season - b.season;
@@ -368,6 +372,15 @@ function dedupedSeasonRecords(rec){
     const aCont = wasContinuing(a), bCont = wasContinuing(b);
     if (aCont && !bCont) return -1;
     if (bCont && !aCont) return 1;
+    // Nessuno dei due proseguiva dall'anno prima (entrambi nuovi per il
+    // giocatore): guardiamo avanti invece che indietro. Chi NON prosegue
+    // anche l'anno dopo era di passaggio breve, quindi viene prima; chi
+    // prosegue anche dopo è arrivato per restare, quindi viene dopo (caso
+    // reale: Carmona, O'Higgins solo nel 2008 poi Reggina fino al 2009 -
+    // l'ordine vero è O'Higgins poi Reggina).
+    const aWill = willContinue(a), bWill = willContinue(b);
+    if (!aWill && bWill) return -1;
+    if (!bWill && aWill) return 1;
     return 0; // nessuna preferenza chiara: manteniamo l'ordine originale (sort stabile)
   });
 }
