@@ -344,7 +344,32 @@ function dedupedSeasonRecords(rec){
     // perderebbe questa tappa anche se ora è correttamente unita.
     if (r.league && !existing.league) existing.league = r.league;
   });
-  return Array.from(byKey.values()).sort((a, b) => a.season - b.season);
+  const records = Array.from(byKey.values());
+
+  // Chi giocava già per quel club l'anno prima, per ogni stagione - serve
+  // per ordinare bene i pareggi (vedi sotto).
+  const clubsBySeason = new Map();
+  records.forEach((r) => {
+    if (!clubsBySeason.has(r.season)) clubsBySeason.set(r.season, new Set());
+    clubsBySeason.get(r.season).add(r.club);
+  });
+  const wasContinuing = (r) => {
+    const prev = clubsBySeason.get(r.season - 1);
+    return !!(prev && prev.has(r.club));
+  };
+
+  return records.sort((a, b) => {
+    if (a.season !== b.season) return a.season - b.season;
+    // Stesso anno, due club diversi (trasferimento a metà stagione, con
+    // calendari di campionati diversi che si sovrappongono): il club che
+    // proseguiva già dall'anno prima va mostrato per primo, quello nuovo
+    // dopo - altrimenti sembra un pendolo tra due club che non è mai
+    // successo, solo perché la fonte dati li restituisce in quell'ordine.
+    const aCont = wasContinuing(a), bCont = wasContinuing(b);
+    if (aCont && !bCont) return -1;
+    if (bCont && !aCont) return 1;
+    return 0; // nessuna preferenza chiara: manteniamo l'ordine originale (sort stabile)
+  });
 }
 
 function totalApps(rec) {
