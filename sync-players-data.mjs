@@ -362,6 +362,21 @@ function dedupedSeasonRecords(rec){
     return !!(next && next.has(r.club));
   };
 
+  // Marchiamo le tappe rimaste in un vero pareggio: stesso anno, più club,
+  // e NESSUNO dei due indizi (proseguiva prima / prosegue dopo) le
+  // distingue - un prestito a gennaio tra due club che non abbiamo mai
+  // visto altrove nei nostri dati (caso reale: Simon Sohm, Fiorentina e
+  // Bologna entrambi "solo 2025", senza nulla prima né dopo). In questi
+  // casi non sappiamo chi viene prima con certezza, quindi la useremo per
+  // mostrare l'anno nudo invece di un intervallo che finge una
+  // precisione che non abbiamo.
+  clubsBySeason.forEach((clubs, season) => {
+    if (clubs.size < 2) return;
+    const tied = records.filter((r) => r.season === season && clubs.has(r.club));
+    const anyDecisive = tied.some((r) => wasContinuing(r) || willContinue(r));
+    if (!anyDecisive) tied.forEach((r) => { r.ambiguousYear = true; });
+  });
+
   return records.sort((a, b) => {
     if (a.season !== b.season) return a.season - b.season;
     // Stesso anno, due club diversi (trasferimento a metà stagione, con
@@ -392,6 +407,7 @@ function totalApps(rec) {
 function finalizeCareer(rec) {
   const records = dedupedSeasonRecords(rec);
   const stints = [];
+  const ambiguousSeenInSeason = new Map(); // quante tappe ambigue dello stesso anno abbiamo già aperto
 
   records.forEach((r) => {
     if (r.blockToYear != null) {
@@ -423,6 +439,7 @@ function finalizeCareer(rec) {
       last.maxYear = r.season;
       last.apps += r.apps;
       last.goals += r.goals;
+      last.ambiguousYear = false; // la tappa ora copre più di un anno solo: il segnale di pareggio non ha più senso
       // Per mostrare un solo campionato/livello nella tappa fusa, teniamo
       // quello della stagione con più presenze - il più rappresentativo
       // del tempo passato lì, non necessariamente l'ultimo o il primo.
@@ -437,7 +454,12 @@ function finalizeCareer(rec) {
       // mezzo (es. un prestito e poi il ritorno, con un ALTRO club in
       // mezzo): in ogni caso si apre una NUOVA tappa, non si allunga
       // quella precedente.
-      stints.push({ club: r.club, league: r.league, leagueRaw: r.leagueRaw, country: r.country, minYear: r.season, maxYear: r.season, apps: r.apps, goals: r.goals, repApps: r.apps });
+      let ambiguousIndex = 0;
+      if (r.ambiguousYear) {
+        ambiguousIndex = ambiguousSeenInSeason.get(r.season) || 0;
+        ambiguousSeenInSeason.set(r.season, ambiguousIndex + 1);
+      }
+      stints.push({ club: r.club, league: r.league, leagueRaw: r.leagueRaw, country: r.country, minYear: r.season, maxYear: r.season, apps: r.apps, goals: r.goals, repApps: r.apps, ambiguousYear: !!r.ambiguousYear, ambiguousIndex });
     }
   });
 
@@ -445,12 +467,18 @@ function finalizeCareer(rec) {
     // Un blocco storico ha già l'anno VERO di arrivo/partenza (da
     // Wikipedia): niente +1, nemmeno per un blocco di un solo anno. Una
     // tappa normale invece usa l'anno di inizio stagione (es. 2008 =
-    // stagione 2008/09) - il +1 si applica SEMPRE, anche per una singola
+    // stagione 2008/09) - il +1 si applica di norma anche per una singola
     // stagione, per mostrare il vero confine stagionale (es. "2013–2014",
-    // non solo "2013").
+    // non solo "2013") - TRANNE quando la tappa è rimasta in un vero
+    // pareggio con un'altra dello stesso anno (nessun indizio a
+    // distinguerle, es. un prestito a gennaio mai visto altrove nei
+    // nostri dati): lì mostriamo l'anno nudo, perché un intervallo pieno
+    // farebbe sembrare una permanenza di un anno intero che non c'è mai
+    // stata (caso reale: Simon Sohm, Fiorentina e Bologna entrambi "2025"
+    // senza nulla prima né dopo a distinguerli).
     years: s.isBlock
       ? (s.minYear === s.maxYear ? String(s.minYear) : `${s.minYear}–${s.maxYear}`)
-      : `${s.minYear}–${s.maxYear + 1}`,
+      : (s.ambiguousYear && s.minYear === s.maxYear ? String(s.minYear + s.ambiguousIndex) : `${s.minYear}–${s.maxYear + 1}`),
     club: s.club,
     league: s.league,
     leagueRaw: s.leagueRaw,
