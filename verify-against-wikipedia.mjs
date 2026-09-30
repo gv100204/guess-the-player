@@ -631,14 +631,22 @@ function isCovered(wikiEntry, seasonRecords) {
   const wikiClub = normClub(wikiEntry.team);
   if (!wikiClub) return false;
   const wikiIsReserve = isReserveClub(wikiClub);
-  return seasonRecords.some((r) => {
+  const hasSeasonNear = (year) => seasonRecords.some((r) => {
     const ourClub = normClub(r.club);
     if (!ourClub || ourClub === "squadra sconosciuta") return false;
     if (isReserveClub(ourClub) !== wikiIsReserve) return false;
     const nameMatches = ourClub.includes(wikiClub) || wikiClub.includes(ourClub);
     if (!nameMatches) return false;
-    return r.season >= wikiEntry.from - 1 && r.season <= wikiEntry.to + 1;
+    return Math.abs(r.season - year) <= 1;
   });
+  // Bug reale trovato: un intervallo Wikipedia lungo (es. "AC Milan
+  // 1998-2016", un contratto con prestiti altrove nel mezzo mai spezzato
+  // da Wikipedia) veniva considerato "coperto" se anche una SOLA nostra
+  // stagione cadeva ovunque dentro quell'intervallo - così mancava
+  // l'intero primo decennio (1998-2007) di Abbiati al Milan, mai segnalato
+  // come buco perché avevamo già il 2008-2015. Ora serve avere dati
+  // nostri vicino SIA all'inizio SIA alla fine dell'intervallo dichiarato.
+  return hasSeasonNear(wikiEntry.from) && hasSeasonNear(wikiEntry.to);
 }
 
 // Calcola il verdetto secondo la regola concordata: fallisce se manca più
