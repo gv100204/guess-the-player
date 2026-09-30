@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-30T20:39:12.531Z",
+  "version": "2026-09-30T20:45:06.908Z",
   "players": [
     {
       "id": "bryan-cristante-778",
@@ -14207,6 +14207,15 @@
           "goals": 5
         },
         {
+          "years": "2017–2017",
+          "club": "Inter",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 16,
+          "goals": 1
+        },
+        {
           "years": "2017–2018",
           "club": "Inter Milan",
           "league": null,
@@ -14216,13 +14225,13 @@
           "goals": 1
         },
         {
-          "years": "2017–2018",
+          "years": "2018–2018",
           "club": "Inter",
           "league": "seriea",
           "leagueRaw": null,
           "country": null,
-          "apps": 17,
-          "goals": 1
+          "apps": 1,
+          "goals": 0
         },
         {
           "years": "2018–2019",

@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-30T20:39:12.531Z",
+  "version": "2026-09-30T20:45:06.908Z",
   "players": [
     {
       "id": "keita-balde-diao-213",
@@ -152,6 +152,15 @@
           "goals": 11
         },
         {
+          "years": "2013–2013",
+          "club": "Inter",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 22,
+          "goals": 9
+        },
+        {
           "years": "2013–2014",
           "club": "Inter Milan",
           "league": null,
@@ -161,13 +170,13 @@
           "goals": 111
         },
         {
-          "years": "2013–2019",
+          "years": "2014–2019",
           "club": "Inter",
           "league": "seriea",
           "leagueRaw": null,
           "country": null,
-          "apps": 188,
-          "goals": 111
+          "apps": 166,
+          "goals": 102
         },
         {
           "years": "2019–2022",
@@ -7628,6 +7637,15 @@
           "goals": 2
         },
         {
+          "years": "2015–2015",
+          "club": "Inter",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 26,
+          "goals": 1
+        },
+        {
           "years": "2015–2016",
           "club": "Inter Milan",
           "league": null,
@@ -7637,13 +7655,13 @@
           "goals": 2
         },
         {
-          "years": "2015–2017",
+          "years": "2016–2017",
           "club": "Inter",
           "league": "seriea",
           "leagueRaw": null,
           "country": null,
-          "apps": 50,
-          "goals": 2
+          "apps": 24,
+          "goals": 1
         },
         {
           "years": "2017–2020",
@@ -20013,6 +20031,15 @@
           "goals": 5
         },
         {
+          "years": "2017–2017",
+          "club": "Inter",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 16,
+          "goals": 1
+        },
+        {
           "years": "2017–2018",
           "club": "Inter Milan",
           "league": null,
@@ -20022,13 +20049,13 @@
           "goals": 1
         },
         {
-          "years": "2017–2018",
+          "years": "2018–2018",
           "club": "Inter",
           "league": "seriea",
           "leagueRaw": null,
           "country": null,
-          "apps": 17,
-          "goals": 1
+          "apps": 1,
+          "goals": 0
         },
         {
           "years": "2018–2019",
