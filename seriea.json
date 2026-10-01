@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-01T17:50:54.804Z",
+  "version": "2026-10-01T20:54:55.923Z",
   "players": [
     {
       "id": "stefan-savic-39",
@@ -130724,6 +130724,15 @@
           "goals": 5
         },
         {
+          "years": "2015–2015",
+          "club": "Real Betis",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 25,
+          "goals": 3
+        },
+        {
           "years": "2015–2016",
           "club": "Betis",
           "league": null,
@@ -130733,13 +130742,13 @@
           "goals": 4
         },
         {
-          "years": "2015–2017",
+          "years": "2016–2017",
           "club": "Real Betis",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 61,
-          "goals": 4
+          "apps": 36,
+          "goals": 1
         },
         {
           "years": "2017–2021",

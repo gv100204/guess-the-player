@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-01T17:50:54.804Z",
+  "version": "2026-10-01T20:54:55.923Z",
   "players": [
     {
       "id": "stefan-savic-39",
@@ -151769,6 +151769,15 @@
           "goals": 5
         },
         {
+          "years": "2015–2015",
+          "club": "Real Betis",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 25,
+          "goals": 3
+        },
+        {
           "years": "2015–2016",
           "club": "Betis",
           "league": null,
@@ -151778,13 +151787,13 @@
           "goals": 4
         },
         {
-          "years": "2015–2017",
+          "years": "2016–2017",
           "club": "Real Betis",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 61,
-          "goals": 4
+          "apps": 36,
+          "goals": 1
         },
         {
           "years": "2017–2021",
@@ -277804,7 +277813,7 @@
           "goals": 5
         },
         {
-          "years": "2014",
+          "years": "2014–2014",
           "club": "Real Betis",
           "league": null,
           "leagueRaw": "Segunda División",
@@ -361587,7 +361596,7 @@
           "goals": 3
         },
         {
-          "years": "2017",
+          "years": "2017–2017",
           "club": "Real Betis",
           "league": "laliga",
           "leagueRaw": null,
@@ -484462,6 +484471,15 @@
           "goals": 17
         },
         {
+          "years": "2019–2019",
+          "club": "Real Betis",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 35,
+          "goals": 3
+        },
+        {
           "years": "2019–2020",
           "club": "Betis",
           "league": null,
@@ -484471,13 +484489,13 @@
           "goals": 39
         },
         {
-          "years": "2019–2023",
+          "years": "2020–2023",
           "club": "Real Betis",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 142,
-          "goals": 39
+          "apps": 107,
+          "goals": 36
         },
         {
           "years": "2023–2024",
@@ -498791,16 +498809,7 @@
           "goals": 3
         },
         {
-          "years": "2014",
-          "club": "Real Betis",
-          "league": null,
-          "leagueRaw": "Segunda División",
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2015",
+          "years": "2014–2014",
           "club": "Real Betis II",
           "league": null,
           "leagueRaw": "Primera División RFEF",
@@ -498809,13 +498818,13 @@
           "goals": 14
         },
         {
-          "years": "2015",
-          "club": "Numancia",
+          "years": "2014–2015",
+          "club": "Real Betis",
           "league": null,
           "leagueRaw": "Segunda División",
           "country": null,
-          "apps": 41,
-          "goals": 12
+          "apps": 1,
+          "goals": 0
         },
         {
           "years": "2015–2016",
@@ -498825,6 +498834,15 @@
           "country": null,
           "apps": 26,
           "goals": 3
+        },
+        {
+          "years": "2015–2016",
+          "club": "Numancia",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 41,
+          "goals": 12
         },
         {
           "years": "2016–2017",
@@ -503348,6 +503366,15 @@
           "goals": 0
         },
         {
+          "years": "2017–2017",
+          "club": "Real Betis",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 14,
+          "goals": 1
+        },
+        {
           "years": "2017–2018",
           "club": "Betis",
           "league": null,
@@ -503357,13 +503384,13 @@
           "goals": 1
         },
         {
-          "years": "2017–2019",
+          "years": "2018–2019",
           "club": "Real Betis",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 36,
-          "goals": 1
+          "apps": 22,
+          "goals": 0
         },
         {
           "years": "2019–2020",
@@ -550898,7 +550925,7 @@
           "goals": 0
         },
         {
-          "years": "2024",
+          "years": "2024–2024",
           "club": "Real Betis",
           "league": "laliga",
           "leagueRaw": null,
