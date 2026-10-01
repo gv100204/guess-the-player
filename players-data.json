@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-01T21:22:45.023Z",
+  "version": "2026-10-01T21:56:30.000Z",
   "players": [
     {
       "id": "stefan-savic-39",
@@ -47399,6 +47399,15 @@
           "goals": 0
         },
         {
+          "years": "2018–2018",
+          "club": "U.N.A.M. - Pumas",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": "Mexico",
+          "apps": 29,
+          "goals": 4
+        },
+        {
           "years": "2018–2019",
           "club": "UNAM",
           "league": null,
@@ -47408,13 +47417,13 @@
           "goals": 16
         },
         {
-          "years": "2018–2019",
+          "years": "2019–2019",
           "club": "U.N.A.M. - Pumas",
           "league": null,
           "leagueRaw": "Liga MX",
           "country": "Mexico",
-          "apps": 47,
-          "goals": 6
+          "apps": 18,
+          "goals": 2
         },
         {
           "years": "2019–2020",
@@ -127521,7 +127530,7 @@
           "goals": 0
         },
         {
-          "years": "2017",
+          "years": "2017–2017",
           "club": "U.N.A.M. - Pumas",
           "league": null,
           "leagueRaw": "Liga MX",
@@ -136570,7 +136579,7 @@
           "goals": 1
         },
         {
-          "years": "2022",
+          "years": "2022–2022",
           "club": "U.N.A.M. - Pumas",
           "league": null,
           "leagueRaw": "Liga MX",
@@ -180083,6 +180092,15 @@
           "goals": 0
         },
         {
+          "years": "2023–2023",
+          "club": "U.N.A.M. - Pumas",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": "Mexico",
+          "apps": 36,
+          "goals": 1
+        },
+        {
           "years": "2023–2024",
           "club": "UNAM",
           "league": null,
@@ -180092,13 +180110,13 @@
           "goals": 2
         },
         {
-          "years": "2023–2025",
+          "years": "2024–2025",
           "club": "U.N.A.M. - Pumas",
           "league": null,
           "leagueRaw": "Liga MX",
           "country": "Mexico",
-          "apps": 60,
-          "goals": 1
+          "apps": 24,
+          "goals": 0
         },
         {
           "years": "2025–2026",
@@ -283545,6 +283563,15 @@
       "isGK": false,
       "career": [
         {
+          "years": "2005–2005",
+          "club": "U.N.A.M. - Pumas",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
           "years": "2005–2006",
           "club": "UNAM",
           "league": null,
@@ -283554,12 +283581,12 @@
           "goals": 34
         },
         {
-          "years": "2005–2007",
+          "years": "2006–2007",
           "club": "U.N.A.M. - Pumas",
           "league": null,
           "leagueRaw": "Liga MX",
           "country": null,
-          "apps": 6,
+          "apps": 5,
           "goals": 0
         },
         {
@@ -283617,6 +283644,15 @@
           "goals": 3
         },
         {
+          "years": "2016–2016",
+          "club": "U.N.A.M. - Pumas",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": "Mexico",
+          "apps": 30,
+          "goals": 8
+        },
+        {
           "years": "2016–2017",
           "club": "UNAM",
           "league": null,
@@ -283626,13 +283662,13 @@
           "goals": 30
         },
         {
-          "years": "2016–2020",
+          "years": "2017–2020",
           "club": "U.N.A.M. - Pumas",
           "league": null,
           "leagueRaw": "Liga MX",
           "country": "Mexico",
-          "apps": 113,
-          "goals": 15
+          "apps": 83,
+          "goals": 7
         },
         {
           "years": "2020–2021",
@@ -434432,6 +434468,15 @@
           "goals": 2
         },
         {
+          "years": "2016–2016",
+          "club": "U.N.A.M. - Pumas",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": "Mexico",
+          "apps": 35,
+          "goals": 4
+        },
+        {
           "years": "2016–2017",
           "club": "UNAM",
           "league": null,
@@ -434441,13 +434486,13 @@
           "goals": 12
         },
         {
-          "years": "2016–2018",
+          "years": "2017–2018",
           "club": "U.N.A.M. - Pumas",
           "league": null,
           "leagueRaw": "Liga MX",
           "country": "Mexico",
-          "apps": 67,
-          "goals": 6
+          "apps": 32,
+          "goals": 2
         },
         {
           "years": "2018–2019",
@@ -442056,6 +442101,15 @@
           "goals": 14
         },
         {
+          "years": "2022–2022",
+          "club": "U.N.A.M. - Pumas",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": "Mexico",
+          "apps": 27,
+          "goals": 9
+        },
+        {
           "years": "2022–2023",
           "club": "UNAM",
           "league": null,
@@ -442065,13 +442119,13 @@
           "goals": 28
         },
         {
-          "years": "2022–2024",
+          "years": "2023–2024",
           "club": "U.N.A.M. - Pumas",
           "league": null,
           "leagueRaw": "Liga MX",
           "country": "Mexico",
-          "apps": 67,
-          "goals": 15
+          "apps": 40,
+          "goals": 6
         },
         {
           "years": "2024–2026",

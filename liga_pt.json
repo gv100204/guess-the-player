@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-01T21:22:45.023Z",
+  "version": "2026-10-01T21:56:30.000Z",
   "players": [
     {
       "id": "bryan-cristante-778",
@@ -2452,6 +2452,15 @@
           "goals": 0
         },
         {
+          "years": "2018–2018",
+          "club": "U.N.A.M. - Pumas",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": "Mexico",
+          "apps": 29,
+          "goals": 4
+        },
+        {
           "years": "2018–2019",
           "club": "UNAM",
           "league": null,
@@ -2461,13 +2470,13 @@
           "goals": 16
         },
         {
-          "years": "2018–2019",
+          "years": "2019–2019",
           "club": "U.N.A.M. - Pumas",
           "league": null,
           "leagueRaw": "Liga MX",
           "country": "Mexico",
-          "apps": 47,
-          "goals": 6
+          "apps": 18,
+          "goals": 2
         },
         {
           "years": "2019–2020",
@@ -44717,6 +44726,15 @@
           "goals": 14
         },
         {
+          "years": "2022–2022",
+          "club": "U.N.A.M. - Pumas",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": "Mexico",
+          "apps": 27,
+          "goals": 9
+        },
+        {
           "years": "2022–2023",
           "club": "UNAM",
           "league": null,
@@ -44726,13 +44744,13 @@
           "goals": 28
         },
         {
-          "years": "2022–2024",
+          "years": "2023–2024",
           "club": "U.N.A.M. - Pumas",
           "league": null,
           "leagueRaw": "Liga MX",
           "country": "Mexico",
-          "apps": 67,
-          "goals": 15
+          "apps": 40,
+          "goals": 6
         },
         {
           "years": "2024–2026",
