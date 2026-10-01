@@ -267,6 +267,19 @@
     <button class="btn secondary" id="newRoundBtn" style="display:none;"></button>
 
     <div class="feedback" id="feedback"></div>
+
+    <button class="btn secondary" id="reportBtn" style="margin-top:14px; opacity:0.75; font-size:0.9em;"></button>
+    <div id="reportPanel" style="display:none; margin-top:10px;">
+      <div class="field-label" id="reportPlayerLabel" style="margin-top:0; opacity:0.75;"></div>
+      <div class="guess-row" style="margin-top:8px;">
+        <textarea id="reportText" rows="3" style="width:100%; resize:vertical; font-family:inherit; font-size:inherit; background:inherit; color:inherit; border-radius:10px; padding:10px;"></textarea>
+      </div>
+      <div class="btn-row" style="margin-top:8px;">
+        <button class="btn" id="reportSendBtn" style="margin-top:0;"></button>
+        <button class="btn secondary" id="reportCancelBtn"></button>
+      </div>
+      <div id="reportStatus" style="margin-top:8px; font-size:0.9em; display:none;"></div>
+    </div>
   </div>
 
   <p class="footer-note" id="footerNote"></p>
@@ -312,6 +325,10 @@
       diffAny: "Qualsiasi", diffEasy: "Facile", diffMedium: "Media", diffHard: "Difficile",
       matchFilters: "Filtri partita", close2: "Fatto",
       filtersSummaryNone: "Nessun campionato selezionato",
+      reportBtn: "Segnala un errore", reportPlayerLabel: function(n){ return "Giocatore: " + n; },
+      reportPlaceholder: "Cosa c'è che non va?", reportSend: "Invia", reportCancel: "Annulla",
+      reportSending: "Invio in corso...", reportSent: "Segnalazione inviata, grazie!",
+      reportError: "Invio non riuscito, riprova più tardi.",
       filtersSummary: function(n, thr){ return n + (n === 1 ? " campionato" : " campionati") + " · presenze minime " + thr; },
       whenMatchEnds: "Quando finisce la partita", fixedRounds: "Round fissi", firstToScore: "Primo al punteggio",
       targetScore: "Punteggio da raggiungere", pointsWord: "punti",
@@ -375,6 +392,10 @@
       diffAny: "Any", diffEasy: "Easy", diffMedium: "Medium", diffHard: "Hard",
       matchFilters: "Match filters", close2: "Done",
       filtersSummaryNone: "No league selected",
+      reportBtn: "Report a mistake", reportPlayerLabel: function(n){ return "Player: " + n; },
+      reportPlaceholder: "What's wrong?", reportSend: "Send", reportCancel: "Cancel",
+      reportSending: "Sending...", reportSent: "Report sent, thank you!",
+      reportError: "Couldn't send, try again later.",
       filtersSummary: function(n, thr){ return n + (n === 1 ? " league" : " leagues") + " · min. appearances " + thr; },
       whenMatchEnds: "When the match ends", fixedRounds: "Fixed rounds", firstToScore: "First to target score",
       targetScore: "Target score", pointsWord: "points",
@@ -585,18 +606,8 @@
   // ==========================================================================
 
   var MANIFEST_URL = "https://gv100204.github.io/guess-the-player/manifest.json";
-  var REAL_CACHE_KEY = "indovina_calciatore_real_data_v1";
   var realShardsByLeague = {}; // leagueId -> array di giocatori (forma identica a DEMO_PLAYERS)
   var realDataStatus = { loaded: false, version: null, leaguesLoaded: 0, leaguesTotal: 0, error: null };
-
-  function loadRealCache(){
-    var cached = safeGet(REAL_CACHE_KEY);
-    if (cached && cached.shards) realShardsByLeague = cached.shards;
-    return cached;
-  }
-  function saveRealCache(version){
-    safeSet(REAL_CACHE_KEY, { version: version, shards: realShardsByLeague });
-  }
 
   async function fetchJson(url){
     var res = await fetch(url, { cache: "no-cache" });
@@ -605,42 +616,31 @@
   }
 
   async function loadRealData(){
-    var cached = loadRealCache();
+    // Niente più cache in localStorage: scarica sempre tutto di fresco a
+    // ogni apertura della pagina. Il file non è pesante, e la certezza di
+    // avere sempre i dati veri (senza mai chiedersi se è rimasta una
+    // versione vecchia in cache dal browser) vale più della velocità
+    // risparmiata - specialmente mentre i dati cambiano spesso.
     try {
       var manifest = await fetchJson(MANIFEST_URL);
       var leagueIds = Object.keys(manifest.leagues || {});
       realDataStatus.leaguesTotal = leagueIds.length;
 
-      var needsSave = false;
       for (var i = 0; i < leagueIds.length; i++){
         var id = leagueIds[i];
         var info = manifest.leagues[id];
-        var haveFresh = cached && cached.version === manifest.version && realShardsByLeague[id];
-        if (haveFresh){
-          realDataStatus.leaguesLoaded++;
-          continue;
-        }
         try {
           var shard = await fetchJson(MANIFEST_URL.replace("manifest.json", info.file));
           realShardsByLeague[id] = shard.players || [];
           realDataStatus.leaguesLoaded++;
-          needsSave = true;
         } catch (shardErr) {
           console.warn("Shard " + id + " non scaricato: " + shardErr.message);
         }
       }
       realDataStatus.loaded = realDataStatus.leaguesLoaded > 0;
       realDataStatus.version = manifest.version;
-      if (needsSave) saveRealCache(manifest.version);
     } catch (err) {
       realDataStatus.error = err.message;
-      // Nessun manifest raggiungibile: se avevamo comunque una cache da un
-      // download riuscito in passato, la usiamo lo stesso (meglio dati un
-      // po' vecchi che nessun dato reale).
-      if (cached && cached.shards) {
-        realDataStatus.loaded = Object.keys(cached.shards).length > 0;
-        realDataStatus.version = cached.version;
-      }
     }
     updateDataSourceLabel();
   }
@@ -735,7 +735,8 @@
    "gamePanel","dossierTag","stepList","stepCount","extraHintText",
    "guessRow","guessBtnRow","skipRow","guessInput","guessBtn","nextStepBtn","hintBtn","skipBtn",
    "partyControls","partyWhoLabel","partyPickerChips","partyGuessRow","partyGuessInput","partyGuessBtn","partySkipBtn",
-   "newRoundBtn","feedback","soloStats","turnBanner","scoreStrip","sbScore","sbStreak","sbBest","footerNote","dataSourceLabel"
+   "newRoundBtn","feedback","soloStats","turnBanner","scoreStrip","sbScore","sbStreak","sbBest","footerNote","dataSourceLabel",
+   "reportBtn","reportPanel","reportPlayerLabel","reportText","reportSendBtn","reportCancelBtn","reportStatus"
   ].forEach(function(id){ el[id] = document.getElementById(id); });
 
   // ---- helpers ----
@@ -896,6 +897,10 @@
     el.partyGuessInput.placeholder = t("guessPlaceholder");
     el.guessBtn.textContent = t("guess");
     el.skipBtn.textContent = t("skipReveal");
+    el.reportBtn.textContent = t("reportBtn");
+    el.reportText.placeholder = t("reportPlaceholder");
+    el.reportSendBtn.textContent = t("reportSend");
+    el.reportCancelBtn.textContent = t("reportCancel");
     el.partyWhoLabel.textContent = t("whoAnswers");
     el.partyGuessBtn.textContent = t("confirmAnswer");
     el.partySkipBtn.textContent = t("nobodyGot");
@@ -941,6 +946,54 @@
       showTrophyYears = btn.getAttribute("data-show") === "yes";
       safeSet("indovina_calciatore_show_trophy_years", showTrophyYears);
       applyStaticLabels();
+    });
+  });
+
+  // Segnalazione errori: il giocatore attualmente mostrato viene sempre
+  // incluso in automatico, l'invio passa da FormSubmit.co (nessun
+  // backend o chiave segreta - la prima volta serve confermare
+  // l'indirizzo email dal link che manda FormSubmit).
+  var REPORT_EMAIL = "guesstheplayer.carve774@passmail.net";
+  el.reportBtn.addEventListener("click", function(){
+    var opening = el.reportPanel.style.display === "none";
+    el.reportPanel.style.display = opening ? "block" : "none";
+    if (opening) {
+      var name = state.current ? displayNameOf(state.current) : "(nessun giocatore attivo)";
+      el.reportPlayerLabel.textContent = t("reportPlayerLabel")(name);
+      el.reportStatus.style.display = "none";
+      el.reportText.value = "";
+      el.reportSendBtn.disabled = false;
+      el.reportText.focus();
+    }
+  });
+  el.reportCancelBtn.addEventListener("click", function(){
+    el.reportPanel.style.display = "none";
+  });
+  el.reportSendBtn.addEventListener("click", function(){
+    var message = el.reportText.value.trim();
+    var playerName = state.current ? state.current.name : "(nessun giocatore attivo)";
+    var playerDisplay = state.current ? displayNameOf(state.current) : "(nessun giocatore attivo)";
+    var playerId = state.current && state.current.id ? state.current.id : "(sconosciuto)";
+    el.reportStatus.style.display = "block";
+    el.reportStatus.textContent = t("reportSending");
+    el.reportSendBtn.disabled = true;
+    fetch("https://formsubmit.co/ajax/" + REPORT_EMAIL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({
+        _subject: "Segnalazione Indovina il Calciatore: " + playerDisplay,
+        giocatore_nome_legale: playerName,
+        giocatore_nome_pubblico: playerDisplay,
+        giocatore_id: playerId,
+        messaggio: message || "(nessun testo scritto)"
+      })
+    }).then(function(res){ return res.json(); }).then(function(){
+      el.reportStatus.textContent = t("reportSent");
+      el.reportSendBtn.disabled = false;
+      el.reportText.value = "";
+    }).catch(function(){
+      el.reportStatus.textContent = t("reportError");
+      el.reportSendBtn.disabled = false;
     });
   });
 
@@ -1494,7 +1547,6 @@
   });
 
   applyStaticLabels();
-  loadRealCache();
   updateDataSourceLabel();
   loadRealData();
 })();
