@@ -359,6 +359,7 @@ const CLUB_ALIASES = new Map([
   ["uanl", "tigres uanl"],
   ["inter milan", "inter"],
   ["betis", "real betis"],
+  ["roma", "as roma"],
   ["el mokawloon", "al mokawloon"],
   ["universidad catolica", "u catolica"],
   ["club libertad", "libertad asuncion"],
