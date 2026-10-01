@@ -336,6 +336,7 @@
       revealCareer: "Come rivelare la carriera", revealPalmares: "Come rivelare il palmares",
       stepByStep: "Passo dopo passo", allAtOnce: "Tutta insieme",
       selectLeaguePrompt: "Seleziona almeno un campionato", startGame: "Inizia la partita",
+      dataLoadingBtn: "Sto scaricando i dati...",
       passThePhone: "Passa il telefono a", ready: "Pronto, tocca a me",
       round: "Manche", of: "di",
       finalLeaderboard: "Classifica finale", newGame: "Nuova partita",
@@ -403,6 +404,7 @@
       revealCareer: "How to reveal the career", revealPalmares: "How to reveal the honours",
       stepByStep: "Step by step", allAtOnce: "All at once",
       selectLeaguePrompt: "Select at least one league", startGame: "Start the game",
+      dataLoadingBtn: "Downloading data...",
       passThePhone: "Pass the phone to", ready: "Ready, my turn",
       round: "Round", of: "of",
       finalLeaderboard: "Final leaderboard", newGame: "New game",
@@ -633,6 +635,7 @@
           var shard = await fetchJson(MANIFEST_URL.replace("manifest.json", info.file));
           realShardsByLeague[id] = shard.players || [];
           realDataStatus.leaguesLoaded++;
+          updateStartState(); // si sblocca subito se il campionato appena arrivato è tra quelli scelti, senza aspettare gli altri
         } catch (shardErr) {
           console.warn("Shard " + id + " non scaricato: " + shardErr.message);
         }
@@ -646,13 +649,19 @@
   }
 
   function updateDataSourceLabel(){
-    if (!el.dataSourceLabel) return;
-    if (realDataStatus.loaded){
-      el.dataSourceLabel.textContent = (lang === "it" ? "Dati reali" : "Real data") +
-        " (" + realDataStatus.version + ") · " + realDataStatus.leaguesLoaded + "/" + realDataStatus.leaguesTotal;
-    } else {
-      el.dataSourceLabel.textContent = lang === "it" ? "Dati di esempio (dati reali non raggiungibili)" : "Sample data (real data unreachable)";
+    if (el.dataSourceLabel){
+      if (realDataStatus.loaded){
+        el.dataSourceLabel.textContent = (lang === "it" ? "Dati reali" : "Real data") +
+          " (" + realDataStatus.version + ") · " + realDataStatus.leaguesLoaded + "/" + realDataStatus.leaguesTotal;
+      } else {
+        el.dataSourceLabel.textContent = lang === "it" ? "Dati di esempio (dati reali non raggiungibili)" : "Sample data (real data unreachable)";
+      }
     }
+    // Ogni volta che arriva un nuovo shard, il pulsante Inizia potrebbe
+    // doversi sbloccare - senza questo richiamo, restava disabilitato
+    // finché l'utente non ritoccava i filtri per far ripartire il
+    // controllo da solo.
+    updateStartState();
   }
 
   /** Tutti i giocatori disponibili per un campionato: reali se li abbiamo già scaricati, altrimenti quelli di esempio. */
@@ -1097,8 +1106,10 @@
   });
 
   function updateStartState(){
-    el.startBtn.disabled = selectedLeagues.size === 0;
-    el.startBtn.textContent = selectedLeagues.size === 0 ? t("selectLeaguePrompt") : t("startGame");
+    var allSelectedLoaded = Array.from(selectedLeagues).every(function(id){ return !!realShardsByLeague[id]; });
+    var waitingForData = selectedLeagues.size > 0 && !allSelectedLoaded;
+    el.startBtn.disabled = selectedLeagues.size === 0 || waitingForData;
+    el.startBtn.textContent = selectedLeagues.size === 0 ? t("selectLeaguePrompt") : (waitingForData ? t("dataLoadingBtn") : t("startGame"));
     var showMatchMode = selectedLeagues.size > 1;
     el.matchModeSegment.style.display = showMatchMode ? "flex" : "none";
     el.matchModeLabel.style.display = showMatchMode ? "block" : "none";
@@ -1129,6 +1140,23 @@
 
   function normalize(s){
     return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9\s]/g, "").trim();
+  }
+
+  // Intero casuale uniforme in [0, max) - usa crypto.getRandomValues
+  // quando disponibile (qualità crittografica, non solo Math.random),
+  // con rifiuto dei valori che cadrebbero fuori da un multiplo esatto del
+  // range, per non favorire nemmeno leggermente i numeri più bassi.
+  function secureRandomInt(max){
+    if (max <= 0) return 0;
+    if (!window.crypto || !window.crypto.getRandomValues) return Math.floor(Math.random() * max);
+    var range = Math.floor(0xFFFFFFFF / max) * max;
+    var buf = new Uint32Array(1);
+    var val;
+    do {
+      window.crypto.getRandomValues(buf);
+      val = buf[0];
+    } while (val >= range);
+    return val % max;
   }
 
   // Nome da mostrare: quello pubblico/comune preso da Wikipedia
@@ -1335,7 +1363,7 @@
     var available = state.pool.filter(function(p){ return !usedPlayerNames.has(p.name); });
     var repeatedCycle = false;
     if (available.length === 0){ usedPlayerNames.clear(); available = state.pool; repeatedCycle = true; }
-    var idx = Math.floor(Math.random() * available.length);
+    var idx = secureRandomInt(available.length);
     state.current = available[idx];
     usedPlayerNames.add(state.current.name);
     state.currentSteps = buildSteps(state.current);
