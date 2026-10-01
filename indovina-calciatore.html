@@ -359,6 +359,7 @@
       appsGoals: function(a, g){ return a + " presenze, " + g + " gol"; },
       appsConceded: function(a, g){ return a + " presenze, " + g + " gol subiti"; },
       appsOnly: function(a){ return a + " presenze"; },
+      appsUnknown: "Presenze non disponibili",
       footer: "Prototipo · presenze, gol e palmares sono dati di esempio, da sostituire con statistiche reali verificate",
       champion: function(n){ return "Campione di " + n; },
       championMulti: function(c, n){ return c + " volte campione di " + n; },
@@ -427,6 +428,7 @@
       appsGoals: function(a, g){ return a + " appearances, " + g + " goals"; },
       appsConceded: function(a, g){ return a + " appearances, " + g + " goals conceded"; },
       appsOnly: function(a){ return a + " appearances"; },
+      appsUnknown: "Appearances not available",
       footer: "Prototype · appearances, goals and honours are sample data, to be replaced with verified real statistics",
       champion: function(n){ return "Champion of " + n; },
       championMulti: function(c, n){ return c + "-time champion of " + n; },
@@ -1209,9 +1211,14 @@
   function buildSteps(p){
     if (contentMode === "career"){
       return p.career.map(function(c){
-        var sub = p.isGK
-          ? (c.goals == null ? t("appsOnly")(c.apps) : t("appsConceded")(c.apps, c.goals))
-          : t("appsGoals")(c.apps, c.goals);
+        var sub;
+        if (c.apps == null) {
+          sub = t("appsUnknown");
+        } else if (p.isGK) {
+          sub = c.goals == null ? t("appsOnly")(c.apps) : t("appsConceded")(c.apps, c.goals);
+        } else {
+          sub = t("appsGoals")(c.apps, c.goals);
+        }
         return { left: c.years, title: c.club, sub: sub };
       });
     }

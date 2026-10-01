@@ -114,7 +114,12 @@ function clipAgainstExisting(entry, seasonRecords) {
 }
 
 function isPlausible(entry) {
-  if (!entry.apps || entry.apps <= 0) return false;
+  // Le presenze mancanti o sconosciute NON scartano più la tappa - va
+  // aggiunta comunque, con apps null (sconosciuto, da mostrare come
+  // "presenze non disponibili"), non zero. La sequenza completa della
+  // carriera vale più del numero esatto di presenze per una tappa minore
+  // di cui Wikipedia non riporta le statistiche (tipico per club piccoli
+  // o esteri poco documentati).
   if (entry.to < entry.from) return false;
   if (entry.to - entry.from > MAX_PLAUSIBLE_SPAN_YEARS) return false;
   if (!entry.team || entry.team.trim().length < 2) return false;
@@ -177,7 +182,7 @@ async function main() {
         leagueRaw: "Storico",
         country: null,
         apps: m.apps,
-        goals: m.goals || 0,
+        goals: m.apps == null ? null : (m.goals || 0),
         source: "wikipedia"
       });
       blocksAdded++;
