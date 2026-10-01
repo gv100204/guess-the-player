@@ -5,8 +5,10 @@
 # campionati e stagioni ancora da fare (riprendendo da dove si era fermato
 # l'ultima volta, grazie a raw-players.json e sync-progress.json che questo
 # workflow salva su main a ogni run), poi pubblica il contenuto di ./output/
-# (players-data.json, i file per campionato, manifest.json) su GitHub Pages -
-# che a quel punto è l'hosting statico che l'app scarica.
+# (players-data.json, i file per campionato, manifest.json, e index.html -
+# il gioco stesso, copiato qui da indovina-calciatore.html prima di
+# pubblicare) su GitHub Pages - che a quel punto è l'hosting statico che
+# l'app scarica E la pagina del gioco stesso.
 #
 # Con un roster grande, la prima sincronizzazione completa può richiedere
 # diversi run (giorni): è normale, e il progresso non si perde tra un run e
@@ -22,6 +24,7 @@
 # 3. Dopo il primo run, i file saranno su:
 #    https://<tuo-utente>.github.io/<nome-repo>/manifest.json
 #    https://<tuo-utente>.github.io/<nome-repo>/seriea.json  ... ecc.
+#    https://<tuo-utente>.github.io/<nome-repo>/  (il gioco stesso)
 
 name: Sync players data
 
@@ -110,6 +113,9 @@ jobs:
               sleep 5
             done
           fi
+
+      - name: Copia il gioco dentro output/ come index.html, così resta pubblicato ad ogni giro
+        run: cp indovina-calciatore.html output/index.html
 
       - name: Pubblica ./output su GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
