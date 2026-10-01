@@ -606,18 +606,8 @@
   // ==========================================================================
 
   var MANIFEST_URL = "https://gv100204.github.io/guess-the-player/manifest.json";
-  var REAL_CACHE_KEY = "indovina_calciatore_real_data_v1";
   var realShardsByLeague = {}; // leagueId -> array di giocatori (forma identica a DEMO_PLAYERS)
   var realDataStatus = { loaded: false, version: null, leaguesLoaded: 0, leaguesTotal: 0, error: null };
-
-  function loadRealCache(){
-    var cached = safeGet(REAL_CACHE_KEY);
-    if (cached && cached.shards) realShardsByLeague = cached.shards;
-    return cached;
-  }
-  function saveRealCache(version){
-    safeSet(REAL_CACHE_KEY, { version: version, shards: realShardsByLeague });
-  }
 
   async function fetchJson(url){
     var res = await fetch(url, { cache: "no-cache" });
@@ -626,42 +616,31 @@
   }
 
   async function loadRealData(){
-    var cached = loadRealCache();
+    // Niente più cache in localStorage: scarica sempre tutto di fresco a
+    // ogni apertura della pagina. Il file non è pesante, e la certezza di
+    // avere sempre i dati veri (senza mai chiedersi se è rimasta una
+    // versione vecchia in cache dal browser) vale più della velocità
+    // risparmiata - specialmente mentre i dati cambiano spesso.
     try {
       var manifest = await fetchJson(MANIFEST_URL);
       var leagueIds = Object.keys(manifest.leagues || {});
       realDataStatus.leaguesTotal = leagueIds.length;
 
-      var needsSave = false;
       for (var i = 0; i < leagueIds.length; i++){
         var id = leagueIds[i];
         var info = manifest.leagues[id];
-        var haveFresh = cached && cached.version === manifest.version && realShardsByLeague[id];
-        if (haveFresh){
-          realDataStatus.leaguesLoaded++;
-          continue;
-        }
         try {
           var shard = await fetchJson(MANIFEST_URL.replace("manifest.json", info.file));
           realShardsByLeague[id] = shard.players || [];
           realDataStatus.leaguesLoaded++;
-          needsSave = true;
         } catch (shardErr) {
           console.warn("Shard " + id + " non scaricato: " + shardErr.message);
         }
       }
       realDataStatus.loaded = realDataStatus.leaguesLoaded > 0;
       realDataStatus.version = manifest.version;
-      if (needsSave) saveRealCache(manifest.version);
     } catch (err) {
       realDataStatus.error = err.message;
-      // Nessun manifest raggiungibile: se avevamo comunque una cache da un
-      // download riuscito in passato, la usiamo lo stesso (meglio dati un
-      // po' vecchi che nessun dato reale).
-      if (cached && cached.shards) {
-        realDataStatus.loaded = Object.keys(cached.shards).length > 0;
-        realDataStatus.version = cached.version;
-      }
     }
     updateDataSourceLabel();
   }
@@ -1568,7 +1547,6 @@
   });
 
   applyStaticLabels();
-  loadRealCache();
   updateDataSourceLabel();
   loadRealData();
 })();
