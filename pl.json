@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-01T21:00:45.542Z",
+  "version": "2026-10-01T21:11:20.269Z",
   "players": [
     {
       "id": "stefan-savic-39",
@@ -6819,7 +6819,7 @@
           "goals": 13
         },
         {
-          "years": "2015",
+          "years": "2015–2015",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
@@ -8632,6 +8632,15 @@
           "goals": 8
         },
         {
+          "years": "2014–2014",
+          "club": "AS Roma",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 27,
+          "goals": 2
+        },
+        {
           "years": "2014–2015",
           "club": "Roma",
           "league": null,
@@ -8641,13 +8650,13 @@
           "goals": 3
         },
         {
-          "years": "2014–2015",
+          "years": "2015–2015",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
           "country": null,
-          "apps": 39,
-          "goals": 3
+          "apps": 12,
+          "goals": 1
         },
         {
           "years": "2015–2016",
@@ -20753,7 +20762,7 @@
           "goals": 26
         },
         {
-          "years": "2011",
+          "years": "2011–2011",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
@@ -36101,6 +36110,15 @@
           "goals": 21
         },
         {
+          "years": "2021–2021",
+          "club": "AS Roma",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 37,
+          "goals": 17
+        },
+        {
           "years": "2021–2022",
           "club": "Roma",
           "league": null,
@@ -36110,13 +36128,13 @@
           "goals": 26
         },
         {
-          "years": "2021–2024",
+          "years": "2022–2024",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
           "country": null,
-          "apps": 111,
-          "goals": 29
+          "apps": 74,
+          "goals": 12
         },
         {
           "years": "2024–2025",

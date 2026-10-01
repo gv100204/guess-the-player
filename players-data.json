@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-01T21:00:45.542Z",
+  "version": "2026-10-01T21:11:20.269Z",
   "players": [
     {
       "id": "stefan-savic-39",
@@ -5634,15 +5634,6 @@
           "goals": 0
         },
         {
-          "years": "2011",
-          "club": "Crotone",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 35,
-          "goals": 11
-        },
-        {
           "years": "2011–2012",
           "club": "Roma",
           "league": null,
@@ -5650,6 +5641,15 @@
           "country": null,
           "apps": 227,
           "goals": 25
+        },
+        {
+          "years": "2011–2012",
+          "club": "Crotone",
+          "league": null,
+          "leagueRaw": "Serie B",
+          "country": null,
+          "apps": 35,
+          "goals": 11
         },
         {
           "years": "2012–2019",
@@ -10845,6 +10845,15 @@
       "isGK": false,
       "career": [
         {
+          "years": "2012–2012",
+          "club": "AS Roma",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 2,
+          "goals": 1
+        },
+        {
           "years": "2012–2013",
           "club": "Roma",
           "league": null,
@@ -10854,13 +10863,13 @@
           "goals": 1
         },
         {
-          "years": "2012–2014",
+          "years": "2013–2014",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
           "country": null,
-          "apps": 13,
-          "goals": 1
+          "apps": 11,
+          "goals": 0
         },
         {
           "years": "2014–2015",
@@ -29595,7 +29604,7 @@
           "goals": 13
         },
         {
-          "years": "2015",
+          "years": "2015–2015",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
@@ -47615,6 +47624,15 @@
           "goals": 8
         },
         {
+          "years": "2014–2014",
+          "club": "AS Roma",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 27,
+          "goals": 2
+        },
+        {
           "years": "2014–2015",
           "club": "Roma",
           "league": null,
@@ -47624,13 +47642,13 @@
           "goals": 3
         },
         {
-          "years": "2014–2015",
+          "years": "2015–2015",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
           "country": null,
-          "apps": 39,
-          "goals": 3
+          "apps": 12,
+          "goals": 1
         },
         {
           "years": "2015–2016",
@@ -51478,7 +51496,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2014",
+          "years": "2014–2014",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
@@ -80509,7 +80527,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2011",
+          "years": "2011–2011",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
@@ -118814,15 +118832,6 @@
           "goals": 0
         },
         {
-          "years": "2012",
-          "club": "Bari",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 17,
-          "goals": 3
-        },
-        {
           "years": "2012–2013",
           "club": "Roma",
           "league": null,
@@ -118830,6 +118839,15 @@
           "country": null,
           "apps": 3,
           "goals": 0
+        },
+        {
+          "years": "2012–2013",
+          "club": "Bari",
+          "league": null,
+          "leagueRaw": "Serie B",
+          "country": null,
+          "apps": 17,
+          "goals": 3
         },
         {
           "years": "2013",
@@ -122555,7 +122573,7 @@
           "goals": 26
         },
         {
-          "years": "2011",
+          "years": "2011–2011",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
@@ -132480,7 +132498,7 @@
           "goals": 1
         },
         {
-          "years": "2013",
+          "years": "2013–2013",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
@@ -133998,15 +134016,6 @@
           "goals": 0
         },
         {
-          "years": "2014",
-          "club": "Sudtirol",
-          "league": null,
-          "leagueRaw": "Serie C",
-          "country": null,
-          "apps": 24,
-          "goals": 1
-        },
-        {
           "years": "2014–2015",
           "club": "Roma",
           "league": null,
@@ -134014,6 +134023,15 @@
           "country": null,
           "apps": 1,
           "goals": 0
+        },
+        {
+          "years": "2014–2015",
+          "club": "Sudtirol",
+          "league": null,
+          "leagueRaw": "Serie C",
+          "country": null,
+          "apps": 24,
+          "goals": 1
         },
         {
           "years": "2015–2016",
@@ -137854,6 +137872,15 @@
           "goals": 11
         },
         {
+          "years": "2017–2017",
+          "club": "AS Roma",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 22,
+          "goals": 2
+        },
+        {
           "years": "2017–2018",
           "club": "Roma",
           "league": null,
@@ -137863,13 +137890,13 @@
           "goals": 5
         },
         {
-          "years": "2017–2019",
+          "years": "2018–2019",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
           "country": null,
-          "apps": 46,
-          "goals": 5
+          "apps": 24,
+          "goals": 3
         },
         {
           "years": "2019–2020",
@@ -173383,6 +173410,15 @@
           "goals": 47
         },
         {
+          "years": "2019–2019",
+          "club": "AS Roma",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 32,
+          "goals": 45
+        },
+        {
           "years": "2019–2020",
           "club": "Roma",
           "league": null,
@@ -173392,13 +173428,13 @@
           "goals": 0
         },
         {
-          "years": "2019–2021",
+          "years": "2020–2021",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
           "country": null,
-          "apps": 53,
-          "goals": 74
+          "apps": 21,
+          "goals": 29
         },
         {
           "years": "2021–2024",
@@ -192388,6 +192424,15 @@
           "goals": 21
         },
         {
+          "years": "2021–2021",
+          "club": "AS Roma",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 37,
+          "goals": 17
+        },
+        {
           "years": "2021–2022",
           "club": "Roma",
           "league": null,
@@ -192397,13 +192442,13 @@
           "goals": 26
         },
         {
-          "years": "2021–2024",
+          "years": "2022–2024",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
           "country": null,
-          "apps": 111,
-          "goals": 29
+          "apps": 74,
+          "goals": 12
         },
         {
           "years": "2024–2025",
@@ -204149,15 +204194,6 @@
           "goals": 1
         },
         {
-          "years": "2023–2023",
-          "club": "Olympiakos Piraeus",
-          "league": null,
-          "leagueRaw": "Super League 1",
-          "country": "Greece",
-          "apps": 5,
-          "goals": 0
-        },
-        {
           "years": "2023–2024",
           "club": "Roma",
           "league": null,
@@ -204165,6 +204201,15 @@
           "country": null,
           "apps": 15,
           "goals": 1
+        },
+        {
+          "years": "2023–2024",
+          "club": "Olympiakos Piraeus",
+          "league": null,
+          "leagueRaw": "Super League 1",
+          "country": "Greece",
+          "apps": 5,
+          "goals": 0
         },
         {
           "years": "2024",

@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-01T21:00:45.542Z",
+  "version": "2026-10-01T21:11:20.269Z",
   "players": [
     {
       "id": "arturo-erasmo-vidal-pardo-151",
@@ -9326,7 +9326,7 @@
           "goals": 26
         },
         {
-          "years": "2011",
+          "years": "2011–2011",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
@@ -10314,7 +10314,7 @@
           "goals": 1
         },
         {
-          "years": "2013",
+          "years": "2013–2013",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
@@ -10587,6 +10587,15 @@
           "goals": 11
         },
         {
+          "years": "2017–2017",
+          "club": "AS Roma",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 22,
+          "goals": 2
+        },
+        {
           "years": "2017–2018",
           "club": "Roma",
           "league": null,
@@ -10596,13 +10605,13 @@
           "goals": 5
         },
         {
-          "years": "2017–2019",
+          "years": "2018–2019",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
           "country": null,
-          "apps": 46,
-          "goals": 5
+          "apps": 24,
+          "goals": 3
         },
         {
           "years": "2019–2020",

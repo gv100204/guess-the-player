@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-01T21:00:45.542Z",
+  "version": "2026-10-01T21:11:20.269Z",
   "players": [
     {
       "id": "keita-balde-diao-213",
@@ -1472,15 +1472,6 @@
           "goals": 0
         },
         {
-          "years": "2011",
-          "club": "Crotone",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 35,
-          "goals": 11
-        },
-        {
           "years": "2011–2012",
           "club": "Roma",
           "league": null,
@@ -1488,6 +1479,15 @@
           "country": null,
           "apps": 227,
           "goals": 25
+        },
+        {
+          "years": "2011–2012",
+          "club": "Crotone",
+          "league": null,
+          "leagueRaw": "Serie B",
+          "country": null,
+          "apps": 35,
+          "goals": 11
         },
         {
           "years": "2012–2019",
@@ -13428,15 +13428,6 @@
           "goals": 0
         },
         {
-          "years": "2012",
-          "club": "Bari",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 17,
-          "goals": 3
-        },
-        {
           "years": "2012–2013",
           "club": "Roma",
           "league": null,
@@ -13444,6 +13435,15 @@
           "country": null,
           "apps": 3,
           "goals": 0
+        },
+        {
+          "years": "2012–2013",
+          "club": "Bari",
+          "league": null,
+          "leagueRaw": "Serie B",
+          "country": null,
+          "apps": 17,
+          "goals": 3
         },
         {
           "years": "2013",
@@ -25501,6 +25501,15 @@
           "goals": 47
         },
         {
+          "years": "2019–2019",
+          "club": "AS Roma",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 32,
+          "goals": 45
+        },
+        {
           "years": "2019–2020",
           "club": "Roma",
           "league": null,
@@ -25510,13 +25519,13 @@
           "goals": 0
         },
         {
-          "years": "2019–2021",
+          "years": "2020–2021",
           "club": "AS Roma",
           "league": "seriea",
           "leagueRaw": null,
           "country": null,
-          "apps": 53,
-          "goals": 74
+          "apps": 21,
+          "goals": 29
         },
         {
           "years": "2021–2024",
