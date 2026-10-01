@@ -174,6 +174,25 @@ async function main() {
     assert.notEqual(career[0].years, "2015–2018", "non deve fondere le due tappe al Bologna in un unico intervallo che nasconde il prestito");
   });
 
+  await test("un salto di anni allo STESSO club, senza nessun ALTRO club nel mezzo, SI fonde in un'unica tappa - rappresenta stagioni senza presenze (es. un infortunio lungo), non va spezzato come se avesse lasciato il club (caso reale: Koray Günter, Galatasaray 2013-2015 poi di nuovo 2017, zero presenze nel 2016 per la rottura del crociato - verificato che Galatasaray non ha mai avuto un'interruzione vera)", () => {
+    const players = newPlayersMap();
+    const galatasaray = (season, apps, goals) => ({
+      player: { id: 22, name: "Test Player Infortunato" },
+      statistics: [{ team: { name: "Galatasaray" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: apps, position: "Defender" }, goals: { total: goals } }]
+    });
+    mergePlayerEntry(players, galatasaray(2013, 7, 0), 2013);
+    mergePlayerEntry(players, galatasaray(2014, 19, 0), 2014);
+    mergePlayerEntry(players, galatasaray(2015, 16, 0), 2015);
+    // 2016 mancante del tutto: nessuna riga, nessun altro club - un vero
+    // vuoto nei dati, non un trasferimento altrove
+    mergePlayerEntry(players, galatasaray(2017, 8, 0), 2017);
+
+    const career = finalizeCareer(players.get(22));
+    assert.equal(career.length, 1, "deve risultare UNA sola tappa, non due separate dal buco");
+    assert.equal(career[0].years, "2013–2018");
+    assert.equal(career[0].apps, 50, "le presenze devono sommarsi tutte insieme (7+19+16+8)");
+  });
+
   await test("stesso club ma competizione tracciata diversa (es. retrocessione in Serie B, non tracciata, poi promozione) SI fonde in un'unica tappa - a differenza del prestito, qui il club 'di mezzo' è sempre lo stesso, quindi non c'è nulla da nascondere", () => {
     const players = newPlayersMap();
     const bolognaSerieA = (apps, goals) => ({

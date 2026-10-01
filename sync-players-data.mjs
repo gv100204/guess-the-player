@@ -475,6 +475,18 @@ function finalizeCareer(rec) {
   const stints = [];
   const ambiguousSeenInSeason = new Map(); // quante tappe ambigue dello stesso anno abbiamo già aperto
 
+  // Chi occupa ogni anno (qualunque club, blocchi storici compresi) - serve
+  // per sapere se un salto di anni allo stesso club è un vero vuoto (nessun
+  // altro club nel mezzo) o se in realtà un prestito ci stava in mezzo.
+  const clubsBySeason = new Map();
+  records.forEach((r) => {
+    const from = r.season, to = r.blockToYear ?? r.season;
+    for (let y = from; y <= to; y++) {
+      if (!clubsBySeason.has(y)) clubsBySeason.set(y, new Set());
+      clubsBySeason.get(y).add(normClub(r.club));
+    }
+  });
+
   records.forEach((r) => {
     if (r.blockToYear != null) {
       // Blocco storico già aggregato (es. da Wikipedia via
@@ -500,7 +512,23 @@ function finalizeCareer(rec) {
     // (Atalanta, non Bologna) e quindi rompe comunque la continuità. Un
     // blocco storico (isBlock) non è mai un punto di partenza valido per
     // continuare: la tappa successiva deve sempre aprirne una nuova.
-    const isContinuation = last && !last.isBlock && normClub(last.club) === normClub(r.club) && r.season === last.maxYear + 1;
+    // Un salto di anni allo STESSO club conta comunque come continuazione,
+    // se nessun ALTRO club occupa gli anni saltati - rappresenta stagioni
+    // senza presenze (es. un infortunio lungo: Koray Günter, Galatasaray,
+    // zero presenze nel 2016-17 per la rottura del crociato, ma ancora
+    // tesserato lì) in modo onesto, invece di spezzare la tappa in due
+    // come se avesse lasciato il club e poi fosse tornato. Un prestito
+    // vero resta comunque separato, perché il club "di mezzo" (es.
+    // Atalanta) blocca comunque la continuità.
+    const noOtherClubInGap = (() => {
+      if (!last || r.season <= last.maxYear + 1) return true;
+      for (let y = last.maxYear + 1; y < r.season; y++) {
+        const clubs = clubsBySeason.get(y);
+        if (clubs && clubs.size > 0) return false;
+      }
+      return true;
+    })();
+    const isContinuation = last && !last.isBlock && normClub(last.club) === normClub(r.club) && r.season > last.maxYear && noOtherClubInGap;
     if (isContinuation) {
       last.maxYear = r.season;
       last.apps += r.apps;
