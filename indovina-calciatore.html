@@ -329,6 +329,7 @@
       reportPlaceholder: "Cosa c'è che non va?", reportSend: "Invia", reportCancel: "Annulla",
       reportSending: "Invio in corso...", reportSent: "Segnalazione inviata, grazie!",
       reportError: "Invio non riuscito, riprova più tardi.",
+      reportFallback: "Invio automatico non riuscito - ho aperto la tua app di posta con tutto già scritto, premi solo invia lì.",
       filtersSummary: function(n, thr){ return n + (n === 1 ? " campionato" : " campionati") + " · presenze minime " + thr; },
       whenMatchEnds: "Quando finisce la partita", fixedRounds: "Round fissi", firstToScore: "Primo al punteggio",
       targetScore: "Punteggio da raggiungere", pointsWord: "punti",
@@ -398,6 +399,7 @@
       reportPlaceholder: "What's wrong?", reportSend: "Send", reportCancel: "Cancel",
       reportSending: "Sending...", reportSent: "Report sent, thank you!",
       reportError: "Couldn't send, try again later.",
+      reportFallback: "Automatic send failed - opened your mail app with everything filled in, just hit send there.",
       filtersSummary: function(n, thr){ return n + (n === 1 ? " league" : " leagues") + " · min. appearances " + thr; },
       whenMatchEnds: "When the match ends", fixedRounds: "Fixed rounds", firstToScore: "First to target score",
       targetScore: "Target score", pointsWord: "points",
@@ -985,6 +987,20 @@
     var playerName = state.current ? state.current.name : "(nessun giocatore attivo)";
     var playerDisplay = state.current ? displayNameOf(state.current) : "(nessun giocatore attivo)";
     var playerId = state.current && state.current.id ? state.current.id : "(sconosciuto)";
+
+    function openMailtoFallback(){
+      var subject = encodeURIComponent("Segnalazione Indovina il Calciatore: " + playerDisplay);
+      var body = encodeURIComponent(
+        "Giocatore (nome legale): " + playerName + "\n" +
+        "Giocatore (nome pubblico): " + playerDisplay + "\n" +
+        "ID: " + playerId + "\n\n" +
+        "Messaggio:\n" + (message || "(nessun testo scritto)")
+      );
+      window.location.href = "mailto:" + REPORT_EMAIL + "?subject=" + subject + "&body=" + body;
+      el.reportStatus.textContent = t("reportFallback");
+      el.reportSendBtn.disabled = false;
+    }
+
     el.reportStatus.style.display = "block";
     el.reportStatus.textContent = t("reportSending");
     el.reportSendBtn.disabled = true;
@@ -998,13 +1014,21 @@
         giocatore_id: playerId,
         messaggio: message || "(nessun testo scritto)"
       })
-    }).then(function(res){ return res.json(); }).then(function(){
+    }).then(function(res){
+      // Anche con risposta ricevuta, una risposta non positiva (es. email
+      // non ancora confermata su FormSubmit) va trattata come un
+      // fallimento - meglio il ripiego sicuro che un "inviato" falso.
+      if (!res.ok) throw new Error("risposta non positiva: " + res.status);
+      return res.json();
+    }).then(function(){
       el.reportStatus.textContent = t("reportSent");
       el.reportSendBtn.disabled = false;
       el.reportText.value = "";
     }).catch(function(){
-      el.reportStatus.textContent = t("reportError");
-      el.reportSendBtn.disabled = false;
+      // L'invio automatico non è riuscito (rete, blocco privacy del
+      // browser, email non confermata...) - invece di perdere la
+      // segnalazione, apriamo l'app di posta con tutto già scritto.
+      openMailtoFallback();
     });
   });
 
