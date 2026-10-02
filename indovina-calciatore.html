@@ -122,21 +122,19 @@
   <div class="panel" id="settingsPanel" style="display:none;">
     <h2 id="settingsTitle">Impostazioni</h2>
     <div class="field-label" id="langLabel">Lingua</div>
-    <div class="segmented" id="langSegment">
-      <button data-lang="it" class="active">Italiano</button>
-      <button data-lang="en">English</button>
-    </div>
+    <select id="langSelect" style="width:100%; padding:10px; border-radius:10px; font-family:inherit; font-size:inherit; background:inherit; color:inherit;">
+      <option value="it">Italiano</option>
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+      <option value="es">Español</option>
+      <option value="de">Deutsch</option>
+      <option value="pt">Português</option>
+    </select>
     <div class="field-label" id="includeIncompleteLabel">Carriere incomplete</div>
     <p class="hint" id="includeIncompleteHint"></p>
     <div class="segmented" id="includeIncompleteSegment">
       <button data-include="yes" class="active">Includi</button>
       <button data-include="no">Escludi</button>
-    </div>
-    <div class="field-label" id="showTrophyYearsLabel">Anni nel palmares</div>
-    <p class="hint" id="showTrophyYearsHint"></p>
-    <div class="segmented" id="showTrophyYearsSegment">
-      <button data-show="yes" class="active">Mostra</button>
-      <button data-show="no">Nascondi</button>
     </div>
     <button class="btn secondary" id="closeSettingsBtn">Chiudi</button>
   </div>
@@ -179,6 +177,15 @@
     <div class="segmented" id="modeSegment">
       <button data-mode="step" class="active"></button>
       <button data-mode="all"></button>
+    </div>
+
+    <div id="showTrophyYearsWrap" style="display:none;">
+      <div class="field-label" id="showTrophyYearsLabel">Anni nel palmares</div>
+      <p class="hint" id="showTrophyYearsHint"></p>
+      <div class="segmented" id="showTrophyYearsSegment">
+        <button data-show="yes" class="active">Mostra</button>
+        <button data-show="no">Nascondi</button>
+      </div>
     </div>
 
     <button class="btn secondary" id="openFiltersBtn" style="margin-top:14px; text-align:left; display:flex; flex-direction:column; align-items:flex-start; gap:2px; height:auto; padding:12px 14px;">
@@ -435,6 +442,286 @@
       champion: function(n){ return "Champion of " + n; },
       championMulti: function(c, n){ return c + "-time champion of " + n; },
       titleWithYear: function(n, y){ return "1 title: " + n + " (" + y + ")"; }
+    },
+    fr: {
+      title: "DEVINE LE FOOTBALLEUR",
+      subCareer: "Lis la carrière, club après club. Le poste ne se dit pas : on le devine.",
+      subPalmares: "Lis le palmarès, trophée après trophée. Le poste ne se dit pas : on le devine.",
+      points: "Points", streak: "Série", best: "Record",
+      settingsTitle: "Réglages", language: "Langue", close: "Fermer",
+      includeIncompleteLabel: "Carrières incomplètes",
+      includeIncompleteHint: "Certains joueurs n'ont que les étapes découvertes jusqu'ici : la récupération de la carrière complète est encore en cours. Utile seulement pour tester les données, pas pour jouer vraiment.",
+      includeYes: "Inclure", includeNo: "Exclure",
+      showTrophyYearsLabel: "Années dans le palmarès",
+      showTrophyYearsHint: "Affiche l'année ou l'édition de chaque trophée gagné. Désactive pour un défi plus difficile, sans cet indice.",
+      showYes: "Afficher", showNo: "Masquer",
+      backToMenu: "Retour au menu", confirmExit: "Retourner au menu ? La partie en cours sera perdue.",
+      modeTitle: "Mode", career: "Carrière", palmares: "Palmarès",
+      players: "Joueurs", solo: "Solo", turns: "À tour de rôle", party: "Tous ensemble",
+      multiHintTurns: "On se passe le téléphone : chaque joueur fait son tour et cumule des points.",
+      multiHintParty: "Tout le monde regarde le même écran : quand quelqu'un devine à voix haute, appuie sur \"Deviné !\" et choisis qui.",
+      whoPlays: "Qui joue", addPlayer: "+ Ajouter un joueur",
+      roundsPerPlayer: "Manches par joueur", each: "chacun",
+      totalRounds: "Nombre total de manches", roundsWord: "manches",
+      filterTitle: "Dans quel championnat doit-il avoir joué ?",
+      filterHint: "Choisis un ou plusieurs championnats : le joueur tiré au sort doit y avoir joué, au-dessus du seuil de matchs choisi ci-dessous. Le reste de sa carrière ne compte pas.",
+      selectAll: "Tout sélectionner", deselectAll: "Tout désélectionner",
+      mustHavePlayed: "Doit avoir joué dans...", atLeastOne: "Au moins un de ceux-ci", allOfThese: "Tous ceux-ci",
+      minApps: "Matchs minimum dans le championnat", atLeast1: "Au moins 1",
+      difficulty: "Difficulté (selon le nombre de trophées)",
+      diffAny: "N'importe laquelle", diffEasy: "Facile", diffMedium: "Moyenne", diffHard: "Difficile",
+      matchFilters: "Filtres de partie", close2: "Terminé",
+      filtersSummaryNone: "Aucun championnat sélectionné",
+      reportBtn: "Signaler une erreur", reportPlayerLabel: function(n){ return "Joueur : " + n; },
+      reportPlaceholder: "Qu'est-ce qui ne va pas ?", reportSend: "Envoyer", reportCancel: "Annuler",
+      reportSending: "Envoi en cours...", reportSent: "Signalement envoyé, merci !",
+      reportError: "Échec de l'envoi, réessaie plus tard.",
+      reportFallback: "Échec de l'envoi automatique - j'ai ouvert ton app mail avec tout déjà rempli, il suffit d'appuyer sur envoyer là-bas.",
+      filtersSummary: function(n, thr){ return n + (n === 1 ? " championnat" : " championnats") + " · matchs minimum " + thr; },
+      whenMatchEnds: "Quand la partie se termine", fixedRounds: "Manches fixes", firstToScore: "Premier au score",
+      targetScore: "Score à atteindre", pointsWord: "points",
+      targetLabel: function(n){ return "Objectif : " + n + " points"; },
+      revealCareer: "Comment révéler la carrière", revealPalmares: "Comment révéler le palmarès",
+      stepByStep: "Étape par étape", allAtOnce: "Tout d'un coup",
+      selectLeaguePrompt: "Sélectionne au moins un championnat", startGame: "Commencer la partie",
+      dataLoadingBtn: "Téléchargement des données...",
+      passThePhone: "Passe le téléphone à", ready: "Prêt, à moi",
+      round: "Manche", of: "sur",
+      finalLeaderboard: "Classement final", newGame: "Nouvelle partie",
+      careerTag: "Carrière du joueur", palmaresTag: "Palmarès du joueur",
+      stageOne: "étape", stageMany: "étapes", clueOne: "indice", clueMany: "indices", outOf: "sur",
+      guessPlaceholder: "Écris le nom du footballeur...",
+      guess: "Deviner", nextStage: "Étape suivante", nextClue: "Indice suivant",
+      hintBtn: "Indice : nationalité (−20)", hintUsed: "Indice utilisé",
+      skipReveal: "Passer / Révéler", nextPlayer: "Joueur suivant", nextRound: "Manche suivante",
+      whoAnswers: "Qui veut répondre ?", confirmAnswer: "Confirmer la réponse", nobodyGot: "Personne ne devine",
+      correctFeedback: function(name, pts){ return "Exact ! C'était " + name + ". +" + pts + " points."; },
+      wrongFeedback: "Ce n'est pas lui. Essaie un autre nom ou demande un autre indice.",
+      revealFeedback: function(name, nat){ return "C'était " + name + " (" + nat + ")."; },
+      partyCorrect: function(player, name){ return "Point pour " + player + " ! C'était " + name + "."; },
+      partyWrong: function(player){ return player + " s'est trompé. Quelqu'un d'autre veut essayer ?"; },
+      partyReveal: function(name){ return "Personne n'a deviné. C'était " + name + "."; },
+      nationalityLine: function(nat){ return "Nationalité : " + nat; },
+      emptyPool: "Aucun footballeur ne correspond aux filtres choisis. Élargis les filtres.",
+      restart: " · on recommence le tour",
+      appsGoals: function(a, g){ return a + " matchs, " + g + " buts"; },
+      appsConceded: function(a, g){ return a + " matchs, " + g + " buts encaissés"; },
+      appsOnly: function(a){ return a + " matchs"; },
+      appsUnknown: "Matchs non disponibles",
+      footer: "Prototype · matchs, buts et palmarès sont des données d'exemple, à remplacer par des statistiques réelles vérifiées",
+      champion: function(n){ return "Champion de " + n; },
+      championMulti: function(c, n){ return c + " fois champion de " + n; },
+      titleWithYear: function(n, y){ return "1 titre : " + n + " (" + y + ")"; }
+    },
+    es: {
+      title: "ADIVINA EL FUTBOLISTA",
+      subCareer: "Lee la carrera, equipo por equipo. La posición no se dice: se intuye.",
+      subPalmares: "Lee el palmarés, trofeo tras trofeo. La posición no se dice: se intuye.",
+      points: "Puntos", streak: "Racha", best: "Récord",
+      settingsTitle: "Ajustes", language: "Idioma", close: "Cerrar",
+      includeIncompleteLabel: "Carreras incompletas",
+      includeIncompleteHint: "Algunos jugadores solo tienen las etapas descubiertas hasta ahora: la recuperación de la carrera completa sigue en curso. Útil solo para probar los datos, no para jugar de verdad.",
+      includeYes: "Incluir", includeNo: "Excluir",
+      showTrophyYearsLabel: "Años en el palmarés",
+      showTrophyYearsHint: "Muestra el año o la edición de cada trofeo ganado. Desactívalo para un reto más difícil, sin esa pista.",
+      showYes: "Mostrar", showNo: "Ocultar",
+      backToMenu: "Volver al menú", confirmExit: "¿Quieres volver al menú? La partida en curso se perderá.",
+      modeTitle: "Modo", career: "Carrera", palmares: "Palmarés",
+      players: "Jugadores", solo: "Individual", turns: "Por turnos", party: "Todos juntos",
+      multiHintTurns: "Se pasa el teléfono: cada jugador hace su turno y acumula puntos.",
+      multiHintParty: "Todos miran la misma pantalla: cuando alguien acierta en voz alta, pulsa \"¡Acertado!\" y elige quién.",
+      whoPlays: "Quién juega", addPlayer: "+ Añadir jugador",
+      roundsPerPlayer: "Rondas por jugador", each: "cada uno",
+      totalRounds: "Número total de rondas", roundsWord: "rondas",
+      filterTitle: "¿En qué liga debe haber jugado?",
+      filterHint: "Elige una o más ligas: el jugador sorteado debe haber jugado ahí, por encima del umbral de partidos elegido abajo. El resto de su carrera no cuenta.",
+      selectAll: "Seleccionar todas", deselectAll: "Deseleccionar todas",
+      mustHavePlayed: "Debe haber jugado en...", atLeastOne: "Al menos una de estas", allOfThese: "Todas estas",
+      minApps: "Partidos mínimos en la liga", atLeast1: "Al menos 1",
+      difficulty: "Dificultad (según el número de trofeos)",
+      diffAny: "Cualquiera", diffEasy: "Fácil", diffMedium: "Media", diffHard: "Difícil",
+      matchFilters: "Filtros de la partida", close2: "Hecho",
+      filtersSummaryNone: "Ninguna liga seleccionada",
+      reportBtn: "Reportar un error", reportPlayerLabel: function(n){ return "Jugador: " + n; },
+      reportPlaceholder: "¿Qué está mal?", reportSend: "Enviar", reportCancel: "Cancelar",
+      reportSending: "Enviando...", reportSent: "¡Reporte enviado, gracias!",
+      reportError: "No se pudo enviar, inténtalo más tarde.",
+      reportFallback: "El envío automático falló - abrí tu app de correo con todo ya escrito, solo pulsa enviar ahí.",
+      filtersSummary: function(n, thr){ return n + (n === 1 ? " liga" : " ligas") + " · partidos mínimos " + thr; },
+      whenMatchEnds: "Cuándo termina la partida", fixedRounds: "Rondas fijas", firstToScore: "Primero en llegar",
+      targetScore: "Puntuación a alcanzar", pointsWord: "puntos",
+      targetLabel: function(n){ return "Objetivo: " + n + " puntos"; },
+      revealCareer: "Cómo revelar la carrera", revealPalmares: "Cómo revelar el palmarés",
+      stepByStep: "Paso a paso", allAtOnce: "Toda de golpe",
+      selectLeaguePrompt: "Selecciona al menos una liga", startGame: "Empezar la partida",
+      dataLoadingBtn: "Descargando datos...",
+      passThePhone: "Pasa el teléfono a", ready: "Listo, me toca",
+      round: "Ronda", of: "de",
+      finalLeaderboard: "Clasificación final", newGame: "Nueva partida",
+      careerTag: "Carrera del jugador", palmaresTag: "Palmarés del jugador",
+      stageOne: "etapa", stageMany: "etapas", clueOne: "pista", clueMany: "pistas", outOf: "de",
+      guessPlaceholder: "Escribe el nombre del futbolista...",
+      guess: "Adivinar", nextStage: "Siguiente etapa", nextClue: "Siguiente pista",
+      hintBtn: "Pista: nacionalidad (−20)", hintUsed: "Pista usada",
+      skipReveal: "Saltar / Revelar", nextPlayer: "Siguiente jugador", nextRound: "Siguiente ronda",
+      whoAnswers: "¿Quién quiere responder?", confirmAnswer: "Confirmar respuesta", nobodyGot: "Nadie acierta",
+      correctFeedback: function(name, pts){ return "¡Exacto! Era " + name + ". +" + pts + " puntos."; },
+      wrongFeedback: "No es él. Prueba otro nombre o pide otra pista.",
+      revealFeedback: function(name, nat){ return "Era " + name + " (" + nat + ")."; },
+      partyCorrect: function(player, name){ return "¡Punto para " + player + "! Era " + name + "."; },
+      partyWrong: function(player){ return player + " ha fallado. ¿Alguien más quiere intentarlo?"; },
+      partyReveal: function(name){ return "Nadie ha acertado. Era " + name + "."; },
+      nationalityLine: function(nat){ return "Nacionalidad: " + nat; },
+      emptyPool: "Ningún futbolista corresponde a los filtros elegidos. Amplía los filtros.",
+      restart: " · reiniciamos la ronda",
+      appsGoals: function(a, g){ return a + " partidos, " + g + " goles"; },
+      appsConceded: function(a, g){ return a + " partidos, " + g + " goles encajados"; },
+      appsOnly: function(a){ return a + " partidos"; },
+      appsUnknown: "Partidos no disponibles",
+      footer: "Prototipo · partidos, goles y palmarés son datos de ejemplo, a sustituir por estadísticas reales verificadas",
+      champion: function(n){ return "Campeón de " + n; },
+      championMulti: function(c, n){ return c + " veces campeón de " + n; },
+      titleWithYear: function(n, y){ return "1 título: " + n + " (" + y + ")"; }
+    },
+    de: {
+      title: "ERRATE DEN FUSSBALLER",
+      subCareer: "Lies die Karriere, Verein für Verein. Die Position wird nicht gesagt: man errät sie.",
+      subPalmares: "Lies die Titelliste, Trophäe für Trophäe. Die Position wird nicht gesagt: man errät sie.",
+      points: "Punkte", streak: "Serie", best: "Rekord",
+      settingsTitle: "Einstellungen", language: "Sprache", close: "Schließen",
+      includeIncompleteLabel: "Unvollständige Karrieren",
+      includeIncompleteHint: "Manche Spieler haben nur die bisher erfassten Stationen: die vollständige Karriere wird noch nachgetragen. Nur zum Testen der Daten nützlich, nicht zum richtigen Spielen.",
+      includeYes: "Einschließen", includeNo: "Ausschließen",
+      showTrophyYearsLabel: "Jahre in der Titelliste",
+      showTrophyYearsHint: "Zeigt das Jahr oder die Austragung jedes gewonnenen Titels. Deaktivieren für eine schwierigere Herausforderung, ohne diesen Hinweis.",
+      showYes: "Anzeigen", showNo: "Ausblenden",
+      backToMenu: "Zurück zum Menü", confirmExit: "Zurück zum Menü? Das laufende Spiel geht verloren.",
+      modeTitle: "Modus", career: "Karriere", palmares: "Titelliste",
+      players: "Spieler", solo: "Einzeln", turns: "Abwechselnd", party: "Alle zusammen",
+      multiHintTurns: "Das Telefon wird weitergereicht: jeder Spieler ist an der Reihe und sammelt Punkte.",
+      multiHintParty: "Alle schauen auf denselben Bildschirm: wenn jemand laut errät, auf \"Erraten!\" drücken und auswählen wer.",
+      whoPlays: "Wer spielt", addPlayer: "+ Spieler hinzufügen",
+      roundsPerPlayer: "Runden pro Spieler", each: "je",
+      totalRounds: "Gesamtzahl der Runden", roundsWord: "Runden",
+      filterTitle: "In welcher Liga muss er gespielt haben?",
+      filterHint: "Wähle eine oder mehrere Ligen: der ausgeloste Spieler muss dort gespielt haben, über der unten gewählten Einsatzschwelle. Der Rest seiner Karriere zählt nicht.",
+      selectAll: "Alle auswählen", deselectAll: "Alle abwählen",
+      mustHavePlayed: "Muss gespielt haben in...", atLeastOne: "Mindestens eine davon", allOfThese: "Alle davon",
+      minApps: "Mindesteinsätze in der Liga", atLeast1: "Mindestens 1",
+      difficulty: "Schwierigkeit (nach Anzahl der Titel)",
+      diffAny: "Beliebig", diffEasy: "Einfach", diffMedium: "Mittel", diffHard: "Schwer",
+      matchFilters: "Spielfilter", close2: "Fertig",
+      filtersSummaryNone: "Keine Liga ausgewählt",
+      reportBtn: "Einen Fehler melden", reportPlayerLabel: function(n){ return "Spieler: " + n; },
+      reportPlaceholder: "Was stimmt nicht?", reportSend: "Senden", reportCancel: "Abbrechen",
+      reportSending: "Wird gesendet...", reportSent: "Meldung gesendet, danke!",
+      reportError: "Senden fehlgeschlagen, später erneut versuchen.",
+      reportFallback: "Automatisches Senden fehlgeschlagen - ich habe deine Mail-App mit allem schon ausgefüllt geöffnet, einfach dort auf Senden tippen.",
+      filtersSummary: function(n, thr){ return n + (n === 1 ? " Liga" : " Ligen") + " · Mindesteinsätze " + thr; },
+      whenMatchEnds: "Wann das Spiel endet", fixedRounds: "Feste Runden", firstToScore: "Erster am Ziel",
+      targetScore: "Zielpunktzahl", pointsWord: "Punkte",
+      targetLabel: function(n){ return "Ziel: " + n + " Punkte"; },
+      revealCareer: "Wie die Karriere aufgedeckt wird", revealPalmares: "Wie die Titelliste aufgedeckt wird",
+      stepByStep: "Schritt für Schritt", allAtOnce: "Alles auf einmal",
+      selectLeaguePrompt: "Wähle mindestens eine Liga", startGame: "Spiel starten",
+      dataLoadingBtn: "Daten werden heruntergeladen...",
+      passThePhone: "Gib das Telefon weiter an", ready: "Bereit, ich bin dran",
+      round: "Runde", of: "von",
+      finalLeaderboard: "Endstand", newGame: "Neues Spiel",
+      careerTag: "Karriere des Spielers", palmaresTag: "Titelliste des Spielers",
+      stageOne: "Station", stageMany: "Stationen", clueOne: "Hinweis", clueMany: "Hinweise", outOf: "von",
+      guessPlaceholder: "Schreib den Namen des Fußballers...",
+      guess: "Raten", nextStage: "Nächste Station", nextClue: "Nächster Hinweis",
+      hintBtn: "Hinweis: Nationalität (−20)", hintUsed: "Hinweis verwendet",
+      skipReveal: "Überspringen / Aufdecken", nextPlayer: "Nächster Spieler", nextRound: "Nächste Runde",
+      whoAnswers: "Wer möchte antworten?", confirmAnswer: "Antwort bestätigen", nobodyGot: "Niemand errät es",
+      correctFeedback: function(name, pts){ return "Richtig! Es war " + name + ". +" + pts + " Punkte."; },
+      wrongFeedback: "Das ist er nicht. Versuch einen anderen Namen oder bitte um einen weiteren Hinweis.",
+      revealFeedback: function(name, nat){ return "Es war " + name + " (" + nat + ")."; },
+      partyCorrect: function(player, name){ return "Punkt für " + player + "! Es war " + name + "."; },
+      partyWrong: function(player){ return player + " hat sich geirrt. Will es noch jemand versuchen?"; },
+      partyReveal: function(name){ return "Niemand hat es erraten. Es war " + name + "."; },
+      nationalityLine: function(nat){ return "Nationalität: " + nat; },
+      emptyPool: "Kein Fußballer entspricht den gewählten Filtern. Filter erweitern.",
+      restart: " · wir fangen die Runde neu an",
+      appsGoals: function(a, g){ return a + " Einsätze, " + g + " Tore"; },
+      appsConceded: function(a, g){ return a + " Einsätze, " + g + " Gegentore"; },
+      appsOnly: function(a){ return a + " Einsätze"; },
+      appsUnknown: "Einsätze nicht verfügbar",
+      footer: "Prototyp · Einsätze, Tore und Titelliste sind Beispieldaten, durch echte verifizierte Statistiken zu ersetzen",
+      champion: function(n){ return "Meister von " + n; },
+      championMulti: function(c, n){ return c + "-facher Meister von " + n; },
+      titleWithYear: function(n, y){ return "1 Titel: " + n + " (" + y + ")"; }
+    },
+    pt: {
+      title: "ADIVINHA O FUTEBOLISTA",
+      subCareer: "Lê a carreira, clube a clube. A posição não se diz: adivinha-se.",
+      subPalmares: "Lê o palmarés, troféu após troféu. A posição não se diz: adivinha-se.",
+      points: "Pontos", streak: "Sequência", best: "Recorde",
+      settingsTitle: "Definições", language: "Idioma", close: "Fechar",
+      includeIncompleteLabel: "Carreiras incompletas",
+      includeIncompleteHint: "Alguns jogadores têm apenas as etapas descobertas até agora: a recuperação da carreira completa ainda está em curso. Útil só para testar os dados, não para jogar a sério.",
+      includeYes: "Incluir", includeNo: "Excluir",
+      showTrophyYearsLabel: "Anos no palmarés",
+      showTrophyYearsHint: "Mostra o ano ou a edição de cada troféu vencido. Desativa para um desafio mais difícil, sem essa pista.",
+      showYes: "Mostrar", showNo: "Ocultar",
+      backToMenu: "Voltar ao menu", confirmExit: "Queres voltar ao menu? O jogo em curso será perdido.",
+      modeTitle: "Modo", career: "Carreira", palmares: "Palmarés",
+      players: "Jogadores", solo: "Individual", turns: "Por turnos", party: "Todos juntos",
+      multiHintTurns: "Passa-se o telemóvel: cada jogador faz a sua vez e acumula pontos.",
+      multiHintParty: "Todos olham para o mesmo ecrã: quando alguém adivinha em voz alta, carrega em \"Adivinhado!\" e escolhe quem.",
+      whoPlays: "Quem joga", addPlayer: "+ Adicionar jogador",
+      roundsPerPlayer: "Rondas por jogador", each: "cada um",
+      totalRounds: "Número total de rondas", roundsWord: "rondas",
+      filterTitle: "Em que liga é que ele deve ter jogado?",
+      filterHint: "Escolhe uma ou mais ligas: o jogador sorteado deve ter jogado lá, acima do limite de jogos escolhido abaixo. O resto da carreira dele não conta.",
+      selectAll: "Selecionar todas", deselectAll: "Desselecionar todas",
+      mustHavePlayed: "Deve ter jogado em...", atLeastOne: "Pelo menos uma destas", allOfThese: "Todas estas",
+      minApps: "Jogos mínimos na liga", atLeast1: "Pelo menos 1",
+      difficulty: "Dificuldade (consoante o número de troféus)",
+      diffAny: "Qualquer", diffEasy: "Fácil", diffMedium: "Média", diffHard: "Difícil",
+      matchFilters: "Filtros da partida", close2: "Concluído",
+      filtersSummaryNone: "Nenhuma liga selecionada",
+      reportBtn: "Reportar um erro", reportPlayerLabel: function(n){ return "Jogador: " + n; },
+      reportPlaceholder: "O que está errado?", reportSend: "Enviar", reportCancel: "Cancelar",
+      reportSending: "A enviar...", reportSent: "Relato enviado, obrigado!",
+      reportError: "Envio falhou, tenta mais tarde.",
+      reportFallback: "O envio automático falhou - abri a tua app de correio com tudo já preenchido, basta carregares em enviar lá.",
+      filtersSummary: function(n, thr){ return n + (n === 1 ? " liga" : " ligas") + " · jogos mínimos " + thr; },
+      whenMatchEnds: "Quando o jogo termina", fixedRounds: "Rondas fixas", firstToScore: "Primeiro a atingir",
+      targetScore: "Pontuação a atingir", pointsWord: "pontos",
+      targetLabel: function(n){ return "Objetivo: " + n + " pontos"; },
+      revealCareer: "Como revelar a carreira", revealPalmares: "Como revelar o palmarés",
+      stepByStep: "Passo a passo", allAtOnce: "Tudo de uma vez",
+      selectLeaguePrompt: "Seleciona pelo menos uma liga", startGame: "Começar o jogo",
+      dataLoadingBtn: "A descarregar os dados...",
+      passThePhone: "Passa o telemóvel a", ready: "Pronto, é a minha vez",
+      round: "Ronda", of: "de",
+      finalLeaderboard: "Classificação final", newGame: "Novo jogo",
+      careerTag: "Carreira do jogador", palmaresTag: "Palmarés do jogador",
+      stageOne: "etapa", stageMany: "etapas", clueOne: "pista", clueMany: "pistas", outOf: "de",
+      guessPlaceholder: "Escreve o nome do futebolista...",
+      guess: "Adivinhar", nextStage: "Etapa seguinte", nextClue: "Pista seguinte",
+      hintBtn: "Pista: nacionalidade (−20)", hintUsed: "Pista usada",
+      skipReveal: "Saltar / Revelar", nextPlayer: "Jogador seguinte", nextRound: "Ronda seguinte",
+      whoAnswers: "Quem quer responder?", confirmAnswer: "Confirmar resposta", nobodyGot: "Ninguém adivinha",
+      correctFeedback: function(name, pts){ return "Certo! Era " + name + ". +" + pts + " pontos."; },
+      wrongFeedback: "Não é ele. Tenta outro nome ou pede outra pista.",
+      revealFeedback: function(name, nat){ return "Era " + name + " (" + nat + ")."; },
+      partyCorrect: function(player, name){ return "Ponto para " + player + "! Era " + name + "."; },
+      partyWrong: function(player){ return player + " errou. Mais alguém quer tentar?"; },
+      partyReveal: function(name){ return "Ninguém adivinhou. Era " + name + "."; },
+      nationalityLine: function(nat){ return "Nacionalidade: " + nat; },
+      emptyPool: "Nenhum futebolista corresponde aos filtros escolhidos. Alarga os filtros.",
+      restart: " · recomeçamos a ronda",
+      appsGoals: function(a, g){ return a + " jogos, " + g + " golos"; },
+      appsConceded: function(a, g){ return a + " jogos, " + g + " golos sofridos"; },
+      appsOnly: function(a){ return a + " jogos"; },
+      appsUnknown: "Jogos não disponíveis",
+      footer: "Protótipo · jogos, golos e palmarés são dados de exemplo, a substituir por estatísticas reais verificadas",
+      champion: function(n){ return "Campeão de " + n; },
+      championMulti: function(c, n){ return c + " vezes campeão de " + n; },
+      titleWithYear: function(n, y){ return "1 título: " + n + " (" + y + ")"; }
     }
   };
 
@@ -721,7 +1008,7 @@
   var savedBest = safeGet("indovina_calciatore_best_v5");
   if (savedBest && typeof savedBest.best === "number") state.best = savedBest.best;
   var savedLang = safeGet("indovina_calciatore_lang");
-  if (savedLang === "it" || savedLang === "en") lang = savedLang;
+  if (savedLang && UI[savedLang]) lang = savedLang;
   var savedIncludeIncomplete = safeGet("indovina_calciatore_include_incomplete");
   if (savedIncludeIncomplete === true || savedIncludeIncomplete === false) includeIncomplete = savedIncludeIncomplete;
   var savedShowTrophyYears = safeGet("indovina_calciatore_show_trophy_years");
@@ -731,9 +1018,9 @@
 
   // ---- DOM refs ----
   var el = {};
-  ["settingsBtn","backBtn","settingsPanel","settingsTitle","langLabel","langSegment","closeSettingsBtn",
+  ["settingsBtn","backBtn","settingsPanel","settingsTitle","langLabel","langSelect","closeSettingsBtn",
    "includeIncompleteLabel","includeIncompleteHint","includeIncompleteSegment",
-   "showTrophyYearsLabel","showTrophyYearsHint","showTrophyYearsSegment",
+   "showTrophyYearsLabel","showTrophyYearsHint","showTrophyYearsSegment","showTrophyYearsWrap",
    "sbTitle","sbSub","lblPoints","lblStreak","lblBest",
    "modeTitle","contentModeSegment","playersLabel","playersModeSegment",
    "multiSetup","multiSetupHint","whoPlaysLabel","playerInputs","addPlayerBtn",
@@ -851,7 +1138,7 @@
     el.backBtn.setAttribute("aria-label", t("backToMenu"));
     el.langLabel.textContent = t("language");
     el.closeSettingsBtn.textContent = t("close");
-    el.langSegment.querySelectorAll("button").forEach(function(b){ b.classList.toggle("active", b.getAttribute("data-lang") === lang); });
+    el.langSelect.value = lang;
 
     el.includeIncompleteLabel.textContent = t("includeIncompleteLabel");
     el.includeIncompleteHint.textContent = t("includeIncompleteHint");
@@ -944,9 +1231,7 @@
     el.settingsPanel.style.display = el.settingsPanel.style.display === "none" ? "block" : "none";
   });
   el.closeSettingsBtn.addEventListener("click", function(){ el.settingsPanel.style.display = "none"; });
-  el.langSegment.querySelectorAll("button").forEach(function(btn){
-    btn.addEventListener("click", function(){ setLang(btn.getAttribute("data-lang")); });
-  });
+  el.langSelect.addEventListener("change", function(){ setLang(el.langSelect.value); });
   el.includeIncompleteSegment.querySelectorAll("button").forEach(function(btn){
     btn.addEventListener("click", function(){
       includeIncomplete = btn.getAttribute("data-include") === "yes";
@@ -1038,6 +1323,7 @@
     el.dossierTag.textContent = contentMode === "career" ? t("careerTag") : t("palmaresTag");
     el.sbSub.textContent = contentMode === "career" ? t("subCareer") : t("subPalmares");
     el.difficultyRow.style.display = contentMode === "palmares" ? "block" : "none";
+    el.showTrophyYearsWrap.style.display = contentMode === "palmares" ? "block" : "none";
   }
   el.nextStepBtnText = function(){ el.nextStepBtn.textContent = contentMode === "career" ? t("nextStage") : t("nextClue"); };
 
