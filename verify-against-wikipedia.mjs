@@ -225,6 +225,15 @@ function namesAreCloseVariant(fullName, title) {
 // della prima parola), ma qui possiamo permettercelo: il fullname è testo
 // libero scritto apposta per essere il nome legale completo, non un
 // titolo abbreviato per forza.
+// Insieme dei club (normalizzati) già presenti nei nostri dati per questo
+// giocatore - usato come conferma extra quando l'anno di nascita letto da
+// Wikipedia è scostato di un solo anno (vedi isTrustworthyMatch).
+function playerClubSet(p) {
+  const clubs = new Set();
+  (p.seasonRecords || []).forEach((r) => { if (r.club) clubs.add(normClub(r.club)); });
+  return clubs;
+}
+
 function fullNameFieldMatches(query, wikitext) {
   const fullname = extractFullNameField(wikitext);
   if (!fullname) return false;
@@ -232,7 +241,21 @@ function fullNameFieldMatches(query, wikitext) {
   return query.trim().split(/\s+/).every((w) => fullnameWords.has(normalizeWord(w)));
 }
 
-function isTrustworthyMatch(query, title, wikitext, expectedBirthYear, requireNameMatch = true, fullPlayerName = null) {
+// Combaciamento ESATTO (stesse parole, stesso numero) - più rigoroso di
+// fullNameFieldMatches, che accetta anche se il nome completo ne ha di
+// più. Serve per la tolleranza sull'anno di nascita qui sotto: lì ci
+// vuole un'evidenza più forte del solito "ogni parola del nostro nome è
+// presente da qualche parte".
+function fullNameFieldMatchesExactly(query, wikitext) {
+  const fullname = extractFullNameField(wikitext);
+  if (!fullname) return false;
+  const fullnameWords = fullname.split(/\s+/).map(normalizeWord).sort();
+  const queryWords = query.trim().split(/\s+/).map(normalizeWord).sort();
+  if (fullnameWords.length !== queryWords.length) return false;
+  return fullnameWords.every((w, i) => w === queryWords[i]);
+}
+
+function isTrustworthyMatch(query, title, wikitext, expectedBirthYear, requireNameMatch = true, fullPlayerName = null, ourClubs = null) {
   if (requireNameMatch) {
     const nameOk = titleLooksRelated(query, title) || fullNameFieldMatches(query, wikitext);
     if (!nameOk) {
@@ -251,7 +274,23 @@ function isTrustworthyMatch(query, title, wikitext, expectedBirthYear, requireNa
   }
   if (expectedBirthYear) {
     const pageBirthYear = extractBirthYear(wikitext);
-    if (pageBirthYear && pageBirthYear !== expectedBirthYear) return false;
+    if (pageBirthYear && pageBirthYear !== expectedBirthYear) {
+      // L'anno di nascita non dovrebbe mai essere diverso tra due fonti
+      // per la stessa persona - resta un caso raro. Lo accettiamo SOLO
+      // con due conferme insieme: scarto di un solo anno, nome completo
+      // combaciante parola per parola (non solo "contenuto da qualche
+      // parte"), E almeno un club in comune con la carriera che abbiamo
+      // già (non basta il nome, serve anche un indizio di carriera - casi
+      // reali trovati: Rafinha, Kévin Lucien Zohi).
+      const oneYearOff = Math.abs(pageBirthYear - expectedBirthYear) === 1;
+      const exactName = fullPlayerName && fullNameFieldMatchesExactly(fullPlayerName, wikitext);
+      let sharedClub = false;
+      if (oneYearOff && exactName && ourClubs && ourClubs.size > 0) {
+        const theirEntries = parseSeniorCareer(wikitext);
+        sharedClub = theirEntries.some((e) => ourClubs.has(normClub(e.team)));
+      }
+      if (!(oneYearOff && exactName && sharedClub)) return false;
+    }
   }
   return true;
 }
@@ -996,7 +1035,7 @@ async function main() {
       // disponibile) - bug reale: "José" da solo si agganciava sempre a
       // "Josue (footballer, born 1987)", un'altra persona con 10 tappe
       // proprie, accettata per errore solo perché il numero era alto.
-      if (wikiEntries.length > 0 && !isTrustworthyMatch(p.name, title, wikitext, p.birthYear, !p.birthYear, p.name)) {
+      if (wikiEntries.length > 0 && !isTrustworthyMatch(p.name, title, wikitext, p.birthYear, !p.birthYear, p.name, playerClubSet(p))) {
         const foundFullName = extractFullNameField(wikitext);
         const foundBirthYear = extractBirthYear(wikitext);
         console.log(`  (${p.name}: pagina trovata (${title}) non sembra la persona giusta, la scarto e riprovo...)`);
@@ -1017,7 +1056,7 @@ async function main() {
         wikitext = await fetchWikitext(title);
         await sleep(REQUEST_DELAY_MS);
         wikiEntries = parseSeniorCareer(wikitext);
-        if (wikiEntries.length > 0 && !isTrustworthyMatch(p.name, title, wikitext, p.birthYear, !p.birthYear, p.name)) {
+        if (wikiEntries.length > 0 && !isTrustworthyMatch(p.name, title, wikitext, p.birthYear, !p.birthYear, p.name, playerClubSet(p))) {
           wikiEntries = [];
         }
       }
@@ -1062,7 +1101,7 @@ async function main() {
           const candidateWikitext = await fetchWikitext(candidateTitle);
           await sleep(REQUEST_DELAY_MS);
           const candidateEntries = parseSeniorCareer(candidateWikitext);
-          const trustworthy = candidateEntries.length > 0 && isTrustworthyMatch(p.name, candidateTitle, candidateWikitext, p.birthYear, requireNameForFullText, p.name);
+          const trustworthy = candidateEntries.length > 0 && isTrustworthyMatch(p.name, candidateTitle, candidateWikitext, p.birthYear, requireNameForFullText, p.name, playerClubSet(p));
           if (trustworthy && candidateEntries.length > bestEntries.length) {
             bestEntries = candidateEntries;
             bestTitle = candidateTitle;
@@ -1082,7 +1121,7 @@ async function main() {
             const candidateWikitext = await fetchWikitext(shortTitle);
             await sleep(REQUEST_DELAY_MS);
             const candidateEntries = parseSeniorCareer(candidateWikitext);
-            const trustworthy = candidateEntries.length > 0 && isTrustworthyMatch(shortName, shortTitle, candidateWikitext, p.birthYear, true, p.name);
+            const trustworthy = candidateEntries.length > 0 && isTrustworthyMatch(shortName, shortTitle, candidateWikitext, p.birthYear, true, p.name, playerClubSet(p));
             if (trustworthy && candidateEntries.length > bestEntries.length) {
               bestEntries = candidateEntries;
               bestTitle = shortTitle;
