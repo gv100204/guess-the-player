@@ -57,7 +57,7 @@ const BUILD_VERSION = new Date().toISOString(); // es. "2026-09-19T14:32:07.123Z
 // 1995-2025 (31 stagioni) richiede circa 2 ore e mezza per un giro completo -
 // comodamente dentro sia il limite di 6 ore di GitHub Actions sia la quota
 // giornaliera. Se in futuro riaggiungi altri campionati, valuta se restringerla.
-const SEASON_RANGE = { from: 1995, to: 2025 };
+const SEASON_RANGE = { from: 1995, to: 2026 };
 
 // Quante chiamate usare al massimo IN QUESTO run, prima di fermarsi e salvare
 // il progresso. Tienilo un po' sotto la quota giornaliera reale del tuo
