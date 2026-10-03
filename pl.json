@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-03T12:07:37.753Z",
+  "version": "2026-10-03T12:13:04.127Z",
   "players": [
     {
       "id": "stefan-savic-39",
@@ -102679,6 +102679,204 @@
       ]
     },
     {
+      "id": "chuba-amechi-akpom-2380",
+      "name": "Chuba Amechi Akpom",
+      "displayName": null,
+      "nationality": "England",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2012–2013",
+          "club": "Squadra sconosciuta",
+          "league": null,
+          "leagueRaw": "UEFA U17 Championship",
+          "country": null,
+          "apps": 6,
+          "goals": 2
+        },
+        {
+          "years": "2013–2013",
+          "club": "Coventry",
+          "league": null,
+          "leagueRaw": "League One",
+          "country": "England",
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2013–2013",
+          "club": "Brentford",
+          "league": null,
+          "leagueRaw": "League One",
+          "country": "England",
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2013–2014",
+          "club": "Arsenal",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2014–2015",
+          "club": "Nottingham Forest",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2015–2016",
+          "club": "Hull City",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 36,
+          "goals": 3
+        },
+        {
+          "years": "2016–2017",
+          "club": "Brighton",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 10,
+          "goals": 0
+        },
+        {
+          "years": "2017–2018",
+          "club": "St. Truiden",
+          "league": null,
+          "leagueRaw": "Jupiler Pro League",
+          "country": "Belgium",
+          "apps": 6,
+          "goals": 1
+        },
+        {
+          "years": "2018–2020",
+          "club": "PAOK",
+          "league": null,
+          "leagueRaw": "Super League 1",
+          "country": "Greece",
+          "apps": 54,
+          "goals": 14
+        },
+        {
+          "years": "2020–2021",
+          "club": "Middlesbrough",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 38,
+          "goals": 5
+        },
+        {
+          "years": "2021–2021",
+          "club": "PAOK",
+          "league": null,
+          "leagueRaw": "Super League 1",
+          "country": "Greece",
+          "apps": 34,
+          "goals": 7
+        },
+        {
+          "years": "2021–2023",
+          "club": "Middlesbrough",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 41,
+          "goals": 28
+        },
+        {
+          "years": "2023–2024",
+          "club": "Ajax",
+          "league": null,
+          "leagueRaw": "Eredivisie",
+          "country": "Netherlands",
+          "apps": 41,
+          "goals": 14
+        },
+        {
+          "years": "2024–2025",
+          "club": "Lille",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 14,
+          "goals": 3
+        },
+        {
+          "years": "2025–2027",
+          "club": "Ipswich",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 32,
+          "goals": 3
+        }
+      ],
+      "careerComplete": true,
+      "trophies": [
+        {
+          "comp": "Super League 1",
+          "country": "Greece",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Greece",
+          "count": 1,
+          "seasons": [
+            "2018/2019"
+          ]
+        },
+        {
+          "comp": "Community Shield",
+          "country": "England",
+          "count": 3,
+          "seasons": [
+            "2017",
+            "2015",
+            "2014"
+          ]
+        },
+        {
+          "comp": "Emirates Cup",
+          "country": "World",
+          "count": 2,
+          "seasons": [
+            "2017",
+            "2015"
+          ]
+        },
+        {
+          "comp": "Premier League Asia Trophy",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2015"
+          ]
+        },
+        {
+          "comp": "FA Cup",
+          "country": "England",
+          "count": 1,
+          "seasons": [
+            "2013/2014"
+          ]
+        }
+      ]
+    },
+    {
       "id": "milos-veljkovic-2821",
       "name": "Miloš Veljković",
       "displayName": null,
@@ -171425,6 +171623,79 @@
       ]
     },
     {
+      "id": "kasey-mcateer-283290",
+      "name": "Kasey McAteer",
+      "displayName": null,
+      "nationality": "England",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2021",
+          "club": "Forest Green",
+          "league": null,
+          "leagueRaw": "League Two",
+          "country": "England",
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2022",
+          "club": "Leicester",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2022–2023",
+          "club": "AFC Wimbledon",
+          "league": null,
+          "leagueRaw": "League Two",
+          "country": "England",
+          "apps": 18,
+          "goals": 1
+        },
+        {
+          "years": "2023–2025",
+          "club": "Leicester",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 43,
+          "goals": 7
+        },
+        {
+          "years": "2025–2027",
+          "club": "Ipswich",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 31,
+          "goals": 3
+        }
+      ],
+      "careerComplete": true,
+      "trophies": [
+        {
+          "comp": "Championship",
+          "country": "England",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "League Two",
+          "country": "England",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ]
+    },
+    {
       "id": "alejandro-garnacho-ferreyra-284324",
       "name": "Alejandro Garnacho Ferreyra",
       "displayName": null,
@@ -190544,6 +190815,79 @@
       ]
     },
     {
+      "id": "issahaku-abdul-fatawu-303467",
+      "name": "Issahaku Abdul Fatawu",
+      "displayName": null,
+      "nationality": "Ghana",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2021–2022",
+          "club": "Dreams",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": "Ghana",
+          "apps": 7,
+          "goals": 6
+        },
+        {
+          "years": "2022",
+          "club": "Sporting CP B",
+          "league": null,
+          "leagueRaw": "Liga 3",
+          "country": "Portugal",
+          "apps": 13,
+          "goals": 2
+        },
+        {
+          "years": "2023",
+          "club": "Sporting CP",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2023–2026",
+          "club": "Leicester",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 93,
+          "goals": 15
+        },
+        {
+          "years": "2026–2027",
+          "club": "Ipswich",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 5,
+          "goals": 0
+        }
+      ],
+      "careerComplete": true,
+      "trophies": [
+        {
+          "comp": "Championship",
+          "country": "England",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "Africa U20 Cup of Nations",
+          "country": "Africa",
+          "count": 1,
+          "seasons": [
+            "2021"
+          ]
+        }
+      ]
+    },
+    {
       "id": "brajan-gruda-328225",
       "name": "Brajan Gruda",
       "displayName": null,
@@ -191203,6 +191547,53 @@
       "trophies": []
     },
     {
+      "id": "harrison-armstrong-405360",
+      "name": "Harrison Armstrong",
+      "displayName": null,
+      "nationality": "England",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2024–2024",
+          "club": "Derby",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 15,
+          "goals": 1
+        },
+        {
+          "years": "2024–2025",
+          "club": "Everton",
+          "league": "pl",
+          "leagueRaw": "Premier League - Summer Series",
+          "country": "England",
+          "apps": 17,
+          "goals": 0
+        },
+        {
+          "years": "2025–2026",
+          "club": "Preston",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 17,
+          "goals": 1
+        },
+        {
+          "years": "2026–2027",
+          "club": "Everton",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 5,
+          "goals": 0
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
+    },
+    {
       "id": "vitor-de-oliveira-nunes-dos-reis-414359",
       "name": "Vitor de Oliveira Nunes dos Reis",
       "displayName": null,
@@ -191362,6 +191753,26 @@
           ]
         }
       ]
+    },
+    {
+      "id": "rio-ngumoha-452685",
+      "name": "Rio Ngumoha",
+      "displayName": null,
+      "nationality": "England",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2025–2027",
+          "club": "Liverpool",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 22,
+          "goals": 2
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
     },
     {
       "id": "mateus-bula-dami-mane-456206",
@@ -195395,6 +195806,44 @@
       ]
     },
     {
+      "id": "christopher-rigg-339201",
+      "name": "Christopher Rigg",
+      "displayName": null,
+      "nationality": "England",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2023–2024",
+          "club": "Sunderland",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 66,
+          "goals": 6
+        },
+        {
+          "years": "2024–2025",
+          "club": "Squadra sconosciuta",
+          "league": null,
+          "leagueRaw": "UEFA U17 Championship",
+          "country": "World",
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2025–2027",
+          "club": "Sunderland",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 20,
+          "goals": 1
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
+    },
+    {
       "id": "jorrel-hato-341642",
       "name": "Jorrel Hato",
       "displayName": null,
@@ -195872,6 +196321,79 @@
       "trophies": []
     },
     {
+      "id": "rayan-vitor-simplicio-rocha-407806",
+      "name": "Rayan Vitor Simplício Rocha",
+      "displayName": null,
+      "nationality": "Brazil",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2023–2023",
+          "club": "Squadra sconosciuta",
+          "league": null,
+          "leagueRaw": "CONMEBOL - U17",
+          "country": "World",
+          "apps": 9,
+          "goals": 5
+        },
+        {
+          "years": "2023–2025",
+          "club": "Vasco DA Gama",
+          "league": null,
+          "leagueRaw": "Serie A",
+          "country": "Brazil",
+          "apps": 125,
+          "goals": 18
+        },
+        {
+          "years": "2025–2026",
+          "club": "Bournemouth",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 15,
+          "goals": 5
+        },
+        {
+          "years": "2026–2026",
+          "club": "Vasco DA Gama",
+          "league": null,
+          "leagueRaw": "Carioca - 1",
+          "country": "Brazil",
+          "apps": 1,
+          "goals": 2
+        },
+        {
+          "years": "2026–2027",
+          "club": "Bournemouth",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 5,
+          "goals": 0
+        }
+      ],
+      "careerComplete": true,
+      "trophies": [
+        {
+          "comp": "CONMEBOL U20",
+          "country": "South America",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "CONMEBOL U17",
+          "country": "South America",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        }
+      ]
+    },
+    {
       "id": "el-hadji-malick-diouf-409303",
       "name": "El Hadji Malick Diouf",
       "displayName": null,
@@ -196035,6 +196557,35 @@
           ]
         }
       ]
+    },
+    {
+      "id": "aladji-bamba-453792",
+      "name": "Aladji Bamba",
+      "displayName": null,
+      "nationality": "France",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2025–2026",
+          "club": "Monaco",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 18,
+          "goals": 0
+        },
+        {
+          "years": "2026–2027",
+          "club": "Newcastle",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 3,
+          "goals": 0
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
     }
   ]
 }

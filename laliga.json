@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-03T12:07:37.753Z",
+  "version": "2026-10-03T12:13:04.127Z",
   "players": [
     {
       "id": "stefan-savic-39",
@@ -30540,7 +30540,7 @@
     },
     {
       "id": "mario-pasalic-2763",
-      "name": "Mario Pašalić",
+      "name": "Mario Pasalic",
       "displayName": null,
       "nationality": "Croatia",
       "isGK": false,
@@ -202172,6 +202172,119 @@
       ]
     },
     {
+      "id": "carlos-dotor-gonzalez-162034",
+      "name": "Carlos Dotor González",
+      "displayName": null,
+      "nationality": "Spain",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2019–2022",
+          "club": "Real Madrid II",
+          "league": null,
+          "leagueRaw": "Primera División RFEF - Group 2",
+          "country": "Spain",
+          "apps": 60,
+          "goals": 14
+        },
+        {
+          "years": "2023–2024",
+          "club": "Celta Vigo",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 17,
+          "goals": 0
+        },
+        {
+          "years": "2024",
+          "club": "Sporting Gijon",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 13,
+          "goals": 2
+        },
+        {
+          "years": "2025",
+          "club": "Oviedo",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2025–2027",
+          "club": "Malaga",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 44,
+          "goals": 2
+        }
+      ],
+      "careerComplete": true,
+      "trophies": [
+        {
+          "comp": "Copa del Rey",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "UEFA Super Cup",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "FIFA Intercontinental Cup",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2022 Morocco"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "Super Cup",
+          "country": "Spain",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "UEFA Champions League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        },
+        {
+          "comp": "UEFA Youth League",
+          "country": "Europe",
+          "count": 1,
+          "seasons": [
+            "2019/2020"
+          ]
+        }
+      ]
+    },
+    {
       "id": "francisco-perez-martinez-162931",
       "name": "Francisco Pérez Martínez",
       "displayName": "Fran Pérez",
@@ -208857,6 +208970,26 @@
       "trophies": []
     },
     {
+      "id": "alberto-risco-alcantara-465838",
+      "name": "Alberto Risco Alcántara",
+      "displayName": null,
+      "nationality": "Spain",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2023–2027",
+          "club": "Getafe",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 23,
+          "goals": 0
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
+    },
+    {
       "id": "kylian-mbappe-lottin-278",
       "name": "Kylian Mbappé Lottin",
       "displayName": "Kylian Mbappé",
@@ -212236,6 +212369,44 @@
       "trophies": []
     },
     {
+      "id": "andres-lopez-gallo-338902",
+      "name": "Andrés López Gallo",
+      "displayName": null,
+      "nationality": "Spain",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2021–2022",
+          "club": "CD Lugo B",
+          "league": null,
+          "leagueRaw": "Tercera División RFEF - Group 14",
+          "country": "Spain",
+          "apps": 20,
+          "goals": 1
+        },
+        {
+          "years": "2022–2023",
+          "club": "Lugo",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 5,
+          "goals": 0
+        },
+        {
+          "years": "2025–2027",
+          "club": "Sevilla",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 25,
+          "goals": 1
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
+    },
+    {
       "id": "raul-asencio-del-rosario-341640",
       "name": "Raúl Asencio del Rosario",
       "displayName": "Raúl Asencio",
@@ -212704,6 +212875,44 @@
           "leagueRaw": null,
           "country": null,
           "apps": 61,
+          "goals": 0
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
+    },
+    {
+      "id": "rafel-bauza-sureda-438284",
+      "name": "Rafel Bauzà Sureda",
+      "displayName": null,
+      "nationality": "Spain",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2023–2025",
+          "club": "Espanyol",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 26,
+          "goals": 0
+        },
+        {
+          "years": "2025–2026",
+          "club": "Mirandes",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 38,
+          "goals": 4
+        },
+        {
+          "years": "2026–2027",
+          "club": "Espanyol",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 4,
           "goals": 0
         }
       ],
@@ -214352,6 +214561,96 @@
       ]
     },
     {
+      "id": "zaid-abner-romero-180927",
+      "name": "Zaid Abner Romero",
+      "displayName": null,
+      "nationality": "Argentina",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2019–2021",
+          "club": "Godoy Cruz",
+          "league": null,
+          "leagueRaw": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2021–2022",
+          "club": "Villa Dalmine",
+          "league": null,
+          "leagueRaw": "Primera Nacional",
+          "country": "Argentina",
+          "apps": 25,
+          "goals": 0
+        },
+        {
+          "years": "2022–2023",
+          "club": "LDU de Quito",
+          "league": null,
+          "leagueRaw": "Liga Pro",
+          "country": "Ecuador",
+          "apps": 34,
+          "goals": 1
+        },
+        {
+          "years": "2023–2024",
+          "club": "Estudiantes L.P.",
+          "league": null,
+          "leagueRaw": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "apps": 30,
+          "goals": 2
+        },
+        {
+          "years": "2024–2025",
+          "club": "Club Brugge KV",
+          "league": null,
+          "leagueRaw": "Jupiler Pro League",
+          "country": "Belgium",
+          "apps": 36,
+          "goals": 0
+        },
+        {
+          "years": "2025–2027",
+          "club": "Getafe",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 21,
+          "goals": 1
+        }
+      ],
+      "careerComplete": true,
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Belgium",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Belgium",
+          "count": 1,
+          "seasons": [
+            "2024/2025"
+          ]
+        },
+        {
+          "comp": "Copa Argentina",
+          "country": "Argentina",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        }
+      ]
+    },
+    {
       "id": "alvaro-nunez-cobo-182661",
       "name": "Álvaro Núñez Cobo",
       "displayName": "Álvaro Núñez",
@@ -214880,6 +215179,69 @@
       "trophies": [
         {
           "comp": "Super Copa International",
+          "country": "Argentina",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thiago-cruz-fernandez-362750",
+      "name": "Thiago Cruz Fernández",
+      "displayName": null,
+      "nationality": "Argentina",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2024–2025",
+          "club": "Velez Sarsfield",
+          "league": null,
+          "leagueRaw": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "apps": 40,
+          "goals": 5
+        },
+        {
+          "years": "2025–2026",
+          "club": "Oviedo",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 16,
+          "goals": 0
+        },
+        {
+          "years": "2026–2027",
+          "club": "Levante",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 5,
+          "goals": 0
+        }
+      ],
+      "careerComplete": true,
+      "trophies": [
+        {
+          "comp": "Super Copa International",
+          "country": "Argentina",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "Super Copa",
           "country": "Argentina",
           "count": 1,
           "seasons": [

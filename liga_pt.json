@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-03T12:07:37.753Z",
+  "version": "2026-10-03T12:13:04.127Z",
   "players": [
     {
       "id": "bryan-cristante-778",
@@ -39006,6 +39006,35 @@
       "trophies": []
     },
     {
+      "id": "nile-omari-mckenzie-john-162150",
+      "name": "Nile Omari Mckenzie John",
+      "displayName": null,
+      "nationality": "England",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2024–2025",
+          "club": "Feirense",
+          "league": null,
+          "leagueRaw": "Segunda Liga",
+          "country": "Portugal",
+          "apps": 3,
+          "goals": 1
+        },
+        {
+          "years": "2025–2027",
+          "club": "Moreirense",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 21,
+          "goals": 1
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
+    },
+    {
       "id": "sidnei-wilson-vieira-david-tavares-231081",
       "name": "Sidnei Wilson Vieira David Tavares",
       "displayName": null,
@@ -43603,6 +43632,79 @@
           "count": 1,
           "seasons": [
             "2020/2021"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "issahaku-abdul-fatawu-303467",
+      "name": "Issahaku Abdul Fatawu",
+      "displayName": null,
+      "nationality": "Ghana",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2021–2022",
+          "club": "Dreams",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": "Ghana",
+          "apps": 7,
+          "goals": 6
+        },
+        {
+          "years": "2022",
+          "club": "Sporting CP B",
+          "league": null,
+          "leagueRaw": "Liga 3",
+          "country": "Portugal",
+          "apps": 13,
+          "goals": 2
+        },
+        {
+          "years": "2023",
+          "club": "Sporting CP",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2023–2026",
+          "club": "Leicester",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 93,
+          "goals": 15
+        },
+        {
+          "years": "2026–2027",
+          "club": "Ipswich",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 5,
+          "goals": 0
+        }
+      ],
+      "careerComplete": true,
+      "trophies": [
+        {
+          "comp": "Championship",
+          "country": "England",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        },
+        {
+          "comp": "Africa U20 Cup of Nations",
+          "country": "Africa",
+          "count": 1,
+          "seasons": [
+            "2021"
           ]
         }
       ]
@@ -70838,6 +70940,44 @@
       "trophies": []
     },
     {
+      "id": "antonio-espigares-morillas-336637",
+      "name": "Antonio Espigares Morillas",
+      "displayName": null,
+      "nationality": "Spain",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2021–2022",
+          "club": "Villarreal III",
+          "league": null,
+          "leagueRaw": "Tercera División RFEF - Group 14",
+          "country": "Spain",
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2023–2024",
+          "club": "Villarreal II",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 31,
+          "goals": 0
+        },
+        {
+          "years": "2025–2027",
+          "club": "GIL Vicente",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 20,
+          "goals": 1
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
+    },
+    {
       "id": "samuel-omorodion-aghehowa-358628",
       "name": "Samuel Omorodion Aghehowa",
       "displayName": "Samu Aghehowa",
@@ -76744,6 +76884,71 @@
           "country": null,
           "apps": 63,
           "goals": 4
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
+    },
+    {
+      "id": "jovan-milosevic-371911",
+      "name": "Jovan Milošević",
+      "displayName": null,
+      "nationality": "Serbia",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2022–2023",
+          "club": "Vojvodina",
+          "league": null,
+          "leagueRaw": "Super Liga",
+          "country": "Serbia",
+          "apps": 18,
+          "goals": 3
+        },
+        {
+          "years": "2023–2023",
+          "club": "VfB Stuttgart",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 5,
+          "goals": 0
+        },
+        {
+          "years": "2023–2024",
+          "club": "FC ST. Gallen",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": "Switzerland",
+          "apps": 16,
+          "goals": 4
+        },
+        {
+          "years": "2024–2025",
+          "club": "FK Partizan",
+          "league": null,
+          "leagueRaw": "Super Liga",
+          "country": "Serbia",
+          "apps": 22,
+          "goals": 15
+        },
+        {
+          "years": "2025–2026",
+          "club": "Werder Bremen",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 13,
+          "goals": 3
+        },
+        {
+          "years": "2026–2027",
+          "club": "SC Braga",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 4,
+          "goals": 0
         }
       ],
       "careerComplete": true,
@@ -89173,6 +89378,89 @@
       ]
     },
     {
+      "id": "lohann-doucet-327592",
+      "name": "Lohann Doucet",
+      "displayName": null,
+      "nationality": "France",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2021–2021",
+          "club": "Nantes II",
+          "league": null,
+          "leagueRaw": "National 2 - Group D",
+          "country": "France",
+          "apps": 18,
+          "goals": 0
+        },
+        {
+          "years": "2021–2022",
+          "club": "Nantes",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2022–2022",
+          "club": "Nantes II",
+          "league": null,
+          "leagueRaw": "National 2 - Group D",
+          "country": "France",
+          "apps": 17,
+          "goals": 1
+        },
+        {
+          "years": "2022–2023",
+          "club": "Nantes",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2023–2025",
+          "club": "Paris FC",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 66,
+          "goals": 3
+        },
+        {
+          "years": "2025–2026",
+          "club": "Dunkerque",
+          "league": null,
+          "leagueRaw": "Ligue 2",
+          "country": "France",
+          "apps": 11,
+          "goals": 0
+        },
+        {
+          "years": "2026–2027",
+          "club": "Vitória SC",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 7,
+          "goals": 0
+        }
+      ],
+      "careerComplete": true,
+      "trophies": [
+        {
+          "comp": "Coupe de France",
+          "country": "France",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ]
+    },
+    {
       "id": "ismaily-goncalves-dos-santos-679",
       "name": "Ismaily Gonçalves dos Santos",
       "displayName": "Ismaily",
@@ -90530,6 +90818,80 @@
       ],
       "careerComplete": true,
       "trophies": []
+    },
+    {
+      "id": "steven-baseya-362379",
+      "name": "Steven Baseya",
+      "displayName": null,
+      "nationality": "France",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2021–2022",
+          "club": "Nancy II",
+          "league": null,
+          "leagueRaw": "National 3 - Group M",
+          "country": "France",
+          "apps": 24,
+          "goals": 1
+        },
+        {
+          "years": "2022–2023",
+          "club": "Nancy",
+          "league": null,
+          "leagueRaw": "Ligue 3",
+          "country": "France",
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2023",
+          "club": "Strasbourg II",
+          "league": null,
+          "leagueRaw": "National 3 - Group G",
+          "country": "France",
+          "apps": 13,
+          "goals": 0
+        },
+        {
+          "years": "2024",
+          "club": "Strasbourg",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2024–2025",
+          "club": "Villefranche",
+          "league": null,
+          "leagueRaw": "Ligue 3",
+          "country": "France",
+          "apps": 26,
+          "goals": 1
+        },
+        {
+          "years": "2025–2027",
+          "club": "Alverca",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 18,
+          "goals": 0
+        }
+      ],
+      "careerComplete": true,
+      "trophies": [
+        {
+          "comp": "Tournoi Maurice Revello",
+          "country": "World",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        }
+      ]
     },
     {
       "id": "tiago-carvalho-santos-379329",
@@ -196160,6 +196522,71 @@
       ]
     },
     {
+      "id": "tamble-ulisses-folgado-monteiro-279674",
+      "name": "Tamble Ulisses Folgado Monteiro",
+      "displayName": null,
+      "nationality": "Portugal",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2020–2022",
+          "club": "Anadia",
+          "league": null,
+          "leagueRaw": "Campeonato de Portugal Prio - Group H",
+          "country": "Portugal",
+          "apps": 24,
+          "goals": 6
+        },
+        {
+          "years": "2022–2023",
+          "club": "São João Ver",
+          "league": null,
+          "leagueRaw": "Liga 3",
+          "country": "Portugal",
+          "apps": 13,
+          "goals": 1
+        },
+        {
+          "years": "2023–2023",
+          "club": "Felgueiras 1932",
+          "league": null,
+          "leagueRaw": "Liga 3",
+          "country": "Portugal",
+          "apps": 14,
+          "goals": 9
+        },
+        {
+          "years": "2023–2025",
+          "club": "Portimonense",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 14,
+          "goals": 3
+        },
+        {
+          "years": "2025–2025",
+          "club": "Portimonense B",
+          "league": null,
+          "leagueRaw": "Segunda Liga",
+          "country": "Portugal",
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2025–2027",
+          "club": "Rio Ave",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 20,
+          "goals": 1
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
+    },
+    {
       "id": "matias-emiliano-rocha-calderon-283338",
       "name": "Matías Emiliano Rocha Calderón",
       "displayName": "Matías Rocha",
@@ -201160,6 +201587,35 @@
       ]
     },
     {
+      "id": "domingos-jose-gabriel-bandeira-365011",
+      "name": "Domingos José Gabriel Bandeira",
+      "displayName": null,
+      "nationality": "Angola",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2024–2024",
+          "club": "Dila",
+          "league": null,
+          "leagueRaw": "Erovnuli Liga",
+          "country": "Georgia",
+          "apps": 26,
+          "goals": 0
+        },
+        {
+          "years": "2024–2027",
+          "club": "Casa Pia",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 20,
+          "goals": 0
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
+    },
+    {
       "id": "pedro-maria-salgueiro-costa-pessoa-carvalh-381619",
       "name": "Pedro Maria Salgueiro Costa Pessoa Carvalh",
       "displayName": "Pedro Maria Salgueiro Costa Pessoa Carvalho",
@@ -201183,6 +201639,44 @@
           "country": null,
           "apps": 45,
           "goals": 0
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
+    },
+    {
+      "id": "matija-mitrovic-384915",
+      "name": "Matija Mitrović",
+      "displayName": null,
+      "nationality": "Serbia",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2022–2024",
+          "club": "FK Vozdovac",
+          "league": null,
+          "leagueRaw": "Super Liga",
+          "country": "Serbia",
+          "apps": 17,
+          "goals": 0
+        },
+        {
+          "years": "2024–2025",
+          "club": "Železničar Pančevo",
+          "league": null,
+          "leagueRaw": "Super Liga",
+          "country": "Serbia",
+          "apps": 16,
+          "goals": 1
+        },
+        {
+          "years": "2025–2027",
+          "club": "Vitória SC",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 21,
+          "goals": 2
         }
       ],
       "careerComplete": true,
@@ -202641,6 +203135,106 @@
       ]
     },
     {
+      "id": "welinton-macedo-dos-santos-133198",
+      "name": "Welinton Macedo dos Santos",
+      "displayName": null,
+      "nationality": "Brazil",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2019–2021",
+          "club": "Cruzeiro",
+          "league": null,
+          "leagueRaw": "Mineiro - 1",
+          "country": "Brazil",
+          "apps": 30,
+          "goals": 2
+        },
+        {
+          "years": "2021–2021",
+          "club": "Inter De Limeira",
+          "league": null,
+          "leagueRaw": "Paulista - A1",
+          "country": "Brazil",
+          "apps": 8,
+          "goals": 0
+        },
+        {
+          "years": "2021–2021",
+          "club": "Brasil DE Pelotas",
+          "league": null,
+          "leagueRaw": "Serie B",
+          "country": "Brazil",
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2021–2022",
+          "club": "Novorizontino",
+          "league": null,
+          "leagueRaw": "Paulista - A1",
+          "country": "Brazil",
+          "apps": 5,
+          "goals": 1
+        },
+        {
+          "years": "2022–2023",
+          "club": "Ferroviária",
+          "league": null,
+          "leagueRaw": "Serie D",
+          "country": "Brazil",
+          "apps": 2,
+          "goals": 3
+        },
+        {
+          "years": "2023–2023",
+          "club": "Criciuma",
+          "league": null,
+          "leagueRaw": "Serie B",
+          "country": "Brazil",
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2023–2025",
+          "club": "Athletic Club",
+          "league": null,
+          "leagueRaw": "Serie B",
+          "country": "Brazil",
+          "apps": 59,
+          "goals": 10
+        },
+        {
+          "years": "2025–2027",
+          "club": "Santa Clara",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 23,
+          "goals": 1
+        }
+      ],
+      "careerComplete": true,
+      "trophies": [
+        {
+          "comp": "Mineiro 1",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2025"
+          ]
+        },
+        {
+          "comp": "Catarinense 1",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2023"
+          ]
+        }
+      ]
+    },
+    {
       "id": "georgios-vagiannidis-135839",
       "name": "Georgios Vagiannidis",
       "displayName": "Georgios Vagiannidis",
@@ -203894,6 +204488,88 @@
       ]
     },
     {
+      "id": "daniel-de-melo-araujo-junior-353926",
+      "name": "Daniel de Melo Araujo Júnior",
+      "displayName": null,
+      "nationality": "Brazil",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2022–2023",
+          "club": "Cruzeiro",
+          "league": null,
+          "leagueRaw": "Mineiro - 1",
+          "country": "Brazil",
+          "apps": 44,
+          "goals": 5
+        },
+        {
+          "years": "2023–2024",
+          "club": "Akhmat",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": "Russia",
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2024",
+          "club": "America Mineiro",
+          "league": null,
+          "leagueRaw": "Serie B",
+          "country": "Brazil",
+          "apps": 9,
+          "goals": 1
+        },
+        {
+          "years": "2025",
+          "club": "Vitoria",
+          "league": null,
+          "leagueRaw": "Serie A",
+          "country": "Brazil",
+          "apps": 8,
+          "goals": 1
+        },
+        {
+          "years": "2025–2025",
+          "club": "Portuguesa",
+          "league": null,
+          "leagueRaw": "Paulista - A1",
+          "country": "Brazil",
+          "apps": 5,
+          "goals": 0
+        },
+        {
+          "years": "2025–2027",
+          "club": "Nacional",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 23,
+          "goals": 0
+        }
+      ],
+      "careerComplete": true,
+      "trophies": [
+        {
+          "comp": "Baiano 1",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Serie B",
+          "country": "Brazil",
+          "count": 1,
+          "seasons": [
+            "2022"
+          ]
+        }
+      ]
+    },
+    {
       "id": "hyun-ju-lee-355171",
       "name": "Hyun-Ju Lee",
       "displayName": "Lee Hyun-ju",
@@ -204042,6 +204718,80 @@
       ],
       "careerComplete": true,
       "trophies": []
+    },
+    {
+      "id": "romeo-beney-361354",
+      "name": "Roméo Beney",
+      "displayName": null,
+      "nationality": "Switzerland",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2022–2023",
+          "club": "Basel II",
+          "league": null,
+          "leagueRaw": "1. Liga Promotion",
+          "country": "Switzerland",
+          "apps": 36,
+          "goals": 12
+        },
+        {
+          "years": "2023–2024",
+          "club": "FC Basel 1893",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": "Switzerland",
+          "apps": 13,
+          "goals": 1
+        },
+        {
+          "years": "2024–2024",
+          "club": "Basel II",
+          "league": null,
+          "leagueRaw": "1. Liga Promotion",
+          "country": "Switzerland",
+          "apps": 11,
+          "goals": 5
+        },
+        {
+          "years": "2024–2024",
+          "club": "FC Basel 1893",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": "Switzerland",
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2024–2025",
+          "club": "Stade Lausanne-Ouchy",
+          "league": null,
+          "leagueRaw": "Challenge League",
+          "country": "Switzerland",
+          "apps": 17,
+          "goals": 5
+        },
+        {
+          "years": "2025–2027",
+          "club": "Famalicao",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 20,
+          "goals": 0
+        }
+      ],
+      "careerComplete": true,
+      "trophies": [
+        {
+          "comp": "U19 Elite",
+          "country": "Switzerland",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        }
+      ]
     },
     {
       "id": "francisco-miguel-teixeira-domingues-379124",
@@ -204318,6 +205068,79 @@
       "trophies": []
     },
     {
+      "id": "jalen-aleix-miller-blesa-404056",
+      "name": "Jalen Aleix Miller Blesa",
+      "displayName": null,
+      "nationality": "USA",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2022–2023",
+          "club": "Prishtina",
+          "league": null,
+          "leagueRaw": "Superliga",
+          "country": "Kosovo",
+          "apps": 8,
+          "goals": 10
+        },
+        {
+          "years": "2023–2024",
+          "club": "Universitatea Craiova",
+          "league": null,
+          "leagueRaw": "Liga I",
+          "country": "Romania",
+          "apps": 13,
+          "goals": 0
+        },
+        {
+          "years": "2024–2025",
+          "club": "Dinamo Batumi",
+          "league": null,
+          "leagueRaw": "Erovnuli Liga",
+          "country": "Georgia",
+          "apps": 23,
+          "goals": 9
+        },
+        {
+          "years": "2025–2025",
+          "club": "Cesena",
+          "league": null,
+          "leagueRaw": "Serie B",
+          "country": "Italy",
+          "apps": 15,
+          "goals": 3
+        },
+        {
+          "years": "2025–2027",
+          "club": "Rio Ave",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 20,
+          "goals": 9
+        }
+      ],
+      "careerComplete": true,
+      "trophies": [
+        {
+          "comp": "Super Cup",
+          "country": "Kosovo",
+          "count": 1,
+          "seasons": [
+            "2024"
+          ]
+        },
+        {
+          "comp": "Cup",
+          "country": "Kosovo",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        }
+      ]
+    },
+    {
       "id": "robson-lucas-oliveira-botelho-404757",
       "name": "Robson Lucas Oliveira Botelho",
       "displayName": null,
@@ -204463,6 +205286,35 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
+          "goals": 0
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
+    },
+    {
+      "id": "joao-miguel-costa-nogueira-429479",
+      "name": "João Miguel Costa Nogueira",
+      "displayName": null,
+      "nationality": "Portugal",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2023–2025",
+          "club": "Guimaraes B",
+          "league": null,
+          "leagueRaw": "Liga 3",
+          "country": "Portugal",
+          "apps": 23,
+          "goals": 15
+        },
+        {
+          "years": "2025–2027",
+          "club": "Vitória SC",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 22,
           "goals": 0
         }
       ],

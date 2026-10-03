@@ -1,35 +1,35 @@
 {
-  "version": "2026-10-03T12:07:37.753Z",
+  "version": "2026-10-03T12:13:04.127Z",
   "leagues": {
     "pl": {
       "file": "pl.json",
-      "version": "2026-10-03T12:07:37.753Z",
-      "count": 1686
+      "version": "2026-10-03T12:13:04.127Z",
+      "count": 1694
     },
     "seriea": {
       "file": "seriea.json",
-      "version": "2026-10-03T12:07:37.753Z",
-      "count": 1883
+      "version": "2026-10-03T12:13:04.127Z",
+      "count": 1890
     },
     "laliga": {
       "file": "laliga.json",
-      "version": "2026-10-03T12:07:37.753Z",
-      "count": 1817
+      "version": "2026-10-03T12:13:04.127Z",
+      "count": 1823
     },
     "bundesliga": {
       "file": "bundesliga.json",
-      "version": "2026-10-03T12:07:37.753Z",
-      "count": 1489
+      "version": "2026-10-03T12:13:04.127Z",
+      "count": 1495
     },
     "ligue1": {
       "file": "ligue1.json",
-      "version": "2026-10-03T12:07:37.753Z",
-      "count": 1899
+      "version": "2026-10-03T12:13:04.127Z",
+      "count": 1907
     },
     "liga_pt": {
       "file": "liga_pt.json",
-      "version": "2026-10-03T12:07:37.753Z",
-      "count": 1721
+      "version": "2026-10-03T12:13:04.127Z",
+      "count": 1735
     }
   }
 }

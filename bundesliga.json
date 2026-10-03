@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-03T12:07:37.753Z",
+  "version": "2026-10-03T12:13:04.127Z",
   "players": [
     {
       "id": "arturo-erasmo-vidal-pardo-151",
@@ -72480,6 +72480,44 @@
           ]
         }
       ]
+    },
+    {
+      "id": "ivan-san-jose-cantalejo-331004",
+      "name": "Iván San José Cantalejo",
+      "displayName": null,
+      "nationality": "Spain",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2021–2022",
+          "club": "Real Valladolid II",
+          "league": null,
+          "leagueRaw": "Primera División RFEF - Group 2",
+          "country": "Spain",
+          "apps": 13,
+          "goals": 2
+        },
+        {
+          "years": "2024–2026",
+          "club": "Valladolid",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 52,
+          "goals": 9
+        },
+        {
+          "years": "2026–2027",
+          "club": "Werder Bremen",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 4,
+          "goals": 0
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
     },
     {
       "id": "jose-maria-andres-baixauli-388871",
@@ -159171,6 +159209,80 @@
       "trophies": []
     },
     {
+      "id": "william-cole-campbell-328617",
+      "name": "William Cole Campbell",
+      "displayName": null,
+      "nationality": "USA",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2021–2022",
+          "club": "FH hafnarfjordur",
+          "league": null,
+          "leagueRaw": "Úrvalsdeild",
+          "country": "Iceland",
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2022–2023",
+          "club": "Breidablik",
+          "league": null,
+          "leagueRaw": "Úrvalsdeild",
+          "country": "Iceland",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2024–2024",
+          "club": "Borussia Dortmund II",
+          "league": null,
+          "leagueRaw": "3. Liga",
+          "country": "Germany",
+          "apps": 6,
+          "goals": 1
+        },
+        {
+          "years": "2024–2025",
+          "club": "Borussia Dortmund",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 13,
+          "goals": 0
+        },
+        {
+          "years": "2025–2025",
+          "club": "Hoffenheim II",
+          "league": null,
+          "leagueRaw": "3. Liga",
+          "country": "Germany",
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2025–2026",
+          "club": "1899 Hoffenheim",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 5,
+          "goals": 0
+        },
+        {
+          "years": "2026–2027",
+          "club": "SV Elversberg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 4,
+          "goals": 1
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
+    },
+    {
       "id": "hugo-emanuel-larsson-335094",
       "name": "Hugo Emanuel Larsson",
       "displayName": "Hugo Larsson",
@@ -159447,6 +159559,71 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
+          "goals": 0
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
+    },
+    {
+      "id": "jovan-milosevic-371911",
+      "name": "Jovan Milošević",
+      "displayName": null,
+      "nationality": "Serbia",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2022–2023",
+          "club": "Vojvodina",
+          "league": null,
+          "leagueRaw": "Super Liga",
+          "country": "Serbia",
+          "apps": 18,
+          "goals": 3
+        },
+        {
+          "years": "2023–2023",
+          "club": "VfB Stuttgart",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 5,
+          "goals": 0
+        },
+        {
+          "years": "2023–2024",
+          "club": "FC ST. Gallen",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": "Switzerland",
+          "apps": 16,
+          "goals": 4
+        },
+        {
+          "years": "2024–2025",
+          "club": "FK Partizan",
+          "league": null,
+          "leagueRaw": "Super Liga",
+          "country": "Serbia",
+          "apps": 22,
+          "goals": 15
+        },
+        {
+          "years": "2025–2026",
+          "club": "Werder Bremen",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 13,
+          "goals": 3
+        },
+        {
+          "years": "2026–2027",
+          "club": "SC Braga",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 4,
           "goals": 0
         }
       ],
@@ -163662,6 +163839,53 @@
       ]
     },
     {
+      "id": "hennes-behrens-353143",
+      "name": "Hennes Behrens",
+      "displayName": null,
+      "nationality": "Germany",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2024",
+          "club": "1899 Hoffenheim",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2025",
+          "club": "Hoffenheim II",
+          "league": null,
+          "leagueRaw": "Regionalliga - Relegation Round",
+          "country": "Germany",
+          "apps": 26,
+          "goals": 4
+        },
+        {
+          "years": "2025–2026",
+          "club": "1. FC Heidenheim",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 16,
+          "goals": 1
+        },
+        {
+          "years": "2026–2027",
+          "club": "FC Augsburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 4,
+          "goals": 0
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
+    },
+    {
       "id": "bruno-ifechukwu-ogbus-361393",
       "name": "Bruno Ifechukwu Ogbus",
       "displayName": "Bruno Ogbus",
@@ -166172,6 +166396,53 @@
       ]
     },
     {
+      "id": "livan-burcu-430354",
+      "name": "Livan Burcu",
+      "displayName": null,
+      "nationality": "Germany",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2023–2024",
+          "club": "SV Sandhausen",
+          "league": null,
+          "leagueRaw": "3. Liga",
+          "country": "Germany",
+          "apps": 28,
+          "goals": 4
+        },
+        {
+          "years": "2024–2025",
+          "club": "1. FC Magdeburg",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 31,
+          "goals": 3
+        },
+        {
+          "years": "2025–2027",
+          "club": "Union Berlin",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 22,
+          "goals": 1
+        }
+      ],
+      "careerComplete": true,
+      "trophies": [
+        {
+          "comp": "Reg. Cup Baden",
+          "country": "Germany",
+          "count": 1,
+          "seasons": [
+            "2023/2024"
+          ]
+        }
+      ]
+    },
+    {
       "id": "christian-michel-kofane-505295",
       "name": "Christian Michel Kofane",
       "displayName": "Christian Kofane",
@@ -166195,6 +166466,35 @@
           "country": null,
           "apps": 29,
           "goals": 5
+        }
+      ],
+      "careerComplete": true,
+      "trophies": []
+    },
+    {
+      "id": "a-amaimouni-535046",
+      "name": "A. Amaimouni",
+      "displayName": null,
+      "nationality": null,
+      "isGK": false,
+      "career": [
+        {
+          "years": "2025–2025",
+          "club": "Hoffenheim II",
+          "league": null,
+          "leagueRaw": "3. Liga",
+          "country": "Germany",
+          "apps": 18,
+          "goals": 3
+        },
+        {
+          "years": "2025–2027",
+          "club": "Eintracht Frankfurt",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 21,
+          "goals": 2
         }
       ],
       "careerComplete": true,
