@@ -247,6 +247,40 @@ async function main() {
     assert.equal(career[0].apps, 30, "deve restare 30, non 60: lo sweep non deve aggiungere righe a un giocatore già arricchito");
   });
 
+  await test("un giocatore già arricchito RICEVE comunque una stagione NUOVA mai vista prima (es. un trasferimento avvenuto dopo l'arricchimento) - solo la stagione già presente viene saltata, non tutte quelle future (bug reale trovato: Pietro Comuzzo, passato dalla Fiorentina al Torino a luglio 2026, mai aggiornato nonostante due mesi di sync successivi)", () => {
+    const players = newPlayersMap();
+    players.set(41, {
+      id: 41, name: "Comuzzo Di Prova", nationality: "Italy", isGK: false,
+      seasonRecords: [
+        { season: 2023, club: "Fiorentina", league: "seriea", leagueRaw: null, country: null, apps: 4, goals: 0 },
+        { season: 2024, club: "Fiorentina", league: "seriea", leagueRaw: null, country: null, apps: 37, goals: 1 },
+        { season: 2025, club: "Fiorentina", league: "seriea", leagueRaw: null, country: null, apps: 27, goals: 1 }
+      ],
+      trophies: null, trophiesFetched: false, careerBackfilled: true
+    });
+    // Lo sweep del 2026 lo trova al Torino - una stagione mai vista prima
+    mergePlayerEntry(players, {
+      player: { id: 41, name: "Comuzzo Di Prova" },
+      statistics: [{ team: { name: "Torino" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: 6, position: "Defender" }, goals: { total: 0 } }]
+    }, 2026);
+    const career = finalizeCareer(players.get(41));
+    assert.equal(career.length, 2, "devono risultare DUE tappe: Fiorentina (dalla carriera già arricchita) e Torino (la stagione nuova)");
+    assert.equal(career[0].club, "Fiorentina");
+    assert.equal(career[1].club, "Torino");
+    assert.equal(career[1].apps, 6);
+
+    // Controprova: se lo stesso sweep ritrova ANCHE una stagione già
+    // presente (es. un doppio controllo sul 2025), quella va comunque
+    // saltata come prima - non deve raddoppiare le presenze.
+    mergePlayerEntry(players, {
+      player: { id: 41, name: "Comuzzo Di Prova" },
+      statistics: [{ team: { name: "Fiorentina" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: 27, position: "Defender" }, goals: { total: 1 } }]
+    }, 2025);
+    const careerDopo = finalizeCareer(players.get(41));
+    const fiorentina = careerDopo.find((c) => c.club === "Fiorentina");
+    assert.equal(fiorentina.apps, 68, "deve restare 4+37+27=68, non raddoppiare il 2025 già presente");
+  });
+
   await test("un blocco storico (da Wikipedia) è sempre una tappa a sé, con l'anno vero senza +1 (bug reale a cui fare attenzione: un blocco 2003-2008 non deve diventare '2003-2009')", () => {
     const players = newPlayersMap();
     players.set(50, {

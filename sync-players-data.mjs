@@ -270,12 +270,20 @@ function mergePlayerEntry(playersMap, entry, season) {
   }
 
   // Un giocatore già arricchito con la carriera COMPLETA (fetchFullCareer)
-  // ha già tutte le sue stagioni, in qualunque campionato tracciato - anche
-  // quello che stiamo spazzolando ora. Aggiungere di nuovo le righe da qui
-  // rischierebbe di contare due volte la stessa stagione (dedupedSeasonRecords
-  // somma le righe con la stessa chiave). Il nome/anno di nascita sopra si
-  // aggiornano comunque; le statistiche no, sono già complete.
-  if (rec.careerBackfilled) return;
+  // ha già tutte le stagioni FINO A QUEL MOMENTO, in qualunque campionato
+  // tracciato - riaggiungerle da qui rischierebbe di contare due volte la
+  // stessa stagione (dedupedSeasonRecords somma le righe con la stessa
+  // chiave). MA bloccare ogni aggiornamento futuro per sempre è sbagliato:
+  // una stagione NUOVA (es. un trasferimento avvenuto dopo l'arricchimento,
+  // mai vista prima) deve comunque passare, altrimenti un giocatore
+  // arricchito prima di cambiare squadra resta bloccato per sempre alla
+  // squadra vecchia (bug reale trovato: Pietro Comuzzo, passato dalla
+  // Fiorentina al Torino a luglio 2026, mai aggiornato nonostante due mesi
+  // di sync successivi, perché arricchito con la carriera completa prima
+  // del trasferimento). Il nome/anno di nascita sopra si aggiornano
+  // comunque in ogni caso.
+  const alreadyHasThisSeason = rec.careerBackfilled && (rec.seasonRecords || []).some((r) => r.season === season);
+  if (alreadyHasThisSeason) return;
 
   const statsList = entry.statistics || [];
   statsList.forEach((s) => {
