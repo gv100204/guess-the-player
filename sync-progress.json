@@ -185,7 +185,13 @@
     "liga_pt:2022",
     "liga_pt:2023",
     "liga_pt:2024",
-    "liga_pt:2025"
+    "liga_pt:2025",
+    "seriea:2026",
+    "pl:2026",
+    "laliga:2026",
+    "bundesliga:2026",
+    "ligue1:2026",
+    "liga_pt:2026"
   ],
   "leagueIds": {
     "seriea": 135,
