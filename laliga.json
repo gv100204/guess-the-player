@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-03T13:01:22.961Z",
+  "version": "2026-10-03T20:39:46.357Z",
   "players": [
     {
       "id": "stefan-savic-39",
@@ -62161,6 +62161,15 @@
           "country": null,
           "apps": 17,
           "goals": 0
+        },
+        {
+          "years": "2026–2027",
+          "club": "Azpilicueta Cesar",
+          "league": null,
+          "leagueRaw": null,
+          "country": null,
+          "apps": 0,
+          "goals": 0
         }
       ],
       "careerComplete": true,
@@ -62277,7 +62286,7 @@
           "goals": 0
         },
         {
-          "years": "2022–2026",
+          "years": "2022–2027",
           "club": "Barcelona",
           "league": "laliga",
           "leagueRaw": null,
@@ -62426,7 +62435,7 @@
           "goals": 85
         },
         {
-          "years": "2019–2023",
+          "years": "2019–2027",
           "club": "Real Madrid",
           "league": "laliga",
           "leagueRaw": null,
