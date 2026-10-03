@@ -177,6 +177,47 @@ async function apiGet(path, params, budget) {
   return json.response;
 }
 
+// Convenzione europea delle stagioni: una stagione che inizia ad agosto
+// dell'anno Y si chiama Y (es. 2026-27 = stagione 2026). Prima di luglio
+// (mese 7, indice 6) consideriamo ancora in corso la stagione dell'anno
+// precedente.
+function currentSeasonYear(now = new Date()) {
+  const month = now.getMonth() + 1; // 1-12
+  return month >= 7 ? now.getFullYear() : now.getFullYear() - 1;
+}
+
+/**
+ * Recupera il club ATTUALE di un giocatore dall'endpoint /transfers,
+ * prendendo il trasferimento più recente in ordine di DATA (non ci
+ * fidiamo dell'ordine in cui l'API restituisce l'elenco). Usato solo per
+ * chi non ha ancora nessuna presenza registrata nella stagione in corso
+ * (es. appena tornato da un prestito, infortunato, o trasferito con zero
+ * presenze finora) - le statistiche partita da sole non direbbero mai
+ * "è qui" se non ha ancora giocato.
+ *
+ * Nota: la forma esatta della risposta non è stata verificata con una
+ * chiamata vera (nessun accesso di rete in questo ambiente) - si basa
+ * sullo schema documentato di api-football. Il controllo difensivo sotto
+ * (ritorna null se i campi attesi non ci sono) evita che una sorpresa
+ * nella forma della risposta rompa il resto del sync, ma vale la pena
+ * controllare l'esito del primo lancio vero con attenzione.
+ */
+async function fetchCurrentClub(playerId, budget) {
+  try {
+    const response = await apiGet("/transfers", { player: playerId }, budget);
+    const transfers = response?.[0]?.transfers;
+    if (!Array.isArray(transfers) || transfers.length === 0) return null;
+    const withDates = transfers.filter((t) => t?.date && t?.teams?.in?.name);
+    if (withDates.length === 0) return null;
+    const sorted = withDates.slice().sort((a, b) => new Date(a.date) - new Date(b.date));
+    const last = sorted[sorted.length - 1];
+    return { club: last.teams.in.name, date: last.date };
+  } catch (err) {
+    console.warn(`  Trasferimenti non recuperati per il giocatore ${playerId}: ${err.message}`);
+    return null;
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Risoluzione degli ID numerici dei campionati (scoperti, non indovinati)
 // ---------------------------------------------------------------------------
@@ -261,7 +302,11 @@ function mergePlayerEntry(playersMap, entry, season) {
       trophiesFetched: false,
       // true solo dopo il recupero COMPLETO della carriera (tutte le stagioni,
       // non solo i campionati che spazzoliamo) - fatto una volta sola, mai più.
-      careerBackfilled: false
+      careerBackfilled: false,
+      // Stagione per cui abbiamo già controllato la squadra attuale via
+      // /transfers (vedi fetchCurrentClub) - evita di richiamare l'API ogni
+      // singolo run per chi non ha trasferimenti recenti da trovare.
+      currentClubCheckedSeason: null
     };
     playersMap.set(p.id, rec);
   } else {
@@ -412,7 +457,7 @@ function dedupedSeasonRecords(rec){
       };
       byKey.set(key, existing);
     }
-    existing.apps += r.apps;
+    existing.apps = (existing.apps == null && r.apps == null) ? null : (existing.apps || 0) + (r.apps || 0);
     existing.goals = (existing.goals == null && r.goals == null) ? null : (existing.goals || 0) + (r.goals || 0);
     // Se questa riga ha l'id interno risolto e quella "capofila" no,
     // lo aggiorniamo - altrimenti il filtro per campionato nel gioco
@@ -1107,6 +1152,37 @@ async function main() {
     // restano i seasonRecords della spazzolata normale nel frattempo).
   }
 
+  console.log("\nControllo la squadra attuale per chi non ha ancora presenze nella stagione in corso...");
+  const curSeason = currentSeasonYear();
+  let currentClubFound = 0, currentClubChecked = 0;
+  for (const rec of playersMap.values()) {
+    if (budget.remaining <= 0) { stoppedForBudget = true; break; }
+    if (!rec.careerBackfilled) continue;
+    if (totalApps(rec) < MIN_APPS_TO_INCLUDE) continue;
+    const hasCurrentSeason = (rec.seasonRecords || []).some((r) => r.season === curSeason);
+    if (hasCurrentSeason) continue;
+    if (rec.currentClubCheckedSeason === curSeason) continue; // già controllato per questa stagione, anche se non trovato nulla
+    const result = await fetchCurrentClub(rec.id, budget);
+    rec.currentClubCheckedSeason = curSeason;
+    currentClubChecked++;
+    if (result) {
+      rec.seasonRecords.push({
+        season: curSeason,
+        club: result.club,
+        league: null,
+        leagueRaw: null,
+        country: null,
+        apps: null, // sconosciute: nessuna statistica partita trovata, solo il trasferimento
+        goals: null,
+        source: "transfers",
+        transferDate: result.date
+      });
+      currentClubFound++;
+      await maybeCheckpoint(playersMap, progress, "squadra attuale");
+    }
+  }
+  console.log(`  Controllati: ${currentClubChecked} | squadra attuale aggiunta per: ${currentClubFound}`);
+
   console.log("\nScarico il palmares per chi ha presenze sufficienti...");
   for (const rec of playersMap.values()) {
     if (budget.remaining <= 0) { stoppedForBudget = true; break; }
@@ -1171,6 +1247,8 @@ export {
   totalApps,
   sweepLeagueSeason,
   fetchFullCareer,
+  fetchCurrentClub,
+  currentSeasonYear,
   fetchTrophies,
   buildFinalDataset,
   writeOutputFiles,

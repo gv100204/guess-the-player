@@ -29,6 +29,8 @@ import {
   totalApps,
   sweepLeagueSeason,
   fetchFullCareer,
+  fetchCurrentClub,
+  currentSeasonYear,
   fetchTrophies,
   buildFinalDataset,
   writeOutputFiles,
@@ -650,6 +652,52 @@ async function main() {
     const result = await fetchFullCareer(34, 2000, budget); // parte dal 2015 (2000+15)
     const found = result.records.find((r) => r.club === "Torino");
     assert.ok(found, "deve arrivare comunque alla stagione vera del 2020, senza fermarsi prima per errore");
+  });
+
+  console.log("\ncurrentSeasonYear() - convenzione europea delle stagioni (agosto = inizio stagione nuova)");
+  await test("prima di luglio, considera ancora in corso la stagione dell'anno precedente", () => {
+    assert.equal(currentSeasonYear(new Date("2026-03-15")), 2025);
+    assert.equal(currentSeasonYear(new Date("2026-06-30")), 2025);
+  });
+  await test("da luglio in poi, la stagione nuova è già iniziata", () => {
+    assert.equal(currentSeasonYear(new Date("2026-07-01")), 2026);
+    assert.equal(currentSeasonYear(new Date("2026-10-03")), 2026);
+    assert.equal(currentSeasonYear(new Date("2026-12-31")), 2026);
+  });
+
+  console.log("\nfetchCurrentClub() - squadra attuale dall'endpoint transfers, per chi non ha ancora presenze nella stagione in corso");
+  await test("prende il trasferimento più RECENTE in ordine di data, non il primo o l'ultimo dell'elenco restituito dall'API (non ci fidiamo del loro ordine)", async () => {
+    global.fetch = async () =>
+      jsonResponse([{
+        player: { id: 55 },
+        transfers: [
+          { date: "2025-02-03", teams: { in: { name: "AC Milan" }, out: { name: "Fiorentina" } } },
+          { date: "2026-07-02", teams: { in: { name: "Fiorentina" }, out: { name: "Lecce" } } }, // il più recente, ma scritto per PRIMO nell'elenco
+          { date: "2025-08-10", teams: { in: { name: "Lecce" }, out: { name: "Fiorentina" } } }
+        ]
+      }]);
+    const budget = { remaining: 100 };
+    const result = await fetchCurrentClub(55, budget);
+    assert.equal(result.club, "Fiorentina", "deve prendere il trasferimento del 2026-07-02 (il più recente), non quello scritto per primo");
+    assert.equal(result.date, "2026-07-02");
+  });
+  await test("nessun trasferimento trovato: restituisce null invece di rompersi", async () => {
+    global.fetch = async () => jsonResponse([{ player: { id: 56 }, transfers: [] }]);
+    const budget = { remaining: 100 };
+    const result = await fetchCurrentClub(56, budget);
+    assert.equal(result, null);
+  });
+  await test("risposta vuota o malformata: restituisce null invece di rompere il resto del sync", async () => {
+    global.fetch = async () => jsonResponse([]);
+    const budget = { remaining: 100 };
+    const result = await fetchCurrentClub(57, budget);
+    assert.equal(result, null);
+  });
+  await test("un errore di rete isolato restituisce null (il giocatore viene riprovato in un run successivo), non interrompe tutto il sync", async () => {
+    global.fetch = async () => { throw new Error("Connessione di rete interrotta"); };
+    const budget = { remaining: 100 };
+    const result = await fetchCurrentClub(58, budget);
+    assert.equal(result, null);
   });
 
   await test("un giocatore sotto la soglia minima viene escluso dal dataset finale", () => {
