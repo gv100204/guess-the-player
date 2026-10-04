@@ -714,6 +714,22 @@ async function main() {
     assert.equal(final.length, 1, "solo il titolare deve superare la soglia MIN_APPS_TO_INCLUDE");
     assert.equal(final[0].name, "Titolare");
   });
+  await test("la fama (visite Wikipedia) arriva ai giocatori che la hanno; chi non ce l'ha riceve null, mai zero (zero vorrebbe dire 'poco famoso', null vuol dire 'non lo sappiamo')", () => {
+    const players = newPlayersMap();
+    [[7, "Famoso"], [8, "Sconosciuto"]].forEach(([id, name]) => {
+      mergePlayerEntry(players, {
+        player: { id, name, nationality: "Italy" },
+        statistics: [{ team: { name: "Team Z" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: 100, position: "Midfielder" }, goals: { total: 5 } }]
+      }, 2020);
+    });
+    const fameById = new Map([["7", 52000]]); // id come stringa, come nel file wikipedia-views.json
+    const final = buildFinalDataset(players, null, fameById);
+    assert.equal(final.find((p) => p.name === "Famoso").fame, 52000);
+    assert.equal(final.find((p) => p.name === "Sconosciuto").fame, null);
+    // senza il file delle visite, nessuno ha la fama e non si rompe nulla
+    const senza = buildFinalDataset(players, null, null);
+    assert.ok(senza.every((p) => p.fame === null));
+  });
   await test("un giocatore bocciato dal controllo Wikipedia (excludedIds) non compare nel dataset finale, anche se sopra la soglia presenze", () => {
     const players = newPlayersMap();
     mergePlayerEntry(players, {

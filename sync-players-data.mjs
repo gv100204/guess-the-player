@@ -957,11 +957,15 @@ async function saveProgress(progress) {
 // Dataset finale per il gioco (filtrato, nella forma che il prototipo usa già)
 // ---------------------------------------------------------------------------
 
-function buildFinalDataset(playersMap, excludedIds) {
+function buildFinalDataset(playersMap, excludedIds, fameById) {
   const result = [];
   playersMap.forEach((rec) => {
     if (totalApps(rec) < MIN_APPS_TO_INCLUDE) return;
     if (excludedIds && excludedIds.has(rec.id)) return; // bocciato dal controllo Wikipedia (wikipedia-check.json)
+    // Fama = visite medie mensili della pagina Wikipedia (da
+    // fetch-wikipedia-views.mjs). null = non la conosciamo: il gioco non
+    // può assegnare a quel giocatore un livello di difficoltà.
+    const fameRaw = fameById ? fameById.get(String(rec.id)) : null;
     result.push({
       id: slugify(rec.name) + "-" + rec.id, // l'id numerico evita collisioni tra omonimi veri
       name: rec.name,
@@ -970,7 +974,8 @@ function buildFinalDataset(playersMap, excludedIds) {
       isGK: rec.isGK,
       career: finalizeCareer(rec),
       careerComplete: !!rec.careerBackfilled, // false = carriera solo dai campionati tracciati, non ancora arricchita per intero
-      trophies: rec.trophies || []
+      trophies: rec.trophies || [],
+      fame: typeof fameRaw === "number" ? fameRaw : null
     });
   });
   return result;
@@ -1215,7 +1220,23 @@ async function main() {
     // Nessun file: comportamento normale, nessuno escluso.
   }
 
-  const finalPlayers = buildFinalDataset(playersMap, excludedIds);
+  // Se esiste wikipedia-views.json (prodotto a parte da
+  // fetch-wikipedia-views.mjs), ogni giocatore con visite note riceve il
+  // campo "fame", usato dal gioco per i livelli di difficoltà. Senza il
+  // file, nessuno ha la fama e il gioco funziona come prima.
+  let fameById = null;
+  try {
+    const viewsData = JSON.parse(await fs.readFile("./wikipedia-views.json", "utf-8"));
+    fameById = new Map();
+    for (const [id, v] of Object.entries(viewsData.views || {})) {
+      if (v && typeof v.avgMonthlyViews === "number") fameById.set(String(id), v.avgMonthlyViews);
+    }
+    console.log(`\nVisite Wikipedia trovate per ${fameById.size} giocatori (misura di fama per la difficoltà).`);
+  } catch {
+    // Nessun file: nessun giocatore ha la fama, la difficoltà non è disponibile.
+  }
+
+  const finalPlayers = buildFinalDataset(playersMap, excludedIds, fameById);
   await writeOutputFiles(finalPlayers);
 
   const doneTotal = activeLeagues.length * (activeSeasons.to - activeSeasons.from + 1);
