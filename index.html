@@ -328,7 +328,7 @@
       selectAll: "Seleziona tutti", deselectAll: "Deseleziona tutti",
       mustHavePlayed: "Deve aver giocato in...", atLeastOne: "Almeno uno di questi", allOfThese: "Tutti questi",
       minApps: "Presenze minime nel campionato", atLeast1: "Almeno 1",
-      difficulty: "Difficoltà (in base al numero di trofei)",
+      difficulty: "Difficoltà (in base alla fama del giocatore)",
       diffAny: "Qualsiasi", diffEasy: "Facile", diffMedium: "Media", diffHard: "Difficile",
       matchFilters: "Filtri partita", close2: "Fatto",
       filtersSummaryNone: "Nessun campionato selezionato",
@@ -398,7 +398,7 @@
       selectAll: "Select all", deselectAll: "Deselect all",
       mustHavePlayed: "Must have played in...", atLeastOne: "At least one of these", allOfThese: "All of these",
       minApps: "Minimum appearances in the league", atLeast1: "At least 1",
-      difficulty: "Difficulty (based on number of trophies)",
+      difficulty: "Difficulty (based on how famous the player is)",
       diffAny: "Any", diffEasy: "Easy", diffMedium: "Medium", diffHard: "Hard",
       matchFilters: "Match filters", close2: "Done",
       filtersSummaryNone: "No league selected",
@@ -468,7 +468,7 @@
       selectAll: "Tout sélectionner", deselectAll: "Tout désélectionner",
       mustHavePlayed: "Doit avoir joué dans...", atLeastOne: "Au moins un de ceux-ci", allOfThese: "Tous ceux-ci",
       minApps: "Matchs minimum dans le championnat", atLeast1: "Au moins 1",
-      difficulty: "Difficulté (selon le nombre de trophées)",
+      difficulty: "Difficulté (selon la célébrité du joueur)",
       diffAny: "N'importe laquelle", diffEasy: "Facile", diffMedium: "Moyenne", diffHard: "Difficile",
       matchFilters: "Filtres de partie", close2: "Terminé",
       filtersSummaryNone: "Aucun championnat sélectionné",
@@ -538,7 +538,7 @@
       selectAll: "Seleccionar todas", deselectAll: "Deseleccionar todas",
       mustHavePlayed: "Debe haber jugado en...", atLeastOne: "Al menos una de estas", allOfThese: "Todas estas",
       minApps: "Partidos mínimos en la liga", atLeast1: "Al menos 1",
-      difficulty: "Dificultad (según el número de trofeos)",
+      difficulty: "Dificultad (según la fama del jugador)",
       diffAny: "Cualquiera", diffEasy: "Fácil", diffMedium: "Media", diffHard: "Difícil",
       matchFilters: "Filtros de la partida", close2: "Hecho",
       filtersSummaryNone: "Ninguna liga seleccionada",
@@ -608,7 +608,7 @@
       selectAll: "Alle auswählen", deselectAll: "Alle abwählen",
       mustHavePlayed: "Muss gespielt haben in...", atLeastOne: "Mindestens eine davon", allOfThese: "Alle davon",
       minApps: "Mindesteinsätze in der Liga", atLeast1: "Mindestens 1",
-      difficulty: "Schwierigkeit (nach Anzahl der Titel)",
+      difficulty: "Schwierigkeit (nach Bekanntheit des Spielers)",
       diffAny: "Beliebig", diffEasy: "Einfach", diffMedium: "Mittel", diffHard: "Schwer",
       matchFilters: "Spielfilter", close2: "Fertig",
       filtersSummaryNone: "Keine Liga ausgewählt",
@@ -678,7 +678,7 @@
       selectAll: "Selecionar todas", deselectAll: "Desselecionar todas",
       mustHavePlayed: "Deve ter jogado em...", atLeastOne: "Pelo menos uma destas", allOfThese: "Todas estas",
       minApps: "Jogos mínimos na liga", atLeast1: "Pelo menos 1",
-      difficulty: "Dificuldade (consoante o número de troféus)",
+      difficulty: "Dificuldade (consoante a fama do jogador)",
       diffAny: "Qualquer", diffEasy: "Fácil", diffMedium: "Média", diffHard: "Difícil",
       matchFilters: "Filtros da partida", close2: "Concluído",
       filtersSummaryNone: "Nenhuma liga selecionada",
@@ -1322,7 +1322,7 @@
     el.nextStepBtnText();
     el.dossierTag.textContent = contentMode === "career" ? t("careerTag") : t("palmaresTag");
     el.sbSub.textContent = contentMode === "career" ? t("subCareer") : t("subPalmares");
-    el.difficultyRow.style.display = contentMode === "palmares" ? "block" : "none";
+    el.difficultyRow.style.display = "block"; // la difficoltà (fama del giocatore) vale in entrambe le modalità
     el.showTrophyYearsWrap.style.display = contentMode === "palmares" ? "block" : "none";
   }
   el.nextStepBtnText = function(){ el.nextStepBtn.textContent = contentMode === "career" ? t("nextStage") : t("nextClue"); };
@@ -1432,22 +1432,35 @@
 
   function getPool(){
     var ids = Array.from(selectedLeagues);
-    return candidatePool(ids).filter(function(p){
+    var base = candidatePool(ids).filter(function(p){
       function matchesLeague(id){
         return p.career.some(function(c){ return c.league === id && c.apps >= threshold; });
       }
       var leagueOk = (matchMode === "all" && ids.length > 1) ? ids.every(matchesLeague) : ids.some(matchesLeague);
       if (!leagueOk) return false;
       if (!includeIncomplete && p.careerComplete === false) return false;
-      if (contentMode === "palmares"){
-        var n = p.trophies ? p.trophies.length : 0;
-        if (n === 0) return false;
-        if (difficulty === "easy" && n < 5) return false;
-        if (difficulty === "medium" && (n < 3 || n > 4)) return false;
-        if (difficulty === "hard" && n > 2) return false;
-      }
+      if (contentMode === "palmares" && !(p.trophies && p.trophies.length > 0)) return false;
       return true;
     });
+    return applyDifficulty(base, difficulty);
+  }
+
+  // Difficoltà = FAMA del giocatore (visite medie mensili della sua pagina
+  // Wikipedia, campo "fame"), divisa in tre terzi SUL MAZZO già filtrato per
+  // campionati e modalità: facile = il terzo più visto, medio = quello
+  // centrale, difficile = il terzo meno visto. Calcolata sul mazzo e non su
+  // soglie fisse, così i tre livelli restano distinti e di dimensione
+  // simile qualunque campionato si scelga. Chi non ha la fama nota non
+  // appartiene a nessun livello (compare solo con "Qualsiasi").
+  function applyDifficulty(pool, level){
+    if (level !== "easy" && level !== "medium" && level !== "hard") return pool;
+    var ranked = pool.filter(function(p){ return typeof p.fame === "number"; })
+      .sort(function(a, b){ return b.fame - a.fame; }); // dal più famoso al meno famoso
+    var cut1 = Math.round(ranked.length / 3);
+    var cut2 = Math.round(ranked.length * 2 / 3);
+    if (level === "easy") return ranked.slice(0, cut1);
+    if (level === "medium") return ranked.slice(cut1, cut2);
+    return ranked.slice(cut2);
   }
 
   function normalize(s){
