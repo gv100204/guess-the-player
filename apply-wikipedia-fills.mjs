@@ -110,7 +110,10 @@ function clipAgainstExisting(entry, seasonRecords) {
     else if (rTo >= to) to = rFrom; // il conflitto copre la fine: tagliamo la fine
     else to = rFrom; // il conflitto è nel mezzo: tagliamo la coda (stessa semplificazione usata per i prestiti)
   }
-  return from < to ? { from, to } : null;
+  // <= e non <: una tappa di UN SOLO anno (es. 2005-2005) è valida. Bug reale:
+  // con < venivano scartate tutte, come se fossero "coperte del tutto" da un
+  // altro club anche senza nessun conflitto.
+  return from <= to ? { from, to } : null;
 }
 
 function isPlausible(entry) {
@@ -127,9 +130,19 @@ function isPlausible(entry) {
 }
 
 function alreadyHasBlock(seasonRecords, entry) {
-  return (seasonRecords || []).some(
-    (r) => r.blockToYear != null && r.club === entry.team && r.season === entry.from && r.blockToYear === entry.to
-  );
+  // Un blocco dello stesso club che si sovrappone alla tappa di Wikipedia (o
+  // coincide) conta come già presente. Prima il confronto era sugli anni
+  // ESATTI, ma un blocco tagliato per non sovrapporsi a un altro club ha
+  // anni diversi da quelli di Wikipedia: rilanciando lo script veniva
+  // riaggiunto un secondo blocco identico, e i due, fondendosi in uscita,
+  // sommavano le presenze.
+  const club = normClub(entry.team);
+  return (seasonRecords || []).some((r) => {
+    if (r.blockToYear == null || normClub(r.club) !== club) return false;
+    if (r.season === entry.from && r.blockToYear === entry.to) return true;
+    const overlap = Math.min(r.blockToYear, entry.to) - Math.max(r.season, entry.from);
+    return overlap > 0;
+  });
 }
 
 async function main() {

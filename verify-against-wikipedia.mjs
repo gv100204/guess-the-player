@@ -55,13 +55,16 @@
 
 import fs from "node:fs/promises";
 
-const rawArg = process.argv[2] || "15";
-const RAW_FILE = process.argv[3] || "./raw-players.json";
-const CHECK_FILE = process.argv[4] || "./wikipedia-check.json";
+const posArgs = process.argv.slice(2).filter((a) => !a.startsWith("--"));
+const rawArg = posArgs[0] || "15";
+const RAW_FILE = posArgs[1] || "./raw-players.json";
+const CHECK_FILE = posArgs[2] || "./wikipedia-check.json";
+const APPLY_FLAG = process.argv.includes("--apply");
 const FULL_SCAN = rawArg.toLowerCase() === "all";
 const RECOMPUTE = rawArg.toLowerCase() === "recompute";
 const REVALIDATE = rawArg.toLowerCase() === "revalidate";
 const REVERDICT = rawArg.toLowerCase() === "reverdict";
+const PRUNE_BLOCKS = rawArg.toLowerCase() === "prune-blocks";
 const SAMPLE_SIZE = FULL_SCAN ? Infinity : (Number(rawArg) || 15);
 const REQUEST_DELAY_MS = 4000; // alzato ancora da 2000ms: i 429 restavano frequenti anche così in un run prolungato
 const USER_AGENT = "guess-the-player-data-check/1.0 (uso personale, non commerciale)";
@@ -666,26 +669,85 @@ function isReserveClub(normName) {
   return / (ii|iii|c)$/.test(normName);
 }
 
-function isCovered(wikiEntry, seasonRecords) {
+// Predicato: "questa riga nostra è dello stesso club della tappa Wikipedia?"
+// (stessa distinzione prima squadra / riserve di sempre).
+function makeSameClub(wikiEntry) {
   const wikiClub = normClub(wikiEntry.team);
-  if (!wikiClub) return false;
-  const wikiIsReserve = isReserveClub(wikiClub);
-  const hasSeasonNear = (year) => seasonRecords.some((r) => {
+  const wikiIsReserve = wikiClub ? isReserveClub(wikiClub) : false;
+  return (r) => {
+    if (!wikiClub) return false;
     const ourClub = normClub(r.club);
     if (!ourClub || ourClub === "squadra sconosciuta") return false;
     if (isReserveClub(ourClub) !== wikiIsReserve) return false;
-    const nameMatches = ourClub.includes(wikiClub) || wikiClub.includes(ourClub);
-    if (!nameMatches) return false;
-    return Math.abs(r.season - year) <= 1;
+    return ourClub.includes(wikiClub) || wikiClub.includes(ourClub);
+  };
+}
+
+// Criterio sulle PRESENZE: le righe NOSTRE (non i blocchi, che sono già dati
+// di Wikipedia) dello stesso club, nella finestra della tappa, coprono le
+// presenze dichiarate da Wikipedia? Se sì, la tappa è completa anche quando
+// Wikipedia ne estende gli anni (parent club durante i prestiti, anni di
+// panchina o infortunio senza una riga nostra: api-football non registra
+// stagioni senza presenze). Casi reali: Schmelzer, Dortmund 2008-2022: nostre
+// 258 = Wikipedia 258. Memushaj, Carpi 2011-12: Wikipedia 31, nostre 0 ->
+// buco vero. Finestra [from-1, to]: così il secondo periodo di uno stesso
+// club (Carpi 2013) non "copre" per sbaglio il primo (Carpi 2011-12).
+function appsCovered(wikiEntry, seasonRecords) {
+  const apps = wikiEntry.apps;
+  if (!(apps > 0)) return false;
+  const sameClub = makeSameClub(wikiEntry);
+  let ours = 0;
+  for (const r of seasonRecords) {
+    if (r.blockToYear != null) continue;
+    if (!sameClub(r)) continue;
+    if (r.season < wikiEntry.from - 1 || r.season > wikiEntry.to) continue;
+    ours += r.apps || 0;
+  }
+  return ours > 0 && (ours >= apps * 0.8 || apps - ours <= 3);
+}
+
+function isCovered(wikiEntry, seasonRecords) {
+  const wikiClub = normClub(wikiEntry.team);
+  if (!wikiClub) return false;
+  if (appsCovered(wikiEntry, seasonRecords)) return true;
+  const sameClub = makeSameClub(wikiEntry);
+  const hasSeasonNear = (year) => seasonRecords.some((r) => {
+    if (!sameClub(r)) return false;
+    // Un blocco storico (già aggiunto da Wikipedia, vedi
+    // apply-wikipedia-fills.mjs) copre TUTTO il suo intervallo, da season
+    // a blockToYear - non solo l'anno di inizio.
+    const from = r.season;
+    const to = r.blockToYear != null ? r.blockToYear : r.season;
+    return year >= from - 1 && year <= to + 1;
   });
-  // Bug reale trovato: un intervallo Wikipedia lungo (es. "AC Milan
-  // 1998-2016", un contratto con prestiti altrove nel mezzo mai spezzato
-  // da Wikipedia) veniva considerato "coperto" se anche una SOLA nostra
-  // stagione cadeva ovunque dentro quell'intervallo - così mancava
-  // l'intero primo decennio (1998-2007) di Abbiati al Milan, mai segnalato
-  // come buco perché avevamo già il 2008-2015. Ora serve avere dati
-  // nostri vicino SIA all'inizio SIA alla fine dell'intervallo dichiarato.
+  // Serve avere dati nostri vicino SIA all'inizio SIA alla fine
+  // dell'intervallo dichiarato (caso Abbiati: Milan 1998-2016 con solo
+  // 2008-2015 nostro non è coperto).
   return hasSeasonNear(wikiEntry.from) && hasSeasonNear(wikiEntry.to);
+}
+
+// Blocchi storici ridondanti: un blocco aggiunto da Wikipedia che duplica
+// una tappa già coperta dalle presenze NOSTRE dello stesso club (es. Hakimi:
+// blocco "Real Madrid 9 presenze" accanto alla riga nostra "Real Madrid 9").
+// La tappa originale si ricava dalla carriera salvata di Wikipedia, perché il
+// blocco può essere stato tagliato e porta comunque le presenze dell'intera
+// tappa. Funzione pura: restituisce cosa toglierebbe, non modifica nulla.
+function findRedundantBlocks(players, careers) {
+  const result = [];
+  for (const pl of players) {
+    const records = pl.seasonRecords || [];
+    const isBlock = (r) => r.blockToYear != null && r.source === "wikipedia";
+    if (!records.some(isBlock)) continue;
+    const entries = (careers.get(String(pl.id))?.entries) || [];
+    records.forEach((r, idx) => {
+      if (!isBlock(r)) return;
+      const club = normClub(r.club);
+      const orig = entries.find((e) => normClub(e.team) === club && e.from <= r.blockToYear && e.to >= r.season);
+      const stage = orig || { team: r.club, from: r.season, to: r.blockToYear, apps: r.apps };
+      if (appsCovered(stage, records)) result.push({ player: pl, index: idx, block: r, stage });
+    });
+  }
+  return result;
 }
 
 // Calcola il verdetto secondo la regola concordata: fallisce se manca più
@@ -700,7 +762,13 @@ function verdictFromMissing(missing, totalEntries) {
   return { fail, missing, totalEntries, missingFraction };
 }
 
-function computeVerdict(wikiEntries, seasonRecords) {
+function computeVerdict(allWikiEntries, seasonRecords) {
+  // Intervalli assurdi (0-2007, 2019-2013, 1850-1998) sono errori di lettura
+  // della tabella Wikipedia, non buchi veri: non possono essere riempiti e
+  // non devono far fallire il giocatore.
+  const plausibleEntry = (e) =>
+    Number.isFinite(e.from) && Number.isFinite(e.to) && e.from >= 1900 && e.to >= e.from && e.to - e.from <= 40;
+  const wikiEntries = allWikiEntries.filter(plausibleEntry);
   if (wikiEntries.length === 0) return null; // impossibile giudicare, niente da confrontare
   const lastIdx = wikiEntries.length - 1;
 
@@ -842,6 +910,33 @@ async function main() {
     await saveCheckFile(checkData);
     console.log(`\nRicalcolati: ${Object.keys(checkData.checked).length}`);
     console.log(`Verdetto cambiato per: ${changed}`);
+    return;
+  }
+
+  if (PRUNE_BLOCKS) {
+    // Toglie i blocchi storici che duplicano tappe già coperte dalle presenze
+    // NOSTRE (vedi findRedundantBlocks). Senza rete. Anteprima di default:
+    // scrive solo con --apply, dopo una copia di sicurezza di raw-players.json.
+    const rawData = JSON.parse(await fs.readFile(RAW_FILE, "utf-8"));
+    const careers = await loadCareers();
+    const redundant = findRedundantBlocks(rawData.players, careers);
+    const byPlayer = new Map();
+    for (const item of redundant) {
+      if (!byPlayer.has(item.player)) byPlayer.set(item.player, new Set());
+      byPlayer.get(item.player).add(item.index);
+    }
+    console.log(`Blocchi ridondanti: ${redundant.length} (su ${byPlayer.size} giocatori)`);
+    redundant.slice(0, 12).forEach((x) =>
+      console.log(`   ${x.player.name}: ${x.block.club} ${x.block.season}->${x.block.blockToYear} (${x.block.apps ?? "?"} pres)`));
+    if (!APPLY_FLAG) {
+      console.log("\nAnteprima: NON è stato scritto nulla. Per applicare: node verify-against-wikipedia.mjs prune-blocks --apply");
+      return;
+    }
+    await fs.copyFile(RAW_FILE, "./raw-players.prima-prune-blocchi.json");
+    for (const [pl, idxs] of byPlayer) pl.seasonRecords = pl.seasonRecords.filter((_, i) => !idxs.has(i));
+    await fs.writeFile(RAW_FILE, JSON.stringify(rawData), "utf-8");
+    console.log(`\nScritto ${RAW_FILE}. Copia di sicurezza: raw-players.prima-prune-blocchi.json (non va aggiunta a Git).`);
+    console.log("Ora rilancia: node verify-against-wikipedia.mjs reverdict");
     return;
   }
 
