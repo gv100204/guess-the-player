@@ -993,7 +993,7 @@ function buildFinalDataset(playersMap, excludedIds, fameById) {
       career: finalizeCareer(rec),
       careerComplete: !!rec.careerBackfilled, // false = carriera solo dai campionati tracciati, non ancora arricchita per intero
       trophies: rec.trophies || [],
-      fame: typeof fameRaw === "number" ? fameRaw : null
+      fame: typeof fameRaw === "number" && fameRaw > 0 ? fameRaw : null // 0 visite = quasi certamente un reindirizzamento, non un giocatore ignoto: meglio "fama sconosciuta"
     });
   });
   return result;
