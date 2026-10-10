@@ -65,6 +65,7 @@ const RECOMPUTE = rawArg.toLowerCase() === "recompute";
 const REVALIDATE = rawArg.toLowerCase() === "revalidate";
 const REVERDICT = rawArg.toLowerCase() === "reverdict";
 const PRUNE_BLOCKS = rawArg.toLowerCase() === "prune-blocks";
+const SUSPICIOUS = rawArg.toLowerCase() === "suspicious";
 const SAMPLE_SIZE = FULL_SCAN ? Infinity : (Number(rawArg) || 15);
 const REQUEST_DELAY_MS = 4000; // alzato ancora da 2000ms: i 429 restavano frequenti anche così in un run prolungato
 const USER_AGENT = "guess-the-player-data-check/1.0 (uso personale, non commerciale)";
@@ -233,7 +234,7 @@ function namesAreCloseVariant(fullName, title) {
 // Wikipedia è scostato di un solo anno (vedi isTrustworthyMatch).
 function playerClubSet(p) {
   const clubs = new Set();
-  (p.seasonRecords || []).forEach((r) => { if (r.club) clubs.add(normClub(r.club)); });
+  (p.seasonRecords || []).forEach((r) => { if (r.club && r.blockToYear == null) clubs.add(normClub(r.club)); });
   return clubs;
 }
 
@@ -258,7 +259,30 @@ function fullNameFieldMatchesExactly(query, wikitext) {
   return fullnameWords.every((w, i) => w === queryWords[i]);
 }
 
-function isTrustworthyMatch(query, title, wikitext, expectedBirthYear, requireNameMatch = true, fullPlayerName = null, ourClubs = null) {
+// Almeno uno dei club di Wikipedia coincide con uno dei nostri? Confronto
+// per uguaglianza, o per inclusione solo se entrambi i nomi sono lunghi
+// abbastanza da non dare falsi positivi ("as" dentro "casa").
+// Toglie numeri e sigle corte ("fc 08 homburg" -> "homburg"), così le
+// varianti di nome dello stesso club (FC 08 Homburg / FC Homburg) coincidono.
+function squashClub(n) {
+  return n.split(" ").filter((t) => t.length > 3 && !/\d/.test(t)).join(" ");
+}
+function clubsOverlap(wikiTeamsNorm, ourClubs) {
+  const same = (a, b) => a === b || (a.length >= 4 && b.length >= 4 && (a.includes(b) || b.includes(a)));
+  for (const w of wikiTeamsNorm) {
+    if (!w) continue;
+    const sw = squashClub(w);
+    for (const c of ourClubs) {
+      if (!c) continue;
+      if (same(w, c)) return true;
+      const sc = squashClub(c);
+      if (sw && sc && same(sw, sc)) return true;
+    }
+  }
+  return false;
+}
+
+function isTrustworthyMatch(query, title, wikitext, expectedBirthYear, requireNameMatch = true, fullPlayerName = null, ourClubs = null, requireSharedClub = false) {
   if (requireNameMatch) {
     const nameOk = titleLooksRelated(query, title) || fullNameFieldMatches(query, wikitext);
     if (!nameOk) {
@@ -294,6 +318,25 @@ function isTrustworthyMatch(query, title, wikitext, expectedBirthYear, requireNa
       }
       if (!(oneYearOff && exactName && sharedClub)) return false;
     }
+  }
+  // Per i candidati rischiosi (ricerca a testo pieno, nomi corti) nome e anno
+  // non bastano: la carriera della pagina deve condividere almeno un club
+  // con i NOSTRI dati. Caso reale: a Steven Nzonzi era stata abbinata la
+  // pagina di un altro "Stefan", con club brasiliani mai visti da lui, e la
+  // sua carriera ne era uscita sporcata di blocchi non suoi.
+  // Il controllo scatta anche quando l'anno di nascita non può garantire
+  // nulla (lo ignoriamo noi o la pagina non ne ha uno): caso Danny Simpson,
+  // agganciato a una pagina "early footballer" senza data di nascita.
+  const yearCannotVouch = !expectedBirthYear || !extractBirthYear(wikitext);
+  // Identità forte: nome completo identico nel campo della pagina E anno di
+  // nascita identico. In quel caso non serve il club in comune (caso Charles
+  // Marcelo da Silva: i nostri dati hanno solo "squadra sconosciuta", ma la
+  // pagina è senza dubbio la sua).
+  const pageYear = extractBirthYear(wikitext);
+  const strongIdentity = !!(expectedBirthYear && pageYear === expectedBirthYear && fullPlayerName && fullNameFieldMatchesExactly(fullPlayerName, wikitext));
+  if (!strongIdentity && (requireSharedClub || yearCannotVouch) && ourClubs && ourClubs.size > 0) {
+    const wikiTeams = parseSeniorCareer(wikitext).map((e) => normClub(e.team));
+    if (!clubsOverlap(wikiTeams, ourClubs)) return false;
   }
   return true;
 }
@@ -726,6 +769,25 @@ function isCovered(wikiEntry, seasonRecords) {
   return hasSeasonNear(wikiEntry.from) && hasSeasonNear(wikiEntry.to);
 }
 
+// Abbinamenti sospetti: giocatori la cui carriera Wikipedia salvata NON
+// condivide nessun club con le righe NOSTRE (non i blocchi, che vengono da
+// Wikipedia stessa e si confermerebbero da soli). Quasi sempre vuol dire che
+// la pagina è di un'altra persona. Funzione pura.
+function findSuspiciousMatches(players, careers) {
+  const out = [];
+  for (const pl of players) {
+    const career = careers.get(String(pl.id));
+    if (!career) continue;
+    const ourClubs = playerClubSet(pl);
+    if (ourClubs.size === 0) continue;
+    const entries = (career.entries || []).filter((e) => Number.isFinite(e.from) && e.team);
+    if (entries.length === 0) continue;
+    if (clubsOverlap(entries.map((e) => normClub(e.team)), ourClubs)) continue;
+    out.push({ player: pl, career, entries, ourClubs });
+  }
+  return out;
+}
+
 // Blocchi storici ridondanti: un blocco aggiunto da Wikipedia che duplica
 // una tappa già coperta dalle presenze NOSTRE dello stesso club (es. Hakimi:
 // blocco "Real Madrid 9 presenze" accanto alla riga nostra "Real Madrid 9").
@@ -869,6 +931,26 @@ async function loadCareers() {
 // cumulativi tra un lancio e l'altro, con i dati utili per studiarli
 // (anno di nascita, nazionalità, titolo trovato). Prima venivano scritti
 // solo a fine lancio completo, quindi ogni Ctrl+C li faceva sparire.
+const MANUAL_LINKS_FILE = "./wikipedia-manual-links.json";
+// { "id giocatore": "Titolo pagina" oppure URL completo di Wikipedia }.
+// Valori vuoti ignorati. L'URL viene ridotto al titolo.
+async function loadManualLinks() {
+  try {
+    const raw = JSON.parse(await fs.readFile(MANUAL_LINKS_FILE, "utf-8"));
+    const out = {};
+    for (const [id, v] of Object.entries(raw)) {
+      let t = String(v || "").trim();
+      if (!t) continue;
+      const m = t.match(/\/wiki\/([^?#]+)/);
+      if (m) t = decodeURIComponent(m[1]);
+      out[id] = t.replace(/_/g, " ");
+    }
+    return out;
+  } catch {
+    return {};
+  }
+}
+
 const UNRESOLVED_FILE = "./wikipedia-unresolved.json";
 
 async function loadUnresolvedFile() {
@@ -910,6 +992,47 @@ async function main() {
     await saveCheckFile(checkData);
     console.log(`\nRicalcolati: ${Object.keys(checkData.checked).length}`);
     console.log(`Verdetto cambiato per: ${changed}`);
+    return;
+  }
+
+  if (SUSPICIOUS) {
+    // Senza rete. Anteprima di default; con --apply, per ogni giocatore
+    // sospetto toglie i blocchi Wikipedia, il nome pubblico, il verdetto e la
+    // carriera salvata, così la scansione successiva lo ricontrolla da zero
+    // con il controllo del club in comune.
+    const rawData = JSON.parse(await fs.readFile(RAW_FILE, "utf-8"));
+    const careers = await loadCareers();
+    const sus = findSuspiciousMatches(rawData.players, careers);
+    console.log(`Carriere Wikipedia senza nessun club in comune con i nostri dati: ${sus.length} (su ${careers.size})\n`);
+    sus.slice(0, 15).forEach((x) => {
+      const ours = [...x.ourClubs].slice(0, 4).join(", ");
+      const theirs = [...new Set(x.entries.map((e) => e.team))].slice(0, 4).join(", ");
+      console.log(`  ${x.player.name} -> pagina "${x.career.wikipediaTitle}"\n      nostri: ${ours}\n      Wikipedia: ${theirs}`);
+    });
+    if (!APPLY_FLAG) {
+      console.log("\nAnteprima: NON è stato scritto nulla. Per applicare: node verify-against-wikipedia.mjs suspicious --apply");
+      return;
+    }
+    const ids = new Set(sus.map((x) => String(x.player.id)));
+    await fs.copyFile(RAW_FILE, "./raw-players.prima-sospetti.json");
+    let blocksRemoved = 0;
+    for (const x of sus) {
+      const before = x.player.seasonRecords.length;
+      x.player.seasonRecords = x.player.seasonRecords.filter((r) => !(r.blockToYear != null && r.source === "wikipedia"));
+      blocksRemoved += before - x.player.seasonRecords.length;
+      delete x.player.displayName;
+      delete checkData.checked[String(x.player.id)];
+    }
+    await fs.writeFile(RAW_FILE, JSON.stringify(rawData), "utf-8");
+    await saveCheckFile(checkData);
+    const careersText = await fs.readFile("./wikipedia-careers.jsonl", "utf-8");
+    const kept = careersText.split("\n").filter((line) => {
+      if (!line.trim()) return true;
+      try { return !ids.has(String(JSON.parse(line).id)); } catch { return true; }
+    });
+    await fs.writeFile("./wikipedia-careers.jsonl", kept.join("\n"), "utf-8");
+    console.log(`\nPuliti ${sus.length} giocatori (blocchi tolti: ${blocksRemoved}). Copia di sicurezza: raw-players.prima-sospetti.json (non va aggiunta a Git).`);
+    console.log("Ora lancia: node verify-against-wikipedia.mjs all   (li ricontrolla da zero)");
     return;
   }
 
@@ -1049,7 +1172,14 @@ async function main() {
   const players = raw.players || [];
 
   const alreadyChecked = Object.keys(checkData.checked).length;
-  const candidates = pickCandidates(players, checkData.checked);
+  // Link inseriti a mano (wikipedia-manual-links.json: { "id": "Titolo o URL" }).
+  // Chi è già nei "non risolti" NON viene più riprovato a ogni scansione,
+  // a meno che non abbia un link manuale o si usi --retry-unresolved.
+  const manualLinks = await loadManualLinks();
+  const unresolvedNow = (await loadUnresolvedFile()).unresolved;
+  const retryUnresolved = process.argv.includes("--retry-unresolved");
+  const candidates = pickCandidates(players, checkData.checked)
+    .filter((p) => manualLinks[p.id] || retryUnresolved || !unresolvedNow[p.id]);
 
   console.log(`Già controllati in precedenza: ${alreadyChecked}`);
   console.log(`Da controllare in questo lancio: ${candidates.length}${FULL_SCAN ? " (scansione completa)" : ""}\n`);
@@ -1102,9 +1232,22 @@ async function main() {
     processedIdx++;
     try {
       let title, wikitext;
-      const combined = await searchAndFetchWikitext(p.name);
-      await sleep(REQUEST_DELAY_MS);
-      if (combined.title && combined.wikitext) {
+      const manualTitle = manualLinks[p.id] || null;
+      const combined = manualTitle ? { title: null, wikitext: null } : await searchAndFetchWikitext(p.name);
+      if (manualTitle) {
+        title = manualTitle;
+        wikitext = await fetchWikitext(title);
+        await sleep(REQUEST_DELAY_MS);
+        if (!wikitext) {
+          console.log(`! ${p.name}: il link manuale "${manualTitle}" non porta a una pagina leggibile, salto`);
+          continue;
+        }
+      } else {
+        await sleep(REQUEST_DELAY_MS);
+      }
+      if (manualTitle) {
+        // pagina scelta a mano: ci fidiamo, nessun controllo automatico sotto
+      } else if (combined.title && combined.wikitext) {
         title = combined.title;
         wikitext = combined.wikitext;
       } else {
@@ -1130,7 +1273,7 @@ async function main() {
       // disponibile) - bug reale: "José" da solo si agganciava sempre a
       // "Josue (footballer, born 1987)", un'altra persona con 10 tappe
       // proprie, accettata per errore solo perché il numero era alto.
-      if (wikiEntries.length > 0 && !isTrustworthyMatch(p.name, title, wikitext, p.birthYear, !p.birthYear, p.name, playerClubSet(p))) {
+      if (!manualTitle && wikiEntries.length > 0 && !isTrustworthyMatch(p.name, title, wikitext, p.birthYear, !p.birthYear, p.name, playerClubSet(p), true)) {
         const foundFullName = extractFullNameField(wikitext);
         const foundBirthYear = extractBirthYear(wikitext);
         console.log(`  (${p.name}: pagina trovata (${title}) non sembra la persona giusta, la scarto e riprovo...)`);
@@ -1151,7 +1294,7 @@ async function main() {
         wikitext = await fetchWikitext(title);
         await sleep(REQUEST_DELAY_MS);
         wikiEntries = parseSeniorCareer(wikitext);
-        if (wikiEntries.length > 0 && !isTrustworthyMatch(p.name, title, wikitext, p.birthYear, !p.birthYear, p.name, playerClubSet(p))) {
+        if (!manualTitle && wikiEntries.length > 0 && !isTrustworthyMatch(p.name, title, wikitext, p.birthYear, !p.birthYear, p.name, playerClubSet(p), true)) {
           wikiEntries = [];
         }
       }
@@ -1196,7 +1339,7 @@ async function main() {
           const candidateWikitext = await fetchWikitext(candidateTitle);
           await sleep(REQUEST_DELAY_MS);
           const candidateEntries = parseSeniorCareer(candidateWikitext);
-          const trustworthy = candidateEntries.length > 0 && isTrustworthyMatch(p.name, candidateTitle, candidateWikitext, p.birthYear, requireNameForFullText, p.name, playerClubSet(p));
+          const trustworthy = candidateEntries.length > 0 && isTrustworthyMatch(p.name, candidateTitle, candidateWikitext, p.birthYear, requireNameForFullText, p.name, playerClubSet(p), true);
           if (trustworthy && candidateEntries.length > bestEntries.length) {
             bestEntries = candidateEntries;
             bestTitle = candidateTitle;
@@ -1216,7 +1359,7 @@ async function main() {
             const candidateWikitext = await fetchWikitext(shortTitle);
             await sleep(REQUEST_DELAY_MS);
             const candidateEntries = parseSeniorCareer(candidateWikitext);
-            const trustworthy = candidateEntries.length > 0 && isTrustworthyMatch(shortName, shortTitle, candidateWikitext, p.birthYear, true, p.name, playerClubSet(p));
+            const trustworthy = candidateEntries.length > 0 && isTrustworthyMatch(shortName, shortTitle, candidateWikitext, p.birthYear, true, p.name, playerClubSet(p), true);
             if (trustworthy && candidateEntries.length > bestEntries.length) {
               bestEntries = candidateEntries;
               bestTitle = shortTitle;

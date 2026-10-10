@@ -186,6 +186,23 @@ function currentSeasonYear(now = new Date()) {
   return month >= 7 ? now.getFullYear() : now.getFullYear() - 1;
 }
 
+// Un trasferimento conta come "squadra attuale" solo se recente: dalla
+// stagione precedente in poi. Altrimenti (es. Meggiorini, ritirato) la riga
+// finirebbe per allungare la carriera fino a oggi.
+function isRecentTransfer(date, curSeason) {
+  const y = new Date(date).getFullYear();
+  return Number.isFinite(y) && y >= curSeason - 1;
+}
+
+// L'API a volte restituisce il nome del giocatore al posto del club
+// (es. "Dzeko Edin", "Dybala Paulo"): se tutte le parole del "club" sono
+// parole del nome del giocatore, lo scartiamo.
+function clubLooksLikePlayerName(club, playerName) {
+  const norm = (x) => String(x || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+  const c = norm(club), n = new Set(norm(playerName));
+  return c.length > 0 && c.every((w) => n.has(w));
+}
+
 /**
  * Recupera il club ATTUALE di un giocatore dall'endpoint /transfers,
  * prendendo il trasferimento più recente in ordine di DATA (non ci
@@ -582,7 +599,8 @@ function finalizeCareer(rec) {
       }
       return true;
     })();
-    const isContinuation = last && !last.isBlock && normClub(last.club) === normClub(r.club) && r.season > last.maxYear && noOtherClubInGap;
+    const isContinuation = last && !last.isBlock && normClub(last.club) === normClub(r.club) && r.season > last.maxYear && noOtherClubInGap
+      && !(r.source === "transfers" && r.season > last.maxYear + 1); // la riga "squadra attuale" non deve colmare anni vuoti: ritirato = nessun salto fino a oggi
     if (isContinuation) {
       last.maxYear = r.season;
       last.apps += r.apps;
@@ -1164,13 +1182,17 @@ async function main() {
     if (budget.remaining <= 0) { stoppedForBudget = true; break; }
     if (!rec.careerBackfilled) continue;
     if (totalApps(rec) < MIN_APPS_TO_INCLUDE) continue;
-    const hasCurrentSeason = (rec.seasonRecords || []).some((r) => r.season === curSeason);
+    // Pulizia di righe "squadra attuale" sbagliate di un lancio precedente:
+    // trasferimento troppo vecchio (giocatore ritirato, caso Meggiorini) o
+    // "club" che in realtà è il nome del giocatore (casi Dzeko, Dybala).
+    rec.seasonRecords = (rec.seasonRecords || []).filter((r) => r.source !== "transfers" || (isRecentTransfer(r.transferDate, curSeason) && !clubLooksLikePlayerName(r.club, rec.name)));
+    const hasCurrentSeason = rec.seasonRecords.some((r) => r.season === curSeason);
     if (hasCurrentSeason) continue;
     if (rec.currentClubCheckedSeason === curSeason) continue; // già controllato per questa stagione, anche se non trovato nulla
     const result = await fetchCurrentClub(rec.id, budget);
     rec.currentClubCheckedSeason = curSeason;
     currentClubChecked++;
-    if (result) {
+    if (result && isRecentTransfer(result.date, curSeason) && !clubLooksLikePlayerName(result.club, rec.name)) {
       rec.seasonRecords.push({
         season: curSeason,
         club: result.club,
@@ -1269,6 +1291,8 @@ export {
   sweepLeagueSeason,
   fetchFullCareer,
   fetchCurrentClub,
+  isRecentTransfer,
+  clubLooksLikePlayerName,
   currentSeasonYear,
   fetchTrophies,
   buildFinalDataset,
