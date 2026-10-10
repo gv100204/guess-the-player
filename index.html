@@ -1542,7 +1542,7 @@
         } else {
           sub = t("appsGoals")(c.apps, c.goals);
         }
-        return { left: c.years, title: c.club, sub: sub };
+        return { left: String(c.years).replace(/^(\d{4})\s*[\u2013-]\s*\1$/, "$1"), title: c.club, sub: sub };
       });
     }
     // Ordine cronologico: il trofeo vinto per la prima volta più presto va
