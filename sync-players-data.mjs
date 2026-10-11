@@ -1119,6 +1119,19 @@ async function main() {
     }
   }
 
+  // SYNC_BUILD_ONLY=1: nessuna chiamata ad API-Football. Si ricostruiscono
+  // solo i file del gioco da raw-players.json, wikipedia-check.json e
+  // wikipedia-views.json già nel repository. Serve a pubblicare le modifiche
+  // fatte a mano (pulizie, verdetti, fama) senza consumare quota API e
+  // senza bisogno dell'abbonamento. Mettere il budget a zero fa saltare da
+  // sé tutti i passi che chiamano l'API.
+  const buildOnly = process.env.SYNC_BUILD_ONLY === "1";
+  if (buildOnly) {
+    budget.remaining = 0;
+    callsAtLastCheckpoint = 0;
+    console.log("MODALITÀ SOLO RICOSTRUZIONE: nessuna chiamata ad API-Football, si rigenera il gioco dai dati già salvati.\n");
+  }
+
   console.log("Carico progresso e dati grezzi salvati dai run precedenti...");
   const playersMap = await loadRawPlayers();
   const progress = await loadProgress();
@@ -1263,9 +1276,11 @@ async function main() {
   await writeOutputFiles(finalPlayers);
 
   const doneTotal = activeLeagues.length * (activeSeasons.to - activeSeasons.from + 1);
-  console.log(`\nChiamate usate in questo run: ${MAX_CALLS_PER_RUN - budget.remaining} di ${MAX_CALLS_PER_RUN}`);
+  console.log(`\nChiamate usate in questo run: ${buildOnly ? 0 : MAX_CALLS_PER_RUN - budget.remaining} di ${MAX_CALLS_PER_RUN}`);
   console.log(`Combinazioni campionato-stagione completate: ${progress.completed.size} di ${doneTotal}`);
-  if (progress.completed.size >= doneTotal) {
+  if (buildOnly) {
+    console.log("Ricostruzione completata: nessun dato scaricato da API-Football.");
+  } else if (progress.completed.size >= doneTotal) {
     console.log("Sincronizzazione completa per la finestra di stagioni configurata.");
   } else if (stoppedForBudget) {
     console.log("Budget di questo run esaurito prima di finire tutto: il prossimo lancio riprende da dove si è fermato.");

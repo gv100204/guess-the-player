@@ -1,65 +1,55 @@
 # Percorso nel repository: .github/workflows/sync.yml
 #
-# Gira ogni giorno (e puoi anche lanciarlo a mano dalla scheda "Actions" del
-# repository, grazie a workflow_dispatch): esegue prima i test, poi spazzola
-# campionati e stagioni ancora da fare (riprendendo da dove si era fermato
-# l'ultima volta, grazie a raw-players.json e sync-progress.json che questo
-# workflow salva su main a ogni run), poi pubblica il contenuto di ./output/
-# (players-data.json, i file per campionato, manifest.json, e index.html -
-# il gioco stesso, copiato qui da indovina-calciatore.html prima di
-# pubblicare) su GitHub Pages - che a quel punto è l'hosting statico che
-# l'app scarica E la pagina del gioco stesso.
+# DUE MODALITÀ
 #
-# Con un roster grande, la prima sincronizzazione completa può richiedere
-# diversi run (giorni): è normale, e il progresso non si perde tra un run e
-# l'altro. Controlla nei log la riga "Combinazioni campionato-stagione
-# completate: X di Y" per capire quanto manca.
+# 1) SOLO RICOSTRUZIONE (predefinita, non usa API-Football e non serve
+#    l'abbonamento): rigenera il gioco da raw-players.json,
+#    wikipedia-check.json e wikipedia-views.json già nel repository e lo
+#    pubblica. Parte da sola ogni volta che fai push di uno di quei file, del
+#    gioco o dello script, e puoi lanciarla a mano da "Run workflow".
 #
-# Prima di usarlo:
-# 1. Nel repository su GitHub: Settings > Secrets and variables > Actions >
-#    "New repository secret" > nome API_FOOTBALL_KEY, valore la tua chiave.
-# 2. Settings > Pages > Source: "Deploy from a branch", branch "gh-pages".
-#    (la branch gh-pages viene creata automaticamente al primo run di questo
-#    workflow, non devi crearla a mano)
-# 3. Dopo il primo run, i file saranno su:
-#    https://<tuo-utente>.github.io/<nome-repo>/manifest.json
-#    https://<tuo-utente>.github.io/<nome-repo>/seriea.json  ... ecc.
-#    https://<tuo-utente>.github.io/<nome-repo>/  (il gioco stesso)
+# 2) SCARICA DA API-FOOTBALL: la vecchia sincronizzazione, da lanciare a mano
+#    scegliendo "scarica-da-api" in "Run workflow". Serve la chiave
+#    API_FOOTBALL_KEY e un abbonamento attivo.
+#
+# Non c'è più nessun lancio programmato: se un giorno vuoi riattivare gli
+# aggiornamenti automatici, riaggiungi sotto "on:" un blocco "schedule:" con
+# i cron di prima (0 0, 6, 12, 18 * * *).
 
 name: Sync players data
 
 on:
-  schedule:
-    # Con il tetto di 12.000 chiamate/run (sicuro sotto il limite di 6 ore
-    # per job di GitHub Actions, calcolato sul tasso REALE osservato di
-    # ~1,37s/chiamata, non solo sulla pausa teorica) e il piano Ultra
-    # (75.000/giorno), quattro run/giorno arrivano a ~48.000/giorno - più
-    # vicino al vero limite. La protezione "concurrency" qui sotto impedisce
-    # comunque le sovrapposizioni anche se un run durasse più del previsto.
-    - cron: "0 0 * * *"
-    - cron: "0 6 * * *"
-    - cron: "0 12 * * *"
-    - cron: "0 18 * * *"
-  workflow_dispatch: # bottone "Run workflow" manuale su GitHub
+  push:
+    branches: [main]
+    paths:
+      - "raw-players.json"
+      - "wikipedia-check.json"
+      - "wikipedia-views.json"
+      - "indovina-calciatore.html"
+      - "sync-players-data.mjs"
+  workflow_dispatch:
     inputs:
+      modalita:
+        description: "solo-ricostruzione = nessuna chiamata API | scarica-da-api = sincronizzazione completa (serve l'abbonamento)"
+        type: choice
+        options:
+          - solo-ricostruzione
+          - scarica-da-api
+        default: solo-ricostruzione
       leagues:
-        description: 'Solo per test: id campionati separati da virgola (es. "seriea"). Vuoto = tutti quelli configurati.'
+        description: 'Solo per test (scarica-da-api): id campionati separati da virgola (es. "seriea"). Vuoto = tutti.'
         required: false
         default: ""
       seasonFrom:
-        description: "Solo per test: prima stagione da spazzolare (es. 2015). Vuoto = quella configurata nello script."
+        description: "Solo per test (scarica-da-api): prima stagione da spazzolare. Vuoto = quella configurata."
         required: false
         default: ""
       seasonTo:
-        description: "Solo per test: ultima stagione da spazzolare (es. 2016). Vuoto = quella configurata nello script."
+        description: "Solo per test (scarica-da-api): ultima stagione da spazzolare. Vuoto = quella configurata."
         required: false
         default: ""
 
-# Impedisce a due run di questo workflow di girare insieme: se uno schedulato
-# scatta mentre un altro run (schedulato o manuale) sta ancora andando, il
-# nuovo aspetta in coda invece di partire in parallelo. Necessario perché
-# raw-players.json è un unico file: due run che lo modificano insieme
-# rischiano di sovrascriversi a vicenda invece di sommare il lavoro.
+# Due run non girano insieme: raw-players.json è un unico file.
 concurrency:
   group: sync-players-data
   cancel-in-progress: false
@@ -76,9 +66,11 @@ jobs:
       - name: Esegue i test prima di tutto
         run: node test-sync-players-data.mjs
 
-      - name: Scarica i dati aggiornati da API-Football
+      - name: Costruisce i dati del gioco
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          # Con un push, o con "solo-ricostruzione", nessuna chiamata API.
+          SYNC_BUILD_ONLY: ${{ inputs.modalita == 'scarica-da-api' && '0' || '1' }}
           SYNC_LEAGUES: ${{ inputs.leagues }}
           SYNC_SEASON_FROM: ${{ inputs.seasonFrom }}
           SYNC_SEASON_TO: ${{ inputs.seasonTo }}
@@ -93,10 +85,6 @@ jobs:
             echo "Nessuna modifica da salvare in questo run."
           else
             git commit -m "chore: aggiorna progresso sync [skip ci]"
-            # Se qualcuno ha spinto altre modifiche su main mentre il sync girava
-            # (può durare a lungo), il push semplice verrebbe rifiutato. Qui
-            # aggiorniamo prima il nostro commit sopra l'ultima versione di main,
-            # e riproviamo il push un paio di volte in caso di corse ravvicinate.
             for i in 1 2 3; do
               git fetch origin main
               if git rebase origin/main; then
@@ -114,7 +102,7 @@ jobs:
             done
           fi
 
-      - name: Copia il gioco dentro output/ come index.html, così resta pubblicato ad ogni giro
+      - name: Aggiunge il gioco alla cartella da pubblicare
         run: cp indovina-calciatore.html output/index.html
 
       - name: Pubblica ./output su GitHub Pages
