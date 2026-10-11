@@ -573,7 +573,7 @@ function parseSeniorCareer(wikitext) {
     // Il prestito si riconosce PRIMA di pulire il testo (cleanWikiMarkup
     // toglie "→" e "(loan)", quindi va controllato sul testo grezzo).
     const isLoan = /^\s*→|\(\s*(loan|on loan|dual registration)\s*\)/i.test(teams[idx]);
-    const teamName = cleanWikiMarkup(teams[idx]);
+    const teamName = cleanWikiMarkup(teams[idx]).replace(/\s*\(\s*\)/g, "").replace(/\s{2,}/g, " ").trim();
     const capsNum = caps[idx] != null ? Number((caps[idx].match(/\d+/) || [])[0]) : null;
     const goalsNum = goals[idx] != null ? Number((goals[idx].match(/\d+/) || [])[0]) : null;
     if (capsNum === 0) continue;

@@ -754,6 +754,113 @@ async function main() {
     assert.equal(final.length, 1, "senza excludedIds nessuno deve essere escluso");
   });
 
+  console.log("\nBlocchi storici, alias e ordine di Wikipedia (casi reali segnalati dall'utente)");
+  await test("Lichtsteiner: 'Grasshopper' (blocco Wikipedia, 79 presenze) assorbe le righe 'Grasshoppers' (1+25) e si allunga fino alla fine vera della tappa", () => {
+    const rec = {
+      id: 1444, name: "Stephan Lichtsteiner",
+      seasonRecords: [
+        { season: 2001, club: "Grasshoppers", apps: 1, goals: 0 },
+        { season: 2001, blockToYear: 2002, club: "Grasshopper", apps: 79, goals: 4, source: "wikipedia" },
+        { season: 2002, club: "Grasshoppers", apps: 25, goals: 0 },
+        { season: 2005, club: "Lille", apps: 31, goals: 1 }
+      ],
+      wikiEntries: [
+        { team: "Grasshopper", from: 2001, to: 2005, apps: 79, goals: 4 },
+        { team: "Lille", from: 2005, to: 2008, apps: 89, goals: 5 }
+      ]
+    };
+    const career = finalizeCareer(rec);
+    assert.equal(career.filter((c) => /grasshopper/i.test(c.club)).length, 1, "una sola tappa Grasshoppers, non tre");
+    assert.equal(career[0].apps, 79);
+    assert.equal(career[0].years, "2001\u20132005");
+  });
+  await test("Ballo-Tour\u00e9: 'PSG II' e 'Paris Saint-Germain B' sono lo stesso club, il blocco assorbe le tre stagioni", () => {
+    const rec = {
+      id: 105, name: "Fod\u00e9 Ballo-Tour\u00e9",
+      seasonRecords: [
+        { season: 2014, club: "PSG II", apps: 17, goals: 0 },
+        { season: 2014, blockToYear: 2015, club: "Paris Saint-Germain B", apps: 53, goals: 1, source: "wikipedia" },
+        { season: 2015, club: "PSG II", apps: 21, goals: 0 },
+        { season: 2016, club: "PSG II", apps: 15, goals: 1 },
+        { season: 2017, club: "Lille", apps: 27, goals: 0 }
+      ],
+      wikiEntries: [{ team: "Paris Saint-Germain B", from: 2014, to: 2017, apps: 53, goals: 1 }, { team: "Lille", from: 2017, to: 2019 }]
+    };
+    const career = finalizeCareer(rec);
+    assert.equal(career.length, 2);
+    assert.equal(career[0].apps, 53);
+  });
+  await test("un blocco con meno presenze delle righe normali dello stesso club \u00e8 ridondante e viene tolto (le righe normali restano)", () => {
+    const rec = {
+      id: 9, name: "Ridondante",
+      seasonRecords: [
+        { season: 2011, club: "Juventus", league: "seriea", apps: 30, goals: 2 },
+        { season: 2012, club: "Juventus", league: "seriea", apps: 28, goals: 4 },
+        { season: 2011, blockToYear: 2012, club: "Juventus", apps: 6, goals: 0, source: "wikipedia" }
+      ]
+    };
+    const career = finalizeCareer(rec);
+    assert.equal(career.length, 1);
+    assert.equal(career[0].apps, 58);
+  });
+  await test("Ballo-Touré: il blocco Milan Futuro 2024-2025 viene accorciato perché Le Havre (2024) viene dopo", () => {
+    const career = finalizeCareer({
+      id: 105, name: "Fodé Ballo-Touré",
+      seasonRecords: [
+        { season: 2023, club: "Fulham", apps: 6, goals: 0 },
+        { season: 2024, blockToYear: 2025, club: "Milan Futuro ()", apps: 3, goals: 0, source: "wikipedia" },
+        { season: 2024, club: "Le Havre", apps: 10, goals: 0 },
+        { season: 2025, club: "Metz", apps: 13, goals: 0 }
+      ],
+      wikiEntries: [
+        { team: "Fulham", from: 2023, to: 2024 }, { team: "Milan Futuro", from: 2024, to: 2025 },
+        { team: "Le Havre", from: 2025, to: 2025 }, { team: "Metz", from: 2025, to: 2026 }
+      ]
+    });
+    const clubs = career.map((c) => c.club + " " + c.years);
+    assert.ok(clubs.some((s) => s === "Milan Futuro 2024"), clubs.join(" | "));
+    assert.ok(clubs.some((s) => /^Le Havre 2024/.test(s)), clubs.join(" | "));
+    assert.ok(clubs.findIndex((s) => /^Milan/.test(s)) < clubs.findIndex((s) => /^Le Havre/.test(s)));
+  });
+  await test("le parentesi vuote lasciate da Wikipedia non finiscono nel nome del club ('Milan Futuro ()')", () => {
+    const career = finalizeCareer({ id: 3, name: "X", seasonRecords: [{ season: 2024, club: "Milan Futuro ()", apps: 3, goals: 0 }] });
+    assert.equal(career[0].club, "Milan Futuro");
+  });
+  await test("Noa Lang: nello stesso anno l'ordine \u00e8 quello di Wikipedia (Napoli, Galatasaray in prestito, poi di nuovo Napoli) e le due tappe Napoli non si fondono", () => {
+    const rec = {
+      id: 544, name: "Noa Lang",
+      seasonRecords: [
+        { season: 2024, club: "PSV Eindhoven", apps: 29, goals: 11 },
+        { season: 2025, club: "Galatasaray", apps: 15, goals: 0 },
+        { season: 2025, club: "Napoli", league: "seriea", apps: 18, goals: 1 },
+        { season: 2026, club: "Napoli", league: "seriea", apps: 4, goals: 0 }
+      ],
+      wikiEntries: [
+        { team: "PSV", from: 2023, to: 2025 },
+        { team: "Napoli", from: 2025, to: 2025 },
+        { team: "Galatasaray", from: 2026, to: 2026 }
+      ]
+    };
+    const clubs = finalizeCareer(rec).map((c) => c.club);
+    assert.deepEqual(clubs, ["PSV Eindhoven", "Napoli", "Galatasaray", "Napoli"]);
+  });
+  await test("un club che compare pi\u00f9 volte su Wikipedia conta per la tappa giusta, non per la prima comparsa (Insigne: Pescara 2011 e 2025)", () => {
+    const rec = {
+      id: 5, name: "Insigne",
+      seasonRecords: [
+        { season: 2024, club: "Toronto FC", apps: 20, goals: 1 },
+        { season: 2025, club: "Toronto FC", apps: 12, goals: 0 },
+        { season: 2025, club: "Pescara", apps: 13, goals: 1 }
+      ],
+      wikiEntries: [
+        { team: "Pescara", from: 2011, to: 2012 },
+        { team: "Toronto FC", from: 2022, to: 2025 },
+        { team: "Pescara", from: 2025, to: 2026 }
+      ]
+    };
+    assert.deepEqual(finalizeCareer(rec).map((c) => c.club), ["Toronto FC", "Pescara"]);
+  });
+
   console.log("\nPersistenza tra run (raw-players.json, sync-progress.json)");
   await test("i giocatori grezzi salvati si ricaricano identici (round-trip)", async () => {
     const tmpDir = "persist-test-tmp";

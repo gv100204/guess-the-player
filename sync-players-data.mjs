@@ -415,13 +415,13 @@ const CLUB_ALIASES = new Map([
   ["celta de vigo ii", "celta ii"],
   ["pacos ferreira", "pacos de ferreira"],
   ["bayern munchen ii", "bayern munich ii"],
-  ["olympique lyonnais ii", "lyon b"],
+  ["olympique lyonnais ii", "lyon ii"],
   ["gazelec fc ajaccio", "gazelec ajaccio"],
   ["st truiden", "sint truiden"],
   ["atletico paranaense", "athletico paranaense"],
-  ["psg ii", "paris saint germain b"],
+  ["psg ii", "paris saint germain ii"],
   ["borussia mgladbach ii", "borussia monchengladbach ii"],
-  ["sevilla atletico", "sevilla b"],
+  ["sevilla atletico", "sevilla ii"],
   ["vitoria de guimaraes", "vitoria guimaraes"],
   ["slavia praha", "slavia prague"],
   ["austria vienna", "austria wien"],
@@ -436,7 +436,11 @@ const CLUB_ALIASES = new Map([
   ["universidad catolica", "u catolica"],
   ["club libertad", "libertad asuncion"],
   // Trovato oggi, sullo stesso giocatore nello stesso anno:
-  ["argentinos jrs", "argentinos juniors"]
+  ["argentinos jrs", "argentinos juniors"],
+  // Lichtsteiner: la fonte dati dice "Grasshoppers", Wikipedia "Grasshopper"
+  ["grasshopper", "grasshoppers"],
+  ["grasshopper club zurich", "grasshoppers"],
+  ["gc zurich", "grasshoppers"]
 ]);
 const LETTER_FIXES = { "ø": "o", "æ": "ae", "œ": "oe", "ł": "l", "đ": "d", "ð": "d", "þ": "th", "ß": "ss" };
 function normClub(s) {
@@ -450,6 +454,12 @@ function normClub(s) {
     .trim();
   base = base.replace(/ b$/, " ii");
   return CLUB_ALIASES.get(base) || base;
+}
+
+// Toglie le parentesi vuote lasciate dal markup di Wikipedia (es. "Milan
+// Futuro ()") e gli spazi doppi.
+function cleanClubName(name) {
+  return String(name || "").replace(/\s*\(\s*\)/g, "").replace(/\s{2,}/g, " ").trim();
 }
 
 function dedupedSeasonRecords(rec){
@@ -468,7 +478,7 @@ function dedupedSeasonRecords(rec){
     let existing = byKey.get(key);
     if (!existing) {
       existing = {
-        season: r.season, club: r.club, league: r.league || null,
+        season: r.season, club: cleanClubName(r.club), league: r.league || null,
         leagueRaw: r.leagueRaw || null, country: r.country || null,
         apps: 0, goals: 0,
         blockToYear: r.blockToYear ?? null, source: r.source || null
@@ -482,7 +492,85 @@ function dedupedSeasonRecords(rec){
     // perderebbe questa tappa anche se ora è correttamente unita.
     if (r.league && !existing.league) existing.league = r.league;
   });
-  const records = Array.from(byKey.values());
+  let records = Array.from(byKey.values());
+
+  // Carriera di Wikipedia (se la conosciamo): serve per ordinare i club che
+  // compaiono nello stesso anno e per allungare i blocchi storici.
+  const wikiEntries = Array.isArray(rec.wikiEntries) ? rec.wikiEntries : [];
+  // Posizione, nella carriera di Wikipedia, della tappa a cui appartiene la
+  // riga. Conta solo la tappa dello STESSO club i cui anni comprendono la
+  // stagione (un club può comparire più volte: es. Pescara prima come
+  // prestito nel 2011 e poi di nuovo nel 2025 - la prima comparsa non vale
+  // per la riga del 2025). Se nessuna tappa combacia, null: valgono le
+  // euristiche di sempre.
+  const wikiIndex = (r) => {
+    if (wikiEntries.length === 0) return null;
+    const n = normClub(r.club);
+    let best = null;
+    wikiEntries.forEach((e, i) => {
+      if (normClub(e.team) !== n) return;
+      if (!(e.from <= r.season + 1 && e.to >= r.season)) return;
+      const dist = Math.abs(e.from - r.season);
+      if (!best || dist < best.dist) best = { i, dist };
+    });
+    return best ? best.i : null;
+  };
+
+  // Un blocco storico di Wikipedia che copre anni in cui abbiamo già righe
+  // normali dello stesso club: i totali di Wikipedia comprendono quelle
+  // presenze, quindi le righe normali vengono assorbite dal blocco (casi:
+  // Lichtsteiner, "Grasshopper" con 79 presenze e "Grasshoppers" con 26;
+  // Ballo-Touré, "Paris Saint-Germain B" e "PSG II"). Prima il blocco viene
+  // allungato fino alla fine vera della tappa su Wikipedia, se nessun altro
+  // club occupa quegli anni. Se invece le righe normali hanno più presenze
+  // del blocco, è il blocco a essere ridondante e viene tolto.
+  {
+    const drop = new Set();
+    const rangeOf = (r) => [r.season, r.blockToYear ?? r.season];
+    records.filter((r) => r.blockToYear != null).forEach((b) => {
+      const nb = normClub(b.club);
+      const insideOf = () => records.filter((r) => r.blockToYear == null && !drop.has(r) && normClub(r.club) === nb && r.season >= b.season && r.season <= b.blockToYear);
+      if (insideOf().length === 0) return;
+      const we = wikiEntries.find((e) => normClub(e.team) === nb && e.from <= b.season && e.to > b.blockToYear);
+      if (we) {
+        const conflict = records.some((r) => {
+          if (r === b || drop.has(r) || normClub(r.club) === nb) return false;
+          const [f, t] = rangeOf(r);
+          return t >= b.blockToYear + 1 && f <= we.to - 1;
+        });
+        if (!conflict) b.blockToYear = we.to;
+      }
+      const inside = insideOf();
+      const sumApps = inside.reduce((x, r) => x + (r.apps || 0), 0);
+      if (b.apps != null && sumApps <= b.apps) inside.forEach((r) => drop.add(r));
+      else drop.add(b);
+    });
+    if (drop.size > 0) records = records.filter((r) => !drop.has(r));
+  }
+
+  // Wikipedia scrive l'anno in cui finisce la tappa ("Milan Futuro 2024-2025",
+  // "Le Havre 2025" = gennaio 2025), noi contiamo le stagioni dall'anno
+  // d'inizio (Le Havre = 2024). Se, secondo l'ordine di Wikipedia, un club
+  // SUCCESSIVO cade dentro gli anni di un blocco, il blocco viene accorciato
+  // fino a quell'anno: niente "2024-2025 Milan Futuro" seguito da "2024 Le Havre".
+  if (wikiEntries.length > 0) {
+    records.filter((r) => r.blockToYear != null).forEach((b) => {
+      const ib = wikiIndex(b);
+      if (ib == null) return;
+      const nb = normClub(b.club);
+      let cut = null;
+      records.forEach((r) => {
+        if (r === b || normClub(r.club) === nb) return;
+        if (r.season < b.season || r.season > b.blockToYear) return;
+        const ir = wikiIndex(r);
+        if (ir == null || ir <= ib) return;
+        if (cut == null || r.season < cut) cut = r.season;
+      });
+      if (cut != null) b.blockToYear = Math.max(b.season, cut);
+    });
+    // un blocco ridotto a un solo anno resta un blocco, ma senza "fine" separata
+    records.forEach((r) => { if (r.blockToYear != null && r.blockToYear === r.season) r.blockToYear = r.season; });
+  }
 
   // Chi giocava già per quel club l'anno prima, per ogni stagione - serve
   // per ordinare bene i pareggi (vedi sotto).
@@ -517,6 +605,12 @@ function dedupedSeasonRecords(rec){
 
   return records.sort((a, b) => {
     if (a.season !== b.season) return a.season - b.season;
+    // Se conosciamo la carriera di Wikipedia, l'ordine dei club nello stesso
+    // anno è quello di Wikipedia (caso Noa Lang: Napoli, poi Galatasaray in
+    // prestito, poi di nuovo Napoli - le euristiche sotto li avrebbero
+    // messi al contrario).
+    const wa = wikiIndex(a), wb = wikiIndex(b);
+    if (wa != null && wb != null && wa !== wb) return wa - wb;
     // Stesso anno, due club diversi (trasferimento a metà stagione, con
     // calendari di campionati diversi che si sovrappongono): il club che
     // proseguiva già dall'anno prima va mostrato per primo, quello nuovo
@@ -976,7 +1070,7 @@ async function saveProgress(progress) {
 // Dataset finale per il gioco (filtrato, nella forma che il prototipo usa già)
 // ---------------------------------------------------------------------------
 
-function buildFinalDataset(playersMap, excludedIds, fameById) {
+function buildFinalDataset(playersMap, excludedIds, fameById, wikiEntriesById) {
   const result = [];
   playersMap.forEach((rec) => {
     if (totalApps(rec) < MIN_APPS_TO_INCLUDE) return;
@@ -991,7 +1085,7 @@ function buildFinalDataset(playersMap, excludedIds, fameById) {
       displayName: rec.displayName || null,
       nationality: rec.nationality,
       isGK: rec.isGK,
-      career: finalizeCareer(rec),
+      career: finalizeCareer(wikiEntriesById && wikiEntriesById.has(String(rec.id)) ? { ...rec, wikiEntries: wikiEntriesById.get(String(rec.id)) } : rec),
       careerComplete: !!rec.careerBackfilled, // false = carriera solo dai campionati tracciati, non ancora arricchita per intero
       trophies: rec.trophies || [],
       fame: typeof fameRaw === "number" && fameRaw > 0 ? fameRaw : null // 0 visite = quasi certamente un reindirizzamento, non un giocatore ignoto: meglio "fama sconosciuta"
@@ -1272,7 +1366,25 @@ async function main() {
     // Nessun file: nessun giocatore ha la fama, la difficoltà non è disponibile.
   }
 
-  const finalPlayers = buildFinalDataset(playersMap, excludedIds, fameById);
+  // Carriere lette da Wikipedia (wikipedia-careers.jsonl): usate solo per
+  // ordinare i club nello stesso anno e per allungare i blocchi storici.
+  let wikiEntriesById = null;
+  try {
+    const text = await fs.readFile("./wikipedia-careers.jsonl", "utf-8");
+    wikiEntriesById = new Map();
+    for (const line of text.split("\n")) {
+      if (!line.trim()) continue;
+      try {
+        const o = JSON.parse(line);
+        if (o && o.id != null && Array.isArray(o.entries)) wikiEntriesById.set(String(o.id), o.entries);
+      } catch { /* riga troncata: ignorata */ }
+    }
+    console.log(`\nCarriere Wikipedia lette per l'ordine delle tappe: ${wikiEntriesById.size}.`);
+  } catch {
+    // Nessun file: si usano solo le euristiche di prima.
+  }
+
+  const finalPlayers = buildFinalDataset(playersMap, excludedIds, fameById, wikiEntriesById);
   await writeOutputFiles(finalPlayers);
 
   const doneTotal = activeLeagues.length * (activeSeasons.to - activeSeasons.from + 1);
