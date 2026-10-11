@@ -221,6 +221,7 @@ function clubLooksLikePlayerName(club, playerName) {
  */
 async function fetchCurrentClub(playerId, budget) {
   try {
+    if (budget) budget.remaining--; // conta la chiamata anche se poi fallisce: prima non veniva contata e il passo poteva durare ore senza tetto
     const response = await apiGet("/transfers", { player: playerId }, budget);
     const transfers = response?.[0]?.transfers;
     if (!Array.isArray(transfers) || transfers.length === 0) return null;

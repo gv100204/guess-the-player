@@ -12,6 +12,7 @@
 //   node fetch-wikipedia-views.mjs --test 20   -> prova su 20 giocatori, stampa e NON salva
 //   node fetch-wikipedia-views.mjs             -> scarica per tutti quelli mancanti
 //   node fetch-wikipedia-views.mjs --refresh   -> rifà anche quelli già scaricati
+//   node fetch-wikipedia-views.mjs --fix-redirects [1000] -> per chi ha poche visite, segue i reindirizzamenti e riconta
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -79,6 +80,31 @@ export async function fetchAvgMonthlyViews(title, now = new Date()) {
   return null;
 }
 
+/**
+ * Segue i reindirizzamenti di Wikipedia: "Steven N'Kemboanza Mike Christ Nzonzi"
+ * porta a "Steven Nzonzi". Le visite si contano sulla pagina VERA: sul
+ * reindirizzamento ce ne sono pochissime e il giocatore sembrerebbe ignoto.
+ * Ritorna il titolo finale (o quello di partenza se non c'è reindirizzamento,
+ * o null in caso di errore temporaneo).
+ */
+export async function resolveRedirect(title) {
+  const url = "https://en.wikipedia.org/w/api.php?action=query&redirects=1&format=json&formatversion=2&titles=" + encodeURIComponent(title);
+  for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
+    try {
+      const res = await fetch(url, { headers: { "User-Agent": USER_AGENT, Accept: "application/json" } });
+      if (res.status === 429 || res.status >= 500) { await sleep(3000 * (attempt + 1)); continue; }
+      if (!res.ok) return null;
+      const json = await res.json();
+      const redirects = json?.query?.redirects;
+      if (Array.isArray(redirects) && redirects.length > 0) return redirects[redirects.length - 1].to || title;
+      return title;
+    } catch {
+      await sleep(2000 * (attempt + 1));
+    }
+  }
+  return null;
+}
+
 async function loadTitles() {
   let text = "";
   try { text = await fs.readFile(CAREERS_FILE, "utf-8"); } catch {
@@ -116,6 +142,39 @@ async function main() {
 
   const titles = await loadTitles();
   const data = await loadViews();
+
+  // --fix-redirects [soglia]: per chi ha poche visite (default < 1000/mese)
+  // controlla se il titolo salvato è un reindirizzamento e, se sì, rifà il
+  // conteggio sulla pagina vera. Mette a posto i casi tipo "nome legale lungo
+  // = 1 visita al mese".
+  const fixIdx = args.indexOf("--fix-redirects");
+  if (fixIdx >= 0) {
+    const threshold = Number(args[fixIdx + 1]) || 1000;
+    const low = Object.entries(data.views).filter(([, v]) => v.avgMonthlyViews != null && v.avgMonthlyViews < threshold);
+    console.log(`Controllo i reindirizzamenti per ${low.length} giocatori con meno di ${threshold} visite/mese...`);
+    let stop = false, changed = 0, checked = 0;
+    process.on("SIGINT", () => { stop = true; console.log("\nInterruzione richiesta, salvo e esco..."); });
+    for (const [id, v] of low) {
+      if (stop) break;
+      const target = await resolveRedirect(v.title);
+      await sleep(PAUSE_MS);
+      checked++;
+      if (target && target !== v.title) {
+        const result = await fetchAvgMonthlyViews(target);
+        await sleep(PAUSE_MS);
+        if (result && result.avgMonthlyViews != null) {
+          console.log(`  ${v.title} -> ${target}: ${v.avgMonthlyViews} -> ${result.avgMonthlyViews} visite/mese`);
+          data.views[id] = { title: target, avgMonthlyViews: result.avgMonthlyViews, fetchedAt: new Date().toISOString(), redirectedFrom: v.title };
+          changed++;
+        }
+      }
+      if (checked % 25 === 0) { await saveViews(data); console.log(`  [${checked}/${low.length}] salvato (corretti: ${changed})`); }
+    }
+    await saveViews(data);
+    console.log(`\nFatto: controllati ${checked} | corretti ${changed}`);
+    return;
+  }
+
   let todo = [...titles.entries()].filter(([id]) => refresh || !data.views[id]);
   if (testN) todo = todo.slice(0, testN);
 
