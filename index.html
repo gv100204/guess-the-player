@@ -1452,10 +1452,40 @@
   // soglie fisse, così i tre livelli restano distinti e di dimensione
   // simile qualunque campionato si scelga. Chi non ha la fama nota non
   // appartiene a nessun livello (compare solo con "Qualsiasi").
+  // Trofei "pesanti": contano nel punteggio di difficoltà solo questi
+  // (nome esatto della competizione come salvato nei dati). Coppette,
+  // amichevoli, Supercoppe e giovanili NON contano. Punti per vittoria.
+  var MAJOR_TROPHY_POINTS = {
+    "FIFA World Cup": 4, "World Cup": 4,
+    "UEFA European Championship": 3, "European Championship": 3,
+    "CONMEBOL Copa America": 3, "Copa America": 3,
+    "UEFA Champions League": 3,
+    "UEFA Europa League": 2, "CONMEBOL Libertadores": 2, "Copa Libertadores": 2,
+    "CAF Africa Cup of Nations": 2, "Africa Cup of Nations": 2,
+    "laliga": 1, "pl": 1, "seriea": 1, "ligue1": 1, "bundesliga": 1
+  };
+  var TROPHY_BONUS_PER_POINT = 0.25; // in unità di log10(visite): 4 punti = quanto moltiplicare le visite per 10
+  var TROPHY_POINTS_CAP = 8;
+
+  function trophyPoints(p){
+    var total = 0;
+    (p.trophies || []).forEach(function(tr){
+      var pts = MAJOR_TROPHY_POINTS[tr.comp];
+      if (pts) total += pts * (tr.count || 1);
+    });
+    return Math.min(total, TROPHY_POINTS_CAP);
+  }
+
+  // Punteggio di notorietà: fama (visite Wikipedia, in scala logaritmica)
+  // più un piccolo bonus per i trofei importanti.
+  function difficultyScore(p){
+    return Math.log10(p.fame + 1) + TROPHY_BONUS_PER_POINT * trophyPoints(p);
+  }
+
   function applyDifficulty(pool, level){
     if (level !== "easy" && level !== "medium" && level !== "hard") return pool;
     var ranked = pool.filter(function(p){ return typeof p.fame === "number"; })
-      .sort(function(a, b){ return b.fame - a.fame; }); // dal più famoso al meno famoso
+      .sort(function(a, b){ return difficultyScore(b) - difficultyScore(a); }); // dal più noto al meno noto
     var cut1 = Math.round(ranked.length / 3);
     var cut2 = Math.round(ranked.length * 2 / 3);
     if (level === "easy") return ranked.slice(0, cut1);
