@@ -368,6 +368,7 @@
       appsConceded: function(a, g){ return a + " presenze, " + g + " gol subiti"; },
       appsOnly: function(a){ return a + " presenze"; },
       appsUnknown: "Presenze non disponibili",
+      yearsPresent: "attuale",
       footer: "Prototipo · presenze, gol e palmares sono dati di esempio, da sostituire con statistiche reali verificate",
       champion: function(n){ return "Campione di " + n; },
       championMulti: function(c, n){ return c + " volte campione di " + n; },
@@ -438,6 +439,7 @@
       appsConceded: function(a, g){ return a + " appearances, " + g + " goals conceded"; },
       appsOnly: function(a){ return a + " appearances"; },
       appsUnknown: "Appearances not available",
+      yearsPresent: "present",
       footer: "Prototype · appearances, goals and honours are sample data, to be replaced with verified real statistics",
       champion: function(n){ return "Champion of " + n; },
       championMulti: function(c, n){ return c + "-time champion of " + n; },
@@ -508,6 +510,7 @@
       appsConceded: function(a, g){ return a + " matchs, " + g + " buts encaissés"; },
       appsOnly: function(a){ return a + " matchs"; },
       appsUnknown: "Matchs non disponibles",
+      yearsPresent: "présent",
       footer: "Prototype · matchs, buts et palmarès sont des données d'exemple, à remplacer par des statistiques réelles vérifiées",
       champion: function(n){ return "Champion de " + n; },
       championMulti: function(c, n){ return c + " fois champion de " + n; },
@@ -578,6 +581,7 @@
       appsConceded: function(a, g){ return a + " partidos, " + g + " goles encajados"; },
       appsOnly: function(a){ return a + " partidos"; },
       appsUnknown: "Partidos no disponibles",
+      yearsPresent: "actual",
       footer: "Prototipo · partidos, goles y palmarés son datos de ejemplo, a sustituir por estadísticas reales verificadas",
       champion: function(n){ return "Campeón de " + n; },
       championMulti: function(c, n){ return c + " veces campeón de " + n; },
@@ -648,6 +652,7 @@
       appsConceded: function(a, g){ return a + " Einsätze, " + g + " Gegentore"; },
       appsOnly: function(a){ return a + " Einsätze"; },
       appsUnknown: "Einsätze nicht verfügbar",
+      yearsPresent: "aktuell",
       footer: "Prototyp · Einsätze, Tore und Titelliste sind Beispieldaten, durch echte verifizierte Statistiken zu ersetzen",
       champion: function(n){ return "Meister von " + n; },
       championMulti: function(c, n){ return c + "-facher Meister von " + n; },
@@ -718,6 +723,7 @@
       appsConceded: function(a, g){ return a + " jogos, " + g + " golos sofridos"; },
       appsOnly: function(a){ return a + " jogos"; },
       appsUnknown: "Jogos não disponíveis",
+      yearsPresent: "atual",
       footer: "Protótipo · jogos, golos e palmarés são dados de exemplo, a substituir por estatísticas reais verificadas",
       champion: function(n){ return "Campeão de " + n; },
       championMulti: function(c, n){ return c + " vezes campeão de " + n; },
@@ -1563,7 +1569,12 @@
 
   function buildSteps(p){
     if (contentMode === "career"){
-      return p.career.map(function(c){
+      // Se l'ultima tappa arriva alla stagione in corso (o oltre), il giocatore
+      // gioca ancora lì: al posto dell'anno di fine (es. 2027) si mostra
+      // "attuale". Solo visualizzazione, i dati non cambiano.
+      var nowD = new Date();
+      var seasonNow = nowD.getMonth() >= 6 ? nowD.getFullYear() : nowD.getFullYear() - 1;
+      return p.career.map(function(c, idx){
         var sub;
         if (c.apps == null) {
           sub = t("appsUnknown");
@@ -1572,7 +1583,12 @@
         } else {
           sub = t("appsGoals")(c.apps, c.goals);
         }
-        return { left: String(c.years).replace(/^(\d{4})\s*[\u2013-]\s*\1$/, "$1"), title: String(c.club).replace(/\s*\(\s*\)/g, ""), sub: sub };
+        var yrs = String(c.years).replace(/^(\d{4})\s*[\u2013-]\s*\1$/, "$1");
+        if (idx === p.career.length - 1) {
+          var ym = String(c.years).match(/^(\d{4})(?:\s*[\u2013-]\s*(\d{4}))?$/);
+          if (ym && Number(ym[2] || ym[1]) >= seasonNow) yrs = ym[1] + "\u2013" + t("yearsPresent");
+        }
+        return { left: yrs, title: String(c.club).replace(/\s*\(\s*\)/g, ""), sub: sub };
       });
     }
     // Ordine cronologico: il trofeo vinto per la prima volta più presto va
