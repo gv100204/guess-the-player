@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guess the Footballer / Indovina il Calciatore</title>
+<title>Many Shirts – Football Career Quiz</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -106,7 +106,7 @@
   <div class="scoreboard" id="scoreboard">
     <div class="sb-top">
       <button class="settings-btn" id="backBtn" aria-label="Torna al menu" type="button" style="display:none;">←</button>
-      <p class="sb-title" id="sbTitle">INDOVINA IL CALCIATORE</p>
+      <p class="sb-title" id="sbTitle">MANY SHIRTS</p>
       <button class="settings-btn" id="settingsBtn" aria-label="Impostazioni" type="button">⚙</button>
     </div>
     <p class="sb-sub" id="sbSub"></p>
@@ -304,7 +304,7 @@
 
   var UI = {
     it: {
-      title: "INDOVINA IL CALCIATORE",
+      title: "MANY SHIRTS",
       subCareer: "Leggi la carriera, squadra per squadra. Il ruolo non si dice: si intuisce.",
       subPalmares: "Leggi il palmares, trofeo dopo trofeo. Il ruolo non si dice: si intuisce.",
       points: "Punti", streak: "Serie", best: "Record",
@@ -375,7 +375,7 @@
       titleWithYear: function(n, y){ return "1 titolo: " + n + " (" + y + ")"; }
     },
     en: {
-      title: "GUESS THE FOOTBALLER",
+      title: "MANY SHIRTS",
       subCareer: "Read the career, club by club. The role is never named — you have to guess it.",
       subPalmares: "Read the honours, one line at a time. The role is never named — you have to guess it.",
       points: "Points", streak: "Streak", best: "Best",
@@ -446,7 +446,7 @@
       titleWithYear: function(n, y){ return "1 title: " + n + " (" + y + ")"; }
     },
     fr: {
-      title: "DEVINE LE FOOTBALLEUR",
+      title: "MANY SHIRTS",
       subCareer: "Lis la carrière, club après club. Le poste ne se dit pas : on le devine.",
       subPalmares: "Lis le palmarès, trophée après trophée. Le poste ne se dit pas : on le devine.",
       points: "Points", streak: "Série", best: "Record",
@@ -517,7 +517,7 @@
       titleWithYear: function(n, y){ return "1 titre : " + n + " (" + y + ")"; }
     },
     es: {
-      title: "ADIVINA EL FUTBOLISTA",
+      title: "MANY SHIRTS",
       subCareer: "Lee la carrera, equipo por equipo. La posición no se dice: se intuye.",
       subPalmares: "Lee el palmarés, trofeo tras trofeo. La posición no se dice: se intuye.",
       points: "Puntos", streak: "Racha", best: "Récord",
@@ -588,7 +588,7 @@
       titleWithYear: function(n, y){ return "1 título: " + n + " (" + y + ")"; }
     },
     de: {
-      title: "ERRATE DEN FUSSBALLER",
+      title: "MANY SHIRTS",
       subCareer: "Lies die Karriere, Verein für Verein. Die Position wird nicht gesagt: man errät sie.",
       subPalmares: "Lies die Titelliste, Trophäe für Trophäe. Die Position wird nicht gesagt: man errät sie.",
       points: "Punkte", streak: "Serie", best: "Rekord",
@@ -659,7 +659,7 @@
       titleWithYear: function(n, y){ return "1 Titel: " + n + " (" + y + ")"; }
     },
     pt: {
-      title: "ADIVINHA O FUTEBOLISTA",
+      title: "MANY SHIRTS",
       subCareer: "Lê a carreira, clube a clube. A posição não se diz: adivinha-se.",
       subPalmares: "Lê o palmarés, troféu após troféu. A posição não se diz: adivinha-se.",
       points: "Pontos", streak: "Sequência", best: "Recorde",
@@ -1280,7 +1280,7 @@
     var playerId = state.current && state.current.id ? state.current.id : "(sconosciuto)";
 
     function openMailtoFallback(){
-      var subject = encodeURIComponent("Segnalazione Indovina il Calciatore: " + playerDisplay);
+      var subject = encodeURIComponent("Segnalazione Many Shirts: " + playerDisplay);
       var body = encodeURIComponent(
         "Giocatore (nome legale): " + playerName + "\n" +
         "Giocatore (nome pubblico): " + playerDisplay + "\n" +
@@ -1299,7 +1299,7 @@
       method: "POST",
       headers: { "Content-Type": "application/json", "Accept": "application/json" },
       body: JSON.stringify({
-        _subject: "Segnalazione Indovina il Calciatore: " + playerDisplay,
+        _subject: "Segnalazione Many Shirts: " + playerDisplay,
         giocatore_nome_legale: playerName,
         giocatore_nome_pubblico: playerDisplay,
         giocatore_id: playerId,
