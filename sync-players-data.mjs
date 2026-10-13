@@ -724,6 +724,33 @@ function finalizeCareer(rec) {
     }
   });
 
+  // Due tappe CONSECUTIVE dello stesso club, di cui una è un blocco di
+  // Wikipedia, sono la stessa permanenza vista da due fonti (caso Tomori:
+  // "Chelsea 2015-2016" dai nostri dati e "Chelsea 2016-2017" da Wikipedia,
+  // una dopo l'altra). Le uniamo in una sola; le presenze sono quelle del
+  // blocco, che è il totale di Wikipedia.
+  for (let i = 0; i < stints.length - 1; ) {
+    const a = stints[i], b = stints[i + 1];
+    const aEnd = a.isBlock ? a.maxYear : a.maxYear + 1;
+    if ((a.isBlock || b.isBlock) && normClub(a.club) === normClub(b.club) && b.minYear <= aEnd) {
+      const blk = a.isBlock ? a : b;
+      const other = a.isBlock ? b : a;
+      // Se il blocco ha più presenze della riga normale, le comprende già
+      // (Tomori: 17 contro 1); se ne ha meno non può comprenderle e si somma
+      // (Chiellini, Livorno: 8 del blocco + 47 della riga = 55).
+      const blkIncludes = blk.apps != null && blk.apps >= (other.apps || 0);
+      const endShown = Math.max(aEnd, b.isBlock ? b.maxYear : b.maxYear + 1);
+      stints.splice(i, 2, {
+        ...(a.isBlock ? b : a),
+        minYear: Math.min(a.minYear, b.minYear),
+        maxYear: Math.max(a.minYear, b.minYear, endShown - 1),
+        apps: blkIncludes ? blk.apps : (a.apps || 0) + (b.apps || 0),
+        goals: blkIncludes ? blk.goals : (a.goals || 0) + (b.goals || 0),
+        isBlock: false, ambiguousYear: false
+      });
+    } else i++;
+  }
+
   // Anno di inizio/fine "mostrati" per ogni tappa normale (non blocco):
   // di norma inizio=minYear, fine=maxYear+1 (il vero confine stagionale).
   // Una tappa rimasta in un vero pareggio (vedi sopra) è un caso a parte:
@@ -753,17 +780,29 @@ function finalizeCareer(rec) {
     if (cur.end > next.start) cur.end = next.start;
   }
 
-  return stints.map((s, i) => ({
-    years: s.isBlock || (s.ambiguousYear && s.minYear === s.maxYear)
-      ? (displayed[i].start === displayed[i].end ? String(displayed[i].start) : `${displayed[i].start}–${displayed[i].end}`)
-      : `${displayed[i].start}–${displayed[i].end}`,
-    club: s.club,
-    league: s.league,
-    leagueRaw: s.leagueRaw,
-    country: s.country,
-    apps: s.apps,
-    goals: s.goals
-  }));
+  // Tappa ancora in corso secondo Wikipedia: nell'infobox una tappa aperta
+  // ("2021–") ha un solo anno, una chiusa ("2025–2026") ne ha due. Vale solo
+  // per l'ULTIMA tappa, se è lo stesso club dell'ultima riga di Wikipedia.
+  // Serve a mostrare "attuale" (Tomori sì, Ballo-Touré svincolato no).
+  const wikiLast = Array.isArray(rec.wikiEntries) && rec.wikiEntries.length > 0 ? rec.wikiEntries[rec.wikiEntries.length - 1] : null;
+  const lastIsCurrent = !!(wikiLast && stints.length > 0 && wikiLast.from === wikiLast.to
+    && normClub(wikiLast.team) === normClub(stints[stints.length - 1].club));
+
+  return stints.map((s, i) => {
+    const out = {
+      years: s.isBlock || (s.ambiguousYear && s.minYear === s.maxYear)
+        ? (displayed[i].start === displayed[i].end ? String(displayed[i].start) : `${displayed[i].start}–${displayed[i].end}`)
+        : `${displayed[i].start}–${displayed[i].end}`,
+      club: s.club,
+      league: s.league,
+      leagueRaw: s.leagueRaw,
+      country: s.country,
+      apps: s.apps,
+      goals: s.goals
+    };
+    if (i === stints.length - 1 && lastIsCurrent) out.current = true;
+    return out;
+  });
 }
 
 // ---------------------------------------------------------------------------

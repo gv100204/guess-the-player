@@ -822,6 +822,36 @@ async function main() {
     assert.ok(clubs.some((s) => /^Le Havre 2024/.test(s)), clubs.join(" | "));
     assert.ok(clubs.findIndex((s) => /^Milan/.test(s)) < clubs.findIndex((s) => /^Le Havre/.test(s)));
   });
+  await test("Tomori: tappa Chelsea dei nostri dati e blocco Chelsea di Wikipedia consecutivi diventano una sola tappa", () => {
+    const career = finalizeCareer({
+      id: 19209, name: "Tomori",
+      seasonRecords: [
+        { season: 2015, club: "Chelsea", apps: 1, goals: 0 },
+        { season: 2016, club: "Brighton", apps: 9, goals: 0 },
+        { season: 2016, blockToYear: 2017, club: "Chelsea", apps: 17, goals: 1, source: "wikipedia" }
+      ],
+      wikiEntries: [{ team: "Chelsea", from: 2016, to: 2017 }, { team: "Brighton", from: 2017, to: 2017 }]
+    });
+    assert.equal(career.filter((c) => /chelsea/i.test(c.club)).length, 1, career.map((c) => c.years + " " + c.club).join(" | "));
+    assert.equal(career[0].apps, 17);
+  });
+  await test("riga normale seguita da un blocco dello stesso club con MENO presenze: le presenze si sommano, non si perdono", () => {
+    const career = finalizeCareer({
+      id: 1, name: "X",
+      seasonRecords: [
+        { season: 2015, club: "Livorno", apps: 47, goals: 1 },
+        { season: 2016, blockToYear: 2017, club: "Livorno", apps: 8, goals: 0, source: "wikipedia" }
+      ]
+    });
+    assert.equal(career.length, 1);
+    assert.equal(career[0].apps, 55);
+  });
+  await test("la tappa aperta su Wikipedia ('2021-') segna current; quella chiusa ('2025-2026') no", () => {
+    const open = finalizeCareer({ id: 2, name: "A", seasonRecords: [{ season: 2025, club: "AC Milan", apps: 33, goals: 1 }], wikiEntries: [{ team: "AC Milan", from: 2021, to: 2021 }] });
+    const closed = finalizeCareer({ id: 3, name: "B", seasonRecords: [{ season: 2025, club: "Metz", apps: 13, goals: 0 }], wikiEntries: [{ team: "Metz", from: 2025, to: 2026 }] });
+    assert.equal(open[open.length - 1].current, true);
+    assert.equal(closed[closed.length - 1].current, undefined);
+  });
   await test("le parentesi vuote lasciate da Wikipedia non finiscono nel nome del club ('Milan Futuro ()')", () => {
     const career = finalizeCareer({ id: 3, name: "X", seasonRecords: [{ season: 2024, club: "Milan Futuro ()", apps: 3, goals: 0 }] });
     assert.equal(career[0].club, "Milan Futuro");
