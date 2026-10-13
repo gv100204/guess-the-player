@@ -2,7 +2,9 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0B1F16">
 <title>Many Shirts – Football Career Quiz</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,16 +23,11 @@
     --bg: var(--paper); --fg: var(--ink); --panel: #FFFFFF; --panel-border: rgba(20,38,31,0.12);
     --dossier-bg: #FFFFFF; --dossier-text: var(--ink); --muted: var(--ink-soft);
   }
-  @media (prefers-color-scheme: light) {
-    :root:not([data-theme="dark"]) {
-      --bg: var(--paper); --fg: var(--ink); --panel: #FFFFFF; --panel-border: rgba(20,38,31,0.12);
-      --dossier-bg: #FFFFFF; --dossier-text: var(--ink); --muted: var(--ink-soft);
-    }
-  }
   * { box-sizing: border-box; }
+  html { color-scheme: dark; background: #0B1F16; }
   html, body { margin: 0; padding: 0; }
   body { background: var(--bg); color: var(--fg); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; min-height: 100vh; -webkit-tap-highlight-color: transparent; }
-  .wrap { max-width: 640px; margin: 0 auto; padding: 18px 16px 48px; }
+  .wrap { max-width: 640px; margin: 0 auto; padding: calc(18px + env(safe-area-inset-top, 0px)) calc(16px + env(safe-area-inset-left, 0px)) calc(48px + env(safe-area-inset-bottom, 0px)) calc(16px + env(safe-area-inset-right, 0px)); }
   .scoreboard { background: linear-gradient(180deg, var(--green) 0%, var(--green-dark) 100%); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; color: #EFEAD8; position: relative; overflow: hidden; }
   .scoreboard::before { content: ""; position: absolute; inset: 0; background-image: repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0 2px, transparent 2px 34px); pointer-events: none; }
   .sb-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; position: relative; }
@@ -904,7 +901,12 @@
   // funziona normalmente, senza questa restrizione.
   // ==========================================================================
 
-  var MANIFEST_URL = "https://gv100204.github.io/guess-the-player/manifest.json";
+  // Dove stanno i dati. Sul sito: il gioco pubblicato su GitHub Pages. Nell'app
+  // (Capacitor) lo script di costruzione dell'app aggiunge, prima di questo
+  // codice, window.MANYSHIRTS_DATA_BASE = "./data/": i dati stanno allora
+  // dentro il pacchetto dell'app e funzionano anche senza connessione.
+  var DATA_BASE = window.MANYSHIRTS_DATA_BASE || "https://gv100204.github.io/guess-the-player/";
+  var MANIFEST_URL = DATA_BASE + "manifest.json";
   var realShardsByLeague = {}; // leagueId -> array di giocatori (forma identica a DEMO_PLAYERS)
   var realDataStatus = { loaded: false, version: null, leaguesLoaded: 0, leaguesTotal: 0, error: null };
 
@@ -929,7 +931,7 @@
         var id = leagueIds[i];
         var info = manifest.leagues[id];
         try {
-          var shard = await fetchJson(MANIFEST_URL.replace("manifest.json", info.file));
+          var shard = await fetchJson(DATA_BASE + info.file);
           realShardsByLeague[id] = shard.players || [];
           realDataStatus.leaguesLoaded++;
           updateStartState(); // si sblocca subito se il campionato appena arrivato è tra quelli scelti, senza aspettare gli altri
