@@ -27,6 +27,7 @@ on:
       - "wikipedia-views.json"
       - "indovina-calciatore.html"
       - "sync-players-data.mjs"
+      - "check-data-quality.mjs"
   workflow_dispatch:
     inputs:
       modalita:
@@ -101,6 +102,13 @@ jobs:
               sleep 5
             done
           fi
+
+      # Controlli di qualità sui dati appena costruiti: se falliscono, il gioco
+      # NON viene pubblicato (resta online la versione precedente). Sta DOPO il
+      # salvataggio del progresso, così un'eventuale scarica-da-api non perde
+      # i dati scaricati anche se il controllo fallisce.
+      - name: Controlla la qualità dei dati prima di pubblicare
+        run: node check-data-quality.mjs output/players-data.json
 
       - name: Aggiunge il gioco alla cartella da pubblicare
         run: cp indovina-calciatore.html output/index.html

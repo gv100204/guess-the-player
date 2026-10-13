@@ -1,0 +1,50 @@
+# Percorso nel repository: .github/workflows/tests.yml
+#
+# Controlli automatici su OGNI push e su ogni pull request, senza costruire né
+# pubblicare niente (non tocca il gioco online e non chiama API-Football):
+#   1. tutti gli script .mjs sono sintatticamente corretti;
+#   2. i test automatici (test-sync-players-data.mjs) passano;
+#   3. il codice dentro indovina-calciatore.html è sintatticamente corretto.
+# Se uno fallisce, vedi una X rossa accanto al commit nella scheda Actions.
+
+name: Tests
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**.mjs"
+      - "indovina-calciatore.html"
+      - ".github/workflows/**"
+  pull_request:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Sintassi di tutti gli script
+        run: |
+          for f in *.mjs; do
+            node --check "$f" || exit 1
+          done
+          echo "Tutti gli script sono sintatticamente corretti."
+
+      - name: Test automatici
+        run: node test-sync-players-data.mjs
+
+      - name: Sintassi del codice nel gioco (HTML)
+        run: |
+          node -e '
+            const fs = require("fs");
+            const html = fs.readFileSync("indovina-calciatore.html", "utf8");
+            const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map((m) => m[1]).sort((a, b) => b.length - a.length);
+            if (scripts.length === 0) { console.error("Nessuno script nel gioco"); process.exit(1); }
+            fs.writeFileSync("/tmp/game.js", scripts[0]);
+          '
+          node --check /tmp/game.js
+          echo "Il codice del gioco è sintatticamente corretto."
