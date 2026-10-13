@@ -1640,8 +1640,16 @@
       var smooth = !(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
       window.requestAnimationFrame(function(){
         try {
-          el.stepList.lastElementChild.scrollIntoView({ block: "nearest", behavior: smooth ? "smooth" : "auto" });
-          if (el.nextStepBtn.offsetParent !== null) el.nextStepBtn.scrollIntoView({ block: "nearest", behavior: smooth ? "smooth" : "auto" });
+          // Un solo scorrimento calcolato a mano (due scrollIntoView di fila si
+          // annullano a vicenda in alcuni browser da computer): si porta in
+          // vista il pulsante "Prossima tappa" con un po' di margine sotto.
+          var vh = window.innerHeight || document.documentElement.clientHeight;
+          var btn = el.nextStepBtn.getBoundingClientRect();
+          var last = el.stepList.lastElementChild.getBoundingClientRect();
+          var delta = 0;
+          if (btn.bottom > vh - 16) delta = btn.bottom - (vh - 16);
+          if (last.top - delta < 8) delta = last.top - 8; // l'ultima tappa non deve uscire dall'alto
+          if (delta > 0 || last.top < 8) window.scrollBy({ top: delta, left: 0, behavior: smooth ? "smooth" : "auto" });
         } catch (e) {}
       });
     }

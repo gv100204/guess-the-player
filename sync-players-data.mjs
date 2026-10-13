@@ -462,6 +462,21 @@ function cleanClubName(name) {
   return String(name || "").replace(/\s*\(\s*\)/g, "").replace(/\s{2,}/g, " ").trim();
 }
 
+// Due nomi di club (già normalizzati) sono "lo stesso" se, tolte le sigle
+// generiche (fc, ac, sc...) e gli anni di fondazione (1893), restano le stesse
+// parole: "FC Schalke 04" e "Schalke 04", "FC Basel 1893" e "FC Basel". Le
+// squadre B restano distinte: "Nice II" non è "Nice".
+const CLUB_GENERIC_TOKENS = new Set(["fc", "cf", "ac", "sc", "afc", "as", "ss", "sv", "fk", "vfb", "vfl", "tsg", "sk", "cd", "ud", "sd", "rc", "us", "ssc", "club", "de", "the"]);
+function clubCore(n) {
+  const toks = String(n || "").split(/\s+/).filter(Boolean);
+  const kept = toks.filter((t) => !CLUB_GENERIC_TOKENS.has(t) && !/^(18|19)\d\d$/.test(t));
+  return (kept.length > 0 ? kept : toks).join(" ");
+}
+function clubsMatchLoose(a, b) {
+  if (!a || !b) return false;
+  return a === b || clubCore(a) === clubCore(b);
+}
+
 function dedupedSeasonRecords(rec){
   const byKey = new Map();
   (rec.seasonRecords || []).forEach((r) => {
@@ -508,7 +523,7 @@ function dedupedSeasonRecords(rec){
     const n = normClub(r.club);
     let best = null;
     wikiEntries.forEach((e, i) => {
-      if (normClub(e.team) !== n) return;
+      if (!clubsMatchLoose(normClub(e.team), n)) return;
       if (!(e.from <= r.season + 1 && e.to >= r.season)) return;
       const dist = Math.abs(e.from - r.season);
       if (!best || dist < best.dist) best = { i, dist };
@@ -784,9 +799,18 @@ function finalizeCareer(rec) {
   // ("2021–") ha un solo anno, una chiusa ("2025–2026") ne ha due. Vale solo
   // per l'ULTIMA tappa, se è lo stesso club dell'ultima riga di Wikipedia.
   // Serve a mostrare "attuale" (Tomori sì, Ballo-Touré svincolato no).
-  const wikiLast = Array.isArray(rec.wikiEntries) && rec.wikiEntries.length > 0 ? rec.wikiEntries[rec.wikiEntries.length - 1] : null;
-  const lastIsCurrent = !!(wikiLast && stints.length > 0 && wikiLast.from === wikiLast.to
-    && normClub(wikiLast.team) === normClub(stints[stints.length - 1].club));
+  // Si guarda l'ULTIMA riga di Wikipedia dello stesso club dell'ultima tappa
+  // (non per forza l'ultima in assoluto: con un prestito, il club proprietario
+  // sta PRIMA del prestito nell'infobox - caso Gatti, Juventus "2022-" e poi
+  // Frosinone in prestito). Il nome può differire un po' tra le fonti
+  // (Shaqiri: "FC Basel 1893" e "FC Basel"): basta che uno contenga l'altro.
+  let lastIsCurrent = false;
+  if (Array.isArray(rec.wikiEntries) && stints.length > 0) {
+    const b = normClub(stints[stints.length - 1].club);
+    const same = rec.wikiEntries.filter((e) => clubsMatchLoose(normClub(e.team), b));
+    const wl = same[same.length - 1];
+    lastIsCurrent = !!(wl && wl.from === wl.to);
+  }
 
   return stints.map((s, i) => {
     const out = {

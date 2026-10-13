@@ -852,6 +852,29 @@ async function main() {
     assert.equal(open[open.length - 1].current, true);
     assert.equal(closed[closed.length - 1].current, undefined);
   });
+  await test("tappa aperta riconosciuta anche se il nome del club differisce un po' (Shaqiri: 'FC Basel 1893' e 'FC Basel')", () => {
+    const c = finalizeCareer({ id: 307, name: "S", seasonRecords: [{ season: 2024, club: "FC Basel 1893", apps: 34, goals: 10 }, { season: 2025, club: "FC Basel 1893", apps: 34, goals: 10 }], wikiEntries: [{ team: "FC Basel", from: 2024, to: 2024 }] });
+    assert.equal(c[c.length - 1].current, true);
+  });
+  await test("tappa aperta del club proprietario con un prestito scritto dopo su Wikipedia (Gatti: Juventus '2022-', poi Frosinone)", () => {
+    const c = finalizeCareer({ id: 4, name: "G", seasonRecords: [{ season: 2025, club: "Juventus", apps: 20, goals: 1 }], wikiEntries: [{ team: "Juventus", from: 2022, to: 2022 }, { team: "Frosinone", from: 2022, to: 2022 }] });
+    assert.equal(c[c.length - 1].current, true);
+  });
+  await test("Dzeko: 'FC Schalke 04' (nostri dati) e 'Schalke 04' (Wikipedia) sono lo stesso club: Schalke e' l'ultima tappa ed e' attuale", () => {
+    const c = finalizeCareer({ id: 790, name: "D", seasonRecords: [
+      { season: 2024, club: "Fenerbahce", apps: 35, goals: 17 },
+      { season: 2025, club: "FC Schalke 04", apps: 11, goals: 5 },
+      { season: 2025, club: "Fiorentina", apps: 11, goals: 0 }
+    ], wikiEntries: [{ team: "Fenerbah\u00e7e", from: 2023, to: 2025 }, { team: "Fiorentina", from: 2025, to: 2026 }, { team: "Schalke 04", from: 2026, to: 2026 }] });
+    assert.equal(c[c.length - 1].club, "FC Schalke 04");
+    assert.equal(c[c.length - 1].current, true);
+  });
+  await test("le squadre B restano distinte dalla prima squadra nel confronto con Wikipedia ('Nice II' non e' 'Nice')", () => {
+    const c = finalizeCareer({ id: 5, name: "H", seasonRecords: [
+      { season: 2013, club: "Nice", apps: 8, goals: 0 }, { season: 2014, club: "Nice II", apps: 15, goals: 0 }
+    ], wikiEntries: [{ team: "Nice", from: 2013, to: 2014 }] });
+    assert.equal(c.length, 2);
+  });
   await test("le parentesi vuote lasciate da Wikipedia non finiscono nel nome del club ('Milan Futuro ()')", () => {
     const career = finalizeCareer({ id: 3, name: "X", seasonRecords: [{ season: 2024, club: "Milan Futuro ()", apps: 3, goals: 0 }] });
     assert.equal(career[0].club, "Milan Futuro");
