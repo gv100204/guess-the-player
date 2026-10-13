@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-13T03:04:25.744Z",
+  "version": "2026-10-13T03:16:21.786Z",
   "players": [
     {
       "id": "arturo-erasmo-vidal-pardo-151",
@@ -87,7 +87,8 @@
           "leagueRaw": "Primera División",
           "country": "Chile",
           "apps": 53,
-          "goals": 8
+          "goals": 8,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -618,7 +619,8 @@
           "leagueRaw": "Pro League",
           "country": "Saudi-Arabia",
           "apps": 30,
-          "goals": 10
+          "goals": 10,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -998,7 +1000,8 @@
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
           "apps": 11,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -2255,7 +2258,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 14,
-          "goals": 11
+          "goals": 11,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -2733,7 +2737,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 15,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -3964,7 +3969,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -4456,7 +4462,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 9,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -4655,7 +4662,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 10,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -5103,7 +5111,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 12,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -5228,7 +5237,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 117,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -5354,33 +5364,15 @@
           "league": null,
           "leagueRaw": "Primera División",
           "country": null,
-          "apps": 11,
-          "goals": 11
-        },
-        {
-          "years": "2016",
-          "club": "Universidad Católica",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
           "apps": 23,
           "goals": 24
         },
         {
-          "years": "2016–2017",
+          "years": "2016–2018",
           "club": "U.N.A.M. - Pumas",
           "league": null,
           "leagueRaw": "Liga MX",
           "country": "Mexico",
-          "apps": 11,
-          "goals": 8
-        },
-        {
-          "years": "2017–2018",
-          "club": "UNAM",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
           "apps": 39,
           "goals": 25
         },
@@ -5454,7 +5446,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -5918,7 +5911,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -6200,7 +6194,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 7,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -7476,7 +7471,8 @@
           "leagueRaw": "Super Liga",
           "country": "Serbia",
           "apps": 16,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -7595,7 +7591,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -7815,7 +7812,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -8325,7 +8323,8 @@
           "leagueRaw": "Division 1",
           "country": "United-Arab-Emirates",
           "apps": 1,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -8587,7 +8586,8 @@
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
           "apps": 6,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -9011,7 +9011,8 @@
           "leagueRaw": "Super League 1",
           "country": "Greece",
           "apps": 43,
-          "goals": 11
+          "goals": 11,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -9157,7 +9158,8 @@
           "leagueRaw": "Primera División",
           "country": "Peru",
           "apps": 25,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -9241,7 +9243,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 20,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -9601,7 +9604,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 12,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -9850,7 +9854,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 21,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -10363,7 +10368,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 7,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -10499,7 +10505,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 61,
-          "goals": 11
+          "goals": 11,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -10575,7 +10582,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 151,
-          "goals": 80
+          "goals": 80,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -10718,7 +10726,8 @@
           "leagueRaw": "Liga MX",
           "country": "Mexico",
           "apps": 28,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -11021,7 +11030,8 @@
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
           "apps": 60,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -11174,7 +11184,8 @@
           "leagueRaw": "Eredivisie",
           "country": "Netherlands",
           "apps": 27,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -11339,7 +11350,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -11438,7 +11450,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 72,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -11565,7 +11578,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 30,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -11624,19 +11638,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2004–2005",
+          "years": "2004–2007",
           "club": "OFK Beograd",
           "league": null,
           "leagueRaw": "Prva Liga",
-          "country": null,
-          "apps": 6,
-          "goals": 0
-        },
-        {
-          "years": "2005–2007",
-          "club": "OFK Beograd",
-          "league": null,
-          "leagueRaw": "Storico",
           "country": null,
           "apps": 37,
           "goals": 1
@@ -11923,15 +11928,6 @@
           "league": null,
           "leagueRaw": "National 2 - Group D",
           "country": "France",
-          "apps": 6,
-          "goals": 0
-        },
-        {
-          "years": "2017",
-          "club": "Paris Saint-Germain B",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
           "apps": 14,
           "goals": 2
         },
@@ -11987,7 +11983,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -12130,7 +12127,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 16,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -12340,7 +12338,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 11,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -12612,7 +12611,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 63,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -12769,7 +12769,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 153,
-          "goals": 37
+          "goals": 37,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -12925,7 +12926,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 7,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -13192,7 +13194,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -13506,7 +13509,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 93,
-          "goals": 21
+          "goals": 21,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -13582,7 +13586,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 156,
-          "goals": 18
+          "goals": 18,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -14195,7 +14200,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 106,
-          "goals": 11
+          "goals": 11,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -14588,7 +14594,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 106,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -15084,7 +15091,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 45,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -15251,7 +15259,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 37,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -15579,7 +15588,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -15680,7 +15690,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 132,
-          "goals": 10
+          "goals": 10,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -15850,7 +15861,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -15934,7 +15946,8 @@
           "leagueRaw": "Major League Soccer",
           "country": "USA",
           "apps": 79,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -16079,7 +16092,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -16253,7 +16267,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 11,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -16364,7 +16379,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 8,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -16457,7 +16473,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 58,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -16523,7 +16540,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 135,
-          "goals": 20
+          "goals": 20,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -16890,7 +16908,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 76,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -16964,7 +16983,8 @@
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
           "apps": 53,
-          "goals": 42
+          "goals": 42,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -17137,7 +17157,8 @@
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
           "apps": 98,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -17409,7 +17430,8 @@
           "leagueRaw": "Eliteserien",
           "country": "Norway",
           "apps": 56,
-          "goals": 16
+          "goals": 16,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -17518,7 +17540,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 120,
-          "goals": 38
+          "goals": 38,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -17652,7 +17675,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 59,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -17942,7 +17966,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 16,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -18066,7 +18091,8 @@
           "leagueRaw": "Super League 1",
           "country": "Greece",
           "apps": 76,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -18372,7 +18398,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 11,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -18480,7 +18507,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 103,
-          "goals": 18
+          "goals": 18,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -18701,7 +18729,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 30,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -18977,7 +19006,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -19176,7 +19206,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 57,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -19233,7 +19264,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -19559,7 +19591,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 63,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -19687,7 +19720,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -20111,7 +20145,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 77,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -20254,7 +20289,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 12,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -20381,7 +20417,8 @@
           "leagueRaw": "Pro League",
           "country": "Saudi-Arabia",
           "apps": 27,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -20459,22 +20496,13 @@
           "goals": 0
         },
         {
-          "years": "2023",
+          "years": "2023–2023",
           "club": "Estudiantes (LP)",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
-          "apps": 20,
-          "goals": 4
-        },
-        {
-          "years": "2023–2024",
-          "club": "Estudiantes (LP)",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 88,
-          "goals": 9
+          "apps": 108,
+          "goals": 13
         },
         {
           "years": "2023–2026",
@@ -20492,7 +20520,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 21,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -21033,7 +21062,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -21081,7 +21111,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 100,
-          "goals": 31
+          "goals": 31,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -21352,7 +21383,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 67,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -21934,7 +21966,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 8,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -22354,7 +22387,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 72,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -22489,7 +22523,8 @@
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
           "apps": 19,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -22580,7 +22615,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 94,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -22681,7 +22717,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 63,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -23003,7 +23040,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 5,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -23148,7 +23186,8 @@
           "leagueRaw": "CONMEBOL Sudamericana",
           "country": "World",
           "apps": 15,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -23347,7 +23386,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -23457,7 +23497,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 99,
-          "goals": 40
+          "goals": 40,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -23601,7 +23642,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 66,
-          "goals": 8
+          "goals": 8,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -23702,7 +23744,8 @@
           "leagueRaw": "Eredivisie",
           "country": "Netherlands",
           "apps": 64,
-          "goals": 17
+          "goals": 17,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -23831,7 +23874,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -23905,7 +23949,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 43,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -24107,7 +24152,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -24191,7 +24237,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 68,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -24506,7 +24553,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 67,
-          "goals": 8
+          "goals": 8,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -24712,7 +24760,8 @@
           "leagueRaw": "Serie B",
           "country": "Italy",
           "apps": 50,
-          "goals": 31
+          "goals": 31,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -25006,7 +25055,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -25143,7 +25193,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -25244,7 +25295,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 63,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -25491,7 +25543,8 @@
           "leagueRaw": "Serie B",
           "country": "Italy",
           "apps": 67,
-          "goals": 11
+          "goals": 11,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -25566,7 +25619,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 66,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -25675,7 +25729,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -25771,7 +25826,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 37,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -25971,7 +26027,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -26121,7 +26178,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -26212,7 +26270,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 32,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -26304,7 +26363,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 33,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -26461,7 +26521,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -26543,7 +26604,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 18,
-          "goals": 14
+          "goals": 14,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -26634,7 +26696,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -26781,7 +26844,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 18,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -27115,7 +27179,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -27253,7 +27318,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -27337,7 +27403,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -27421,7 +27488,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 7,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -27522,7 +27590,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -27597,7 +27666,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -27847,7 +27917,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 14,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -28301,7 +28372,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 13,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -29168,7 +29240,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -29637,7 +29710,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 10,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -30170,7 +30244,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -30363,7 +30438,8 @@
           "leagueRaw": "1. Lig",
           "country": "Turkey",
           "apps": 12,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -30747,7 +30823,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -31666,7 +31743,8 @@
           "leagueRaw": "Superliga",
           "country": "Denmark",
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -31792,7 +31870,8 @@
           "leagueRaw": "2. Liga",
           "country": "Austria",
           "apps": 15,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -31996,7 +32075,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 94,
-          "goals": 98
+          "goals": 98,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -32133,7 +32213,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -32400,7 +32481,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -32616,7 +32698,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -32921,7 +33004,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 13,
-          "goals": 17
+          "goals": 17,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -33445,7 +33529,8 @@
           "leagueRaw": "J1 League",
           "country": "Japan",
           "apps": 76,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -33553,7 +33638,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 88,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -34435,7 +34521,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 64,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -34611,7 +34698,8 @@
           "leagueRaw": "Super Liga",
           "country": "Serbia",
           "apps": 16,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -34804,7 +34892,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 9,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -34888,7 +34977,8 @@
           "leagueRaw": "Pro League",
           "country": "Saudi-Arabia",
           "apps": 90,
-          "goals": 37
+          "goals": 37,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -35362,7 +35452,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 320,
-          "goals": 140
+          "goals": 140,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -35628,7 +35719,8 @@
           "leagueRaw": "Super League 1",
           "country": "Greece",
           "apps": 23,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -36066,7 +36158,8 @@
           "leagueRaw": "Major League Soccer",
           "country": "USA",
           "apps": 11,
-          "goals": 12
+          "goals": 12,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -36148,7 +36241,8 @@
           "leagueRaw": "Stars League",
           "country": "Qatar",
           "apps": 21,
-          "goals": 10
+          "goals": 10,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -36923,7 +37017,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 15,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -37606,7 +37701,8 @@
           "leagueRaw": "1. Lig",
           "country": "Turkey",
           "apps": 19,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -37708,7 +37804,8 @@
           "leagueRaw": "Super League 1",
           "country": "Greece",
           "apps": 82,
-          "goals": 13
+          "goals": 13,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -37982,7 +38079,8 @@
           "leagueRaw": "Super Liga",
           "country": "Slovakia",
           "apps": 30,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -38084,7 +38182,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -38186,7 +38285,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 67,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -38619,7 +38719,8 @@
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
           "apps": 28,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -38750,7 +38851,8 @@
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
           "apps": 31,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -39016,7 +39118,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 34,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -39577,7 +39680,8 @@
           "leagueRaw": "Trophée des Champions",
           "country": "France",
           "apps": 63,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -39749,7 +39853,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -40003,7 +40108,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 5,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -40305,7 +40411,8 @@
           "leagueRaw": "Major League Soccer",
           "country": "USA",
           "apps": 33,
-          "goals": 17
+          "goals": 17,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -40459,7 +40566,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -40607,7 +40715,8 @@
           "leagueRaw": "Bundesliga",
           "country": "Austria",
           "apps": 57,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -40819,7 +40928,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 58,
-          "goals": 11
+          "goals": 11,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -40986,7 +41096,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -41067,7 +41178,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 92,
-          "goals": 16
+          "goals": 16,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -41653,7 +41765,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 70,
-          "goals": 33
+          "goals": 33,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -41929,7 +42042,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -42014,7 +42128,8 @@
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
           "apps": 133,
-          "goals": 16
+          "goals": 16,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -42775,7 +42890,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 17,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -42841,7 +42957,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 50,
-          "goals": 11
+          "goals": 11,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -43122,7 +43239,8 @@
           "leagueRaw": "Championship",
           "country": "England",
           "apps": 21,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -43188,7 +43306,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 102,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -43303,7 +43422,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 153,
-          "goals": 217
+          "goals": 217,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -43731,7 +43851,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -44010,7 +44131,8 @@
           "leagueRaw": "J1 League",
           "country": "Japan",
           "apps": 129,
-          "goals": 35
+          "goals": 35,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -44206,7 +44328,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 50,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -44294,7 +44417,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 43,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -44748,7 +44872,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 8,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -44941,7 +45066,8 @@
           "leagueRaw": "Segunda División",
           "country": "Spain",
           "apps": 31,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -45297,7 +45423,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -45469,7 +45596,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 10,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -46510,7 +46638,8 @@
           "leagueRaw": "Stars League",
           "country": "Qatar",
           "apps": 18,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -46689,7 +46818,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 8,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -46782,7 +46912,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -46977,7 +47108,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 71,
-          "goals": 8
+          "goals": 8,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -47362,7 +47494,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -47594,7 +47727,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 34,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -47675,7 +47809,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 75,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -47767,7 +47902,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 72,
-          "goals": 24
+          "goals": 24,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -47902,7 +48038,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 14,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -48034,7 +48171,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 34,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -48244,7 +48382,8 @@
           "leagueRaw": "National League",
           "country": "England",
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -48355,7 +48494,8 @@
           "leagueRaw": "Serie A",
           "country": "Brazil",
           "apps": 115,
-          "goals": 19
+          "goals": 19,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -48471,7 +48611,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 147,
-          "goals": 46
+          "goals": 46,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -48563,7 +48704,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 93,
-          "goals": 8
+          "goals": 8,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -48629,7 +48771,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 83,
-          "goals": 10
+          "goals": 10,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -48713,7 +48856,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 63,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -48933,7 +49077,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 28,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -49013,7 +49158,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 38,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -49111,7 +49257,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 25,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -49345,7 +49492,8 @@
           "leagueRaw": "Superliga",
           "country": "Denmark",
           "apps": 11,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -49420,7 +49568,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -49555,7 +49704,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 9,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -49638,7 +49788,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 26,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -49775,7 +49926,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -49866,7 +50018,8 @@
           "leagueRaw": "Championship",
           "country": "England",
           "apps": 9,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -50006,7 +50159,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 66,
-          "goals": 27
+          "goals": 27,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -50098,7 +50252,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -50194,7 +50349,8 @@
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
           "apps": 92,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -50283,7 +50439,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 19,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -50405,7 +50562,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 7,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -50564,7 +50722,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 28,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -50662,7 +50821,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 2,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -50746,7 +50906,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 73,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -50910,7 +51071,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -51029,7 +51191,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 135,
-          "goals": 112
+          "goals": 112,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -51185,7 +51348,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 62,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -51331,7 +51495,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 78,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -51473,7 +51638,8 @@
           "leagueRaw": "Premier League - Summer Series",
           "country": "England",
           "apps": 67,
-          "goals": 25
+          "goals": 25,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -51627,7 +51793,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -51748,7 +51915,8 @@
           "leagueRaw": "Jupiler Pro League",
           "country": "Belgium",
           "apps": 82,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -51884,7 +52052,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 14,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -52112,7 +52281,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -52195,7 +52365,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -52406,7 +52577,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 65,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -52490,7 +52662,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 86,
-          "goals": 46
+          "goals": 46,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -52703,7 +52876,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 5,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -52822,7 +52996,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 30,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -52957,7 +53132,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 69,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -53261,7 +53437,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 124,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -53513,7 +53690,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 15,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -53604,7 +53782,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 23,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -53660,7 +53839,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 103,
-          "goals": 21
+          "goals": 21,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -53871,7 +54051,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 28,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -53973,7 +54154,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 33,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -54039,7 +54221,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 104,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -54198,7 +54381,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 33,
-          "goals": 52
+          "goals": 52,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -54299,7 +54483,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 105,
-          "goals": 15
+          "goals": 15,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -54488,7 +54673,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 8,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -54570,7 +54756,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 57,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -54693,7 +54880,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 25,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -54819,7 +55007,8 @@
           "leagueRaw": "Championship",
           "country": "England",
           "apps": 45,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -54947,7 +55136,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 24,
-          "goals": 38
+          "goals": 38,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -55030,7 +55220,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 91,
-          "goals": 11
+          "goals": 11,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -55180,7 +55371,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 87,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -55288,7 +55480,8 @@
           "leagueRaw": "Championship",
           "country": "England",
           "apps": 29,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -55437,7 +55630,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 5,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -55566,7 +55760,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 24,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -55650,7 +55845,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -55743,7 +55939,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -55952,7 +56149,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 14,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -56036,7 +56234,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -56119,7 +56318,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 60,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -56243,7 +56443,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 5,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -56344,7 +56545,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -56455,7 +56657,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -56494,7 +56697,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 21,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -56736,7 +56940,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 25,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -56811,7 +57016,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -57038,7 +57244,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 32,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -57138,7 +57345,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -57231,7 +57439,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 33,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -57279,7 +57488,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -57390,7 +57600,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 31,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -57499,7 +57710,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -57547,7 +57759,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 30,
-          "goals": 11
+          "goals": 11,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -57623,7 +57836,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 25,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -57760,7 +57974,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 31,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -57960,7 +58175,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -58157,7 +58373,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 7,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -58241,7 +58458,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 28,
-          "goals": 11
+          "goals": 11,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -58416,7 +58634,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 16,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -58446,7 +58665,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 33,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -58525,7 +58745,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 16,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -58615,7 +58836,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 5,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -59956,7 +60178,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 53,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -60161,7 +60384,8 @@
           "leagueRaw": "Indian Super League",
           "country": null,
           "apps": 18,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -60509,7 +60733,8 @@
           "leagueRaw": "Segunda División",
           "country": "Spain",
           "apps": 5,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -60945,7 +61170,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 27,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -61194,7 +61420,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 7,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -61809,7 +62036,8 @@
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
           "apps": 8,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -61983,7 +62211,8 @@
           "leagueRaw": "Superliga",
           "country": "Albania",
           "apps": 5,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -62208,7 +62437,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 72,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -62538,7 +62768,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 12,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -63209,7 +63440,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 7,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -63266,7 +63498,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -64124,7 +64357,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -64216,7 +64450,8 @@
           "leagueRaw": "Liga I",
           "country": "Romania",
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -64690,7 +64925,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -64837,7 +65073,8 @@
           "leagueRaw": "Primera División",
           "country": "Chile",
           "apps": 56,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -65053,7 +65290,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 24,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -65159,7 +65397,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 209,
-          "goals": 13
+          "goals": 13,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -65353,7 +65592,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -65504,7 +65744,8 @@
           "leagueRaw": "J2 League",
           "country": "Japan",
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -65667,7 +65908,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 23,
-          "goals": 8
+          "goals": 8,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -65793,7 +66035,8 @@
           "leagueRaw": "Primera A",
           "country": "Colombia",
           "apps": 191,
-          "goals": 56
+          "goals": 56,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -65958,7 +66201,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -66182,7 +66426,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 83,
-          "goals": 38
+          "goals": 38,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -66403,7 +66648,8 @@
           "leagueRaw": "A-League",
           "country": "Australia",
           "apps": 11,
-          "goals": 17
+          "goals": 17,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -66668,7 +66914,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 59,
-          "goals": 27
+          "goals": 27,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -66779,7 +67026,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -66924,7 +67172,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 13,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -67660,7 +67909,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 188,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -68453,7 +68703,8 @@
           "leagueRaw": "Superliga",
           "country": "Denmark",
           "apps": 33,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -68582,7 +68833,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -68795,7 +69047,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -68905,7 +69158,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 11,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -69124,7 +69378,8 @@
           "leagueRaw": "Eredivisie",
           "country": "Netherlands",
           "apps": 24,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -69304,7 +69559,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 11,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -69746,7 +70002,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -69848,7 +70105,8 @@
           "leagueRaw": "Major League Soccer",
           "country": "USA",
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -69951,7 +70209,8 @@
           "leagueRaw": "Jupiler Pro League",
           "country": "Belgium",
           "apps": 36,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -70101,7 +70360,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 91,
-          "goals": 34
+          "goals": 34,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -70409,7 +70669,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 59,
-          "goals": 16
+          "goals": 16,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -70633,7 +70894,8 @@
           "leagueRaw": "Ligue 2",
           "country": "France",
           "apps": 36,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -70889,7 +71151,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 56,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -70937,7 +71200,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 36,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -71185,7 +71449,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -71242,7 +71507,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -71470,7 +71736,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -71636,7 +71903,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 390,
-          "goals": 230
+          "goals": 230,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -72983,7 +73251,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -73205,7 +73474,8 @@
           "leagueRaw": "3. Liga",
           "country": "Germany",
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -73941,7 +74211,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 14,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -75204,7 +75475,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -76202,7 +76474,8 @@
           "leagueRaw": "Primera A",
           "country": "Colombia",
           "apps": 46,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -76330,7 +76603,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 10,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -77094,7 +77368,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -77492,7 +77767,8 @@
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
           "apps": 44,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -77668,7 +77944,8 @@
           "leagueRaw": "Regionalliga",
           "country": null,
           "apps": 2,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -78601,7 +78878,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -78685,7 +78963,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 23,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -78889,7 +79168,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 22,
-          "goals": 24
+          "goals": 24,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -79135,7 +79415,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -79470,7 +79751,8 @@
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
           "apps": 5,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -80106,7 +80388,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -80411,7 +80694,8 @@
           "leagueRaw": "A-League",
           "country": "Australia",
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -80615,7 +80899,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 119,
-          "goals": 144
+          "goals": 144,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -81720,7 +82005,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 8,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -82106,7 +82392,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 7,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -83565,7 +83852,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 168,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -84895,7 +85183,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 129,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -85071,7 +85360,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -85373,7 +85663,8 @@
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
           "apps": 52,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -85514,7 +85805,8 @@
           "leagueRaw": "Super League",
           "country": "Switzerland",
           "apps": 14,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -85746,7 +86038,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 67,
-          "goals": 18
+          "goals": 18,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -85864,7 +86157,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -86672,7 +86966,8 @@
           "leagueRaw": "Catarinense - 1",
           "country": "Brazil",
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -87005,7 +87300,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -88031,7 +88327,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 111,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -88160,7 +88457,8 @@
           "leagueRaw": "Major League Soccer",
           "country": "USA",
           "apps": 32,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -88354,7 +88652,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 12,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -88630,7 +88929,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 392,
-          "goals": 569
+          "goals": 569,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -90042,7 +90342,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 45,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -90769,7 +91070,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 1,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -90784,19 +91086,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2006–2007",
+          "years": "2006–2009",
           "club": "Bohemians 1905",
           "league": null,
           "leagueRaw": "FNL",
-          "country": null,
-          "apps": 1,
-          "goals": 1
-        },
-        {
-          "years": "2007–2009",
-          "club": "Bohemians 1905",
-          "league": null,
-          "leagueRaw": "Storico",
           "country": null,
           "apps": 39,
           "goals": 11
@@ -91034,7 +91327,8 @@
           "leagueRaw": "3. Liga",
           "country": "Germany",
           "apps": 14,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -91552,7 +91846,8 @@
           "leagueRaw": "Regionalliga - Nord",
           "country": "Germany",
           "apps": 11,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -93510,7 +93805,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -93944,7 +94240,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 22,
-          "goals": 29
+          "goals": 29,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -94733,7 +95030,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -95017,7 +95315,8 @@
           "leagueRaw": "Super League 1",
           "country": "Greece",
           "apps": 8,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -95735,7 +96034,8 @@
           "leagueRaw": "National Division",
           "country": "Luxembourg",
           "apps": 33,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -96152,7 +96452,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 12,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -96226,7 +96527,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 45,
-          "goals": 32
+          "goals": 32,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -96336,7 +96638,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -96455,7 +96758,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -96691,7 +96995,8 @@
           "leagueRaw": "Eredivisie",
           "country": "Netherlands",
           "apps": 163,
-          "goals": 169
+          "goals": 169,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -98085,7 +98390,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -98480,7 +98786,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 116,
-          "goals": 12
+          "goals": 12,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -99092,7 +99399,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 293,
-          "goals": 29
+          "goals": 29,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -99248,7 +99556,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 31,
-          "goals": 18
+          "goals": 18,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -99367,7 +99676,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -99617,7 +99927,8 @@
           "leagueRaw": "J1 League",
           "country": "Japan",
           "apps": 182,
-          "goals": 44
+          "goals": 44,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -99795,7 +100106,8 @@
           "leagueRaw": "A-League",
           "country": "Australia",
           "apps": 79,
-          "goals": 18
+          "goals": 18,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -99885,7 +100197,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 121,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -100188,7 +100501,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 68,
-          "goals": 69
+          "goals": 69,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -100631,7 +100945,8 @@
           "leagueRaw": "J1 League",
           "country": "Japan",
           "apps": 203,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -101844,7 +102159,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -102071,7 +102387,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 36,
-          "goals": 10
+          "goals": 10,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -102365,7 +102682,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 236,
-          "goals": 14
+          "goals": 14,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -102476,7 +102794,8 @@
           "leagueRaw": "Ekstraklasa",
           "country": "Poland",
           "apps": 151,
-          "goals": 80
+          "goals": 80,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -103355,7 +103674,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 11,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -104038,7 +104358,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 47,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -104432,7 +104753,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 10,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -104615,7 +104937,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 8,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -105496,7 +105819,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -105682,7 +106006,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -105811,7 +106136,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 78,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -105869,19 +106195,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2006–2007",
+          "years": "2006–2008",
           "club": "Perth Glory",
           "league": null,
           "leagueRaw": "A-League Men",
-          "country": null,
-          "apps": 3,
-          "goals": 0
-        },
-        {
-          "years": "2007–2008",
-          "club": "Perth Glory",
-          "league": null,
-          "leagueRaw": "Storico",
           "country": null,
           "apps": 42,
           "goals": 16
@@ -106092,7 +106409,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -106410,7 +106728,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -106639,7 +106958,8 @@
           "leagueRaw": "2. Liga",
           "country": "Austria",
           "apps": 51,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -106722,7 +107042,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -107007,7 +107328,8 @@
           "leagueRaw": "Mineiro - 1",
           "country": "Brazil",
           "apps": 26,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -107171,7 +107493,8 @@
           "leagueRaw": "A-League",
           "country": "Australia",
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -107245,7 +107568,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 89,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -107594,7 +107918,8 @@
           "leagueRaw": "Regionalliga - Nord",
           "country": "Germany",
           "apps": 133,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -107904,7 +108229,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 17,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -108063,7 +108389,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 150,
-          "goals": 8
+          "goals": 8,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -108239,7 +108566,8 @@
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
           "apps": 35,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -108434,7 +108762,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -108527,7 +108856,8 @@
           "leagueRaw": "First League",
           "country": "Bulgaria",
           "apps": 19,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -108629,7 +108959,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 63,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -108677,7 +109008,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 178,
-          "goals": 225
+          "goals": 225,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -108935,7 +109267,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 82,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -109102,7 +109435,8 @@
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
           "apps": 47,
-          "goals": 20
+          "goals": 20,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -109184,7 +109518,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 58,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -109295,7 +109630,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 223,
-          "goals": 60
+          "goals": 60,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -109532,7 +109868,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -109706,7 +110043,8 @@
           "leagueRaw": "Segunda División",
           "country": "Spain",
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -110564,7 +110902,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -110666,7 +111005,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 7,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -111070,7 +111410,8 @@
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
           "apps": 11,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -111162,7 +111503,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 61,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -111262,7 +111604,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 7,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -111397,7 +111740,8 @@
           "leagueRaw": "Liga MX",
           "country": "Mexico",
           "apps": 12,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -111625,7 +111969,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -111911,7 +112256,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -112290,7 +112636,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 25,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -112795,7 +113142,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 16,
-          "goals": 56
+          "goals": 56,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -112905,7 +113253,8 @@
           "leagueRaw": "Czech Liga",
           "country": "Czech-Republic",
           "apps": 32,
-          "goals": 10
+          "goals": 10,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -113659,7 +114008,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 78,
-          "goals": 16
+          "goals": 16,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -113917,7 +114267,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 127,
-          "goals": 27
+          "goals": 27,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -114193,7 +114544,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 15,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -114397,19 +114749,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2005–2006",
+          "years": "2005–2008",
           "club": "Fredrikstad",
           "league": null,
           "leagueRaw": "Eliteserien",
-          "country": null,
-          "apps": 3,
-          "goals": 0
-        },
-        {
-          "years": "2006–2008",
-          "club": "Fredrikstad",
-          "league": null,
-          "leagueRaw": "Storico",
           "country": null,
           "apps": 69,
           "goals": 20
@@ -114628,7 +114971,8 @@
           "leagueRaw": "Premijer Liga",
           "country": "Bosnia",
           "apps": 14,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -115057,7 +115401,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -115200,7 +115545,8 @@
           "leagueRaw": "Serie A",
           "country": "Brazil",
           "apps": 20,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -115584,7 +115930,8 @@
           "leagueRaw": "Super League 1",
           "country": "Greece",
           "apps": 18,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -115746,7 +116093,8 @@
           "leagueRaw": "K League 1",
           "country": "South-Korea",
           "apps": 37,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -115866,7 +116214,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 164,
-          "goals": 8
+          "goals": 8,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -115959,7 +116308,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -116457,7 +116807,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 155,
-          "goals": 223
+          "goals": 223,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -116610,7 +116961,8 @@
           "leagueRaw": "Premiership",
           "country": "Scotland",
           "apps": 13,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -116814,7 +117166,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -116934,7 +117287,8 @@
           "leagueRaw": "3. Liga",
           "country": "Germany",
           "apps": 5,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -117009,7 +117363,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 240,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -117389,7 +117744,8 @@
           "leagueRaw": "J1 League",
           "country": "Japan",
           "apps": 137,
-          "goals": 52
+          "goals": 52,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -117526,7 +117882,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 126,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -117609,7 +117966,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -117808,7 +118166,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 253,
-          "goals": 25
+          "goals": 25,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -117983,7 +118342,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 115,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -118085,7 +118445,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -118470,7 +118831,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 5,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -118599,7 +118961,8 @@
           "leagueRaw": "1. Lig",
           "country": "Turkey",
           "apps": 95,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -118728,7 +119091,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -118867,7 +119231,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 14,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -119074,7 +119439,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 31,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -119220,7 +119586,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 61,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -119276,7 +119643,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 130,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -119386,7 +119754,8 @@
           "leagueRaw": "Stars League",
           "country": "Qatar",
           "apps": 8,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -119467,7 +119836,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 324,
-          "goals": 31
+          "goals": 31,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -119753,7 +120123,8 @@
           "leagueRaw": "Czech Liga",
           "country": "Czech-Republic",
           "apps": 22,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -119836,7 +120207,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 17,
-          "goals": 27
+          "goals": 27,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -119980,7 +120352,8 @@
           "leagueRaw": "CONMEBOL Sudamericana",
           "country": "World",
           "apps": 42,
-          "goals": 12
+          "goals": 12,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -120128,7 +120501,8 @@
           "leagueRaw": "Paulista - A1",
           "country": "Brazil",
           "apps": 62,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -120292,7 +120666,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 9,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -120504,7 +120879,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -121501,7 +121877,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -121684,7 +122061,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 5,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -121852,7 +122230,8 @@
           "leagueRaw": "Super Liga",
           "country": "Serbia",
           "apps": 18,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -122223,7 +122602,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 269,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -122280,7 +122660,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 204,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -122546,7 +122927,8 @@
           "leagueRaw": "3. Liga",
           "country": "Germany",
           "apps": 68,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -122621,7 +123003,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 61,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -122723,7 +123106,8 @@
           "leagueRaw": "Eliteserien",
           "country": "Norway",
           "apps": 22,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -123008,7 +123392,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -123182,7 +123567,8 @@
           "leagueRaw": "National 2 - Group C",
           "country": "France",
           "apps": 24,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -123745,7 +124131,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -123919,7 +124306,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -124217,7 +124605,8 @@
           "leagueRaw": "1. Lig",
           "country": "Turkey",
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -124691,7 +125080,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 5,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -124776,7 +125166,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -124824,7 +125215,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 255,
-          "goals": 14
+          "goals": 14,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -124898,7 +125290,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 128,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -125017,7 +125410,8 @@
           "leagueRaw": "Major League Soccer",
           "country": "USA",
           "apps": 57,
-          "goals": 21
+          "goals": 21,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -125083,7 +125477,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 15,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -125311,7 +125706,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 12,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -125484,7 +125880,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 63,
-          "goals": 38
+          "goals": 38,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -125705,7 +126102,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -125860,7 +126258,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -125978,7 +126377,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 175,
-          "goals": 22
+          "goals": 22,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -126170,7 +126570,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -126311,7 +126712,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 200,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -126394,7 +126796,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 172,
-          "goals": 224
+          "goals": 224,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -126460,7 +126863,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 151,
-          "goals": 186
+          "goals": 186,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -126562,7 +126966,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -126654,7 +127059,8 @@
           "leagueRaw": "Bundesliga",
           "country": "Austria",
           "apps": 29,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -126765,7 +127171,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 24,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -126875,7 +127282,8 @@
           "leagueRaw": "NB I",
           "country": "Hungary",
           "apps": 9,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -127408,7 +127816,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 19,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -127703,7 +128112,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 9,
-          "goals": 16
+          "goals": 16,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -127970,7 +128380,8 @@
           "leagueRaw": "Super League",
           "country": "Switzerland",
           "apps": 123,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -128226,7 +128637,8 @@
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
           "apps": 45,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -128354,7 +128766,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -128797,7 +129210,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -129144,20 +129558,11 @@
       "isGK": false,
       "career": [
         {
-          "years": "2011–2012",
+          "years": "2011–2013",
           "club": "Olympique Lyonnais II",
           "league": null,
           "leagueRaw": "National 2 - Group D",
           "country": "France",
-          "apps": 2,
-          "goals": 0
-        },
-        {
-          "years": "2012–2013",
-          "club": "Lyon II",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
           "apps": 30,
           "goals": 1
         },
@@ -129186,7 +129591,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 117,
-          "goals": 21
+          "goals": 21,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -129308,7 +129714,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 71,
-          "goals": 15
+          "goals": 15,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -129455,7 +129862,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 119,
-          "goals": 164
+          "goals": 164,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -129546,7 +129954,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 113,
-          "goals": 8
+          "goals": 8,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -129714,7 +130123,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 8,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -130011,7 +130421,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -130179,7 +130590,8 @@
           "leagueRaw": "Ekstraklasa",
           "country": "Poland",
           "apps": 33,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -130264,7 +130676,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 160,
-          "goals": 25
+          "goals": 25,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -130458,7 +130871,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 102,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -130550,7 +130964,8 @@
           "leagueRaw": "J1 League",
           "country": "Japan",
           "apps": 35,
-          "goals": 13
+          "goals": 13,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -131147,7 +131562,8 @@
           "leagueRaw": "Super League 1",
           "country": "Greece",
           "apps": 33,
-          "goals": 16
+          "goals": 16,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -131222,7 +131638,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 41,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -131277,7 +131694,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 116,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -131418,7 +131836,8 @@
           "leagueRaw": "Serie A",
           "country": "Brazil",
           "apps": 197,
-          "goals": 10
+          "goals": 10,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -131520,7 +131939,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -131595,7 +132015,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -131652,7 +132073,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 34,
-          "goals": 61
+          "goals": 61,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -131718,7 +132140,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 51,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -131913,7 +132336,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 34,
-          "goals": 16
+          "goals": 16,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -131997,7 +132421,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 75,
-          "goals": 25
+          "goals": 25,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -132303,7 +132728,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 117,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -132369,7 +132795,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -132506,7 +132933,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -132590,7 +133018,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 7,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -132826,7 +133255,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -132946,7 +133376,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 127,
-          "goals": 37
+          "goals": 37,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -133021,7 +133452,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 163,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -133154,7 +133586,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 51,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -133324,7 +133757,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -133381,7 +133815,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 97,
-          "goals": 20
+          "goals": 20,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -133483,7 +133918,8 @@
           "leagueRaw": "Serie A",
           "country": "Brazil",
           "apps": 34,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -133793,7 +134229,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 7,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -133911,7 +134348,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 26,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -133986,7 +134424,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 127,
-          "goals": 178
+          "goals": 178,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -134404,7 +134843,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 87,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -134571,7 +135011,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -134730,7 +135171,8 @@
           "leagueRaw": "Stars League",
           "country": "Qatar",
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -134984,7 +135426,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 34,
-          "goals": 54
+          "goals": 54,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -135086,7 +135529,8 @@
           "leagueRaw": "Ligue 2",
           "country": "France",
           "apps": 7,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -135279,7 +135723,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 46,
-          "goals": 38
+          "goals": 38,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -135692,7 +136137,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -135749,7 +136195,8 @@
           "leagueRaw": "Major League Soccer",
           "country": "USA",
           "apps": 98,
-          "goals": 8
+          "goals": 8,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -136031,7 +136478,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -136404,7 +136852,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 58,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -136532,7 +136981,8 @@
           "leagueRaw": "Super Liga",
           "country": "Serbia",
           "apps": 8,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -136650,7 +137100,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -136741,7 +137192,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 22,
-          "goals": 13
+          "goals": 13,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -136825,7 +137277,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 115,
-          "goals": 11
+          "goals": 11,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -136917,7 +137370,8 @@
           "leagueRaw": "Bundesliga",
           "country": "Austria",
           "apps": 25,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -137049,7 +137503,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 5,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -137178,7 +137633,8 @@
           "leagueRaw": "Major League Soccer",
           "country": "USA",
           "apps": 74,
-          "goals": 16
+          "goals": 16,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -137280,7 +137736,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 23,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -137438,7 +137895,8 @@
           "leagueRaw": "Czech Liga",
           "country": "Czech-Republic",
           "apps": 40,
-          "goals": 37
+          "goals": 37,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -137549,7 +138007,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 69,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -137659,7 +138118,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 15,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -137788,7 +138248,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 13,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -137844,7 +138305,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -138391,7 +138853,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -138622,7 +139085,8 @@
           "leagueRaw": "Bundesliga",
           "country": "Austria",
           "apps": 40,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -139159,7 +139623,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 98,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -139225,7 +139690,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 147,
-          "goals": 14
+          "goals": 14,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -139514,7 +139980,8 @@
           "leagueRaw": "Stars League",
           "country": "Qatar",
           "apps": 28,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -139649,7 +140116,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 32,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -139715,7 +140183,8 @@
           "leagueRaw": "Eredivisie",
           "country": "Netherlands",
           "apps": 6,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -139807,7 +140276,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 188,
-          "goals": 8
+          "goals": 8,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -140074,7 +140544,8 @@
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
           "apps": 45,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -140172,7 +140643,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 62,
-          "goals": 17
+          "goals": 17,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -140394,7 +140866,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 6,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -140467,7 +140940,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 153,
-          "goals": 48
+          "goals": 48,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -140677,7 +141151,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 126,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -140761,7 +141236,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 29,
-          "goals": 8
+          "goals": 8,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -140880,7 +141356,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 5,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -141120,7 +141597,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 12,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -141248,7 +141726,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 65,
-          "goals": 15
+          "goals": 15,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -141392,7 +141871,8 @@
           "leagueRaw": "Ekstraklasa",
           "country": "Poland",
           "apps": 21,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -141689,7 +142169,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 11,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -141797,21 +142278,12 @@
           "goals": 0
         },
         {
-          "years": "2013–2014",
+          "years": "2013–2015",
           "club": "OB",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
-          "apps": 6,
-          "goals": 0
-        },
-        {
-          "years": "2014–2015",
-          "club": "OB",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 112,
+          "apps": 118,
           "goals": 8
         },
         {
@@ -142015,7 +142487,8 @@
           "leagueRaw": "1. Division",
           "country": "Norway",
           "apps": 16,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -142179,7 +142652,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 5,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -142365,7 +142839,8 @@
           "leagueRaw": "J1 League",
           "country": "Japan",
           "apps": 29,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -142430,7 +142905,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -142568,7 +143044,8 @@
           "leagueRaw": "3. Liga",
           "country": "Germany",
           "apps": 33,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -142782,7 +143259,8 @@
           "leagueRaw": "3. Liga",
           "country": "Germany",
           "apps": 30,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -142968,7 +143446,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 31,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -143194,7 +143673,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -143296,7 +143776,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 59,
-          "goals": 25
+          "goals": 25,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -143626,7 +144107,8 @@
           "leagueRaw": "Major League Soccer",
           "country": "USA",
           "apps": 59,
-          "goals": 33
+          "goals": 33,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -143699,7 +144181,8 @@
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
           "apps": 14,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -143843,7 +144326,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 97,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -144050,7 +144534,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 125,
-          "goals": 17
+          "goals": 17,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -144133,7 +144618,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 29,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -144250,7 +144736,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -144403,7 +144890,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 88,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -144729,7 +145217,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 41,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -144896,7 +145385,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -145046,7 +145536,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -145130,7 +145621,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -145440,7 +145932,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -145719,7 +146212,8 @@
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
           "apps": 2,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -145803,7 +146297,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -145960,7 +146455,8 @@
           "leagueRaw": "Pro League",
           "country": "Saudi-Arabia",
           "apps": 54,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -146181,7 +146677,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 5,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -146329,7 +146826,8 @@
           "leagueRaw": "3. Liga",
           "country": "Germany",
           "apps": 29,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -146404,7 +146902,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 17,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -146497,7 +146996,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 118,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -146708,7 +147208,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 22,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -146818,7 +147319,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 23,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -146857,7 +147359,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 160,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -147025,7 +147528,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -147064,7 +147568,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 93,
-          "goals": 13
+          "goals": 13,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -147241,7 +147746,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -147307,7 +147813,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -147382,7 +147889,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -147430,7 +147938,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 51,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -147535,7 +148044,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -147826,7 +148336,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 29,
-          "goals": 27
+          "goals": 27,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -147974,7 +148485,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 29,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -148075,7 +148587,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -148132,7 +148645,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 28,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -148215,7 +148729,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 15,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -148272,7 +148787,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 51,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -148329,7 +148845,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 26,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -148606,7 +149123,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -148739,7 +149257,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 15,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -148855,7 +149374,8 @@
           "leagueRaw": "1. Division",
           "country": "Cyprus",
           "apps": 61,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -149029,7 +149549,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -149148,7 +149669,8 @@
           "leagueRaw": "Super League 1",
           "country": "Greece",
           "apps": 30,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -149497,7 +150019,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -149572,7 +150095,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 7,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -149729,7 +150253,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 11,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -149982,7 +150507,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 68,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -150201,7 +150727,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 121,
-          "goals": 26
+          "goals": 26,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -150577,7 +151104,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 7,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -150661,7 +151189,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -150874,7 +151403,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 5,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -151219,7 +151749,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 30,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -151396,7 +151927,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -151572,7 +152104,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -151730,7 +152263,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -151859,7 +152393,8 @@
           "leagueRaw": "Stars League",
           "country": "Qatar",
           "apps": 27,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -151969,7 +152504,8 @@
           "leagueRaw": "J1 League",
           "country": "Japan",
           "apps": 11,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -152295,7 +152831,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -152517,7 +153054,8 @@
           "leagueRaw": "First League",
           "country": "Bulgaria",
           "apps": 26,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -152583,7 +153121,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 7,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -152674,7 +153213,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 74,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -152785,7 +153325,8 @@
           "leagueRaw": "HNL",
           "country": "Croatia",
           "apps": 36,
-          "goals": 31
+          "goals": 31,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -152878,7 +153419,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -153103,7 +153645,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 31,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -153354,7 +153897,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 15,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -153429,7 +153973,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 20,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -153582,7 +154127,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 67,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -153675,7 +154221,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -153723,7 +154270,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -153771,7 +154319,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -153837,7 +154386,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -153920,7 +154470,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -153986,7 +154537,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -154034,7 +154586,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 57,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -154109,7 +154662,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -154175,7 +154729,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 28,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -154313,7 +154868,8 @@
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
           "apps": 34,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -154413,7 +154969,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -154557,7 +155114,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 5,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -154614,7 +155172,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 46,
-          "goals": 24
+          "goals": 24,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -154822,7 +155381,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 64,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -154870,7 +155430,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 86,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -155426,7 +155987,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 60,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -155636,7 +156198,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 80,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -155711,7 +156274,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 14,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -155777,7 +156341,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 266,
-          "goals": 18
+          "goals": 18,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -156017,7 +156582,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 51,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -156083,7 +156649,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 83,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -156149,7 +156716,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -156535,7 +157103,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 95,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -156794,7 +157363,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -157018,7 +157588,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -157112,7 +157683,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 50,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -157204,7 +157776,8 @@
           "leagueRaw": "Championship",
           "country": "England",
           "apps": 22,
-          "goals": 19
+          "goals": 19,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -157285,7 +157858,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 172,
-          "goals": 11
+          "goals": 11,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -157414,7 +157988,8 @@
           "leagueRaw": "Czech Liga",
           "country": "Czech-Republic",
           "apps": 10,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -157625,7 +158200,8 @@
           "leagueRaw": "Bundesliga",
           "country": "Austria",
           "apps": 43,
-          "goals": 13
+          "goals": 13,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -157692,7 +158268,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 32,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -157748,7 +158325,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 37,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -157862,7 +158440,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -157920,7 +158499,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 82,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -158078,7 +158658,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -158144,7 +158725,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 51,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -158342,7 +158924,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 53,
-          "goals": 12
+          "goals": 12,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -158447,7 +159030,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 39,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -158504,7 +159088,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 36,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -158709,7 +159294,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 86,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -158756,7 +159342,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 52,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -158813,7 +159400,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -158981,7 +159569,8 @@
           "leagueRaw": "Championship",
           "country": "England",
           "apps": 39,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -159074,7 +159663,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 7,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -159131,7 +159721,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 64,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -159350,7 +159941,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 4,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -159389,7 +159981,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -159437,7 +160030,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -159509,7 +160103,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 13,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -159556,7 +160151,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 42,
-          "goals": 44
+          "goals": 44,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -159638,7 +160234,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -159743,7 +160340,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 35,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -159782,7 +160380,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 24,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -160160,7 +160759,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 33,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -160452,7 +161052,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 19,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -160491,7 +161092,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 59,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -160583,7 +161185,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 133,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -160607,20 +161210,11 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2016",
+          "years": "2015–2017",
           "club": "PSG II",
           "league": null,
           "leagueRaw": "National 2 - Group D",
           "country": "France",
-          "apps": 2,
-          "goals": 0
-        },
-        {
-          "years": "2016–2017",
-          "club": "Paris Saint-Germain B",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
           "apps": 35,
           "goals": 5
         },
@@ -160953,7 +161547,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 60,
-          "goals": 14
+          "goals": 14,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -161064,7 +161659,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 10,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -161157,7 +161753,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 17,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -161295,7 +161892,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 37,
-          "goals": 8
+          "goals": 8,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -161417,7 +162015,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 58,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -161714,7 +162313,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 6,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -161855,7 +162455,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -161957,7 +162558,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 13,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -162143,7 +162745,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 48,
-          "goals": 12
+          "goals": 12,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -162226,7 +162829,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -162620,7 +163224,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -162677,7 +163282,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 66,
-          "goals": 14
+          "goals": 14,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -162826,7 +163432,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 29,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -162943,7 +163550,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 64,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -163008,7 +163616,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -163091,7 +163700,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 15,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -163157,7 +163767,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 33,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -163214,7 +163825,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 32,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -163324,7 +163936,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 48,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -163380,7 +163993,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 28,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -163436,7 +164050,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 45,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -163502,7 +164117,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 25,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -163568,7 +164184,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -163765,7 +164382,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 32,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -163933,7 +164551,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 26,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164139,7 +164758,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 56,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164232,7 +164852,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164271,7 +164892,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 47,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164327,7 +164949,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 54,
-          "goals": 12
+          "goals": 12,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164366,7 +164989,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 24,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164506,7 +165130,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164536,7 +165161,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 25,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164575,7 +165201,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 32,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164641,7 +165268,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164680,7 +165308,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 36,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164744,7 +165373,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 2,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164774,7 +165404,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 43,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164804,7 +165435,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164834,7 +165466,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 34,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164864,7 +165497,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 26,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164903,7 +165537,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 26,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -165012,7 +165647,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 28,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -165096,7 +165732,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 30,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -165188,7 +165825,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 29,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -165353,7 +165991,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 34,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -165430,7 +166069,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 32,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -165502,7 +166142,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 31,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -165550,7 +166191,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 20,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -165679,7 +166321,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -165883,7 +166526,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 31,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -165931,7 +166575,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 23,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -166015,7 +166660,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 20,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -166223,7 +166869,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 30,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -166262,7 +166909,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 20,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -166458,7 +167106,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -166568,7 +167217,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -166634,7 +167284,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 30,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -166690,7 +167341,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 32,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -166774,7 +167426,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -166849,7 +167502,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 26,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -166896,7 +167550,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 10,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -166989,7 +167644,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -167076,7 +167732,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 33,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -167141,7 +167798,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 3,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -167236,7 +167894,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 29,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
