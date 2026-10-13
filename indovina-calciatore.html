@@ -1617,6 +1617,7 @@
     return n === 1 ? t("clueOne") : t("clueMany");
   }
 
+  var lastRendered = { player: null, n: 0 };
   function renderSteps(){
     el.stepList.innerHTML = "";
     var upTo = revealMode === "all" ? state.currentSteps.length : state.stepsShown;
@@ -1628,6 +1629,22 @@
       el.stepList.appendChild(li);
     }
     // Contatore "N tappe su M" tolto su richiesta - non viene più mostrato.
+
+    // Quando si rivela una nuova tappa dello STESSO giocatore, la pagina segue
+    // la lista: si scorre da sola quanto basta per tenere in vista l'ultima
+    // tappa e il pulsante "Prossima tappa" (senza muoversi se è già visibile).
+    var same = lastRendered.player === state.current;
+    var added = same && upTo > lastRendered.n;
+    lastRendered = { player: state.current, n: upTo };
+    if (added && el.nextStepBtn && el.stepList.lastElementChild) {
+      var smooth = !(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+      window.requestAnimationFrame(function(){
+        try {
+          el.stepList.lastElementChild.scrollIntoView({ block: "nearest", behavior: smooth ? "smooth" : "auto" });
+          if (el.nextStepBtn.offsetParent !== null) el.nextStepBtn.scrollIntoView({ block: "nearest", behavior: smooth ? "smooth" : "auto" });
+        } catch (e) {}
+      });
+    }
   }
 
   function updateScoreboard(){
