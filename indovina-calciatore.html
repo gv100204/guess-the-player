@@ -1569,9 +1569,11 @@
 
   function buildSteps(p){
     if (contentMode === "career"){
-      // Se l'ultima tappa arriva alla stagione in corso (o oltre), il giocatore
-      // gioca ancora lì: al posto dell'anno di fine (es. 2027) si mostra
-      // "attuale". Solo visualizzazione, i dati non cambiano.
+      // L'anno di fine di una tappa è l'anno in cui finisce la stagione: chi
+      // gioca ancora lì nella stagione 2026/27 ha come fine 2027 (maggiore
+      // della stagione in corso, 2026) e mostra "attuale". Una tappa che finisce
+      // nel 2026 è già chiusa (es. svincolati dall'estate): resta con l'anno.
+      // Solo visualizzazione, i dati non cambiano.
       var nowD = new Date();
       var seasonNow = nowD.getMonth() >= 6 ? nowD.getFullYear() : nowD.getFullYear() - 1;
       return p.career.map(function(c, idx){
@@ -1586,7 +1588,7 @@
         var yrs = String(c.years).replace(/^(\d{4})\s*[\u2013-]\s*\1$/, "$1");
         if (idx === p.career.length - 1) {
           var ym = String(c.years).match(/^(\d{4})(?:\s*[\u2013-]\s*(\d{4}))?$/);
-          if (ym && Number(ym[2] || ym[1]) >= seasonNow) yrs = ym[1] + "\u2013" + t("yearsPresent");
+          if (ym && Number(ym[2] || ym[1]) > seasonNow) yrs = ym[1] + "\u2013" + t("yearsPresent");
         }
         return { left: yrs, title: String(c.club).replace(/\s*\(\s*\)/g, ""), sub: sub };
       });
