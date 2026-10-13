@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-13T03:21:09.078Z",
+  "version": "2026-10-13T03:31:38.992Z",
   "players": [
     {
       "id": "stefan-savic-39",
@@ -6652,7 +6652,8 @@
           "leagueRaw": "HNL",
           "country": "Croatia",
           "apps": 47,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -6771,21 +6772,21 @@
         },
         {
           "years": "2022",
-          "club": "Al-Duhail SC",
-          "league": null,
-          "leagueRaw": "Stars League",
-          "country": "Qatar",
-          "apps": 4,
-          "goals": 1
-        },
-        {
-          "years": "2023",
           "club": "Elche",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
           "apps": 1,
           "goals": 0
+        },
+        {
+          "years": "2023",
+          "club": "Al-Duhail SC",
+          "league": null,
+          "leagueRaw": "Stars League",
+          "country": "Qatar",
+          "apps": 4,
+          "goals": 1
         },
         {
           "years": "2024–2025",
@@ -10401,21 +10402,21 @@
         },
         {
           "years": "2014",
-          "club": "FC Porto B",
-          "league": null,
-          "leagueRaw": "Segunda Liga",
-          "country": null,
-          "apps": 6,
-          "goals": 1
-        },
-        {
-          "years": "2015",
           "club": "FC Porto",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
           "apps": 2,
           "goals": 0
+        },
+        {
+          "years": "2015",
+          "club": "FC Porto B",
+          "league": null,
+          "leagueRaw": "Segunda Liga",
+          "country": null,
+          "apps": 6,
+          "goals": 1
         },
         {
           "years": "2015–2016",
@@ -11028,6 +11029,15 @@
       "isGK": false,
       "career": [
         {
+          "years": "2005–2005",
+          "club": "FC Basel 1893",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": null,
+          "apps": 17,
+          "goals": 1
+        },
+        {
           "years": "2005",
           "club": "FC Basel II",
           "league": null,
@@ -11037,13 +11047,13 @@
           "goals": 2
         },
         {
-          "years": "2005–2006",
+          "years": "2006–2006",
           "club": "FC Basel 1893",
           "league": null,
           "leagueRaw": "Super League",
           "country": null,
-          "apps": 34,
-          "goals": 4
+          "apps": 17,
+          "goals": 3
         },
         {
           "years": "2006–2009",
@@ -11074,20 +11084,20 @@
         },
         {
           "years": "2015",
-          "club": "Udinese",
-          "league": "seriea",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 16,
-          "goals": 0
-        },
-        {
-          "years": "2016",
           "club": "FC Basel 1893",
           "league": null,
           "leagueRaw": "Super League",
           "country": null,
           "apps": 12,
+          "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Udinese",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 16,
           "goals": 0
         },
         {
@@ -12750,15 +12760,6 @@
           "goals": 5
         },
         {
-          "years": "2015–2015",
-          "club": "FC Porto",
-          "league": "liga_pt",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 7,
-          "goals": 1
-        },
-        {
           "years": "2015",
           "club": "Boca Juniors",
           "league": null,
@@ -12766,6 +12767,15 @@
           "country": null,
           "apps": 11,
           "goals": 3
+        },
+        {
+          "years": "2015–2016",
+          "club": "FC Porto",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 7,
+          "goals": 1
         },
         {
           "years": "2016",
@@ -15854,6 +15864,15 @@
       "career": [
         {
           "years": "2011–2011",
+          "club": "Stuttgart II",
+          "league": null,
+          "leagueRaw": "3. Liga",
+          "country": "Germany",
+          "apps": 17,
+          "goals": 1
+        },
+        {
+          "years": "2011–2012",
           "club": "VfB Stuttgart",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -15862,13 +15881,13 @@
           "goals": 0
         },
         {
-          "years": "2011–2012",
+          "years": "2012–2012",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "3. Liga",
           "country": "Germany",
-          "apps": 21,
-          "goals": 3
+          "apps": 4,
+          "goals": 2
         },
         {
           "years": "2012–2014",
@@ -15876,16 +15895,25 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 65,
+          "apps": 46,
           "goals": 2
         },
         {
-          "years": "2014–2015",
+          "years": "2014–2014",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "3. Liga",
           "country": "Germany",
           "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2014–2015",
+          "club": "VfB Stuttgart",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 19,
           "goals": 0
         },
         {
@@ -17380,7 +17408,8 @@
           "leagueRaw": "Super League 1",
           "country": "Greece",
           "apps": 17,
-          "goals": 12
+          "goals": 12,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -21834,6 +21863,15 @@
         },
         {
           "years": "2010–2010",
+          "club": "Granada CF",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 25,
+          "goals": 5
+        },
+        {
+          "years": "2010–2011",
           "club": "Cesena",
           "league": "seriea",
           "leagueRaw": null,
@@ -21842,13 +21880,13 @@
           "goals": 0
         },
         {
-          "years": "2010–2014",
+          "years": "2011–2014",
           "club": "Granada CF",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 99,
-          "goals": 17
+          "apps": 74,
+          "goals": 12
         },
         {
           "years": "2014–2017",
@@ -22432,7 +22470,8 @@
           "leagueRaw": "Challenge League",
           "country": "Switzerland",
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -23381,21 +23420,21 @@
         },
         {
           "years": "2012",
-          "club": "Ashdod",
-          "league": null,
-          "leagueRaw": "Ligat Ha'al",
-          "country": null,
-          "apps": 13,
-          "goals": 6
-        },
-        {
-          "years": "2013",
           "club": "FK Partizan",
           "league": null,
           "leagueRaw": "Super Liga",
           "country": null,
           "apps": 14,
           "goals": 8
+        },
+        {
+          "years": "2013",
+          "club": "Ashdod",
+          "league": null,
+          "leagueRaw": "Ligat Ha'al",
+          "country": null,
+          "apps": 13,
+          "goals": 6
         },
         {
           "years": "2013–2014",
@@ -23823,7 +23862,8 @@
           "leagueRaw": "Segunda División",
           "country": "Spain",
           "apps": 6,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -24376,21 +24416,21 @@
         },
         {
           "years": "2011",
-          "club": "Lecce",
-          "league": "seriea",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 5,
-          "goals": 0
-        },
-        {
-          "years": "2012",
           "club": "Neuchatel Xamax FC",
           "league": null,
           "leagueRaw": "Super League",
           "country": null,
           "apps": 14,
           "goals": 2
+        },
+        {
+          "years": "2012",
+          "club": "Lecce",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 5,
+          "goals": 0
         },
         {
           "years": "2012",
@@ -26742,20 +26782,20 @@
         },
         {
           "years": "2017–2017",
-          "club": "Las Palmas",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 15,
-          "goals": 0
-        },
-        {
-          "years": "2017–2018",
           "club": "Club Tijuana",
           "league": null,
           "leagueRaw": "Liga MX",
           "country": "Mexico",
           "apps": 12,
+          "goals": 0
+        },
+        {
+          "years": "2017–2018",
+          "club": "Las Palmas",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 15,
           "goals": 0
         },
         {
@@ -26982,20 +27022,20 @@
         },
         {
           "years": "2010",
-          "club": "Girona",
-          "league": null,
-          "leagueRaw": "Segunda División",
-          "country": null,
-          "apps": 12,
-          "goals": 0
-        },
-        {
-          "years": "2011",
           "club": "FC Cartagena",
           "league": null,
           "leagueRaw": "Segunda División",
           "country": null,
           "apps": 14,
+          "goals": 0
+        },
+        {
+          "years": "2011",
+          "club": "Girona",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 12,
           "goals": 0
         },
         {
@@ -27695,6 +27735,15 @@
         },
         {
           "years": "2013–2013",
+          "club": "SC Braga",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 8,
+          "goals": 0
+        },
+        {
+          "years": "2013–2014",
           "club": "Academica",
           "league": "liga_pt",
           "leagueRaw": null,
@@ -27703,12 +27752,12 @@
           "goals": 4
         },
         {
-          "years": "2013–2014",
+          "years": "2014–2014",
           "club": "SC Braga",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
-          "apps": 34,
+          "apps": 26,
           "goals": 4
         },
         {
@@ -29135,6 +29184,15 @@
         },
         {
           "years": "2005–2005",
+          "club": "FC Porto",
+          "league": null,
+          "leagueRaw": "Primeira Liga",
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2005–2006",
           "club": "Saint Etienne",
           "league": null,
           "leagueRaw": "Ligue 1",
@@ -29143,12 +29201,12 @@
           "goals": 2
         },
         {
-          "years": "2005–2008",
+          "years": "2006–2008",
           "club": "FC Porto",
           "league": null,
           "leagueRaw": "Primeira Liga",
           "country": null,
-          "apps": 32,
+          "apps": 30,
           "goals": 12
         },
         {
@@ -31224,7 +31282,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2013–2015",
+          "years": "2013–2014",
           "club": "Teleoptik",
           "league": null,
           "leagueRaw": "Storico",
@@ -31718,7 +31776,8 @@
           "leagueRaw": "Primera División",
           "country": "Venezuela",
           "apps": 10,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -32410,7 +32469,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 56,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -34392,20 +34452,20 @@
         },
         {
           "years": "2015",
-          "club": "AEK Athens FC",
-          "league": null,
-          "leagueRaw": "Super League 1",
-          "country": "Greece",
-          "apps": 3,
-          "goals": 0
-        },
-        {
-          "years": "2016",
           "club": "Middlesbrough",
           "league": null,
           "leagueRaw": "Championship",
           "country": "England",
           "apps": 5,
+          "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "AEK Athens FC",
+          "league": null,
+          "leagueRaw": "Super League 1",
+          "country": "Greece",
+          "apps": 3,
           "goals": 0
         },
         {
@@ -37176,21 +37236,21 @@
         },
         {
           "years": "2022",
-          "club": "Valladolid",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 11,
-          "goals": 0
-        },
-        {
-          "years": "2023",
           "club": "FC Juarez",
           "league": null,
           "leagueRaw": "Liga MX",
           "country": "Mexico",
           "apps": 11,
           "goals": 1
+        },
+        {
+          "years": "2023",
+          "club": "Valladolid",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 11,
+          "goals": 0
         },
         {
           "years": "2023–2024",
@@ -38414,7 +38474,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -40195,20 +40256,20 @@
         },
         {
           "years": "2019",
-          "club": "FC Sochi",
-          "league": null,
-          "leagueRaw": "Premier League",
-          "country": "Russia",
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2020",
           "club": "Lecce",
           "league": "seriea",
           "leagueRaw": null,
           "country": null,
           "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2020",
+          "club": "FC Sochi",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": "Russia",
+          "apps": 1,
           "goals": 0
         },
         {
@@ -41080,7 +41141,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 99,
-          "goals": 13
+          "goals": 13,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -41275,7 +41337,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -42337,7 +42400,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -42580,7 +42644,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 31,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -43168,7 +43233,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -43405,20 +43471,20 @@
       "career": [
         {
           "years": "2016",
-          "club": "Granada CF",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 10,
-          "goals": 0
-        },
-        {
-          "years": "2017",
           "club": "Granada II",
           "league": null,
           "leagueRaw": "Primera División RFEF",
           "country": null,
           "apps": 23,
+          "goals": 0
+        },
+        {
+          "years": "2017",
+          "club": "Granada CF",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 10,
           "goals": 0
         },
         {
@@ -44631,7 +44697,8 @@
           "leagueRaw": "Super League 1",
           "country": "Greece",
           "apps": 28,
-          "goals": 17
+          "goals": 17,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -45717,7 +45784,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2016",
+          "years": "2015",
           "club": "Basel U-21",
           "league": null,
           "leagueRaw": "Storico",
@@ -46021,7 +46088,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -47405,7 +47473,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -48964,7 +49033,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 27,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -49451,7 +49521,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -49747,7 +49818,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -50643,15 +50715,6 @@
       "career": [
         {
           "years": "2014",
-          "club": "FC Porto B",
-          "league": null,
-          "leagueRaw": "Segunda Liga",
-          "country": null,
-          "apps": 19,
-          "goals": 0
-        },
-        {
-          "years": "2015",
           "club": "Paulista",
           "league": null,
           "leagueRaw": "Paulista A1",
@@ -50660,12 +50723,21 @@
           "goals": 0
         },
         {
-          "years": "2016",
+          "years": "2015",
           "club": "Madureira",
           "league": null,
           "leagueRaw": "Serie C",
           "country": "Brazil",
           "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "FC Porto B",
+          "league": null,
+          "leagueRaw": "Segunda Liga",
+          "country": null,
+          "apps": 19,
           "goals": 0
         },
         {
@@ -50789,21 +50861,21 @@
         },
         {
           "years": "2016–2016",
-          "club": "Granada CF",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 2,
-          "goals": 0
-        },
-        {
-          "years": "2016–2017",
           "club": "Granada II",
           "league": null,
           "leagueRaw": "Primera División RFEF",
           "country": null,
           "apps": 21,
           "goals": 2
+        },
+        {
+          "years": "2016–2017",
+          "club": "Granada CF",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 2,
+          "goals": 0
         },
         {
           "years": "2017–2018",
@@ -52910,6 +52982,15 @@
           "goals": 1
         },
         {
+          "years": "2018–2018",
+          "club": "FC Sion",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": "Switzerland",
+          "apps": 9,
+          "goals": 0
+        },
+        {
           "years": "2018–2019",
           "club": "Sion II",
           "league": null,
@@ -52919,12 +53000,12 @@
           "goals": 0
         },
         {
-          "years": "2018–2020",
+          "years": "2019–2020",
           "club": "FC Sion",
           "league": null,
           "leagueRaw": "Super League",
           "country": "Switzerland",
-          "apps": 20,
+          "apps": 11,
           "goals": 0
         },
         {
@@ -61976,21 +62057,21 @@
         },
         {
           "years": "2014",
-          "club": "Al Nasr",
-          "league": null,
-          "leagueRaw": "Pro League",
-          "country": "United-Arab-Emirates",
-          "apps": 12,
-          "goals": 3
-        },
-        {
-          "years": "2015",
           "club": "Al-Arabi SC",
           "league": null,
           "leagueRaw": "Stars League",
           "country": "Qatar",
           "apps": 13,
           "goals": 6
+        },
+        {
+          "years": "2015",
+          "club": "Al Nasr",
+          "league": null,
+          "leagueRaw": "Pro League",
+          "country": "United-Arab-Emirates",
+          "apps": 12,
+          "goals": 3
         },
         {
           "years": "2015–2016",
@@ -65459,7 +65540,8 @@
           "leagueRaw": "Persian Gulf Pro League",
           "country": "Iran",
           "apps": 26,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -66216,21 +66298,21 @@
       "career": [
         {
           "years": "2006",
-          "club": "SC Braga",
-          "league": null,
-          "leagueRaw": "Primeira Liga",
-          "country": null,
-          "apps": 6,
-          "goals": 0
-        },
-        {
-          "years": "2007",
           "club": "Penafiel",
           "league": null,
           "leagueRaw": "Segunda Liga",
           "country": null,
           "apps": 13,
           "goals": 5
+        },
+        {
+          "years": "2007",
+          "club": "SC Braga",
+          "league": null,
+          "leagueRaw": "Primeira Liga",
+          "country": null,
+          "apps": 6,
+          "goals": 0
         },
         {
           "years": "2007–2008",
@@ -69749,7 +69831,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -70165,7 +70248,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -70986,7 +71070,8 @@
           "leagueRaw": "Liga MX",
           "country": "Mexico",
           "apps": 34,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -71318,7 +71403,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -74525,20 +74611,20 @@
         },
         {
           "years": "2024",
-          "club": "Granada CF",
-          "league": null,
-          "leagueRaw": "Segunda División",
-          "country": "Spain",
-          "apps": 11,
-          "goals": 0
-        },
-        {
-          "years": "2025",
           "club": "CF Pachuca",
           "league": null,
           "leagueRaw": "Liga MX",
           "country": "Mexico",
           "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2025",
+          "club": "Granada CF",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 11,
           "goals": 0
         },
         {
@@ -74925,7 +75011,8 @@
           "leagueRaw": "Persian Gulf Pro League",
           "country": "Iran",
           "apps": 5,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -75169,21 +75256,21 @@
         },
         {
           "years": "2021–2021",
-          "club": "AEK Athens FC",
-          "league": null,
-          "leagueRaw": "Super League 1",
-          "country": "Greece",
-          "apps": 9,
-          "goals": 2
-        },
-        {
-          "years": "2021–2022",
           "club": "FC Krasnodar",
           "league": null,
           "leagueRaw": "Premier League",
           "country": "Russia",
           "apps": 14,
           "goals": 4
+        },
+        {
+          "years": "2021–2022",
+          "club": "AEK Athens FC",
+          "league": null,
+          "leagueRaw": "Super League 1",
+          "country": "Greece",
+          "apps": 9,
+          "goals": 2
         },
         {
           "years": "2022–2023",
@@ -76794,6 +76881,15 @@
         },
         {
           "years": "2020–2020",
+          "club": "FC Porto",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 18,
+          "goals": 7
+        },
+        {
+          "years": "2020–2021",
           "club": "FC Porto B",
           "league": null,
           "leagueRaw": "Segunda Liga",
@@ -76802,13 +76898,13 @@
           "goals": 1
         },
         {
-          "years": "2020–2024",
+          "years": "2021–2024",
           "club": "FC Porto",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
-          "apps": 87,
-          "goals": 19
+          "apps": 69,
+          "goals": 12
         },
         {
           "years": "2024–2026",
@@ -78275,21 +78371,21 @@
         },
         {
           "years": "2025",
-          "club": "FC Zurich",
-          "league": null,
-          "leagueRaw": "Super League",
-          "country": "Switzerland",
-          "apps": 12,
-          "goals": 3
-        },
-        {
-          "years": "2026",
           "club": "Tondela",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
           "apps": 13,
           "goals": 2
+        },
+        {
+          "years": "2026",
+          "club": "FC Zurich",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": "Switzerland",
+          "apps": 12,
+          "goals": 3
         },
         {
           "years": "2026–2027",
@@ -80096,7 +80192,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 63,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -81476,7 +81573,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -81587,7 +81685,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 36,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -81666,20 +81765,20 @@
         },
         {
           "years": "2021",
-          "club": "Reading",
-          "league": null,
-          "leagueRaw": "Championship",
-          "country": "England",
-          "apps": 10,
-          "goals": 0
-        },
-        {
-          "years": "2022",
           "club": "Bournemouth",
           "league": null,
           "leagueRaw": "Championship",
           "country": "England",
           "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2022",
+          "club": "Reading",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 10,
           "goals": 0
         },
         {
@@ -81898,7 +81997,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -84568,21 +84668,21 @@
       "career": [
         {
           "years": "2019",
-          "club": "FC Porto B",
-          "league": null,
-          "leagueRaw": "Segunda Liga",
-          "country": "Portugal",
-          "apps": 3,
-          "goals": 0
-        },
-        {
-          "years": "2020",
           "club": "FC Porto",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
           "apps": 11,
           "goals": 1
+        },
+        {
+          "years": "2020",
+          "club": "FC Porto B",
+          "league": null,
+          "leagueRaw": "Segunda Liga",
+          "country": "Portugal",
+          "apps": 3,
+          "goals": 0
         },
         {
           "years": "2020–2022",
@@ -86324,7 +86424,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 32,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -87775,6 +87876,15 @@
         },
         {
           "years": "2014–2014",
+          "club": "FC Liefering",
+          "league": null,
+          "leagueRaw": "2. Liga",
+          "country": "Austria",
+          "apps": 19,
+          "goals": 0
+        },
+        {
+          "years": "2014–2015",
           "club": "Red Bull Salzburg",
           "league": null,
           "leagueRaw": "Bundesliga",
@@ -87783,12 +87893,12 @@
           "goals": 0
         },
         {
-          "years": "2014–2015",
+          "years": "2015–2015",
           "club": "FC Liefering",
           "league": null,
           "leagueRaw": "2. Liga",
           "country": "Austria",
-          "apps": 20,
+          "apps": 1,
           "goals": 0
         },
         {
@@ -88135,7 +88245,8 @@
           "leagueRaw": "Stars League",
           "country": "Qatar",
           "apps": 10,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -91559,21 +91670,21 @@
         },
         {
           "years": "2016",
-          "club": "Club Tijuana",
-          "league": null,
-          "leagueRaw": "Liga MX",
-          "country": "Mexico",
-          "apps": 39,
-          "goals": 5
-        },
-        {
-          "years": "2017",
           "club": "Defensa Y Justicia",
           "league": null,
           "leagueRaw": "Liga Profesional Argentina",
           "country": "Argentina",
           "apps": 15,
           "goals": 0
+        },
+        {
+          "years": "2017",
+          "club": "Club Tijuana",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": "Mexico",
+          "apps": 39,
+          "goals": 5
         },
         {
           "years": "2017–2019",
@@ -91775,7 +91886,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -92325,7 +92437,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -93660,7 +93773,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 9,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -93726,7 +93840,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -99790,7 +99905,8 @@
           "leagueRaw": "J2 League",
           "country": "Japan",
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -101212,21 +101328,21 @@
         },
         {
           "years": "2011",
-          "club": "Espanyol",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 15,
-          "goals": 5
-        },
-        {
-          "years": "2012",
           "club": "Neuchatel Xamax FC",
           "league": null,
           "leagueRaw": "Super League",
           "country": null,
           "apps": 14,
           "goals": 6
+        },
+        {
+          "years": "2012",
+          "club": "Espanyol",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 15,
+          "goals": 5
         },
         {
           "years": "2012–2013",
@@ -101239,21 +101355,21 @@
         },
         {
           "years": "2013",
-          "club": "Al-Rayyan SC",
-          "league": null,
-          "leagueRaw": "Stars League",
-          "country": "Qatar",
-          "apps": 8,
-          "goals": 7
-        },
-        {
-          "years": "2014",
           "club": "El Jaish SC",
           "league": null,
           "leagueRaw": "Stars League",
           "country": "Qatar",
           "apps": 8,
           "goals": 4
+        },
+        {
+          "years": "2014",
+          "club": "Al-Rayyan SC",
+          "league": null,
+          "leagueRaw": "Stars League",
+          "country": "Qatar",
+          "apps": 8,
+          "goals": 7
         },
         {
           "years": "2014",
@@ -108142,20 +108258,20 @@
         },
         {
           "years": "2016",
-          "club": "Leganes",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 11,
-          "goals": 1
-        },
-        {
-          "years": "2017",
           "club": "Granada CF",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
           "apps": 13,
+          "goals": 1
+        },
+        {
+          "years": "2017",
+          "club": "Leganes",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 11,
           "goals": 1
         },
         {
@@ -109040,7 +109156,8 @@
           "leagueRaw": "Segunda División",
           "country": "Spain",
           "apps": 74,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -115291,7 +115408,8 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 16,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -115510,7 +115628,8 @@
           "leagueRaw": "Primera División",
           "country": "Venezuela",
           "apps": 29,
-          "goals": 8
+          "goals": 8,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -117052,7 +117171,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2005–2006",
+          "years": "2005",
           "club": "FC Basel II",
           "league": null,
           "leagueRaw": "Storico",
@@ -118006,20 +118125,20 @@
         },
         {
           "years": "2016",
-          "club": "Granada CF",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 11,
-          "goals": 1
-        },
-        {
-          "years": "2017",
           "club": "Panathinaikos",
           "league": null,
           "leagueRaw": "Super League 1",
           "country": "Greece",
           "apps": 8,
+          "goals": 1
+        },
+        {
+          "years": "2017",
+          "club": "Granada CF",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 11,
           "goals": 1
         },
         {
@@ -119338,21 +119457,21 @@
         },
         {
           "years": "2015",
-          "club": "Granada CF",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 14,
-          "goals": 1
-        },
-        {
-          "years": "2015–2016",
           "club": "PAOK",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 26,
           "goals": 0
+        },
+        {
+          "years": "2015",
+          "club": "Granada CF",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 14,
+          "goals": 1
         },
         {
           "years": "2016–2017",
@@ -123851,15 +123970,6 @@
           "goals": 1
         },
         {
-          "years": "2009–2009",
-          "club": "SC Covilha",
-          "league": null,
-          "leagueRaw": "Segunda Liga",
-          "country": null,
-          "apps": 14,
-          "goals": 4
-        },
-        {
           "years": "2009",
           "club": "Braga",
           "league": null,
@@ -123867,6 +123977,15 @@
           "country": null,
           "apps": 2,
           "goals": 0
+        },
+        {
+          "years": "2009–2009",
+          "club": "SC Covilha",
+          "league": null,
+          "leagueRaw": "Segunda Liga",
+          "country": null,
+          "apps": 14,
+          "goals": 4
         },
         {
           "years": "2009–2011",
@@ -124564,21 +124683,21 @@
         },
         {
           "years": "2015",
-          "club": "AEK Athens FC",
-          "league": null,
-          "leagueRaw": "Super League 1",
-          "country": "Greece",
-          "apps": 27,
-          "goals": 6
-        },
-        {
-          "years": "2016",
           "club": "Quilmes",
           "league": null,
           "leagueRaw": "Liga Profesional Argentina",
           "country": "Argentina",
           "apps": 12,
           "goals": 1
+        },
+        {
+          "years": "2016",
+          "club": "AEK Athens FC",
+          "league": null,
+          "leagueRaw": "Super League 1",
+          "country": "Greece",
+          "apps": 27,
+          "goals": 6
         },
         {
           "years": "2016–2022",
@@ -126941,7 +127060,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -129493,21 +129613,21 @@
         },
         {
           "years": "2019",
-          "club": "Lugo",
-          "league": null,
-          "leagueRaw": "Segunda División",
-          "country": "Spain",
-          "apps": 3,
-          "goals": 0
-        },
-        {
-          "years": "2020",
           "club": "Vancouver Whitecaps",
           "league": null,
           "leagueRaw": "Major League Soccer",
           "country": "USA",
           "apps": 17,
           "goals": 1
+        },
+        {
+          "years": "2020",
+          "club": "Lugo",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 3,
+          "goals": 0
         },
         {
           "years": "2020–2021",
@@ -131901,24 +132021,15 @@
         },
         {
           "years": "2010–2010",
-          "club": "FC Schalke 04",
-          "league": "bundesliga",
-          "leagueRaw": null,
+          "club": "Schalke 04 II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 6,
-          "goals": 0
+          "apps": 5,
+          "goals": 1
         },
         {
           "years": "2010–2011",
-          "club": "Schalke 04 II",
-          "league": null,
-          "leagueRaw": "Regionalliga",
-          "country": null,
-          "apps": 5,
-          "goals": 1
-        },
-        {
-          "years": "2011–2011",
           "club": "FC Schalke 04",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -131927,13 +132038,31 @@
           "goals": 0
         },
         {
-          "years": "2011–2012",
+          "years": "2011–2011",
           "club": "Schalke 04 II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 5,
+          "apps": 2,
           "goals": 1
+        },
+        {
+          "years": "2011–2012",
+          "club": "FC Schalke 04",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2012–2012",
+          "club": "Schalke 04 II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 3,
+          "goals": 0
         },
         {
           "years": "2012–2015",
@@ -133343,20 +133472,20 @@
         },
         {
           "years": "2012",
-          "club": "Celta Vigo",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 10,
-          "goals": 0
-        },
-        {
-          "years": "2013",
           "club": "Sporting CP",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
           "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2013",
+          "club": "Celta Vigo",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 10,
           "goals": 0
         },
         {
@@ -135932,7 +136061,8 @@
           "leagueRaw": "Segunda División",
           "country": "Spain",
           "apps": 14,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -136748,21 +136878,21 @@
         },
         {
           "years": "2014",
-          "club": "Esbjerg",
-          "league": null,
-          "leagueRaw": "Superliga",
-          "country": "Denmark",
-          "apps": 14,
-          "goals": 2
-        },
-        {
-          "years": "2015",
           "club": "Granada CF",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
           "apps": 1,
           "goals": 0
+        },
+        {
+          "years": "2015",
+          "club": "Esbjerg",
+          "league": null,
+          "leagueRaw": "Superliga",
+          "country": "Denmark",
+          "apps": 14,
+          "goals": 2
         },
         {
           "years": "2015–2016",
@@ -139241,7 +139371,8 @@
           "leagueRaw": "Super Liga",
           "country": "Serbia",
           "apps": 15,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -139862,7 +139993,8 @@
           "leagueRaw": "Premier League",
           "country": "Russia",
           "apps": 116,
-          "goals": 64
+          "goals": 64,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -140124,7 +140256,8 @@
           "leagueRaw": "Liga MX",
           "country": "Mexico",
           "apps": 13,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -140487,7 +140620,8 @@
           "leagueRaw": "Segunda División",
           "country": "Spain",
           "apps": 16,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -140816,21 +140950,21 @@
         },
         {
           "years": "2016",
-          "club": "SC Braga",
-          "league": "liga_pt",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 11,
-          "goals": 3
-        },
-        {
-          "years": "2017",
           "club": "Valencia",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
           "apps": 4,
           "goals": 0
+        },
+        {
+          "years": "2017",
+          "club": "SC Braga",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 11,
+          "goals": 3
         },
         {
           "years": "2017–2019",
@@ -141764,7 +141898,8 @@
           "leagueRaw": "Segunda División",
           "country": "Spain",
           "apps": 154,
-          "goals": 170
+          "goals": 170,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -142537,6 +142672,15 @@
         },
         {
           "years": "2013–2013",
+          "club": "Granada II",
+          "league": null,
+          "leagueRaw": "Primera División RFEF",
+          "country": null,
+          "apps": 30,
+          "goals": 6
+        },
+        {
+          "years": "2013–2014",
           "club": "Granada CF",
           "league": "laliga",
           "leagueRaw": null,
@@ -142545,13 +142689,13 @@
           "goals": 0
         },
         {
-          "years": "2013–2014",
+          "years": "2014–2014",
           "club": "Granada II",
           "league": null,
           "leagueRaw": "Primera División RFEF",
           "country": null,
-          "apps": 31,
-          "goals": 6
+          "apps": 1,
+          "goals": 0
         },
         {
           "years": "2014–2015",
@@ -142717,7 +142861,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -142859,7 +143004,8 @@
           "leagueRaw": "Segunda División",
           "country": "Spain",
           "apps": 43,
-          "goals": 16
+          "goals": 16,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -144487,20 +144633,20 @@
         },
         {
           "years": "2008",
-          "club": "Rio Ave",
-          "league": null,
-          "leagueRaw": "Primeira Liga",
-          "country": null,
-          "apps": 5,
-          "goals": 0
-        },
-        {
-          "years": "2009",
           "club": "FC Porto",
           "league": null,
           "leagueRaw": "Primeira Liga",
           "country": null,
           "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2009",
+          "club": "Rio Ave",
+          "league": null,
+          "leagueRaw": "Primeira Liga",
+          "country": null,
+          "apps": 5,
           "goals": 0
         },
         {
@@ -144541,21 +144687,21 @@
         },
         {
           "years": "2014",
-          "club": "Granada CF",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 11,
-          "goals": 0
-        },
-        {
-          "years": "2015",
           "club": "1. FC Nürnberg",
           "league": null,
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 16,
           "goals": 2
+        },
+        {
+          "years": "2015",
+          "club": "Granada CF",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 11,
+          "goals": 0
         },
         {
           "years": "2015–2016",
@@ -144645,7 +144791,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -147284,7 +147431,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 311,
-          "goals": 112
+          "goals": 112,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -147908,6 +148056,15 @@
           "goals": 0
         },
         {
+          "years": "2022–2022",
+          "club": "Vancouver Whitecaps",
+          "league": null,
+          "leagueRaw": "Major League Soccer",
+          "country": "USA",
+          "apps": 12,
+          "goals": 0
+        },
+        {
           "years": "2022",
           "club": "Whitecaps FC 2",
           "league": null,
@@ -147917,12 +148074,12 @@
           "goals": 0
         },
         {
-          "years": "2022–2025",
+          "years": "2023–2025",
           "club": "Vancouver Whitecaps",
           "league": null,
           "leagueRaw": "Major League Soccer",
           "country": "USA",
-          "apps": 49,
+          "apps": 37,
           "goals": 0
         }
       ],
@@ -150364,7 +150521,8 @@
           "leagueRaw": "Major League Soccer",
           "country": "USA",
           "apps": 6,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -150730,7 +150888,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -151313,21 +151472,21 @@
         },
         {
           "years": "2012",
-          "club": "FC Porto B",
-          "league": null,
-          "leagueRaw": "Segunda Liga",
-          "country": null,
-          "apps": 9,
-          "goals": 2
-        },
-        {
-          "years": "2013",
           "club": "FC Porto",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
           "apps": 6,
           "goals": 0
+        },
+        {
+          "years": "2013",
+          "club": "FC Porto B",
+          "league": null,
+          "leagueRaw": "Segunda Liga",
+          "country": null,
+          "apps": 9,
+          "goals": 2
         },
         {
           "years": "2013–2014",
@@ -155011,7 +155170,8 @@
           "leagueRaw": "Liga MX",
           "country": "Mexico",
           "apps": 23,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -157006,21 +157166,21 @@
         },
         {
           "years": "2015–2015",
-          "club": "Granada CF",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 8,
-          "goals": 0
-        },
-        {
-          "years": "2015–2016",
           "club": "Sao Paulo",
           "league": null,
           "leagueRaw": "Paulista A1",
           "country": null,
           "apps": 14,
           "goals": 2
+        },
+        {
+          "years": "2015–2016",
+          "club": "Granada CF",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 8,
+          "goals": 0
         },
         {
           "years": "2016–2017",
@@ -158214,6 +158374,170 @@
       "careerComplete": true,
       "trophies": [],
       "fame": 581
+    },
+    {
+      "id": "sergio-ezequiel-araujo-47011",
+      "name": "Sergio Ezequiel Araújo",
+      "displayName": "Sergio Araujo",
+      "nationality": "Argentina",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2009–2012",
+          "club": "Boca Juniors",
+          "league": null,
+          "leagueRaw": "Liga Profesional Argentina",
+          "country": null,
+          "apps": 22,
+          "goals": 1
+        },
+        {
+          "years": "2012–2013",
+          "club": "Barcelona B",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 34,
+          "goals": 7
+        },
+        {
+          "years": "2013–2014",
+          "club": "Tigre",
+          "league": null,
+          "leagueRaw": "Liga Profesional Argentina",
+          "country": null,
+          "apps": 23,
+          "goals": 4
+        },
+        {
+          "years": "2014–2016",
+          "club": "Las Palmas",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": null,
+          "apps": 84,
+          "goals": 32
+        },
+        {
+          "years": "2016–2017",
+          "club": "AEK Athens FC",
+          "league": null,
+          "leagueRaw": "Super League 1",
+          "country": "Greece",
+          "apps": 15,
+          "goals": 5
+        },
+        {
+          "years": "2017–2017",
+          "club": "Las Palmas",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2017–2018",
+          "club": "AEK Athens FC",
+          "league": null,
+          "leagueRaw": "Super League 1",
+          "country": "Greece",
+          "apps": 23,
+          "goals": 11
+        },
+        {
+          "years": "2018–2019",
+          "club": "Las Palmas",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 30,
+          "goals": 4
+        },
+        {
+          "years": "2019–2020",
+          "club": "AEK Athens FC",
+          "league": null,
+          "leagueRaw": "Super League 1",
+          "country": "Greece",
+          "apps": 15,
+          "goals": 3
+        },
+        {
+          "years": "2020–2021",
+          "club": "Las Palmas",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 29,
+          "goals": 11
+        },
+        {
+          "years": "2021–2023",
+          "club": "AEK Athens FC",
+          "league": null,
+          "leagueRaw": "Super League 1",
+          "country": "Greece",
+          "apps": 81,
+          "goals": 20
+        },
+        {
+          "years": "2023–2024",
+          "club": "AEK Athens II",
+          "league": null,
+          "leagueRaw": "Super League 2",
+          "country": "Greece",
+          "apps": 1,
+          "goals": 1
+        },
+        {
+          "years": "2024–2026",
+          "club": "Cerro Porteno",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
+          "country": "World",
+          "apps": 29,
+          "goals": 6,
+          "current": true
+        }
+      ],
+      "careerComplete": true,
+      "trophies": [
+        {
+          "comp": "Cup",
+          "country": "Greece",
+          "count": 1,
+          "seasons": [
+            "2022/2023"
+          ]
+        },
+        {
+          "comp": "Super League 1",
+          "country": "Greece",
+          "count": 2,
+          "seasons": [
+            "2022/2023",
+            "2017/2018"
+          ]
+        },
+        {
+          "comp": "laliga",
+          "country": null,
+          "count": 1,
+          "seasons": [
+            "2012/2013"
+          ]
+        },
+        {
+          "comp": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "count": 1,
+          "seasons": [
+            "2011/2012"
+          ]
+        }
+      ],
+      "fame": 1119
     },
     {
       "id": "rafael-mir-vicente-47013",
@@ -164237,20 +164561,20 @@
         },
         {
           "years": "2022",
-          "club": "Foolad FC",
-          "league": null,
-          "leagueRaw": "Persian Gulf Pro League",
-          "country": "Iran",
-          "apps": 7,
-          "goals": 1
-        },
-        {
-          "years": "2022–2023",
           "club": "Fuenlabrada",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 16,
+          "goals": 1
+        },
+        {
+          "years": "2022",
+          "club": "Foolad FC",
+          "league": null,
+          "leagueRaw": "Persian Gulf Pro League",
+          "country": "Iran",
+          "apps": 7,
           "goals": 1
         },
         {
@@ -164363,7 +164687,8 @@
           "leagueRaw": "Segunda División",
           "country": "Spain",
           "apps": 9,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -165740,7 +166065,8 @@
           "leagueRaw": "Pro League",
           "country": "Saudi-Arabia",
           "apps": 13,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -167584,21 +167910,21 @@
         },
         {
           "years": "2021",
-          "club": "Tenerife",
-          "league": null,
-          "leagueRaw": "Segunda División",
-          "country": "Spain",
-          "apps": 17,
-          "goals": 6
-        },
-        {
-          "years": "2022",
           "club": "SC Braga",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
           "apps": 14,
           "goals": 2
+        },
+        {
+          "years": "2022",
+          "club": "Tenerife",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 17,
+          "goals": 6
         },
         {
           "years": "2022–2023",
@@ -168407,7 +168733,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 244,
-          "goals": 25
+          "goals": 25,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -168900,7 +169227,8 @@
           "leagueRaw": "Primera División - Clausura",
           "country": "Uruguay",
           "apps": 17,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -169187,7 +169515,7 @@
           "goals": 2
         },
         {
-          "years": "2024–2025",
+          "years": "2024",
           "club": "Al-Orobah",
           "league": null,
           "leagueRaw": "Storico",
@@ -169902,20 +170230,20 @@
         },
         {
           "years": "2021",
-          "club": "FC Porto",
-          "league": "liga_pt",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2022",
           "club": "FC Porto B",
           "league": null,
           "leagueRaw": "Segunda Liga",
           "country": "Portugal",
           "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2022",
+          "club": "FC Porto",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 1,
           "goals": 0
         },
         {
@@ -170465,7 +170793,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 147,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -170625,7 +170954,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -170852,7 +171182,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 149,
-          "goals": 8
+          "goals": 8,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -171210,21 +171541,21 @@
         },
         {
           "years": "2020",
-          "club": "Pyramids FC",
-          "league": null,
-          "leagueRaw": "Premier League",
-          "country": "Egypt",
-          "apps": 8,
-          "goals": 3
-        },
-        {
-          "years": "2021",
           "club": "Deportivo La Coruna",
           "league": null,
           "leagueRaw": "Primera División RFEF - Group 5",
           "country": "Spain",
           "apps": 4,
           "goals": 2
+        },
+        {
+          "years": "2021",
+          "club": "Pyramids FC",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": "Egypt",
+          "apps": 8,
+          "goals": 3
         },
         {
           "years": "2021–2023",
@@ -171660,7 +171991,8 @@
           "leagueRaw": "Segunda División",
           "country": "Spain",
           "apps": 35,
-          "goals": 9
+          "goals": 9,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -172056,7 +172388,7 @@
           "league": null,
           "leagueRaw": "Primera División - Clausura",
           "country": "Uruguay",
-          "apps": 8,
+          "apps": 7,
           "goals": 0
         },
         {
@@ -172069,10 +172401,19 @@
           "goals": 0
         },
         {
-          "years": "2016–2017",
+          "years": "2016–2016",
           "club": "Nancy II",
           "league": null,
           "leagueRaw": "National 3",
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2016–2017",
+          "club": "Club Nacional",
+          "league": null,
+          "leagueRaw": "CONMEBOL Libertadores",
           "country": null,
           "apps": 1,
           "goals": 0
@@ -175755,7 +176096,8 @@
           "leagueRaw": "Stars League",
           "country": "Qatar",
           "apps": 9,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -176363,17 +176705,35 @@
           "league": null,
           "leagueRaw": "Mineiro - 1",
           "country": "Brazil",
-          "apps": 123,
+          "apps": 81,
           "goals": 2
         },
         {
-          "years": "2022–2024",
+          "years": "2022–2022",
           "club": "FC Krasnodar",
           "league": null,
           "leagueRaw": "Premier League",
           "country": "Russia",
-          "apps": 41,
+          "apps": 12,
           "goals": 1
+        },
+        {
+          "years": "2022–2023",
+          "club": "Atletico-MG",
+          "league": null,
+          "leagueRaw": "Mineiro - 1",
+          "country": "Brazil",
+          "apps": 42,
+          "goals": 0
+        },
+        {
+          "years": "2023–2024",
+          "club": "FC Krasnodar",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": "Russia",
+          "apps": 29,
+          "goals": 0
         },
         {
           "years": "2024–2026",
@@ -177640,7 +178000,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 180,
-          "goals": 16
+          "goals": 16,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -178021,7 +178382,8 @@
           "leagueRaw": "A-League",
           "country": "Australia",
           "apps": 27,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -178069,7 +178431,8 @@
           "leagueRaw": "Segunda División",
           "country": "Spain",
           "apps": 187,
-          "goals": 53
+          "goals": 53,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -178272,7 +178635,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -178338,7 +178702,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 43,
-          "goals": 40
+          "goals": 40,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -178520,7 +178885,8 @@
           "leagueRaw": "Premier League",
           "country": "Russia",
           "apps": 78,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -178612,6 +178978,15 @@
         },
         {
           "years": "2013–2013",
+          "club": "SC Braga B",
+          "league": null,
+          "leagueRaw": "Segunda Liga",
+          "country": null,
+          "apps": 5,
+          "goals": 0
+        },
+        {
+          "years": "2013–2014",
           "club": "SC Braga",
           "league": "liga_pt",
           "leagueRaw": null,
@@ -178620,12 +178995,12 @@
           "goals": 0
         },
         {
-          "years": "2013–2015",
+          "years": "2014–2015",
           "club": "SC Braga B",
           "league": null,
           "leagueRaw": "Segunda Liga",
           "country": null,
-          "apps": 31,
+          "apps": 26,
           "goals": 1
         },
         {
@@ -178855,7 +179230,8 @@
           "leagueRaw": "Segunda División",
           "country": "Spain",
           "apps": 33,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -180260,15 +180636,6 @@
           "goals": 5
         },
         {
-          "years": "2017–2017",
-          "club": "San Fernando CD",
-          "league": null,
-          "leagueRaw": "Primera División RFEF",
-          "country": null,
-          "apps": 13,
-          "goals": 4
-        },
-        {
           "years": "2017",
           "club": "San Fernando B",
           "league": null,
@@ -180276,6 +180643,15 @@
           "country": null,
           "apps": 2,
           "goals": 0
+        },
+        {
+          "years": "2017–2017",
+          "club": "San Fernando CD",
+          "league": null,
+          "leagueRaw": "Primera División RFEF",
+          "country": null,
+          "apps": 13,
+          "goals": 4
         },
         {
           "years": "2017–2018",
@@ -180723,6 +181099,15 @@
         },
         {
           "years": "2017–2017",
+          "club": "FC Porto",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 12,
+          "goals": 0
+        },
+        {
+          "years": "2017–2018",
           "club": "FC Porto B",
           "league": null,
           "leagueRaw": "Segunda Liga",
@@ -180731,12 +181116,12 @@
           "goals": 0
         },
         {
-          "years": "2017–2019",
+          "years": "2018–2019",
           "club": "FC Porto",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
-          "apps": 22,
+          "apps": 10,
           "goals": 1
         },
         {
@@ -182304,7 +182689,8 @@
           "leagueRaw": "Liga MX",
           "country": "Mexico",
           "apps": 64,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -182782,21 +183168,21 @@
         },
         {
           "years": "2010",
-          "club": "AS Eupen",
-          "league": null,
-          "leagueRaw": "Jupiler Pro League",
-          "country": "Belgium",
-          "apps": 9,
-          "goals": 4
-        },
-        {
-          "years": "2011",
           "club": "Anderlecht",
           "league": null,
           "leagueRaw": "Jupiler Pro League",
           "country": "Belgium",
           "apps": 5,
           "goals": 1
+        },
+        {
+          "years": "2011",
+          "club": "AS Eupen",
+          "league": null,
+          "leagueRaw": "Jupiler Pro League",
+          "country": "Belgium",
+          "apps": 9,
+          "goals": 4
         },
         {
           "years": "2011–2013",
@@ -182877,7 +183263,8 @@
           "leagueRaw": "Primera Nacional",
           "country": "Argentina",
           "apps": 16,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -184263,20 +184650,20 @@
         },
         {
           "years": "2022",
-          "club": "FC Cartagena",
-          "league": null,
-          "leagueRaw": "Segunda División",
-          "country": "Spain",
-          "apps": 10,
-          "goals": 0
-        },
-        {
-          "years": "2023",
           "club": "Casa Pia",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
           "apps": 17,
+          "goals": 0
+        },
+        {
+          "years": "2023",
+          "club": "FC Cartagena",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 10,
           "goals": 0
         },
         {
@@ -184295,7 +184682,8 @@
           "leagueRaw": "Premier League",
           "country": "Armenia",
           "apps": 36,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -184497,6 +184885,15 @@
       "career": [
         {
           "years": "2015–2015",
+          "club": "FC Porto B",
+          "league": null,
+          "leagueRaw": "Segunda Liga",
+          "country": null,
+          "apps": 24,
+          "goals": 2
+        },
+        {
+          "years": "2015–2016",
           "club": "FC Porto",
           "league": "liga_pt",
           "leagueRaw": null,
@@ -184505,13 +184902,13 @@
           "goals": 0
         },
         {
-          "years": "2015–2017",
+          "years": "2016–2017",
           "club": "FC Porto B",
           "league": null,
           "leagueRaw": "Segunda Liga",
-          "country": null,
-          "apps": 31,
-          "goals": 2
+          "country": "Portugal",
+          "apps": 7,
+          "goals": 0
         },
         {
           "years": "2017–2018",
@@ -185056,7 +185453,8 @@
           "leagueRaw": "Liga MX",
           "country": "Mexico",
           "apps": 12,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -185607,7 +186005,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 90,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -185892,7 +186291,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -185958,7 +186358,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 30,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -186220,7 +186621,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 115,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -186470,21 +186872,21 @@
         },
         {
           "years": "2025",
-          "club": "FC Basel 1893",
-          "league": null,
-          "leagueRaw": "Super League",
-          "country": "Switzerland",
-          "apps": 27,
-          "goals": 1
-        },
-        {
-          "years": "2025",
           "club": "Sporting CP",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 4,
           "goals": 0
+        },
+        {
+          "years": "2025",
+          "club": "FC Basel 1893",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": "Switzerland",
+          "apps": 27,
+          "goals": 1
         },
         {
           "years": "2026",
@@ -187250,7 +187652,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -187642,7 +188045,8 @@
           "leagueRaw": "Stars League",
           "country": "Qatar",
           "apps": 41,
-          "goals": 10
+          "goals": 10,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -187829,21 +188233,21 @@
         },
         {
           "years": "2013",
-          "club": "SC Braga B",
-          "league": null,
-          "leagueRaw": "Segunda Liga",
-          "country": null,
-          "apps": 2,
-          "goals": 1
-        },
-        {
-          "years": "2014",
           "club": "Racing Club",
           "league": null,
           "leagueRaw": "Liga Profesional Argentina",
           "country": null,
           "apps": 16,
           "goals": 0
+        },
+        {
+          "years": "2014",
+          "club": "SC Braga B",
+          "league": null,
+          "leagueRaw": "Segunda Liga",
+          "country": null,
+          "apps": 2,
+          "goals": 1
         },
         {
           "years": "2015",
@@ -187865,21 +188269,21 @@
         },
         {
           "years": "2016",
-          "club": "Rosario Central",
-          "league": null,
-          "leagueRaw": "Liga Profesional Argentina",
-          "country": "Argentina",
-          "apps": 8,
-          "goals": 0
-        },
-        {
-          "years": "2017",
           "club": "SC Braga",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
           "apps": 16,
           "goals": 1
+        },
+        {
+          "years": "2017",
+          "club": "Rosario Central",
+          "league": null,
+          "leagueRaw": "Liga Profesional Argentina",
+          "country": "Argentina",
+          "apps": 8,
+          "goals": 0
         },
         {
           "years": "2018",
@@ -188604,7 +189008,8 @@
           "leagueRaw": "Pro League",
           "country": "United-Arab-Emirates",
           "apps": 20,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -188973,7 +189378,8 @@
           "leagueRaw": "Liga MX",
           "country": "Mexico",
           "apps": 93,
-          "goals": 15
+          "goals": 15,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -190208,7 +190614,8 @@
           "leagueRaw": "Liga I",
           "country": "Romania",
           "apps": 25,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -191120,7 +191527,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -191250,16 +191658,25 @@
           "league": null,
           "leagueRaw": "Primera División RFEF",
           "country": null,
-          "apps": 39,
+          "apps": 2,
           "goals": 0
         },
         {
-          "years": "2018–2019",
+          "years": "2018–2018",
           "club": "UD Logroñés II",
           "league": null,
           "leagueRaw": "Tercera División RFEF",
           "country": null,
           "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2018–2019",
+          "club": "UD Logroñés",
+          "league": null,
+          "leagueRaw": "Primera División RFEF",
+          "country": null,
+          "apps": 37,
           "goals": 0
         },
         {
@@ -191311,7 +191728,7 @@
           "goals": 5
         },
         {
-          "years": "2016–2017",
+          "years": "2016",
           "club": "Logroñés B",
           "league": null,
           "leagueRaw": "Storico",
@@ -192284,7 +192701,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 31,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -192444,7 +192862,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 66,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -192550,7 +192969,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 58,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -192674,21 +193094,21 @@
         },
         {
           "years": "2024",
-          "club": "FC Cartagena",
-          "league": null,
-          "leagueRaw": "Segunda División",
-          "country": "Spain",
-          "apps": 19,
-          "goals": 6
-        },
-        {
-          "years": "2025",
           "club": "Farense",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
           "apps": 9,
           "goals": 0
+        },
+        {
+          "years": "2025",
+          "club": "FC Cartagena",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 19,
+          "goals": 6
         },
         {
           "years": "2025–2027",
@@ -193734,7 +194154,8 @@
           "leagueRaw": "Superliga",
           "country": "Denmark",
           "apps": 46,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -194746,6 +195167,15 @@
           "goals": 11
         },
         {
+          "years": "2011–2011",
+          "club": "Arsenal Sarandi",
+          "league": null,
+          "leagueRaw": "Liga Profesional Argentina",
+          "country": null,
+          "apps": 10,
+          "goals": 1
+        },
+        {
           "years": "2011",
           "club": "Gimnasia de Jujuy",
           "league": null,
@@ -194755,13 +195185,13 @@
           "goals": 11
         },
         {
-          "years": "2011–2013",
+          "years": "2012–2013",
           "club": "Arsenal Sarandi",
           "league": null,
           "leagueRaw": "Liga Profesional Argentina",
           "country": null,
-          "apps": 43,
-          "goals": 11
+          "apps": 33,
+          "goals": 10
         },
         {
           "years": "2013–2014",
@@ -197600,7 +198030,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 70,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -197977,7 +198408,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 20,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -198203,7 +198635,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -198520,7 +198953,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 81,
-          "goals": 8
+          "goals": 8,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -198656,7 +199090,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 64,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -198810,7 +199245,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 67,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -200577,7 +201013,8 @@
           "leagueRaw": "Pro League",
           "country": "Saudi-Arabia",
           "apps": 57,
-          "goals": 67
+          "goals": 67,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -201486,7 +201923,8 @@
           "leagueRaw": "Super League",
           "country": "Switzerland",
           "apps": 16,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -202868,7 +203306,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 5,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -202961,7 +203400,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -203202,7 +203642,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 32,
-          "goals": 10
+          "goals": 10,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -204277,7 +204718,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 41,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -205606,15 +206048,6 @@
       "career": [
         {
           "years": "2012",
-          "club": "Paris FC",
-          "league": null,
-          "leagueRaw": "Ligue 3",
-          "country": "France",
-          "apps": 16,
-          "goals": 0
-        },
-        {
-          "years": "2013",
           "club": "Paris II",
           "league": null,
           "leagueRaw": "National 3",
@@ -205629,6 +206062,15 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 10,
+          "goals": 0
+        },
+        {
+          "years": "2013",
+          "club": "Paris FC",
+          "league": null,
+          "leagueRaw": "Ligue 3",
+          "country": "France",
+          "apps": 16,
           "goals": 0
         },
         {
@@ -205804,7 +206246,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -206200,15 +206643,6 @@
         },
         {
           "years": "2023",
-          "club": "Granada CF",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 6,
-          "goals": 0
-        },
-        {
-          "years": "2024",
           "club": "Lens",
           "league": "ligue1",
           "leagueRaw": null,
@@ -206217,12 +206651,21 @@
           "goals": 0
         },
         {
-          "years": "2025",
+          "years": "2024",
           "club": "Lens II",
           "league": null,
           "leagueRaw": "National 3 - Group G",
           "country": "France",
           "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2025",
+          "club": "Granada CF",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 6,
           "goals": 0
         },
         {
@@ -206921,7 +207364,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -207759,7 +208203,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 30,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -208295,7 +208740,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -208516,7 +208962,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -209027,15 +209474,6 @@
         },
         {
           "years": "2023",
-          "club": "Alaves",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 34,
-          "goals": 8
-        },
-        {
-          "years": "2024",
           "club": "Granada CF",
           "league": "laliga",
           "leagueRaw": null,
@@ -209044,13 +209482,23 @@
           "goals": 1
         },
         {
+          "years": "2024",
+          "club": "Alaves",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 34,
+          "goals": 8
+        },
+        {
           "years": "2024–2026",
           "club": "FC Porto",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
           "apps": 50,
-          "goals": 31
+          "goals": 31,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -209461,7 +209909,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -212016,7 +212465,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -212270,7 +212720,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -212541,7 +212992,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -212904,7 +213356,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -213462,7 +213915,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -213796,7 +214250,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -214325,7 +214780,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -214632,11 +215088,11 @@
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
-          "apps": 40,
+          "apps": 29,
           "goals": 0
         },
         {
-          "years": "2021–2022",
+          "years": "2021–2021",
           "club": "SC Braga B",
           "league": null,
           "leagueRaw": "Liga 3",
@@ -214645,7 +215101,25 @@
           "goals": 0
         },
         {
+          "years": "2021–2022",
+          "club": "SC Braga",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 11,
+          "goals": 0
+        },
+        {
           "years": "2022–2022",
+          "club": "FC Porto B",
+          "league": null,
+          "leagueRaw": "Segunda Liga",
+          "country": "Portugal",
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2022–2023",
           "club": "FC Porto",
           "league": "liga_pt",
           "leagueRaw": null,
@@ -214654,12 +215128,12 @@
           "goals": 0
         },
         {
-          "years": "2022–2023",
+          "years": "2023–2023",
           "club": "FC Porto B",
           "league": null,
           "leagueRaw": "Segunda Liga",
           "country": "Portugal",
-          "apps": 6,
+          "apps": 3,
           "goals": 0
         },
         {
@@ -215199,21 +215673,21 @@
         },
         {
           "years": "2024–2024",
-          "club": "Zaragoza",
-          "league": null,
-          "leagueRaw": "Segunda División",
-          "country": "Spain",
-          "apps": 17,
-          "goals": 1
-        },
-        {
-          "years": "2024–2024",
           "club": "FK Partizan",
           "league": null,
           "leagueRaw": "Super Liga",
           "country": "Serbia",
           "apps": 8,
           "goals": 0
+        },
+        {
+          "years": "2024–2024",
+          "club": "Zaragoza",
+          "league": null,
+          "leagueRaw": "Segunda División",
+          "country": "Spain",
+          "apps": 17,
+          "goals": 1
         },
         {
           "years": "2024–2026",

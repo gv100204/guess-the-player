@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-13T03:21:09.078Z",
+  "version": "2026-10-13T03:31:38.992Z",
   "players": [
     {
       "id": "arturo-erasmo-vidal-pardo-151",
@@ -310,7 +310,8 @@
           "leagueRaw": "Super League",
           "country": "Switzerland",
           "apps": 68,
-          "goals": 29
+          "goals": 29,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -2071,20 +2072,20 @@
         },
         {
           "years": "2010–2010",
-          "club": "Schalke 04 II",
-          "league": null,
-          "leagueRaw": "Regionalliga",
-          "country": null,
-          "apps": 4,
-          "goals": 0
-        },
-        {
-          "years": "2010–2010",
           "club": "FC Schalke 04",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2010–2010",
+          "club": "Schalke 04 II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 4,
           "goals": 0
         },
         {
@@ -2379,7 +2380,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -3350,21 +3352,21 @@
         },
         {
           "years": "2014",
-          "club": "FC Porto B",
-          "league": null,
-          "leagueRaw": "Segunda Liga",
-          "country": null,
-          "apps": 6,
-          "goals": 1
-        },
-        {
-          "years": "2015",
           "club": "FC Porto",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
           "apps": 2,
           "goals": 0
+        },
+        {
+          "years": "2015",
+          "club": "FC Porto B",
+          "league": null,
+          "leagueRaw": "Segunda Liga",
+          "country": null,
+          "apps": 6,
+          "goals": 1
         },
         {
           "years": "2015–2016",
@@ -3507,6 +3509,15 @@
       "isGK": false,
       "career": [
         {
+          "years": "2005–2005",
+          "club": "FC Basel 1893",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": null,
+          "apps": 17,
+          "goals": 1
+        },
+        {
           "years": "2005",
           "club": "FC Basel II",
           "league": null,
@@ -3516,13 +3527,13 @@
           "goals": 2
         },
         {
-          "years": "2005–2006",
+          "years": "2006–2006",
           "club": "FC Basel 1893",
           "league": null,
           "leagueRaw": "Super League",
           "country": null,
-          "apps": 34,
-          "goals": 4
+          "apps": 17,
+          "goals": 3
         },
         {
           "years": "2006–2009",
@@ -3553,20 +3564,20 @@
         },
         {
           "years": "2015",
-          "club": "Udinese",
-          "league": "seriea",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 16,
-          "goals": 0
-        },
-        {
-          "years": "2016",
           "club": "FC Basel 1893",
           "league": null,
           "leagueRaw": "Super League",
           "country": null,
           "apps": 12,
+          "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Udinese",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 16,
           "goals": 0
         },
         {
@@ -5178,6 +5189,15 @@
       "career": [
         {
           "years": "2011–2011",
+          "club": "Stuttgart II",
+          "league": null,
+          "leagueRaw": "3. Liga",
+          "country": "Germany",
+          "apps": 17,
+          "goals": 1
+        },
+        {
+          "years": "2011–2012",
           "club": "VfB Stuttgart",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -5186,13 +5206,13 @@
           "goals": 0
         },
         {
-          "years": "2011–2012",
+          "years": "2012–2012",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "3. Liga",
           "country": "Germany",
-          "apps": 21,
-          "goals": 3
+          "apps": 4,
+          "goals": 2
         },
         {
           "years": "2012–2014",
@@ -5200,16 +5220,25 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 65,
+          "apps": 46,
           "goals": 2
         },
         {
-          "years": "2014–2015",
+          "years": "2014–2014",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "3. Liga",
           "country": "Germany",
           "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2014–2015",
+          "club": "VfB Stuttgart",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 19,
           "goals": 0
         },
         {
@@ -5780,6 +5809,15 @@
         },
         {
           "years": "2008–2008",
+          "club": "Groningen",
+          "league": null,
+          "leagueRaw": "Eredivisie",
+          "country": null,
+          "apps": 8,
+          "goals": 3
+        },
+        {
+          "years": "2008–2009",
           "club": "Emmen",
           "league": null,
           "leagueRaw": "Eerste Divisie",
@@ -5788,13 +5826,13 @@
           "goals": 5
         },
         {
-          "years": "2008–2011",
+          "years": "2009–2011",
           "club": "Groningen",
           "league": null,
           "leagueRaw": "Eredivisie",
           "country": null,
-          "apps": 77,
-          "goals": 38
+          "apps": 69,
+          "goals": 35
         },
         {
           "years": "2011–2014",
@@ -8219,21 +8257,21 @@
         },
         {
           "years": "2011",
-          "club": "Lecce",
-          "league": "seriea",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 5,
-          "goals": 0
-        },
-        {
-          "years": "2012",
           "club": "Neuchatel Xamax FC",
           "league": null,
           "leagueRaw": "Super League",
           "country": null,
           "apps": 14,
           "goals": 2
+        },
+        {
+          "years": "2012",
+          "club": "Lecce",
+          "league": "seriea",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 5,
+          "goals": 0
         },
         {
           "years": "2012",
@@ -8444,20 +8482,20 @@
         },
         {
           "years": "2012",
-          "club": "FC Sion",
-          "league": null,
-          "leagueRaw": "Super League",
-          "country": null,
-          "apps": 14,
-          "goals": 0
-        },
-        {
-          "years": "2013",
           "club": "Sporting CP",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
           "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2013",
+          "club": "FC Sion",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": null,
+          "apps": 14,
           "goals": 0
         },
         {
@@ -10197,7 +10235,8 @@
           "leagueRaw": "Superliga",
           "country": "Denmark",
           "apps": 6,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -10685,20 +10724,20 @@
         },
         {
           "years": "2022",
-          "club": "FC Juarez",
-          "league": null,
-          "leagueRaw": "Liga MX",
-          "country": "Mexico",
-          "apps": 31,
-          "goals": 0
-        },
-        {
-          "years": "2023",
           "club": "Toronto FC",
           "league": null,
           "leagueRaw": "Major League Soccer",
           "country": "USA",
           "apps": 13,
+          "goals": 0
+        },
+        {
+          "years": "2023",
+          "club": "FC Juarez",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": "Mexico",
+          "apps": 31,
           "goals": 0
         },
         {
@@ -12315,21 +12354,21 @@
         },
         {
           "years": "2024",
-          "club": "Sydney",
-          "league": null,
-          "leagueRaw": "A-League",
-          "country": "Australia",
-          "apps": 18,
-          "goals": 4
-        },
-        {
-          "years": "2025",
           "club": "Fluminense",
           "league": null,
           "leagueRaw": "Serie A",
           "country": "Brazil",
           "apps": 34,
           "goals": 0
+        },
+        {
+          "years": "2025",
+          "club": "Sydney",
+          "league": null,
+          "leagueRaw": "A-League",
+          "country": "Australia",
+          "apps": 18,
+          "goals": 4
         },
         {
           "years": "2026",
@@ -13261,7 +13300,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 13,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -13747,7 +13787,8 @@
           "leagueRaw": "Stars League",
           "country": "Qatar",
           "apps": 22,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -13858,7 +13899,8 @@
           "leagueRaw": "Super League",
           "country": "Switzerland",
           "apps": 12,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -14367,7 +14409,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -14683,20 +14726,20 @@
         },
         {
           "years": "2019",
-          "club": "Neuchatel Xamax FC",
-          "league": null,
-          "leagueRaw": "Super League",
-          "country": "Switzerland",
-          "apps": 5,
-          "goals": 0
-        },
-        {
-          "years": "2020",
           "club": "FC Sion",
           "league": null,
           "leagueRaw": "Super League",
           "country": "Switzerland",
           "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2020",
+          "club": "Neuchatel Xamax FC",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": "Switzerland",
+          "apps": 5,
           "goals": 0
         },
         {
@@ -16695,7 +16738,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 102,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -17761,15 +17805,6 @@
       "career": [
         {
           "years": "2014–2014",
-          "club": "1899 Hoffenheim",
-          "league": "bundesliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 7,
-          "goals": 0
-        },
-        {
-          "years": "2014–2015",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -17778,7 +17813,25 @@
           "goals": 2
         },
         {
+          "years": "2014–2015",
+          "club": "1899 Hoffenheim",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 7,
+          "goals": 0
+        },
+        {
           "years": "2015–2015",
+          "club": "Hoffenheim II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 7,
+          "goals": 2
+        },
+        {
+          "years": "2015–2016",
           "club": "1899 Hoffenheim",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -17787,13 +17840,13 @@
           "goals": 4
         },
         {
-          "years": "2015–2016",
+          "years": "2016–2016",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 8,
-          "goals": 2
+          "apps": 1,
+          "goals": 0
         },
         {
           "years": "2016–2018",
@@ -18448,21 +18501,21 @@
       "career": [
         {
           "years": "2014",
-          "club": "Servette FC",
-          "league": null,
-          "leagueRaw": "Challenge League",
-          "country": null,
-          "apps": 6,
-          "goals": 2
-        },
-        {
-          "years": "2014–2015",
           "club": "Servette II",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 13,
           "goals": 1
+        },
+        {
+          "years": "2014",
+          "club": "Servette FC",
+          "league": null,
+          "leagueRaw": "Challenge League",
+          "country": null,
+          "apps": 6,
+          "goals": 2
         },
         {
           "years": "2015–2017",
@@ -18610,7 +18663,8 @@
           "leagueRaw": "Major League Soccer",
           "country": "USA",
           "apps": 45,
-          "goals": 18
+          "goals": 18,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -19115,7 +19169,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -19858,7 +19913,8 @@
           "leagueRaw": "Super League 1",
           "country": "Greece",
           "apps": 28,
-          "goals": 17
+          "goals": 17,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -20697,7 +20753,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 72,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -20857,7 +20914,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -22323,11 +22381,11 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 46,
+          "apps": 40,
           "goals": 0
         },
         {
-          "years": "2014–2015",
+          "years": "2014–2014",
           "club": "Schalke 04 II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -22336,12 +22394,12 @@
           "goals": 0
         },
         {
-          "years": "2015–2017",
+          "years": "2014–2017",
           "club": "FC Schalke 04",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 48,
+          "apps": 54,
           "goals": 4
         },
         {
@@ -22853,7 +22911,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -23320,7 +23379,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 1,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -24863,7 +24923,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 27,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -25475,15 +25536,6 @@
         },
         {
           "years": "2019",
-          "club": "VVV Venlo",
-          "league": null,
-          "leagueRaw": "Eredivisie",
-          "country": "Netherlands",
-          "apps": 18,
-          "goals": 1
-        },
-        {
-          "years": "2020",
           "club": "Wolfsburg II",
           "league": null,
           "leagueRaw": "Regionalliga - West",
@@ -25492,7 +25544,25 @@
           "goals": 4
         },
         {
+          "years": "2020",
+          "club": "VVV Venlo",
+          "league": null,
+          "leagueRaw": "Eredivisie",
+          "country": "Netherlands",
+          "apps": 18,
+          "goals": 1
+        },
+        {
           "years": "2020–2020",
+          "club": "Willem II",
+          "league": null,
+          "leagueRaw": "Eredivisie",
+          "country": "Netherlands",
+          "apps": 9,
+          "goals": 1
+        },
+        {
+          "years": "2020–2021",
           "club": "Almere City FC",
           "league": null,
           "leagueRaw": "Eredivisie",
@@ -25501,13 +25571,13 @@
           "goals": 4
         },
         {
-          "years": "2020–2021",
+          "years": "2021–2021",
           "club": "Willem II",
           "league": null,
           "leagueRaw": "Eredivisie",
           "country": "Netherlands",
-          "apps": 17,
-          "goals": 1
+          "apps": 8,
+          "goals": 0
         },
         {
           "years": "2021–2022",
@@ -26075,16 +26145,25 @@
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
-          "apps": 16,
+          "apps": 13,
           "goals": 1
         },
         {
-          "years": "2023–2024",
+          "years": "2023–2023",
           "club": "VfL Wolfsburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 14,
+          "goals": 0
+        },
+        {
+          "years": "2023–2024",
+          "club": "Lyon",
+          "league": "ligue1",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 3,
           "goals": 0
         },
         {
@@ -26321,7 +26400,7 @@
           "goals": 1
         },
         {
-          "years": "2015–2016",
+          "years": "2015",
           "club": "FC Basel II",
           "league": null,
           "leagueRaw": "Storico",
@@ -27100,7 +27179,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -28989,24 +29069,15 @@
         },
         {
           "years": "2006",
-          "club": "Gillingham",
+          "club": "Northwich Victoria",
           "league": null,
-          "leagueRaw": "League One",
+          "leagueRaw": "Storico",
           "country": null,
-          "apps": 5,
+          "apps": 4,
           "goals": 1
         },
         {
-          "years": "2007",
-          "club": "Chesterfield",
-          "league": null,
-          "leagueRaw": "League One",
-          "country": null,
-          "apps": 12,
-          "goals": 1
-        },
-        {
-          "years": "2008",
+          "years": "2006",
           "club": "FC Halifax Town",
           "league": null,
           "leagueRaw": "League Two",
@@ -29015,12 +29086,21 @@
           "goals": 4
         },
         {
-          "years": "2006",
-          "club": "Northwich Victoria",
+          "years": "2007",
+          "club": "Gillingham",
           "league": null,
-          "leagueRaw": "Storico",
+          "leagueRaw": "League One",
           "country": null,
-          "apps": 4,
+          "apps": 5,
+          "goals": 1
+        },
+        {
+          "years": "2008",
+          "club": "Chesterfield",
+          "league": null,
+          "leagueRaw": "League One",
+          "country": null,
+          "apps": 12,
           "goals": 1
         },
         {
@@ -31296,15 +31376,6 @@
         },
         {
           "years": "2020",
-          "club": "Club Tijuana",
-          "league": null,
-          "leagueRaw": "Liga MX",
-          "country": "Mexico",
-          "apps": 13,
-          "goals": 0
-        },
-        {
-          "years": "2020",
           "club": "Morelia",
           "league": null,
           "leagueRaw": "Storico",
@@ -31313,12 +31384,21 @@
           "goals": 0
         },
         {
-          "years": "2021",
+          "years": "2020",
           "club": "Mazatlán",
           "league": null,
           "leagueRaw": "Liga MX",
           "country": "Mexico",
           "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2021",
+          "club": "Club Tijuana",
+          "league": null,
+          "leagueRaw": "Liga MX",
+          "country": "Mexico",
+          "apps": 13,
           "goals": 0
         },
         {
@@ -33163,7 +33243,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 214,
-          "goals": 78
+          "goals": 78,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -33892,21 +33973,21 @@
         },
         {
           "years": "2009",
-          "club": "VfL Bochum",
-          "league": null,
-          "leagueRaw": "Bundesliga",
-          "country": null,
-          "apps": 14,
-          "goals": 2
-        },
-        {
-          "years": "2010",
           "club": "FC Schalke 04",
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": null,
           "apps": 9,
           "goals": 0
+        },
+        {
+          "years": "2010",
+          "club": "VfL Bochum",
+          "league": null,
+          "leagueRaw": "Bundesliga",
+          "country": null,
+          "apps": 14,
+          "goals": 2
         },
         {
           "years": "2010–2011",
@@ -35999,7 +36080,8 @@
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -36078,20 +36160,20 @@
         },
         {
           "years": "2016–2016",
-          "club": "Wolfsburg II",
-          "league": null,
-          "leagueRaw": "Regionalliga",
-          "country": null,
-          "apps": 2,
-          "goals": 0
-        },
-        {
-          "years": "2016–2017",
           "club": "VfL Wolfsburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2016–2017",
+          "club": "Wolfsburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 2,
           "goals": 0
         },
         {
@@ -36375,6 +36457,15 @@
         },
         {
           "years": "2022–2022",
+          "club": "Fulham",
+          "league": "pl",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 14,
+          "goals": 0
+        },
+        {
+          "years": "2022–2023",
           "club": "Servette FC",
           "league": null,
           "leagueRaw": "Super League",
@@ -36383,12 +36474,12 @@
           "goals": 0
         },
         {
-          "years": "2022–2023",
+          "years": "2023–2023",
           "club": "Fulham",
-          "league": "pl",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 17,
+          "league": null,
+          "leagueRaw": "Premier League - Summer Series",
+          "country": "England",
+          "apps": 3,
           "goals": 0
         },
         {
@@ -39409,7 +39500,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 34,
-          "goals": 29
+          "goals": 29,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -41618,7 +41710,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -44008,19 +44101,19 @@
         },
         {
           "years": "2021",
-          "club": "FC Midtjylland",
+          "club": "Fenerbahçe",
           "league": null,
-          "leagueRaw": "Superliga",
-          "country": "Denmark",
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
           "apps": 7,
           "goals": 0
         },
         {
           "years": "2022",
-          "club": "Fenerbahçe",
+          "club": "FC Midtjylland",
           "league": null,
-          "leagueRaw": "Süper Lig",
-          "country": "Turkey",
+          "leagueRaw": "Superliga",
+          "country": "Denmark",
           "apps": 7,
           "goals": 0
         },
@@ -44167,6 +44260,15 @@
       "career": [
         {
           "years": "2010–2010",
+          "club": "Hoffenheim II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 19,
+          "goals": 3
+        },
+        {
+          "years": "2010–2011",
           "club": "1899 Hoffenheim",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -44175,13 +44277,13 @@
           "goals": 0
         },
         {
-          "years": "2010–2011",
+          "years": "2011–2011",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 22,
-          "goals": 4
+          "apps": 3,
+          "goals": 1
         },
         {
           "years": "2011–2014",
@@ -44618,16 +44720,34 @@
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 4,
+          "apps": 2,
           "goals": 0
         },
         {
-          "years": "2013–2019",
+          "years": "2013–2013",
           "club": "FC Schalke 04",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 166,
+          "apps": 22,
+          "goals": 0
+        },
+        {
+          "years": "2013–2014",
+          "club": "Schalke 04 II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2014–2019",
+          "club": "FC Schalke 04",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 144,
           "goals": 152
         },
         {
@@ -44804,6 +44924,15 @@
         },
         {
           "years": "2016–2016",
+          "club": "1899 Hoffenheim",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 14,
+          "goals": 2
+        },
+        {
+          "years": "2016–2017",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -44812,13 +44941,13 @@
           "goals": 1
         },
         {
-          "years": "2016–2018",
+          "years": "2017–2018",
           "club": "1899 Hoffenheim",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 36,
-          "goals": 5
+          "apps": 22,
+          "goals": 3
         },
         {
           "years": "2018–2019",
@@ -45699,7 +45828,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 36,
-          "goals": 6
+          "goals": 6,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -46469,20 +46599,20 @@
         },
         {
           "years": "2021",
-          "club": "Reading",
-          "league": null,
-          "leagueRaw": "Championship",
-          "country": "England",
-          "apps": 10,
-          "goals": 0
-        },
-        {
-          "years": "2022",
           "club": "Bournemouth",
           "league": null,
           "leagueRaw": "Championship",
           "country": "England",
           "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2022",
+          "club": "Reading",
+          "league": null,
+          "leagueRaw": "Championship",
+          "country": "England",
+          "apps": 10,
           "goals": 0
         },
         {
@@ -46848,11 +46978,11 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 23,
-          "goals": 2
+          "apps": 7,
+          "goals": 0
         },
         {
-          "years": "2017–2018",
+          "years": "2017–2017",
           "club": "Augsburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -46861,13 +46991,13 @@
           "goals": 0
         },
         {
-          "years": "2018–2019",
+          "years": "2017–2019",
           "club": "FC Augsburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 18,
-          "goals": 1
+          "apps": 34,
+          "goals": 3
         },
         {
           "years": "2019–2020",
@@ -46937,7 +47067,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2009–2010",
+          "years": "2009",
           "club": "Zürich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -47970,6 +48100,15 @@
       "career": [
         {
           "years": "2013–2013",
+          "club": "VfB Stuttgart",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 30,
+          "goals": 4
+        },
+        {
+          "years": "2013–2014",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "3. Liga",
@@ -47978,13 +48117,13 @@
           "goals": 1
         },
         {
-          "years": "2013–2016",
+          "years": "2014–2016",
           "club": "VfB Stuttgart",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 95,
-          "goals": 13
+          "apps": 65,
+          "goals": 9
         },
         {
           "years": "2016–2020",
@@ -48815,21 +48954,21 @@
         },
         {
           "years": "2022",
-          "club": "Schalke 04 II",
-          "league": null,
-          "leagueRaw": "Regionalliga - Relegation Round",
-          "country": "Germany",
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2023",
           "club": "FC Schalke 04",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 9,
           "goals": 1
+        },
+        {
+          "years": "2023",
+          "club": "Schalke 04 II",
+          "league": null,
+          "leagueRaw": "Regionalliga - Relegation Round",
+          "country": "Germany",
+          "apps": 1,
+          "goals": 0
         },
         {
           "years": "2023",
@@ -49000,21 +49139,21 @@
       "career": [
         {
           "years": "2019",
-          "club": "FC Porto B",
-          "league": null,
-          "leagueRaw": "Segunda Liga",
-          "country": "Portugal",
-          "apps": 3,
-          "goals": 0
-        },
-        {
-          "years": "2020",
           "club": "FC Porto",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
           "apps": 11,
           "goals": 1
+        },
+        {
+          "years": "2020",
+          "club": "FC Porto B",
+          "league": null,
+          "leagueRaw": "Segunda Liga",
+          "country": "Portugal",
+          "apps": 3,
+          "goals": 0
         },
         {
           "years": "2020–2022",
@@ -50674,7 +50813,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -52407,20 +52547,20 @@
       "career": [
         {
           "years": "2017",
-          "club": "Stuttgart II",
-          "league": null,
-          "leagueRaw": "Regionalliga",
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2018",
           "club": "VfB Stuttgart",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 20,
+          "goals": 0
+        },
+        {
+          "years": "2018",
+          "club": "Stuttgart II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 1,
           "goals": 0
         },
         {
@@ -53622,6 +53762,15 @@
         },
         {
           "years": "2020–2020",
+          "club": "VfB Stuttgart",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2020–2021",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "Regionalliga - SudWest",
@@ -53630,16 +53779,16 @@
           "goals": 0
         },
         {
-          "years": "2020–2021",
+          "years": "2021–2021",
           "club": "VfB Stuttgart",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 6,
+          "apps": 3,
           "goals": 0
         },
         {
-          "years": "2021–2021",
+          "years": "2021–2022",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "Regionalliga - Nord",
@@ -53648,12 +53797,12 @@
           "goals": 0
         },
         {
-          "years": "2021–2022",
+          "years": "2022–2022",
           "club": "VfB Stuttgart",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 20,
+          "apps": 17,
           "goals": 2
         },
         {
@@ -54586,13 +54735,13 @@
           "goals": 16
         },
         {
-          "years": "2014–2016",
+          "years": "2014–2017",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 22,
-          "goals": 1
+          "apps": 48,
+          "goals": 9
         },
         {
           "years": "2017",
@@ -54602,15 +54751,6 @@
           "country": null,
           "apps": 2,
           "goals": 0
-        },
-        {
-          "years": "2018",
-          "club": "Freiburg II",
-          "league": null,
-          "leagueRaw": "Regionalliga",
-          "country": null,
-          "apps": 26,
-          "goals": 8
         },
         {
           "years": "2018–2020",
@@ -56016,6 +56156,15 @@
         },
         {
           "years": "2024–2024",
+          "club": "VfB Stuttgart",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 14,
+          "goals": 0
+        },
+        {
+          "years": "2024–2025",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "3. Liga",
@@ -56024,13 +56173,14 @@
           "goals": 0
         },
         {
-          "years": "2024–2026",
+          "years": "2025–2026",
           "club": "VfB Stuttgart",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 22,
-          "goals": 0
+          "apps": 8,
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -58075,7 +58225,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -59780,7 +59931,8 @@
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
           "apps": 108,
-          "goals": 15
+          "goals": 15,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -61582,24 +61734,15 @@
         },
         {
           "years": "2010–2010",
-          "club": "FC Schalke 04",
-          "league": "bundesliga",
-          "leagueRaw": null,
+          "club": "Schalke 04 II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 6,
-          "goals": 0
+          "apps": 5,
+          "goals": 1
         },
         {
           "years": "2010–2011",
-          "club": "Schalke 04 II",
-          "league": null,
-          "leagueRaw": "Regionalliga",
-          "country": null,
-          "apps": 5,
-          "goals": 1
-        },
-        {
-          "years": "2011–2011",
           "club": "FC Schalke 04",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -61608,13 +61751,31 @@
           "goals": 0
         },
         {
-          "years": "2011–2012",
+          "years": "2011–2011",
           "club": "Schalke 04 II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 5,
+          "apps": 2,
           "goals": 1
+        },
+        {
+          "years": "2011–2012",
+          "club": "FC Schalke 04",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2012–2012",
+          "club": "Schalke 04 II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 3,
+          "goals": 0
         },
         {
           "years": "2012–2015",
@@ -61790,20 +61951,20 @@
         },
         {
           "years": "2012",
-          "club": "Celta Vigo",
-          "league": "laliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 10,
-          "goals": 0
-        },
-        {
-          "years": "2013",
           "club": "Sporting CP",
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
           "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2013",
+          "club": "Celta Vigo",
+          "league": "laliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 10,
           "goals": 0
         },
         {
@@ -62984,7 +63145,8 @@
           "leagueRaw": "Super Liga",
           "country": "Serbia",
           "apps": 15,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -63077,7 +63239,8 @@
           "leagueRaw": "Premier League",
           "country": "Russia",
           "apps": 116,
-          "goals": 64
+          "goals": 64,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -66616,6 +66779,15 @@
         },
         {
           "years": "2015–2015",
+          "club": "VfB Stuttgart",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 2,
+          "goals": 6
+        },
+        {
+          "years": "2015–2016",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "3. Liga",
@@ -66624,13 +66796,13 @@
           "goals": 0
         },
         {
-          "years": "2015–2017",
+          "years": "2016–2017",
           "club": "VfB Stuttgart",
           "league": null,
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
-          "apps": 36,
-          "goals": 30
+          "apps": 34,
+          "goals": 24
         },
         {
           "years": "2018–2024",
@@ -67657,7 +67829,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -68257,7 +68430,8 @@
           "leagueRaw": "Superliga",
           "country": "Denmark",
           "apps": 46,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -71384,7 +71558,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -72050,7 +72225,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2005–2006",
+          "years": "2005",
           "club": "Schalke 04 II",
           "league": null,
           "leagueRaw": "Storico",
@@ -72732,20 +72907,20 @@
         },
         {
           "years": "2018–2018",
-          "club": "Augsburg II",
-          "league": null,
-          "leagueRaw": "Regionalliga",
-          "country": null,
-          "apps": 4,
-          "goals": 0
-        },
-        {
-          "years": "2018–2019",
           "club": "FC Augsburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2018–2019",
+          "club": "Augsburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 4,
           "goals": 0
         }
       ],
@@ -73090,6 +73265,15 @@
       "career": [
         {
           "years": "2005–2005",
+          "club": "Stuttgart II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 12,
+          "goals": 1
+        },
+        {
+          "years": "2005–2006",
           "club": "VfB Stuttgart",
           "league": null,
           "leagueRaw": "Bundesliga",
@@ -73098,13 +73282,13 @@
           "goals": 0
         },
         {
-          "years": "2005–2006",
+          "years": "2006–2006",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 23,
-          "goals": 1
+          "apps": 11,
+          "goals": 0
         },
         {
           "years": "2006–2008",
@@ -73290,16 +73474,25 @@
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": null,
-          "apps": 38,
+          "apps": 23,
           "goals": 1
         },
         {
-          "years": "2006–2007",
+          "years": "2006–2006",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
           "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2006–2007",
+          "club": "VfB Stuttgart",
+          "league": null,
+          "leagueRaw": "Bundesliga",
+          "country": null,
+          "apps": 15,
           "goals": 0
         },
         {
@@ -74311,7 +74504,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2005–2006",
+          "years": "2005",
           "club": "Schalke 04 II",
           "league": null,
           "leagueRaw": "Storico",
@@ -74384,21 +74577,22 @@
         },
         {
           "years": "2019",
-          "club": "SC Wiener Neustadt",
-          "league": null,
-          "leagueRaw": "Regionalliga - West",
-          "country": "Austria",
-          "apps": 2,
-          "goals": 0
-        },
-        {
-          "years": "2019–2020",
           "club": "Floridsdorfer AC",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 8,
           "goals": 0
+        },
+        {
+          "years": "2019",
+          "club": "SC Wiener Neustadt",
+          "league": null,
+          "leagueRaw": "Regionalliga - West",
+          "country": "Austria",
+          "apps": 2,
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -75072,7 +75266,8 @@
           "leagueRaw": "3. Liga",
           "country": "Germany",
           "apps": 9,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -75245,11 +75440,11 @@
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": null,
-          "apps": 84,
+          "apps": 62,
           "goals": 0
         },
         {
-          "years": "2007–2008",
+          "years": "2007–2007",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -75258,12 +75453,12 @@
           "goals": 0
         },
         {
-          "years": "2008–2011",
+          "years": "2007–2011",
           "club": "VfB Stuttgart",
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": null,
-          "apps": 68,
+          "apps": 90,
           "goals": 2
         },
         {
@@ -75819,20 +76014,20 @@
         },
         {
           "years": "2006",
-          "club": "Hamburger SV",
-          "league": null,
-          "leagueRaw": "Bundesliga",
-          "country": null,
-          "apps": 7,
-          "goals": 0
-        },
-        {
-          "years": "2007",
           "club": "FC Schalke 04",
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": null,
           "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2007",
+          "club": "Hamburger SV",
+          "league": null,
+          "leagueRaw": "Bundesliga",
+          "country": null,
+          "apps": 7,
           "goals": 0
         },
         {
@@ -76907,7 +77102,8 @@
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
           "apps": 19,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -77146,7 +77342,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -77663,21 +77860,21 @@
         },
         {
           "years": "2016",
-          "club": "Gaziantepspor",
-          "league": null,
-          "leagueRaw": "Süper Lig",
-          "country": "Turkey",
-          "apps": 14,
-          "goals": 2
-        },
-        {
-          "years": "2017",
           "club": "SV Darmstadt 98",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 11,
           "goals": 1
+        },
+        {
+          "years": "2017",
+          "club": "Gaziantepspor",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 14,
+          "goals": 2
         },
         {
           "years": "2017",
@@ -78721,16 +78918,34 @@
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": null,
-          "apps": 76,
+          "apps": 63,
           "goals": 0
         },
         {
-          "years": "2011–2012",
+          "years": "2011–2011",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 4,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2011–2012",
+          "club": "1899 Hoffenheim",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 13,
+          "goals": 0
+        },
+        {
+          "years": "2012–2012",
+          "club": "Hoffenheim II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 2,
           "goals": 0
         },
         {
@@ -78753,6 +78968,15 @@
         },
         {
           "years": "2014–2014",
+          "club": "VfL Bochum",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 11,
+          "goals": 2
+        },
+        {
+          "years": "2014–2015",
           "club": "Bochum II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -78761,13 +78985,13 @@
           "goals": 0
         },
         {
-          "years": "2014–2016",
+          "years": "2015–2016",
           "club": "VfL Bochum",
           "league": null,
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
-          "apps": 15,
-          "goals": 2
+          "apps": 4,
+          "goals": 0
         },
         {
           "years": "2018–2019",
@@ -80071,6 +80295,15 @@
         },
         {
           "years": "2014–2014",
+          "club": "FC Schalke 04",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 11,
+          "goals": 0
+        },
+        {
+          "years": "2014–2015",
           "club": "Schalke 04 II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -80079,12 +80312,12 @@
           "goals": 0
         },
         {
-          "years": "2014–2015",
+          "years": "2015–2015",
           "club": "FC Schalke 04",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 13,
+          "apps": 2,
           "goals": 0
         },
         {
@@ -80177,11 +80410,11 @@
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": null,
-          "apps": 25,
+          "apps": 2,
           "goals": 1
         },
         {
-          "years": "2008–2009",
+          "years": "2008–2008",
           "club": "Bochum II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -80190,12 +80423,12 @@
           "goals": 0
         },
         {
-          "years": "2009–2010",
+          "years": "2008–2010",
           "club": "VfL Bochum",
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": null,
-          "apps": 40,
+          "apps": 63,
           "goals": 0
         },
         {
@@ -80320,6 +80553,15 @@
         },
         {
           "years": "2007–2007",
+          "club": "Stuttgart II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 32,
+          "goals": 0
+        },
+        {
+          "years": "2007–2008",
           "club": "VfB Stuttgart",
           "league": null,
           "leagueRaw": "Bundesliga",
@@ -80328,12 +80570,12 @@
           "goals": 0
         },
         {
-          "years": "2007–2008",
+          "years": "2008–2008",
           "club": "Stuttgart II",
           "league": null,
-          "leagueRaw": "Regionalliga",
+          "leagueRaw": "3. Liga",
           "country": null,
-          "apps": 39,
+          "apps": 7,
           "goals": 1
         },
         {
@@ -81941,11 +82183,11 @@
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 4,
+          "apps": 3,
           "goals": 4
         },
         {
-          "years": "2013–2014",
+          "years": "2013–2013",
           "club": "FC Augsburg",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -81954,7 +82196,25 @@
           "goals": 2
         },
         {
+          "years": "2013–2014",
+          "club": "Augsburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
           "years": "2014–2014",
+          "club": "FC Augsburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 12,
+          "goals": 1
+        },
+        {
+          "years": "2014–2015",
           "club": "Augsburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -81963,13 +82223,13 @@
           "goals": 3
         },
         {
-          "years": "2014–2015",
+          "years": "2015–2015",
           "club": "FC Augsburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 16,
-          "goals": 1
+          "apps": 4,
+          "goals": 0
         },
         {
           "years": "2015–2021",
@@ -82955,11 +83215,11 @@
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": null,
-          "apps": 75,
-          "goals": 6
+          "apps": 54,
+          "goals": 5
         },
         {
-          "years": "2011–2012",
+          "years": "2011–2011",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -82968,16 +83228,16 @@
           "goals": 0
         },
         {
-          "years": "2012–2015",
+          "years": "2011–2015",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 87,
+          "apps": 100,
           "goals": 5
         },
         {
-          "years": "2015–2016",
+          "years": "2015–2015",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -82986,13 +83246,13 @@
           "goals": 2
         },
         {
-          "years": "2016–2018",
+          "years": "2015–2018",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 31,
-          "goals": 0
+          "apps": 39,
+          "goals": 1
         }
       ],
       "careerComplete": true,
@@ -83340,6 +83600,15 @@
         },
         {
           "years": "2013–2013",
+          "club": "FC Augsburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 19,
+          "goals": 0
+        },
+        {
+          "years": "2013–2014",
           "club": "Augsburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -83348,12 +83617,12 @@
           "goals": 0
         },
         {
-          "years": "2013–2018",
+          "years": "2014–2018",
           "club": "FC Augsburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 141,
+          "apps": 122,
           "goals": 141
         },
         {
@@ -83520,17 +83789,26 @@
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": null,
-          "apps": 15,
+          "apps": 2,
           "goals": 0
         },
         {
-          "years": "2009–2010",
+          "years": "2009–2009",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "3. Liga",
           "country": null,
           "apps": 6,
           "goals": 1
+        },
+        {
+          "years": "2009–2010",
+          "club": "VfB Stuttgart",
+          "league": null,
+          "leagueRaw": "Bundesliga",
+          "country": null,
+          "apps": 13,
+          "goals": 0
         },
         {
           "years": "2010–2017",
@@ -83626,6 +83904,15 @@
       "career": [
         {
           "years": "2008–2008",
+          "club": "Bochum II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2008–2009",
           "club": "VfL Bochum",
           "league": null,
           "leagueRaw": "Bundesliga",
@@ -83634,12 +83921,12 @@
           "goals": 0
         },
         {
-          "years": "2008–2010",
+          "years": "2009–2010",
           "club": "Bochum II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 19,
+          "apps": 17,
           "goals": 1
         },
         {
@@ -84758,15 +85045,6 @@
       "career": [
         {
           "years": "2008–2008",
-          "club": "VfB Stuttgart",
-          "league": null,
-          "leagueRaw": "Bundesliga",
-          "country": null,
-          "apps": 12,
-          "goals": 0
-        },
-        {
-          "years": "2008–2009",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "3. Liga",
@@ -84775,22 +85053,31 @@
           "goals": 9
         },
         {
-          "years": "2009–2009",
+          "years": "2008–2009",
           "club": "VfB Stuttgart",
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": null,
-          "apps": 19,
-          "goals": 3
+          "apps": 12,
+          "goals": 0
         },
         {
-          "years": "2009–2010",
+          "years": "2009–2009",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "3. Liga",
           "country": null,
           "apps": 5,
           "goals": 4
+        },
+        {
+          "years": "2009–2010",
+          "club": "VfB Stuttgart",
+          "league": null,
+          "leagueRaw": "Bundesliga",
+          "country": null,
+          "apps": 19,
+          "goals": 3
         },
         {
           "years": "2010–2011",
@@ -84901,7 +85188,8 @@
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
           "apps": 45,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -85021,7 +85309,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -85137,11 +85426,11 @@
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 6,
+          "apps": 3,
           "goals": 0
         },
         {
-          "years": "2017–2018",
+          "years": "2017–2017",
           "club": "VfL Wolfsburg",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -85150,19 +85439,28 @@
           "goals": 0
         },
         {
-          "years": "2018–2018",
+          "years": "2017–2018",
           "club": "Wolfsburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2018–2018",
+          "club": "VfL Wolfsburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
           "country": null,
           "apps": 1,
           "goals": 0
         },
         {
           "years": "2018–2019",
-          "club": "VfL Wolfsburg",
-          "league": "bundesliga",
-          "leagueRaw": null,
+          "club": "Wolfsburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
           "country": null,
           "apps": 1,
           "goals": 0
@@ -85292,6 +85590,15 @@
       "career": [
         {
           "years": "2008–2008",
+          "club": "Schalke 04 II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 23,
+          "goals": 5
+        },
+        {
+          "years": "2008–2009",
           "club": "FC Schalke 04",
           "league": null,
           "leagueRaw": "Bundesliga",
@@ -85300,13 +85607,13 @@
           "goals": 0
         },
         {
-          "years": "2008–2011",
+          "years": "2009–2011",
           "club": "Schalke 04 II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 61,
-          "goals": 9
+          "apps": 38,
+          "goals": 4
         },
         {
           "years": "2011–2013",
@@ -85550,15 +85857,6 @@
         },
         {
           "years": "2012–2012",
-          "club": "Freiburg II",
-          "league": null,
-          "leagueRaw": "Regionalliga",
-          "country": null,
-          "apps": 10,
-          "goals": 4
-        },
-        {
-          "years": "2012–2013",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -85567,22 +85865,31 @@
           "goals": 1
         },
         {
-          "years": "2013–2013",
+          "years": "2012–2013",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 3,
-          "goals": 0
+          "apps": 10,
+          "goals": 4
         },
         {
-          "years": "2013–2014",
+          "years": "2013–2013",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 2,
           "goals": 1
+        },
+        {
+          "years": "2013–2014",
+          "club": "Freiburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 3,
+          "goals": 0
         },
         {
           "years": "2014–2016",
@@ -85595,21 +85902,21 @@
         },
         {
           "years": "2016",
-          "club": "Hoffenheim II",
-          "league": null,
-          "leagueRaw": "Regionalliga",
-          "country": null,
-          "apps": 3,
-          "goals": 3
-        },
-        {
-          "years": "2017",
           "club": "1899 Hoffenheim",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 9,
           "goals": 1
+        },
+        {
+          "years": "2017",
+          "club": "Hoffenheim II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 3,
+          "goals": 3
         },
         {
           "years": "2017–2019",
@@ -85622,21 +85929,21 @@
         },
         {
           "years": "2019",
-          "club": "Dynamo Dresden",
-          "league": null,
-          "leagueRaw": "2. Bundesliga",
-          "country": "Germany",
-          "apps": 14,
-          "goals": 2
-        },
-        {
-          "years": "2020",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga - West",
           "country": "Germany",
           "apps": 2,
           "goals": 0
+        },
+        {
+          "years": "2020",
+          "club": "Dynamo Dresden",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 14,
+          "goals": 2
         },
         {
           "years": "2020–2021",
@@ -85920,17 +86227,26 @@
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 41,
-          "goals": 4
+          "apps": 21,
+          "goals": 0
         },
         {
-          "years": "2009–2010",
+          "years": "2009–2009",
           "club": "VfL Wolfsburg",
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": null,
           "apps": 4,
           "goals": 0
+        },
+        {
+          "years": "2009–2010",
+          "club": "Wolfsburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 20,
+          "goals": 4
         },
         {
           "years": "2010–2011",
@@ -86397,7 +86713,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -86724,6 +87041,15 @@
         },
         {
           "years": "2009–2009",
+          "club": "FC St. Pauli",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": null,
+          "apps": 13,
+          "goals": 1
+        },
+        {
+          "years": "2009–2010",
           "club": "St. Pauli II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -86732,13 +87058,13 @@
           "goals": 1
         },
         {
-          "years": "2009–2011",
+          "years": "2010–2011",
           "club": "FC St. Pauli",
-          "league": null,
-          "leagueRaw": "2. Bundesliga",
+          "league": "bundesliga",
+          "leagueRaw": null,
           "country": null,
-          "apps": 22,
-          "goals": 2
+          "apps": 9,
+          "goals": 1
         },
         {
           "years": "2011",
@@ -87131,15 +87457,6 @@
         },
         {
           "years": "2019",
-          "club": "Memmingen",
-          "league": null,
-          "leagueRaw": "Regionalliga - West",
-          "country": "Germany",
-          "apps": 2,
-          "goals": 1
-        },
-        {
-          "years": "2020",
           "club": "TSV 1860 München",
           "league": null,
           "leagueRaw": "3. Liga",
@@ -87148,13 +87465,13 @@
           "goals": 3
         },
         {
-          "years": "2021–2022",
+          "years": "2019–2022",
           "club": "Memmingen",
           "league": null,
           "leagueRaw": "Regionalliga - Nord",
           "country": "Germany",
-          "apps": 12,
-          "goals": 0
+          "apps": 14,
+          "goals": 1
         }
       ],
       "careerComplete": true,
@@ -88052,7 +88369,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2008–2009",
+          "years": "2008",
           "club": "TSG 1899 Hoffenheim II",
           "league": null,
           "leagueRaw": "Storico",
@@ -88084,11 +88401,11 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 44,
-          "goals": 4
+          "apps": 26,
+          "goals": 2
         },
         {
-          "years": "2011–2012",
+          "years": "2011–2011",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -88097,13 +88414,13 @@
           "goals": 1
         },
         {
-          "years": "2012–2013",
+          "years": "2011–2013",
           "club": "1899 Hoffenheim",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 5,
-          "goals": 1
+          "apps": 23,
+          "goals": 3
         }
       ],
       "careerComplete": true,
@@ -88187,7 +88504,8 @@
           "leagueRaw": "Regionalliga",
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -88594,19 +88912,37 @@
         {
           "years": "2009–2010",
           "club": "SC Freiburg",
-          "league": "bundesliga",
-          "leagueRaw": null,
+          "league": null,
+          "leagueRaw": "Bundesliga",
           "country": null,
-          "apps": 39,
+          "apps": 16,
           "goals": 0
         },
         {
-          "years": "2010–2011",
+          "years": "2010–2010",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 3,
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2010–2011",
+          "club": "SC Freiburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 23,
+          "goals": 0
+        },
+        {
+          "years": "2011–2011",
+          "club": "Freiburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 2,
           "goals": 1
         },
         {
@@ -88695,15 +89031,6 @@
         },
         {
           "years": "2006",
-          "club": "FC Basel 1893",
-          "league": null,
-          "leagueRaw": "Super League",
-          "country": null,
-          "apps": 12,
-          "goals": 1
-        },
-        {
-          "years": "2006",
           "club": "FC Basel U-21",
           "league": null,
           "leagueRaw": "Storico",
@@ -88712,13 +89039,13 @@
           "goals": 10
         },
         {
-          "years": "2008–2009",
+          "years": "2006–2009",
           "club": "FC Basel 1893",
           "league": null,
           "leagueRaw": "Super League",
           "country": null,
-          "apps": 24,
-          "goals": 9
+          "apps": 36,
+          "goals": 10
         },
         {
           "years": "2009–2012",
@@ -88897,6 +89224,15 @@
       "career": [
         {
           "years": "2009–2009",
+          "club": "Freiburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 20,
+          "goals": 0
+        },
+        {
+          "years": "2009–2010",
           "club": "SC Freiburg",
           "league": null,
           "leagueRaw": "Bundesliga",
@@ -88905,12 +89241,12 @@
           "goals": 0
         },
         {
-          "years": "2009–2010",
+          "years": "2010–2010",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 22,
+          "apps": 2,
           "goals": 0
         },
         {
@@ -90472,7 +90808,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -90520,17 +90857,35 @@
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 3,
-          "goals": 1
+          "apps": 1,
+          "goals": 0
         },
         {
-          "years": "2010–2012",
+          "years": "2010–2010",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 68,
-          "goals": 6
+          "apps": 12,
+          "goals": 2
+        },
+        {
+          "years": "2010–2011",
+          "club": "Freiburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 2,
+          "goals": 1
+        },
+        {
+          "years": "2011–2012",
+          "club": "SC Freiburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 56,
+          "goals": 4
         },
         {
           "years": "2012–2013",
@@ -90622,16 +90977,25 @@
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 9,
+          "apps": 5,
           "goals": 0
         },
         {
-          "years": "2012–2013",
+          "years": "2012–2012",
           "club": "FC Schalke 04",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 6,
+          "goals": 0
+        },
+        {
+          "years": "2012–2013",
+          "club": "Schalke 04 II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 4,
           "goals": 0
         },
         {
@@ -90699,15 +91063,6 @@
         },
         {
           "years": "2018–2018",
-          "club": "SV Darmstadt 98",
-          "league": null,
-          "leagueRaw": "2. Bundesliga",
-          "country": "Germany",
-          "apps": 11,
-          "goals": 1
-        },
-        {
-          "years": "2018–2018",
           "club": "Hamburger SV",
           "league": null,
           "leagueRaw": "2. Bundesliga",
@@ -90716,13 +91071,22 @@
           "goals": 0
         },
         {
-          "years": "2018–2019",
+          "years": "2018–2018",
           "club": "Hamburger SV II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
           "apps": 2,
           "goals": 0
+        },
+        {
+          "years": "2018–2019",
+          "club": "SV Darmstadt 98",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 11,
+          "goals": 1
         },
         {
           "years": "2019–2019",
@@ -91006,11 +91370,11 @@
           "league": null,
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
-          "apps": 138,
+          "apps": 120,
           "goals": 0
         },
         {
-          "years": "2014–2015",
+          "years": "2014–2014",
           "club": "Bochum II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -91019,16 +91383,25 @@
           "goals": 0
         },
         {
-          "years": "2015–2016",
+          "years": "2014–2016",
           "club": "VfL Bochum",
           "league": null,
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
-          "apps": 16,
+          "apps": 34,
           "goals": 0
         },
         {
           "years": "2016–2016",
+          "club": "FC Augsburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 2,
+          "goals": 1
+        },
+        {
+          "years": "2016–2017",
           "club": "Augsburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -91037,13 +91410,13 @@
           "goals": 0
         },
         {
-          "years": "2016–2020",
+          "years": "2017–2020",
           "club": "FC Augsburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 29,
-          "goals": 38
+          "apps": 27,
+          "goals": 37
         },
         {
           "years": "2020–2022",
@@ -91250,6 +91623,15 @@
         },
         {
           "years": "2014–2014",
+          "club": "VfB Stuttgart",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 18,
+          "goals": 7
+        },
+        {
+          "years": "2014–2015",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "3. Liga",
@@ -91258,13 +91640,13 @@
           "goals": 5
         },
         {
-          "years": "2014–2018",
+          "years": "2015–2018",
           "club": "VfB Stuttgart",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 67,
-          "goals": 21
+          "apps": 49,
+          "goals": 14
         },
         {
           "years": "2018–2019",
@@ -91892,16 +92274,34 @@
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": null,
-          "apps": 7,
+          "apps": 6,
           "goals": 0
         },
         {
-          "years": "2010–2012",
+          "years": "2010–2010",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 22,
+          "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2010–2011",
+          "club": "1899 Hoffenheim",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2011–2012",
+          "club": "Hoffenheim II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 15,
           "goals": 1
         },
         {
@@ -93033,11 +93433,11 @@
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 3,
+          "apps": 1,
           "goals": 0
         },
         {
-          "years": "2012–2013",
+          "years": "2012–2012",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -93046,7 +93446,7 @@
           "goals": 2
         },
         {
-          "years": "2013–2013",
+          "years": "2012–2013",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -93055,13 +93455,31 @@
           "goals": 0
         },
         {
-          "years": "2013–2015",
+          "years": "2013–2013",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 41,
+          "apps": 19,
           "goals": 1
+        },
+        {
+          "years": "2013–2014",
+          "club": "Freiburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2014–2015",
+          "club": "SC Freiburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 22,
+          "goals": 0
         },
         {
           "years": "2015–2016",
@@ -93133,17 +93551,26 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 132,
-          "goals": 40
+          "apps": 125,
+          "goals": 39
         },
         {
-          "years": "2014–2015",
+          "years": "2014–2014",
           "club": "Al-Ittihad FC",
           "league": null,
           "leagueRaw": "Pro League",
           "country": null,
           "apps": 6,
           "goals": 2
+        },
+        {
+          "years": "2014–2015",
+          "club": "Hannover 96",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 7,
+          "goals": 1
         },
         {
           "years": "2015–2016",
@@ -93999,6 +94426,15 @@
       "career": [
         {
           "years": "2010–2010",
+          "club": "Wolfsburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 9,
+          "goals": 1
+        },
+        {
+          "years": "2010–2011",
           "club": "VfL Wolfsburg",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -94007,13 +94443,13 @@
           "goals": 0
         },
         {
-          "years": "2010–2011",
+          "years": "2011–2011",
           "club": "Wolfsburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 20,
-          "goals": 3
+          "apps": 11,
+          "goals": 2
         },
         {
           "years": "2011–2011",
@@ -94705,15 +95141,6 @@
         },
         {
           "years": "2010–2010",
-          "club": "1899 Hoffenheim",
-          "league": "bundesliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2010–2011",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -94722,22 +95149,31 @@
           "goals": 1
         },
         {
-          "years": "2011–2011",
+          "years": "2010–2011",
           "club": "1899 Hoffenheim",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 9,
+          "apps": 1,
           "goals": 0
         },
         {
-          "years": "2011–2012",
+          "years": "2011–2011",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
           "apps": 12,
           "goals": 1
+        },
+        {
+          "years": "2011–2012",
+          "club": "1899 Hoffenheim",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 9,
+          "goals": 0
         },
         {
           "years": "2012–2018",
@@ -94935,21 +95371,21 @@
         },
         {
           "years": "2012",
-          "club": "St. Pauli II",
-          "league": null,
-          "leagueRaw": "Regionalliga",
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2013",
           "club": "FC St. Pauli",
           "league": null,
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 23,
           "goals": 1
+        },
+        {
+          "years": "2013",
+          "club": "St. Pauli II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 1,
+          "goals": 0
         },
         {
           "years": "2013–2015",
@@ -96006,17 +96442,26 @@
           "league": null,
           "leagueRaw": "3. Liga",
           "country": "Germany",
-          "apps": 2,
-          "goals": 2
+          "apps": 1,
+          "goals": 0
         },
         {
-          "years": "2022–2023",
+          "years": "2022–2022",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 3,
           "goals": 0
+        },
+        {
+          "years": "2022–2023",
+          "club": "Freiburg II",
+          "league": null,
+          "leagueRaw": "3. Liga",
+          "country": "Germany",
+          "apps": 1,
+          "goals": 2
         },
         {
           "years": "2023–2023",
@@ -96184,11 +96629,11 @@
           "league": null,
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
-          "apps": 4,
+          "apps": 1,
           "goals": 0
         },
         {
-          "years": "2012–2013",
+          "years": "2012–2012",
           "club": "Bochum II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -96197,16 +96642,16 @@
           "goals": 0
         },
         {
-          "years": "2013–2013",
+          "years": "2012–2013",
           "club": "VfL Bochum",
           "league": null,
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
-          "apps": 4,
+          "apps": 3,
           "goals": 0
         },
         {
-          "years": "2013–2014",
+          "years": "2013–2013",
           "club": "Bochum II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -96215,21 +96660,30 @@
           "goals": 0
         },
         {
-          "years": "2014–2014",
+          "years": "2013–2014",
           "club": "VfL Bochum",
           "league": null,
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
-          "apps": 16,
+          "apps": 4,
           "goals": 0
         },
         {
-          "years": "2014–2015",
+          "years": "2014–2014",
           "club": "Bochum II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
           "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2014–2015",
+          "club": "VfL Bochum",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 16,
           "goals": 0
         },
         {
@@ -96406,11 +96860,11 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 81,
-          "goals": 6
+          "apps": 70,
+          "goals": 5
         },
         {
-          "years": "2015–2016",
+          "years": "2015–2015",
           "club": "Wolfsburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -96419,13 +96873,13 @@
           "goals": 0
         },
         {
-          "years": "2016–2020",
+          "years": "2015–2020",
           "club": "VfL Wolfsburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 99,
-          "goals": 6
+          "apps": 110,
+          "goals": 7
         },
         {
           "years": "2020–2024",
@@ -96712,11 +97166,11 @@
           "league": null,
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
-          "apps": 140,
+          "apps": 122,
           "goals": 6
         },
         {
-          "years": "2018–2019",
+          "years": "2018–2018",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -96725,12 +97179,12 @@
           "goals": 0
         },
         {
-          "years": "2019–2024",
+          "years": "2018–2024",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 173,
+          "apps": 191,
           "goals": 5
         },
         {
@@ -98317,21 +98771,12 @@
           "league": null,
           "leagueRaw": "2. Bundesliga",
           "country": null,
-          "apps": 30,
-          "goals": 7
-        },
-        {
-          "years": "2010–2010",
-          "club": "St. Pauli II",
-          "league": "bundesliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 20,
-          "goals": 1
+          "apps": 50,
+          "goals": 8
         },
         {
           "years": "2010–2011",
-          "club": "FC St. Pauli",
+          "club": "St. Pauli II",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
@@ -98340,21 +98785,21 @@
         },
         {
           "years": "2011–2011",
-          "club": "St. Pauli II",
-          "league": null,
-          "leagueRaw": "2. Bundesliga",
-          "country": "Germany",
-          "apps": 3,
-          "goals": 1
-        },
-        {
-          "years": "2011–2012",
           "club": "FC St. Pauli",
           "league": null,
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 21,
           "goals": 4
+        },
+        {
+          "years": "2011–2012",
+          "club": "St. Pauli II",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 3,
+          "goals": 1
         },
         {
           "years": "2012–2013",
@@ -99733,21 +100178,21 @@
         },
         {
           "years": "2006",
-          "club": "FC Porto",
-          "league": null,
-          "leagueRaw": "Primeira Liga",
-          "country": null,
-          "apps": 8,
-          "goals": 0
-        },
-        {
-          "years": "2006",
           "club": "Marco",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 13,
           "goals": 4
+        },
+        {
+          "years": "2006",
+          "club": "FC Porto",
+          "league": null,
+          "leagueRaw": "Primeira Liga",
+          "country": null,
+          "apps": 8,
+          "goals": 0
         },
         {
           "years": "2007–2008",
@@ -100257,20 +100702,20 @@
         },
         {
           "years": "2014",
-          "club": "Werder Bremen",
-          "league": "bundesliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 6,
-          "goals": 0
-        },
-        {
-          "years": "2015",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
           "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2015",
+          "club": "Werder Bremen",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 6,
           "goals": 0
         },
         {
@@ -100882,15 +101327,6 @@
           "goals": 3
         },
         {
-          "years": "2025–2025",
-          "club": "FK Partizan",
-          "league": null,
-          "leagueRaw": "Super Liga",
-          "country": "Serbia",
-          "apps": 17,
-          "goals": 2
-        },
-        {
           "years": "2025",
           "club": "Eintracht Braunschweig II",
           "league": null,
@@ -100898,6 +101334,16 @@
           "country": null,
           "apps": 1,
           "goals": 1
+        },
+        {
+          "years": "2025–2026",
+          "club": "FK Partizan",
+          "league": null,
+          "leagueRaw": "Super Liga",
+          "country": "Serbia",
+          "apps": 17,
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -101111,7 +101557,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -101149,11 +101596,11 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 16,
+          "apps": 8,
           "goals": 0
         },
         {
-          "years": "2012–2013",
+          "years": "2012–2012",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -101162,7 +101609,25 @@
           "goals": 1
         },
         {
+          "years": "2012–2013",
+          "club": "SC Freiburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 8,
+          "goals": 0
+        },
+        {
           "years": "2013–2013",
+          "club": "Freiburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2013–2014",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -101171,12 +101636,12 @@
           "goals": 0
         },
         {
-          "years": "2013–2014",
+          "years": "2014–2014",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 11,
+          "apps": 9,
           "goals": 0
         },
         {
@@ -101213,7 +101678,8 @@
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
           "apps": 12,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -102216,7 +102682,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 364,
-          "goals": 35
+          "goals": 35,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -102508,7 +102975,8 @@
           "leagueRaw": "Major League Soccer",
           "country": "USA",
           "apps": 25,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -102632,15 +103100,6 @@
         },
         {
           "years": "2015–2015",
-          "club": "VfB Stuttgart",
-          "league": "bundesliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 2,
-          "goals": 0
-        },
-        {
-          "years": "2015–2016",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "3. Liga",
@@ -102649,7 +103108,25 @@
           "goals": 1
         },
         {
+          "years": "2015–2016",
+          "club": "VfB Stuttgart",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 2,
+          "goals": 0
+        },
+        {
           "years": "2016–2016",
+          "club": "Stuttgart II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2016–2017",
           "club": "VfB Stuttgart",
           "league": null,
           "leagueRaw": "2. Bundesliga",
@@ -102658,12 +103135,12 @@
           "goals": 1
         },
         {
-          "years": "2016–2017",
+          "years": "2017–2017",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 4,
+          "apps": 3,
           "goals": 0
         },
         {
@@ -102924,21 +103401,21 @@
         },
         {
           "years": "2011",
-          "club": "1899 Hoffenheim",
-          "league": "bundesliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2012",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
           "apps": 26,
           "goals": 5
+        },
+        {
+          "years": "2012",
+          "club": "1899 Hoffenheim",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 1,
+          "goals": 0
         },
         {
           "years": "2012",
@@ -103112,7 +103589,8 @@
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
           "apps": 21,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -103479,7 +103957,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 80,
-          "goals": 8
+          "goals": 8,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -104090,11 +104569,11 @@
           "league": null,
           "leagueRaw": "Ekstraklasa",
           "country": "Poland",
-          "apps": 67,
-          "goals": 38
+          "apps": 54,
+          "goals": 33
         },
         {
-          "years": "2022–2023",
+          "years": "2022–2022",
           "club": "Gaziantep FK",
           "league": null,
           "leagueRaw": "Süper Lig",
@@ -104103,13 +104582,13 @@
           "goals": 2
         },
         {
-          "years": "2023–2025",
+          "years": "2022–2025",
           "club": "Legia Warszawa",
           "league": null,
           "leagueRaw": "Ekstraklasa",
           "country": "Poland",
-          "apps": 31,
-          "goals": 7
+          "apps": 44,
+          "goals": 12
         },
         {
           "years": "2025",
@@ -104231,11 +104710,11 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 23,
+          "apps": 2,
           "goals": 0
         },
         {
-          "years": "2012–2013",
+          "years": "2012–2012",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "3. Liga",
@@ -104244,22 +104723,31 @@
           "goals": 0
         },
         {
-          "years": "2013",
-          "club": "Augsburg II",
-          "league": null,
-          "leagueRaw": "Regionalliga",
+          "years": "2012–2013",
+          "club": "VfB Stuttgart",
+          "league": "bundesliga",
+          "leagueRaw": null,
           "country": null,
-          "apps": 2,
-          "goals": 2
+          "apps": 21,
+          "goals": 0
         },
         {
-          "years": "2014",
+          "years": "2013",
           "club": "FC Augsburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 13,
           "goals": 0
+        },
+        {
+          "years": "2014",
+          "club": "Augsburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 2,
+          "goals": 2
         },
         {
           "years": "2014–2014",
@@ -105845,6 +106333,15 @@
         },
         {
           "years": "2011–2011",
+          "club": "Freiburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 8,
+          "goals": 0
+        },
+        {
+          "years": "2011–2012",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -105853,12 +106350,12 @@
           "goals": 0
         },
         {
-          "years": "2011–2015",
+          "years": "2012–2015",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 35,
+          "apps": 27,
           "goals": 0
         },
         {
@@ -106359,6 +106856,15 @@
       "career": [
         {
           "years": "2012–2012",
+          "club": "Hoffenheim II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2012–2013",
           "club": "1899 Hoffenheim",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -106367,12 +106873,12 @@
           "goals": 0
         },
         {
-          "years": "2012–2013",
+          "years": "2013–2013",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 6,
+          "apps": 2,
           "goals": 0
         },
         {
@@ -107126,7 +107632,8 @@
           "leagueRaw": "A-League",
           "country": "Australia",
           "apps": 47,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -108023,21 +108530,21 @@
         },
         {
           "years": "2017–2017",
-          "club": "Augsburg II",
-          "league": null,
-          "leagueRaw": "Regionalliga",
-          "country": null,
-          "apps": 4,
-          "goals": 1
-        },
-        {
-          "years": "2017–2018",
           "club": "FC Augsburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 2,
           "goals": 0
+        },
+        {
+          "years": "2017–2018",
+          "club": "Augsburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 4,
+          "goals": 1
         },
         {
           "years": "2018–2018",
@@ -108255,21 +108762,21 @@
         },
         {
           "years": "2010",
-          "club": "TuS Koblenz",
-          "league": null,
-          "leagueRaw": "3. Liga",
-          "country": null,
-          "apps": 16,
-          "goals": 2
-        },
-        {
-          "years": "2011",
           "club": "Oberneuland",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
           "apps": 15,
           "goals": 8
+        },
+        {
+          "years": "2011",
+          "club": "TuS Koblenz",
+          "league": null,
+          "leagueRaw": "3. Liga",
+          "country": null,
+          "apps": 16,
+          "goals": 2
         },
         {
           "years": "2011–2012",
@@ -109025,15 +109532,6 @@
       "career": [
         {
           "years": "2012–2012",
-          "club": "SC Freiburg",
-          "league": "bundesliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2012–2013",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -109042,16 +109540,16 @@
           "goals": 7
         },
         {
-          "years": "2013–2013",
+          "years": "2012–2013",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 19,
+          "apps": 1,
           "goals": 0
         },
         {
-          "years": "2013–2014",
+          "years": "2013–2013",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -109060,12 +109558,12 @@
           "goals": 4
         },
         {
-          "years": "2014–2014",
+          "years": "2013–2014",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 9,
+          "apps": 28,
           "goals": 1
         },
         {
@@ -109477,6 +109975,15 @@
       "career": [
         {
           "years": "2012–2012",
+          "club": "Freiburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 10,
+          "goals": 0
+        },
+        {
+          "years": "2012–2013",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -109485,12 +109992,12 @@
           "goals": 0
         },
         {
-          "years": "2012–2013",
+          "years": "2013–2013",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 13,
+          "apps": 3,
           "goals": 0
         },
         {
@@ -109544,6 +110051,15 @@
       "career": [
         {
           "years": "2012–2012",
+          "club": "Hoffenheim II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 13,
+          "goals": 5
+        },
+        {
+          "years": "2012–2013",
           "club": "1899 Hoffenheim",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -109552,13 +110068,13 @@
           "goals": 0
         },
         {
-          "years": "2012–2013",
+          "years": "2013–2013",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 21,
-          "goals": 9
+          "apps": 8,
+          "goals": 4
         },
         {
           "years": "2013–2014",
@@ -112037,17 +112553,26 @@
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 49,
-          "goals": 5
+          "apps": 26,
+          "goals": 3
         },
         {
-          "years": "2014–2015",
+          "years": "2014–2014",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 1,
           "goals": 0
+        },
+        {
+          "years": "2014–2015",
+          "club": "Freiburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 23,
+          "goals": 2
         },
         {
           "years": "2015–2016",
@@ -112450,7 +112975,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 4,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -112572,34 +113098,52 @@
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 42,
-          "goals": 7
+          "apps": 20,
+          "goals": 3
         },
         {
-          "years": "2015–2017",
+          "years": "2015–2015",
           "club": "VfL Wolfsburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 26,
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2015–2016",
+          "club": "Wolfsburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 22,
+          "goals": 4
+        },
+        {
+          "years": "2016–2017",
+          "club": "VfL Wolfsburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 22,
           "goals": 1
         },
         {
           "years": "2017",
-          "club": "Dynamo Dresden",
-          "league": null,
-          "leagueRaw": "2. Bundesliga",
-          "country": "Germany",
-          "apps": 23,
-          "goals": 0
-        },
-        {
-          "years": "2018",
           "club": "Wolfsburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
           "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2018",
+          "club": "Dynamo Dresden",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 23,
           "goals": 0
         },
         {
@@ -112814,20 +113358,20 @@
         },
         {
           "years": "2013",
-          "club": "Wolfsburg II",
-          "league": null,
-          "leagueRaw": "Regionalliga",
-          "country": null,
-          "apps": 6,
-          "goals": 1
-        },
-        {
-          "years": "2014",
           "club": "VfL Wolfsburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 8,
+          "goals": 1
+        },
+        {
+          "years": "2014",
+          "club": "Wolfsburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 6,
           "goals": 1
         },
         {
@@ -112946,26 +113490,36 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 81,
+          "apps": 78,
           "goals": 0
         },
         {
           "years": "2022–2022",
-          "club": "SV Sandhausen",
-          "league": null,
-          "leagueRaw": "2. Bundesliga",
-          "country": "Germany",
-          "apps": 5,
-          "goals": 0
-        },
-        {
-          "years": "2022–2023",
           "club": "Augsburg II",
           "league": null,
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
           "apps": 1,
           "goals": 0
+        },
+        {
+          "years": "2022–2022",
+          "club": "FC Augsburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2022–2023",
+          "club": "SV Sandhausen",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 5,
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -113460,6 +114014,15 @@
         },
         {
           "years": "2019–2019",
+          "club": "Hoffenheim II",
+          "league": null,
+          "leagueRaw": "Regionalliga - West",
+          "country": "Germany",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2019–2020",
           "club": "1899 Hoffenheim",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -113468,12 +114031,12 @@
           "goals": 0
         },
         {
-          "years": "2019–2020",
+          "years": "2020–2020",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga - SudWest",
           "country": "Germany",
-          "apps": 3,
+          "apps": 2,
           "goals": 0
         },
         {
@@ -113712,7 +114275,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 111,
-          "goals": 41
+          "goals": 41,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -114284,15 +114848,6 @@
       "career": [
         {
           "years": "2013–2013",
-          "club": "FC Augsburg",
-          "league": "bundesliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2013–2014",
           "club": "Augsburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -114301,12 +114856,12 @@
           "goals": 18
         },
         {
-          "years": "2014–2014",
+          "years": "2013–2014",
           "club": "FC Augsburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 3,
+          "apps": 1,
           "goals": 0
         },
         {
@@ -114317,6 +114872,15 @@
           "country": null,
           "apps": 5,
           "goals": 1
+        },
+        {
+          "years": "2014–2014",
+          "club": "FC Augsburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 3,
+          "goals": 0
         },
         {
           "years": "2014–2014",
@@ -114410,6 +114974,15 @@
         },
         {
           "years": "2020–2020",
+          "club": "VfB Stuttgart",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 8,
+          "goals": 0
+        },
+        {
+          "years": "2020–2021",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "Regionalliga - SudWest",
@@ -114418,12 +114991,12 @@
           "goals": 1
         },
         {
-          "years": "2020–2022",
+          "years": "2021–2022",
           "club": "VfB Stuttgart",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 19,
+          "apps": 11,
           "goals": 0
         },
         {
@@ -115300,7 +115873,8 @@
           "leagueRaw": "Major League Soccer",
           "country": "USA",
           "apps": 93,
-          "goals": 145
+          "goals": 145,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -115342,6 +115916,15 @@
       "career": [
         {
           "years": "2015–2015",
+          "club": "Schalke 04 II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 13,
+          "goals": 0
+        },
+        {
+          "years": "2015–2016",
           "club": "FC Schalke 04",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -115350,12 +115933,12 @@
           "goals": 0
         },
         {
-          "years": "2015–2017",
+          "years": "2016–2017",
           "club": "Schalke 04 II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 23,
+          "apps": 10,
           "goals": 0
         },
         {
@@ -115866,17 +116449,35 @@
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 3,
-          "goals": 6
+          "apps": 2,
+          "goals": 3
         },
         {
-          "years": "2016–2018",
+          "years": "2016–2016",
           "club": "1899 Hoffenheim",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 53,
-          "goals": 5
+          "apps": 24,
+          "goals": 4
+        },
+        {
+          "years": "2016–2017",
+          "club": "Hoffenheim II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 1,
+          "goals": 3
+        },
+        {
+          "years": "2017–2018",
+          "club": "1899 Hoffenheim",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 29,
+          "goals": 1
         },
         {
           "years": "2018–2019",
@@ -116866,21 +117467,21 @@
         },
         {
           "years": "2017–2017",
-          "club": "Hoffenheim II",
-          "league": null,
-          "leagueRaw": "Regionalliga",
-          "country": null,
-          "apps": 12,
-          "goals": 2
-        },
-        {
-          "years": "2017–2018",
           "club": "1899 Hoffenheim",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 2,
           "goals": 0
+        },
+        {
+          "years": "2017–2018",
+          "club": "Hoffenheim II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 12,
+          "goals": 2
         },
         {
           "years": "2018–2019",
@@ -118387,20 +118988,29 @@
         {
           "years": "2014–2015",
           "club": "SC Freiburg",
-          "league": null,
-          "leagueRaw": "2. Bundesliga",
-          "country": "Germany",
-          "apps": 5,
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 1,
           "goals": 0
         },
         {
-          "years": "2015–2016",
+          "years": "2015–2015",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
           "apps": 16,
           "goals": 5
+        },
+        {
+          "years": "2015–2016",
+          "club": "SC Freiburg",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 4,
+          "goals": 0
         },
         {
           "years": "2016–2017",
@@ -118413,6 +119023,15 @@
         },
         {
           "years": "2017",
+          "club": "Freiburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 1,
+          "goals": 2
+        },
+        {
+          "years": "2018",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -118421,13 +119040,13 @@
           "goals": 1
         },
         {
-          "years": "2017–2020",
+          "years": "2019–2020",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga - West",
           "country": "Germany",
-          "apps": 3,
-          "goals": 2
+          "apps": 2,
+          "goals": 0
         },
         {
           "years": "2020–2022",
@@ -118518,17 +119137,26 @@
           "league": null,
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
-          "apps": 95,
-          "goals": 2
+          "apps": 77,
+          "goals": 1
         },
         {
-          "years": "2018–2019",
+          "years": "2018–2018",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
           "apps": 1,
           "goals": 0
+        },
+        {
+          "years": "2018–2019",
+          "club": "VfB Stuttgart",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 18,
+          "goals": 1
         },
         {
           "years": "2019–2021",
@@ -118573,7 +119201,8 @@
           "leagueRaw": "Major League Soccer",
           "country": "USA",
           "apps": 22,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -120754,7 +121383,8 @@
           "leagueRaw": "Super League 1",
           "country": "Greece",
           "apps": 78,
-          "goals": 10
+          "goals": 10,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -120819,7 +121449,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2013–2014",
+          "years": "2013",
           "club": "Zürich II",
           "league": null,
           "leagueRaw": "Storico",
@@ -121158,21 +121788,21 @@
         },
         {
           "years": "2014",
-          "club": "Beşiktaş",
-          "league": null,
-          "leagueRaw": "Süper Lig",
-          "country": "Turkey",
-          "apps": 6,
-          "goals": 1
-        },
-        {
-          "years": "2015",
           "club": "FC Porto B",
           "league": null,
           "leagueRaw": "Segunda Liga",
           "country": null,
           "apps": 2,
           "goals": 0
+        },
+        {
+          "years": "2015",
+          "club": "Beşiktaş",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 6,
+          "goals": 1
         },
         {
           "years": "2015–2016",
@@ -121673,7 +122303,8 @@
           "leagueRaw": "Bundesliga",
           "country": "Austria",
           "apps": 21,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -123199,11 +123830,11 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 29,
-          "goals": 2
+          "apps": 15,
+          "goals": 1
         },
         {
-          "years": "2021–2022",
+          "years": "2021–2021",
           "club": "Augsburg II",
           "league": null,
           "leagueRaw": "Regionalliga - Nord",
@@ -123212,22 +123843,31 @@
           "goals": 2
         },
         {
-          "years": "2022–2022",
+          "years": "2021–2022",
           "club": "FC Augsburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 10,
-          "goals": 0
+          "apps": 14,
+          "goals": 1
         },
         {
-          "years": "2022–2023",
+          "years": "2022–2022",
           "club": "Augsburg II",
           "league": null,
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
           "apps": 2,
           "goals": 1
+        },
+        {
+          "years": "2022–2023",
+          "club": "FC Augsburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 10,
+          "goals": 0
         },
         {
           "years": "2023–2026",
@@ -123678,7 +124318,8 @@
           "leagueRaw": "Super League",
           "country": "Switzerland",
           "apps": 13,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -124771,7 +125412,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -125129,11 +125771,11 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 25,
+          "apps": 21,
           "goals": 2
         },
         {
-          "years": "2018–2019",
+          "years": "2018–2018",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -125142,12 +125784,12 @@
           "goals": 0
         },
         {
-          "years": "2019–2025",
+          "years": "2018–2025",
           "club": "1899 Hoffenheim",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 106,
+          "apps": 110,
           "goals": 4
         },
         {
@@ -127508,6 +128150,15 @@
         },
         {
           "years": "2019–2019",
+          "club": "Freiburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga - West",
+          "country": "Germany",
+          "apps": 8,
+          "goals": 0
+        },
+        {
+          "years": "2019–2020",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -127516,12 +128167,12 @@
           "goals": 0
         },
         {
-          "years": "2019–2020",
+          "years": "2020–2020",
           "club": "Freiburg II",
           "league": null,
-          "leagueRaw": "Regionalliga - West",
+          "leagueRaw": "Regionalliga - SudWest",
           "country": "Germany",
-          "apps": 10,
+          "apps": 2,
           "goals": 0
         },
         {
@@ -127696,7 +128347,8 @@
           "leagueRaw": "A-League",
           "country": "Australia",
           "apps": 19,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -127936,7 +128588,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -128029,7 +128682,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 80,
-          "goals": 127
+          "goals": 127,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -128264,15 +128918,6 @@
         },
         {
           "years": "2023",
-          "club": "SV Darmstadt 98",
-          "league": "bundesliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 10,
-          "goals": 0
-        },
-        {
-          "years": "2024",
           "club": "Antalyaspor",
           "league": null,
           "leagueRaw": "Süper Lig",
@@ -128281,13 +128926,23 @@
           "goals": 1
         },
         {
+          "years": "2024",
+          "club": "SV Darmstadt 98",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 10,
+          "goals": 0
+        },
+        {
           "years": "2024–2026",
           "club": "VfL Bochum",
           "league": null,
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 48,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -128311,7 +128966,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2007–2008",
+          "years": "2007",
           "club": "Winterthur II",
           "league": null,
           "leagueRaw": "Storico",
@@ -128596,21 +129251,21 @@
         },
         {
           "years": "2018",
-          "club": "Utrecht",
-          "league": null,
-          "leagueRaw": "Eredivisie",
-          "country": "Netherlands",
-          "apps": 14,
-          "goals": 3
-        },
-        {
-          "years": "2019",
           "club": "FC Porto B",
           "league": null,
           "leagueRaw": "Segunda Liga",
           "country": "Portugal",
           "apps": 2,
           "goals": 0
+        },
+        {
+          "years": "2019",
+          "club": "Utrecht",
+          "league": null,
+          "leagueRaw": "Eredivisie",
+          "country": "Netherlands",
+          "apps": 14,
+          "goals": 3
         },
         {
           "years": "2019–2022",
@@ -128979,7 +129634,8 @@
           "leagueRaw": "Eredivisie",
           "country": "Netherlands",
           "apps": 1,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -129049,20 +129705,20 @@
         },
         {
           "years": "2019",
-          "club": "Kayserispor",
-          "league": null,
-          "leagueRaw": "Süper Lig",
-          "country": "Turkey",
-          "apps": 6,
-          "goals": 0
-        },
-        {
-          "years": "2020",
           "club": "Wolfsburg II",
           "league": null,
           "leagueRaw": "Regionalliga - West",
           "country": "Germany",
           "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2020",
+          "club": "Kayserispor",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 6,
           "goals": 0
         },
         {
@@ -129340,7 +129996,8 @@
           "leagueRaw": "3. Liga",
           "country": "Germany",
           "apps": 3,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -129432,7 +130089,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -129673,6 +130331,15 @@
       "career": [
         {
           "years": "2017–2017",
+          "club": "Hoffenheim II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 17,
+          "goals": 3
+        },
+        {
+          "years": "2017–2018",
           "club": "1899 Hoffenheim",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -129681,13 +130348,13 @@
           "goals": 1
         },
         {
-          "years": "2017–2019",
+          "years": "2018–2019",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 26,
-          "goals": 4
+          "apps": 9,
+          "goals": 1
         },
         {
           "years": "2019–2021",
@@ -130371,15 +131038,6 @@
         },
         {
           "years": "2023–2023",
-          "club": "FC Sochi",
-          "league": null,
-          "leagueRaw": "Premier League",
-          "country": "Russia",
-          "apps": 10,
-          "goals": 0
-        },
-        {
-          "years": "2023–2023",
           "club": "Vancouver Whitecaps",
           "league": null,
           "leagueRaw": "Major League Soccer",
@@ -130388,13 +131046,31 @@
           "goals": 2
         },
         {
-          "years": "2023–2025",
+          "years": "2023–2023",
           "club": "Alanyaspor",
           "league": null,
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
-          "apps": 58,
-          "goals": 13
+          "apps": 20,
+          "goals": 3
+        },
+        {
+          "years": "2023–2024",
+          "club": "FC Sochi",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": "Russia",
+          "apps": 10,
+          "goals": 0
+        },
+        {
+          "years": "2024–2025",
+          "club": "Alanyaspor",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 38,
+          "goals": 10
         },
         {
           "years": "2025–2026",
@@ -130497,7 +131173,8 @@
           "leagueRaw": "Super League",
           "country": "Switzerland",
           "apps": 113,
-          "goals": 27
+          "goals": 27,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -130540,6 +131217,15 @@
         },
         {
           "years": "2016–2016",
+          "club": "VfB Stuttgart",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 23,
+          "goals": 1
+        },
+        {
+          "years": "2016–2017",
           "club": "Stuttgart II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -130548,13 +131234,13 @@
           "goals": 0
         },
         {
-          "years": "2016–2018",
+          "years": "2017–2018",
           "club": "VfB Stuttgart",
-          "league": null,
-          "leagueRaw": "2. Bundesliga",
-          "country": "Germany",
-          "apps": 46,
-          "goals": 1
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 23,
+          "goals": 0
         },
         {
           "years": "2018–2019",
@@ -130788,7 +131474,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 29,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -130927,16 +131614,34 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 34,
+          "apps": 20,
           "goals": 0
         },
         {
-          "years": "2018–2019",
+          "years": "2018–2018",
           "club": "Hamburger SV II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 4,
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2018–2019",
+          "club": "Hamburger SV",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 14,
+          "goals": 0
+        },
+        {
+          "years": "2019–2019",
+          "club": "Hamburger SV II",
+          "league": null,
+          "leagueRaw": "Regionalliga - West",
+          "country": "Germany",
+          "apps": 1,
           "goals": 0
         },
         {
@@ -131326,6 +132031,15 @@
       "career": [
         {
           "years": "2017–2017",
+          "club": "Wolfsburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 12,
+          "goals": 0
+        },
+        {
+          "years": "2017–2018",
           "club": "VfL Wolfsburg",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -131334,12 +132048,12 @@
           "goals": 0
         },
         {
-          "years": "2017–2018",
+          "years": "2018–2018",
           "club": "Wolfsburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 15,
+          "apps": 3,
           "goals": 0
         },
         {
@@ -131450,11 +132164,11 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 68,
-          "goals": 9
+          "apps": 37,
+          "goals": 5
         },
         {
-          "years": "2019–2020",
+          "years": "2019–2019",
           "club": "Augsburg II",
           "league": null,
           "leagueRaw": "Regionalliga - West",
@@ -131463,13 +132177,13 @@
           "goals": 1
         },
         {
-          "years": "2020–2021",
+          "years": "2019–2021",
           "club": "FC Augsburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 29,
-          "goals": 3
+          "apps": 60,
+          "goals": 7
         },
         {
           "years": "2021–2022",
@@ -131969,17 +132683,35 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 28,
-          "goals": 2
+          "apps": 4,
+          "goals": 0
         },
         {
-          "years": "2018–2019",
+          "years": "2018–2018",
           "club": "Wolfsburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
           "country": null,
-          "apps": 6,
+          "apps": 3,
+          "goals": 1
+        },
+        {
+          "years": "2018–2019",
+          "club": "VfL Wolfsburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 24,
           "goals": 2
+        },
+        {
+          "years": "2019–2019",
+          "club": "Wolfsburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga - West",
+          "country": "Germany",
+          "apps": 3,
+          "goals": 1
         },
         {
           "years": "2019–2021",
@@ -132216,7 +132948,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 98,
-          "goals": 16
+          "goals": 16,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -132259,21 +132992,21 @@
         },
         {
           "years": "2015",
-          "club": "Freiburg II",
-          "league": null,
-          "leagueRaw": "Regionalliga",
-          "country": null,
-          "apps": 8,
-          "goals": 2
-        },
-        {
-          "years": "2016",
           "club": "SC Freiburg",
           "league": null,
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 7,
           "goals": 0
+        },
+        {
+          "years": "2016",
+          "club": "Freiburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 8,
+          "goals": 2
         },
         {
           "years": "2016–2017",
@@ -132954,17 +133687,35 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 18,
+          "apps": 7,
           "goals": 0
         },
         {
-          "years": "2019–2020",
+          "years": "2019–2019",
           "club": "Schalke 04 II",
           "league": null,
           "leagueRaw": "Regionalliga - West",
           "country": "Germany",
+          "apps": 8,
+          "goals": 3
+        },
+        {
+          "years": "2019–2020",
+          "club": "FC Schalke 04",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
           "apps": 11,
-          "goals": 5
+          "goals": 0
+        },
+        {
+          "years": "2020–2020",
+          "club": "Schalke 04 II",
+          "league": null,
+          "leagueRaw": "Regionalliga - SudWest",
+          "country": "Germany",
+          "apps": 3,
+          "goals": 2
         },
         {
           "years": "2020–2021",
@@ -133182,11 +133933,11 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 27,
-          "goals": 2
+          "apps": 7,
+          "goals": 0
         },
         {
-          "years": "2019–2020",
+          "years": "2019–2019",
           "club": "Schalke 04 II",
           "league": null,
           "leagueRaw": "Regionalliga - West",
@@ -133195,13 +133946,13 @@
           "goals": 0
         },
         {
-          "years": "2020–2020",
+          "years": "2019–2020",
           "club": "FC Schalke 04",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 3,
-          "goals": 0
+          "apps": 23,
+          "goals": 2
         },
         {
           "years": "2020–2021",
@@ -133783,6 +134534,15 @@
       "career": [
         {
           "years": "2018–2018",
+          "club": "Hoffenheim II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 14,
+          "goals": 5
+        },
+        {
+          "years": "2018–2019",
           "club": "1899 Hoffenheim",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -133791,13 +134551,13 @@
           "goals": 0
         },
         {
-          "years": "2018–2019",
+          "years": "2019–2019",
           "club": "Hoffenheim II",
           "league": null,
-          "leagueRaw": "Regionalliga",
-          "country": null,
-          "apps": 18,
-          "goals": 6
+          "leagueRaw": "Regionalliga - West",
+          "country": "Germany",
+          "apps": 4,
+          "goals": 1
         },
         {
           "years": "2019–2023",
@@ -134086,21 +134846,21 @@
         },
         {
           "years": "2021",
-          "club": "Baniyas SC",
-          "league": null,
-          "leagueRaw": "Pro League",
-          "country": "United-Arab-Emirates",
-          "apps": 17,
-          "goals": 6
-        },
-        {
-          "years": "2022",
           "club": "Anderlecht",
           "league": null,
           "leagueRaw": "Jupiler Pro League",
           "country": "Belgium",
           "apps": 5,
           "goals": 1
+        },
+        {
+          "years": "2022",
+          "club": "Baniyas SC",
+          "league": null,
+          "leagueRaw": "Pro League",
+          "country": "United-Arab-Emirates",
+          "apps": 17,
+          "goals": 6
         },
         {
           "years": "2022–2025",
@@ -134400,7 +135160,7 @@
           "goals": 0
         },
         {
-          "years": "2018–2021",
+          "years": "2018–2020",
           "club": "Eintracht Frankfurt",
           "league": null,
           "leagueRaw": "Storico",
@@ -135096,7 +135856,8 @@
           "leagueRaw": "Challenger Pro League",
           "country": "Belgium",
           "apps": 36,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -135315,7 +136076,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -136582,7 +137344,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 207,
-          "goals": 22
+          "goals": 22,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -137218,15 +137981,6 @@
       "career": [
         {
           "years": "2018–2018",
-          "club": "SC Freiburg",
-          "league": "bundesliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 4,
-          "goals": 0
-        },
-        {
-          "years": "2018–2019",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -137235,21 +137989,30 @@
           "goals": 2
         },
         {
-          "years": "2019–2019",
+          "years": "2018–2019",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 13,
+          "apps": 4,
           "goals": 0
         },
         {
-          "years": "2019–2020",
+          "years": "2019–2019",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga - West",
           "country": "Germany",
           "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2019–2020",
+          "club": "SC Freiburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 13,
           "goals": 0
         },
         {
@@ -137820,7 +138583,8 @@
           "leagueRaw": "Major League Soccer",
           "country": "USA",
           "apps": 11,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -138760,7 +139524,8 @@
           "leagueRaw": "Challenger Pro League",
           "country": "Belgium",
           "apps": 62,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -140327,15 +141092,6 @@
         },
         {
           "years": "2019–2019",
-          "club": "FC Schalke 04",
-          "league": "bundesliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 10,
-          "goals": 0
-        },
-        {
-          "years": "2019–2020",
           "club": "Schalke 04 II",
           "league": null,
           "leagueRaw": "Regionalliga - West",
@@ -140344,16 +141100,16 @@
           "goals": 3
         },
         {
-          "years": "2020–2020",
+          "years": "2019–2020",
           "club": "FC Schalke 04",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 20,
+          "apps": 10,
           "goals": 0
         },
         {
-          "years": "2020–2021",
+          "years": "2020–2020",
           "club": "Schalke 04 II",
           "league": null,
           "leagueRaw": "Regionalliga - SudWest",
@@ -140362,12 +141118,12 @@
           "goals": 0
         },
         {
-          "years": "2021–2021",
+          "years": "2020–2021",
           "club": "FC Schalke 04",
-          "league": null,
-          "leagueRaw": "2. Bundesliga",
-          "country": "Germany",
-          "apps": 5,
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 20,
           "goals": 0
         },
         {
@@ -140378,6 +141134,15 @@
           "country": "Germany",
           "apps": 7,
           "goals": 1
+        },
+        {
+          "years": "2021–2021",
+          "club": "FC Schalke 04",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 5,
+          "goals": 0
         },
         {
           "years": "2021–2022",
@@ -140404,7 +141169,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 26,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -140606,17 +141372,35 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 9,
+          "apps": 6,
           "goals": 0
         },
         {
-          "years": "2020–2021",
+          "years": "2020–2020",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga - SudWest",
           "country": "Germany",
-          "apps": 25,
-          "goals": 10
+          "apps": 24,
+          "goals": 9
+        },
+        {
+          "years": "2020–2021",
+          "club": "1899 Hoffenheim",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2021–2021",
+          "club": "Hoffenheim II",
+          "league": null,
+          "leagueRaw": "Regionalliga - Nord",
+          "country": "Germany",
+          "apps": 1,
+          "goals": 1
         },
         {
           "years": "2021–2023",
@@ -140764,7 +141548,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 3,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -141086,7 +141871,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 59,
-          "goals": 5
+          "goals": 5,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -142345,21 +143131,21 @@
         },
         {
           "years": "2018–2018",
-          "club": "Paris II",
-          "league": null,
-          "leagueRaw": "National 3",
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2018–2018",
           "club": "Paris FC",
           "league": null,
           "leagueRaw": "Ligue 2",
           "country": "France",
           "apps": 33,
           "goals": 11
+        },
+        {
+          "years": "2018–2018",
+          "club": "Paris II",
+          "league": null,
+          "leagueRaw": "National 3",
+          "country": null,
+          "apps": 1,
+          "goals": 0
         },
         {
           "years": "2018",
@@ -142548,15 +143334,6 @@
         },
         {
           "years": "2013",
-          "club": "Wacker Burghausen",
-          "league": null,
-          "leagueRaw": "3. Liga",
-          "country": "Germany",
-          "apps": 4,
-          "goals": 0
-        },
-        {
-          "years": "2014",
           "club": "Heimstetten",
           "league": null,
           "leagueRaw": "Regionalliga",
@@ -142572,6 +143349,15 @@
           "country": null,
           "apps": 11,
           "goals": 3
+        },
+        {
+          "years": "2014",
+          "club": "Wacker Burghausen",
+          "league": null,
+          "leagueRaw": "3. Liga",
+          "country": "Germany",
+          "apps": 4,
+          "goals": 0
         },
         {
           "years": "2014",
@@ -142728,7 +143514,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 151,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -143352,17 +144139,26 @@
           "league": null,
           "leagueRaw": "Regionalliga - SudWest",
           "country": "Germany",
-          "apps": 3,
-          "goals": 4
+          "apps": 2,
+          "goals": 3
         },
         {
-          "years": "2021–2022",
+          "years": "2021–2021",
           "club": "VfB Stuttgart",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 20,
           "goals": 2
+        },
+        {
+          "years": "2021–2022",
+          "club": "Stuttgart II",
+          "league": null,
+          "leagueRaw": "Regionalliga - Nord",
+          "country": "Germany",
+          "apps": 1,
+          "goals": 1
         },
         {
           "years": "2022–2024",
@@ -144230,7 +145026,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 40,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -144934,6 +145731,15 @@
         },
         {
           "years": "2022–2022",
+          "club": "FC St. Pauli",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2022–2023",
           "club": "St. Pauli II",
           "league": null,
           "leagueRaw": "Regionalliga - Relegation Round",
@@ -144942,12 +145748,12 @@
           "goals": 0
         },
         {
-          "years": "2022–2025",
+          "years": "2023–2025",
           "club": "FC St. Pauli",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 51,
+          "apps": 42,
           "goals": 3
         },
         {
@@ -144957,7 +145763,8 @@
           "leagueRaw": "Super League",
           "country": "Switzerland",
           "apps": 36,
-          "goals": 12
+          "goals": 12,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -145008,15 +145815,6 @@
         },
         {
           "years": "2020–2020",
-          "club": "FC Schalke 04",
-          "league": "bundesliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2020–2021",
           "club": "Schalke 04 II",
           "league": null,
           "leagueRaw": "Regionalliga - SudWest",
@@ -145025,7 +145823,25 @@
           "goals": 0
         },
         {
+          "years": "2020–2021",
+          "club": "FC Schalke 04",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 1,
+          "goals": 0
+        },
+        {
           "years": "2021–2021",
+          "club": "Schalke 04 II",
+          "league": null,
+          "leagueRaw": "Regionalliga - Nord",
+          "country": "Germany",
+          "apps": 7,
+          "goals": 0
+        },
+        {
+          "years": "2021–2022",
           "club": "FC Schalke 04",
           "league": null,
           "leagueRaw": "2. Bundesliga",
@@ -145034,12 +145850,12 @@
           "goals": 0
         },
         {
-          "years": "2021–2022",
+          "years": "2022–2022",
           "club": "Schalke 04 II",
           "league": null,
-          "leagueRaw": "Regionalliga - Nord",
+          "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
-          "apps": 8,
+          "apps": 1,
           "goals": 0
         },
         {
@@ -145151,7 +145967,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -145178,18 +145995,36 @@
           "years": "2020–2021",
           "club": "Stuttgart II",
           "league": null,
-          "leagueRaw": "Regionalliga - Nord",
+          "leagueRaw": "Regionalliga - SudWest",
           "country": "Germany",
-          "apps": 18,
-          "goals": 2
+          "apps": 3,
+          "goals": 1
         },
         {
-          "years": "2021–2022",
+          "years": "2021–2021",
           "club": "VfB Stuttgart",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 32,
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2021–2022",
+          "club": "Stuttgart II",
+          "league": null,
+          "leagueRaw": "Regionalliga - Nord",
+          "country": "Germany",
+          "apps": 15,
+          "goals": 1
+        },
+        {
+          "years": "2022–2022",
+          "club": "VfB Stuttgart",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 28,
           "goals": 0
         },
         {
@@ -145198,17 +146033,26 @@
           "league": null,
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
-          "apps": 7,
-          "goals": 2
+          "apps": 5,
+          "goals": 0
         },
         {
-          "years": "2023–2024",
+          "years": "2023–2023",
           "club": "VfB Stuttgart",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 5,
           "goals": 0
+        },
+        {
+          "years": "2023–2024",
+          "club": "Stuttgart II",
+          "league": null,
+          "leagueRaw": "Regionalliga - Relegation Round",
+          "country": "Germany",
+          "apps": 2,
+          "goals": 2
         },
         {
           "years": "2024–2026",
@@ -145353,6 +146197,15 @@
         },
         {
           "years": "2024–2024",
+          "club": "SC Freiburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 25,
+          "goals": 0
+        },
+        {
+          "years": "2024–2025",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga - Relegation Round",
@@ -145361,12 +146214,12 @@
           "goals": 0
         },
         {
-          "years": "2024–2025",
+          "years": "2025–2025",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 33,
+          "apps": 8,
           "goals": 0
         },
         {
@@ -145543,6 +146396,91 @@
       "careerComplete": true,
       "trophies": [],
       "fame": 1872
+    },
+    {
+      "id": "mehmet-can-ayd-n-203018",
+      "name": "Mehmet Can Aydın",
+      "displayName": "Mehmet-Can Aydın",
+      "nationality": "Türkiye",
+      "isGK": false,
+      "career": [
+        {
+          "years": "2020–2020",
+          "club": "Schalke 04 II",
+          "league": null,
+          "leagueRaw": "Regionalliga - SudWest",
+          "country": "Germany",
+          "apps": 5,
+          "goals": 0
+        },
+        {
+          "years": "2020–2022",
+          "club": "FC Schalke 04",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 24,
+          "goals": 1
+        },
+        {
+          "years": "2022–2022",
+          "club": "Schalke 04 II",
+          "league": null,
+          "leagueRaw": "Regionalliga - Relegation Round",
+          "country": "Germany",
+          "apps": 4,
+          "goals": 0
+        },
+        {
+          "years": "2022–2023",
+          "club": "FC Schalke 04",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 16,
+          "goals": 0
+        },
+        {
+          "years": "2023–2024",
+          "club": "Trabzonspor",
+          "league": null,
+          "leagueRaw": "Süper Lig",
+          "country": "Turkey",
+          "apps": 23,
+          "goals": 0
+        },
+        {
+          "years": "2024–2024",
+          "club": "FC Schalke 04",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 29,
+          "goals": 0
+        },
+        {
+          "years": "2024–2027",
+          "club": "Eintracht Braunschweig",
+          "league": null,
+          "leagueRaw": "2. Bundesliga",
+          "country": "Germany",
+          "apps": 65,
+          "goals": 5,
+          "current": true
+        }
+      ],
+      "careerComplete": true,
+      "trophies": [
+        {
+          "comp": "2. Bundesliga",
+          "country": "Germany",
+          "count": 1,
+          "seasons": [
+            "2021/2022"
+          ]
+        }
+      ],
+      "fame": 224
     },
     {
       "id": "armindo-sieb-280339",
@@ -145967,6 +146905,15 @@
         },
         {
           "years": "2017–2017",
+          "club": "Rapid Vienna",
+          "league": null,
+          "leagueRaw": "Bundesliga",
+          "country": "Austria",
+          "apps": 28,
+          "goals": 3
+        },
+        {
+          "years": "2017–2018",
           "club": "SC Wiener Neustadt",
           "league": null,
           "leagueRaw": "2. Liga",
@@ -145975,13 +146922,13 @@
           "goals": 0
         },
         {
-          "years": "2017–2021",
+          "years": "2018–2021",
           "club": "Rapid Vienna",
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": "Austria",
-          "apps": 103,
-          "goals": 6
+          "apps": 75,
+          "goals": 3
         },
         {
           "years": "2021–2025",
@@ -146008,7 +146955,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 15,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -147124,7 +148072,8 @@
           "leagueRaw": "Super League",
           "country": "Switzerland",
           "apps": 34,
-          "goals": 13
+          "goals": 13,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -148005,7 +148954,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 84,
-          "goals": 14
+          "goals": 14,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -148177,7 +149127,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 33,
-          "goals": 10
+          "goals": 10,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -148224,25 +149175,34 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 59,
+          "apps": 56,
           "goals": 1
         },
         {
           "years": "2024–2024",
-          "club": "FC St. Pauli",
-          "league": "bundesliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 11,
-          "goals": 0
-        },
-        {
-          "years": "2024–2025",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
           "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2024–2024",
+          "club": "SC Freiburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 3,
+          "goals": 0
+        },
+        {
+          "years": "2024–2025",
+          "club": "FC St. Pauli",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 11,
           "goals": 0
         },
         {
@@ -148621,7 +149581,7 @@
           "goals": 0
         },
         {
-          "years": "2022–2023",
+          "years": "2022",
           "club": "Basel U21",
           "league": null,
           "leagueRaw": "Storico",
@@ -148826,16 +149786,34 @@
           "league": null,
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
-          "apps": 19,
-          "goals": 5
+          "apps": 1,
+          "goals": 1
         },
         {
-          "years": "2023–2025",
+          "years": "2023–2023",
           "club": "1899 Hoffenheim",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 44,
+          "apps": 13,
+          "goals": 0
+        },
+        {
+          "years": "2023–2024",
+          "club": "Hoffenheim II",
+          "league": null,
+          "leagueRaw": "Regionalliga - Relegation Round",
+          "country": "Germany",
+          "apps": 18,
+          "goals": 4
+        },
+        {
+          "years": "2024–2025",
+          "club": "1899 Hoffenheim",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 31,
           "goals": 5
         },
         {
@@ -149077,16 +150055,34 @@
           "league": "liga_pt",
           "leagueRaw": null,
           "country": null,
-          "apps": 12,
+          "apps": 3,
           "goals": 1
         },
         {
-          "years": "2019–2020",
+          "years": "2019–2019",
           "club": "FC Porto B",
           "league": null,
           "leagueRaw": "Segunda Liga",
           "country": "Portugal",
-          "apps": 3,
+          "apps": 2,
+          "goals": 0
+        },
+        {
+          "years": "2019–2020",
+          "club": "FC Porto",
+          "league": "liga_pt",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 9,
+          "goals": 0
+        },
+        {
+          "years": "2020–2020",
+          "club": "FC Porto B",
+          "league": null,
+          "leagueRaw": "Segunda Liga",
+          "country": "Portugal",
+          "apps": 1,
           "goals": 0
         },
         {
@@ -149490,21 +150486,21 @@
         },
         {
           "years": "2020",
-          "club": "SK Beveren",
-          "league": null,
-          "leagueRaw": "Jupiler Pro League",
-          "country": "Belgium",
-          "apps": 27,
-          "goals": 12
-        },
-        {
-          "years": "2021",
           "club": "Fenerbahçe",
           "league": null,
           "leagueRaw": "Süper Lig",
           "country": "Turkey",
           "apps": 1,
           "goals": 0
+        },
+        {
+          "years": "2021",
+          "club": "SK Beveren",
+          "league": null,
+          "leagueRaw": "Jupiler Pro League",
+          "country": "Belgium",
+          "apps": 27,
+          "goals": 12
         },
         {
           "years": "2021–2022",
@@ -150049,11 +151045,11 @@
           "league": null,
           "leagueRaw": "2. Liga",
           "country": "Austria",
-          "apps": 34,
-          "goals": 15
+          "apps": 20,
+          "goals": 6
         },
         {
-          "years": "2019–2020",
+          "years": "2019–2019",
           "club": "Red Bull Salzburg",
           "league": null,
           "leagueRaw": "Bundesliga",
@@ -150062,7 +151058,25 @@
           "goals": 1
         },
         {
+          "years": "2019–2020",
+          "club": "FC Liefering",
+          "league": null,
+          "leagueRaw": "2. Liga",
+          "country": "Austria",
+          "apps": 14,
+          "goals": 9
+        },
+        {
           "years": "2020–2020",
+          "club": "Red Bull Salzburg",
+          "league": null,
+          "leagueRaw": "Bundesliga",
+          "country": "Austria",
+          "apps": 29,
+          "goals": 7
+        },
+        {
+          "years": "2020–2021",
           "club": "FC Liefering",
           "league": null,
           "leagueRaw": "2. Liga",
@@ -150071,13 +151085,13 @@
           "goals": 0
         },
         {
-          "years": "2020–2022",
+          "years": "2021–2022",
           "club": "Red Bull Salzburg",
           "league": null,
           "leagueRaw": "Bundesliga",
           "country": "Austria",
-          "apps": 58,
-          "goals": 26
+          "apps": 29,
+          "goals": 19
         },
         {
           "years": "2022–2026",
@@ -150343,21 +151357,21 @@
         },
         {
           "years": "2025",
-          "club": "FC Copenhagen",
-          "league": null,
-          "leagueRaw": "Superliga",
-          "country": "Denmark",
-          "apps": 12,
-          "goals": 1
-        },
-        {
-          "years": "2026",
           "club": "Eintracht Frankfurt",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 4,
           "goals": 0
+        },
+        {
+          "years": "2026",
+          "club": "FC Copenhagen",
+          "league": null,
+          "leagueRaw": "Superliga",
+          "country": "Denmark",
+          "apps": 12,
+          "goals": 1
         },
         {
           "years": "2026–2027",
@@ -151651,21 +152665,21 @@
         },
         {
           "years": "2022",
-          "club": "FC Schalke 04",
-          "league": "bundesliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 9,
-          "goals": 1
-        },
-        {
-          "years": "2023",
           "club": "Union Berlin",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 3,
           "goals": 0
+        },
+        {
+          "years": "2023",
+          "club": "FC Schalke 04",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 9,
+          "goals": 1
         },
         {
           "years": "2023–2024",
@@ -151683,7 +152697,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 55,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -151730,16 +152745,25 @@
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 48,
+          "apps": 35,
           "goals": 0
         },
         {
-          "years": "2024–2025",
+          "years": "2024–2024",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
           "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2024–2025",
+          "club": "1899 Hoffenheim",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 13,
           "goals": 0
         },
         {
@@ -152920,6 +153944,15 @@
         },
         {
           "years": "2022–2022",
+          "club": "Augsburg II",
+          "league": null,
+          "leagueRaw": "Regionalliga - Relegation Round",
+          "country": "Germany",
+          "apps": 1,
+          "goals": 0
+        },
+        {
+          "years": "2022–2023",
           "club": "FC Augsburg",
           "league": "bundesliga",
           "leagueRaw": null,
@@ -152928,12 +153961,12 @@
           "goals": 0
         },
         {
-          "years": "2022–2023",
+          "years": "2023–2023",
           "club": "Augsburg II",
           "league": null,
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
-          "apps": 4,
+          "apps": 3,
           "goals": 2
         },
         {
@@ -153369,21 +154402,21 @@
         },
         {
           "years": "2022",
-          "club": "FC Schalke 04",
-          "league": "bundesliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 11,
-          "goals": 0
-        },
-        {
-          "years": "2023",
           "club": "Celtic",
           "league": null,
           "leagueRaw": "Premiership",
           "country": "Scotland",
           "apps": 11,
           "goals": 2
+        },
+        {
+          "years": "2023",
+          "club": "FC Schalke 04",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 11,
+          "goals": 0
         },
         {
           "years": "2023–2024",
@@ -153486,7 +154519,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 55,
-          "goals": 4
+          "goals": 4,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -153579,7 +154613,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -153694,7 +154729,8 @@
           "leagueRaw": "3. Liga",
           "country": "Germany",
           "apps": 25,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -154040,7 +155076,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -154088,7 +155125,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 45,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -155291,7 +156329,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -155515,7 +156554,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 16,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -155838,7 +156878,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 16,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -157179,7 +158220,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -157228,7 +158270,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2018–2019",
+          "years": "2018",
           "club": "St. Gallen II",
           "league": null,
           "leagueRaw": "Storico",
@@ -157288,7 +158330,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -157556,6 +158599,15 @@
         },
         {
           "years": "2023–2023",
+          "club": "SC Freiburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 15,
+          "goals": 0
+        },
+        {
+          "years": "2023–2024",
           "club": "Freiburg II",
           "league": null,
           "leagueRaw": "3. Liga",
@@ -157564,12 +158616,12 @@
           "goals": 0
         },
         {
-          "years": "2023–2025",
+          "years": "2024–2025",
           "club": "SC Freiburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 54,
+          "apps": 39,
           "goals": 3
         },
         {
@@ -158039,21 +159091,21 @@
         },
         {
           "years": "2018",
-          "club": "Ingolstadt II",
-          "league": null,
-          "leagueRaw": "Regionalliga",
-          "country": null,
-          "apps": 3,
-          "goals": 4
-        },
-        {
-          "years": "2018",
           "club": "Würzburger Kickers II",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 1,
           "goals": 0
+        },
+        {
+          "years": "2018",
+          "club": "Ingolstadt II",
+          "league": null,
+          "leagueRaw": "Regionalliga",
+          "country": null,
+          "apps": 3,
+          "goals": 4
         },
         {
           "years": "2019–2020",
@@ -158125,7 +159177,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -158617,21 +159670,21 @@
         },
         {
           "years": "2021",
-          "club": "Schalke 04 II",
-          "league": null,
-          "leagueRaw": "Regionalliga - Nord",
-          "country": "Germany",
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2022",
           "club": "FC Schalke 04",
           "league": null,
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 24,
           "goals": 2
+        },
+        {
+          "years": "2022",
+          "club": "Schalke 04 II",
+          "league": null,
+          "leagueRaw": "Regionalliga - Nord",
+          "country": "Germany",
+          "apps": 1,
+          "goals": 0
         },
         {
           "years": "2022–2022",
@@ -158801,7 +159854,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -158950,6 +160004,15 @@
         },
         {
           "years": "2023–2023",
+          "club": "FC Augsburg",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 16,
+          "goals": 0
+        },
+        {
+          "years": "2023–2024",
           "club": "Augsburg II",
           "league": null,
           "leagueRaw": "Regionalliga - Relegation Round",
@@ -158958,12 +160021,12 @@
           "goals": 0
         },
         {
-          "years": "2023–2024",
+          "years": "2024–2024",
           "club": "FC Augsburg",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 31,
+          "apps": 15,
           "goals": 0
         },
         {
@@ -159000,7 +160063,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -159246,7 +160310,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 54,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -159444,12 +160509,12 @@
         },
         {
           "years": "2024",
-          "club": "1. FC Heidenheim",
+          "club": "VfB Stuttgart",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 16,
-          "goals": 1
+          "apps": 1,
+          "goals": 0
         },
         {
           "years": "2025",
@@ -159462,12 +160527,12 @@
         },
         {
           "years": "2026",
-          "club": "VfB Stuttgart",
+          "club": "1. FC Heidenheim",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 1,
-          "goals": 0
+          "apps": 16,
+          "goals": 1
         },
         {
           "years": "2025–2026",
@@ -159537,21 +160602,21 @@
         },
         {
           "years": "2023",
-          "club": "SSV Ulm 1846",
-          "league": null,
-          "leagueRaw": "3. Liga",
-          "country": "Germany",
-          "apps": 34,
-          "goals": 12
-        },
-        {
-          "years": "2023",
           "club": "1. FC Magdeburg II",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 10,
           "goals": 13
+        },
+        {
+          "years": "2023",
+          "club": "SSV Ulm 1846",
+          "league": null,
+          "leagueRaw": "3. Liga",
+          "country": "Germany",
+          "apps": 34,
+          "goals": 12
         },
         {
           "years": "2024–2025",
@@ -159845,7 +160910,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 23,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -160301,7 +161367,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 4,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -160357,21 +161424,21 @@
       "career": [
         {
           "years": "2023",
-          "club": "Schalke 04 II",
-          "league": null,
-          "leagueRaw": "Regionalliga - Relegation Round",
-          "country": "Germany",
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2024",
           "club": "FC Schalke 04",
           "league": null,
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 17,
           "goals": 3
+        },
+        {
+          "years": "2024",
+          "club": "Schalke 04 II",
+          "league": null,
+          "leagueRaw": "Regionalliga - Relegation Round",
+          "country": "Germany",
+          "apps": 1,
+          "goals": 0
         },
         {
           "years": "2024–2026",
@@ -160420,7 +161487,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 22,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -160531,7 +161599,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 34,
-          "goals": 13
+          "goals": 13,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -160642,7 +161711,8 @@
           "leagueRaw": "Eredivisie",
           "country": "Netherlands",
           "apps": 29,
-          "goals": 7
+          "goals": 7,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -161370,7 +162440,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 34,
-          "goals": 32
+          "goals": 32,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -162490,20 +163561,20 @@
         },
         {
           "years": "2021",
-          "club": "FC Rostov",
-          "league": null,
-          "leagueRaw": "Premier League",
-          "country": "Russia",
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2022",
           "club": "Ull/Kisa",
           "league": null,
           "leagueRaw": "1. Division",
           "country": "Norway",
           "apps": 11,
+          "goals": 0
+        },
+        {
+          "years": "2022",
+          "club": "FC Rostov",
+          "league": null,
+          "leagueRaw": "Premier League",
+          "country": "Russia",
+          "apps": 1,
           "goals": 0
         },
         {
@@ -162661,7 +163732,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 73,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -162887,7 +163959,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -162979,7 +164052,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164286,7 +165360,8 @@
           "leagueRaw": "2. Bundesliga",
           "country": "Germany",
           "apps": 33,
-          "goals": 10
+          "goals": 10,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164334,7 +165409,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 64,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -164604,6 +165680,15 @@
         },
         {
           "years": "2024–2024",
+          "club": "1899 Hoffenheim",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 28,
+          "goals": 1
+        },
+        {
+          "years": "2024–2025",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga - Relegation Round",
@@ -164612,13 +165697,13 @@
           "goals": 0
         },
         {
-          "years": "2024–2025",
+          "years": "2025–2025",
           "club": "1899 Hoffenheim",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
-          "apps": 32,
-          "goals": 1
+          "apps": 4,
+          "goals": 0
         },
         {
           "years": "2025–2026",
@@ -165098,21 +166183,21 @@
       "career": [
         {
           "years": "2024",
-          "club": "1899 Hoffenheim",
-          "league": "bundesliga",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 2,
-          "goals": 0
-        },
-        {
-          "years": "2025",
           "club": "Hoffenheim II",
           "league": null,
           "leagueRaw": "Regionalliga - Relegation Round",
           "country": "Germany",
           "apps": 26,
           "goals": 4
+        },
+        {
+          "years": "2025",
+          "club": "1899 Hoffenheim",
+          "league": "bundesliga",
+          "leagueRaw": null,
+          "country": null,
+          "apps": 2,
+          "goals": 0
         },
         {
           "years": "2025–2026",
@@ -165765,7 +166850,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2018–2019",
+          "years": "2018",
           "club": "Jong Volendam",
           "league": null,
           "leagueRaw": "Storico",
@@ -166460,7 +167545,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 0,
-          "goals": 0
+          "goals": 0,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -166819,20 +167905,20 @@
       "career": [
         {
           "years": "2020",
-          "club": "FC Basel 1893",
-          "league": null,
-          "leagueRaw": "Super League",
-          "country": "Switzerland",
-          "apps": 8,
-          "goals": 0
-        },
-        {
-          "years": "2020–2021",
           "club": "Basel U21",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 5,
+          "goals": 0
+        },
+        {
+          "years": "2020",
+          "club": "FC Basel 1893",
+          "league": null,
+          "leagueRaw": "Super League",
+          "country": "Switzerland",
+          "apps": 8,
           "goals": 0
         },
         {
@@ -167855,7 +168941,8 @@
           "leagueRaw": null,
           "country": null,
           "apps": 22,
-          "goals": 1
+          "goals": 1,
+          "current": true
         }
       ],
       "careerComplete": true,
