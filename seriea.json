@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-15T14:11:45.355Z",
+  "version": "2026-10-15T21:23:59.278Z",
   "players": [
     {
       "id": "stefan-savic-39",
@@ -4435,15 +4435,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2011–2012",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 3,
-          "goals": 0
-        },
-        {
           "years": "2012–2014",
           "club": "Udinese",
           "league": "seriea",
@@ -4803,31 +4794,13 @@
           "goals": 4
         },
         {
-          "years": "2006–2006",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Eerste Divisie",
-          "country": null,
-          "apps": 35,
-          "goals": 2
-        },
-        {
-          "years": "2006–2007",
+          "years": "2006–2008",
           "club": "AGOVV",
           "league": null,
           "leagueRaw": "Storico",
           "country": null,
           "apps": 108,
           "goals": 30
-        },
-        {
-          "years": "2007–2009",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Eerste Divisie",
-          "country": null,
-          "apps": 73,
-          "goals": 28
         },
         {
           "years": "2009–2011",
@@ -7938,16 +7911,7 @@
       "isGK": false,
       "career": [
         {
-          "years": "2012",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 3,
-          "goals": 0
-        },
-        {
-          "years": "2013",
+          "years": "2012–2013",
           "club": "Empoli",
           "league": null,
           "leagueRaw": "Serie B",
@@ -11679,30 +11643,12 @@
       "isGK": false,
       "career": [
         {
-          "years": "2007–2008",
+          "years": "2007–2009",
           "club": "Atalanta",
           "league": null,
           "leagueRaw": "Serie A",
           "country": null,
-          "apps": 2,
-          "goals": 0
-        },
-        {
-          "years": "2008–2009",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie C",
-          "country": null,
-          "apps": 4,
-          "goals": 1
-        },
-        {
-          "years": "2009–2009",
-          "club": "Atalanta",
-          "league": null,
-          "leagueRaw": "Serie A",
-          "country": null,
-          "apps": 1,
+          "apps": 3,
           "goals": 0
         },
         {
@@ -14847,15 +14793,6 @@
           "goals": 3
         },
         {
-          "years": "2008–2009",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "First Division A",
-          "country": null,
-          "apps": 20,
-          "goals": 3
-        },
-        {
           "years": "2009–2014",
           "club": "Club Brugge KV",
           "league": null,
@@ -15514,15 +15451,6 @@
       "nationality": "Italy",
       "isGK": false,
       "career": [
-        {
-          "years": "2011–2011",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "CONMEBOL U17",
-          "country": null,
-          "apps": 9,
-          "goals": 1
-        },
         {
           "years": "2011–2014",
           "club": "Santos",
@@ -16403,31 +16331,13 @@
       "isGK": false,
       "career": [
         {
-          "years": "2010–2011",
+          "years": "2010–2013",
           "club": "Santos",
           "league": null,
           "leagueRaw": "Paulista A1",
           "country": null,
-          "apps": 34,
-          "goals": 2
-        },
-        {
-          "years": "2011–2012",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Pan American Games",
-          "country": null,
-          "apps": 3,
-          "goals": 0
-        },
-        {
-          "years": "2012–2013",
-          "club": "Santos",
-          "league": null,
-          "leagueRaw": "Paulista A1",
-          "country": null,
-          "apps": 65,
-          "goals": 7
+          "apps": 99,
+          "goals": 9
         },
         {
           "years": "2013–2018",
@@ -18152,15 +18062,6 @@
       "nationality": "Uruguay",
       "isGK": false,
       "career": [
-        {
-          "years": "2011–2011",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Pan American Games",
-          "country": null,
-          "apps": 4,
-          "goals": 1
-        },
         {
           "years": "2011–2014",
           "club": "Defensor Sporting",
@@ -21577,15 +21478,6 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 22,
-          "goals": 9
-        },
-        {
-          "years": "2007–2009",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Premier League",
-          "country": null,
-          "apps": 25,
           "goals": 9
         },
         {
@@ -25882,15 +25774,6 @@
           "goals": 2
         },
         {
-          "years": "2014–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Tournoi Maurice Revello",
-          "country": null,
-          "apps": 5,
-          "goals": 0
-        },
-        {
           "years": "2014–2015",
           "club": "Udinese",
           "league": "seriea",
@@ -28169,15 +28052,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2007",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "2. SNL",
-          "country": null,
-          "apps": 24,
-          "goals": 3
-        },
-        {
           "years": "2007–2008",
           "club": "Bonifika",
           "league": null,
@@ -29452,15 +29326,6 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 69,
-          "goals": 0
-        },
-        {
-          "years": "2008–2010",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 71,
           "goals": 0
         },
         {
@@ -32237,15 +32102,6 @@
           "goals": 0
         },
         {
-          "years": "2015–2016",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 20,
-          "goals": 0
-        },
-        {
           "years": "2016",
           "club": "Virtus Lanciano",
           "league": null,
@@ -32562,15 +32418,6 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 59,
-          "goals": 3
-        },
-        {
-          "years": "2009–2011",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie C",
-          "country": null,
-          "apps": 54,
           "goals": 3
         },
         {
@@ -33523,15 +33370,6 @@
         },
         {
           "years": "2011",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie C",
-          "country": null,
-          "apps": 36,
-          "goals": 16
-        },
-        {
-          "years": "2011",
           "club": "Casale",
           "league": null,
           "leagueRaw": "Storico",
@@ -33968,15 +33806,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2006",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Lega Pro 2",
-          "country": null,
-          "apps": 25,
-          "goals": 2
-        },
-        {
           "years": "2006–2007",
           "club": "Carpenedolo",
           "league": null,
@@ -34194,16 +34023,7 @@
           "goals": 3
         },
         {
-          "years": "2025",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": "Italy",
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2026",
+          "years": "2025–2026",
           "club": "Padova",
           "league": null,
           "leagueRaw": "Serie B",
@@ -39931,15 +39751,6 @@
           "goals": 0
         },
         {
-          "years": "2013",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 39,
-          "goals": 0
-        },
-        {
           "years": "2013–2014",
           "club": "Virtus Lanciano",
           "league": null,
@@ -42584,16 +42395,7 @@
           "goals": 2
         },
         {
-          "years": "2025",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": "Italy",
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2026",
+          "years": "2025–2026",
           "club": "Padova",
           "league": null,
           "leagueRaw": "Serie B",
@@ -43177,15 +42979,6 @@
       "isGK": true,
       "career": [
         {
-          "years": "2009",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie C",
-          "country": null,
-          "apps": 16,
-          "goals": 0
-        },
-        {
           "years": "2009–2010",
           "club": "Pergocrema",
           "league": null,
@@ -43538,15 +43331,6 @@
           "country": null,
           "apps": 32,
           "goals": 6
-        },
-        {
-          "years": "2015",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 34,
-          "goals": 7
         },
         {
           "years": "2015–2016",
@@ -45027,15 +44811,6 @@
           "goals": 1
         },
         {
-          "years": "2008–2009",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "1. SNL",
-          "country": null,
-          "apps": 54,
-          "goals": 1
-        },
-        {
           "years": "2009–2010",
           "club": "Maribor",
           "league": null,
@@ -45524,16 +45299,7 @@
           "goals": 0
         },
         {
-          "years": "2015",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 16,
-          "goals": 1
-        },
-        {
-          "years": "2016",
+          "years": "2015–2016",
           "club": "Sampdoria",
           "league": "seriea",
           "leagueRaw": null,
@@ -46962,15 +46728,6 @@
           "goals": 0
         },
         {
-          "years": "2012",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 37,
-          "goals": 0
-        },
-        {
           "years": "2012–2013",
           "club": "Virtus Lanciano",
           "league": null,
@@ -47713,15 +47470,6 @@
           "country": null,
           "apps": 27,
           "goals": 2
-        },
-        {
-          "years": "2011",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Lega Pro 2",
-          "country": null,
-          "apps": 26,
-          "goals": 3
         },
         {
           "years": "2011–2012",
@@ -54176,15 +53924,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2011–2012",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "CONMEBOL U17",
-          "country": null,
-          "apps": 8,
-          "goals": 3
-        },
-        {
           "years": "2012–2013",
           "club": "Flamengo",
           "league": null,
@@ -54398,15 +54137,6 @@
           "country": null,
           "apps": 13,
           "goals": 1
-        },
-        {
-          "years": "2015",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 16,
-          "goals": 0
         },
         {
           "years": "2015–2016",
@@ -55875,22 +55605,14 @@
           "goals": 3
         },
         {
-          "years": "2022–2025",
+          "years": "2022–2026",
           "club": "Petrolul Ploiesti",
           "league": null,
           "leagueRaw": "Liga I",
           "country": "Romania",
           "apps": 85,
-          "goals": 2
-        },
-        {
-          "years": "2025–2026",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Liga I",
-          "country": "Romania",
-          "apps": 35,
-          "goals": 2
+          "goals": 2,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -55990,15 +55712,6 @@
           "country": null,
           "apps": 22,
           "goals": 0
-        },
-        {
-          "years": "2008",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Primeira Liga",
-          "country": null,
-          "apps": 28,
-          "goals": 4
         },
         {
           "years": "2008–2009",
@@ -56531,15 +56244,6 @@
           "country": null,
           "apps": 48,
           "goals": 8
-        },
-        {
-          "years": "2007",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Premier League",
-          "country": null,
-          "apps": 6,
-          "goals": 0
         },
         {
           "years": "2007–2008",
@@ -66651,22 +66355,13 @@
           "goals": 11
         },
         {
-          "years": "2005",
+          "years": "2005–2006",
           "club": "Crotone",
           "league": null,
           "leagueRaw": "Serie B",
           "country": null,
           "apps": 6,
           "goals": 0
-        },
-        {
-          "years": "2006",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Lega Pro 2",
-          "country": null,
-          "apps": 12,
-          "goals": 9
         },
         {
           "years": "2006",
@@ -68879,15 +68574,6 @@
           "country": null,
           "apps": 41,
           "goals": 1
-        },
-        {
-          "years": "2009–2010",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Liga I",
-          "country": null,
-          "apps": 15,
-          "goals": 0
         },
         {
           "years": "2010–2011",
@@ -71226,15 +70912,6 @@
           "leagueRaw": "Serie C",
           "country": null,
           "apps": 17,
-          "goals": 0
-        },
-        {
-          "years": "2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 24,
           "goals": 0
         },
         {
@@ -74967,7 +74644,7 @@
           "goals": 0
         },
         {
-          "years": "2014–2014",
+          "years": "2014–2015",
           "club": "Internacional",
           "league": null,
           "leagueRaw": "Gaúcho 1",
@@ -74976,16 +74653,7 @@
           "goals": 1
         },
         {
-          "years": "2014–2015",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Tournoi Maurice Revello",
-          "country": null,
-          "apps": 8,
-          "goals": 0
-        },
-        {
-          "years": "2015–2015",
+          "years": "2015",
           "club": "Botafogo",
           "league": null,
           "leagueRaw": "Carioca Série A",
@@ -74994,7 +74662,7 @@
           "goals": 1
         },
         {
-          "years": "2015–2015",
+          "years": "2016",
           "club": "Fiorentina",
           "league": "seriea",
           "leagueRaw": null,
@@ -75003,7 +74671,7 @@
           "goals": 0
         },
         {
-          "years": "2015–2016",
+          "years": "2017",
           "club": "Hellas Verona",
           "league": "seriea",
           "leagueRaw": null,
@@ -75351,15 +75019,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2012",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Lega Pro 2",
-          "country": null,
-          "apps": 11,
-          "goals": 0
-        },
-        {
           "years": "2012–2013",
           "club": "Giacomense",
           "league": null,
@@ -75424,15 +75083,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2011–2012",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 9,
-          "goals": 0
-        },
-        {
           "years": "2012–2013",
           "club": "Watford",
           "league": null,
@@ -75487,21 +75137,12 @@
           "goals": 0
         },
         {
-          "years": "2016",
+          "years": "2016–2017",
           "club": "Chelsea",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
           "apps": 10,
-          "goals": 0
-        },
-        {
-          "years": "2017",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Tournoi Maurice Revello",
-          "country": null,
-          "apps": 4,
           "goals": 0
         },
         {
@@ -77195,15 +76836,6 @@
           "goals": 9
         },
         {
-          "years": "2012–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 73,
-          "goals": 9
-        },
-        {
           "years": "2014–2015",
           "club": "Perugia",
           "league": null,
@@ -77731,15 +77363,6 @@
           "goals": 0
         },
         {
-          "years": "2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 19,
-          "goals": 4
-        },
-        {
           "years": "2014–2015",
           "club": "Lanciano",
           "league": null,
@@ -78232,15 +77855,6 @@
           "club": "Bellaria Igea",
           "league": null,
           "leagueRaw": "Storico",
-          "country": null,
-          "apps": 37,
-          "goals": 3
-        },
-        {
-          "years": "2005–2007",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Lega Pro 2",
           "country": null,
           "apps": 37,
           "goals": 3
@@ -79783,15 +79397,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2012",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Lega Pro 2",
-          "country": null,
-          "apps": 6,
-          "goals": 0
-        },
-        {
           "years": "2012–2014",
           "club": "Bellaria Igea",
           "league": null,
@@ -80711,15 +80316,6 @@
           "goals": 3
         },
         {
-          "years": "2012–2013",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Super Liga",
-          "country": null,
-          "apps": 40,
-          "goals": 4
-        },
-        {
           "years": "2013–2014",
           "club": "Donji Srem",
           "league": null,
@@ -80727,24 +80323,6 @@
           "country": null,
           "apps": 40,
           "goals": 4
-        },
-        {
-          "years": "2014–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Super Liga",
-          "country": null,
-          "apps": 11,
-          "goals": 1
-        },
-        {
-          "years": "2014",
-          "club": "Donji Srem",
-          "league": null,
-          "leagueRaw": "Storico",
-          "country": null,
-          "apps": 11,
-          "goals": 1
         },
         {
           "years": "2014–2015",
@@ -82220,15 +81798,6 @@
           "goals": 0
         },
         {
-          "years": "2011–2013",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "1. liga",
-          "country": null,
-          "apps": 44,
-          "goals": 0
-        },
-        {
           "years": "2013–2015",
           "club": "Catania",
           "league": "seriea",
@@ -82663,15 +82232,6 @@
           "country": "Greece",
           "apps": 10,
           "goals": 2
-        },
-        {
-          "years": "2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 35,
-          "goals": 8
         },
         {
           "years": "2014–2015",
@@ -86771,15 +86331,6 @@
           "goals": 0
         },
         {
-          "years": "2013",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 33,
-          "goals": 1
-        },
-        {
           "years": "2013–2014",
           "club": "Virtus Lanciano",
           "league": null,
@@ -87162,15 +86713,6 @@
           "country": null,
           "apps": 58,
           "goals": 3
-        },
-        {
-          "years": "2005",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Lega Pro 2",
-          "country": null,
-          "apps": 28,
-          "goals": 0
         },
         {
           "years": "2005–2006",
@@ -88487,15 +88029,6 @@
           "leagueRaw": "Serie C",
           "country": null,
           "apps": 19,
-          "goals": 0
-        },
-        {
-          "years": "2008",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 15,
           "goals": 0
         },
         {
@@ -95425,15 +94958,6 @@
           "goals": 6
         },
         {
-          "years": "2008–2010",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 58,
-          "goals": 6
-        },
-        {
           "years": "2010–2013",
           "club": "Livorno",
           "league": null,
@@ -100734,15 +100258,6 @@
           "goals": 1
         },
         {
-          "years": "2013",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 35,
-          "goals": 2
-        },
-        {
           "years": "2013–2014",
           "club": "Virtus Lanciano",
           "league": null,
@@ -100996,15 +100511,6 @@
           "country": null,
           "apps": 17,
           "goals": 3
-        },
-        {
-          "years": "2013–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 9,
-          "goals": 0
         },
         {
           "years": "2014",
@@ -102163,15 +101669,6 @@
           "club": "Moscow",
           "league": null,
           "leagueRaw": "Storico",
-          "country": null,
-          "apps": 42,
-          "goals": 6
-        },
-        {
-          "years": "2006–2008",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Premier League",
           "country": null,
           "apps": 42,
           "goals": 6
@@ -109027,15 +108524,6 @@
           "goals": 0
         },
         {
-          "years": "2013–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 33,
-          "goals": 1
-        },
-        {
           "years": "2014–2015",
           "club": "Lanciano",
           "league": null,
@@ -109178,15 +108666,6 @@
           "leagueRaw": "Storico",
           "country": null,
           "apps": 58,
-          "goals": 2
-        },
-        {
-          "years": "2014–2016",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 60,
           "goals": 2
         },
         {
@@ -114793,15 +114272,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2011–2012",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "CONMEBOL U17",
-          "country": null,
-          "apps": 9,
-          "goals": 0
-        },
-        {
           "years": "2012",
           "club": "Corinthians",
           "league": null,
@@ -114820,31 +114290,13 @@
           "goals": 0
         },
         {
-          "years": "2013–2014",
+          "years": "2013–2026",
           "club": "Paris Saint Germain",
           "league": "ligue1",
           "leagueRaw": null,
           "country": null,
-          "apps": 46,
-          "goals": 4
-        },
-        {
-          "years": "2014–2015",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Tournoi Maurice Revello",
-          "country": null,
-          "apps": 5,
-          "goals": 1
-        },
-        {
-          "years": "2015–2026",
-          "club": "Paris Saint Germain",
-          "league": "ligue1",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 289,
-          "goals": 23,
+          "apps": 335,
+          "goals": 27,
           "current": true
         }
       ],
@@ -117501,15 +116953,6 @@
           "goals": 5
         },
         {
-          "years": "2015",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 37,
-          "goals": 8
-        },
-        {
           "years": "2015–2016",
           "club": "Virtus Lanciano",
           "league": null,
@@ -119890,15 +119333,6 @@
           "goals": 0
         },
         {
-          "years": "2008–2009",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Liga MX",
-          "country": null,
-          "apps": 13,
-          "goals": 0
-        },
-        {
           "years": "2009",
           "club": "San Luis",
           "league": null,
@@ -121913,15 +121347,6 @@
           "goals": 2
         },
         {
-          "years": "2025–2025",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": "Italy",
-          "apps": 1,
-          "goals": 0
-        },
-        {
           "years": "2025–2027",
           "club": "Padova",
           "league": null,
@@ -121970,21 +121395,12 @@
           "goals": 3
         },
         {
-          "years": "2013–2013",
+          "years": "2013–2014",
           "club": "Udinese",
           "league": "seriea",
           "leagueRaw": null,
           "country": null,
           "apps": 3,
-          "goals": 0
-        },
-        {
-          "years": "2013–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Tournoi Maurice Revello",
-          "country": null,
-          "apps": 7,
           "goals": 0
         },
         {
@@ -122208,15 +121624,6 @@
       "nationality": "Italy",
       "isGK": false,
       "career": [
-        {
-          "years": "2010–2011",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie C",
-          "country": null,
-          "apps": 11,
-          "goals": 2
-        },
         {
           "years": "2011–2012",
           "club": "Lanciano",
@@ -122698,15 +122105,6 @@
           "leagueRaw": "Serie B",
           "country": null,
           "apps": 3,
-          "goals": 0
-        },
-        {
-          "years": "2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": null,
-          "apps": 35,
           "goals": 0
         },
         {
@@ -125820,15 +125218,6 @@
       "isGK": true,
       "career": [
         {
-          "years": "2013–2013",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Tournoi Maurice Revello",
-          "country": null,
-          "apps": 5,
-          "goals": 0
-        },
-        {
           "years": "2013–2017",
           "club": "Internacional",
           "league": null,
@@ -125988,22 +125377,13 @@
           "goals": 11
         },
         {
-          "years": "2012–2012",
+          "years": "2012–2013",
           "club": "Bayer Leverkusen",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 6,
           "goals": 0
-        },
-        {
-          "years": "2012–2013",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Regionalliga",
-          "country": null,
-          "apps": 5,
-          "goals": 5
         },
         {
           "years": "2013–2014",
@@ -127203,15 +126583,6 @@
       "nationality": "Brazil",
       "isGK": false,
       "career": [
-        {
-          "years": "2013–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Tournoi Maurice Revello",
-          "country": null,
-          "apps": 6,
-          "goals": 1
-        },
         {
           "years": "2014–2014",
           "club": "Cruzeiro",
@@ -129112,15 +128483,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2012–2012",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 10,
-          "goals": 1
-        },
-        {
           "years": "2012–2016",
           "club": "Lech Poznan",
           "league": null,
@@ -129547,15 +128909,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2013–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "CONMEBOL U17",
-          "country": null,
-          "apps": 6,
-          "goals": 1
-        },
-        {
           "years": "2014–2015",
           "club": "Sao Paulo",
           "league": null,
@@ -129918,15 +129271,6 @@
           "country": null,
           "apps": 35,
           "goals": 9
-        },
-        {
-          "years": "2011–2011",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 6,
-          "goals": 2
         },
         {
           "years": "2011–2012",
@@ -133736,30 +133080,12 @@
           "goals": 0
         },
         {
-          "years": "2013–2014",
+          "years": "2013–2016",
           "club": "Jagiellonia",
           "league": null,
           "leagueRaw": "Ekstraklasa",
           "country": null,
-          "apps": 30,
-          "goals": 0
-        },
-        {
-          "years": "2014–2015",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 5,
-          "goals": 0
-        },
-        {
-          "years": "2015–2016",
-          "club": "Jagiellonia",
-          "league": null,
-          "leagueRaw": "Ekstraklasa",
-          "country": null,
-          "apps": 34,
+          "apps": 64,
           "goals": 0
         },
         {
@@ -134313,15 +133639,6 @@
       "nationality": "Italy",
       "isGK": false,
       "career": [
-        {
-          "years": "2013",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Lega Pro 2",
-          "country": null,
-          "apps": 25,
-          "goals": 0
-        },
         {
           "years": "2013–2014",
           "club": "Bellaria Igea Marina",
@@ -137123,22 +136440,13 @@
           "goals": 10
         },
         {
-          "years": "2013",
+          "years": "2013–2014",
           "club": "Celta Vigo",
           "league": "laliga",
           "leagueRaw": null,
           "country": null,
           "apps": 32,
           "goals": 4
-        },
-        {
-          "years": "2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Tournoi Maurice Revello",
-          "country": null,
-          "apps": 2,
-          "goals": 0
         },
         {
           "years": "2014–2017",
@@ -140863,15 +140171,6 @@
           "goals": 0
         },
         {
-          "years": "2011",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Liga II",
-          "country": null,
-          "apps": 23,
-          "goals": 0
-        },
-        {
           "years": "2011–2012",
           "club": "Săgeata Năvodari",
           "league": null,
@@ -140971,17 +140270,8 @@
           "goals": 1
         },
         {
-          "years": "2025",
+          "years": "2025–2026",
           "club": "Universitatea Cluj",
-          "league": null,
-          "leagueRaw": "Liga I",
-          "country": "Romania",
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2026",
-          "club": "Squadra sconosciuta",
           "league": null,
           "leagueRaw": "Liga I",
           "country": "Romania",
@@ -141709,40 +140999,13 @@
           "goals": 5
         },
         {
-          "years": "2013–2013",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 2,
-          "goals": 0
-        },
-        {
-          "years": "2013–2014",
+          "years": "2013–2017",
           "club": "Lech Poznan",
           "league": null,
           "leagueRaw": "Ekstraklasa",
           "country": null,
-          "apps": 13,
-          "goals": 2
-        },
-        {
-          "years": "2014–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 3,
-          "goals": 3
-        },
-        {
-          "years": "2014–2017",
-          "club": "Lech Poznan",
-          "league": null,
-          "leagueRaw": "Ekstraklasa",
-          "country": null,
-          "apps": 81,
-          "goals": 19
+          "apps": 94,
+          "goals": 21
         },
         {
           "years": "2017–2018",
@@ -143389,30 +142652,12 @@
           "goals": 1
         },
         {
-          "years": "2019–2019",
+          "years": "2019–2021",
           "club": "Torino",
           "league": "seriea",
           "leagueRaw": null,
           "country": null,
-          "apps": 17,
-          "goals": 0
-        },
-        {
-          "years": "2019–2020",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Tournoi Maurice Revello",
-          "country": null,
-          "apps": 4,
-          "goals": 0
-        },
-        {
-          "years": "2020–2021",
-          "club": "Torino",
-          "league": "seriea",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 23,
+          "apps": 40,
           "goals": 0
         },
         {
@@ -143852,15 +143097,6 @@
         },
         {
           "years": "2015–2015",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Pan American Games",
-          "country": null,
-          "apps": 3,
-          "goals": 0
-        },
-        {
-          "years": "2015–2015",
           "club": "Rubin",
           "league": null,
           "leagueRaw": "Premier League",
@@ -144006,31 +143242,13 @@
       "isGK": false,
       "career": [
         {
-          "years": "2017–2019",
+          "years": "2017–2023",
           "club": "Sassuolo",
           "league": "seriea",
           "leagueRaw": null,
           "country": null,
-          "apps": 61,
+          "apps": 148,
           "goals": 2
-        },
-        {
-          "years": "2019–2020",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Tournoi Maurice Revello",
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2020–2023",
-          "club": "Sassuolo",
-          "league": "seriea",
-          "leagueRaw": null,
-          "country": null,
-          "apps": 87,
-          "goals": 0
         },
         {
           "years": "2023–2024",
@@ -144683,21 +143901,12 @@
       "isGK": false,
       "career": [
         {
-          "years": "2011–2012",
+          "years": "2011–2013",
           "club": "Widzew Łódź",
           "league": null,
           "leagueRaw": "Ekstraklasa",
           "country": null,
           "apps": 33,
-          "goals": 5
-        },
-        {
-          "years": "2012–2013",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 10,
           "goals": 5
         },
         {
@@ -145399,15 +144608,6 @@
           "country": null,
           "apps": 33,
           "goals": 3
-        },
-        {
-          "years": "2012",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Lega Pro 2",
-          "country": null,
-          "apps": 24,
-          "goals": 0
         },
         {
           "years": "2012–2013",
@@ -147682,15 +146882,6 @@
           "goals": 2
         },
         {
-          "years": "2011–2012",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Liga MX",
-          "country": null,
-          "apps": 18,
-          "goals": 0
-        },
-        {
           "years": "2012–2012",
           "club": "CRB",
           "league": null,
@@ -148420,15 +147611,6 @@
           "country": "France",
           "apps": 12,
           "goals": 2
-        },
-        {
-          "years": "2012–2012",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "National 3",
-          "country": null,
-          "apps": 1,
-          "goals": 0
         },
         {
           "years": "2012–2013",
@@ -150052,15 +149234,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015–2016",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 4,
-          "goals": 0
-        },
-        {
           "years": "2016–2017",
           "club": "Charlton",
           "league": null,
@@ -150699,15 +149872,6 @@
           "country": null,
           "apps": 75,
           "goals": 22
-        },
-        {
-          "years": "2012–2013",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 5,
-          "goals": 0
         },
         {
           "years": "2014–2015",
@@ -151917,15 +151081,6 @@
           "goals": 8
         },
         {
-          "years": "2012–2013",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "First NL",
-          "country": null,
-          "apps": 27,
-          "goals": 6
-        },
-        {
           "years": "2013–2014",
           "club": "HNK Hajduk Split",
           "league": null,
@@ -152041,15 +151196,6 @@
       "nationality": "Nigeria",
       "isGK": false,
       "career": [
-        {
-          "years": "2013–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 5,
-          "goals": 0
-        },
         {
           "years": "2016–2017",
           "club": "Chelsea",
@@ -152655,15 +151801,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2013–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "National 3",
-          "country": null,
-          "apps": 16,
-          "goals": 0
-        },
-        {
           "years": "2014",
           "club": "Arles B",
           "league": null,
@@ -152673,7 +151810,7 @@
           "goals": 0
         },
         {
-          "years": "2014–2015",
+          "years": "2014",
           "club": "Arles",
           "league": null,
           "leagueRaw": "Ligue 2",
@@ -156212,15 +155349,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2011–2012",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "CONMEBOL U17",
-          "country": null,
-          "apps": 9,
-          "goals": 3
-        },
-        {
           "years": "2012",
           "club": "Chelsea",
           "league": "pl",
@@ -156248,21 +155376,12 @@
           "goals": 11
         },
         {
-          "years": "2014–2014",
+          "years": "2014–2015",
           "club": "Eintracht Frankfurt",
           "league": "bundesliga",
           "leagueRaw": null,
           "country": null,
           "apps": 22,
-          "goals": 2
-        },
-        {
-          "years": "2014–2015",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Pan American Games",
-          "country": null,
-          "apps": 8,
           "goals": 2
         },
         {
@@ -161032,15 +160151,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2011–2012",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "CONMEBOL U17",
-          "country": null,
-          "apps": 8,
-          "goals": 0
-        },
-        {
           "years": "2013–2013",
           "club": "Atletico Paranaense",
           "league": null,
@@ -162616,15 +161726,6 @@
         },
         {
           "years": "2013",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Druha Liga - Group A",
-          "country": "Ukraine",
-          "apps": 2,
-          "goals": 1
-        },
-        {
-          "years": "2014",
           "club": "Shakhtar Donetsk III",
           "league": null,
           "leagueRaw": "Druha Liga - Group A",
@@ -166656,15 +165757,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2017–2017",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 3,
-          "goals": 0
-        },
-        {
           "years": "2017",
           "club": "Legia Warsaw II",
           "league": null,
@@ -167418,30 +166510,12 @@
       "isGK": false,
       "career": [
         {
-          "years": "2015",
-          "club": "Barcelona B",
-          "league": null,
-          "leagueRaw": "Primera División RFEF",
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2016",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 8,
-          "goals": 0
-        },
-        {
-          "years": "2017–2018",
+          "years": "2015–2018",
           "club": "Barcelona B",
           "league": null,
           "leagueRaw": "Segunda División",
           "country": "Spain",
-          "apps": 53,
+          "apps": 54,
           "goals": 12
         },
         {
@@ -168349,15 +167423,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2019–2019",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 2,
-          "goals": 0
-        },
-        {
           "years": "2019–2022",
           "club": "Lazio",
           "league": "seriea",
@@ -168831,15 +167896,6 @@
       "nationality": "Brazil",
       "isGK": false,
       "career": [
-        {
-          "years": "2013–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "CONMEBOL U17",
-          "country": null,
-          "apps": 4,
-          "goals": 0
-        },
         {
           "years": "2015–2018",
           "club": "Gremio",
@@ -169692,15 +168748,6 @@
       "nationality": "Morocco",
       "isGK": false,
       "career": [
-        {
-          "years": "2016–2017",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Euro U17",
-          "country": null,
-          "apps": 6,
-          "goals": 3
-        },
         {
           "years": "2017–2018",
           "club": "Manchester City",
@@ -176403,15 +175450,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2019–2020",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 5,
-          "goals": 2
-        },
-        {
           "years": "2020–2024",
           "club": "AS Roma",
           "league": "seriea",
@@ -178356,19 +177394,10 @@
       "isGK": false,
       "career": [
         {
-          "years": "2014",
+          "years": "2014–2015",
           "club": "Arsenal",
           "league": "pl",
           "leagueRaw": null,
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
-        {
-          "years": "2015",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
           "country": null,
           "apps": 1,
           "goals": 0
@@ -180444,15 +179473,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2012–2012",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "National 3",
-          "country": null,
-          "apps": 10,
-          "goals": 1
-        },
-        {
           "years": "2012",
           "club": "Beauvais B",
           "league": null,
@@ -180880,31 +179900,13 @@
           "goals": 3
         },
         {
-          "years": "2017–2019",
-          "club": "Gremio",
-          "league": null,
-          "leagueRaw": "Gaúcho 1",
-          "country": null,
-          "apps": 59,
-          "goals": 5
-        },
-        {
-          "years": "2019–2020",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Tournoi Maurice Revello",
-          "country": null,
-          "apps": 5,
-          "goals": 1
-        },
-        {
-          "years": "2020–2021",
+          "years": "2017–2021",
           "club": "Gremio",
           "league": null,
           "leagueRaw": "Gaúcho - 1",
           "country": "Brazil",
-          "apps": 67,
-          "goals": 6
+          "apps": 126,
+          "goals": 11
         },
         {
           "years": "2021–2024",
@@ -182545,15 +181547,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2013–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Lega Pro 2",
-          "country": null,
-          "apps": 8,
-          "goals": 0
-        },
-        {
           "years": "2014",
           "club": "Bellaria Igea",
           "league": null,
@@ -182915,15 +181908,6 @@
           "leagueRaw": "Liga MX",
           "country": "Mexico",
           "apps": 13,
-          "goals": 1
-        },
-        {
-          "years": "2019–2019",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Pan American Games",
-          "country": null,
-          "apps": 5,
           "goals": 1
         },
         {
@@ -184075,15 +183059,6 @@
       "nationality": "Poland",
       "isGK": false,
       "career": [
-        {
-          "years": "2017–2018",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 6,
-          "goals": 3
-        },
         {
           "years": "2018–2019",
           "club": "Podbrezová",
@@ -188175,15 +187150,6 @@
       "nationality": "Brazil",
       "isGK": false,
       "career": [
-        {
-          "years": "2017–2018",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "CONMEBOL U17",
-          "country": null,
-          "apps": 9,
-          "goals": 1
-        },
         {
           "years": "2018–2018",
           "club": "Estoril",
@@ -193055,15 +192021,6 @@
           "goals": 14
         },
         {
-          "years": "2025–2025",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Serie B",
-          "country": "Italy",
-          "apps": 1,
-          "goals": 0
-        },
-        {
           "years": "2025–2027",
           "club": "Padova",
           "league": null,
@@ -194857,15 +193814,6 @@
       "nationality": "Colombia",
       "isGK": true,
       "career": [
-        {
-          "years": "2018–2019",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "CONMEBOL Libertadores U20",
-          "country": null,
-          "apps": 3,
-          "goals": 0
-        },
         {
           "years": "2021–2023",
           "club": "Club Guarani",
@@ -198209,22 +197157,13 @@
       "isGK": false,
       "career": [
         {
-          "years": "2016",
+          "years": "2016–2017",
           "club": "Barcelona B",
           "league": null,
           "leagueRaw": "Primera División RFEF",
           "country": null,
           "apps": 3,
           "goals": 0
-        },
-        {
-          "years": "2017",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Euro U17",
-          "country": null,
-          "apps": 6,
-          "goals": 1
         },
         {
           "years": "2017–2017",
@@ -200276,31 +199215,13 @@
       "isGK": false,
       "career": [
         {
-          "years": "2013–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 5,
-          "goals": 1
-        },
-        {
-          "years": "2014–2016",
+          "years": "2014–2017",
           "club": "Chelsea",
           "league": "pl",
           "leagueRaw": null,
           "country": null,
           "apps": 22,
           "goals": 1
-        },
-        {
-          "years": "2016–2017",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Tournoi Maurice Revello",
-          "country": null,
-          "apps": 4,
-          "goals": 3
         },
         {
           "years": "2017–2018",
@@ -201611,15 +200532,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2017–2017",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "CONMEBOL U17",
-          "country": null,
-          "apps": 4,
-          "goals": 1
-        },
-        {
           "years": "2017–2019",
           "club": "Sao Paulo",
           "league": null,
@@ -201728,15 +200640,6 @@
           "country": "Brazil",
           "apps": 15,
           "goals": 6
-        },
-        {
-          "years": "2021",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "CONMEBOL U17",
-          "country": null,
-          "apps": 4,
-          "goals": 3
         },
         {
           "years": "2020",
@@ -202602,22 +201505,14 @@
           "goals": 0
         },
         {
-          "years": "2024–2025",
+          "years": "2024–2026",
           "club": "Pafos",
           "league": null,
           "leagueRaw": "1. Division",
           "country": "Cyprus",
           "apps": 27,
-          "goals": 3
-        },
-        {
-          "years": "2025–2026",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "1. Division",
-          "country": "Cyprus",
-          "apps": 31,
-          "goals": 3
+          "goals": 3,
+          "current": true
         }
       ],
       "careerComplete": true,
@@ -203718,15 +202613,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2014–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 3,
-          "goals": 0
-        },
-        {
           "years": "2014–2016",
           "club": "Espanyol II",
           "league": null,
@@ -204626,15 +203512,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2013–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 5,
-          "goals": 0
-        },
-        {
           "years": "2014",
           "club": "Legia Warsaw II",
           "league": null,
@@ -204644,7 +203521,7 @@
           "goals": 5
         },
         {
-          "years": "2014–2015",
+          "years": "2014",
           "club": "Legia Warszawa",
           "league": null,
           "leagueRaw": "Ekstraklasa",
@@ -204844,15 +203721,6 @@
           "country": "Denmark",
           "apps": 23,
           "goals": 1
-        },
-        {
-          "years": "2025–2025",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "1. Division",
-          "country": "Cyprus",
-          "apps": 15,
-          "goals": 0
         },
         {
           "years": "2025–2026",
@@ -207301,15 +206169,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2019–2019",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "U19 Divisie 1",
-          "country": null,
-          "apps": 13,
-          "goals": 5
-        },
-        {
           "years": "2019–2023",
           "club": "Groningen",
           "league": null,
@@ -208161,15 +207020,6 @@
           "goals": 0
         },
         {
-          "years": "2019–2021",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 4,
-          "goals": 0
-        },
-        {
           "years": "2021–2023",
           "club": "Pogon Szczecin",
           "league": null,
@@ -208506,15 +207356,6 @@
       "nationality": "Morocco",
       "isGK": false,
       "career": [
-        {
-          "years": "2018–2020",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "U19 Divisie 1",
-          "country": null,
-          "apps": 20,
-          "goals": 2
-        },
         {
           "years": "2021–2022",
           "club": "Emmen",
@@ -209833,15 +208674,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2017–2017",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 11,
-          "goals": 2
-        },
-        {
           "years": "2017–2018",
           "club": "Barcelona B",
           "league": null,
@@ -210183,31 +209015,13 @@
       "isGK": false,
       "career": [
         {
-          "years": "2012–2013",
+          "years": "2012–2015",
           "club": "Milton Keynes Dons",
           "league": null,
           "leagueRaw": "League One",
           "country": "England",
-          "apps": 35,
-          "goals": 6
-        },
-        {
-          "years": "2013–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 3,
-          "goals": 0
-        },
-        {
-          "years": "2014–2015",
-          "club": "Milton Keynes Dons",
-          "league": null,
-          "leagueRaw": "League One",
-          "country": "England",
-          "apps": 27,
-          "goals": 12
+          "apps": 62,
+          "goals": 18
         },
         {
           "years": "2015–2021",
@@ -211881,15 +210695,6 @@
           "goals": 3
         },
         {
-          "years": "2019–2019",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Tournoi Maurice Revello",
-          "country": null,
-          "apps": 4,
-          "goals": 0
-        },
-        {
           "years": "2019",
           "club": "Barcelona",
           "league": null,
@@ -212014,40 +210819,13 @@
           "goals": 5
         },
         {
-          "years": "2013–2013",
+          "years": "2013–2015",
           "club": "Arles",
           "league": null,
           "leagueRaw": "Ligue 2",
           "country": "France",
-          "apps": 9,
-          "goals": 0
-        },
-        {
-          "years": "2013–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "National 3",
-          "country": null,
-          "apps": 14,
-          "goals": 3
-        },
-        {
-          "years": "2014–2014",
-          "club": "Arles",
-          "league": null,
-          "leagueRaw": "Ligue 2",
-          "country": "France",
-          "apps": 23,
+          "apps": 32,
           "goals": 4
-        },
-        {
-          "years": "2014–2015",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "National 3",
-          "country": null,
-          "apps": 3,
-          "goals": 2
         },
         {
           "years": "2015–2016",
@@ -215001,15 +213779,6 @@
           "goals": 0
         },
         {
-          "years": "2019–2019",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "Tournoi Maurice Revello",
-          "country": null,
-          "apps": 4,
-          "goals": 1
-        },
-        {
           "years": "2019–2024",
           "club": "Aston Villa",
           "league": "pl",
@@ -215520,15 +214289,6 @@
           "leagueRaw": "Eerste Divisie",
           "country": "Netherlands",
           "apps": 8,
-          "goals": 1
-        },
-        {
-          "years": "2018",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "U19 Divisie 1",
-          "country": null,
-          "apps": 3,
           "goals": 1
         },
         {
@@ -216298,15 +215058,6 @@
       "nationality": "England",
       "isGK": false,
       "career": [
-        {
-          "years": "2018–2019",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 3,
-          "goals": 0
-        },
         {
           "years": "2019–2020",
           "club": "Chelsea",
@@ -217963,15 +216714,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2019–2020",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 4,
-          "goals": 0
-        },
-        {
           "years": "2020–2023",
           "club": "Real Madrid II",
           "league": null,
@@ -219155,15 +217897,6 @@
           "country": null,
           "apps": 1,
           "goals": 0
-        },
-        {
-          "years": "2022",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": "World",
-          "apps": 3,
-          "goals": 2
         },
         {
           "years": "2022–2024",
@@ -223957,15 +222690,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2013–2014",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 2,
-          "goals": 0
-        },
-        {
           "years": "2014–2014",
           "club": "Lechia Gdansk",
           "league": null,
@@ -225399,15 +224123,6 @@
       "isGK": false,
       "career": [
         {
-          "years": "2018–2019",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 9,
-          "goals": 2
-        },
-        {
           "years": "2020–2020",
           "club": "Real Madrid II",
           "league": null,
@@ -225614,15 +224329,6 @@
       "nationality": "Ecuador",
       "isGK": false,
       "career": [
-        {
-          "years": "2019–2020",
-          "club": "Squadra sconosciuta",
-          "league": null,
-          "leagueRaw": "UEFA U17 Championship",
-          "country": null,
-          "apps": 1,
-          "goals": 0
-        },
         {
           "years": "2021–2023",
           "club": "Brighton",
