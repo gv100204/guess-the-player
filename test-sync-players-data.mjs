@@ -730,6 +730,20 @@ async function main() {
     const senza = buildFinalDataset(players, null, null);
     assert.ok(senza.every((p) => p.fame === null));
   });
+  await test("la fama per lingua arriva ai giocatori che la hanno: pagina assente = 0, lingua non scaricata = chiave assente, giocatore mai elaborato = nessun campo fameLang", () => {
+    const players = newPlayersMap();
+    [[7, "Elaborato"], [8, "Mai elaborato"]].forEach(([id, name]) => {
+      mergePlayerEntry(players, {
+        player: { id, name, nationality: "Italy" },
+        statistics: [{ team: { name: "Team Z" }, league: { name: "Serie A", country: "Italy" }, games: { appearences: 100, position: "Midfielder" }, goals: { total: 5 } }]
+      }, 2020);
+    });
+    const langs = new Map([["7", { it: { title: "X", avgMonthlyViews: 300 }, de: { title: null }, fr: { title: "Y", avgMonthlyViews: null } }]]);
+    const final = buildFinalDataset(players, null, null, null, langs);
+    const a = final.find((p) => p.name === "Elaborato");
+    assert.deepEqual(a.fameLang, { it: 300, de: 0, fr: 0 });
+    assert.ok(!("fameLang" in final.find((p) => p.name === "Mai elaborato")));
+  });
   await test("un giocatore bocciato dal controllo Wikipedia (excludedIds) non compare nel dataset finale, anche se sopra la soglia presenze", () => {
     const players = newPlayersMap();
     mergePlayerEntry(players, {

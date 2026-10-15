@@ -1486,13 +1486,24 @@
 
   // Punteggio di notorietà: fama (visite Wikipedia, in scala logaritmica)
   // più un piccolo bonus per i trofei importanti.
+  // La fama dipende dalla lingua del gioco: con l'interfaccia in italiano
+  // conta quanto è visto il giocatore su Wikipedia in italiano, e così via
+  // (it, fr, de, es, pt). In inglese, o per chi non ha dati per lingua, si
+  // usa la fama globale (Wikipedia inglese). Nessuna pagina nella lingua = 0
+  // visite = difficile. Solo il confronto tra giocatori dello stesso mazzo
+  // conta (terzi), quindi le diverse scale tra lingue non danno problemi.
+  function fameFor(p){
+    if (p.fameLang && typeof p.fameLang[lang] === "number") return p.fameLang[lang];
+    return typeof p.fame === "number" ? p.fame : null;
+  }
+
   function difficultyScore(p){
-    return Math.log10(p.fame + 1) + TROPHY_BONUS_PER_POINT * trophyPoints(p);
+    return Math.log10(fameFor(p) + 1) + TROPHY_BONUS_PER_POINT * trophyPoints(p);
   }
 
   function applyDifficulty(pool, level){
     if (level !== "easy" && level !== "medium" && level !== "hard") return pool;
-    var ranked = pool.filter(function(p){ return typeof p.fame === "number"; })
+    var ranked = pool.filter(function(p){ return fameFor(p) !== null; })
       .sort(function(a, b){ return difficultyScore(b) - difficultyScore(a); }); // dal più noto al meno noto
     var cut1 = Math.round(ranked.length / 3);
     var cut2 = Math.round(ranked.length * 2 / 3);

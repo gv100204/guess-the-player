@@ -25,6 +25,7 @@ on:
       - "raw-players.json"
       - "wikipedia-check.json"
       - "wikipedia-views.json"
+      - "wikipedia-views-langs.json"
       - "indovina-calciatore.html"
       - "sync-players-data.mjs"
       - "check-data-quality.mjs"

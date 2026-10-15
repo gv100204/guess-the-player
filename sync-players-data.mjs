@@ -1133,7 +1133,22 @@ async function saveProgress(progress) {
 // Dataset finale per il gioco (filtrato, nella forma che il prototipo usa già)
 // ---------------------------------------------------------------------------
 
-function buildFinalDataset(playersMap, excludedIds, fameById, wikiEntriesById) {
+const FAME_LANGS = ["it", "fr", "de", "es", "pt"];
+
+function fameLangOf(entry) {
+  if (!entry || typeof entry !== "object") return null;
+  const out = {};
+  let any = false;
+  for (const l of FAME_LANGS) {
+    const e = entry[l];
+    if (e === undefined) continue;
+    any = true;
+    out[l] = e && typeof e.avgMonthlyViews === "number" && e.avgMonthlyViews > 0 ? e.avgMonthlyViews : 0;
+  }
+  return any ? out : null;
+}
+
+function buildFinalDataset(playersMap, excludedIds, fameById, wikiEntriesById, fameLangById) {
   const result = [];
   playersMap.forEach((rec) => {
     if (totalApps(rec) < MIN_APPS_TO_INCLUDE) return;
@@ -1142,6 +1157,7 @@ function buildFinalDataset(playersMap, excludedIds, fameById, wikiEntriesById) {
     // fetch-wikipedia-views.mjs). null = non la conosciamo: il gioco non
     // può assegnare a quel giocatore un livello di difficoltà.
     const fameRaw = fameById ? fameById.get(String(rec.id)) : null;
+    const fameLang = fameLangOf(fameLangById ? fameLangById.get(String(rec.id)) : null);
     result.push({
       id: slugify(rec.name) + "-" + rec.id, // l'id numerico evita collisioni tra omonimi veri
       name: rec.name,
@@ -1151,7 +1167,8 @@ function buildFinalDataset(playersMap, excludedIds, fameById, wikiEntriesById) {
       career: finalizeCareer(wikiEntriesById && wikiEntriesById.has(String(rec.id)) ? { ...rec, wikiEntries: wikiEntriesById.get(String(rec.id)) } : rec),
       careerComplete: !!rec.careerBackfilled, // false = carriera solo dai campionati tracciati, non ancora arricchita per intero
       trophies: rec.trophies || [],
-      fame: typeof fameRaw === "number" && fameRaw > 0 ? fameRaw : null // 0 visite = quasi certamente un reindirizzamento, non un giocatore ignoto: meglio "fama sconosciuta"
+      fame: typeof fameRaw === "number" && fameRaw > 0 ? fameRaw : null, // 0 visite = quasi certamente un reindirizzamento, non un giocatore ignoto: meglio "fama sconosciuta"
+      ...(fameLang ? { fameLang } : {}) // visite mensili per lingua (0 = nessuna pagina in quella lingua)
     });
   });
   return result;
@@ -1429,6 +1446,14 @@ async function main() {
     // Nessun file: nessun giocatore ha la fama, la difficoltà non è disponibile.
   }
 
+  let fameLangById = null;
+  try {
+    const langsData = JSON.parse(await fs.readFile("./wikipedia-views-langs.json", "utf-8"));
+    fameLangById = new Map(Object.entries(langsData.views || {}));
+    console.log(`\nVisite Wikipedia per lingua trovate per ${fameLangById.size} giocatori.`);
+  } catch {
+  }
+
   // Carriere lette da Wikipedia (wikipedia-careers.jsonl): usate solo per
   // ordinare i club nello stesso anno e per allungare i blocchi storici.
   let wikiEntriesById = null;
@@ -1447,7 +1472,7 @@ async function main() {
     // Nessun file: si usano solo le euristiche di prima.
   }
 
-  const finalPlayers = buildFinalDataset(playersMap, excludedIds, fameById, wikiEntriesById);
+  const finalPlayers = buildFinalDataset(playersMap, excludedIds, fameById, wikiEntriesById, fameLangById);
   await writeOutputFiles(finalPlayers);
 
   const doneTotal = activeLeagues.length * (activeSeasons.to - activeSeasons.from + 1);
