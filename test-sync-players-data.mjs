@@ -744,6 +744,21 @@ async function main() {
     assert.deepEqual(a.fameLang, { it: 300, de: 0, fr: 0 });
     assert.ok(!("fameLang" in final.find((p) => p.name === "Mai elaborato")));
   });
+  await test("le tappe senza nome del club ('Squadra sconosciuta') non compaiono nella carriera finale, salvo se sono l'unica cosa nota", () => {
+    const rec = {
+      id: 47516, name: "Aleix Garcia Serrano", nationality: "Spain",
+      seasonRecords: [
+        { season: 2014, club: "Villarreal II", league: "laliga", apps: 7, goals: 0 },
+        { season: 2014, club: "Squadra sconosciuta", league: "laliga", apps: 5, goals: 0 },
+        { season: 2017, club: "Girona", league: "laliga", apps: 20, goals: 0 }
+      ]
+    };
+    const career = finalizeCareer(rec);
+    assert.ok(!career.some((c) => /sconosciuta/i.test(c.club)), "nessuna tappa senza nome");
+    assert.equal(career.length, 2);
+    const solo = finalizeCareer({ id: 1, name: "Solo", nationality: "Spain", seasonRecords: [{ season: 2015, club: "Squadra sconosciuta", league: "laliga", apps: 30, goals: 1 }] });
+    assert.equal(solo.length, 1, "se e' l'unica tappa nota la teniamo");
+  });
   await test("un giocatore bocciato dal controllo Wikipedia (excludedIds) non compare nel dataset finale, anche se sopra la soglia presenze", () => {
     const players = newPlayersMap();
     mergePlayerEntry(players, {

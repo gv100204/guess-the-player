@@ -65,6 +65,7 @@ const CASI_NOTI = [
     return n.endsWith("NGN") ? null : `ordine: ${n}`;
   }],
   ["30758", "Meggiorini: nessuna tappa che arriva al 2027 da ritirato", (p) => p.career.some((c) => (span(c.years) || {}).end >= 2027) ? "tappa fino al 2027" : null],
+  ["47516", "Aleix Garcia: nessuna tappa 'Squadra sconosciuta'", (p) => p.career.some((c) => /sconosciuta/i.test(c.club)) ? "c'e' ancora una tappa senza nome" : null],
   ["37651", "Idzes: ultima tappa al Sassuolo e attuale", (p) => { const l = p.career[p.career.length - 1]; return /sassuolo/i.test(l.club) && (l.current === true || (span(l.years) || {}).end >= 2027) ? null : `ultima tappa: ${l.years} ${l.club} current=${l.current}`; }]
 ];
 

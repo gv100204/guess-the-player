@@ -477,9 +477,15 @@ function clubsMatchLoose(a, b) {
   return a === b || clubCore(a) === clubCore(b);
 }
 
+const UNKNOWN_CLUB = "Squadra sconosciuta";
+
 function dedupedSeasonRecords(rec){
   const byKey = new Map();
-  (rec.seasonRecords || []).forEach((r) => {
+  const allRecords = rec.seasonRecords || [];
+  const namedRecords = allRecords.filter((r) => r.club !== UNKNOWN_CLUB);
+  // Una tappa senza nome del club non serve a nessuno in un quiz: la
+  // scartiamo, salvo se è l'unica cosa che abbiamo.
+  (namedRecords.length > 0 ? namedRecords : allRecords).forEach((r) => {
     // Chiave semplice: solo stagione+club, senza il campionato. Le coppe/
     // nazionali sono già escluse a monte (isLikelyDomesticLeague), quindi
     // quello che resta per un club in una stagione è quasi sempre un'unica
